@@ -1,32 +1,43 @@
-steam.styles
-{
-include "resource/styles/includes.styles"
+steam.styles {
+  include "resource/styles/includes.styles"
+  include "includes/colors.styles"
+  include "includes/settings.styles"
   
- styles {
+  colors {
+    basefont="Roboto"
+    basefont="Helvetica" [$OSX]
+  }
 
- Frame
-    {
-    bgcolor="DialogBG"
-      render
-      {
-        0="gradient_horizontal( x0, y1 - 1, x1 + 1, y1, 0 0 0 255, 255 255 255 255 )"     
-        1="gradient( x1 - 1, y0, x1, y1, red, focus )" 
-        2="gradient_horizontal( x0, y0, x1, y0 + 1, focus0, red )"
-        3="gradient( x0, y0, x0 + 1, y1, red, ClientBG )"
-      }
-    } 
+  styles {
+    Frame {
+      bgcolor="custombackgroundnofocus"
     
-    Frame:FrameFocus
-    {
-    bgcolor="offwhite"
-      render
-      {
-        0="gradient_horizontal( x0, y1 - 1, x1 + 1, y1, ClientBG, focus2 )"     
-        1="gradient( x1 - 1, y0, x1, y1, red, focus2 )" 
-        2="gradient_horizontal( x0, y0, x1, y0 + 1, red, ClientBG )"
-        3="gradient( x0, y0, x0 + 1, y1, focus, red )"
-      }
+      render {}
     } 
+      
+      Frame:FrameFocus {
+        bgcolor="custombackgroundprimary"
+      
+        render {}
+      }
 
- }
+    FrameTitle {
+        inset="3 1 0 0"
+        padding-left="0"
+        padding-right="64"
+        font-weight=400
+        textcolor="disabled_OnDarkBG"
+        bgcolor="customgreyprimary"
+        font-family=basefont
+        font-size=18
+
+        render_bg {
+          0="fill(x0,y0,x1,y0+1, customgreyaccent)"
+        }
+    }
+    
+      FrameTitle:framefocus {
+          textcolor="white"
+      }
+  }
 }
