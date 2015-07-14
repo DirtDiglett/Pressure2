@@ -1,7 +1,7 @@
 settings.styles {
 	colors {
 		Frame.ClientInsetX = 0
-	    Frame.ClientInsetY = 34
+	    Frame.ClientInsetY = 40
 	    Frame.FocusTransitionEffectTime = 0 // time it takes for a window to fade in/out on focus/out of focus
 	    Frame.TransitionEffectTime = 0.25 // time it takes for a window to fade in/out on open/close
 	    Frame.OnDragAlphaDelayTime = 0.15 // time it takes after clicking the title bar of a window before the alpha multiplier kicks in
@@ -16,7 +16,7 @@ settings.styles {
 	    Notifications.SlideDirection = Vertical // Can be Vertical, Horizontal, None and controls slide effect
 	    Notifications.FadeInTime = 0.45 // Controls the time it takes to slide/fade into view
 	    Notifications.FadeOutTime = 0.45 // Controls the time it takes to slide/fade out of view
-	    Notifications.DisplayTime = 6.0 // Controls the length of time at steady state after fade in and before fade out
+	    Notifications.DisplayTime = 4.0 // Controls the length of time at steady state after fade in and before fade out
 	    Notifications.StackSize = 3 // Controls how many panels we will stack before background queuing
 
 	    ListPanel.PerPixelScrolling = 1

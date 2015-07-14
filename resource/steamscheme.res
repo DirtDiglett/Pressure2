@@ -12,14 +12,14 @@ Scheme {
 				xpos	0
 				ypos	0
 				wide	max
-				tall	55
+				tall	40
 				AutoResize	1
 			}
 			frame_captiongrip {
 				xpos	0
 				ypos	0
 				wide	r2
-				tall	55
+				tall	40
 				AutoResize	1
 			}
 			frame_minimize {
@@ -65,9 +65,9 @@ Scheme {
 		PropertyDialog {
 			sheet {
 				xpos	9
-				ypos	55
+				ypos	45
 				wide	r9
-				tall	r50
+				tall	r39
 			}
 			// these buttons are still a bit special - if some of them are hidden, they shuffle
 			// across taking the place of other buttons to make sure there aren't gaps
@@ -93,7 +93,7 @@ Scheme {
 		WizardPanel {
 			subpanel {
 				xpos	10
-				ypos	28
+				ypos	45
 				wide	r10
 				tall	r48
 				AutoResize	3
@@ -126,6 +126,9 @@ Scheme {
 				tall	28
 				PinCorner	3
 			}
+		}
+		QueryBox {
+
 		}
 	}
 	Fonts {
