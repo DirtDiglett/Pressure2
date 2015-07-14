@@ -2,11 +2,9 @@ steam.styles {
   include "resource/styles/includes.styles"
   include "includes/colors.styles"
   include "includes/settings.styles"
+  include "includes/fonts.styles"
   
-  colors {
-    basefont="Roboto"
-    basefont="Helvetica" [$OSX]
-  }
+  colors {}
 
   styles {
     Frame {
@@ -22,14 +20,14 @@ steam.styles {
       }
 
     FrameTitle {
-        inset="3 1 0 0"
+        inset="5 1 0 0"
         padding-left="0"
         padding-right="64"
         font-weight=400
         textcolor="disabled_OnDarkBG"
         bgcolor="customgreyprimary"
         font-family=basefont
-        font-size=18
+        font-size=24
 
         render_bg {
           0="fill(x0,y0,x1,y0+1, customgreyaccent)"

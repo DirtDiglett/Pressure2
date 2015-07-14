@@ -12,14 +12,14 @@ Scheme {
 				xpos	0
 				ypos	0
 				wide	max
-				tall	30
+				tall	55
 				AutoResize	1
 			}
 			frame_captiongrip {
 				xpos	0
 				ypos	0
 				wide	r2
-				tall	30
+				tall	55
 				AutoResize	1
 			}
 			frame_minimize {
@@ -65,9 +65,9 @@ Scheme {
 		PropertyDialog {
 			sheet {
 				xpos	9
-				ypos	30
+				ypos	55
 				wide	r9
-				tall	r48
+				tall	r50
 			}
 			// these buttons are still a bit special - if some of them are hidden, they shuffle
 			// across taking the place of other buttons to make sure there aren't gaps

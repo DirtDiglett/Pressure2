@@ -54,5 +54,7 @@ settings.styles {
 	    HTML.IMEAnimationTime = 0.25
 
 	    MessageBox.ButtonHeight = 24
+
+
 	}
 }
