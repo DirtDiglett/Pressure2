@@ -12,14 +12,14 @@ Scheme {
 				xpos	0
 				ypos	0
 				wide	max
-				tall	55
+				tall	30
 				AutoResize	1
 			}
 			frame_captiongrip {
 				xpos	0
 				ypos	0
 				wide	r2
-				tall	60
+				tall	30
 				AutoResize	1
 			}
 			frame_minimize {
@@ -65,7 +65,7 @@ Scheme {
 		PropertyDialog {
 			sheet {
 				xpos	9
-				ypos	55
+				ypos	30
 				wide	r9
 				tall	r48
 			}
@@ -74,20 +74,20 @@ Scheme {
 			ApplyButton {
 				xpos	r101
 				ypos	r39
-				wide	92
-				tall	28
+				wide	111
+				tall	34
 			}
 			CancelButton {
 				xpos	r203
 				ypos	r39
-				wide	92
-				tall	28
+				wide	111
+				tall	34
 			}
 			OKButton {
 				xpos	r304
 				ypos	r39
-				wide	92
-				tall	28
+				wide	111
+				tall	34
 			}
 		}
 		WizardPanel {
