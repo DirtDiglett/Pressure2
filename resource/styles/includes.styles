@@ -5,11 +5,9 @@
     // colors section can include colors in "R G B A" form, or references to already defined colors;
     // it can also include just general settings controls can pull from for extra customization
   
-    black="0 0 0 255"
     dark="35 35 35 255"
     almostBlack="22 22 22 255"
     almostBlackTrans="22 22 22 204"
-    white="255 255 255 255"
     grey="153 153 153 255"
     none="0 0 0 0"
     yellow="255 255 0 255"
@@ -32,9 +30,6 @@
     buttontext=Text
     buttontextactive=Text
     
-    // cool we can define font-families here as well
-    basefont="Arial"
-    basefont="Helvetica" [$OSX]
     
     // new control colors
     ButtonFace="102 102 102 200"
@@ -207,24 +202,9 @@
     DragDrop.DragFrame        "255 255 255 192"
     DragDrop.DropFrame        "150 255 150 255"
 
-    Frame.ClientInsetX        10
-    Frame.ClientInsetY        35
-    Frame.FocusTransitionEffectTime   "0"     // time it takes for a window to fade in/out on focus/out of focus
-    Frame.TransitionEffectTime      "0.25"      // time it takes for a window to fade in/out on open/close
-    Frame.OnDragAlphaDelayTime      "0.15"      // time it takes after clicking the title bar of a window before the alpha multiplier kicks in
-    Frame.OnDragAlphaMultiplier     "1.0"     // multiplier applied to alpha while dragging a frame
-    Frame.AutoSnapRange         "6"
-    Frame.UsesAlphaBlending       1
-    FrameSystemButton.Icon        ""
-    FrameSystemButton.DisabledIcon    ""
+   
 
-    Notifications.PanelPosition     "BottomRight"   // Can be "BottomRight", "BottomLeft", "TopRight", "TopLeft"
-    Notifications.PanelPosition     "TopRight" [$OSX]  // the dock is on the bottom for OSX, so instead pop top right like other apps do
-    Notifications.SlideDirection    "Vertical"    // Can be "Vertical", "Horizontal", "None" and controls slide effect
-    Notifications.FadeInTime      "0.45"    // Controls the time it takes to slide/fade into view
-    Notifications.FadeOutTime     "0.45"    // Controls the time it takes to slide/fade out of view
-    Notifications.DisplayTime     "6.0"     // Controls the length of time at steady state after fade in and before fade out
-    Notifications.StackSize       "3"     // Controls how many panels we will stack before background queuing
+    
 
     ListPanel.TextColor       Text
     ListPanel.BgColor       none  
@@ -234,48 +214,23 @@
     ListPanel.DisabledTextColor     TextDisabled
     ListPanel.DisabledSelectedTextColor   ClientBG
     ListPanel.EmptyListInfoTextColor    Label
-    ListPanel.PerPixelScrolling     1
-    ListPanel.PostSectionLeading	10
+    
 
-		// Default tooltip delay pops fast, but lets the mouse pass through without popping
-		// Anchor=Cursor makes it stick to initial pop location like windows implementation.
-		// Anchor can also be 'Float' to move with the mouse, or 'Parent' to stick just outside
-		// the parent panel (useful for icon sized items)
-		Tooltip.Delay=75
-		Tooltip.Anchor=Cursor
+		
 
 	
     WizardPanel.HeaderBGColor     HeaderDialog
 
-    Menu.TextInset          "6"
     
-    PropertySheet.TransitionEffectTime    "0"     // time to change from one tab to another
-    PropertySheet.TabGap        1
+    
     PropertySheet.FlashTabColor	"76 159 191 255"
 
-    RichText.InsetX         8
-    RichText.InsetY         7
-
-    ScrollBar.Wide          19
     
-    SectionedListPanel.CollapserWidth   16
-    
-    HTML.SearchInsetY 5
-    HTML.SearchInsetX 10
-    HTML.SearchWide 348
-    HTML.SearchTall 38
-    HTML.SearchAnimationTime 0.25
-
-    HTML.IMEInsetY 5
-    HTML.IMEInsetX 10
-    HTML.IMEWide 348
-    HTML.IMETall 38
-    HTML.IMEAnimationTime 0.25
 
     html.secureurl "126 166 75 255"
     html.insecureurl "173 69 72 255"
     
-    MessageBox.ButtonHeight		24
+    
     
     TextEntry.IMEBGColor        "225 225 225 255"
     TextEntry.IMEFGColor        "black"
@@ -304,8 +259,8 @@
     ChatDialog.URLColor       "text"
     ChatOwnTextColor        "Label"
 		ChatDialog.HistoryColor	"124 124 124 255"
-    ChatGradientTop         "39 39 39 255"
-    ChatGradientBottom        "104 104 104 255"
+    ChatGradientTop         "none"
+    ChatGradientBottom        "none"
     
     AchievementPopup.TitleColor   "Text"
     AchievementPopup.DescriptionColor "180 180 180 255"
@@ -997,40 +952,7 @@
         image="graphics/osx_win_dis" [$OSX]
     }
 
-    FrameTitle
-    {
-        font-family=basefont
-        inset="5 2 0 0"
-        inset="0 4 0 0" [$OSX]
-        padding-left="0"
-        padding-right="64"
-        padding-right="0" [$OSX]
-        font-size=14
-        font-weight=400
-        textcolor="yellow"
-        bgcolor="none"
-        render_bg
-            {
-                1="gradient( x0, y0, x1, y0 + 48, red, red )"
-                
-            }
-    }
-
     
-    FrameTitle:framefocus
-    {
-        font-family=basefont
-        inset="0 4 0 0" [$OSX]
-        font-size=14
-        font-weight=400
-        bgcolor="none"
-        textcolor="yellow"
-        textcolor="texthover" [$OSX]
-      render_bg
-        {
-             2="gradient( x0, y0, x1, y0 + 48, red, red )"
-        }
-    }
     
    
     "CFriendsDialog SectionedListPanelInterior"
