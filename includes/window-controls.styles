@@ -1,0 +1,354 @@
+window-controls.styles {
+	colors {}
+
+	styles {
+        FrameMinimizeButton {
+            minimum-height=24
+            minimum-width=24
+
+            render_bg {
+                1="image(x0+6,y0+7,x1,y1, graphics/icons/window_controls/standard/minimize)"
+            }
+        }
+
+            FrameMinimizeButton:hover {
+                render_bg {
+                    1="image(x0+6,y0+7,x1,y1, graphics/icons/window_controls/hover/minimize)"
+                }
+            }
+
+            FrameMinimizeButton:active {
+                render_bg {
+                    -3="image(x0-7,y0-7,x0+12,y0+12, graphics/material/selectionbubbles/hover/white/topleft)"
+                    -2="image(x0-7,y0+12,x0+12,y0+24, graphics/material/selectionbubbles/hover/white/bottomleft)"
+                    -1="image(x0+12,y0-7,x0+31,y0+12, graphics/material/selectionbubbles/hover/white/topright)"
+                    0="image(x0+12,y0+12,x0+31,y0+31, graphics/material/selectionbubbles/hover/white/bottomright)"
+                    1="image(x0+6,y0+7,x1,y1, graphics/icons/window_controls/hover/minimize)"
+                }
+            }
+
+        FrameMaximizeButton {
+            minimum-height=24
+            minimum-width=24
+
+            render_bg {
+                1="image(x0+6,y0+7,x1,y1, graphics/icons/window_controls/standard/maximize)"
+            }
+        }
+
+            FrameMaximizeButton:hover {
+                render_bg {
+                    1="image(x0+6,y0+7,x1,y1, graphics/icons/window_controls/hover/maximize)"
+                }
+            }
+
+            FrameMaximizeButton:active {
+                render_bg {
+                    -3="image(x0-7,y0-7,x0+12,y0+12, graphics/material/selectionbubbles/hover/white/topleft)"
+                    -2="image(x0-7,y0+12,x0+12,y0+24, graphics/material/selectionbubbles/hover/white/bottomleft)"
+                    -1="image(x0+12,y0-7,x0+31,y0+12, graphics/material/selectionbubbles/hover/white/topright)"
+                    0="image(x0+12,y0+12,x0+31,y0+31, graphics/material/selectionbubbles/hover/white/bottomright)"
+                    1="image(x0+6,y0+7,x1,y1, graphics/icons/window_controls/hover/maximize)"
+                }
+            }
+
+
+        FrameRestoreButton {
+            minimum-height=24
+            minimum-width=24
+
+            render_bg {
+                1="image(x0+6,y0+7,x1,y1, graphics/icons/window_controls/standard/restore)"
+            }
+        }
+
+            FrameRestoreButton:hover {
+                render_bg {
+                    1="image(x0+6,y0+7,x1,y1, graphics/icons/window_controls/hover/restore)"
+                }
+            }
+
+            FrameRestoreButton:active {
+                render_bg {
+                    -3="image(x0-7,y0-7,x0+12,y0+12, graphics/material/selectionbubbles/hover/white/topleft)"
+                    -2="image(x0-7,y0+12,x0+12,y0+24, graphics/material/selectionbubbles/hover/white/bottomleft)"
+                    -1="image(x0+12,y0-7,x0+31,y0+12, graphics/material/selectionbubbles/hover/white/topright)"
+                    0="image(x0+12,y0+12,x0+31,y0+31, graphics/material/selectionbubbles/hover/white/bottomright)"
+                    1="image(x0+6,y0+7,x1,y1, graphics/icons/window_controls/hover/restore)"
+                }
+            }
+
+       
+        FrameCloseButton {
+            minimum-height=24
+            minimum-width=24
+
+            render_bg {
+                1="image(x0+6,y0+7,x1,y1, graphics/icons/window_controls/standard/close)"
+            }
+        }
+
+            FrameCloseButton:hover {
+                render_bg {
+                    1="image(x0+6,y0+7,x1,y1, graphics/icons/window_controls/hover/close)"
+                }
+            }
+
+            FrameCloseButton:active {
+                render_bg {
+                    -3="image(x0-7,y0-7,x0+12,y0+12, graphics/material/selectionbubbles/hover/red/topleft)"
+                    -2="image(x0-7,y0+12,x0+12,y0+24, graphics/material/selectionbubbles/hover/red/bottomleft)"
+                    -1="image(x0+12,y0-7,x0+31,y0+12, graphics/material/selectionbubbles/hover/red/topright)"
+                    0="image(x0+12,y0+12,x0+31,y0+31, graphics/material/selectionbubbles/hover/red/bottomright)"
+                    1="image(x0+6,y0+7,x1,y1, graphics/icons/window_controls/hover/close)"
+                }
+            }
+       
+        //-------------------------------------------------------------------------------------------------------------------------------//
+        //-------------------------------------------------------------------------------------------------------------------------------//
+
+ //       "CSteamRootDialog FrameMinimizeButton"
+//            { render_bg { 1="image( x0 + 5, y0 + 5, x1, y1, graphics/onfocus/controls/win_min_onfocus )" } }//
+
+//        "CSteamRootDialog FrameMinimizeButton:hover"
+//            { render_bg { 1="image( x0 + 5, y0 + 5, x1, y1, graphics/onfocus/controls/win_min_onfocus_hover )" } }//
+
+//        "CSteamRootDialog FrameMaximizeButton"
+//            { render_bg { 1="image( x0 + 5, y0 + 5, x1, y1, graphics/onfocus/controls/win_max_onfocus )" } }//
+
+//        "CSteamRootDialog FrameMaximizeButton:hover"
+//            { render_bg { 1="image( x0 + 5, y0 + 5, x1, y1, graphics/onfocus/controls/win_max_onfocus_hover )" } }//
+
+//        "CSteamRootDialog FrameRestoreButton"
+//            { render_bg { 1="image( x0 + 5, y0 + 5, x1, y1, graphics/onfocus/controls/win_restore_onfocus )" } }//
+
+//        "CSteamRootDialog FrameRestoreButton:hover"
+//            { render_bg { 1="image( x0 + 5, y0 + 5, x1, y1, graphics/onfocus/controls/win_restore_onfocus_hover )" } }//
+
+//        "CSteamRootDialog FrameCloseButton"
+//            { render_bg { 1="image( x0 + 5, y0 + 5, x1, y1, graphics/onfocus/controls/win_close_onfocus )" } }//
+
+//        "CSteamRootDialog FrameCloseButton:hover"
+//            { render_bg { 1="image( x0 + 5, y0 + 5, x1, y1, graphics/onfocus/controls/win_close_onfocus_hover )" } }//
+
+//        //-------------------------------------------------------------------------------------------------------------------------------//
+//        //-------------------------------------------------------------------------------------------------------------------------------////
+
+//        "ToolWindow FrameMinimizeButton"
+//            { render_bg { 1="image( x0 + 5, y0 + 5, x1, y1, graphics/onfocus/controls/win_min_onfocus )" } }//
+
+//        "ToolWindow FrameMinimizeButton:hover"
+//            { render_bg { 1="image( x0 + 5, y0 + 5, x1, y1, graphics/onfocus/controls/win_min_onfocus_hover )" } }//
+
+//        "ToolWindow FrameMaximizeButton"
+//            { render_bg { } }//
+
+//        "ToolWindow FrameRestoreButton"
+//            { render_bg { } }//
+
+//        "ToolWindow FrameCloseButton"
+//            { render_bg { 1="image( x0 + 5, y0 + 5, x1, y1, graphics/onfocus/controls/win_close_onfocus )" } }//
+
+//        "ToolWindow FrameCloseButton:hover"
+//            { render_bg { 1="image( x0 + 5, y0 + 5, x1, y1, graphics/onfocus/controls/win_close_onfocus_hover )" } }//
+//
+
+//        "CFriendsDialog FrameMinimizeButton"
+//            { render_bg { 1="image( x0 + 5, y0 + 5, x1, y1, graphics/onfocus/controls/win_min_onfocus )" } }//
+
+//        "CFriendsDialog FrameMinimizeButton:hover"
+//            { render_bg { 1="image( x0 + 5, y0 + 5, x1, y1, graphics/onfocus/controls/win_min_onfocus_hover )" } }//
+
+//        "CFriendsDialog FrameMaximizeButton"
+//            { render_bg { } }//
+
+//        "CFriendsDialog FrameRestoreButton"
+//            { render_bg { } }//
+
+//        "CFriendsDialog FrameCloseButton"
+//            { render_bg { 1="image( x0 + 5, y0 + 5, x1, y1, graphics/onfocus/controls/win_close_onfocus )" } }//
+
+//        "CFriendsDialog FrameCloseButton:hover"
+//            { render_bg { 1="image( x0 + 5, y0 + 5, x1, y1, graphics/onfocus/controls/win_close_onfocus_hover )" } }//
+//
+
+//        "CGamesPage_Mini FrameMinimizeButton"
+//            { render_bg { 1="image( x0 + 5, y0 + 5, x1, y1, graphics/onfocus/controls/win_min_onfocus )" } }//
+
+//        "CGamesPage_Mini FrameMinimizeButton:hover"
+//            { render_bg { 1="image( x0 + 5, y0 + 5, x1, y1, graphics/onfocus/controls/win_min_onfocus_hover )" } }//
+
+//        "CGamesPage_Mini FrameMaximizeButton"
+//            { render_bg { } }//
+
+//        "CGamesPage_Mini FrameRestoreButton"
+//            { render_bg { } }//
+
+//        "CGamesPage_Mini FrameCloseButton"
+//            { render_bg { 1="image( x0 + 5, y0 + 5, x1, y1, graphics/onfocus/controls/win_close_onfocus )" } }//
+
+//        "CGamesPage_Mini FrameCloseButton:hover"
+//            { render_bg { 1="image( x0 + 5, y0 + 5, x1, y1, graphics/onfocus/controls/win_close_onfocus_hover )" } }//
+//
+
+//        "HTMLPopup FrameMinimizeButton"
+//            { render_bg { 1="image( x0 + 5, y0 + 5, x1, y1, graphics/onfocus/controls/win_min_onfocus )" } }//
+
+//        "HTMLPopup FrameMinimizeButton:hover"
+//            { render_bg { 1="image( x0 + 5, y0 + 5, x1, y1, graphics/onfocus/controls/win_min_onfocus_hover )" } }//
+
+//        "HTMLPopup FrameMaximizeButton"
+//            { render_bg { } }//
+
+//        "HTMLPopup FrameRestoreButton"
+//            { render_bg { } }//
+
+//        "HTMLPopup FrameCloseButton"
+//            { render_bg { 1="image( x0 + 5, y0 + 5, x1, y1, graphics/onfocus/controls/win_close_onfocus )" } }//
+
+//        "HTMLPopup FrameCloseButton:hover"
+//            { render_bg { 1="image( x0 + 5, y0 + 5, x1, y1, graphics/onfocus/controls/win_close_onfocus_hover )" } }//
+//
+
+//        "CMusicPlayerPanel FrameMinimizeButton"
+//            { render_bg { 1="image( x0 + 5, y0 + 5, x1, y1, graphics/onfocus/controls/win_min_onfocus )" } }//
+
+//        "CMusicPlayerPanel FrameMinimizeButton:hover"
+//            { render_bg { 1="image( x0 + 5, y0 + 5, x1, y1, graphics/onfocus/controls/win_min_onfocus_hover )" } }//
+
+//        "CMusicPlayerPanel FrameMaximizeButton"
+//            { render_bg { } }//
+
+//        "CMusicPlayerPanel FrameRestoreButton"
+//            { render_bg { } }//
+
+//        "CMusicPlayerPanel FrameCloseButton"
+//            { render_bg { 1="image( x0 + 5, y0 + 5, x1, y1, graphics/onfocus/controls/win_close_onfocus )" } }//
+
+//        "CMusicPlayerPanel FrameCloseButton:hover"
+//            { render_bg { 1="image( x0 + 5, y0 + 5, x1, y1, graphics/onfocus/controls/win_close_onfocus_hover )" } }//
+//
+
+//        "CScreenshotManager FrameMinimizeButton"
+//            { render_bg { 1="image( x0 + 5, y0 + 5, x1, y1, graphics/onfocus/controls/win_min_onfocus )" } }//
+
+//        "CScreenshotManager FrameMinimizeButton:hover"
+//            { render_bg { 1="image( x0 + 5, y0 + 5, x1, y1, graphics/onfocus/controls/win_min_onfocus_hover )" } }//
+
+//        "CScreenshotManager FrameMaximizeButton"
+//            { render_bg { } }//
+
+//        "CScreenshotManager FrameRestoreButton"
+//            { render_bg { } }//
+
+//        "CScreenshotManager FrameCloseButton"
+//            { render_bg { 1="image( x0 + 5, y0 + 5, x1, y1, graphics/onfocus/controls/win_close_onfocus )" } }//
+
+//        "CScreenshotManager FrameCloseButton:hover"
+//            { render_bg { 1="image( x0 + 5, y0 + 5, x1, y1, graphics/onfocus/controls/win_close_onfocus_hover )" } }//
+//
+
+//        "CGamePropertiesDialog FrameMinimizeButton"
+//            { render_bg { 1="image( x0 + 5, y0 + 5, x1, y1, graphics/onfocus/controls/win_min_onfocus )" } }//
+
+//        "CGamePropertiesDialog FrameMinimizeButton:hover"
+//            { render_bg { 1="image( x0 + 5, y0 + 5, x1, y1, graphics/onfocus/controls/win_min_onfocus_hover )" } }//
+
+//        "CGamePropertiesDialog FrameMaximizeButton"
+//            { render_bg { } }//
+
+//        "CGamePropertiesDialog FrameRestoreButton"
+//            { render_bg { } }//
+
+//        "CGamePropertiesDialog FrameCloseButton"
+//            { render_bg { 1="image( x0 + 5, y0 + 5, x1, y1, graphics/onfocus/controls/win_close_onfocus )" } }//
+
+//        "CGamePropertiesDialog FrameCloseButton:hover"
+//            { render_bg { 1="image( x0 + 5, y0 + 5, x1, y1, graphics/onfocus/controls/win_close_onfocus_hover )" } }//
+//
+
+//        "CServerBrowserDialog FrameMinimizeButton"
+//            { render_bg { 1="image( x0 + 5, y0 + 5, x1, y1, graphics/onfocus/controls/win_min_onfocus )" } }//
+
+//        "CServerBrowserDialog FrameMinimizeButton:hover"
+//            { render_bg { 1="image( x0 + 5, y0 + 5, x1, y1, graphics/onfocus/controls/win_min_onfocus_hover )" } }//
+
+//        "CServerBrowserDialog FrameMaximizeButton"
+//            { render_bg { } }//
+
+//        "CServerBrowserDialog FrameRestoreButton"
+//            { render_bg { } }//
+
+//        "CServerBrowserDialog FrameCloseButton"
+//            { render_bg { 1="image( x0 + 5, y0 + 5, x1, y1, graphics/onfocus/controls/win_close_onfocus )" } }//
+
+//        "CServerBrowserDialog FrameCloseButton:hover"
+//            { render_bg { 1="image( x0 + 5, y0 + 5, x1, y1, graphics/onfocus/controls/win_close_onfocus_hover )" } }//
+
+//        //-------------------------------------------------------------------------------------------------------------------------------//
+//        //-------------------------------------------------------------------------------------------------------------------------------////
+
+//        "CPlayersDialog FrameMinimizeButton"
+//            { render_bg { } }//
+
+//        "CPlayersDialog FrameMaximizeButton"
+//            { render_bg { } }//
+
+//        "CPlayersDialog FrameRestoreButton"
+//            { render_bg { } }//
+
+//        "CPlayersDialog FrameCloseButton"
+//            { render_bg { 1="image( x0 + 5, y0 + 5, x1, y1, graphics/onfocus/controls/win_close_onfocus )" } }//
+
+//        "CPlayersDialog FrameCloseButton:hover"
+//            { render_bg { 1="image( x0 + 5, y0 + 5, x1, y1, graphics/onfocus/controls/win_close_onfocus_hover )" } }//
+//
+
+//        "CAddShortcutDialog FrameMinimizeButton"
+//            { render_bg { } }//
+
+//        "CAddShortcutDialog FrameMaximizeButton"
+//            { render_bg { } }//
+
+//        "CAddShortcutDialog FrameRestoreButton"
+//            { render_bg { } }//
+
+//        "CAddShortcutDialog FrameCloseButton"
+//            { render_bg { 1="image( x0 + 5, y0 + 5, x1, y1, graphics/onfocus/controls/win_close_onfocus )" } }//
+
+//        "CAddShortcutDialog FrameCloseButton:hover"
+//            { render_bg { 1="image( x0 + 5, y0 + 5, x1, y1, graphics/onfocus/controls/win_close_onfocus_hover )" } }//
+//
+
+//        "COverlayBroadcastChatDialog FrameMinimizeButton"
+//            { render_bg { } }//
+
+//        "COverlayBroadcastChatDialog FrameMaximizeButton"
+//            { render_bg { } }//
+
+//        "COverlayBroadcastChatDialog FrameRestoreButton"
+//            { render_bg { } }//
+
+//        "COverlayBroadcastChatDialog FrameCloseButton"
+//            { render_bg { 1="image( x0 + 5, y0 + 5, x1, y1, graphics/onfocus/controls/win_close_onfocus )" } }//
+
+//        "COverlayBroadcastChatDialog FrameCloseButton:hover"
+//            { render_bg { 1="image( x0 + 5, y0 + 5, x1, y1, graphics/onfocus/controls/win_close_onfocus_hover )" } }//
+//
+
+//        "COverlaySettingsDialog FrameMinimizeButton"
+//            { render_bg { } }//
+
+//        "COverlaySettingsDialog FrameMaximizeButton"
+//            { render_bg { } }//
+
+//        "COverlaySettingsDialog FrameRestoreButton"
+//            { render_bg { } }//
+
+//        "COverlaySettingsDialog FrameCloseButton"
+//            { render_bg { 1="image( x0 + 5, y0 + 5, x1, y1, graphics/onfocus/controls/win_close_onfocus )" } }//
+
+//        "COverlaySettingsDialog FrameCloseButton:hover"
+//            { render_bg { 1="image( x0 + 5, y0 + 5, x1, y1, graphics/onfocus/controls/win_close_onfocus_hover )" } }
+	}
+}

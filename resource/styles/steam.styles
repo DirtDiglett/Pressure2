@@ -4,6 +4,7 @@ steam.styles {
 	include "includes/settings.styles"
 	include "includes/fonts.styles"
 	include "includes/scrollbars.styles"
+		include "includes/window-controls.styles"
 	
 	colors {}
 

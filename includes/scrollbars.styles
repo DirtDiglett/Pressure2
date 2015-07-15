@@ -5,7 +5,7 @@ scrollbars.styles {
 
 	styles {
 		ScrollBar {
-        	inset="0 -12 1 -10"
+        	inset="0 -11 2 -11"
     	}
 
     	// The scrollbar gutter for vertical scrollbars.
@@ -22,23 +22,17 @@ scrollbars.styles {
 	        render {}
 	        render_bg {}
 	    }
-    
-
-
-
-
-
 
 		ScrollBarHandle {
 	        bgcolor=none
 	        
 	        render_bg{
 	            // center fill
-	            -1="fill(x0+1,y0,x1-1,y1, grey400)"
-	            0="fill(x0+1, y0, x0+2, y1, disabled_OnLightBG)" // Left
-	            1="fill(x0+1,y0,x1-1,y0+1, disabled_OnLightBG)" // Top
-	            2="fill(x1-2,y0,x1-1,y1, disabled_OnLightBG)" // Right
-	            3="fill(x0+1,y1-1,x1-1,y1, disabled_OnLightBG)" // Bottom
+	            -1="fill(x0+1,y0+1,x1-1,y1-1, grey400)"
+	            0="fill(x0+1, y0+1, x0+2, y1-1, disabled_OnLightBG)" // Left
+	            1="fill(x0+1,y0+1,x1-1,y0+2, disabled_OnLightBG)" // Top
+	            2="fill(x1-2,y0+1,x1-1,y1-1, disabled_OnLightBG)" // Right
+	            3="fill(x0+1,y1-2,x1-1,y1-1, disabled_OnLightBG)" // Bottom
 	        }
 	    }
  
@@ -47,11 +41,11 @@ scrollbars.styles {
 		        
 		        render_bg{
 		            // center fill
-		            -1="fill(x0+1,y0,x1-1,y1, grey300)"
-		            0="fill(x0+1, y0, x0+2, y1, disabled_OnLightBG)" // Left
-		            1="fill(x0+1,y0,x1-1,y0+1, disabled_OnLightBG)" // Top
-		            2="fill(x1-2,y0,x1-1,y1, disabled_OnLightBG)" // Right
-		            3="fill(x0+1,y1-1,x1-1,y1, disabled_OnLightBG)" // Bottom
+		            -1="fill(x0+1,y0+1,x1-1,y1-1, grey300)"
+		            0="fill(x0+1, y0+1, x0+2, y1-1, disabled_OnLightBG)" // Left
+		            1="fill(x0+1,y0+1,x1-1,y0+2, disabled_OnLightBG)" // Top
+		            2="fill(x1-2,y0+1,x1-1,y1-1, disabled_OnLightBG)" // Right
+		            3="fill(x0+1,y1-2,x1-1,y1-1, disabled_OnLightBG)" // Bottom
 		        }
 		    }      
 
@@ -60,11 +54,11 @@ scrollbars.styles {
 		        
 		        render_bg{
 		            // center fill
-		            -1="fill(x0+1,y0,x1-1,y1, grey500)"
-		            0="fill(x0+1, y0, x0+2, y1, disabled_OnLightBG)" // Left
-		            1="fill(x0+1,y0,x1-1,y0+1, disabled_OnLightBG)" // Top
-		            2="fill(x1-2,y0,x1-1,y1, disabled_OnLightBG)" // Right
-		            3="fill(x0+1,y1-1,x1-1,y1, disabled_OnLightBG)" // Bottom
+		            -1="fill(x0+1,y0+1,x1-1,y1-1, grey500)"
+		            0="fill(x0+1, y0+1, x0+2, y1-1, disabled_OnLightBG)" // Left
+		            1="fill(x0+1,y0+1,x1-1,y0+2, disabled_OnLightBG)" // Top
+		            2="fill(x1-2,y0+1,x1-1,y1-1, disabled_OnLightBG)" // Right
+		            3="fill(x0+1,y1-2,x1-1,y1-1, disabled_OnLightBG)" // Bottom
 		        }
 		    } 
     
@@ -167,16 +161,7 @@ scrollbars.styles {
         }
     }
     
-    "GamesPage_Details ListPanel ScrollBarSlider" // gutter in games list detail view 
-    {
-        bgcolor="none"
-        render{ }
-        render_bg
-        {
-            //background fill
-            0="gradient( x0 + 2, y0 + 6, x1 - 4, y0 + 200, scrollbg, none)"
-        }
-    }
+    "GamesPage_Details ListPanel ScrollBarSlider" {}
     
     ScrollBarSlider:disabled 
     {
@@ -193,14 +178,14 @@ scrollbars.styles {
     {
         bgcolor="none"
         render_bg { 
-            0="fill(x0,y0,x1, y1 - 1, almostblack)"
+            0="fill(x0,y0,x1, y1 - 1, red)"
         }
     }
     "HTML ScrollBar.Horizontal"
     {
         bgcolor="none"
         render_bg { 
-            0="fill(x0,y0,x1+25,y1, almostblack)"
+            0="fill(x0,y0,x1+25,y1, red)"
         }
     }
     
@@ -209,7 +194,7 @@ scrollbars.styles {
         bgcolor=none
         render_bg {
             //background fill
-            0="gradient_horizontal( x0 + 6, y0 + 5, x0 + 200, y1 - 2, dark, none)"
+            0="gradient_horizontal( x0 + 6, y0 + 5, x0 + 200, y1 - 2, red, none)"
         }
 
     }
