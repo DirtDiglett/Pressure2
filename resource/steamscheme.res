@@ -12,14 +12,14 @@ Scheme {
 				xpos	0
 				ypos	0
 				wide	max
-				tall	40
+				tall	34
 				AutoResize	1
 			}
 			frame_captiongrip {
 				xpos	0
 				ypos	0
 				wide	r2
-				tall	40
+				tall	34
 				AutoResize	1
 			}
 			frame_minimize {
@@ -65,7 +65,7 @@ Scheme {
 		PropertyDialog {
 			sheet {
 				xpos	9
-				ypos	45
+				ypos	40
 				wide	r9
 				tall	r39
 			}
@@ -84,7 +84,7 @@ Scheme {
 				tall	34
 			}
 			OKButton {
-				xpos	r304
+				xpos	r320
 				ypos	r39
 				wide	111
 				tall	34
@@ -93,7 +93,7 @@ Scheme {
 		WizardPanel {
 			subpanel {
 				xpos	10
-				ypos	45
+				ypos	40
 				wide	r10
 				tall	r48
 				AutoResize	3
@@ -126,9 +126,6 @@ Scheme {
 				tall	28
 				PinCorner	3
 			}
-		}
-		QueryBox {
-
 		}
 	}
 	Fonts {
