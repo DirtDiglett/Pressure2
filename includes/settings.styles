@@ -1,7 +1,7 @@
 settings.styles {
 	colors {
 		Frame.ClientInsetX = 0
-	    Frame.ClientInsetY = 40
+	    Frame.ClientInsetY = 45
 	    Frame.FocusTransitionEffectTime = 0 // time it takes for a window to fade in/out on focus/out of focus
 	    Frame.TransitionEffectTime = 0.25 // time it takes for a window to fade in/out on open/close
 	    Frame.OnDragAlphaDelayTime = 0.15 // time it takes after clicking the title bar of a window before the alpha multiplier kicks in
@@ -36,8 +36,6 @@ settings.styles {
 
    		RichText.InsetX = 8
 	    RichText.InsetY = 7
-
-	    ScrollBar.Wide = 19
 	    
 	    SectionedListPanel.CollapserWidth = 16
 	    
