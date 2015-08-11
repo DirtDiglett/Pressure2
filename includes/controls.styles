@@ -1,0 +1,161 @@
+controls.styles {
+	colors {}
+
+	styles {
+        CheckButton {
+            font-family=basefont
+            font-size=15
+            font-weight=400
+            textcolor="text_OnLightBG"
+            image="graphics/controls/checkbox/unchecked"
+        }
+      
+        CheckButton:selected {
+            image="graphics/controls/checkbox/checked"    
+        }
+
+        CheckButton:focus{
+            image="graphics/controls/checkbox/unchecked"  
+        }
+
+        CheckButton:selected:focus {
+            image="graphics/controls/checkbox/checked"
+        }
+        
+        CheckButton:disabled {
+            textcolor="disabled_OnLightBG"
+            image="graphics/controls/checkbox/unchecked_disabled"
+        }
+        
+        CheckButton:selected:disabled {
+            textcolor="disabled_OnLightBG"
+            image="graphics/controls/checkbox/checked_disabled"
+        }
+
+
+
+
+
+        RadioButton {
+            font-family=basefont
+            font-size=15
+            font-weight=400
+            textcolor="text_OnLightBG"
+            image="graphics/controls/radio/unchecked"
+        }     
+      
+        RadioButton:selected {
+            image="graphics/controls/radio/checked" 
+        }
+        
+        RadioButton:focus {
+            image="graphics/controls/radio/unchecked"
+        }
+
+        RadioButton:selected:focus {
+            image="graphics/controls/radio/checked"
+        }
+
+        RadioButton:disabled {
+            textcolor="disabled_OnLightBG"
+            image="graphics/controls/radio/unchecked_disabled"
+        }
+        
+        RadioButton:selected:disabled {
+            textcolor="disabled_OnLightBG"
+            image="graphics/controls/radio/checked_disabled"
+        }
+
+
+
+
+        TextEntry {
+            font-family=basefont
+            font-size=18
+            textcolor="text_OnLightBG"
+            font-weight=400
+            bgcolor=white
+            selectedtextcolor=white
+            selectedbgcolor=blue500
+            shadowtextcolor=disabled_OnLightBG
+            inset-left=3
+
+            render {
+                0="fill(x0, y0, x0+1, y1, grey200)" // Left
+                1="fill(x0, y0, x1, y0+1, grey200)" // Top
+                2="fill(x1-1, y0, x1, y1, grey200)" // Right
+                3="fill(x0, y1-1, x1, y1, grey200)" // Bottom
+            }
+        }
+            
+            TextEntry:focus {}
+
+            TextEntry:disabled {
+                textcolor=disabled_OnLightBG
+            }
+        
+        "Page TextEntry" {}
+            "Page TextEntry:focus" {}
+
+        // This style applies to things like "Search" AKA Hint Text
+        TextEntry:empty {
+            font-style=italic
+            textcolor=disabled_OnLightBG
+        }
+
+        TextEntryLarge {
+          font-size=22  
+        }
+
+            TextEntryLarge:focus {}
+            
+            TextEntryLarge:disabled {}
+    
+        TextEntryURL {
+            font-family=basefont
+            font-size=15
+            textcolor="blue500"
+            font-weight=400
+            selectedtextcolor="blue500"
+            selectedbgcolor="white"
+            shadowtextcolor="disabled_OnLightBG"         
+        }
+
+            TextEntryURL:Hover {
+                textcolor="blue300"          
+            }
+
+
+
+
+
+
+
+
+
+        Button {     
+            font-family=basefont
+            font-size=16
+            font-weight=600
+            textcolor="blue500"
+            font-style=uppercase
+            bgcolor=none
+            inset-top=3
+            
+            render_bg {
+               0="image(x0-5,y0-4,x0,y0, graphics/material/buttons/white/topleft)" // Top Left
+               1="image(x1,y0-4,x1+5,y0, graphics/material/buttons/white/topright)" // Top Right
+               2="image(x0-5,y1,x0,y1+6, graphics/material/buttons/white/bottomleft)"
+               3="image(x1, y1, x1+5, y1+6, graphics/material/buttons/white/bottomright)"
+
+               4="image_tiled(x0-5,y0,x0,y1, graphics/material/buttons/white/leftmiddle)"
+               5="image_tiled(x1,y0,x1+5,y1, graphics/material/buttons/white/rightmiddle)"
+               6="image_tiled(x0,y0-4,x1, y0, graphics/material/buttons/white/topmiddle)"
+               7="image_tiled(x0, y1, x1, y1+6, graphics/material/buttons/white/bottommiddle)"
+
+               8="fill(x0,y0,x1,y1, white)"
+            }
+      }
+
+    }
+}

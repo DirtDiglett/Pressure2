@@ -307,20 +307,7 @@
           image="graphics/icon_right_hover"    
         }
         
-      Button
-      {     
-        font-family=basefont
-        font-size=13
-        font-weight=400
-        textcolor="Text"
-        font-style=uppercase
-        bgcolor=none
-            render_bg
-            {
-                // background fill
-                0="gradient( x0, y0, x1, y1, buttonface2, propertysheetbg )"
-            }
-      }
+      
      
     "Page Button"
     {     
@@ -463,49 +450,7 @@
       textcolor="label"
     }
 
-    CheckButton
-    {
-      font-family=basefont
-      font-size=14
-      font-weight=400
-      textcolor="Label"
-      image="graphics/chkUnselStd"
-    }
-  
-    CheckButton:selected
-    {
-      image="graphics/chkSelStd"    
-    }
-
-    CheckButton:focus
-    {
-      textcolor="Text"
-      bgcolor=none
-      image="graphics/chkUnselFocus"  
-    }
-
-    CheckButton:selected:focus
-    {
-      textcolor="Texthover"
-      render_bg {}
-      bgcolor=none
-      image="graphics/chkSelFocus"
-    }
     
-    CheckButton:disabled
-    {
-      textcolor="TextDisabled"
-      bgcolor=none
-      image="graphics/chkUnselDis"
-    }
-    
-    CheckButton:selected:disabled
-    {
-      textcolor="TextDisabled"
-      bgcolor=none
-      //!! bug - this needs to look disabled
-      image="graphics/chkSelDis"
-    }
 
     IndeterminateCheckButton
     {
@@ -750,26 +695,11 @@
       }
     }
     
-    Divider
-    {
-      bgcolor="none"
-      render
-      {
-       0="gradient_horizontal( x0, y1 - 1, x1, y1, divider, propertysheetbg )"     
-      }
-    }
+   
     
     
     
-    FrameBRGripPanel
-    {
-      image=graphics/resizer
-    }
     
-    FrameBRGripPanel:hover
-    {
-      image=graphics/resizer_over
-    }
     
    
 
@@ -809,15 +739,6 @@
     inset="2 2 2 2" 
     }
     
-    Label
-        {
-        textcolor="Label"
-        selectedtextcolor="Text"
-        bgcolor="none"
-        font-family=basefont
-        font-size=14
-        font-weight=400
-        }
    
     ListPanel
     {
@@ -1397,34 +1318,18 @@
     {
         textcolor="Label"
         selectedtextcolor="Text"
-        bgcolor="none"
+        bgcolor="lightgreen500"
         font-family=basefont
         font-size=21
         font-weight=700
         font-style="uppercase"
     }
 
-    Menu
-    {
-        bgcolor="MenuBG2"
-        padding-right=4
-        inset="2 2 2 2"
-      
-        render_bg
-        {
-            0="gradient( x0, y0, x1, y0 + 140, MenuBG1, MenuBG2 )"
-            1="fill( x0, y0 + 140, x1, y1, MenuBG2 )"
-
-
-        }
-      
-        render {}
-        corner_rounding=1
-    }
+    
       
     MenuBar
     {
-        bgcolor=dialogbg
+        bgcolor=red500
         padding-right=1
         padding-left=6
         padding-top=2
@@ -1486,77 +1391,12 @@
         textcolor="white"
     }
         
-    MenuItem
-    {
-        font-family=basefont
-        textcolor="label"
-        font-size=14
-        font-weight=400
-        inset="0 0 0 0"
-        padding-right=6
-        bgcolor="none"
-        render_bg {}
-    }
-   
-  MenuItem:selected
-    {
-        textcolor="TextHover"
-        bgcolor="none"
-    }
     
-  MenuItem:hover
-    {
-        textcolor="white"
-        bgcolor="none"
-    }
-    
-    MenuItem:disabled
-    {
-        textcolor="labeldisabled"
-        shadowtextcolor=none
-    }
-    
-    MenuItem:disabled:hover
-    {
-        textcolor="labeldisabled"
-        shadowtextcolor=none
-    }
-   
-    MenuSeparator
-    {
-        inset="-4 0 0 0"    
-        textcolor="divider"
-        bgcolor=none
-    }
-
-    Notification
-    {
-        font-family=basefont
-        font-size=15
-        font-weight=400
-        bgcolor=none
-        render_bg
-        {
-            0="gradient( x0, y0, x1, y0+80, DialogBG, ClientBG )"
-        
-            1="gradient_horizontal( x0, y1-1, x1, y1, ClientBG, Highlight5 )"    // bottom
-            2="gradient( x1-1, y0, x1, y1 , ClientBG, Highlight5 )" // right
-            3="fill( x0, y0, x1, y0+1, ClientBG )"  // top
-            4="fill( x0, y0, x0+1, y1, ClientBG )" // left
-        }
-        render {}
-    }
 
     
-    Page
-    {
-        bgcolor="none"
-        render_bg
-        {
-            // background gradient
-            0="gradient( x0, y0 + 18, x1, y1, DialogBG, PropertySheetBG )"
-        }
-    }
+
+    
+
 
     "CSteamRootDialog Page"
     {
@@ -1659,14 +1499,7 @@
         image="graphics/tiny_x_hover"
     }
     
-    Panel
-    { 
-        font-family=basefont
-        font-size=14
-        font-weight=400
-        textcolor="Text"
-        bgcolor="none"
-  }
+    
             
     ProgressBar
     {
@@ -1696,46 +1529,14 @@
         }   
     }
     
-    PropertyPage
-    {
-        bgcolor="PropertySheetBG"
-    }
+    
     
     "CFriendsDialog PropertySheet"
     {
         bgcolor="none"
     }
     
-    RadioButton
-    {
-        font-family=basefont
-        font-size=14
-        font-weight=400
-        textcolor="Label"
-        render_bg {}
-        image="graphics/RadUnselStd"
-        bgcolor=none
-    }     
-  
-    RadioButton:selected
-    {
-        render_bg {}
-        image="graphics/radSelStd"  
-    }
-    
-    RadioButton:focus
-    {
-        textcolor="Texthover"
-        bgcolor=none
-        image="graphics/radSelDown"
-    }
-
-    RadioButton:selected:focus
-    {
-        textcolor="Texthover"  
-        bgcolor=none
-        image="graphics/radSelFocus"
-    }
+   
     
     RadioButtonList
     {
@@ -1747,17 +1548,17 @@
             }     
     }
         
-    RichText
-    {
-        textcolor="Text"
-        selectedtextcolor="TextSelected"        
+    RichText {
+        textcolor="text_OnLightBG"
+        selectedtextcolor="text_OnLightBG"        
         font-family=basefont
         font-size=14
         font-weight=400
         inset="-1 -1 0 0"
+       
         render_bg
         {
-        -1="fill( x0 + 1, y0 + 1, x1 - 1, y1 - 1, DialogBG )"
+        -1="fill( x0 + 1, y0 + 1, x1 - 1, y1 - 1, red )"
         
         // lines around
         1="fill( x0 + 1, y0 + 1, x1 - 1, y0 + 2, ButtonBorder )"  // top
@@ -1913,172 +1714,7 @@
       font-style=uppercase
     }    
 
-    TextEntry
-    {
-      font-family=basefont
-      font-size=14
-      textcolor="Text"
-      font-weight=400
-      bgcolor="none"
-      selectedtextcolor="white"
-      selectedbgcolor="TextSelectedBG"
-      shadowtextcolor="text"  // this is the cursor color
 
-      inset-left=4
-      inset-top=0
-      render
-      {
-
-            // lines around
-        1="fill( x0 + 1, y0 + 1, x1 - 1, y0 + 2, ButtonBorder )"  // top
-        2="fill( x0 + 1, y1 - 2, x1 - 1, y1 - 1, ButtonBorder )"  // bottom
-        3="fill( x0 + 1, y0 + 1, x0 + 2, y1 - 1, ButtonBorder )"  // left
-        4="fill( x1 - 2, y0 + 1, x1 - 1, y1 - 1, ButtonBorder )"  // right
-       
-      }     
-    }
-    
-    "Page TextEntry"
-    {
-      render
-      {
-
-            // lines around
-        1="fill( x0 + 1, y0 + 1, x1 - 1, y0 + 2, ButtonBorder )"  // top
-        2="fill( x0 + 1, y1 - 2, x1 - 1, y1 - 1, ButtonBorder )"  // bottom
-        3="fill( x0 + 1, y0 + 1, x0 + 2, y1 - 1, ButtonBorder )"  // left
-        4="fill( x1 - 2, y0 + 1, x1 - 1, y1 - 1, ButtonBorder )"  // right
-      }     
-    }
-    
-    TextEntry:focus
-    {     
-        textcolor="TextHover"
-        bgcolor=none
-        render
-        {
-            // lines around
-        1="fill( x0 + 1, y0 + 1, x1 - 1, y0 + 2, ButtonBorderFocus )"  // top
-        2="fill( x0 + 1, y1 - 2, x1 - 1, y1 - 1, ButtonBorderFocus )"  // bottom
-        3="fill( x0 + 1, y0 + 1, x0 + 2, y1 - 1, ButtonBorderFocus )"  // left
-        4="fill( x1 - 2, y0 + 1, x1 - 1, y1 - 1, ButtonBorderFocus )"  // right
-        }     
-    }
-       
-    "Page TextEntry:focus"
-    {     
-      textcolor="TextHover"
-      render
-      {
-            // lines around
-        1="fill( x0 + 1, y0 + 1, x1 - 1, y0 + 2, ButtonBorderFocus )"  // top
-        2="fill( x0 + 1, y1 - 2, x1 - 1, y1 - 1, ButtonBorderFocus )"  // bottom
-        3="fill( x0 + 1, y0 + 1, x0 + 2, y1 - 1, ButtonBorderFocus )"  // left
-        4="fill( x1 - 2, y0 + 1, x1 - 1, y1 - 1, ButtonBorderFocus )"  // right
-      }     
-    }
-    
-    
-    TextEntry:disabled
-    {     
-      textcolor="TextDisabled"
-      bgcolor="ButtonFaceDisabled"
-      render
-      {
-            // lines around
-        1="fill( x0 + 1, y0 + 1, x1 - 1, y0 + 2, ButtonBorderDisabled )"  // top
-        2="fill( x0 + 1, y1 - 2, x1 - 1, y1 - 1, ButtonBorderDisabled )"  // bottom
-        3="fill( x0 + 1, y0 + 1, x0 + 2, y1 - 1, ButtonBorderDisabled )"  // left
-        4="fill( x1 - 2, y0 + 1, x1 - 1, y1 - 1, ButtonBorderDisabled )"  // right
-      }     
-    }
-    
-    // The 'empty' style is used for 'hint text' in text entry fields.
-    // If the text box does not have focus and does not have content, a
-    // hint text property will be shown with this style. This is comment
-    // to pre-fill to box with something like 'Search' that goes away when active
-    TextEntry:empty
-    {
-        font-style=italic
-        textcolor=LabelDisabled
-    }
-    
-    TextEntryLarge
-    {
-      font-family=basefont
-      font-size=18
-      textcolor="Text"
-      font-weight=400
-      bgcolor="none"
-      selectedtextcolor="TextEntrySelected"
-      selectedbgcolor="TextSelectedBG"
-      shadowtextcolor="text"  // this is the cursor color
-
-      inset-left=4
-      render
-      {
-        // lines around
-        1="fill( x0 + 1, y0 + 1, x1 - 1, y0 + 2, ButtonBorder )"  // top
-        2="fill( x0 + 1, y1 - 2, x1 - 1, y1 - 1, ButtonBorder )"  // bottom
-        3="fill( x0 + 1, y0 + 1, x0 + 2, y1 - 1, ButtonBorder )"  // left
-        4="fill( x1 - 2, y0 + 1, x1 - 1, y1 - 1, ButtonBorder )"  // right
-      }     
-    }
-
-    TextEntryLarge:focus
-    {     
-      textcolor="TextHover"
-      render
-      {
-        // lines around
-        1="fill( x0 + 1, y0 + 1, x1 - 1, y0 + 2, ButtonBorderFocus )"  // top
-        2="fill( x0 + 1, y1 - 2, x1 - 1, y1 - 1, ButtonBorderFocus  )"  // bottom
-        3="fill( x0 + 1, y0 + 1, x0 + 2, y1 - 1, ButtonBorderFocus  )"  // left
-        4="fill( x1 - 2, y0 + 1, x1 - 1, y1 - 1, ButtonBorderFocus  )"  // right
-      }     
-    }
-    
-    TextEntryLarge:disabled
-    {     
-      textcolor="TextDisabled"
-      bgcolor="ButtonFaceDisabled"
-      render
-      {
-        // lines around
-        1="fill( x0 + 1, y0 + 1, x1 - 1, y0 + 2, ButtonBorderDisabled )"  // top
-        2="fill( x0 + 1, y1 - 2, x1 - 1, y1 - 1, ButtonBorderDisabled )"  // bottom
-        3="fill( x0 + 1, y0 + 1, x0 + 2, y1 - 1, ButtonBorderDisabled )"  // left
-        4="fill( x1 - 2, y0 + 1, x1 - 1, y1 - 1, ButtonBorderDisabled )"  // right
-      }     
-    }
-    
-    TextEntryURL
-    {
-        font-family=basefont
-        font-size=14
-        textcolor="text"
-        font-weight=400
-        bgcolor="none"
-        selectedtextcolor="TextEntrySelected"
-        selectedbgcolor="TextSelectedBG"
-        shadowtextcolor="Text"  // this is the cursor color
-        inset-left=0
-        inset-top=-1
-        render { }          
-    }
-
-    TextEntryURL:Hover
-    {
-        textcolor="texthover"
-        render
-        {
-            // lines around
-        1="fill( x0 + 1, y0 + 1, x1 - 1, y0 + 2, ButtonFaceDisabled )"  // top
-        2="fill( x0 + 1, y1 - 2, x1 - 1, y1 - 1, ButtonFaceDisabled )"  // bottom
-        3="fill( x0 + 1, y0 + 1, x0 + 2, y1 - 1, ButtonFaceDisabled )"  // left
-        4="fill( x1 - 2, y0 + 1, x1 - 1, y1 - 1, ButtonFaceDisabled )"  // right
-        }           
-    }
     
     ToggleButton
     {
@@ -2177,28 +1813,7 @@
       }
     }
     
-    // the background and frame of a tooltip
-    TooltipWindow
-    {
-        bgcolor="MenuBG1"
-    }
 
-    // body text inside a tooltip
-    "TooltipWindow Label"
-    {
-        padding-left=4
-        textcolor="Text"
-    }
-    
-    // headline text inside a tooltip
-    tooltip_headline
-    {
-        textcolor="TextSelected"
-        padding-left=4
-        padding-top=1
-        padding-bottom=0
-        font-weight=1000        
-    }
     
     TreeNode
     {
@@ -2256,21 +1871,7 @@
       }     
     }
     
-    URLLabel
-    {
-      textcolor="label"
-      bgcolor="none"
-      font-family=basefont
-      font-size=14
-      font-weight=400
-      font-style=underline
-    }
     
-    URLLabel:Hover
-    {
-     textcolor="texthover"
-     font-size=14
-    }
     
     URLLabelSimple
     {
@@ -2383,7 +1984,7 @@
       bgcolor=none
       render_bg {
         // background gradient
-        1="gradient( x0, y0, x1, y0 + 240, propertysheetbg, DarkDialogBG )"
+        1="gradient( x0, y0, x1, y0 + 240, red, red )"
         2="fill( x0, y0 + 240, x1, y1, DarkDialogBG )"
             }
         inset="1 -1 1 1"  
@@ -2564,25 +2165,7 @@
     }
     
   
-    gamedetails-headerlabel
-    {
-        font-size="17"
-        font-style="normal"
-        font-family=basefont
-        font-weight=700
-        textcolor="Text"
-        font-style="uppercase;"
-    }
-
-    gamedetails-headerlabel-red
-    {
-        font-size="17"
-        font-style="normal"
-        font-family=basefont
-        font-weight=700
-        textcolor="GameDetailsRed"
-        font-style="uppercase;"
-    }
+    
  
     "html-findbar"
     {
@@ -2627,26 +2210,7 @@
                 2="gradient_horizontal( x0, y1 - 1, x1, y1, ButtonBorder, none )"
               }         
     }
-        
-    gamedetails-headerlabel-green
-    {
-        font-size="17"
-        font-style="normal"
-        textcolor="GameDetailsGreen"
-        font-family=basefont
-        font-weight=700
-        font-style="uppercase;"
-    }
-
-    gamedetails-headerlabel-blue
-    {
-        font-size="17"
-        font-style="normal"
-        textcolor="GameDetailsBlue"
-        font-family=basefont
-        font-weight=700
-        font-style="uppercase;"
-    }
+     
     
     // styles for text used in RichText controls in various places
     
@@ -2671,133 +2235,8 @@
         selectedbgcolor="Focus"
     }
     
-    friends_chat_text
-    {
-        textcolor="text"
-        selectedtextcolor="TextentrySelected"   
-        SelectedBgColor="focus"
-        font-size=16
-    }
-    
-    friends_chat_text_self
-    {
-        textcolor="ChatOwnTextColor"
-        selectedtextcolor="TextentrySelected"   
-        selectedbgcolor="focus"
-        font-size=16
-    }
-
-    friends_chat_history
-    {
-        textcolor="ChatDialog.HistoryColor"
-        selectedtextcolor="TextentrySelected"   
-        selectedbgcolor="focus"
-        font-size=16
-    }
-    
-    friends_chat_event
-    {
-        textcolor="Text"
-        font-size=16
-        selectedtextcolor="TextentrySelected"
-        selectedbgcolor="focus"
-    }
-
-    friends_chat_bright_event
-    {
-        textcolor="text"
-        selectedtextcolor="TextentrySelected"
-        font-size=16
-        font-weight=1000
-    }
-
-    friends_chat_url
-    {
-        textcolor="text"
-        SelectedBgColor="focus"
-        font-style=underline
-        font-size=16
-        selectedtextcolor="TextentrySelected"
-        selectedbgcolor="focus"
-    }
-    
-    friends_chat_name_ingame
-    {
-        textcolor="Friends.InGameColor"
-        selectedtextcolor="TextentrySelected"   
-        selectedbgcolor="focus"
-        font-size=16
-    }
-
-    friends_chat_name_golden
-    {
-        textcolor="Friends.GoldenColor"
-        selectedtextcolor="TextentrySelected"   
-        selectedbgcolor="focus"
-        font-size=16
-    }
-
-    
-    friends_chat_self
-    {
-        textcolor="Friends.OnlineColor"
-        selectedtextcolor="TextentrySelected"   
-        selectedbgcolor="focus"
-        font-size=16
-    }
-    
-    friends_chat_name
-    {
-        textcolor="Friends.OnlineColor"
-        selectedtextcolor="TextentrySelected"   
-        selectedbgcolor="focus"
-        font-size=16
-    }
-    
-    friends_chat_accountid
-    {
-        selectedtextcolor="TextentrySelected"   
-        selectedbgcolor="focus"
-        textcolor="text"
-        font-size=16
-    }
-    
-    friends_chat_securitylink
-    {
-        textcolor="text"
-        bgcolor="none"
-        font-family=basefont
-        font-size=16
-        font-weight=400
-        font-style=underline
-        selectedtextcolor="TextSelected"    
-        selectedbgcolor="Focus"
-    }
-    
-        CChatRoomDlg
-        {           
-            bgcolor="none"
-
-            render
-            {
-
-            }
-            render_bg
-            {
-
-            }
-
-        }
+   
         
-        ChatListPanel
-        {   
-        render {}
-
-        render_bg
-            {
-                         0="gradient( x0, y0, x1 -16, y1, darkdialogbg, almostblack )"
-            }
-        }
             
     
     Chat_MenuButton_withChrome
@@ -2827,51 +2266,7 @@
       }
     }    
     
-    // used in friends tooltip and friends list for overriding regular styles with custom colors
-    friends_offline
-    {
-        textcolor="Friends.OfflineColor"
-    }
-    
-    friends_offline:hover
-    {
-        textcolor="Friends.OfflineHoverColor"
-    }
-    
-    friends_online
-    {
-        textcolor="Friends.OnlineColor"
-    }
-    
-    friends_online:hover
-    {
-        textcolor="Friends.OnlineHoverColor"
-    }
-    
-    friends_ingame
-    {
-        textcolor="Friends.InGameColor"
-    }
-        
-    friends_ingame:hover
-    {
-        textcolor="Friends.InGameHoverColor"
-    }
-
-    friends_golden
-    {
-        textcolor="Friends.GoldenColor"
-    }
-        
-    friends_golden:hover
-    {
-        textcolor="Friends.GoldenHoverColor"
-    }
-    
-    friends_ignored
-    {
-        textcolor="Friends.IgnoredColor"
-    }
+   
 
     
     TabPageCloseButton
@@ -2879,54 +2274,7 @@
         padding-right=16
     }
 
-    SuperNavMenu
-    {
-        padding-left=8
-        padding-right=8
-
-        render {}
-
-        render_bg
-        {
-            // top area and graphic
-            0="fill( x0, y0, x1, y1, MenuBg )"
-            1="image( x0, y0, x1, y1, graphics/clienttexture8)"
-            
-                                // lines around
-                2="fill( x0 + 1, y0, x1 - 1, y0 + 1, blueborder )"  // top
-                3="fill( x0 + 1, y1 - 1, x1 - 1, y1, blueborder )"  // bottom
-                4="fill( x0, y0 + 1, x0 + 1, y1 - 1, blueborder )"  // left
-                5="fill( x1 - 1, y0 + 1, x1, y1 - 1, blueborder )"  // right
-        }
-    }
-
-    SuperNavMenuItem
-    {
-        padding=1
-        font-size=14
-        font-weight=regular
-        textcolor="label"
-        bgcolor=none
-        font-style="uppercase"
-    }
-
-    SuperNavMenuItem:selected
-    {
-        textcolor="SuperNav"
-    }
-
-    SuperNavMenuItem:hover
-    {
-        textcolor="SuperNavHover"
-    }
-
-    "SuperNavMenuDivider"
-    {
-        textcolor="none"
-        render {
-            1="fill( x0+6, y0+1, x1-6, y0+2, SuperDivider )"
-        }
-    }
+    
     
     "NotifyRemoteClientTitle"
     {
