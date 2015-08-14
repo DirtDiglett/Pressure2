@@ -1,715 +1,470 @@
 "resource/layout/steamrootdialog.layout" {
-	styles {    		
-			
-		AccountBalanceStyle
-		{
-		      textcolor="labeldisabled"
-		      bgcolor="none"
-		      font-family=basefont
-		      font-size=14
-		      font-weight=400
-		      font-style=regular
+	styles {    
+		AccountBalanceSeparatorStyle {}
+		AddGameButton {}
+			AddGameButton:hover {}	
+		FullscreenButton {}
+		VRButton {}    
+		VRButtonExit {}
+		AccountURLStyle {}
+			AccountURLStyle:hover {}
+			AccountURLStyle:selected {}
+			AccountURLStyle:disabled {}
+
+		AccountBalanceStyle {
+	      font-family=basefont
+	      font-size=14
+	      font-style=normal
+	      font-weight=400
+	      textcolor="orange500"
 		}
 
-		AccountBalanceStyle [$OSX]
-		{
-		      textcolor="labeldisabled"
-		      bgcolor="none"
-		      font-family=basefont
-		      font-size=13
-		      font-weight=400
-		      font-style=regular
-		      inset="0 1 0 0"
-		}
-    
-    AccountBalanceStyle:Hover
-		{
-		      textcolor="texthover"
-		}  
+   			AccountBalanceStyle:Hover {
+		      textcolor="orange300"
+			}  
 		
-		AccountBalanceSeparatorStyle
-		{
-					textcolor="ScrollGlyphDisabled"
-					font-family=basefont
-					font-size=13
-					font-weight=400
-		      font-style=regular
-					inset="0 0 0 0"
-		}
-		
-		
-		new_label	
-		{			
-			bgcolor=none
-			render_bg={}
-			image="graphics/new_button"
-			inset="0 0 0 0"
-		}
-		
-		new_label:hover
-		{
-			bgcolor=none
-			render_bg={}
-			image="graphics/new_button_hover"
-			inset="0 0 0 0"
-		}
-
-		new_label_german
-		{
-			bgcolor=none
-			render_bg={}
-			image="graphics/new_button_german"
-			inset="0 0 0 0"
-		}
-
-		new_label_german:hover
-		{
-			bgcolor=none
-			render_bg={}
-			image="graphics/new_button_hover_german"
-			inset="0 0 0 0"
-		}
-
-		new_label_french
-		{
-			bgcolor=none
-			render_bg={}
-			image="graphics/new_button_french"
-			inset="0 0 0 0"
-		}
-
-		new_label_french:hover
-		{
-			bgcolor=none
-			render_bg={}
-			image="graphics/new_button_hover_french"
-			inset="0 0 0 0"
-		}
-		
-		new_label_italian
-		{
-			bgcolor=none
-			render_bg={}
-			image="graphics/new_button_italian"
-			inset="0 0 0 0"
-		}
-
-		new_label_italian:hover
-		{
-			bgcolor=none
-			render_bg={}
-			image="graphics/new_button_hover_italian"
-			inset="0 0 0 0"
-		}
-		
-		new_label_spanish
-		{
-			bgcolor=none
-			render_bg={}
-			image="graphics/new_button_spanish"
-			inset="0 0 0 0"
-		}
-
-		new_label_spanish:hover
-		{
-			bgcolor=none
-			render_bg={}
-			image="graphics/new_button_hover_spanish"
-			inset="0 0 0 0"
-		}
-		
-		new_label_danish
-		{
-			bgcolor=none
-			render_bg={}
-			image="graphics/new_button_danish"
-			inset="0 0 0 0"
-		}
-
-		new_label_danish:hover
-		{
-			bgcolor=none
-			render_bg={}
-			image="graphics/new_button_hover_danish"
-			inset="0 0 0 0"
-		}
-		
-		new_label_norwegian
-		{
-			bgcolor=none
-			render_bg={}
-			image="graphics/new_button_norwegian"
-			inset="0 0 0 0"
-		}
-
-		new_label_norwegian:hover
-		{
-			bgcolor=none
-			render_bg={}
-			image="graphics/new_button_hover_norwegian"
-			inset="0 0 0 0"
-		}
-		
-		new_label_swedish
-		{
-			bgcolor=none
-			render_bg={}
-			image="graphics/new_button_swedish"
-			inset="0 0 0 0"
-		}
-
-		new_label_swedish:hover
-		{
-			bgcolor=none
-			render_bg={}
-			image="graphics/new_button_hover_swedish"
-			inset="0 0 0 0"
-		}
-		
-		RootMenu
-		{
-			bgcolor="none"
-		}
-
-		AddGameButton
-		{
-			font-size=14
-			font-size=13 [$OSX]
-			font-family=basefont
-			textcolor="labelfocus"
-			padding-right=30
-			padding-left=17
-			font-style=uppercase
-			render_bg
-			{
-				0="image( x0 + 2, y0 + 7, x1, y1, graphics/icon_collapse )"
-			}
-		}
-		
-		AddGameButton:hover
-		{
-			textcolor="white"
-			render_bg
-			{
-				0="image( x0 + 2, y0 + 7, x1, y1, graphics/icon_collapse_over )"
-			}
-		}	
-		
-
-
-		CSteamRootDialog
-		{
+		CSteamRootDialog {
 			bgcolor=custombackgroundnofocus
 
 			render {}
 
 			render_bg {
 				// fill in the bottom area
-				5="fill( x0, y1 - 46, x1, y1, customgreyprimary )"
-				6="fill(x0, y1-46, x1, y1-45, customgreyaccent)"
+				0="fill( x0, y1 - 46, x1, y1, customgreyprimary )"
+				1="fill(x0, y1-46, x1, y1-45, customgreyaccent)"
+				// Apply the bottom shadow
+				10="image_tiled(x0,y1-50,x1,y1-46, graphics\material\shadows\bottom)"
 			}
 		}	
 
-		CSteamRootDialog:FrameFocus {
-			bgcolor=custombackgroundprimary
-		}	
-
+			CSteamRootDialog:FrameFocus {
+				bgcolor=custombackgroundprimary
+			}	
 
 		FrameTitle {
-				inset="4 3 0 0"
-				padding-right="64"
-				font-weight=400
-				textcolor="disabled_OnDarkBG"
-				bgcolor="customgreyprimary"
-				font-family=basefont
-				font-size=24
-				minimum-height=55
+			bgcolor="customgreyprimary"
+			font-family=basefont
+			font-size=24
+			font-weight=400
+			inset="0 0 0 0"
+			minimum-height=55
+			textcolor="disabled_OnDarkBG"
 
-				render_bg {
-					// Adds the 1 pixel highlight on the top of the title bar.
-					0="fill(x0,y0,x1,y0+1, customgreyaccent)"
-				}
+			render_bg {
+				// Adds the 1 pixel highlight on the top of the title bar.
+				0="fill(x0,y0,x1,y0+1, customgreyaccent)"
+			}
 		}
 		
 			FrameTitle:framefocus {
-					textcolor="white"
+				textcolor="white"
 			}
+		
+		RootMenu {
+			bgcolor=none
+			inset="0 0 0 0"
+			padding=0
+		}
 
+		"MenuBar MenuButton" {
+			bgcolor="none"
+			minimum-height=35
+			minimum-width=35
+			textcolor=none
 
+			render_bg {
+				0="image(x0,y0,x1,y1, graphics/icons/mainmenu/standard/steam)"
+			}
+		}
 
-		ClientTitle [!$OSX]
-		{
+			"MenuBar MenuButton:hover" {
+				render_bg {
+					0="image(x0,y0,x1,y1, graphics/icons/mainmenu/hover/steam)"
+				}
+			}		
+
+		ClientTitle [!$OSX] {
 			textcolor=none		
 		}
 
-		ClientTitle [$OSX]
-		{
+		ClientTitle [$OSX] {
 			font-family=basefont
 			font-size=16
-      		font-weight=400
-      		textcolor="red500"
       		bgcolor="none"
+      		font-weight=400
       		inset="0 12 0 0"
+      		textcolor="text_onDarkBG"
 		}
 
-		ClientTitle:FrameFocus [$OSX]
-		{
+		ClientTitle:FrameFocus [$OSX] {
 			font-family=basefont
+   			bgcolor="none"
    			font-size=16
    			font-weight=400
-   			textcolor="red500"
-   			bgcolor="none"
    			inset="0 12 0 0"
+   			textcolor="text_onDarkBG"
 		}
 
-		view_friends [!$OSX]
-		{
-			textcolor="LabelFocus"
-			bgcolor="none"
+		view_friends {
 			font-family=basefont
-			font-size=14
-			font-weight=400
-			font-style=regular,uppercase
-			padding-top=6
-			padding-left=24
-			padding-bottom=30
-		}
-
-		view_friends [$OSX]
-		{
-			textcolor="LabelFocus"
-			bgcolor="none"
-			font-family=basefont
-			font-size=13
-			font-weight=400
-			font-style=regular,uppercase
-			padding-top=6
-			padding-left=24
-			padding-bottom=30
-
-		}
-
-		view_friends:Hover
-		{
-			 textcolor="white"
-		}
-
-		view_friends:disabled
-		{
-			textcolor="TextDisabled"
-		}
-
-		online_friends [!$OSX]
-		{
-			textcolor="label2"
-			bgcolor="none"
-			font-family=basefont
-			font-size=14
-			font-style=regular
-		}
-
-		online_friends [$OSX]
-		{
-			textcolor="label2"
-			bgcolor="none"
-			font-family=basefont
-			font-size=13
-			font-style=regular
-		}
-
-		online_friends:disabled
-		{
-			textcolor="TextDisabled"
-		}
-
-		support_alert
-		{
-			font-family=basefont
-			font-size=14
-			font-weight=1000
+			font-size=0
 			font-style=none
-			textcolor=white
-			padding-left=50
-			padding-right=50
-			padding-top=6
-			inset="-8 -3 8 0"
-			render {}
-			render_bg {
-				0="fill( x0, y0 + 3, x1-1, y1, parental_lock_inactive1 )"
-
-			}
+			font-weight=400
+			textcolor="none"
+			
+			render_bg {}
 		}
-		
-		support_alert:hover
-		{
+
+			view_friends:Hover {}
+
+			view_friends:disabled {}
+
+		online_friends {
 			font-family=basefont
-			font-size=14
-			font-weight=1000
-			font-style=none
-			textcolor=white
-			padding-left=50
-			padding-right=50
-			padding-top=6
-			inset="-8 -3 8 0"
-			render {}
+			font-size=16
+			font-style=regular
+			font-weight=600
+			inset-top=2
+			padding-left=29
+			padding-right=52
+			textcolor="white"
+
 			render_bg {
-				0="fill( x0, y0 + 3, x1-1, y1, parental_lock_inactive3 )"
+				0="fill(x0+2,y0+2,x1-2,y1-2, blue500)"
+
+				1="image(x0-3,y1-2,x0+2,y1+4, graphics\material\buttons\blue\bottomleft)"
+				2="image_tiled(x0+2,y1-2,x1-2,y1+4, graphics/material/buttons/blue/bottommiddle)"
+				3="image(x1-2,y1-2,x1+3,y1+2, graphics/material/buttons/blue/bottomright)"
+
+				4="image_tiled(x0-3,y0+2,x0+2,y1-2, graphics/material/buttons/blue/leftmiddle)"
+				5="image_tiled(x1-2,y0+2,x1+3,y1-2, graphics/material/buttons/blue/rightmiddle)"
+
+				6="image(x0-3,y0-2,x0+2,y0+2, graphics/material/buttons/blue/topleft)"
+				7="image_tiled(x0+2,y0-2,x1-2,y0+2, graphics/material/buttons/blue/topmiddle)"
+				8="image(x1-2,y0-2,x1+3,y0+2, graphics/material/buttons/blue/topright)"
+
+				10="image(x1-46, y0+11, x1, y1, graphics/icons/button_friends)"
 			}
 		}
 
+			online_friends:disabled {
+				textcolor="none"
 
+				render_bg {}
+			}
 
-		inbox_button [!$OSX]
-		{
+		inbox_button {
 			font-family=basefont
-			font-size=14 
-			font-weight=800
+			font-size=17
 			font-style=none
-			textcolor=white
-			padding-left=0
-			padding-right=0
-			padding-top=6
-			inset="0 -3 8 0"
+			font-weight=600
+			inset="0 4 0 0"
+			padding-left=10
+			padding-right=10
+			padding-top=0
+			textcolor=none
+
 			render {}
-			render_bg
-			{
-				13="image( x1-22, y0+6, x1 -2, y1, graphics/inbox_notification_inactive )"
+			render_bg {
+				0="fill(x0+2,y0+2,x1-2,y1-2, white)"
+
+				1="image(x0-3,y1-2,x0+2,y1+4, graphics\material\buttons\white\bottomleft)"
+				2="image_tiled(x0+2,y1-2,x1-2,y1+4, graphics/material/buttons/white/bottommiddle)"
+				3="image(x1-2,y1-2,x1+3,y1+2, graphics/material/buttons/white/bottomright)"
+
+				4="image_tiled(x0-3,y0+2,x0+2,y1-2, graphics/material/buttons/white/leftmiddle)"
+				5="image_tiled(x1-2,y0+2,x1+3,y1-2, graphics/material/buttons/white/rightmiddle)"
+
+				6="image(x0-3,y0-2,x0+2,y0+2, graphics/material/buttons/white/topleft)"
+				7="image_tiled(x0+2,y0-2,x1-2,y0+2, graphics/material/buttons/white/topmiddle)"
+				8="image(x1-2,y0-2,x1+3,y0+2, graphics/material/buttons/white/topright)"
+
+				10="image(x1-24, y0+12, x1, y1, graphics\icons\inbox\empty\envelope)"
 			}	
 		}
-		
-		inbox_button [$OSX]
-		{
+
+			inbox_button:hover {}
+
+			inbox_button:selected {}
+
+			inbox_button:disabled {}
+
+		inbox_button_active {
 			font-family=basefont
-			font-size=13 
-			font-weight=800
+			font-size=17
 			font-style=none
-			textcolor=white
-			padding-left=0
-			padding-right=0
-			padding-top=6
-
-			inset="0 -2 8 0"
-			render {}
-			render_bg
-			{
-				13="image( x1-22, y0+6, x1 -2, y1, graphics/inbox_notification_inactive )"
-			}	
-		}
-
-		inbox_button:hover
-		{
+			font-weight=600
+			inset="0 4 0 0"
+			padding-left=25
+			padding-right=39
+			padding-top=0
+			textcolor=lightgreen900
 
 			render {}
-			render_bg
-			{
+			render_bg {
+				0="fill(x0+2,y0+2,x1-2,y1-2, limeA400)"
 
-				1="image( x1-22, y0+6, x1 -2, y1, graphics/inbox_notification_inactive )"
-			}	
-		}
+				1="image(x0-3,y1-2,x0+2,y1+4, graphics\material\buttons\lime\bottomleft)"
+				2="image_tiled(x0+2,y1-2,x1-2,y1+4, graphics/material/buttons/lime/bottommiddle)"
+				3="image(x1-2,y1-2,x1+3,y1+2, graphics/material/buttons/lime/bottomright)"
 
-		inbox_button:selected
-		{
+				4="image_tiled(x0-3,y0+2,x0+2,y1-2, graphics/material/buttons/lime/leftmiddle)"
+				5="image_tiled(x1-2,y0+2,x1+3,y1-2, graphics/material/buttons/lime/rightmiddle)"
 
-			render {}
-			render_bg
-			{
-				// background fill
-				
-				0="gradient(  x0 -3, y0 + 3, x1+1, y1, almostblack, none )"
-				1="image( x1-22, y0+6, x1 -2, y1, graphics/inbox_notification_inactive )"
-			}	
-		}
+				6="image(x0-3,y0-2,x0+2,y0+2, graphics/material/buttons/lime/topleft)"
+				7="image_tiled(x0+2,y0-2,x1-2,y0+2, graphics/material/buttons/lime/topmiddle)"
+				8="image(x1-2,y0-2,x1+3,y0+2, graphics/material/buttons/lime/topright)"
 
-		inbox_button:disabled
-		{
-		textcolor=labeldisabled
-			padding-left=0
-			padding-right=0
-			padding-top=6
-			inset="0 -3 8 0" [!$OSX]
-			inset="0 -2 8 0" [$OSX]	
-			render {}
-					render_bg
-			{
-				// background fill
-				1="image( x1-22, y0+5, x1 -2, y1, graphics/inbox_notification_inactive_disabled )"
-			}	
-		}	
-
-		inbox_button_active
-		{
-			padding-left=3
-			padding-right=10
-			padding-top=6
-			inset="0 -3 8 0" [!$OSX]
-			inset="0 -2 8 0" [$OSX]		
-			render {}
-			render_bg
-			{
-				// background fill
-				
-				0="fill(  x0 + 1, y0 + 3, x1+1, y1, green6 )"			
-				1="image( x1-22, y0+6, x1 -2, y1, graphics/inbox_notification )"
-			}	
+				10="image(x1-42, y0+12, x1, y1, graphics\icons\inbox\standard\envelope)"
+			}		
 		}
 		
-		inbox_button_active:hover
-		{
-			padding-left=3
-			padding-right=10
-			padding-top=6
-			inset="0 -3 8 0" [!$OSX]
-			inset="0 -2 8 0" [$OSX]	
-			render {}
-						render_bg
-			{
-				// background fill
-				
-				0="fill(  x0 + 1, y0 + 3, x1+1, y1, green5 )"			
-				1="image( x1-22, y0+6, x1 -2, y1, graphics/inbox_notification )"
-			}	
-		}
-		inbox_button_active:selected
-		{
-			padding-left=3
-			padding-right=10
-			padding-top=6
-			inset="0 -3 8 0" [!$OSX]
-			inset="0 -2 8 0" [$OSX]	
-			render {}
-						render_bg
-			{
-				// background fill
-				
-				0="gradient(  x0 + 1, y0 + 3, x1+1, y1, green8, green7 )"		
-				1="image( x1-22, y0+6, x1 -2, y1, graphics/inbox_notification )"
-			}	
-		}
+			inbox_button_active:hover {
+				render_bg {
+					0="fill(x0+2,y0+2,x1-2,y1-2, limeA200)"
 
-		inbox_button_active:disabled
-		{
-			padding-left=3
-			padding-right=10
-			padding-top=6
-			inset="0 -3 8 0" [!$OSX]
-			inset="0 -2 8 0" [$OSX]	
-			render {}
-						render_bg
-			{
-				// background fill
-				1="image( x1-22, y0+6, x1 -2, y1, graphics/inbox_notification_disabled )"
-			}	
-		}	
-		
-		
-		parental_lock_button
-		{
-			padding-left=3
-			padding-right=7
-			padding-top=-1
-			image="resource/notfamilyview"
-			render {}
-			render_bg
-			{
-				// background fill
-				0="fill( x0 + 1, y0, x1 - 1, y1, parental_lock_inactive1 )"
-			}	
-		}
+					1="image(x0-3,y1-2,x0+2,y1+4, graphics\material\buttons\lime\hover\bottomleft)"
+					2="image_tiled(x0+2,y1-2,x1-2,y1+4, graphics/material/buttons/lime/hover\bottommiddle)"
+					3="image(x1-2,y1-2,x1+3,y1+2, graphics/material/buttons/lime/hover\bottomright)"
 
-		parental_lock_button:hover
-		{
-			padding-left=3
-			padding-right=7
-		  padding-top=-1
-			image="resource/notfamilyview"
-			render {}
-			render_bg
-			{
-				// background fill
-				0="fill( x0 + 1, y0, x1 - 1, y1, parental_lock_inactive3 )"				
-			}	
+					4="image_tiled(x0-3,y0+2,x0+2,y1-2, graphics/material/buttons/lime/hover\leftmiddle)"
+					5="image_tiled(x1-2,y0+2,x1+3,y1-2, graphics/material/buttons/lime/hover\rightmiddle)"
+
+					6="image(x0-3,y0-2,x0+2,y0+2, graphics/material/buttons/lime/hover\topleft)"
+					7="image_tiled(x0+2,y0-2,x1-2,y0+2, graphics/material/buttons/lime/hover\topmiddle)"
+					8="image(x1-2,y0-2,x1+3,y0+2, graphics/material/buttons/lime/hover\topright)"
+
+					10="image(x1-42, y0+12, x1, y1, graphics\icons\inbox\standard\envelope)"
+				}
+			}
 			
-		}
+			inbox_button_active:selected {
+				render_bg {
+					0="fill(x0+2,y0+2,x1-2,y1-2, limeA700)"
 
-		parental_lock_button:selected
-		{
-			padding-left=3
-			padding-right=7
-			padding-top=-1
-			image="resource/familyview"
-			render {}
-			render_bg
-			{
-				// background fill
-				0="fill( x0 + 1, y0, x1 - 1, y1, green6 )"
-			}	
+					1="image(x0-3,y1-2,x0+2,y1+4, graphics\material\buttons\lime\active\bottomleft)"
+					2="image_tiled(x0+2,y1-2,x1-2,y1+4, graphics/material/buttons/lime/active\bottommiddle)"
+					3="image(x1-2,y1-2,x1+3,y1+2, graphics/material/buttons/lime/active\bottomright)"
+
+					4="image_tiled(x0-3,y0+2,x0+2,y1-2, graphics/material/buttons/lime/active\leftmiddle)"
+					5="image_tiled(x1-2,y0+2,x1+3,y1-2, graphics/material/buttons/lime/active\rightmiddle)"
+
+					6="image(x0-3,y0-2,x0+2,y0+2, graphics/material/buttons/lime/active\topleft)"
+					7="image_tiled(x0+2,y0-2,x1-2,y0+2, graphics/material/buttons/lime/active\topmiddle)"
+					8="image(x1-2,y0-2,x1+3,y0+2, graphics/material/buttons/lime/active\topright)"
+
+					10="image(x1-42, y0+12, x1, y1, graphics\icons\inbox\standard\envelope)"
+				}
+			}
+
+			inbox_button_active:disabled {}	
+		
+		inboxmenuitem {
+            bgcolor="none"
+            font-family=basefont
+            font-size=16
+            font-weight=400
+            inset="0 0 0 0"
+            padding-right=6
+            textcolor="disabled_onLightBG"
+            render_bg {}
+        }
+
+		inboxmenuitem_active {
+            bgcolor="none"
+            font-family=basefont
+            font-size=16
+            font-weight=400
+            inset="0 0 0 0"
+            padding-right=6
+            textcolor="text_OnLightBG"
+            render_bg {}
+        }
+   
+		  	inboxmenuitem_active:selected {
+			    bgcolor="blue500"
+			    textcolor="white"
+		    }
+	    
+	  		inboxmenuitem_active:hover {
+			    bgcolor="blue500"
+			    textcolor="white"
+		    }
+
+		// OFF
+		parental_lock_button {
+			inset="0 0 0 0"
 			
-		}
-
-
-		parental_lock_button:selected:hover
-		{
-			padding-left=3
-			padding-right=7
-			padding-top=-1
-			image="resource/familyview"
 			render {}
-			render_bg
-			{
-				// background fill
-				0="fill( x0 + 1, y0, x1 - 1, y1, green5 )"
+			render_bg {
+				0="image(x0,y0,x1,y1, graphics\icons\familyview\inactive\familyview)"
 			}	
-			
 		}
 
-		FullscreenButton [!$OSX]
-		{
-			padding-left=0
-			padding-top=0 
-			padding-right=0
-			padding-bottom=0
-		}
+			// OFF
+			parental_lock_button:hover {
+				render_bg {
+					0="image(x0,y0,x1,y1, graphics\icons\familyview\inactive_hover\familyview)"
+				}	
+			}
 
-		FullscreenButton [$OSX]
-		{
-			padding-left=0
-			padding-top=3
-			padding-right=0
-			padding-bottom=0
-		}
-		
-		VRButton [!$OSX]
-		{
-			padding-left=0
-			padding-top=6 
-			padding-right=0
-			padding-bottom=0
-		}
-    
-		VRButton [$OSX]
-		{
-			padding-left=0
-			padding-top=3 
-			padding-right=0
-			padding-bottom=0
-		}
-		
-		VRButtonExit [!$OSX]
-		{
-			padding-left=0
-			padding-top=6 
-			padding-right=0
-			padding-bottom=0
-		}
-    
-		VRButtonExit [$OSX]
-		{
-			padding-left=0
-			padding-top=3 
-			padding-right=0
-			padding-bottom=0
-		}
-    
-		inboxmenuitem
-		{
-			textcolor=inbox_inactive_text
-		}
-		
-		inboxmenuitem_active
-		{
-			textcolor=label
-		}
-	
-		inboxmenuitem_active:hover
-		{
+			// ON
+			parental_lock_button:selected {
+				render_bg {
+					0="image(x0,y0,x1,y1, graphics\icons\familyview\standard\familyview)"	
+				}		
+			}
+
+			// ON
+			parental_lock_button:selected:hover	{
+				render_bg {
+					0="image(x0,y0,x1,y1, graphics\icons\familyview\hover\familyview)"
+				}			
+			}
+
+		support_alert {
+			font-family=basefont
+			font-size=20
+			font-style=none
+			font-weight=400
+			inset="40 0 0 0"
 			textcolor=white
-		}
-		AccountURLStyle
-		{
-		  textcolor=labeldisabled
-		  padding-top=-4
-		  padding-right=-14
-		}
-		
-		AccountURLStyle:hover
-		{
-			textcolor=texthover
-		}
-		
-		AccountURLStyle:selected
-		{
-			textcolor=white
-		}
+			render {}
+			render_bg {				
+				0="fill( x0, y0, x1, y1, orange900)"
+				1="image_tiled(x0,y0,x1,y0+4, graphics/material/shadows/top)"
 
-		AccountURLStyle:disabled
-		{
-			textcolor="TextDisabled"
+				10="image(x0+10, y0+10, x1, y1, graphics\icons\supportmessage)"
+			}
 		}
 		
-		
+			support_alert:hover {
+				render_bg {				
+					0="fill( x0, y0, x1, y1, orange800)"
+					1="image_tiled(x0,y0,x1,y0+4, graphics/material/shadows/top)"
 
-				
+					10="image(x0+10, y0+10, x1, y1, graphics\icons\supportmessage)"
+				}
+			}				
 	}
 	
-	colors
-	{
-		support_flag_red "169 72 71 255"
-		
-		support_hover_red1 "193 94 93 255"
-		support_hover_red2 "156 64 63 255"
-		
-		inbox_active_text "text"
-		inbox_inactive_text "labeldisabled"
+	layout {
+		// Remove these elements
+		place {
+			control="New,add_game,account_balance_seperator, account_URL, universe_label, startvr, exitvr, fullscreen"
+			width=0
+			height=0
+		}
 
-		backdrop "20 20 20 255"
-		
-		disabledborder "63 63 63 255"
-	}
-	
-	layout
-	{
-		place [!$OSX] { control="New" width=0 height=0 y=0 width=max align=right margin-right=56}
-		place [$OSX]  { control="New" width=0 height=0 y=0 width=max align=right margin-right=-20}
-		
-		place { control="UINavigatorPanel" width=max height=max margin-right=0 margin-left=0 margin-bottom=47 margin-top=0 }
-		
-		place { control="UIStatusPanel" width=max height=47 align=bottom  margin-bottom=0 }
-		
-		place [!$OSX] { control="MenuBar" align=top margin-top=5 margin-left=2 }
-				
-		place [!$OSX] { control="account_balance, account_balance_seperator, account_URL, universe_label, startvr, exitvr, fullscreen" align=right margin-top=12 margin-right=88 spacing=7 }	
-		place [$OSX]  { control="account_balance, account_balance_seperator, account_URL, universe_label, startvr, exitvr, fullscreen" align=right margin-top=12 margin-right=15 spacing=7 }
-	
-		place [!$OSX] { control="fullscreen,startvr,exitvr" width=0 height=0 }
-		place [$OSX] { control="fullscreen" align=right y=7 height=20 spacing=0 margin-right=8 margin-top=1 width=30 }
-		
-		place [$OSX] { control="startvr" end-right="fullscreen" align=right margin-right=6 margin-top=1 }
-	
-		place [$OSX] { control="exitvr" end-right="fullscreen" align=right margin-right=6 margin-top=1 }
+		place [!$OSX] {
+			control="MenuBar"
+			align=top
+			width=35
+			height=35
+			x=11
+			y=11
+		}
 
-  place {
-  	control="InboxButton"
-  	align=top-center
-  	margin-top=4
-  	margin-right=16
-  	height=34
-  	width=85
-  }
-		place { control="ParentalLockButton" align=right end-right="InboxButton" margin-top=7 margin-right=10 height=23 }
-		place { control="SupportAlert" align=right end-right="ParentalLockButton" margin-top=4 margin-right=10 height=26 }
+		place {
+			control="frame_captiongrip"
+			margin=0
+			width=max
+			height=104
+		}
 
-		place [!$OSX]  { control="frame_minimize,frame_maximize,frame_close" align=right margin-top=16 margin-right=15 spacing=1 }
-	//	place [$OSX] { control="frame_close,frame_minimize,frame_maximize" align=left margin-top=10 margin-left=4 spacing=-7 }
+		place [!$OSX]  {
+			control="frame_minimize,frame_maximize,frame_close"
+			align=right
+			margin-top=16
+			margin-right=15
+			spacing=1
+		}
 
-		region { name=bottom align=bottom width=max height=47 }
+		place {
+			control="UINavigatorPanel"
+			width=max
+			height=max
+			margin-bottom=47
+		}
 		
-		place { control="add_game" x=14 y=16 region=bottom height=30}
+		place {
+			control="ParentalLockButton"
+			end-right=inboxbutton
+			align=right
+			width=35
+			height=35
+			y=10
+			margin-right=10
+		}
 
-		place { control="FriendPanel" height=48 width=48 region=bottom align=right margin-right=2 margin-top=0 }
-		place { control="view_friends" height=62 y=12 region=bottom align=right dir=right margin-right=56 }
-		place { control="online_friends" height=12 y=38 region=bottom align=right dir=right margin-right=56 }
-	
- 		// the title bar is missing, so increase the size of the grip
-		place { control="frame_captiongrip" margin=2 width=max height=104 }
+		place {
+		 	control="InboxButton"
+		  	align=right
+		  	end-right=frame_minimize
+		  	height=34
+		  	y=10
+		  	margin-right=20
+		}
+
+		place {
+		  	control=account_balance
+		  	align=left
+		  	x=152
+		  	y=36
+		}
+
+		region {
+			name=bottom
+			align=bottom
+			width=max
+			height=46
+		}
+
+		place {
+			control="UIStatusPanel"
+			width=max
+			height=47
+			align=bottom
+		}
+
+		place {
+			control="FriendPanel"
+			height=48
+			width=48
+			region=bottom
+			align=right
+			margin-top=-5
+			margin-right=-5
+		}
+
+		place {
+			control=SupportAlert
+			align=left
+			width=max
+			height=45
+			y=55
+		}
+
+		// Overlay the button for opening the friends list over the number of online friends.
+		place {
+			control="view_friends"
+			height=34
+			width=147
+			y=6
+			region=bottom
+			align=right
+			dir=right
+			margin-right=50
+		}
+		
+		place {
+			control="online_friends"
+			y=6
+			height=34
+			region=bottom
+			align=right
+			dir=right
+			margin-right=50
+		}
 	}
 }

@@ -45,65 +45,66 @@ steam.styles {
 	  }
 
 	  Page {
-      bgcolor="none"
-      render_bg {}
-    }
+          bgcolor="none"
+          render_bg {}
+        }
 
-    Panel { 
-      font-family=basefont
-      font-size=14
-      font-weight=400
-      textcolor="text_OnLightBG"
-  	}
+        Panel { 
+          font-family=basefont
+          font-size=14
+          font-weight=400
+          textcolor="text_OnLightBG"
+      	}
 
-  	PropertyPage {
-      bgcolor=""
-    }
+      	PropertyPage {
+          bgcolor=""
+        }
 
 		Label {
-      textcolor="text_OnLightBG"
-      selectedtextcolor="white"
-      selectedbgcolor="blue500"
-      bgcolor="none"
-      font-family=basefont
-      font-size=16
-      font-weight=400
-    }
+          textcolor="text_OnLightBG"
+          selectedtextcolor="white"
+          selectedbgcolor="blue500"
+          bgcolor="none"
+          font-family=basefont
+          font-size=16
+          font-weight=400
+        }
 
 		URLLabel {
-      textcolor="blue500"
-      font-family=basefont
-      font-size=15
-      font-weight=400
-      font-style=underline
-    }
-    
-	    URLLabel:Hover {
-	    	textcolor="blue300"
-	    }
+          textcolor="blue500"
+          font-family=basefont
+          font-size=15
+          font-weight=400
+          font-style=underline
+        }
+        
+    	    URLLabel:Hover {
+    	    	textcolor="blue300"
+    	    }
 
 
 
 
-		Menu {
-        bgcolor="white"
-        inset="0 0 0 0"
-      	
-      	render {}
-        render_bg {}
-        corner_rounding=2
-    }
+    	Menu {
+            bgcolor="white"
+            inset="0 0 0 0"
+          	
+          	render {}
+            render_bg {}
+            corner_rounding=2
+        }
 		
 		MenuItem {
-        font-family=basefont
-        textcolor="text_OnLightBG"
-        font-size=15
-        font-weight=400
-        inset="0 0 0 0"
-        padding-right=6
-        bgcolor="none"
-        render_bg {}
-    }
+            font-family=basefont
+            textcolor="text_OnLightBG"
+            font-size=17
+            font-weight=400
+            inset="0 0 0 0"
+            padding-right=6
+            padding-left=6
+            bgcolor="none"
+            render_bg {}
+        }
    
 	  	MenuItem:selected {
 	        textcolor="white"
@@ -126,112 +127,112 @@ steam.styles {
 	    }
    
     	MenuSeparator {
-	        inset="-4 0 0 0"    
+	        inset="0 0 0 0"    
 	        textcolor="dividers_OnLightBG"
 	        bgcolor=none
 	    }
 
 		SuperNavMenu {
-        padding-left=8
-        padding-right=8
-        bgcolor=white
+            padding-left=8
+            padding-right=8
+            bgcolor=white
 
-        render {}
-        render_bg {}
-    }
+            render {}
+            render_bg {}
+        }
 
-    SuperNavMenuItem {
-        font-size=16
-        textcolor="text_OnLightBG"
-        bgcolor=none
-        font-style="normal"
-    }
+        SuperNavMenuItem {
+            font-size=16
+            textcolor="text_OnLightBG"
+            bgcolor=none
+            font-style="normal"
+        }
 
 			SuperNavMenuItem:hover {
-	        textcolor="white"
-	        bgcolor=blue500
-	    }
+    	        textcolor="white"
+    	        bgcolor=blue500
+    	    }
 
-	    SuperNavMenuItem:selected {
-	        textcolor="white"
-	        bgcolor=blue500
-	    }
+    	    SuperNavMenuItem:selected {
+    	        textcolor="white"
+    	        bgcolor=blue500
+    	    }
 
-    "SuperNavMenuDivider" {
-        textcolor="none"
-        render {
-            1="fill( x0, y0+1, x1, y0+2, dividers_OnLightBG )"
+        "SuperNavMenuDivider" {
+            textcolor="none"
+            render {
+                1="fill( x0, y0+1, x1, y0+2, dividers_OnLightBG )"
+            }
         }
-    }
 
 
 		Notification {
-        font-family=basefont
-        font-size=16
-        font-weight=400
-        bgcolor=white
-        //minimum-height=92
-        minimum-width=290
-        
-        render_bg {}
-        render {}
-    }
+            font-family=basefont
+            font-size=16
+            font-weight=400
+            bgcolor=white
+            //minimum-height=92
+            minimum-width=290
+            
+            render_bg {}
+            render {}
+        }
 
 
 
  		gamedetails-headerlabel {
-      font-size="28"
-      font-style="normal"
-      font-family=basefont
-      textcolor="customgreyprimary"
-    }
+          font-size="28"
+          font-style="normal"
+          font-family=basefont
+          textcolor="customgreyprimary"
+        }
 
-    gamedetails-headerlabel-red {
-      font-size="28"
-      font-style="normal"
-      font-family=basefont
-      textcolor="customgreyprimary"
-    }  
-    gamedetails-headerlabel-green {
-      font-size="28"
-      font-style="normal"
-      font-family=basefont
-      textcolor="customgreyprimary"
-    }
+        gamedetails-headerlabel-red {
+          font-size="28"
+          font-style="normal"
+          font-family=basefont
+          textcolor="customgreyprimary"
+        }  
+        gamedetails-headerlabel-green {
+          font-size="28"
+          font-style="normal"
+          font-family=basefont
+          textcolor="customgreyprimary"
+        }
 
-    gamedetails-headerlabel-blue {
-      font-size="28"
-      font-style="normal"
-      font-family=basefont
-      textcolor="customgreyprimary"
-    }
-
-
+        gamedetails-headerlabel-blue {
+          font-size="28"
+          font-style="normal"
+          font-family=basefont
+          textcolor="customgreyprimary"
+        }
 
 
 
 
 
-    TooltipWindow {
-        bgcolor="white"
-    }
 
-    "TooltipWindow Label" {
-        padding-left=8
-        padding-right=8
-        padding-bottom=8
-        textcolor="secondaryText_OnLightBG"
-    }
-    
-    tooltip_headline {
-        textcolor="text_OnLightBG"
-        padding-left=8
-        padding-right=8
-        padding-top=8
-        padding-bottom=2
-        font-size=18     
-        font-weight=600 
-    }
+
+        TooltipWindow {
+            bgcolor="white"
+        }
+
+        "TooltipWindow Label" {
+            padding-left=8
+            padding-right=8
+            padding-bottom=8
+            textcolor="secondaryText_OnLightBG"
+        }
+        
+        tooltip_headline {
+            textcolor="text_OnLightBG"
+            padding-left=8
+            padding-right=8
+            padding-top=8
+            padding-bottom=2
+            font-size=18     
+            font-weight=600 
+        }
 
 
 
@@ -249,149 +250,204 @@ steam.styles {
 				render_bg {}
 			}
         
-    ChatListPanel {   
-    	bgcolor=custombackgroundprimary
+        ChatListPanel {   
+        	bgcolor=custombackgroundprimary
 
-	    render {}
-	    render_bg {}
-    }
+    	    render {}
+    	    render_bg {}
+        }
 
  		friends_chat_text {
-        textcolor="text_OnLightBG"
-        selectedtextcolor="white"   
-        SelectedBgColor="blue500"
-        font-size=16
-    }
-    
-    friends_chat_text_self {
-        textcolor="secondaryText_OnLightBG"
-        selectedtextcolor="white"   
-        selectedbgcolor="blue500"
-        font-size=16
-    }
-
-    friends_chat_history {
-        textcolor="disabled_OnLightBG"
-        selectedtextcolor="white"   
-        selectedbgcolor="blue"
-        font-size=16
-    }
-    
-    friends_chat_event {
-        textcolor="orange500"
-        font-size=16
-        selectedtextcolor="white"
-        selectedbgcolor="blue500"
-    }
-
-    friends_chat_bright_event {
-        textcolor="orange500"
-        selectedtextcolor="white"
-        font-size=16
-        font-weight=1000
-    }
-
-    friends_chat_url {
-        textcolor="blue500"
-        font-style=underline
-        font-size=16
-        selectedtextcolor="white"
-        selectedbgcolor="blue500"
-    }
-    
-    friends_chat_name_ingame {
-        textcolor="lightgreen500"
-        selectedtextcolor="white"   
-        selectedbgcolor="blue500"
-        font-size=16
-        font-weight=600
-    }
-
-    friends_chat_name_golden {
-        textcolor="orange500"
-        selectedtextcolor="white"   
-        selectedbgcolor="blue500"
-        font-size=16
-    }
-
-    friends_chat_self {
-        textcolor="blue500"
-        selectedtextcolor="white"   
-        selectedbgcolor="blue500"
-        font-size=16
-    }
-    
-    friends_chat_name {
-        textcolor="blue500"
-        selectedtextcolor="white"   
-        selectedbgcolor="blue500"
-        font-size=16
-        font-weight=400
-    }
-    
-    friends_chat_accountid {
-        selectedtextcolor="red500"   
-        selectedbgcolor="blue500"
-        textcolor="white"
-        font-size=16
-    }
-    
-    friends_chat_securitylink {
-        textcolor="orange500"
-        bgcolor="none"
-        font-family=basefont
-        font-size=16
-        font-weight=600
-        font-style=none
-        selectedtextcolor="white"    
-        selectedbgcolor="blue500"
-    }
-    
-
-
-
-     // used in friends tooltip and friends list for overriding regular styles with custom colors
-    friends_offline {
-        textcolor="grey500"
-    }
-    
-	    friends_offline:hover {
-	        textcolor="grey300"
-	    }
-    
-    friends_online {
-        textcolor="lightblue500"
-    }
-    
-	    friends_online:hover {
-	        textcolor="lightblue300"
-	    }
-    
-    friends_ingame {
-        textcolor="lightgreen500"
-    }
+            textcolor="text_OnLightBG"
+            selectedtextcolor="white"   
+            SelectedBgColor="blue500"
+            font-size=16
+        }
         
-	    friends_ingame:hover {
-	        textcolor="lightgreen300"
-	    }
+        friends_chat_text_self {
+            textcolor="secondaryText_OnLightBG"
+            selectedtextcolor="white"   
+            selectedbgcolor="blue500"
+            font-size=16
+        }
 
-    friends_golden {
-        textcolor="orange500"
-    }
+        friends_chat_history {
+            textcolor="disabled_OnLightBG"
+            selectedtextcolor="white"   
+            selectedbgcolor="blue"
+            font-size=16
+        }
         
-	    friends_golden:hover {
-	        textcolor="orange300"
-	    }
+        friends_chat_event {
+            textcolor="orange500"
+            font-size=16
+            selectedtextcolor="white"
+            selectedbgcolor="blue500"
+        }
+
+        friends_chat_bright_event {
+            textcolor="orange500"
+            selectedtextcolor="white"
+            font-size=16
+            font-weight=1000
+        }
+
+        friends_chat_url {
+            textcolor="blue500"
+            font-style=underline
+            font-size=16
+            selectedtextcolor="white"
+            selectedbgcolor="blue500"
+        }
+        
+        friends_chat_name_ingame {
+            textcolor="lightgreen500"
+            selectedtextcolor="white"   
+            selectedbgcolor="blue500"
+            font-size=16
+            font-weight=600
+        }
+
+        friends_chat_name_golden {
+            textcolor="orange500"
+            selectedtextcolor="white"   
+            selectedbgcolor="blue500"
+            font-size=16
+        }
+
+        friends_chat_self {
+            textcolor="blue500"
+            selectedtextcolor="white"   
+            selectedbgcolor="blue500"
+            font-size=16
+        }
+        
+        friends_chat_name {
+            textcolor="blue500"
+            selectedtextcolor="white"   
+            selectedbgcolor="blue500"
+            font-size=16
+            font-weight=400
+        }
+        
+        friends_chat_accountid {
+            selectedtextcolor="red500"   
+            selectedbgcolor="blue500"
+            textcolor="white"
+            font-size=16
+        }
+        
+        friends_chat_securitylink {
+            textcolor="orange500"
+            bgcolor="none"
+            font-family=basefont
+            font-size=16
+            font-weight=600
+            font-style=none
+            selectedtextcolor="white"    
+            selectedbgcolor="blue500"
+        }
     
-    friends_ignored {
-        textcolor="red500"
-    }
+
+
+
+         // used in friends tooltip and friends list for overriding regular styles with custom colors
+        friends_offline {
+            textcolor="grey500"
+        }
+        
+    	    friends_offline:hover {
+    	        textcolor="grey300"
+    	    }
+        
+        friends_online {
+            textcolor="lightblue500"
+        }
+        
+    	    friends_online:hover {
+    	        textcolor="lightblue300"
+    	    }
+        
+        friends_ingame {
+            textcolor="lightgreen500"
+        }
+            
+    	    friends_ingame:hover {
+    	        textcolor="lightgreen300"
+    	    }
+
+        friends_golden {
+            textcolor="orange500"
+        }
+            
+    	    friends_golden:hover {
+    	        textcolor="orange300"
+    	    }
+        
+        friends_ignored {
+            textcolor="red500"
+        }
 
 
 
 
-
-
+        BackButton {
+          bgcolor=none
+          inset="0 0 0 0"
+          textcolor=none
+          
+            render_bg {
+                0="image(x0,y0,x1,y1, graphics\icons\back_button\standard\back)"
+            }
+        }
+        
+            BackButton:hover {
+                render_bg {
+                    0="image(x0,y0,x1,y1, graphics\icons\back_button\hover\back)"
+                }
+            }
+            
+            BackButton:active {
+                render_bg {
+                    0="image(x0,y0,x1,y1, graphics\icons\back_button\hover\back)"
+                }
+            }
+            
+            BackButton:disabled {
+              bgcolor=none
+              render_bg {
+                    0="image(x0,y0,x1,y1, graphics\icons\back_button\disabled\back)"
+                }
+            }
+        
+        ForwardButton {
+          bgcolor=none
+          inset="0 0 0 0"
+          textcolor=none
+          
+            render_bg {
+                0="image(x0,y0,x1,y1, graphics\icons\forward_button\standard\forward)"
+            }
+        }
+        
+            ForwardButton:hover {
+                render_bg {
+                    0="image(x0,y0,x1,y1, graphics\icons\forward_button\hover\forward)"
+                }
+            }
+            
+            ForwardButton:active {
+                render_bg {
+                    0="image(x0,y0,x1,y1, graphics\icons\forward_button\hover\forward)"
+                }
+            }
+            
+            ForwardButton:disabled {
+              bgcolor=none
+              render_bg {
+                    0="image(x0,y0,x1,y1, graphics\icons\forward_button\disabled\forward)"
+                }
+            }
 
 
 

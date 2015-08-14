@@ -1329,11 +1329,7 @@
       
     MenuBar
     {
-        bgcolor=red500
-        padding-right=1
-        padding-left=6
-        padding-top=2
-        padding-bottom=-2
+        bgcolor=none
     }
     
     "Page MenuBar"
@@ -1344,8 +1340,7 @@
     "MenuBar MenuButton" 
     {
         textcolor="buttonborder"
-        padding-right=-2
-        inset="-2 0 2 0"
+        inset="0"
     }
     
     "MenuBar MenuButton:frameFocus" 
@@ -1990,35 +1985,7 @@
         inset="1 -1 1 1"  
     }
    
-    BackButton
-    {
-      bgcolor=none
-      inset="-5 -1 0 0"
-      render_bg={}
-      image="graphics/icon_button_back"
-    }
-    
-    BackButton:hover
-    {
-      bgcolor=none
-      render_bg={}
-      image="graphics/icon_button_back_down"
-    }
-    
-    BackButton:active
-    {
-      bgcolor=none
-      render_bg={}
-      image="graphics/icon_button_back_down"
-    }
-    
-    BackButton:disabled
-    {
-      bgcolor=none
-      render_bg={}
-      image="graphics/icon_button_back_disabled"
-    }
-    
+   
     FullscreenButton
     {
       bgcolor=none
@@ -2048,35 +2015,7 @@
       image="graphics/icon_controller_bpm_disabled"
     }
 
-    ForwardButton
-    {
-      bgcolor=none
-      inset="-5 -1 0 0"
-      render_bg={}
-      image="graphics/icon_button_forward"
-    }
-    
-    ForwardButton:hover
-    {
-      bgcolor=none
-      render_bg={}
-      image="graphics/icon_button_forward_over"
-    }
-    
-    ForwardButton:active
-    {
-      bgcolor=none
-      render_bg={}
-      image="graphics/icon_button_forward_down"
-    }
-    
-    ForwardButton:disabled
-    {
-      bgcolor=none
-      render_bg={}
-      image="graphics/icon_button_forward_disabled"
-    }
-    
+   
     HomeButton
     {
       bgcolor=none
