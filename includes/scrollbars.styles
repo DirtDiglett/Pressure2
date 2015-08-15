@@ -1,6 +1,6 @@
 scrollbars.styles {
 	colors {
-		ScrollBar.Wide = 13
+		ScrollBar.Wide = 14
 	}
 
 	styles {
