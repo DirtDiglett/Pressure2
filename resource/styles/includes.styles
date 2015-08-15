@@ -2045,19 +2045,18 @@
       image="graphics/icon_button_home_disabled"
     }
     
-    ReloadButton
-    {
+    ReloadButton {
       bgcolor=none
       inset="-5 0 0 0"
+      textcolor=none
       render_bg={}
-      image="graphics/icon_button_reload"
+      image="graphics\icons\refresh\standard\refresh"
     }
     
-    ReloadButton:hover
-    {
+    ReloadButton:hover {
       bgcolor=none
       render_bg={}
-      image="graphics/icon_button_reload_over"
+      image="graphics\icons\refresh\hover\refresh"
     }
 
     ReloadButton:active
@@ -2079,14 +2078,14 @@
       bgcolor=none
       inset="-5 0 0 0"
       render_bg={}
-      image="graphics/icon_button_stop"
+      image="graphics\icons\stopbutton\standard\stop"
     }
     
     StopButton:hover
     {
       bgcolor=none
       render_bg={}
-      image="graphics/icon_button_stop_over"
+      image="graphics\icons\stopbutton\hover\stop"
     }
 
     StopButton:active
