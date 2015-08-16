@@ -434,24 +434,11 @@
 		}
 
 		place {
-			control="label_search_icon,library_search"
+			control="label_search_icon,library_search,library_filters,library_music_menu"
 			align=left
 			height=max
 			region=subnav
 			spacing=8
-		}
-
-		
-
-		place {
-			control="library_filters,library_music_menu"
-			align=left
-			dir=right
-			spacing=8
-			region=subnav
-			start=library_search
-			x=4
-			height=max
 		}
 		
 		place {
