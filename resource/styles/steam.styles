@@ -7,11 +7,20 @@ steam.styles {
 	include "includes/window-controls.styles"
 	include "includes/controls.styles"
 	
-	colors {}
+	colors {
+        ListPanel.TextColor       text_onLightBG
+    ListPanel.BgColor       none  
+    ListPanel.SelectedTextColor     white
+    ListPanel.SelectedBgColor     blue500
+    ListPanel.SelectedOutOfFocusBgColor   blue800
+    ListPanel.DisabledTextColor     text_onDarkBG
+    ListPanel.DisabledSelectedTextColor   disabled_onLightBG
+    ListPanel.EmptyListInfoTextColor    text_onLightBG
+    }
 
 	styles {
 		FrameTitle {
-				inset="4 3 0 0"
+				inset="4 2 0 0"
 				padding-right="64"
 				font-weight=400
 				textcolor="disabled_OnDarkBG"
@@ -449,6 +458,102 @@ steam.styles {
                     0="image(x0,y0,x1,y1, graphics\icons\forward_button\disabled\forward)"
                 }
             }
+
+
+
+
+
+    "GameItem_Uninstalled" {
+    font-size=16
+    font-family=mediumfont
+      textcolor="disabled_onLightBG"
+      selectedtextcolor="white"
+      selectedbgcolor=blue500
+    }
+
+        "GameItem_Uninstalled:hover" {
+          textcolor="disabled_onLightBG"
+        }
+ 
+    "GameItem_Installed" {
+        font-size=16
+        font-family=mediumfont
+      textcolor="text_onLightBG"
+      selectedtextcolor="white"
+      selectedbgcolor=blue500
+    }
+      
+        "GameItem_Installed:hover" {
+          textcolor="text_onLightBG"
+        }
+
+        GameItem_Installed:Selected {
+            bgcolor=green500
+            selectedbgcolor=green500
+        }
+    
+    "GameItem_Shortcut" {
+    font-size=16
+    font-family=mediumfont
+      textcolor="text_onLightBG"
+      selectedtextcolor="white"
+      selectedbgcolor=blue500
+    }
+      
+        "GameItem_Shortcut:hover" {
+            textcolor="text_onLightBG"
+        }
+    
+    "GameItem_Mod" {
+    font-size=16
+    font-family=mediumfont
+      textcolor="bluegrey900"
+      selectedtextcolor="white"
+      selectedbgcolor=blue500
+    }
+      
+        "GameItem_Mod:hover" {}
+
+    "GameItem_Updating" {
+    font-size=16
+    font-style=italic
+    font-family=mediumfont
+        textcolor="orange500"
+        selectedtextcolor="white"
+        selectedbgcolor=blue500
+    }
+    
+    "GameItem_Updating:hover" {
+        textcolor="orange400"
+    }
+    
+        "GameItem_Updating:selected" {}
+    
+    "GameItem_Decrypting" {
+    font-size=16
+    font-style=italic
+    font-family=mediumfont
+        textcolor="green500"
+        selectedtextcolor="white"
+        selectedbgcolor=blue500
+    }
+    
+        "GameItem_Decrypting:hover" {}
+    
+        "GameItem_Decrypting:selected" {}
+    
+    "GameItem_Syncing" {
+    font-size=16
+    font-family=mediumfont
+    font-style=italic
+        textcolor="orange500"
+        selectedtextcolor="white"
+        selectedbgcolor=blue500
+    }
+    
+        "GameItem_Syncing:hover" {}
+    
+        "GameItem_Syncing:selected" {}
 
 
 
