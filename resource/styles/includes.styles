@@ -206,14 +206,7 @@
 
     
 
-    ListPanel.TextColor       Text
-    ListPanel.BgColor       none  
-    ListPanel.SelectedTextColor     TextentrySelected
-    ListPanel.SelectedBgColor     TextSelectedBG
-    ListPanel.SelectedOutOfFocusBgColor   ClientBG
-    ListPanel.DisabledTextColor     TextDisabled
-    ListPanel.DisabledSelectedTextColor   ClientBG
-    ListPanel.EmptyListInfoTextColor    Label
+
     
 
 		
@@ -740,167 +733,49 @@
     }
     
    
-    ListPanel
-    {
-        bgcolor=none
+    ListPanel {
+        bgcolor=white
         font-family=basefont
-        font-size=14
+        font-size=15
         font-weight=400
-        textcolor="text2"
-        selectedtextcolor="TextSelected"
-        selectedbgcolor="Focus"
-        shadowtextcolor="TextDisabled"  // the color of disabled line items
-        inset="0 -1 1 1"
-        render
-        {       }       
-        render_bg 
-        {
-            // background gradient        
-            0="gradient( x0, y0, x1, y1, dialogbg, almostblack )"
-            1="gradient( x0, y0, x1, y0 + 31, backgroundstartsubtle, none )"
-
-        }
+        textcolor="text_onLightBG"
+        selectedtextcolor="white"
+        selectedbgcolor="blue500"
+        shadowtextcolor="disabled_onLightBG"
+        inset="0 0 0 0"
+        render {}       
+        render_bg {}
     }
       
-    "Page ListPanel"
-    {
+    "Page ListPanel" {
+        bgcolor=white
         font-family=basefont
-        font-size=14
+        font-size=15
         font-weight=400
-        textcolor="Text2"
-        selectedtextcolor="TextSelected"
-        selectedbgcolor="Focus"
-        inset="0 -1 1 1"
-        bgcolor=none
-    render_bg
-    {     
-        // background fill
-    0="gradient( x0, y0, x1, y0 + 80, Propertysheetbg, BackgroundStartOpaque )"
-    1="fill( x0, y0 + 80, x1, y1, BackgroundStartOpaque )"
-    2="gradient( x0, y0, x1, y0 + 30, backgroundstartsubtle, none )"
-        }
+        textcolor="text_onLightBG"
+        selectedtextcolor="white"
+        selectedbgcolor="blue500"
+        shadowtextcolor="disabled_onLightBG"
+        inset="0 0 0 0"
+        render {}       
+        render_bg {}
     }
     
-    "CGamesListPanel"
-    {
-      font-family=basefont
-        bgcolor="none"
-      font-size=15
-      font-weight=400
-      textcolor="Text"
-      selectedtextcolor="textselected"
-      selectedbgcolor="Focus"
-      shadowtextcolor="TextDisabled"
-      inset="0 -1 1 1"
-      render_bg {
-        // background gradient        
-        0="gradient( x0, y0, x1, y0 + 432, dialogbg, almostblack )"
-        1="fill( x0, y0 + 432, x1, y1, almostblack )"
-        2="gradient( x0, y0, x1, y0 + 31, dialogbgFade1, dialogbgFade2 )"
-
-        }
+    "CGamesListPanel" {
+      bgcolor=white
+        font-family=basefont
+        font-size=16
+        font-weight=400
+        textcolor="text_onLightBG"
+        selectedtextcolor="white"
+        selectedbgcolor="blue500"
+        shadowtextcolor="disabled_onLightBG"
+        inset="0 0 0 0"
+        render {}       
+        render_bg {}
     }
   
-    "GameItem_Uninstalled"
-    {
-      textcolor="labeldisabled"
-      selectedtextcolor="label"
-    }
-    "GameItem_Uninstalled:hover"
-    {
-      textcolor="label"
-      selectedtextcolor="label"
-    }
- 
-    "GameItem_Installed"
-    {
-      textcolor="text"
-      selectedtextcolor="white"
-      }
-      
-    "GameItem_Installed:hover"
-    {
-      textcolor="white"
-      selectedtextcolor="white"
-    }
     
-    "GameItem_Shortcut"
-    {
-      textcolor="text"
-      selectedtextcolor="white"
-    }
-      
-    "GameItem_Shortcut:hover"
-    {
-        textcolor="white"
-        selectedtextcolor="white"
-    }
-    
-    "GameItem_Mod"
-    {
-      textcolor="text"
-      selectedtextcolor="white"
-    }
-      
-    "GameItem_Mod:hover"
-    {
-        textcolor="white"
-        selectedtextcolor="white"
-    }
-
-    "GameItem_Updating"
-    {
-        textcolor="highlight2"
-        selectedtextcolor="highlight1"
-    }
-    
-    "GameItem_Updating:hover"
-    {
-        textcolor="highlight1"
-        selectedtextcolor="highlight1"
-    }
-    
-    "GameItem_Updating:selected"
-    {
-        textcolor="highlight1"
-        selectedtextcolor="highlight1"
-    }
-    
-    "GameItem_Decrypting"
-    {
-        textcolor="highlight2"
-        selectedtextcolor="highlight1"
-    }
-    
-    "GameItem_Decrypting:hover"
-    {
-        textcolor="highlight1"
-        selectedtextcolor="highlight1"
-    }
-    
-    "GameItem_Decrypting:selected"
-    {
-        textcolor="highlight1"
-        selectedtextcolor="highlight1"
-    }
-    
-    "GameItem_Syncing"
-    {
-        textcolor="highlight2"
-        selectedtextcolor="highlight1"
-    }
-    
-    "GameItem_Syncing:hover"
-    {
-        textcolor="highlight1"
-        selectedtextcolor="highlight1"
-    }
-    
-    "GameItem_Syncing:selected"
-    {
-        textcolor="highlight1"
-        selectedtextcolor="highlight1"
-    }
     
     "GameColumn_BigText"
         {
