@@ -392,7 +392,7 @@
 			control="UINavigatorPanel"
 			width=max
 			height=max
-			margin-bottom=47
+			margin-bottom=46
 		}
 		
 		place {
