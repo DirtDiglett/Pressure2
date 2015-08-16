@@ -1,8 +1,8 @@
 "resource/layout/uistatuspanel.layout" {
 	colors {
-		lime500transparent = "205 220 57 66"
+		lime500transparent = "205 220 57 66" // lime500 @ 26%
 	}
-
+	
 	styles {
 		StatusLabel {
 			font-size=18
@@ -12,7 +12,7 @@
 			font-style=normal
 			inset-top=-2
 		}
-
+		
 		StatusLabelDim {
 			font-size=16
 			font-family=basefont
@@ -20,41 +20,41 @@
 			textcolor=secondarytext_onDarkBG
 			font-style=normal
 		}
-
+		
 		SlimProgressBar {
 			textcolor="lime500"
 			render {}
 			render_bg {
 				0="fill( x0, y0, x1, y1, lime500transparent )" // lime500 @ 26%
-    		}      
+			}
 		}
 	}
 	
 	layout {
-	  region {
-	  	name="statusregion"
-	  	width=max
-	  	height=max
-	  	x=12
-	  	y=6
-	  	margin-bottom=12
-	  }
-
-	  place {
-	  	control="StatusDownloading,StatusPaused, StatusComplete"
-	  	region="statusregion"
-	  	align="left"
-	  	margin-top=0
-	  	dir=right
-	  	height=max
-	  }
-
-	 	place {
-	 		control="StatusProgressbar"
-	 		region="statusregion"
-	 		align=bottom
-	 		width=300
-	 		height=4
-	 	}
+		region {
+			name="statusregion"
+			width=max
+			height=max
+			x=12
+			y=6
+			margin-bottom=12
+		}
+		
+		place {
+			control="StatusDownloading,StatusPaused, StatusComplete"
+			region="statusregion"
+			align="left"
+			margin-top=0
+			dir=right
+			height=max
+		}
+		
+		place {
+			control="StatusProgressbar"
+			region="statusregion"
+			align=bottom
+			width=300
+			height=4
+		}
 	}
 }
