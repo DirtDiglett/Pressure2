@@ -1,0 +1,42 @@
+"resource/layout/gamespage_details_nonsteam.layout" {
+	colors {
+		RichText.InsetX "0"
+		RichText.InsetY "3"
+		GameDetailsNonSteam.ExtraVerticalSpacing "64"
+	}
+
+	styles {
+		nonsteamdetails { 
+			render_bg {
+				0="fill(x0-20,y0-15,x1,y0-14, dividers_onLightBG)"
+			}
+		}
+
+		bodycontent {
+			textcolor="text_onLightBG"
+			font-size=16
+			render_bg {}
+		}
+
+		"RichText url" {
+			font-size=16
+		}
+	}
+
+	layout {
+		region {
+			name=body
+			margin=8
+			width=max
+			height=max
+		}
+
+		place {
+			region=body
+			control=headerlabel,bodycontent
+			dir=down
+			spacing=8
+			width=max
+		}
+	}
+}
