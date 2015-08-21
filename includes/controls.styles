@@ -36,6 +36,64 @@ controls.styles {
 
 
 
+
+    ListPanelCheckBox {
+        font-family=basefont
+        font-size=14
+        font-weight=400
+        textcolor="text_OnLightBG"
+        image="graphics/controls/checkbox/unchecked_small"
+        inset="0 5 0 0"
+    }   
+
+        ListPanelCheckBox:selected {
+            image="graphics/controls/checkbox/checked_small"    
+        }
+
+        ListPanelCheckBox:focus {
+           image="graphics/controls/checkbox/unchecked_small"  
+        }
+
+        ListPanelCheckBox:selected:focus {
+            image="graphics/controls/checkbox/checked_small"
+        }
+    
+        ListPanelCheckBox:disabled {
+            textcolor="disabled_OnLightBG"
+            image="graphics/controls/checkbox/unchecked_disabled_small"
+        }
+    
+        ListPanelCheckBox:disabled:selected {
+            textcolor="disabled_OnLightBG"
+            image="graphics/controls/checkbox/unchecked_disabled_small"
+        }
+    
+    "ListPanelColumnheader ListPanelCheckBox" {
+        font-family=basefont
+        font-size=14
+        font-weight=400
+        textcolor="text_OnLightBG"
+        image="graphics/controls/checkbox/unchecked_small"
+        inset="4 0 0 0" 
+    }
+     
+        "ListPanelColumnHeader ListPanelCheckBox:selected" {
+            image="graphics/controls/checkbox/checked_small"   
+        }
+    
+        "ListPanelColumnheader ListPanelCheckBox:focus" {
+            image="graphics/controls/checkbox/checked_small" 
+        }
+
+        "ListPanelColumnheader ListPanelCheckBox:selected:focus" {
+            image="graphics/controls/checkbox/checked_small" 
+        }
+
+
+
+
+
+
         RadioButton {
             font-family=basefont
             font-size=15
@@ -134,28 +192,22 @@ controls.styles {
 
 
         Button {     
-            font-family=basefont
+            font-family=mediumfont
             font-size=16
-            font-weight=600
+            font-weight=400
             textcolor="blue500"
             font-style=uppercase
             bgcolor=none
             inset-top=3
             
             render_bg {
-               0="image(x0-5,y0-4,x0,y0, graphics/material/buttons/white/topleft)" // Top Left
-               1="image(x1,y0-4,x1+5,y0, graphics/material/buttons/white/topright)" // Top Right
-               2="image(x0-5,y1,x0,y1+6, graphics/material/buttons/white/bottomleft)"
-               3="image(x1, y1, x1+5, y1+6, graphics/material/buttons/white/bottomright)"
-
-               4="image_tiled(x0-5,y0,x0,y1, graphics/material/buttons/white/leftmiddle)"
-               5="image_tiled(x1,y0,x1+5,y1, graphics/material/buttons/white/rightmiddle)"
-               6="image_tiled(x0,y0-4,x1, y0, graphics/material/buttons/white/topmiddle)"
-               7="image_tiled(x0, y1, x1, y1+6, graphics/material/buttons/white/bottommiddle)"
-
-               8="fill(x0,y0,x1,y1, white)"
+                0="fill(x0+2,y0+2,x1-2,y1-2, red500)"
             }
-      }
+        }
+
+            Button:Hover {
+                textcolor=blue400
+            }
 
     }
 }
