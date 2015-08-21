@@ -1,0 +1,57 @@
+"resource/layout/gamespage_details_community_file.layout" {
+	colors {
+		// The extra space needed vertical beyond the autocomputed size of the blurb contents
+		// this is used in code to make the vertical size of the panel fit the title/author/morelink
+		// and should be updated if you change vertical padding/margins/layout.
+		GameDetailsCommunityFile.ExtraVerticalSpacing "180"  
+		GameDetailsCommunityFile.ExtraHorizontalSpacing "200"
+		GameDetailsCommunityFile.MaxTooltipWidth "300"
+		GameDetailsCommunityFile.MaxTooltipHeight "90"
+	}
+	
+	styles {
+		communityfile_name {
+			font-size=18
+			textcolor="text_onDarkBG"
+		}
+		
+		communityfile_image_border {
+		      render_bg {}	
+		}	
+    
+		communityfile_rating_image_background {
+		      render_bg {}
+		}	    
+	}
+
+	layout {
+		place {
+			region=body
+			control=communityfile_image
+			width=160
+			height=100
+			align=top-center
+		}
+
+		place {
+			region=body
+			control=communityfile_name
+			y=108
+			align=top-center
+		}
+
+		place {
+			region=body
+			control=communityfile_rating_image
+			y=132
+			align=top-center
+		}
+
+		place {
+			region=body
+			control=communityfile_image_border,communityfile_rating_image_background,friendimage
+			width=0
+			height=0
+		}
+	}
+}

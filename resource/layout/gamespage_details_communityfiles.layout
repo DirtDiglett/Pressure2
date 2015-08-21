@@ -1,0 +1,58 @@
+"resource/layout/gamespage_details_communityfiles.layout" {
+	colors {
+		GameDetailsCommunityFiles.ExtraVerticalSpacing "135"
+		GameDetailsCommunityFiles.PanelSpacing "25"
+		RichText.InsetX "0"
+		RichText.InsetY "3" 
+
+		workshopblue="27 40 56 255"
+	}
+
+	styles {
+		communityfilesdetails {
+			render_bg {
+				-1="fill(x0-12,y0-15,x1,y1+6, workshopblue)"
+				0="image(x0-12,y0-15,x1,y1, graphics/workshopbg)"
+			}
+		}
+		
+		infolabel {}	
+
+		button {
+			render_bg {}
+		}
+	}
+
+	layout {
+		region {
+			name=body
+			margin=8
+			width=max
+			height=max
+		}
+
+		place {
+			control=workshopdetails
+			region=body
+			width=max
+		}
+
+		place {
+			region=body
+			width=210
+			y=85
+			height=180
+			control=*communityfile
+			dir=right
+			spacing=8
+			margin=0
+		}		
+		
+		place {
+			region=body
+			control=viewall
+			align=bottom
+			margin-bottom=5
+		}
+	}
+}
