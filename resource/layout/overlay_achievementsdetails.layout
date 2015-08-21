@@ -1,0 +1,80 @@
+"resource/layout/overlay_achievementsdetails.layout" {
+	colors {
+		lime500transparent = "205 220 57 66" // lime500 @ 26%
+	}
+
+	styles {
+		detailsboxtitle {
+			render_bg {}
+		}
+
+		button {
+			render_bg {}
+		}
+		
+		highlight {
+			textcolor=white
+			font-size=28
+			font-family=mediumfont
+		}
+
+		progressbackground {
+			bgcolor=none
+			render_bg {
+				 0="fill(x0,y0,x1,y1, lime500transparent)"
+			}
+		}
+
+		progressbarimage {
+			bgcolor=lime500
+			render_bg {}
+		}
+	}
+	
+	layout {		
+		place {
+			control="TitleText"
+			width=0
+			height=0
+		}
+
+		place {
+			controls=ProgressTextEarned
+			dir=down
+			spacing=4
+		}
+
+		place {
+			control=ViewAchievementsButton
+			start=ProgressTextEarned
+			dir=down
+			margin-left=-4
+		}
+		
+		place {
+			control=progressbackground
+			start=viewachievementsbutton
+			dir=down
+			y=15
+			width=max
+			height=5
+		}
+
+		place { 
+			control=progressbarimage
+			start=viewachievementsbutton
+			dir=down
+			y=15
+			height=5
+		}
+
+		place {
+			control=*achievement
+			width=max
+			height=64
+			align=bottom
+			dir=down
+			spacing=15
+		}		
+	}
+}
