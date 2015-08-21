@@ -1,0 +1,99 @@
+"resource/layout/gamespage_details_news_item.layout" {
+	colors {
+		// The extra space needed vertical beyond the autocomputed size of the blurb contents
+		// this is used in code to make the vertical size of the panel fit the title/author/morelink
+		// and should be updated if you change vertical padding/margins/layout.
+		GameDetailsNewsItem.ExtraVerticalSpacing "76"
+
+		// Override base style rich text x inset inside this control
+		RichText.InsetX "0"
+		RichText.InsetY "3" 
+	}
+
+	styles {
+		title_label {
+			font-size="18"
+			textcolor="text_onLightBG"
+			font-family=mediumfont
+		}
+
+		date_and_author {
+			font-size=16
+			textcolor=secondaryText_OnLightBG
+		}
+
+		newsitem_body {
+			textcolor="text_onLightBG"
+			selectedtextcolor="white"
+			selectedbgcolor=blue500	
+			render_bg {}
+			font-size=16
+			font-family=basefont
+		}
+		
+		"newsitem_body url" {
+			font-size=16
+			font-style="underline"
+			selectedtextcolor="white"
+			selectedbgcolor=blue500
+			textcolor=blue500	
+		}
+		
+		"newsitem_body url:hover" {
+			font-size=16
+			font-style="underline"
+			textcolor="blue400"
+			selectedtextcolor="white"
+			selectedbgcolor=blue500	
+		}
+		
+		"newsitem_body bold" {
+			font-weight=600
+			textcolor="text_onLightBG"
+			selectedtextcolor=white	
+			selectedbgcolor=blue500
+		}
+		
+		more_link {
+			font-size=16
+			font-style="uppercase"
+			font-weight=400
+			font-family=mediumfont
+			textcolor="blue500"
+			selectedtextcolor="white"	
+			selectedbgcolor=blue500
+		}
+		
+		more_link:hover {
+			font-style="uppercase,underline"
+			textcolor="blue400"
+		}
+	}
+
+	layout {
+		region {
+			name=body
+			margin=0
+			width=max
+		}
+
+		place {
+			control=newsitem_title,newsitem_dateandauthor,newsitem_body
+			width=max
+		}
+
+		place {
+			control=newsitem_more
+			width=280
+		}
+
+		place {
+			region=body
+			control=newsitem_title,newsitem_dateandauthor,newsitem_body,newsitem_more
+			x=0
+			y=0
+			dir=down
+			spacing=4
+		}
+	}
+}
