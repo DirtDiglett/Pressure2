@@ -1,0 +1,28 @@
+"resource/layout/gamespage_details_workshop_details.layout" {
+	colors {
+		WorkshopDetailsPanel.ExtraVerticalSpacing "0"
+		WorkshopDetailsPanel.ExtraHorizontalSpacing "0"
+		RichText.InsetX "2"
+		RichText.InsetY "2" 		
+	}
+	
+	styles {
+		workshop_description {}
+	}
+
+	layout {
+		place {
+			region=body
+			control=workshop_description
+			width=0
+			height=0
+		}
+
+		place {
+			region=body
+			control=workshop_banner
+			width=0
+			height=0
+		}
+	}
+}
