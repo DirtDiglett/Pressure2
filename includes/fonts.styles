@@ -2,6 +2,7 @@ fonts.styles {
 	colors {
 		basefont="Roboto"
 		mediumfont="Roboto Medium"
+		heavyfont="Roboto Bold"
     	basefont="Helvetica" [$OSX]
     }
 }
