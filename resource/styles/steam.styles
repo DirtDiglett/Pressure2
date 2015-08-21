@@ -18,7 +18,7 @@ steam.styles {
     ListPanel.EmptyListInfoTextColor    text_onLightBG
     }
 
-	styles {
+	styles {        
 		FrameTitle {
 				inset="4 2 0 0"
 				padding-right="64"
@@ -190,29 +190,29 @@ steam.styles {
 
 
  		gamedetails-headerlabel {
-          font-size="28"
+          font-size="30"
           font-style="normal"
-          font-family=basefont
+          font-family=mediumfont
           textcolor="customgreyprimary"
         }
 
         gamedetails-headerlabel-red {
-          font-size="28"
+          font-size="30"
           font-style="normal"
-          font-family=basefont
+          font-family=mediumfont
           textcolor="customgreyprimary"
         }  
         gamedetails-headerlabel-green {
-          font-size="28"
+          font-size="30"
           font-style="normal"
-          font-family=basefont
+          font-family=mediumfont
           textcolor="customgreyprimary"
         }
 
         gamedetails-headerlabel-blue {
-          font-size="28"
+          font-size="30"
           font-style="normal"
-          font-family=basefont
+          font-family=mediumfont
           textcolor="customgreyprimary"
         }
 
