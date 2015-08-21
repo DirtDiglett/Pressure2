@@ -1,0 +1,47 @@
+"resource/layout/gamespage_details_welcome.layout" {
+	colors {
+		RichText.InsetX "0"
+		RichText.InsetY "3" 
+		GameDetailsWelcome.ExtraVerticalSpacing "82"
+		GameDetailsWelcome.WelcomeTextSpacing "0"
+	}
+
+	styles {
+		nonsteamdetails {}
+
+		bodycontent {
+			textcolor="text_onLightBG"
+			font-size=16
+			render_bg {}
+		}
+
+		"RichText url" {
+			textcolor=blue500
+			font-size=16
+		}
+	}
+
+	layout {
+		region {
+			name=body
+			margin=8
+			width=max
+			height=max
+		}
+
+		place {
+			region=body
+			control=headerlabel
+			width=max
+		}
+
+		place {
+			region=body
+			y=36
+			control=bodybasic,bodynofriends,bodyhelp
+			dir=down
+			width=max
+			spacing=6
+		}
+	}
+}
