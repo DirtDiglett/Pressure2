@@ -1,0 +1,69 @@
+"resource/layout/overlay_guidespanel.layout" {
+	styles {
+		Button {
+			font-size=20
+			font-family=heavyfont
+			font-weight=400
+			padding-top=0
+			inset-top=-18
+			inset-left=-6
+			padding-left=57
+			textcolor=lightblue300
+			font-style=normal
+
+			render_bg {}			
+		}
+
+			button:hover {
+				textcolor=lightblue200
+			}
+
+		detailsbox {
+			render_bg {
+				0="image(x0,y0+2,x1,y1, graphics\overlay\buttons\guides)"
+			}
+		}
+
+		DarkRegion {}
+
+		PreviewImage {}
+
+		highlight {
+			font-size=17
+			textcolor=text_onDarkBG
+		}
+	}
+	
+	layout {
+		region {
+			name=actions
+			width=max
+			height=max
+		}
+
+		place {
+			control="TitleText"
+			width=0
+			height=0
+		}
+
+		place {
+			control="NumGuidesText"
+			region=actions
+			y=23
+			x=57
+		}
+
+		place {
+			control="ViewGuides"
+			region="actions"
+			width=max
+			height=max
+		}
+		place {
+			control=*guideitem
+			width=0
+			height=0
+		}
+	}
+}
