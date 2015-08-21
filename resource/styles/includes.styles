@@ -311,15 +311,7 @@
         }
     }
     
-    Button:hover
-    {   
-        textcolor="TextHover"
-        render_bg
-      {     
-        // background fill
-        0="gradient( x0, y0, x1, y1, buttonfaceactive, propertysheetbg )"             
-      }
-    }
+    
 
     "Page Button:hover"
     {   
@@ -785,102 +777,17 @@
         textcolor="text"
     }
     
-    ListPanelCheckBox
-    {
-        font-family=basefont
-        font-size=14
+    
+    
+    ListPanelColumnheader {
+        font-family=mediumfont
+        font-size=16
         font-weight=400
-        textcolor="Label"
-        image="graphics/chkUnselStd_Sm"
-        inset="0 5 0 0"
-    }   
-
-    ListPanelCheckBox:selected
-    {
-        image="graphics/chkSelStd_Sm"    
-    }
-
-        ListPanelCheckBox:focus
-    {
-        textcolor="TextSelected"
-        bgcolor=none
-        image="graphics/chkUnselFocus_Sm"  
-    }
-
-    ListPanelCheckBox:selected:focus
-    {
-        textcolor="TextSelected"
-        render_bg {}
-        bgcolor=none
-        image="graphics/chkSelFocus_Sm"
-    }
-    
-    ListPanelCheckBox:disabled
-    {
-        textcolor="TextDisabled"
-        bgcolor=none
-        image="graphics/chkUnselDis_Sm"
-    }
-    
-    ListPanelCheckBox:disabled:select
-    {
-        textcolor="TextDisabled"
-        bgcolor=none
-        //!! bug - this needs to look disabled
-        image="graphics/chkUnselDis"
-    }
-    
-    "ListPanelColumnheader ListPanelCheckBox"
-    {
-        font-family=basefont
-        font-size=14
-        font-weight=400
-        textcolor="Label"
-        image="graphics/chkUnSelFocus_Sm"
-        inset="4 0 0 0"  
-        }
-     
-        "ListPanelColumnHeader ListPanelCheckBox:selected"
-    {
-        inset="4 0 0 0"
-        image="graphics/chkUnSelStd_Sm"    
-    }
-    
-        "ListPanelColumnheader ListPanelCheckBox:focus"
-    {
-      font-family=basefont
-      font-size=14
-      font-weight=400
-      textcolor="TextHover"
-      image="graphics/chkUnSelFocus_Sm"
-      inset="4 0 0 0"  
-        }
-
-    "ListPanelColumnheader ListPanelCheckBox:selected:focus"
-    {
-      textcolor="TextHover"
-      render_bg {}
-      bgcolor=none
-      image="graphics/chkSelFocus_Sm"
-      inset="4 0 0 0"  
-    }
-    
-    ListPanelColumnheader
-    {
-        font-family=basefont
-        font-size=14
-        font-size=13 [$OSX]
-        font-weight=400
-        textcolor="label"
-        font-style="uppercase"
-        bgcolor="none"
-        inset="1 3 0 0"
-        render_bg    
-            {
-                // fill
-                0="fill (x0, y0 + 1, x1, y1 + 1, propertysheetbg)" // bg fill
-                1="fill (x0 + 1, y0 + 1, x1, y0 + 3, propertysheetbg)" // bg fill2
-            }   
+        textcolor="secondaryText_OnDarkBG"
+        font-style="normal"
+        bgcolor="customgreyaccent"
+        inset="0 2 0 0"
+        render_bg {}   
         }
     
     ListPanelColumnHeader:hover
@@ -888,33 +795,12 @@
         textcolor="Texthover"
     }
       
-    "Csteamrootdialog ListPanelColumnheader"
-    {
-        font-family=basefont
-        font-size=14
-        font-size=13 [$OSX]
-        font-weight=400
-        textcolor="label"
-        font-style="uppercase"
-        bgcolor="none"
-        inset="0 0 0 0"
-        inset="0 1 0 0" [$OSX]
-        padding-top=1
-        render_bg    
-        {
-            // fill
-            0="fill (x0, y0 + 1, x1, y1, propertysheetbg )" // bg fill
-        }   
-    }
+    "Csteamrootdialog ListPanelColumnheader" {}
 
    
-    "Csteamrootdialog ListPanelColumnHeader:hover"
-    {
-        textcolor="TextHover"
-    }
+    "Csteamrootdialog ListPanelColumnHeader:hover" {}
     
-    "Csteamrootdialog ListPanelSectionCollapser"
-    {
+    "Csteamrootdialog ListPanelSectionCollapser" {
         inset = "0 1 0 1"
         bgcolor=none
         render_bg
@@ -1004,38 +890,29 @@
         } 
     }
    
-    ListPanelDragger
-    {
+    ListPanelDragger {
         bgcolor="none"
-        render 
-        {
+        render {         
             //fill makes dragger visible
-            0="fill( x0, y0 + 2, x0 + 1, y1 - 3, dialogbg )" // left
-            1="fill (x0, y0, x0+1, y0+3, propertysheetbg )" //dot
+            0="fill( x0, y0 + 3, x0 + 1, y1 - 3, dividers_OnDarkBG )" // left
         }
     }
     
-    ListPanelInterior
-    {     
-        inset="3 1 0 0"
-        font-size=15
-        textcolor="text2"
+    ListPanelInterior  {     
+        inset="0 0 0 0"
+        font-size=16
+        textcolor="text_onLightBG"
         bgcolor="none" 
-    render
-            {               
-
-            }
-        render_bg 
-            {               
-
-            }
+        
+        render {}
+        render_bg {}
     } 
     
     ListPanelInterior:scrollbar
     {     
         bgcolor=none
-        inset="3 1 -1 0"
-        textcolor="text2"
+        inset="0 0 -1 0"
+        textcolor="text_onLightBG"
         render
             {               
 
@@ -1048,13 +925,13 @@
 
     "CSteamRootDialog ListPanel"
     {
-        padding-left=2
-        padding-right=2
+        padding-left=0
+        padding-right=0
     }
     
      "Csteamrootdialog ListPanelInterior"
     {     
-      inset="3 0 3 0"
+      inset="0 0 0 0"
             bgcolor=none
 
             render_bg {}
@@ -1062,7 +939,7 @@
     
     "Csteamrootdialog ListPanelInterior:scrollbar"
     {     
-      inset="3 0 -1 0"
+      inset="0 0 0 0"
             bgcolor=none
             render
                 {
@@ -1074,7 +951,7 @@
     
     "Page ListPanelInterior"
     {
-        inset="3 1 -1 0"
+        inset="0 0 0 0"
         font-size=15
         bgcolor=none
         render
@@ -1090,7 +967,7 @@
     
     "Page ListPanelInterior:scrollbar"
     {
-        inset="3 1 -1 0"
+        inset="0 0 0 0"
         bgcolor=none
         render_bg 
         {               
@@ -1101,7 +978,7 @@
       
     ListPanelSectionHeader
     {     
-        inset="2 0 0 0"
+        inset="0 0 0 0"
         textcolor=label
         font-style="uppercase"
         render_bg
