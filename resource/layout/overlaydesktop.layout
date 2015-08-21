@@ -1,0 +1,120 @@
+"resource/layout/overlaydesktop.layout" {
+	styles {		
+		sidemenu {}
+		
+			sidemenu:hover {}
+		
+		topbar {
+			font-size=30
+			textcolor=text_onDarkBG
+			font-weight=400
+			font-family=heavyfont
+		}
+		
+		clocksuffix {
+			font-size=30
+			textcolor=text_onDarkBG
+			font-weight=400
+			font-family=heavyfont
+			font-style=uppercase;
+		}
+		
+		timeStrings {
+			font-size=18
+			textcolor=disabled_OnDarkBG
+			font-family=basefontfont
+			font-weight=400
+		}
+	}
+	
+	layout {
+		region {
+			name=overlay
+			width=max
+			align=top-center
+			margin-left=15
+			margin-top=8
+			margin-right=15
+			margin-bottom=15
+		}
+
+		region {
+			name=buttonsarea
+			region=overlay
+			width=560
+			height=max
+			y=144
+			margin-bottom=270
+		}
+
+		region {
+			name=broadcastarea
+			region=overlay
+			width=645
+			height=max
+			align=right
+		}
+
+		region { name="detailpanelsTop"    region=overlay align=bottom width=max height=594 margin-bottom=480 }	
+		region	{ name="detailpanelsMiddle" region=overlay align=bottom width=max height=466 margin-bottom=406 x=600 }
+		region	{ name="detailpanelsBottom" region=overlay align=bottom width=max height=210 margin-bottom=300 }
+		region 	{ name="topbar" region=overlay width="max" height=50 }
+		region	{ name="taskbar" region=overlay width="max" height=75 align=bottom }
+
+		place {
+			controls="GameGroupsButton,ChatRoomButton,DLCButton,GuideButton,LegacyCDKeyButton,WebSiteButton,RecommendButton,WorkshopButton,NewsDetailPanel"
+			width=0
+			height=0
+		}
+		
+		place {
+			controls="BroadcastDetailPanel"
+			region=broadcastarea
+			align=bottom
+			width=645
+			height=160
+		}
+		
+		place {
+			control=CommunityHubDetailPanel,GuidesDetailPanel,CommunityDiscussionsDetailPanel,ScreenshotsDetailPanel
+			height=44
+		}
+
+		place {
+			control=FriendsDetailPanel
+			height=117 // 44 + 44 + 29
+		}
+
+		place {
+			control=CommunityHubDetailPanel,GuidesDetailPanel,CommunityDiscussionsDetailPanel,ScreenshotsDetailPanel,FriendsDetailPanel
+			region=buttonsarea
+			align=left-center
+			dir=down
+			spacing=29
+			width=max
+		}
+
+		place {
+			control="Clock,ClockSuffix"
+			region=overlay
+			align=top-center
+		}
+
+		place {
+			control="SessionText,TwoWeeksText,ForeverText"
+			dir=down
+			region=overlay
+			y=43
+			spacing=3
+		}
+
+		place {
+			control=AchievementsDetailPanel
+			dir=down
+			region=overlay
+			align=bottom
+			width=475
+			height=240
+		}
+	}
+}

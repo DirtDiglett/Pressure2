@@ -1,0 +1,97 @@
+"resource/layout/overlaydashboard.layout" {	
+	colors {}
+	
+	styles {
+		hotkey {}
+
+		topfade {
+			// 310 x 310
+			render_bg {
+				0="image(x0,y0,x1,y1, graphics/overlay/toprightshadow)"
+			}
+		}
+
+		bottomfade {}	
+
+		overlaymain {
+			bgcolor=disabled_onLightBG
+
+			render_bg {
+				0="gradient_horizontal(x0,y0,x0+1080,y1, secondaryText_OnLightBG)"
+			}
+		}	
+				
+		topbar {
+			font-size=30
+			textcolor=text_onDarkBG
+			font-family=heavyfont
+			font-weight=600
+		}
+
+		detailsboxtitle {}
+				
+		OverlayURLLabel {
+			image=graphics/overlay/close
+		}
+		
+			OverlayURLLabel:Hover {
+				image=graphics/overlay/close_hover
+			}
+		
+		LabelOverlay {}		
+	}
+	
+	layout {
+		region {
+			name=overlay
+			width=max
+			align=left
+			margin-left=15
+			margin-top=8
+			margin-right=15
+			margin-bottom=15
+		}
+		
+		place {
+			control="TopFadePanel"
+			align=right
+			width=31
+			height=31
+		}
+		
+		place {
+			control="CloseButton"
+			region=overlay
+			align=right
+			width=40
+			height=40
+			y=7
+		}
+
+		place {
+			control="HotkeyLabel,HotkeyExplain,BottomFadePanel"
+			width=0
+			height=0
+		}
+
+		place {
+			controls="gamename"
+			region=overlay
+			align=left
+			x=0
+		}
+		
+		place {
+			control="PowerMeterDim"
+			align=right
+		}
+		
+		place {
+			control="TaskbarPanel"
+			y=55
+			width=400
+			align=top-center
+		}
+	}
+	
+}

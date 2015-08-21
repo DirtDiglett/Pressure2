@@ -1,0 +1,52 @@
+"resource/layout/overlaytaskbar.layout" {
+	styles {
+		taskbar {
+			font-size=18
+			font-family=heavyfont
+			font-style=uppercase
+			textcolor=blue300
+		}
+		
+			taskbar:hover {
+				textcolor=blue200
+			}
+		
+		view_friends {}
+		
+		view_friends:Hover {}
+
+		online_friends {}		
+	}
+	
+	layout {
+		region {
+			name=taskbar
+			align=top-center
+			width=400
+			height=100
+		}
+		
+		place {
+			control="TaskbarPanel"
+			region="bottom"
+			width=max
+			height=64
+			margin-bottom=37
+		}
+
+		place {
+			control="SteamLogo,FriendPanel,view_friends,online_friends"
+			width=0
+			height=0
+		}
+
+		place {
+			controls="WebBrowserButton,MusicPlayerButton,SettingsButton,ScreenshotsButton"
+			region=taskbar
+			dir=down
+			spacing=8
+			align=top-center
+		}	
+
+	}	
+}
