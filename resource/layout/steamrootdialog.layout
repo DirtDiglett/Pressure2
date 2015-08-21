@@ -171,23 +171,10 @@
 			padding-right=10
 			padding-top=0
 			textcolor=none
-			
+
 			render {}
 			render_bg {
-				0="fill(x0+2,y0+2,x1-2,y1-2, white)"
-				
-				1="image(x0-3,y1-2,x0+2,y1+4, graphics\material\buttons\white\bottomleft)"
-				2="image_tiled(x0+2,y1-2,x1-2,y1+4, graphics/material/buttons/white/bottommiddle)"
-				3="image(x1-2,y1-2,x1+3,y1+2, graphics/material/buttons/white/bottomright)"
-				
-				4="image_tiled(x0-3,y0+2,x0+2,y1-2, graphics/material/buttons/white/leftmiddle)"
-				5="image_tiled(x1-2,y0+2,x1+3,y1-2, graphics/material/buttons/white/rightmiddle)"
-				
-				6="image(x0-3,y0-2,x0+2,y0+2, graphics/material/buttons/white/topleft)"
-				7="image_tiled(x0+2,y0-2,x1-2,y0+2, graphics/material/buttons/white/topmiddle)"
-				8="image(x1-2,y0-2,x1+3,y0+2, graphics/material/buttons/white/topright)"
-				
-				10="image(x1-24, y0+12, x1, y1, graphics\icons\inbox\empty\envelope)"
+				10="image(x1-24, y0+13, x1, y1, graphics\icons\inbox\empty\envelope)"
 			}
 		}
 		
