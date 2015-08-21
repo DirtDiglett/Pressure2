@@ -1,0 +1,122 @@
+"resource/layout/gamespage_details_achievements_most_recent.layout" {
+	colors {
+		// ProgressBarMarings must be the combined left+right margin of the actual bar from it's container
+		GameDetailsAchievements.ProgressBarMargins "8"
+		
+		Tooltip.Anchor=Parent
+
+		lime500transparent = "205 220 57 66" // lime500 @ 26%
+	}
+
+	styles {
+		mostrecent {
+			minimum-height="118"
+		}
+
+		achievementimagebg {
+			bgcolor=none
+			inset="0 0 0 0"
+      		image="graphics/achievementbg_recent"    
+		}
+
+		mostrecent_label {
+			font-size=20
+			textcolor="text_onLightBG"
+			font-weight=400
+			font-family=mediumfont
+		}
+		
+		mostrecent_name {
+			font-size=18
+			textcolor="secondarytext_onLightBG"
+		}
+
+		mostrecent_unlockedsofar {
+			font-size=18
+			textcolor=secondarytext_onLightBG
+			font-weight=400
+			font-family=basefont
+		}
+
+		progressbackground {
+			bgcolor=none
+			
+			render_bg {
+				 0="fill(x0,y0,x1,y1, lime500transparent)"
+			}
+		}
+
+		progressbarimage
+		{
+			bgcolor="lime500"
+			render_bg = {}
+		}
+	}
+
+	layout {
+		region {
+			name=body
+			margin=0
+			width=max
+			height=max
+		}
+
+		place {
+			region=body
+			control=mostrecent_label
+			x=76
+			y=55
+			width=max
+		}
+		
+		place {
+			region=body
+			control=mostrecent_name
+			x=76
+			y=75
+			width=max
+		}
+		
+
+		place {
+			region=body
+			control=mostrecent_background
+			width=0
+			height=0
+		}
+
+		place {
+			region=body
+			control=mostrecent_image
+			x=0
+			y=42
+			width=64
+			height=64
+		}
+
+		place {
+			region=body
+			control=mostrecent_unlockedsofar
+			x=0
+			y=8
+			width=max
+		}
+		
+		place {
+			region=body
+			control=progressbackground
+			y=28
+			width=max
+			height=10
+			margin-right=25
+		}
+
+		place {
+			region=body
+			control=progressbarimage
+			y=28
+			height=10
+			margin-right=25
+		}
+	}
+}
