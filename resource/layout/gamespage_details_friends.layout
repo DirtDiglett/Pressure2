@@ -1,0 +1,50 @@
+"resource/layout/gamespage_details_friends.layout" {
+	colors {
+		GameDetailsFriends.ExtraVerticalSpacing=85	
+	}
+
+	styles {
+		friendsdetails {}
+
+		button {
+			render_bg {}
+		}
+			button:hover {
+				render_bg {}
+			}
+	}
+
+	layout {
+		region {
+			name=body
+			margin=8
+			width=max
+			height=max
+		}
+
+		place {
+			region=body
+			control=headerlabel
+			width=max
+		}
+		
+		place { 
+			region=body
+			start=headerlabel
+			width=max
+			y=8
+			height=72
+			control=listplayingnow,listplayever
+			dir=down
+			spacing=0
+			margin=0
+		}
+
+		place {
+			region=body
+			control=viewall
+			align=bottom
+			margin-bottom=5
+		}
+	}
+}
