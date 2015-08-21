@@ -1,0 +1,326 @@
+"resource/layout/gamespage_details_subheader.layout" {
+	colors {
+		GameDetailsSubHeader.HorizontalSpacing=10
+		GameDetailsSubHeader.VerticalMargin=10
+		
+		limeA400transparent="198 255 0 64" // ~25% Opacity limeA400
+		limeA400lesstransparent="198 255 0 128" // ~50% Opacity limeA400
+		lightblueA200transparent="64 196 255 64" // ~25% Opacity lightblueA200
+		lightblueA200lesstransparent="64 196 255 128" // ~50% Opacity lightblueA200
+		amberA400transparent="255 196 0 64" // ~25%
+		amberA400lesstransparent="255 196 0 128" // ~50%
+		grey100transparent="245 245 245 54"
+		grey100lesstransparent="245 245 245 128"
+	}
+	
+	styles {
+		CDetailsGameSubHeaderPanel {}
+		
+		
+		ClientListButton {
+			inset="20 0 0 0"
+			// minimum-width=20
+			// minimum-height set by code to match actual height of Launch button
+			// Do not set either minimum-width or -height here or it will override the code and the layout will break
+			bgcolor=none
+			render_bg
+			{
+				// background fill
+				0="gradient( x0+2, y0+1, x1, y1-1, launch1, launch2 )"
+			}
+			render
+			{
+				1="image( x0 + 6, y0 + 11, x1, y1, graphics/icon_down_hover )"
+			}
+		}
+		
+		ClientListButton:hover {
+			inset="20 0 0 0"
+			bgcolor=none
+			render_bg
+			{
+				// background fill
+				0="gradient( x0+2, y0+1, x1, y1-1, launch0, launch2 )"
+			}
+			render
+			{
+				1="image( x0 + 6, y0 + 11, x1, y1, graphics/icon_down_hover )"
+			}
+		}
+		
+		ClientListButton:active {
+			inset="20 0 0 0"
+			bgcolor=none
+			render_bg
+			{
+				// background fill
+				0="gradient( x0+2, y0+1, x1, y1-1, focus, launch2 )"
+			}
+			render
+			{
+				1="image( x0 + 6, y0 + 11, x1, y1, graphics/icon_down_hover )"
+			}
+		}
+		
+		ClientListButton:selected {
+			inset="20 0 0 0"
+			bgcolor=none
+			render_bg
+			{
+				// background fill
+				0="gradient( x0+2, y0+1, x1, y1-1, focus, launch2 )"
+			}
+			render
+			{
+				1="image( x0 + 6, y0 + 11, x1, y1, graphics/icon_down_hover )"
+			}
+		}
+		
+		
+		// This button is for "Activate" when received games as gifts.
+		DetailsButton {
+			inset="0 -2 0 0"
+			font-family=mediumfont
+			font-size=28
+			font-weight=600
+			textcolor="grey100"
+			font-style=uppercase
+			bgcolor=none
+			padding-left=60
+			padding-right=60
+			padding-top=10
+			padding-bottom=10
+			
+			render {}
+			render_bg {
+				0="fill(x0,y0,x1,y1, grey100transparent)"
+				1="fill(x0,y0,x0+3,y1, grey100)"
+				2="fill(x0,y0,x1,y0+3, grey100)"
+				3="fill(x1-3,y0,x1,y1, grey100)"
+				4="fill(x0,y1-3,x1,y1, grey100)"
+			}
+		}
+		
+		DetailsButton:hover {
+			render_bg {
+				0="fill(x0,y0,x1,y1, grey100lesstransparent)"
+				1="fill(x0,y0,x0+3,y1, grey100)"
+				2="fill(x0,y0,x1,y0+3, grey100)"
+				3="fill(x1-3,y0,x1,y1, grey100)"
+				4="fill(x0,y1-3,x1,y1, grey100)"
+			}
+		}
+		
+		DetailsButton:active {
+			render_bg {
+				0="fill(x0,y0,x1,y1, grey100lesstransparent)"
+				1="fill(x0,y0,x0+3,y1, grey100)"
+				2="fill(x0,y0,x1,y0+3, grey100)"
+				3="fill(x1-3,y0,x1,y1, grey100)"
+				4="fill(x0,y1-3,x1,y1, grey100)"
+			}
+		}
+		
+		DetailsLaunchButton {
+			inset="0 -2 0 0"
+			font-family=mediumfont
+			font-size=28
+			font-weight=600
+			textcolor="limeA400"
+			font-style=uppercase
+			bgcolor=none
+			padding-left=60
+			padding-right=60
+			padding-top=10
+			padding-bottom=10
+			
+			render {}
+			render_bg {
+				0="fill(x0,y0,x1,y1, limeA400transparent)"
+				1="fill(x0,y0,x0+3,y1, limeA400)"
+				2="fill(x0,y0,x1,y0+3, limeA400)"
+				3="fill(x1-3,y0,x1,y1, limeA400)"
+				4="fill(x0,y1-3,x1,y1, limeA400)"
+			}
+		}
+		
+		DetailsLaunchButton:Hover {
+			render_bg {
+				0="fill(x0,y0,x1,y1, limeA400lesstransparent)"
+				1="fill(x0,y0,x0+3,y1, limeA400)"
+				2="fill(x0,y0,x1,y0+3, limeA400)"
+				3="fill(x1-3,y0,x1,y1, limeA400)"
+				4="fill(x0,y1-3,x1,y1, limeA400)"
+			}
+		}
+		
+		DetailsLaunchButton:Selected {
+			render_bg {
+				0="fill(x0,y0,x1,y1, limeA400lesstransparent)"
+				1="fill(x0,y0,x0+3,y1, limeA700)"
+				2="fill(x0,y0,x1,y0+3, limeA700)"
+				3="fill(x1-3,y0,x1,y1, limeA700)"
+				4="fill(x0,y1-3,x1,y1, limeA700)"
+			}
+		}
+		
+		
+		DetailsLaunchButton:Active {
+			render_bg {
+				0="fill(x0,y0,x1,y1, limeA400lesstransparent)"
+				1="fill(x0,y0,x0+3,y1, limeA700)"
+				2="fill(x0,y0,x1,y0+3, limeA700)"
+				3="fill(x1-3,y0,x1,y1, limeA700)"
+				4="fill(x0,y1-3,x1,y1, limeA700)"
+			}
+		}
+		
+		DetailsInstallButton {
+			inset="0 0 0 0"
+			font-family=mediumfont
+			font-size=28
+			font-weight=600
+			textcolor="lightblueA200"
+			font-style=uppercase
+			bgcolor=none
+			padding-left=60
+			padding-right=60
+			padding-top=10
+			padding-bottom=10
+			
+			render {}
+			render_bg {
+				0="fill(x0,y0,x1,y1, lightblueA200transparent)"
+				1="fill(x0,y0,x0+3,y1, lightblueA200)"
+				2="fill(x0,y0,x1,y0+3, lightblueA200)"
+				3="fill(x1-3,y0,x1,y1, lightblueA200)"
+				4="fill(x0,y1-3,x1,y1, lightblueA200)"
+			}
+		}
+		
+		DetailsInstallButton:Hover {
+			render_bg {
+				0="fill(x0,y0,x1,y1, lightblueA200lesstransparent)"
+				1="fill(x0,y0,x0+3,y1, lightblueA200)"
+				2="fill(x0,y0,x1,y0+3, lightblueA200)"
+				3="fill(x1-3,y0,x1,y1, lightblueA200)"
+				4="fill(x0,y1-3,x1,y1, lightblueA200)"
+			}
+		}
+		
+		DetailsInstallButton:Selected {
+			render_bg {
+				0="fill(x0,y0,x1,y1, lightblueA200lesstransparent)"
+				1="fill(x0,y0,x0+3,y1, lightblueA400)"
+				2="fill(x0,y0,x1,y0+3, lightblueA400)"
+				3="fill(x1-3,y0,x1,y1, lightblueA400)"
+				4="fill(x0,y1-3,x1,y1, lightblueA400)"
+			}
+		}
+		
+		
+		DetailsInstallButton:Active {
+			render_bg {
+				0="fill(x0,y0,x1,y1, lightblueA200lesstransparent)"
+				1="fill(x0,y0,x0+3,y1, lightblueA400)"
+				2="fill(x0,y0,x1,y0+3, lightblueA400)"
+				3="fill(x1-3,y0,x1,y1, lightblueA400)"
+				4="fill(x0,y1-3,x1,y1, lightblueA400)"
+			}
+		}
+		
+		
+		DetailsBuyButton {
+			inset="0 0 0 0"
+			font-family=mediumfont
+			font-size=28
+			font-weight=600
+			textcolor="amberA400"
+			font-style=uppercase
+			bgcolor=none
+			padding-left=60
+			padding-right=60
+			padding-top=10
+			padding-bottom=10
+			
+			render {}
+			render_bg {
+				0="fill(x0,y0,x1,y1, amberA400transparent)"
+				1="fill(x0,y0,x0+3,y1, amberA400)"
+				2="fill(x0,y0,x1,y0+3, amberA400)"
+				3="fill(x1-3,y0,x1,y1, amberA400)"
+				4="fill(x0,y1-3,x1,y1, amberA400)"
+			}
+		}
+		
+		DetailsBuyButton:hover {
+			render_bg {
+				0="fill(x0,y0,x1,y1, amberA400lesstransparent)"
+				1="fill(x0,y0,x0+3,y1, amberA400)"
+				2="fill(x0,y0,x1,y0+3, amberA400)"
+				3="fill(x1-3,y0,x1,y1, amberA400)"
+				4="fill(x0,y1-3,x1,y1, amberA400)"
+			}
+		}
+		
+		DetailsBuyButton:active {
+			render_bg {
+				0="fill(x0,y0,x1,y1, amberA400lesstransparent)"
+				1="fill(x0,y0,x0+3,y1, amberA700)"
+				2="fill(x0,y0,x1,y0+3, amberA700)"
+				3="fill(x1-3,y0,x1,y1, amberA700)"
+				4="fill(x0,y1-3,x1,y1, amberA700)"
+			}
+		}
+		
+		
+		DetailsBuyButton:Selected {
+			render_bg {
+				0="fill(x0,y0,x1,y1, amberA400lesstransparent)"
+				1="fill(x0,y0,x0+3,y1, amberA700)"
+				2="fill(x0,y0,x1,y0+3, amberA700)"
+				3="fill(x1-3,y0,x1,y1, amberA700)"
+				4="fill(x0,y1-3,x1,y1, amberA700)"
+			}
+		}
+	}
+	
+	layout {
+		// Y offset here should match the vertical padding value above in the colors section
+		region {
+			name="header"
+			y=0
+			x=0
+			width=max
+			height=max
+		}
+		
+		place {
+			control=launchbutton
+			region=header
+			dir=right
+			align=middle
+			spacing=0
+		}
+		
+		place {
+			start=launchbutton
+			control=clientlist
+			region=header
+			dir=right
+			align=middle
+			margin-left=0
+			margin-right=0
+			spacing=0
+		}
+		
+		place {
+			start=launchbutton
+			control=subheaderlabels
+			region=header
+			dir=down
+			align=left
+			y=30
+		}
+	}
+}

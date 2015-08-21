@@ -1,0 +1,46 @@
+"resource/layout/gamespage_details_subheader_labels.layout" {
+	styles {
+		headertext {
+			font-family=mediumfont
+			font-size=18
+			textcolor=text_onDarkBG
+			font-style=normal
+			font-weight=400
+		}
+
+		headertext-red {
+			font-family=mediumfont
+			font-size=18
+			textcolor=text_onDarkBG
+			font-style=normal
+			font-weight=400
+		}
+
+		headertext-green {
+			font-family=mediumfont
+			font-size=18
+			textcolor=text_onDarkBG
+			font-style=normal
+			font-weight=400
+		}
+
+		headertext-blue {
+			font-family=mediumfont
+			font-size=18
+			textcolor=text_onDarkBG
+			font-style=normal
+			font-weight=400
+		}
+
+		valuetext {
+			font-family=basefont
+			font-size=18
+			textcolor=text_onDarkBG
+			font-style=normal
+			font-weight=400
+			inset-top=-1
+		}
+	}
+
+	layout {}
+}
