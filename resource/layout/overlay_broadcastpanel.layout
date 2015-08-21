@@ -1,0 +1,80 @@
+"resource/layout/overlay_broadcastpanel.layout" {
+	styles {
+		Button {
+			font-size=20
+			font-family=heavyfont
+			font-weight=400
+			padding-top=0
+			inset-top=-18
+			inset-left=-6
+			padding-left=57
+			textcolor=lightblue300
+			font-style=normal
+
+			render_bg {}			
+		}
+
+			button:hover {
+				textcolor=lightblue200
+			}
+
+		detailsbox {
+			render_bg {
+				0="fill(x0,y0,x1,y1, secondaryText_OnLightBG)"
+			}
+		}
+
+		DarkRegion {}
+
+		PreviewImage {}
+
+		highlight {
+			font-size=17
+			textcolor=secondaryText_onDarkBG
+		}
+	}
+	
+	layout {
+		region {
+			name=title
+			margin-top=29
+			margin-left=23
+			margin-right=23
+			width=max
+			height=111
+		}
+
+		region {
+			name=actions
+			width=max
+			height=100
+			align=bottom
+		}
+
+		place {
+			control="TitleText,InstructionText"
+			region=title
+			dir=down
+			spacing=20
+		}
+
+		place {
+			control=StopBroadcast
+			region=actions
+			align=left
+		}
+
+		place {
+			control="ShowBroadcast,ShowChat"
+			region="actions"
+			margin-right=4
+			align=right
+		}
+
+		place {
+			control=ShowSettings
+			width=0
+			height=0
+		}
+	}
+}
