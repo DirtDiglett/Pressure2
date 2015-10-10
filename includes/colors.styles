@@ -19,6 +19,20 @@ colors.styles {
 		disabled_OnDarkBG = "255 255 255 77" // ~30% Opacity
 		dividers_OnDarkBG = "255 255 255 31" // ~12% Opacity
 
+		Friends.InGameColor       "182 224 32 250"
+	    Friends.InGameHoverColor  "203 250 35 250"
+	    Friends.OnlineColor		   "46 197 235 250"
+	    Friends.OnlineHoverColor	"51 214 255 250"
+	    Friends.OfflineColor      "141 141 141 250"
+	    Friends.OfflineHoverColor "166 166 166 250"
+	    Friends.PanelDefault      "text_onLightBG"
+	    Friends.PanelOver       "text_onLightBG"
+	    Friends.PanelSelected     "white"
+	    Friends.SectionHeader     "text_onLightBG"
+	    Friends.NoAvatarOver      "text_onLightBG"
+	    Friends.IgnoredColor      "orange500"
+	    Friends.ListHeaderFadeOut	"0 0 0 0"
+
 		red500 = "244 67 54 255"
 		red50 = "255 235 238 255"
 		red100 = "255 205 210 255"
@@ -154,5 +168,21 @@ colors.styles {
 		amberA200 = "255 215 64 255"
 		amberA400 = "255 196 0 255"
 		amberA700 = "255 171 0 255"
+
+
+		lime500transparent = "205 220 57 66" // lime500 @ 26%
+		limeA400transparent="198 255 0 64" // ~25% Opacity limeA400
+		limeA400lesstransparent="198 255 0 128" // ~50% Opacity limeA400
+		lightblueA200transparent="64 196 255 64" // ~25% Opacity lightblueA200
+		lightblueA200lesstransparent="64 196 255 128" // ~50% Opacity lightblueA200
+		amberA400transparent="255 196 0 64" // ~25%
+		amberA400lesstransparent="255 196 0 128" // ~50%
+		grey100transparent="245 245 245 54"
+		grey100lesstransparent="245 245 245 128"
+
+
+		workshopblue="27 40 56 255"
+
+		notificationbg=custombackgroundprimary
 	}
 }
