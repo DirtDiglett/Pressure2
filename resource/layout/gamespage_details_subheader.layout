@@ -2,21 +2,15 @@
 	colors {
 		GameDetailsSubHeader.HorizontalSpacing=10
 		GameDetailsSubHeader.VerticalMargin=10
-		
-		limeA400transparent="198 255 0 64" // ~25% Opacity limeA400
-		limeA400lesstransparent="198 255 0 128" // ~50% Opacity limeA400
-		lightblueA200transparent="64 196 255 64" // ~25% Opacity lightblueA200
-		lightblueA200lesstransparent="64 196 255 128" // ~50% Opacity lightblueA200
-		amberA400transparent="255 196 0 64" // ~25%
-		amberA400lesstransparent="255 196 0 128" // ~50%
-		grey100transparent="245 245 245 54"
-		grey100lesstransparent="245 245 245 128"
 	}
 	
 	styles {
 		CDetailsGameSubHeaderPanel {}
 		
 		
+
+
+		// TO DO TO DO TO DO
 		ClientListButton {
 			inset="20 0 0 0"
 			// minimum-width=20
@@ -76,6 +70,11 @@
 			}
 		}
 		
+
+
+
+
+
 		
 		// This button is for "Activate" when received games as gifts.
 		DetailsButton {
