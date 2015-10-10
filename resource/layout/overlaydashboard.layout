@@ -37,6 +37,10 @@
 			OverlayURLLabel:Hover {
 				image=graphics/overlay/close_hover
 			}
+
+			OverlayURLLabel:selected {
+				image=graphics/overlay/close_active
+			}
 		
 		LabelOverlay {}		
 	}
