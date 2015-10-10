@@ -26,9 +26,10 @@
 			textcolor="text_onLightBG"
 			selectedtextcolor="white"
 			selectedbgcolor=blue500	
-			render_bg {}
 			font-size=16
 			font-family=basefont
+
+			render_bg {}
 		}
 		
 		"newsitem_body url" {
@@ -39,13 +40,13 @@
 			textcolor=blue500	
 		}
 		
-		"newsitem_body url:hover" {
-			font-size=16
-			font-style="underline"
-			textcolor="blue400"
-			selectedtextcolor="white"
-			selectedbgcolor=blue500	
-		}
+			"newsitem_body url:hover" {
+				font-size=16
+				font-style="underline"
+				textcolor="blue400"
+				selectedtextcolor="white"
+				selectedbgcolor=blue500	
+			}
 		
 		"newsitem_body bold" {
 			font-weight=600
@@ -64,10 +65,10 @@
 			selectedbgcolor=blue500
 		}
 		
-		more_link:hover {
-			font-style="uppercase,underline"
-			textcolor="blue400"
-		}
+			more_link:hover {
+				font-style="uppercase,underline"
+				textcolor="blue400"
+			}
 	}
 
 	layout {
@@ -80,20 +81,15 @@
 		place {
 			control=newsitem_title,newsitem_dateandauthor,newsitem_body
 			width=max
+			dir=down
 		}
 
 		place {
 			control=newsitem_more
 			width=280
-		}
-
-		place {
-			region=body
-			control=newsitem_title,newsitem_dateandauthor,newsitem_body,newsitem_more
-			x=0
-			y=0
+			start=newsitem_body
 			dir=down
-			spacing=4
+			y=12
 		}
 	}
 }

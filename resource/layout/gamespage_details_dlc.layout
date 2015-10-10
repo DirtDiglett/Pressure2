@@ -33,7 +33,27 @@
 		"mostrecenttime" {}
 
 		button {
+			padding-left=8
+			padding-right=4
+			
 			render_bg {}
+		}
+
+			button:hover {
+				bgcolor=dividers_OnLightBG
+			}
+
+		ListPanelColumnHeader {
+			inset-top=0
+		}
+
+		ListPanelInterior {
+			render_bg {
+				0="fill(x0,y0-2,x0+1,y1-1, dividers_OnLightBG)"
+				// Top is left out.
+				2="fill(x1-1,y0-2,x1,y1-1, dividers_OnLightBG)"
+				3="fill(x0, y1-1, x1, y1, dividers_OnLightBG)"
+			}
 		}
 	}
 
@@ -95,6 +115,7 @@
 			control=moredlc
 			dir=right
 			spacing=10
+			margin-left=-8
 		}
 	}
 }

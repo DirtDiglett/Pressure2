@@ -7,10 +7,14 @@
 		friendsdetails {}
 
 		button {
+			padding-left=8
+			padding-right=4
+			
 			render_bg {}
 		}
+			
 			button:hover {
-				render_bg {}
+				bgcolor=dividers_OnLightBG
 			}
 	}
 
@@ -45,6 +49,7 @@
 			control=viewall
 			align=bottom
 			margin-bottom=5
+			margin-left=-8
 		}
 	}
 }
