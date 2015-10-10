@@ -1,0 +1,198 @@
+"resource/layout/friendpanel.layout" {
+	styles {
+		CFriendPanel {}
+
+		SelfPanel {}
+		
+			SelfPanel:hover {}
+	
+		namestyle {
+			font-family=mediumfont
+			font-size=17
+			font-weight=600
+		}
+		
+		nameInstanceStyle {
+			font-family=basefont
+			textcolor=secondarytext_onLightBG
+			font-size=16
+		}
+		
+		menuButtonStyle {
+			minimum-width=14
+			minimum-height=14
+
+			// Hack to hide the down arrow and replace it with the proper one.
+			// There appears to be no other reasonable way to do this, as it will ignore any image defined here.
+			inset="-50 0 0 0"
+
+			render {}
+			render_bg {
+				1="image(x0+2, y0+5, x1, y1, graphics/icons/dropdown/standard/down)"
+			}
+		}
+
+			menuButtonStyle:hover {
+				render_bg {
+					1="image(x0+2, y0+5, x1, y1, graphics/icons/dropdown/hover/down)"
+				}
+			}
+
+			menuButtonStyle:selected {
+				render {
+					1="image(x0-3, y0-1, x1+3, y1+3, graphics/icons/dropdown/selected/down)"
+				}
+
+				render_bg {}
+			}
+
+		controlPanelLinkStyle {
+			font-family=mediumfont
+			font-size=16
+			font-style=uppercase
+			padding-left=6
+			padding-right=6
+			padding-top=3
+			padding-bottom=3
+		}
+
+			controlPanelLinkStyle:hover {
+				bgcolor=dividers_onLightBG
+			}
+
+		statusStyle {
+			font-family=basefont
+			font-size=16
+			textcolor=secondarytext_onLightBG
+		}
+		
+			statusStyle:hover {
+				textcolor=text_onLightBG
+			}
+		
+		inviteLinkStyle {
+			font-family=mediumfont
+			font-size=16
+			font-style=uppercase
+			padding-left=6
+			padding-right=6
+			padding-top=3
+			padding-bottom=3
+		}
+	
+			inviteLinkStyle:hover {
+				bgcolor=dividers_onLightBG
+			}
+
+		WebStatusStyle {
+			image="graphics/icon_status_web"
+			padding-right=4
+		}
+
+		WebStatusStyleInGame {
+			image="graphics/icon_status_web_ingame"
+			padding-left=4
+		}
+	
+		BigPictureStatusStyle {
+			image="graphics/icon_status_bigpic"
+			padding-right=4
+		}
+
+		BigPictureStatusStyleInGame {
+			image="graphics/icon_status_bigpic_ingame"
+			padding-right=4
+		}
+		
+		MobileStatusStyle {
+			image="graphics/icon_status_mobile"
+			padding-right=4
+		}
+		
+		MobileStatusStyleInGame {
+			image="graphics/icon_status_mobile_ingame"
+			padding-right=4
+		}
+}
+	
+	layout {
+		place {
+			control="AvatarOverlayImage"
+			x=0
+			y=1
+			width=40
+			height=40
+		}
+
+		place {
+			control="AvatarImage"
+			x=4
+			y=5
+			width=32
+			height=32
+		}
+
+
+		place {
+			control=MenuButton
+			width=0
+			height=0
+		}
+
+		place {
+			control="Clanstatusimage"
+			x=20
+			width=15
+		}
+
+		place {
+			control="ClanStatusImage,NameLabel,FriendsNameInstanceLabel"
+			x=46
+			y=0
+			spacing=2
+		}
+
+		place {
+			control="BigPictureStatusImage,MobileStatusImage,WebStatusImage,BigPictureStatusImageInGame,MobileStatusImageInGame,WebStatusImageInGame,StatusLabel"
+			x=46
+			y=13
+		}
+
+		place {
+			control="GameLabel"
+			dir=down
+			start=statuslabel
+			y=-3
+		}
+
+		place {
+			control=AcceptLink,ControlPanelLink
+			dir=down
+			x=41
+			y=18
+		}
+
+		place {
+			control="IgnoreLink,BlockLink"
+			start=AcceptLink
+			dir=right
+			x=2
+			spacing=2
+		}
+
+		// this control is shown in the invite-to-game dialog in the overlay
+		place {
+			control="InviteToGameButton"
+			align=right
+			y=4
+			padding-right=6
+			margin-right=20
+		}
+
+
+
+
+		place { control="SuggestedImage,SuggestedLabel" x=50 y=19 spacing=4 }
+		place { control="SuggestedInvite,SuggestedIgnore" x=50 y=31 spacing=8 }
+	}
+}
