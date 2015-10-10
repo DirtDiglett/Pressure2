@@ -1,0 +1,193 @@
+"resource/layout/toolwindow.layout" {
+	styles {
+		ToolWindow {			
+			bgcolor="custombackgroundnofocus"
+			inset="0 0 0 0"
+
+			render {
+				1="image_tiled(x0,y0+55,x1,y0+59, graphics\material\shadows\top)"
+			}
+				
+			render_bg {
+				0="fill(x0,y0,x1,y0+55, customgreyprimary)"
+				1="fill(x0,y0,x1,y0+1, customgreyaccent)"
+				2="fill(x0,y0+55,x1,y0+100, customgreysecondary)"
+			}
+		}
+		
+			ToolWindow:framefocus {			
+				bgcolor="custombackgroundprimary"
+			}
+		
+		
+		Button {     
+	  		textcolor="0 0 0 0"
+	  		minimum-height=34
+	  		minimum-width=24
+
+			render_bg {
+				1="image(x0+6, y0+11, x1, y1, graphics/icons/newtab/standard/newtab)"	
+			}
+	  	}
+	  
+		  	Button:hover {     
+				render_bg {
+					1="image(x0+6, y0+11, x1, y1, graphics/icons/newtab/hover/newtab)"	
+				}
+			}
+
+			Button:active {     
+				render_bg {
+					-3="image(x0-7,y0-2,x0+12,y0+17, graphics/material/selectionbubbles/hover/white/topleft)"
+					-2="image(x0-7,y0+17,x0+12,y0+29, graphics/material/selectionbubbles/hover/white/bottomleft)"
+					-1="image(x0+12,y0-2,x0+31,y0+17, graphics/material/selectionbubbles/hover/white/topright)"
+					0="image(x0+12,y0+17,x0+31,y0+36, graphics/material/selectionbubbles/hover/white/bottomright)"
+					1="image(x0+6, y0+11, x1, y1, graphics/icons/newtab/hover/newtab)"	
+				}
+			}
+
+  		MenuButton {
+  			inset-left=-100 // This is to remove the down arrow that is applied regardless of any other setting.
+  			minimum-height=34
+
+  			render {}
+  			render_bg {
+  				0="image(x0+3, y0+15, x1, y1, graphics\icons\dropdown\standard\down)"
+  			}
+  		}
+
+  			MenuButton:hover {
+	  			render_bg {
+	  				0="image(x0+3, y0+15, x1, y1, graphics\icons\dropdown\hover\down)"
+	  			}
+	  		}
+
+	  		MenuButton:selected {
+	  			render_bg {
+	  				-3="image(x0-11,y0-2,x0+8,y0+17, graphics/material/selectionbubbles/hover/blue/topleft)"
+					-2="image(x0-11,y0+17,x0+8,y0+29, graphics/material/selectionbubbles/hover/blue/bottomleft)"
+					-1="image(x0+8,y0-2,x0+27,y0+17, graphics/material/selectionbubbles/hover/blue/topright)"
+					0="image(x0+8,y0+17,x0+27,y0+36, graphics/material/selectionbubbles/hover/blue/bottomright)"
+	  				1="image(x0+3, y0+15, x1, y1, graphics\icons\dropdown\hover\down)"
+	  			}
+	  		}
+
+		TabMenuButtonFlash { 
+		   	bgcolor=none
+		   	minimum-height=34
+		   	inset-left=-100 // This is to remove the down arrow that is applied regardless of any other setting.
+
+		   	render {}
+
+			render_bg {
+				-3="image(x0-11,y0-2,x0+8,y0+17, graphics/material/selectionbubbles/hover/orange/topleft)"
+				-2="image(x0-11,y0+17,x0+8,y0+29, graphics/material/selectionbubbles/hover/orange/bottomleft)"
+				-1="image(x0+8,y0-2,x0+27,y0+17, graphics/material/selectionbubbles/hover/orange/topright)"
+				0="image(x0+8,y0+17,x0+27,y0+36, graphics/material/selectionbubbles/hover/orange/bottomright)"
+  				1="image(x0+3, y0+15, x1, y1, graphics\icons\dropdown\hover\down)"
+			}
+		}
+		  
+		TabMenuItemFlash {
+			textcolor="text_onLightBG"
+		  	bgcolor=orange500
+
+		  	render_bg {}
+		}
+	  
+	 	PageTab {
+				font-size=16
+				font-style=regular
+				textcolor=secondarytext_onDarkBG
+				minimum-height=34
+				inset-top=-1
+
+				render {}
+				render_bg {}
+	    }
+	    
+			PageTab:hover {
+		  		textcolor=text_onDarkBG
+
+				render_bg {
+					1="image(x0,y0,x0+2,y0+2, graphics/material/tab/white/topleft)"
+					2="image_tiled(x0+2,y0,x1-2, y0+2, graphics/material/tab/white/middle)"
+					3="image_tiled(x0,y0+2,x1, y1, graphics/material/tab/white/middle)"
+					4="image(x1-2,y0,x1,y0+2, graphics/material/tab/white/topright)"
+				}
+			}
+	  
+			PageTab:selected {
+				textcolor=blue500
+
+				render_bg {
+					0="fill(x0,y1-3,x1,y1, blue500)"
+					1="image(x0,y0,x0+2,y0+2, graphics/material/tab/blue/topleft)"
+					2="image_tiled(x0+2,y0,x1-2, y0+2, graphics/material/tab/blue/middle)"
+					3="image_tiled(x0,y0+2,x1, y1, graphics/material/tab/blue/middle)"
+					4="image(x1-2,y0,x1,y0+2, graphics/material/tab/blue/topright)"
+				}
+		  	}
+
+		  		PageTab:selected:hover {
+					textcolor=blue300
+
+					render_bg {
+						0="fill(x0,y1-3,x1,y1, blue300)"
+						1="image(x0,y0,x0+2,y0+2, graphics/material/tab/blue/topleft)"
+						2="image_tiled(x0+2,y0,x1-2, y0+2, graphics/material/tab/blue/middle)"
+						3="image_tiled(x0,y0+2,x1, y1, graphics/material/tab/blue/middle)"
+						4="image(x1-2,y0,x1,y0+2, graphics/material/tab/blue/topright)"
+					}
+				}
+    
+	    TabPageCloseButton {
+	        padding-right=16
+	    }
+
+	    TabCloseButton {
+	    	minimum-width=14
+	    	minimum-height=24
+
+	        render_bg {
+	        	1="image(x0+3,y0+9,x1,y1, graphics/icons/closetab/standard/closetab)"
+	        }
+	    }
+
+		    TabCloseButton:hover {
+		        render_bg {
+		        	1="image(x0+3,y0+9,x1,y1, graphics/icons/closetab/hover/closetab)"
+		        } 
+		    }
+
+		    TabCloseButton:active {
+		    	render_bg {
+		          1="image(x0-1,y0+5,x1,y1, graphics/icons/closetab/active/closetab)"
+		    	}
+		    }
+	}
+
+	layout {
+		place [!$OSX]  {
+			control="frame_minimize,frame_maximize,frame_close"
+			align=right
+			margin-top=16
+			margin-right=15
+			spacing=1
+		}
+
+		place {
+			control=frame_captiongrip
+			width=max
+			height=55
+		}
+
+		place {
+			control="ToolWindowSheet"
+			height=max
+			width=max
+			margin=0
+			y=17
+		}
+	}
+}
