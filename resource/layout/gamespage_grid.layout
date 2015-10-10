@@ -1,0 +1,56 @@
+"resource/layout/gamespage_grid.layout" {
+	colors {
+		// values defining the aspect ratio of the images in the grid view
+		GridView.OriginalImageWidth "460"
+		GridView.OriginalImageHeight "215"
+
+		GridView.DropShadowLeading "0"
+	}
+
+	styles {
+		WrapPanel {			
+			inset="0 0 0 0"
+			bgcolor="custombackgroundprimary"
+
+			render {
+				1="image_tiled(x0,y0,x1,y0+4, graphics\material\shadows\top)"
+			}
+			render_bg {}
+		}	
+
+		emptylisttext {
+			textcolor="disabled_OnLightBG"
+			font-size="15"
+
+			render_bg {}
+		}
+		
+		GameItem_installed {
+			alpha=255
+		}
+
+		GameItem_unInstalled {
+			alpha=255
+		}
+
+		GameItem_Updating {
+			alpha=255
+		}
+	}
+
+	layout {
+		place {
+			control=grid
+			width=max
+			height=max 
+		}
+
+		place {
+			control=emptylisttext
+			align=top-center
+			margin-top=50
+			width=max
+			height=max
+		}
+	}
+}

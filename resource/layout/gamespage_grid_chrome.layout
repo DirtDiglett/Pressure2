@@ -1,0 +1,177 @@
+"resource/layout/gamespage_grid_chrome.layout" {
+	styles {
+		ChromeBorderItem {}	
+
+		GridNavDivider {}
+		
+		CUILaunchButton {
+			inset="0 -2 0 0"
+			font-family=mediumfont
+			font-size=20
+			font-weight=600
+			textcolor="limeA400"
+			font-style=uppercase
+			bgcolor=none
+			padding-left=30
+			padding-right=30
+			padding-top=10
+			padding-bottom=10
+			
+			render {}
+			render_bg {
+				-1="fill(x0,y0,x1,y1, secondaryText_onLightBG)"
+				0="fill(x0,y0,x1,y1, limeA400transparent)"
+				1="fill(x0,y0,x0+3,y1, limeA400)"
+				2="fill(x0,y0,x1,y0+3, limeA400)"
+				3="fill(x1-3,y0,x1,y1, limeA400)"
+				4="fill(x0,y1-3,x1,y1, limeA400)"
+			}
+		}
+		
+			CUILaunchButton:Hover {   
+			    render_bg {
+			    	-1="fill(x0,y0,x1,y1, secondaryText_onLightBG)"
+					0="fill(x0,y0,x1,y1, limeA400lesstransparent)"
+					1="fill(x0,y0,x0+3,y1, limeA400)"
+					2="fill(x0,y0,x1,y0+3, limeA400)"
+					3="fill(x1-3,y0,x1,y1, limeA400)"
+					4="fill(x0,y1-3,x1,y1, limeA400)"
+				}
+			}
+
+			CUILaunchButton:Selected {
+				render_bg {
+					-1="fill(x0,y0,x1,y1, secondaryText_onLightBG)"
+					0="fill(x0,y0,x1,y1, limeA400lesstransparent)"
+					1="fill(x0,y0,x0+3,y1, limeA700)"
+					2="fill(x0,y0,x1,y0+3, limeA700)"
+					3="fill(x1-3,y0,x1,y1, limeA700)"
+					4="fill(x0,y1-3,x1,y1, limeA700)"
+				}
+			}
+	
+		"GameItem_Uninstalled CUILaunchButton" {
+			inset="0 0 0 0"
+			font-family=mediumfont
+			font-size=20
+			font-weight=600
+			textcolor="lightblueA200"
+			font-style=uppercase
+			bgcolor=none
+			padding-left=30
+			padding-right=30
+			padding-top=10
+			padding-bottom=10
+			
+			render {}
+			render_bg {
+				-1="fill(x0,y0,x1,y1, secondaryText_onLightBG)"
+				0="fill(x0,y0,x1,y1, lightblueA200transparent)"
+				1="fill(x0,y0,x0+3,y1, lightblueA200)"
+				2="fill(x0,y0,x1,y0+3, lightblueA200)"
+				3="fill(x1-3,y0,x1,y1, lightblueA200)"
+				4="fill(x0,y1-3,x1,y1, lightblueA200)"
+			}
+		}
+
+			"GameItem_Uninstalled CUILaunchButton:hover" {
+				render_bg {
+					-1="fill(x0,y0,x1,y1, secondaryText_onLightBG)"
+					0="fill(x0,y0,x1,y1, lightblueA200lesstransparent)"
+					1="fill(x0,y0,x0+3,y1, lightblueA200)"
+					2="fill(x0,y0,x1,y0+3, lightblueA200)"
+					3="fill(x1-3,y0,x1,y1, lightblueA200)"
+					4="fill(x0,y1-3,x1,y1, lightblueA200)"
+				}
+			}
+
+			"GameItem_Uninstalled CUILaunchButton:selected" {
+				render_bg {
+					-1="fill(x0,y0,x1,y1, secondaryText_onLightBG)"
+					0="fill(x0,y0,x1,y1, lightblueA200lesstransparent)"
+					1="fill(x0,y0,x0+3,y1, lightblueA400)"
+					2="fill(x0,y0,x1,y0+3, lightblueA400)"
+					3="fill(x1-3,y0,x1,y1, lightblueA400)"
+					4="fill(x0,y1-3,x1,y1, lightblueA400)"
+				}
+			}
+
+		CUIDetailsButton {   
+			inset="0 -2 0 0"
+			font-family=mediumfont
+			font-size=20
+			font-weight=600
+			textcolor="grey100"
+			font-style=uppercase
+			bgcolor=none
+			padding-left=30
+			padding-right=30
+			padding-top=10
+			padding-bottom=10
+			
+			render {}
+			render_bg {
+				-1="fill(x0,y0,x1,y1, secondaryText_onLightBG)"
+				0="fill(x0,y0,x1,y1, grey100transparent)"
+				1="fill(x0,y0,x0+3,y1, grey100)"
+				2="fill(x0,y0,x1,y0+3, grey100)"
+				3="fill(x1-3,y0,x1,y1, grey100)"
+				4="fill(x0,y1-3,x1,y1, grey100)"
+			}
+		}
+		
+			CUIDetailsButton:hover {
+				render_bg {
+					-1="fill(x0,y0,x1,y1, secondaryText_onLightBG)"
+					0="fill(x0,y0,x1,y1, grey100lesstransparent)"
+					1="fill(x0,y0,x0+3,y1, grey100)"
+					2="fill(x0,y0,x1,y0+3, grey100)"
+					3="fill(x1-3,y0,x1,y1, grey100)"
+					4="fill(x0,y1-3,x1,y1, grey100)"
+				}
+			}
+			
+			CUIDetailsButton:selected {
+				render_bg {
+					-1="fill(x0,y0,x1,y1, secondaryText_onLightBG)"
+					0="fill(x0,y0,x1,y1, grey100lesstransparent)"
+					1="fill(x0,y0,x0+3,y1, grey100)"
+					2="fill(x0,y0,x1,y0+3, grey100)"
+					3="fill(x1-3,y0,x1,y1, grey100)"
+					4="fill(x0,y1-3,x1,y1, grey100)"
+				}
+			}
+	}
+	
+	layout {
+		region {
+			name="actions"
+			align=bottom
+			width=max
+			height=75
+			x=0
+			margin-bottom=24
+		}
+		
+		place {
+			control=chromeborder
+			region=actions
+			x=0
+			y=0
+			width=max
+			height=max
+		}
+
+		place {
+			control="launch"
+			region="actions"
+			align=top-center
+		}
+
+		place {
+			control=details,divider
+			width=0
+			height=0
+		}
+	}
+}
