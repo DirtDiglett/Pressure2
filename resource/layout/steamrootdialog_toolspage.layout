@@ -1,0 +1,125 @@
+"resource/layout/steamrootdialog_toolspage.layout" {
+	colors {
+		ListPanel.PostSectionLeading	12
+		divider="235 235 235 255" // Used in place of dividers_onLightBG due to opacity making them visibly darker in the client.
+	}
+
+	styles {
+		"GamesList" {
+			inset="0 0 0 0"
+			
+			render {
+				-1="fill(x0,y0-10, x1, y1, customgreysecondary)"
+				0="image_tiled( x0, y0 + 21, x1, y0 + 25, graphics/material/shadows/top )" // 4px
+			}
+			render_bg {
+				0="fill( x0, y0 - 10, x1, y0 + 21, customgreysecondary)"
+			}
+		}
+
+		ListPanelColumnheader {
+			inset-top=-8
+			padding-left=2
+
+			render_bg {
+				0="fill(x0,y0,x1,y1+1, customgreysecondary)"
+			}
+		}
+
+		GameColumnHeaderFavorites {
+			inset-top=-8
+			inset-left=-1
+			image=graphics/icons/favorite/normal/header
+		}
+
+			GameColumnHeaderFavorites:hover {
+				inset-top=-8
+				inset-left=-1
+				image=graphics/icons/favorite/hover/header
+			}
+
+	    ListPanelSectionHeader {
+			inset="0 0 0 0"
+			textcolor=customgreysecondary
+			font-style="uppercase"
+			bgcolor=white
+			font-weight=600
+			padding-top=16
+			padding-bottom=16
+			minimum-height=47
+			
+			render {}
+			render_bg {
+				0="fill(x0,y0-1,x1,y0, divider)"
+				1="fill(x0,y1-1,x1,y1, divider)"
+			}
+		}
+		
+		ListPanelSectionCollapser {
+			inset="0 0 0 0"
+			image=graphics\icons\dropdown\padder
+			padding-left=8
+			padding-right=8
+			render {}
+			render_bg {
+				0="fill(x0,y0-1,x1,y0, divider)"
+				1="fill(x0,y1-1,x1,y1, divider)"
+				2="image(x0+14,y0+18,x1,y1, graphics\icons\dropdown\standard\down_dark)"
+			}
+		}
+		
+			ListPanelSectionCollapser:hover {
+				render_bg {
+					0="fill(x0,y0-1,x1,y0, divider)"
+					1="fill(x0,y1-1,x1,y1, divider)"
+					2="image(x0+14,y0+18,x1,y1, graphics\icons\dropdown\hover\down_dark)"
+				}
+			}
+			
+			ListPanelSectionCollapser:selected {
+				render_bg {
+					0="fill(x0,y0-1,x1,y0, divider)"
+					1="fill(x0,y1-1,x1,y1, divider)"
+					2="image(x0+14,y0+18,x1,y1, graphics\icons\dropdown\standard\up_dark)"
+				}
+			}
+			
+				ListPanelSectionCollapser:selected:hover {
+					render_bg {
+						0="fill(x0,y0-1,x1,y0, divider)"
+						1="fill(x0,y1-1,x1,y1, divider)"
+						2="image(x0+14,y0+18,x1,y1, graphics\icons\dropdown\hover\up_dark)"
+					}
+				}
+
+		CGamesListFavoritesToggle {
+			minimum-width=24
+			inset-left=4
+		}
+
+			CGamesListFavoritesToggle:hover {
+				image=graphics/icons/favorite/normal/favorite
+			}
+
+			CGamesListFavoritesToggle:selected {
+				image=graphics/icons/favorite/hover/favorite
+			}
+
+				CGamesListFavoritesToggle:selected:hover {
+					image=graphics/icons/favorite/hover/favorite
+				}
+
+		URLLabel {
+			textcolor=blue200
+		}
+	}
+	
+
+	layout {
+		place { 
+			control="GamesList"
+			width=max
+			height=max
+		}
+	}
+}
