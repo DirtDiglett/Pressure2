@@ -1,0 +1,258 @@
+"resource/layout/appdownloadpanel.layout" {	
+	styles {
+		panelStyle {
+			bgcolor=none
+			minimum-height=139
+			
+			render_bg {
+				0="fill(x0,y0-1, x1, y0, dividers_onLightBG)"
+			}
+		}
+		
+		panelStyleHighlight {
+			bgcolor=white
+
+			render_bg {}			
+		}
+
+		gameImagePanel {   
+			inset="0 0 0 0"
+			render_bg {}
+			render {}
+		}
+		
+		gameImagePanelHighlight {   
+			inset="0 0 0 0"
+			bgcolor=none
+			render_bg {}
+		}	
+
+		DetailsLaunchButton {
+			inset="65 0 0 0"
+			font-family=mediumfont
+			font-size=20
+			font-weight=600
+			textcolor="lightgreen900"
+			font-style=uppercase
+			bgcolor=none
+			padding-left=0
+			padding-right=0
+			
+			render {}
+			render_bg {
+				0="fill(x0,y0,x1,y1, limeA400transparent)"
+				1="fill(x0,y0,x0+3,y1, limeA400)"
+				2="fill(x0,y0,x1,y0+3, limeA400)"
+				3="fill(x1-3,y0,x1,y1, limeA400)"
+				4="fill(x0,y1-3,x1,y1, limeA400)"
+			}
+		}
+	
+			DetailsLaunchButton:Hover {   
+				render_bg {
+					0="fill(x0,y0,x1,y1, limeA400lesstransparent)"
+					1="fill(x0,y0,x0+3,y1, limeA400)"
+					2="fill(x0,y0,x1,y0+3, limeA400)"
+					3="fill(x1-3,y0,x1,y1, limeA400)"
+					4="fill(x0,y1-3,x1,y1, limeA400)"
+				}	
+			}
+
+		ModuleHeading {
+			font-size=24
+			textcolor=text_onLightBG
+			font-weight=600
+		}	
+
+		label {
+			font-size=18
+			textcolor=secondaryText_onLightBG
+		}
+
+		label2 {
+			font-size=17
+			textcolor=secondaryText_onLightBG
+			font-family=mediumfont
+		}
+
+		label3 {
+			font-size=18
+			textcolor=secondaryText_onLightBG
+			font-size="normal"
+		}
+
+		SlimProgressBar {
+			textcolor="lime500"
+			
+			render {}
+			render_bg {
+				0="fill(x0, y0, x1, y1, lime500transparent)"
+			}
+		}
+
+		Button {
+			bgcolor=none
+		}		
+
+		panelBgColorActive {}
+		
+		topOfQueueButton {
+			bgcolor=none
+
+			render_bg {
+				1="image(x0+9, y0+9, x1, y1, graphics/icons/move_to_top/standard/move_to_top)"
+			}
+		}
+
+			topOfQueueButton:hover {
+				render_bg {
+					1="image(x0+9, y0+9, x1, y1, graphics/icons/move_to_top/hover/move_to_top)"
+				}
+			}
+
+			topOfQueueButton:active {
+				render_bg {
+					-3="image(x0-1,y0-2,x0+18,y0+17, graphics/material/selectionbubbles/hover/blue/topleft)"
+					-2="image(x0-1,y0+17,x0+18,y0+29, graphics/material/selectionbubbles/hover/blue/bottomleft)"
+					-1="image(x0+18,y0-2,x0+37,y0+17, graphics/material/selectionbubbles/hover/blue/topright)"
+					0="image(x0+18,y0+17,x0+37,y0+36, graphics/material/selectionbubbles/hover/blue/bottomright)"
+					1="image(x0+9, y0+9, x1, y1, graphics/icons/move_to_top/hover/move_to_top)"
+				}
+			}	
+		
+		SmRemoveButton {   
+			bgcolor=none
+
+			render_bg {
+				1="image(x0+9, y0+9, x1, y1, graphics/icons/closedownload/standard/closedownload)"
+			}
+		}
+
+			SmRemoveButton:hover { 
+				render_bg {
+					1="image(x0+9, y0+9, x1, y1, graphics/icons/closedownload/hover/closedownload)"
+				}
+			}
+
+			SmRemoveButton:active { 
+				render_bg {
+					-3="image(x0-1,y0-2,x0+18,y0+17, graphics/material/selectionbubbles/hover/blue/topleft)"
+					-2="image(x0-1,y0+17,x0+18,y0+29, graphics/material/selectionbubbles/hover/blue/bottomleft)"
+					-1="image(x0+18,y0-2,x0+37,y0+17, graphics/material/selectionbubbles/hover/blue/topright)"
+					0="image(x0+18,y0+17,x0+37,y0+36, graphics/material/selectionbubbles/hover/blue/bottomright)"
+					1="image(x0+9, y0+9, x1, y1, graphics/icons/closedownload/hover/closedownload)"
+				}
+			}
+	} 
+
+	layout {
+		place {
+			control="gameimage"
+			x=14
+			y=14
+			width=184
+			height=69
+		}
+
+		place {
+			control=launchbutton
+			start=gameimage
+			dir=down
+			y=4
+			width=184
+			height=37
+		}
+
+		region {
+			name=leftcolumn
+			x=212
+			y=14
+			width=max
+			height=max
+		}
+
+		place {
+			control=downloadprogressbar
+			region=leftcolumn
+			align=bottom
+			width=max
+			height=4
+			margin-right=14
+		}
+
+		place {
+			control=namelabel
+			region=leftcolumn
+			dir=down
+		}
+
+		place {
+			control=downloadtotalfield
+			start=namelabel
+			dir=down
+			y=-2
+		}
+
+		place {
+			control=starttimelabel,pausereasonfield
+			start=downloadtotalfield
+			dir=down
+			y=3
+		}
+
+		place {
+			control=starttimefield
+			dir=right
+			start=starttimelabel
+			x=4
+			y=-2
+		}
+
+		place {
+			control=timeremaininglabel
+			start=starttimelabel
+			dir=down
+			y=3
+		}
+
+		place {
+			control=timeremainingfield
+			dir=right
+			start=timeremaininglabel
+			x=4
+			y=-2
+		}
+
+		place {
+			control=timecompletedlabel
+			start=starttimelabel
+			dir=down
+			y=3
+		}
+
+		place {
+			control=timecompletedfield
+			dir=right
+			start=timecompletedlabel
+			x=4
+			y=-2
+		}
+
+		place {
+			control="topofqueuebutton,removefromqueuebutton" 
+			height=36
+			width=36
+			dir=right
+			spacing=12
+			y=51
+			align=right
+			margin-right=18
+		}
+
+		place {
+			control=spacer,updatetypelabel,settingslink,newslink,downloadtotallabel,pausereasonlabel
+			width=0
+			height=0
+		}
+	}
+}

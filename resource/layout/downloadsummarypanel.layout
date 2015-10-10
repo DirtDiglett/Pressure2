@@ -1,0 +1,308 @@
+"resource/layout/downloadsummarypanel.layout" {
+	colors {
+		panelBackground = "12 27 38 255"
+		panelBackgroundTransparent = "12 27 38 0"
+	}
+  
+	styles {
+		CDownloadSummaryPanel {
+			bgcolor=customgreysecondary
+			inset="0 0 0 0"
+	  	}
+	   		
+		container {}
+	
+		bigtext {
+			font-family=basefont
+			font-size=18
+			font-weight=600
+			font-style="normal"
+			textcolor="text_onDarkBG"
+		}
+		
+		bigtextlabel {
+			font-family=basefont
+			font-size=17
+			font-style="normal"
+			textcolor="secondarytext_onDarkBG"
+		}
+		
+		throttleLabel {
+			font-family=basefont
+			font-size=18
+			font-weight=600
+			font-style="normal"
+			textcolor="text_onDarkBG"
+	    } 
+	    
+		throttleValue {
+			font-family=basefont
+			font-size=17
+			font-style="normal"
+			textcolor="secondarytext_onDarkBG"
+		}
+
+
+
+		NetGraphPanel {
+			bgcolor=none	
+			textcolor=dividers_OnDarkBG
+
+			render_bg {}
+			render {}
+		}
+		
+		DiscGraphPanel {
+			bgcolor=none	
+			textcolor=lime500
+
+			render_bg {}
+			render {}
+		}
+
+		DiskLegendPanel {
+			render_bg {
+				0="fill( x0, y0, x1,y1, lime500 )"
+			}
+		}
+		
+		NetLegendPanel {
+			render_bg {
+				0="fill( x0, y0, x1,y1, dividers_OnDarkBG )"
+			}
+		}
+
+		PauseButton {   
+			font-family=basefont
+			font-size=18
+			font-style=regular
+			font-weight=600
+			inset-top=2
+			padding-left=18
+			padding-right=18
+			padding-top=10
+			padding-bottom=10
+			textcolor=white
+			
+			render_bg {
+				0="fill(x0+2,y0+2,x1-2,y1-2, blue500)"
+				
+				1="image(x0-3,y1-2,x0+2,y1+4, graphics\material\buttons\blue\bottomleft)"
+				2="image_tiled(x0+2,y1-2,x1-2,y1+4, graphics/material/buttons/blue/bottommiddle)"
+				3="image(x1-2,y1-2,x1+3,y1+2, graphics/material/buttons/blue/bottomright)"
+				
+				4="image_tiled(x0-3,y0+2,x0+2,y1-2, graphics/material/buttons/blue/leftmiddle)"
+				5="image_tiled(x1-2,y0+2,x1+3,y1-2, graphics/material/buttons/blue/rightmiddle)"
+				
+				6="image(x0-3,y0-2,x0+2,y0+2, graphics/material/buttons/blue/topleft)"
+				7="image_tiled(x0+2,y0-2,x1-2,y0+2, graphics/material/buttons/blue/topmiddle)"
+				8="image(x1-2,y0-2,x1+3,y0+2, graphics/material/buttons/blue/topright)"
+			}
+		}
+	   
+			PauseButton:Hover {	
+				render_bg {
+					0="fill(x0+2,y0+2,x1-2,y1-2, blue400)"
+					
+					1="image(x0-3,y1-2,x0+2,y1+4, graphics\material\buttons\blue\hover/bottomleft)"
+					2="image_tiled(x0+2,y1-2,x1-2,y1+4, graphics/material/buttons/blue/hover/bottommiddle)"
+					3="image(x1-2,y1-2,x1+3,y1+2, graphics/material/buttons/blue/hover/bottomright)"
+					
+					4="image_tiled(x0-3,y0+2,x0+2,y1-2, graphics/material/buttons/blue/hover/leftmiddle)"
+					5="image_tiled(x1-2,y0+2,x1+3,y1-2, graphics/material/buttons/blue/hover/rightmiddle)"
+					
+					6="image(x0-3,y0-2,x0+2,y0+2, graphics/material/buttons/blue/hover/topleft)"
+					7="image_tiled(x0+2,y0-2,x1-2,y0+2, graphics/material/buttons/blue/hover/topmiddle)"
+					8="image(x1-2,y0-2,x1+3,y0+2, graphics/material/buttons/blue/hover/topright)"
+				}  	   
+			}
+			
+		ResumeButton {
+			font-family=basefont
+			font-size=18
+			font-style=regular
+			font-weight=600
+			inset-top=2
+			padding-left=18
+			padding-right=18
+			padding-top=10
+			padding-bottom=10
+			textcolor=white
+			
+			render_bg {
+				0="fill(x0+2,y0+2,x1-2,y1-2, blue500)"
+				
+				1="image(x0-3,y1-2,x0+2,y1+4, graphics\material\buttons\blue\bottomleft)"
+				2="image_tiled(x0+2,y1-2,x1-2,y1+4, graphics/material/buttons/blue/bottommiddle)"
+				3="image(x1-2,y1-2,x1+3,y1+2, graphics/material/buttons/blue/bottomright)"
+				
+				4="image_tiled(x0-3,y0+2,x0+2,y1-2, graphics/material/buttons/blue/leftmiddle)"
+				5="image_tiled(x1-2,y0+2,x1+3,y1-2, graphics/material/buttons/blue/rightmiddle)"
+				
+				6="image(x0-3,y0-2,x0+2,y0+2, graphics/material/buttons/blue/topleft)"
+				7="image_tiled(x0+2,y0-2,x1-2,y0+2, graphics/material/buttons/blue/topmiddle)"
+				8="image(x1-2,y0-2,x1+3,y0+2, graphics/material/buttons/blue/topright)"
+			}
+    	}   
+    		   
+			ResumeButton:hover {
+				render_bg {
+					0="fill(x0+2,y0+2,x1-2,y1-2, blue400)"
+					
+					1="image(x0-3,y1-2,x0+2,y1+4, graphics\material\buttons\blue\hover/bottomleft)"
+					2="image_tiled(x0+2,y1-2,x1-2,y1+4, graphics/material/buttons/blue/hover/bottommiddle)"
+					3="image(x1-2,y1-2,x1+3,y1+2, graphics/material/buttons/blue/hover/bottomright)"
+					
+					4="image_tiled(x0-3,y0+2,x0+2,y1-2, graphics/material/buttons/blue/hover/leftmiddle)"
+					5="image_tiled(x1-2,y0+2,x1+3,y1-2, graphics/material/buttons/blue/hover/rightmiddle)"
+					
+					6="image(x0-3,y0-2,x0+2,y0+2, graphics/material/buttons/blue/hover/topleft)"
+					7="image_tiled(x0+2,y0-2,x1-2,y0+2, graphics/material/buttons/blue/hover/topmiddle)"
+					8="image(x1-2,y0-2,x1+3,y0+2, graphics/material/buttons/blue/hover/topright)"
+				}
+	    	}	
+	}
+	
+	layout {
+		region {
+			name=container
+			y=14
+			x=14
+			margin-right=14
+			margin-bottom=14
+			width=max
+			height=max
+		}
+
+		place {
+			control=net_graphpanel
+			x=0
+			align=bottom
+			width=max
+			height=104
+		}		
+
+		place {
+			control=disc_graphpanel
+			x=0
+			align=bottom
+			width=max
+			height=104
+		}
+
+		place {
+			control=net_legend_panel
+			region=container
+			width=8
+			height=54
+		}
+
+		place {
+			control=disk_legend_panel
+			start=net_legend_panel
+			dir=down
+			y=20
+			width=8
+			height=16
+		}
+
+		place {
+			control=header,net_legend_label,disk_legend_label
+			width=0
+			height=0
+		}
+
+		place {
+			control=download_rate_value
+			start=net_legend_panel
+			x=8
+			dir=right
+		}
+
+		place {
+			control=download_rate
+			start=download_rate_value
+			dir=right
+			x=3
+			y=-2
+		}
+		
+		place {
+			control=peak_download_rate_value
+			start=download_rate_value
+			dir=down
+		}
+
+		place {
+			control=peak_download_rate
+			start=peak_download_rate_value
+			dir=right
+			x=3
+			y=-2
+		}
+
+		place {
+			control=total_downloaded_value
+			start=peak_download_rate_value
+			dir=down
+		}
+
+		place {
+			control=total_downloaded
+			start=total_downloaded_value
+			dir=right
+			x=3
+			y=-2
+		}
+
+		place {
+			control=disk_status_value
+			start=disk_legend_panel
+			x=8
+			dir=right
+		}
+
+		place {
+			control=disk_status_label
+			start=disk_status_value
+			dir=right
+			x=3
+			y=-2
+		}
+
+		place {
+			control=blackout_label
+			start=download_rate
+			x=62
+			dir=right
+		}
+
+		place {
+			control=blackout_value
+			start=blackout_label
+			dir=right
+			x=3
+			y=-2
+		}
+
+		place {
+			control=throttling_label
+			start=blackout_label
+			dir=down
+		}
+
+		place {
+			control=throttling_value
+			start=throttling_label
+			dir=right
+			x=3
+			y=-2
+		}
+
+		place {
+			control="pauseresumeallbutton"
+			region=container
+			align=right
+		}
+	}
+}
