@@ -1,0 +1,321 @@
+"resource/layout/ugcdownloadpanel.layout" {
+	styles {
+		panelStyle {
+			bgcolor=workshopblue
+			minimum-height=139
+			
+			render {
+				0="fill(x0,y1, x1, y1+1, workshopblue)"
+				1="image_tiled( x0, y0, x1, y0 + 4, graphics/material/shadows/top )" // 4px
+				2="image_tiled( x0, y1-4, x1, y1, graphics/material/shadows/bottom )" // 4px
+			}
+
+			render_bg {
+				1="image(x0,y0,x1,y1, graphics/workshopbg_nologo)"
+			}
+		}
+		
+		panelStyleHighlight {
+			bgcolor=workshopblue
+			minimum-height=139
+			
+			render {
+				0="fill(x0,y1, x1, y1+1, workshopblue)"
+				1="image_tiled( x0, y0, x1, y0 + 4, graphics/material/shadows/top )" // 4px
+				2="image_tiled( x0, y1-4, x1, y1, graphics/material/shadows/bottom )" // 4px
+			}
+
+			render_bg {
+				1="image(x0,y0,x1,y1, graphics/workshopbg_nologo)"
+			}		
+		}
+
+		gameImagePanel {   
+			inset="0 0 0 0"
+			render_bg {}
+			render {}
+		}
+		
+		gameImagePanelHighlight {   
+			inset="0 0 0 0"
+			bgcolor=none
+			render_bg {}
+		}	
+
+		ModuleHeading {
+			font-size=24
+			textcolor=text_onDarkBG
+			font-weight=600
+		}	
+
+		label {
+			font-size=18
+			textcolor=secondaryText_onDarkBG
+		}
+
+		label2 {
+			font-size=17
+			textcolor=secondaryText_onDarkBG
+			font-family=mediumfont
+		}
+
+		label3 {
+			font-size=18
+			textcolor=secondaryText_onDarkBG
+			font-size="normal"
+		}
+
+		SlimProgressBar {
+			textcolor="lime500"
+			
+			render {}
+			render_bg {
+				0="fill(x0, y0, x1, y1, lime500transparent)"
+			}
+		}
+
+		Button {
+			bgcolor=none
+		}		
+
+		panelBgColorActive {}
+		
+		topOfQueueButton {
+			bgcolor=none
+
+			render_bg {
+				1="image(x0+9, y0+9, x1, y1, graphics/icons/move_to_top/standard/move_to_top)"
+			}
+		}
+
+			topOfQueueButton:hover {
+				render_bg {
+					1="image(x0+9, y0+9, x1, y1, graphics/icons/move_to_top/hover/move_to_top)"
+				}
+			}
+
+			topOfQueueButton:active {
+				render_bg {
+					-3="image(x0-1,y0-2,x0+18,y0+17, graphics/material/selectionbubbles/hover/white/topleft)"
+					-2="image(x0-1,y0+17,x0+18,y0+29, graphics/material/selectionbubbles/hover/white/bottomleft)"
+					-1="image(x0+18,y0-2,x0+37,y0+17, graphics/material/selectionbubbles/hover/white/topright)"
+					0="image(x0+18,y0+17,x0+37,y0+36, graphics/material/selectionbubbles/hover/white/bottomright)"
+					1="image(x0+9, y0+9, x1, y1, graphics/icons/move_to_top/hover/move_to_top)"
+				}
+			}	
+		
+		SmRemoveButton {   
+			bgcolor=none
+			textcolor=none
+
+			render_bg {
+				1="image(x0+9, y0+9, x1, y1, graphics/icons/closedownload/standard/closedownload_light)"
+			}
+		}
+
+			SmRemoveButton:hover { 
+				render_bg {
+					1="image(x0+9, y0+9, x1, y1, graphics/icons/closedownload/hover/closedownload_light)"
+				}
+			}
+
+			SmRemoveButton:active { 
+				render_bg {
+					-3="image(x0-1,y0-2,x0+18,y0+17, graphics/material/selectionbubbles/hover/white/topleft)"
+					-2="image(x0-1,y0+17,x0+18,y0+29, graphics/material/selectionbubbles/hover/white/bottomleft)"
+					-1="image(x0+18,y0-2,x0+37,y0+17, graphics/material/selectionbubbles/hover/white/topright)"
+					0="image(x0+18,y0+17,x0+37,y0+36, graphics/material/selectionbubbles/hover/white/bottomright)"
+					1="image(x0+9, y0+9, x1, y1, graphics/icons/closedownload/hover/closedownload_light)"
+				}
+			}
+
+		ViewModsButton {
+			textcolor=none
+			bgcolor=none
+
+			render_bg {
+				1="image(x0+9, y0+9, x1, y1, graphics/icons/view/standard/view)"
+			}	
+		}
+
+			ViewModsButton:hover { 
+				render_bg {
+					1="image(x0+9, y0+9, x1, y1, graphics/icons/view/hover/view)"
+				}
+			}
+
+			ViewModsButton:active { 
+				render_bg {
+					-3="image(x0-1,y0-2,x0+18,y0+17, graphics/material/selectionbubbles/hover/white/topleft)"
+					-2="image(x0-1,y0+17,x0+18,y0+29, graphics/material/selectionbubbles/hover/white/bottomleft)"
+					-1="image(x0+18,y0-2,x0+37,y0+17, graphics/material/selectionbubbles/hover/white/topright)"
+					0="image(x0+18,y0+17,x0+37,y0+36, graphics/material/selectionbubbles/hover/white/bottomright)"
+					1="image(x0+9, y0+9, x1, y1, graphics/icons/view/hover/view)"
+				}
+			}
+
+		graphdownloadrate {}
+
+		SmPauseButton {
+			bgcolor=none
+			textcolor=none
+
+			render_bg {
+				1="image(x0+9, y0+9, x1, y1, graphics/icons/pause/standard/pause)"
+			}
+		}
+
+			SmPauseButton:hover { 
+				render_bg {
+					1="image(x0+9, y0+9, x1, y1, graphics/icons/pause/hover/pause)"
+				}
+			}
+
+			SmPauseButton:active { 
+				render_bg {
+					-3="image(x0-1,y0-2,x0+18,y0+17, graphics/material/selectionbubbles/hover/white/topleft)"
+					-2="image(x0-1,y0+17,x0+18,y0+29, graphics/material/selectionbubbles/hover/white/bottomleft)"
+					-1="image(x0+18,y0-2,x0+37,y0+17, graphics/material/selectionbubbles/hover/white/topright)"
+					0="image(x0+18,y0+17,x0+37,y0+36, graphics/material/selectionbubbles/hover/white/bottomright)"
+					1="image(x0+9, y0+9, x1, y1, graphics/icons/pause/hover/pause)"
+				}
+			}
+		
+		SmResumeButton {
+			bgcolor=none
+			textcolor=none
+
+			render_bg {
+				1="image(x0+9, y0+9, x1, y1, graphics/icons/resume/standard/resume)"
+			}
+		}
+		
+			SmResumeButton:hover { 
+				render_bg {
+					1="image(x0+9, y0+9, x1, y1, graphics/icons/resume/hover/resume)"
+				}
+			}
+
+			SmResumeButton:active { 
+				render_bg {
+					-3="image(x0-1,y0-2,x0+18,y0+17, graphics/material/selectionbubbles/hover/white/topleft)"
+					-2="image(x0-1,y0+17,x0+18,y0+29, graphics/material/selectionbubbles/hover/white/bottomleft)"
+					-1="image(x0+18,y0-2,x0+37,y0+17, graphics/material/selectionbubbles/hover/white/topright)"
+					0="image(x0+18,y0+17,x0+37,y0+36, graphics/material/selectionbubbles/hover/white/bottomright)"
+					1="image(x0+9, y0+9, x1, y1, graphics/icons/resume/hover/resume)"
+				}
+			}	
+	}
+
+	layout {
+		place {
+			control="gameimage"
+			x=14
+			y=14
+			width=184
+			height=69
+		}
+
+		place {
+			control=workshopminibanner
+			start=gameimage
+			dir=down
+			width=0
+			height=37
+		}
+
+		place {
+			control=downloadprogressbar
+			start=workshopminibanner
+			dir=down
+			y=6
+			width=max
+			height=4
+			margin-right=14
+		}
+
+		region {
+			name=leftcolumn
+			x=212
+			y=14
+			width=max
+			height=max
+		}
+
+		place {
+			control=namelabel
+			region=leftcolumn
+			dir=down
+		}
+
+		place {
+			control=downloadtotalfield
+			start=namelabel
+			dir=down
+			y=-2
+		}
+
+		place {
+			control=starttimelabel
+			start=downloadtotalfield
+			dir=down
+			y=3
+		}
+
+		place {
+			control=starttimefield
+			dir=right
+			start=starttimelabel
+			x=4
+			y=-2
+		}
+
+		place {
+			control=timeremaininglabel
+			start=starttimelabel
+			dir=down
+			y=3
+		}
+
+		place {
+			control=timeremainingfield
+			dir=right
+			start=timeremaininglabel
+			x=4
+			y=-2
+		}
+
+		place {
+			control=downloadfileslabel
+			start=timeremaininglabel
+			dir=down
+			y=3
+		}
+
+		place {
+			control=downloadfilesfield
+			dir=right
+			start=downloadfileslabel
+			x=4
+			y=-2
+		}
+
+		place {
+			control="viewmodsbutton,pauseresumebutton" 
+			height=36
+			width=36
+			dir=right
+			spacing=12
+			y=51
+			align=right
+			margin-right=18
+		}
+
+		place {
+			control=updatetypelabel,graphdownloadrate,downloadtotallabel
+			width=0
+			height=0
+		}
+
+	}
+}
