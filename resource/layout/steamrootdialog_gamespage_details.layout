@@ -2,6 +2,8 @@
 	colors {
 		divider="235 235 235 255" // Used in place of dividers_onLightBG due to opacity making them visibly darker in the client.
 		headerimagebg="26 107 118 255"
+
+		ListPanel.PostSectionLeading	14
 	}
 	
 	styles {
@@ -9,20 +11,17 @@
 			bgcolor=custombackgroundprimary
 			font-size=16
 			
-			render {
-				0="image_tiled(x0,y1-4,x1,y1, graphics\material\shadows\bottom)"
-			}
 			render_bg {}
 		}
 		
 		emptylisttext {
-			textcolor="text_onLightBG"
+			textcolor="disabled_onLightBG"
 			font-size="18"
 			render_bg {}
 		}
 		
 		CGamesPage_Details {
-			bgcolor="none"
+			bgcolor="custombackgroundprimary"
 			inset="0 0 0 0"
 			render {
 				9="fill(x0+308,y0,x1,y0+2, customgreysecondary)"
@@ -57,7 +56,7 @@
 		
 		ListPanelSectionHeader {
 			inset="0 0 0 0"
-			textcolor=customgreyprimary
+			textcolor=customgreysecondary
 			font-style="uppercase"
 			bgcolor=white
 			font-weight=600
@@ -70,10 +69,6 @@
 				0="fill(x0,y0-1,x1,y0, divider)"
 				1="fill(x0,y1-1,x1,y1, divider)"
 			}
-		}
-		
-		ListPanelSectionHeader {
-			textcolor=customgreysecondary
 		}
 		
 		"GamesPage_Details ListPanelSectionCollapser" {
@@ -130,20 +125,28 @@
 		"CGamesListPanel ListPanelColumnSelectButton" {
 			inset="0 0 0 0"
 			render {
-				4="fill(x0+7,y1-1,x1,y1+3, grey200)"
-				5="image( x0 + 8, y0 + 7, x1, y1, graphics\icons\columnselectbutton\standard\columnselectbutton)"
+				0="fill(x0+5,y0+2,x1,y1, grey200)"
+				4="fill(x0+5,y1-1,x1,y1+3, grey200)"
+				5="image( x0 + 7, y0 + 7, x1, y1, graphics\icons\columnselectbutton\standard\columnselectbutton)"
 			}
-			render_bg {
-				0="fill(x0+7,y0+2,x1,y1, grey200)"
-			}
+			render_bg {}
 		}
 		
-		"CGamesListPanel ListPanelColumnSelectButton:hover" {
-			render {
-				4="fill(x0+7,y1-1,x1,y1+3, grey200)"
-				5="image( x0 + 8, y0 + 7, x1, y1, graphics\icons\columnselectbutton\hover\columnselectbutton)"
+			"CGamesListPanel ListPanelColumnSelectButton:hover" {
+				render {
+					0="fill(x0+5,y0+2,x1,y1, grey200)"
+					4="fill(x0+5,y1-1,x1,y1+3, grey200)"
+					5="image( x0 + 7, y0 + 7, x1, y1, graphics\icons\columnselectbutton\hover\columnselectbutton)"
+				}
 			}
-		}
+
+			"CGamesListPanel ListPanelColumnSelectButton:selected" {
+				render {
+					0="fill(x0+5,y0+2,x1,y1, grey200)"
+					4="fill(x0+5,y1-1,x1,y1+3, grey200)"
+					5="image( x0 + 7, y0 + 7, x1, y1, graphics\icons\columnselectbutton\hover\columnselectbutton)"
+				}
+			}
 		
 		headerimage {
 			render {
