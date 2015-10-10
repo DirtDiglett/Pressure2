@@ -44,8 +44,9 @@
 			controls="WebBrowserButton,MusicPlayerButton,SettingsButton,ScreenshotsButton"
 			region=taskbar
 			dir=down
-			spacing=8
+			spacing=3
 			align=top-center
+			margin-top=-3
 		}	
 
 	}	
