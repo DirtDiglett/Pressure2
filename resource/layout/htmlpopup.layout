@@ -1,0 +1,111 @@
+"resource/layout/htmlpopup.layout" {
+	styles {
+		Frame {			
+			bgcolor="custombackgroundnofocus"
+			inset="0 0 0 0"
+
+			render {
+				1="image_tiled(x0,y0+34,x1,y0+38, graphics\material\shadows\top)"
+			}
+				
+			render_bg {
+				0="fill(x0,y0,x1,y0+34, customgreyprimary)"
+				1="fill(x0,y0,x1,y0+1, customgreyaccent)"
+				2="fill(x0,y0+34,x1,y0+79, customgreysecondary)"
+			}
+		}
+		
+			Frame:framefocus {			
+				bgcolor="custombackgroundprimary"
+			}
+
+		TextEntryURL {
+			font-family=basefont
+			font-size=18
+			font-weight=400
+			textcolor="text_onLightBG"
+			inset-top=0
+			inset-left=8
+			bgcolor=custombackgroundprimary
+			selectedtextcolor="white"
+			selectedbgcolor="blue500"
+			shadowtextcolor="disabled_onLightBG"
+
+			render {}
+			render_bg {
+				-1="fill(x1,y0,x1+25,y1, custombackgroundprimary)"
+			}
+		}
+		
+			TextEntryURL:Hover {}
+
+			TextEntryURL:Disabled {
+				textcolor="disabled_onLightBG"
+			}
+	}
+	
+	layout {
+
+		place {
+			control=frame_captiongrip
+			width=max
+			height=34
+		}
+
+		region {
+			name="subnav"
+			width=max
+			height=45
+			y=34
+		}
+
+		region {
+			name=body
+			height=max
+			width=max
+			y=79
+		}
+
+		place {
+			control="htmlpopupchild"
+			region=body
+			width=max
+			height=max
+		}	
+
+		place {
+			control="PageLoadThrobber"
+			region=subnav
+			align=right
+			height=max
+		}
+		
+		place {
+			control=BackButton,ForwardButton,ReloadButton,StopButton
+			region=subnav
+			align=left
+			width=24
+			height=max
+			x=8
+			spacing=6
+		}
+
+		place {
+			control="EVCert,URLBar"
+			region=subnav
+			align=left
+			height=max
+			width=max
+			spacing=0
+			start=stopbutton
+			margin-left=8
+			end-right=PageLoadThrobber
+		}
+
+		place {
+			control=URLStatusImage,HomeButton,StatusText
+			width=0
+			height=0
+		}
+	}
+}
