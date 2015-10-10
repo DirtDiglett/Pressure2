@@ -1,13 +1,8 @@
-"resource/layout/uistatuspanel.layout" {
-	colors {
-		lime500transparent = "205 220 57 66" // lime500 @ 26%
-	}
-	
+"resource/layout/uistatuspanel.layout" {	
 	styles {
 		StatusLabel {
 			font-size=18
 			font-family=basefont
-			font-weight=400
 			textcolor=text_onDarkBG
 			font-style=normal
 			inset-top=-2
@@ -16,16 +11,16 @@
 		StatusLabelDim {
 			font-size=16
 			font-family=basefont
-			font-weight=400
 			textcolor=secondarytext_onDarkBG
 			font-style=normal
 		}
 		
 		SlimProgressBar {
 			textcolor="lime500"
+			
 			render {}
 			render_bg {
-				0="fill( x0, y0, x1, y1, lime500transparent )" // lime500 @ 26%
+				0="fill(x0, y0, x1, y1, lime500transparent)"
 			}
 		}
 	}
