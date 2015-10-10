@@ -38,18 +38,6 @@ settings.styles {
 	    RichText.InsetY = 7
 	    
 	    SectionedListPanel.CollapserWidth = 16
-	    
-	    HTML.SearchInsetY = 5
-	    HTML.SearchInsetX = 10
-	    HTML.SearchWide = 348
-	    HTML.SearchTall = 38
-	    HTML.SearchAnimationTime = 0.25
-
-	    HTML.IMEInsetY = 5
-	    HTML.IMEInsetX = 10
-	    HTML.IMEWide = 348
-	    HTML.IMETall = 38
-	    HTML.IMEAnimationTime = 0.25
 
 	    MessageBox.ButtonHeight = 24
 	}
