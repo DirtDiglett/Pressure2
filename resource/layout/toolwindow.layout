@@ -148,6 +148,7 @@
 	    TabCloseButton {
 	    	minimum-width=14
 	    	minimum-height=24
+	    	bgcolor=none
 
 	        render_bg {
 	        	1="image(x0+3,y0+9,x1,y1, graphics/icons/closetab/standard/closetab)"
@@ -165,6 +166,12 @@
 		          1="image(x0-1,y0+5,x1,y1, graphics/icons/closetab/active/closetab)"
 		    	}
 		    }
+
+		//    TabCloseButton:selected {
+		//    	render_bg {
+		//          1="image(x0-1,y0+5,x1,y1, graphics/icons/closetab/active/closetab)"
+		//    	}
+		//    }
 	}
 
 	layout {
