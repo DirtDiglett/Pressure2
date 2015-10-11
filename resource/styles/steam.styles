@@ -266,22 +266,15 @@ steam.styles {
 
 
 
-
-
-
-
-
-
-
-		CChatRoomDlg {
-			render {}
-			render_bg {}
-		}
-		
 		ChatListPanel {   
-			bgcolor=custombackgroundprimary
+			bgcolor=none
+			padding-top=14
+			padding-left=14
+			padding-right=14
 
-			render {}
+			render {
+				0="fill(x0,y1-1,x1,y1, grey200)"
+			}
 			render_bg {}
 		}
 
@@ -289,26 +282,26 @@ steam.styles {
 			textcolor="text_OnLightBG"
 			selectedtextcolor="white"   
 			SelectedBgColor="blue500"
-			font-size=16
+			font-size=17
 		}
 		
 		friends_chat_text_self {
 			textcolor="secondaryText_OnLightBG"
 			selectedtextcolor="white"   
 			selectedbgcolor="blue500"
-			font-size=16
+			font-size=17
 		}
 
 		friends_chat_history {
 			textcolor="disabled_OnLightBG"
 			selectedtextcolor="white"   
-			selectedbgcolor="blue"
-			font-size=16
+			selectedbgcolor="blue500"
+			font-size=17
 		}
 		
 		friends_chat_event {
 			textcolor="orange500"
-			font-size=16
+			font-size=17
 			selectedtextcolor="white"
 			selectedbgcolor="blue500"
 		}
@@ -316,14 +309,14 @@ steam.styles {
 		friends_chat_bright_event {
 			textcolor="orange500"
 			selectedtextcolor="white"
-			font-size=16
+			font-size=17
 			font-weight=1000
 		}
 
 		friends_chat_url {
 			textcolor="blue500"
 			font-style=underline
-			font-size=16
+			font-size=17
 			selectedtextcolor="white"
 			selectedbgcolor="blue500"
 		}
@@ -332,7 +325,7 @@ steam.styles {
 			textcolor="lightgreen500"
 			selectedtextcolor="white"   
 			selectedbgcolor="blue500"
-			font-size=16
+			font-size=17
 			font-weight=600
 		}
 
@@ -340,21 +333,21 @@ steam.styles {
 			textcolor="orange500"
 			selectedtextcolor="white"   
 			selectedbgcolor="blue500"
-			font-size=16
+			font-size=17
 		}
 
 		friends_chat_self {
 			textcolor="blue500"
 			selectedtextcolor="white"   
 			selectedbgcolor="blue500"
-			font-size=16
+			font-size=17
 		}
 		
 		friends_chat_name {
 			textcolor="blue500"
 			selectedtextcolor="white"   
 			selectedbgcolor="blue500"
-			font-size=16
+			font-size=17
 			font-weight=600
 		}
 		
@@ -362,14 +355,14 @@ steam.styles {
 			selectedtextcolor="red500"   
 			selectedbgcolor="blue500"
 			textcolor="white"
-			font-size=16
+			font-size=17
 		}
 		
 		friends_chat_securitylink {
 			textcolor="orange500"
 			bgcolor="none"
 			font-family=basefont
-			font-size=16
+			font-size=17
 			font-weight=600
 			font-style=none
 			selectedtextcolor="white"    
