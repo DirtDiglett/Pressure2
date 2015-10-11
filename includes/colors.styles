@@ -179,6 +179,7 @@ colors.styles {
 		amberA400lesstransparent="255 196 0 128" // ~50%
 		grey100transparent="245 245 245 54"
 		grey100lesstransparent="245 245 245 128"
+		blue500transparent = "33 150 243 66"
 
 
 		workshopblue="27 40 56 255"
