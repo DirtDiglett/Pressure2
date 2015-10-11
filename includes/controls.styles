@@ -211,5 +211,11 @@ controls.styles {
                     0="fill(x0,y0,x1,y1, dividers_onLightBG)"
                 }
             }
+
+            Button:disabled {
+                textcolor=disabled_onLightBG
+                
+                render_bg { }
+            }
     }
 }
