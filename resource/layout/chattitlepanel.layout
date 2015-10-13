@@ -1,0 +1,60 @@
+"resource/layout/chattitlepanel.layout" {
+	styles {
+		menuButtonStyle {}
+		
+		menuButtonStyle:hover {}
+		
+		Label {
+			textcolor=text_onDarkBG
+			font-family=mediumfont
+			font-size=17
+			font-weight=600
+		}
+
+		statuslabel {
+			textcolor=secondarytext_onDarkBG
+		}
+	}
+	
+	layout {
+		place {
+			control="AvatarImage"
+			x=0
+			y=1
+			width=40
+			height=40
+		}
+
+		place { 
+			control=LockImage
+			width=16
+		}
+
+		place {
+			control=NameLabel
+			x=46
+			y=6
+			spacing=2
+		}
+
+		place {
+			control="LockImage"
+			x=46
+			y=21
+		}
+
+		place {
+			control=StatusLabel
+			start=lockimage
+			dir=right
+			x=2
+			y=2
+		}
+
+		place {
+			control=MenuButton
+			width=0
+			height=0
+		}
+	}
+}
