@@ -18,6 +18,14 @@
 				textcolor=lightblue200
 			}
 
+			Button:selected {
+		        bgcolor=none
+		    }
+
+		    Button:active {
+		        bgcolor=none
+		    }
+
 		detailsbox {
 			render_bg {
 				0="image(x0,y0+2,x1,y1, graphics\overlay\buttons\screenshots)"
