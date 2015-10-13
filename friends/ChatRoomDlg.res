@@ -110,6 +110,14 @@
 			render {}
 			render_bg {}
 		}
+
+		SectionedListPanelInterior {
+			bgcolor=none
+			render {
+				0="fill(x0,y0,x1,y1, red500)"
+			}
+			render_bg {}
+		}
 	}
 	
 	layout {
@@ -158,9 +166,9 @@
 			region=container
 			height=max
 			margin-right=0
-			margin-bottom=75
+			margin-bottom=77
 			spacing=-3
-			y=57
+			y=47
 		}
 
 		place {
