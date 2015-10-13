@@ -49,16 +49,18 @@
 
 		EmoticonMenuItemStyle {
 			font-size=24
+			textcolor=text_onLightBG
 			bgcolor=none
+			inset="-5 0 0 0"
 		}
 		
 			EmoticonMenuItemStyle:hover {
-				textcolor=white
+				textcolor=secondarytext_onLightBG
 				bgcolor=blue500
 			}
 		
 			EmoticonMenuItemStyle:selected {
-				textcolor=white
+				textcolor=secondaryText_onLightBG
 				bgcolor=none
 			}
 
