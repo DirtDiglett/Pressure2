@@ -127,12 +127,16 @@
     CFriendsListSectionAffordance {}
     
     CFriendsListSectionHeader {
-    	bgcolor=white
+    	inset="0 0 0 0"
+        textcolor=text_onLightBG
+        font-family=basefont
+        font-weight=800
 
-    	render_bg {
-    		0="fill(x0,y0,x1,y0+1, dividers_onLightBG)"
-    		1="fill(x0,y1-1,x1,y1, dividers_onLightBG)"
-    	}
+        render_bg {
+            0="fill(x0,y0,x1,y1, white)"
+            1="fill(x0-2,y0,x1,y0+1, dividers_onLightBG)"
+            2="fill(x0-2,y1-1,x1,y1, dividers_onLightBG)"
+        }    
     }
             
     CFriendPanel {}
