@@ -34,32 +34,32 @@
 
 			render {}
 			render_bg {
-				0="fill(x0,y0-1,x1,y0, divider)"
-				1="fill(x0,y1-1,x1,y1, divider)"
+				0="fill(x0,y0-1,x1+2,y0, divider)"
+				1="fill(x0,y1-1,x1+2,y1, divider)"
 				2="image(x0+14,y0+6,x1,y1, graphics\icons\dropdown\standard\down_dark)"
 			}
 		}
 
 			SectionedListPanelCollapser:hover {
 				render_bg {
-					0="fill(x0,y0-1,x1,y0, divider)"
-					1="fill(x0,y1-1,x1,y1, divider)"
+					0="fill(x0,y0-1,x1+2,y0, divider)"
+					1="fill(x0,y1-1,x1+2,y1, divider)"
 					2="image(x0+14,y0+6,x1,y1, graphics\icons\dropdown\hover\down_dark)"
 				}
 			}
 
 			SectionedListPanelCollapser:selected {
 				render_bg {
-					0="fill(x0,y0-1,x1,y0, divider)"
-					1="fill(x0,y1-1,x1,y1, divider)"
+					0="fill(x0,y0-1,x1+2,y0, divider)"
+					1="fill(x0,y1-1,x1+2,y1, divider)"
 					2="image(x0+14,y0+6,x1,y1, graphics\icons\dropdown\standard\up_dark)"
 				}
 			}
 
 				SectionedListPanelCollapser:selected:hover {
 					render_bg {
-						0="fill(x0,y0-1,x1,y0, divider)"
-						1="fill(x0,y1-1,x1,y1, divider)"
+						0="fill(x0,y0-1,x1+2,y0, divider)"
+						1="fill(x0,y1-1,x1+2,y1, divider)"
 						2="image(x0+14,y0+6,x1,y1, graphics\icons\dropdown\hover\up_dark)"
 					}
 				}
