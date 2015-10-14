@@ -728,11 +728,15 @@
     "Page ListPanelInterior" {}
     
     "Page ListPanelInterior:scrollbar" {}
-      
+     
+
+
     ListPanelSectionHeader {     
         inset="0 0 0 0"
-        textcolor=label
+        textcolor=text_onLightBG
         font-style="regular"
+        font-family=mediumfont
+
         render_bg {
             0="fill(x0,y0,x1,y1, white)"
             1="fill(x0,y0,x1,y0+1, dividers_onLightBG)"
@@ -740,52 +744,76 @@
         }    
     } 
     
-    ListPanelSectionHeader:hover
-    {     
-        textcolor=texthover
+    ListPanelSectionHeader:hover {     
+        textcolor=secondarytext_onLightBG
     } 
     
-    "ListPanel RichText"
-    {
-        textcolor="Text"
+    "ListPanel RichText" {
+        textcolor=text_onLightBG
         font-family=basefont
         font-size=15
         bgcolor=none
+
         render_bg {} 
     }
 
-    "ListPanel RichText url" 
-    {
+    "ListPanel RichText url" {
         font-size=15
-        textcolor="Text"
+        textcolor=blue500
         font-style=underline
     }
 
     "ListPanel RichTextInterior"
     {
-      bgcolor=DarkDialogBG
+      bgcolor=none
       render_bg {} 
       bgcolor=none
     }
     
-    ListPanelSectionCollapser {
-      bgcolor=none
-      render_bg {}
-      image="graphics/icon_collapse" 
+ 
+    
+ListPanelSectionCollapser {
       inset="0 0 0 0"
+      image=graphics\icons\dropdown\padder
+      padding-left=8
+      padding-right=8
+
+      render {}
+      render_bg {
+        0="fill(x0,y0-1,x1+2,y0, divider)"
+        1="fill(x0,y1-1,x1+2,y1, divider)"
+        2="image(x0+14,y0+6,x1,y1, graphics\icons\dropdown\standard\down_dark)"
+      }
     }
-    
-    ListPanelSectionCollapser:hover {
-      image="graphics/icon_collapse_over" 
-    }
-    
-    ListPanelSectionCollapser:selected {
-      image="graphics/icon_expand" 
-    }
-    ListPanelSectionCollapser:selected:hover {
-      image="graphics/icon_expand_over" 
-    }
-    
+
+      ListPanelSectionCollapser:hover {
+        render_bg {
+          0="fill(x0,y0-1,x1+2,y0, divider)"
+          1="fill(x0,y1-1,x1+2,y1, divider)"
+          2="image(x0+14,y0+6,x1,y1, graphics\icons\dropdown\hover\down_dark)"
+        }
+      }
+
+      ListPanelSectionCollapser:selected {
+        render_bg {
+          0="fill(x0,y0-1,x1+2,y0, divider)"
+          1="fill(x0,y1-1,x1+2,y1, divider)"
+          2="image(x0+14,y0+6,x1,y1, graphics\icons\dropdown\standard\up_dark)"
+        }
+      }
+
+        ListPanelSectionCollapser:selected:hover {
+          render_bg {
+            0="fill(x0,y0-1,x1+2,y0, divider)"
+            1="fill(x0,y1-1,x1+2,y1, divider)"
+            2="image(x0+14,y0+6,x1,y1, graphics\icons\dropdown\hover\up_dark)"
+          }
+        }
+
+
+
+
+
     MainNav {
         textcolor="Label"
         selectedtextcolor="Text"
@@ -798,8 +826,7 @@
 
     
       
-    MenuBar
-    {
+    MenuBar {
         bgcolor=none
     }
     
@@ -1025,31 +1052,54 @@
     
     
     
-    SectionedlistpanelCollapser {
-      bgcolor=none
-      image="graphics/icon_collapse"
+    SectionedListPanelCollapser {
       inset="0 0 0 0"
+      image=graphics\icons\dropdown\padder
+      padding-left=8
+      padding-right=8
+      bgcolor=none
 
+      render {}
       render_bg {
-        0="fill(x0,y0,x1,y0+1, dividers_onLightBG)"
-        1="fill(x0,y1-1,x1,y1, dividers_onLightBG)"
+        0="fill(x0,y0-1,x1+2,y0, divider)"
+        1="fill(x0,y1-1,x1+2,y1, divider)"
+        2="image(x0+14,y0+6,x1,y1, graphics\icons\dropdown\standard\down_dark)"
       }
-    } 
-    
-    SectionedListPanelCollapser:hover
-    {
-      image="graphics/icon_collapse_over"
     }
-    
-    SectionedListPanelCollapser:selected
-    {
-      image="graphics/icon_expand"
-    }
-    
-    SectionedListPanelCollapser:selected:hover
-    {
-      image="graphics/icon_expand_over"
-    }
+
+      SectionedListPanelCollapser:hover {
+        render_bg {
+          0="fill(x0,y0-1,x1+2,y0, divider)"
+          1="fill(x0,y1-1,x1+2,y1, divider)"
+          2="image(x0+14,y0+6,x1,y1, graphics\icons\dropdown\hover\down_dark)"
+        }
+      }
+
+      SectionedListPanelCollapser:selected {
+
+        render_bg {
+          0="fill(x0,y0-1,x1+2,y0, divider)"
+          1="fill(x0,y1-1,x1+2,y1, divider)"
+          2="image(x0+14,y0+6,x1,y1, graphics\icons\dropdown\standard\up_dark)"
+        }
+      }
+
+        SectionedListPanelCollapser:selected:hover {
+          render_bg {
+            0="fill(x0,y0-1,x1+2,y0, divider)"
+            1="fill(x0,y1-1,x1+2,y1, divider)"
+            2="image(x0+14,y0+6,x1,y1, graphics\icons\dropdown\hover\up_dark)"
+          }
+        }
+
+
+
+
+
+
+
+
+
   
     Slider {
       textcolor=secondarytext_onLightBG
