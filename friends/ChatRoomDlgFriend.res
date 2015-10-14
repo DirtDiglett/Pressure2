@@ -7,6 +7,7 @@
 
 		CChatRoomDlg {
 			render {
+				0="fill(x0,y1-76,x1,y1-75, grey200)"
 				1="image_tiled(x0,y0+57,x1,y0+61, graphics\material\shadows\top)"
 			}
 			render_bg {
@@ -47,16 +48,27 @@
 				}
 			}
 
+		GridMenu {
+			font-size=16
+			inset="0 0 0 0"
+		}
+
 		EmoticonMenuItemStyle {
 			font-size=24
 			textcolor=text_onLightBG
 			bgcolor=none
-			inset="-5 0 0 0"
+			padding-left=0
+			padding-right=0
+			inset="-3 -1 0 0"
 		}
 		
 			EmoticonMenuItemStyle:hover {
 				textcolor=secondarytext_onLightBG
-				bgcolor=blue500
+				bgcolor=none
+
+				render_bg {
+					0="fill(x0,y0,x1,y1, blue500)"
+				}
 			}
 		
 			EmoticonMenuItemStyle:selected {
@@ -100,10 +112,6 @@
 					1="image(x0+10,y0+15,x1,y1, graphics/icons/menu/selected/menu)"
 				}
 			}
-
-		GridMenu {
-			font-size=16
-		}
 	}
 	
 	layout {
@@ -117,7 +125,7 @@
 		region {
 			name=bottom
 			align=bottom
-			height=75
+			height=76
 			width=max
 		}
 
@@ -172,15 +180,6 @@
 			height=max
 			align=right
 			dir=down
-			margin-bottom=74
-		}
-
-		region {
-			name="chathistorybottom"
-			y=60
-			width=max
-			height=234
-			align=bottom
 			margin-bottom=75
 		}
 
@@ -212,7 +211,7 @@
 			width=55
 			align=right
 			margin-right=14
-			y=23
+			y=22
 		}
 
 		place {

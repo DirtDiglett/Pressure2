@@ -7,6 +7,7 @@
 
 		CChatRoomDlg {
 			render {
+				0="fill(x0,y1-76,x1,y1-75, grey200)"
 				1="image_tiled(x0,y0+57,x1,y0+61, graphics\material\shadows\top)"
 			}
 			render_bg {
@@ -49,16 +50,24 @@
 
 		EmoticonMenuItemStyle {
 			font-size=24
+			textcolor=text_onLightBG
 			bgcolor=none
+			padding-left=0
+			padding-right=0
+			inset="-3 -1 0 0"
 		}
 		
 			EmoticonMenuItemStyle:hover {
-				textcolor=white
-				bgcolor=blue500
+				textcolor=secondarytext_onLightBG
+				bgcolor=none
+
+				render_bg {
+					0="fill(x0,y0,x1,y1, blue500)"
+				}
 			}
 		
 			EmoticonMenuItemStyle:selected {
-				textcolor=white
+				textcolor=secondaryText_onLightBG
 				bgcolor=none
 			}
 
@@ -103,19 +112,9 @@
 			font-size=16
 		}
 
-		EmoticonMenuItemStyle {
-			inset="0 0 0 0"
-			padding=0
-
-			render {}
-			render_bg {}
-		}
-
 		SectionedListPanelInterior {
-			bgcolor=none
-			render {
-				0="fill(x0,y0,x1,y1, red500)"
-			}
+			bgcolor=white
+			render {}
 			render_bg {}
 		}
 	}
@@ -136,7 +135,7 @@
 		region {
 			name=bottom
 			align=bottom
-			height=75
+			height=76
 			width=max
 		}
 
@@ -166,7 +165,7 @@
 			region=container
 			height=max
 			margin-right=0
-			margin-bottom=77
+			margin-bottom=75
 			spacing=-3
 			y=47
 		}
@@ -202,7 +201,7 @@
 			height=max
 			align=right
 			dir=down
-			margin-bottom=74
+			margin-bottom=75
 			end-right=UserList
 		}
 
@@ -234,7 +233,7 @@
 			width=55
 			align=right
 			margin-right=14
-			y=23
+			y=22
 		}
 
 		place {
