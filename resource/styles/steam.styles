@@ -189,8 +189,6 @@ steam.styles {
 			font-weight=400
 			bgcolor=customgreysecondary
 			textcolor=text_onDarkBG
-			//bgcolor=notificationbg
-			//minimum-width=290
 
 			render {
 				0="fill(x0,y0,x0+1,y1, dividers_onDarkBG)"
