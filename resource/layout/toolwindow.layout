@@ -46,6 +46,19 @@
 				}
 			}
 
+			Button:selected {
+		        textcolor=blue500
+		        bgcolor=none
+
+		        render_bg {
+					-3="image(x0-7,y0-2,x0+12,y0+17, graphics/material/selectionbubbles/hover/white/topleft)"
+					-2="image(x0-7,y0+17,x0+12,y0+29, graphics/material/selectionbubbles/hover/white/bottomleft)"
+					-1="image(x0+12,y0-2,x0+31,y0+17, graphics/material/selectionbubbles/hover/white/topright)"
+					0="image(x0+12,y0+17,x0+31,y0+36, graphics/material/selectionbubbles/hover/white/bottomright)"
+					1="image(x0+6, y0+11, x1, y1, graphics/icons/newtab/hover/newtab)"	
+				}
+		    }
+
   		MenuButton {
   			inset-left=-100 // This is to remove the down arrow that is applied regardless of any other setting.
   			minimum-height=34
