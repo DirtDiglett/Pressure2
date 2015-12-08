@@ -2,220 +2,287 @@ controls.styles {
 	colors {}
 
 	styles {
-        CheckButton {
+		downarrow {
+			image="graphics/icon_down_default"		
+			render {}
+            render_bg {}
+		}
+
+			downarrow:hover {
+				image="graphics/icon_down_hover"
+			}
+
+		uparrow {
+			image="graphics/icon_up_default"
+            render {}
+            render_bg {}		
+		}
+
+			uparrow:hover {
+				image="graphics/icon_up_hover"	
+			}
+		
+		rightarrow {
+			image="graphics/icon_right_default"	 
+            render {}
+            render_bg {}
+		}
+		
+    		rightarrow:hover {
+    			image="graphics/icon_right_hover"		
+    		}
+
+
+		CheckButton {
+				font-family=basefont
+				font-size=15
+				font-weight=400
+				textcolor="text_OnLightBG"
+				image="graphics/controls/checkbox/unchecked"
+		}
+	
+        	CheckButton:selected {
+        			image="graphics/controls/checkbox/checked"		
+        	}
+
+            	CheckButton:focus{
+            			image="graphics/controls/checkbox/unchecked"	
+            	}
+
+        	CheckButton:selected:focus {
+        			image="graphics/controls/checkbox/checked"
+        	}
+        	
+        	CheckButton:disabled {
+        			textcolor="disabled_OnLightBG"
+        			image="graphics/controls/checkbox/unchecked_disabled"
+        	}
+        	
+            	CheckButton:selected:disabled {
+            			textcolor="disabled_OnLightBG"
+            			image="graphics/controls/checkbox/checked_disabled"
+            	}
+
+        IndeterminateCheckButton {
             font-family=basefont
             font-size=15
             font-weight=400
             textcolor="text_OnLightBG"
-            image="graphics/controls/checkbox/unchecked"
-        }
-      
-        CheckButton:selected {
-            image="graphics/controls/checkbox/checked"    
-        }
-
-        CheckButton:focus{
-            image="graphics/controls/checkbox/unchecked"  
-        }
-
-        CheckButton:selected:focus {
-            image="graphics/controls/checkbox/checked"
-        }
-        
-        CheckButton:disabled {
-            textcolor="disabled_OnLightBG"
-            image="graphics/controls/checkbox/unchecked_disabled"
-        }
-        
-        CheckButton:selected:disabled {
-            textcolor="disabled_OnLightBG"
-            image="graphics/controls/checkbox/checked_disabled"
+            image="graphics/controls/checkbox/indeterminate"
         }
 
 
 
 
+		ListPanelCheckBox {
+				font-family=basefont
+				font-size=14
+				font-weight=400
+				textcolor="text_OnLightBG"
+				image="graphics/controls/checkbox/unchecked_small"
+				inset="0 5 0 0"
+		}	 
 
+				ListPanelCheckBox:selected {
+						image="graphics/controls/checkbox/checked_small"		
+				}
 
-    ListPanelCheckBox {
-        font-family=basefont
-        font-size=14
-        font-weight=400
-        textcolor="text_OnLightBG"
-        image="graphics/controls/checkbox/unchecked_small"
-        inset="0 5 0 0"
-    }   
+				ListPanelCheckBox:focus {
+					 image="graphics/controls/checkbox/unchecked_small"	
+				}
 
-        ListPanelCheckBox:selected {
-            image="graphics/controls/checkbox/checked_small"    
-        }
+				ListPanelCheckBox:selected:focus {
+						image="graphics/controls/checkbox/checked_small"
+				}
+		
+				ListPanelCheckBox:disabled {
+						textcolor="disabled_OnLightBG"
+						image="graphics/controls/checkbox/unchecked_disabled_small"
+				}
+		
+				ListPanelCheckBox:disabled:selected {
+						textcolor="disabled_OnLightBG"
+						image="graphics/controls/checkbox/unchecked_disabled_small"
+				}
+		
+		"ListPanelColumnheader ListPanelCheckBox" {
+				font-family=basefont
+				font-size=14
+				font-weight=400
+				textcolor="text_OnLightBG"
+				image="graphics/controls/checkbox/unchecked_small"
+				inset="4 0 0 0" 
+		}
+		 
+				"ListPanelColumnHeader ListPanelCheckBox:selected" {
+						image="graphics/controls/checkbox/checked_small"	 
+				}
+		
+				"ListPanelColumnheader ListPanelCheckBox:focus" {
+						image="graphics/controls/checkbox/checked_small" 
+				}
 
-        ListPanelCheckBox:focus {
-           image="graphics/controls/checkbox/unchecked_small"  
-        }
-
-        ListPanelCheckBox:selected:focus {
-            image="graphics/controls/checkbox/checked_small"
-        }
-    
-        ListPanelCheckBox:disabled {
-            textcolor="disabled_OnLightBG"
-            image="graphics/controls/checkbox/unchecked_disabled_small"
-        }
-    
-        ListPanelCheckBox:disabled:selected {
-            textcolor="disabled_OnLightBG"
-            image="graphics/controls/checkbox/unchecked_disabled_small"
-        }
-    
-    "ListPanelColumnheader ListPanelCheckBox" {
-        font-family=basefont
-        font-size=14
-        font-weight=400
-        textcolor="text_OnLightBG"
-        image="graphics/controls/checkbox/unchecked_small"
-        inset="4 0 0 0" 
-    }
-     
-        "ListPanelColumnHeader ListPanelCheckBox:selected" {
-            image="graphics/controls/checkbox/checked_small"   
-        }
-    
-        "ListPanelColumnheader ListPanelCheckBox:focus" {
-            image="graphics/controls/checkbox/checked_small" 
-        }
-
-        "ListPanelColumnheader ListPanelCheckBox:selected:focus" {
-            image="graphics/controls/checkbox/checked_small" 
-        }
+				"ListPanelColumnheader ListPanelCheckBox:selected:focus" {
+						image="graphics/controls/checkbox/checked_small" 
+				}
 
 
 
 
 
 
-        RadioButton {
-            font-family=basefont
-            font-size=15
-            font-weight=400
-            textcolor="text_OnLightBG"
-            image="graphics/controls/radio/unchecked"
-        }     
-      
-        RadioButton:selected {
-            image="graphics/controls/radio/checked" 
-        }
-        
-        RadioButton:focus {
-            image="graphics/controls/radio/unchecked"
-        }
+				RadioButton {
+						font-family=basefont
+						font-size=15
+						font-weight=400
+						textcolor="text_OnLightBG"
+						image="graphics/controls/radio/unchecked"
+				}		 
+			
+				RadioButton:selected {
+						image="graphics/controls/radio/checked" 
+				}
+				
+				RadioButton:focus {
+						image="graphics/controls/radio/unchecked"
+				}
 
-        RadioButton:selected:focus {
-            image="graphics/controls/radio/checked"
-        }
+				RadioButton:selected:focus {
+						image="graphics/controls/radio/checked"
+				}
 
-        RadioButton:disabled {
-            textcolor="disabled_OnLightBG"
-            image="graphics/controls/radio/unchecked_disabled"
-        }
-        
-        RadioButton:selected:disabled {
-            textcolor="disabled_OnLightBG"
-            image="graphics/controls/radio/checked_disabled"
-        }
-
-
+				RadioButton:disabled {
+						textcolor="disabled_OnLightBG"
+						image="graphics/controls/radio/unchecked_disabled"
+				}
+				
+				RadioButton:selected:disabled {
+						textcolor="disabled_OnLightBG"
+						image="graphics/controls/radio/checked_disabled"
+				}
 
 
-        TextEntry {
-            font-family=basefont
-            font-size=18
-            textcolor="text_OnLightBG"
-            font-weight=400
+        CheckButtonList {
+            textcolor="text_onLightBG"
             bgcolor=white
-            selectedtextcolor=white
-            selectedbgcolor=blue500
-            shadowtextcolor=disabled_OnLightBG
-            inset-left=3
-
             render {
                 0="fill(x0, y0, x0+1, y1, grey200)" // Left
                 1="fill(x0, y0, x1, y0+1, grey200)" // Top
                 2="fill(x1-1, y0, x1, y1, grey200)" // Right
                 3="fill(x0, y1-1, x1, y1, grey200)" // Bottom
-            }
-        }
-            
-            TextEntry:focus {}
-
-            TextEntry:disabled {
-                textcolor=disabled_OnLightBG
-            }
-        
-        "Page TextEntry" {}
-            "Page TextEntry:focus" {}
-
-        // This style applies to things like "Search" AKA Hint Text
-        TextEntry:empty {
-            font-style=italic
-            textcolor=disabled_OnLightBG
-        }
-
-        TextEntryLarge {
-          font-size=22  
-        }
-
-            TextEntryLarge:focus {}
-            
-            TextEntryLarge:disabled {}
-    
-        TextEntryURL {
-            font-family=basefont
-            font-size=15
-            textcolor="blue500"
-            font-weight=400
-            selectedtextcolor="blue500"
-            selectedbgcolor="white"
-            shadowtextcolor="disabled_OnLightBG"         
-        }
-
-            TextEntryURL:Hover {
-                textcolor="blue300"          
-            }
-
-
-
-
-
-
-
-
-
-        Button {     
-            font-family=mediumfont
-            font-size=16
-            font-weight=400
-            textcolor="blue500"
-            font-style=uppercase
-            bgcolor=none
-            inset-top=3
-            
+            } 
             render_bg {}
-        }
+        } 
+        
+          CheckButtonList:scrollbar {} 
 
-            Button:Hover {
-                textcolor=blue300
-                
-                // We use a render_bg here instead of bgcolor in order to not break every other button that doesn't have a bgcolor defined.
-                render_bg {
-                    0="fill(x0,y0,x1,y1, dividers_onLightBG)"
-                }
-            }
 
-            Button:disabled {
-                textcolor=disabled_onLightBG
-                
-                render_bg { }
-            }
-    }
+
+				TextEntry {
+						font-family=basefont
+						font-size=18
+						textcolor="text_OnLightBG"
+						font-weight=400
+						bgcolor=white
+						selectedtextcolor=white
+						selectedbgcolor=blue500
+						shadowtextcolor=disabled_OnLightBG
+						inset-left=3
+
+						render {
+								0="fill(x0, y0, x0+1, y1, grey200)" // Left
+								1="fill(x0, y0, x1, y0+1, grey200)" // Top
+								2="fill(x1-1, y0, x1, y1, grey200)" // Right
+								3="fill(x0, y1-1, x1, y1, grey200)" // Bottom
+						}
+				}
+						
+						TextEntry:focus {}
+
+						TextEntry:disabled {
+								textcolor=disabled_OnLightBG
+						}
+				
+				"Page TextEntry" {}
+						"Page TextEntry:focus" {}
+
+				// This style applies to things like "Search" AKA Hint Text
+				TextEntry:empty {
+						font-style=italic
+						textcolor=disabled_OnLightBG
+				}
+
+				TextEntryLarge {
+					font-size=22	
+				}
+
+						TextEntryLarge:focus {}
+						
+						TextEntryLarge:disabled {}
+		
+				TextEntryURL {
+						font-family=basefont
+						font-size=15
+						textcolor="blue500"
+						font-weight=400
+						selectedtextcolor="blue500"
+						selectedbgcolor="white"
+						shadowtextcolor="disabled_OnLightBG"				 
+				}
+
+						TextEntryURL:Hover {
+								textcolor="blue300"					
+						}
+
+
+
+
+
+
+
+
+
+				Button {		 
+						font-family=mediumfont
+						font-size=16
+						font-weight=400
+						textcolor="blue500"
+						font-style=uppercase
+						bgcolor=none
+						inset-top=3
+						
+						render_bg {}
+				}
+
+						Button:Hover {
+								textcolor=blue300
+								
+								// We use a render_bg here instead of bgcolor in order to not break every other button that doesn't have a bgcolor defined.
+								render_bg {
+										0="fill(x0,y0,x1,y1, dividers_onLightBG)"
+								}
+						}
+
+						Button:disabled {
+								textcolor=disabled_onLightBG
+                                bgcolor=none
+								
+								render_bg { }
+						}
+
+
+                        Button:focus {
+                            textcolor=blue500
+                            bgcolor=none
+
+                            render_bg {}
+                        }
+
+                        Button:active {
+                            textcolor=blue500
+                            bgcolor=blue500transparent
+
+                            render_bg {}
+                        }
+		}
 }
