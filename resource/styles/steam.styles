@@ -522,6 +522,283 @@ steam.styles {
         selectedbgcolor=blue500
     }
 
+    GraphPanel {
+        textcolor=lime500
+        bgcolor=none
+        render_bg {}
+    }    
+
+        ListPanel {
+        bgcolor=white
+        font-family=basefont
+        font-size=15
+        font-weight=400
+        textcolor="text_onLightBG"
+        selectedtextcolor="white"
+        selectedbgcolor="blue500"
+        shadowtextcolor="disabled_onLightBG"
+        inset="0 0 0 0"
+
+        padding-left=8
+
+        render {}       
+        render_bg {}
+    }
+    
+    "CGamesListPanel" {
+      bgcolor=white
+        font-family=basefont
+        font-size=16
+        font-weight=400
+        textcolor="text_onLightBG"
+        selectedtextcolor="white"
+        selectedbgcolor="blue500"
+        shadowtextcolor="disabled_onLightBG"
+        inset="0 0 0 0"
+        render {}       
+        render_bg {}
+    }
+
+     "GameColumn_BigText" {
+        font-family=basefont
+        font-size=18
+        font-weight=700
+        textcolor=text_onLightBG
+    }
+
+    ListPanelColumnheader {
+        font-family=mediumfont
+        font-size=16
+        font-weight=400
+        textcolor="secondaryText_OnDarkBG"
+        font-style="normal"
+        bgcolor="customgreyaccent"
+        inset="0 0 0 0"
+        minimum-height=0 //reset for button height
+        inset-top=1
+        textcolor=secondaryText_OnDarkBG
+        font-style="uppercase"
+        font-weight=600
+
+        render_bg {
+          0="fill( x0, y0, x1, y1+1, customgreysecondary)"
+        }  
+    }
+
+      ListPanelColumnheader:hover {
+        textcolor=text_onDarkBG
+      }
+
+    "CSteamRootDialog ListPanelColumnheader" {
+      inset-top=-8
+      padding-left=2
+      render_bg { }
+    }
+
+   
+    "Csteamrootdialog ListPanelColumnHeader:hover" {}
+    
+    "Csteamrootdialog ListPanelSectionCollapser" {
+        inset = "0 0 0 0"
+        bgcolor=none
+        render_bg {
+            1="fill( x0 , y0, x1, y1 - 1, dividers_onDarkBG  )"
+        }    
+    }
+    
+    ListPanelColumnSelectButton {
+        inset="0 0 0 0"
+
+        render {
+          0="image( x0, y0, x1, y1, graphics/icons/columnselectbutton/standard/columnselectbutton_light )"
+        }   
+
+        render_bg {
+          1="fill( x0, y0, x1, y1+1, customgreysecondary )"
+        }
+    }
+    
+      ListPanelColumnSelectButton:hover {
+            render {
+              0="image( x0, y0, x1, y1, graphics/icons/columnselectbutton/hover/columnselectbutton_light )"
+            }  
+      }
+
+      ListPanelColumnSelectButton:selected {
+            render {
+              0="image( x0, y0, x1, y1, graphics/icons/columnselectbutton/hover/columnselectbutton_light )"
+            } 
+      }
+   
+    ListPanelDragger {
+        bgcolor="none"
+        
+        render {}
+    }
+    
+    ListPanelInterior  {     
+        inset="0 0 0 0"
+        font-size=16
+        textcolor="text_onLightBG"
+        bgcolor="none" 
+        
+        render {}
+        render_bg {}
+    } 
+    
+      ListPanelInterior:scrollbar {     
+          bgcolor=none
+          inset="0 0 -1 0"
+          textcolor="text_onLightBG"
+          render {}
+          render_bg {}
+      } 
+
+    ListPanelSectionHeader {     
+        inset="0 0 0 0"
+        textcolor=text_onLightBG
+        font-style="regular"
+        font-family=mediumfont
+
+        render_bg {
+            0="fill(x0,y0,x1,y1, white)"
+            1="fill(x0,y0,x1,y0+1, dividers_onLightBG)"
+            2="fill(x0,y1-1,x1,y1, dividers_onLightBG)"
+        }    
+    } 
+    
+      ListPanelSectionHeader:hover {     
+          textcolor=secondarytext_onLightBG
+      } 
+    
+    "ListPanel RichText" {
+        textcolor=text_onLightBG
+        font-family=basefont
+        font-size=15
+        bgcolor=none
+
+        render_bg {} 
+    }
+
+    "ListPanel RichText url" {
+        font-size=15
+        textcolor=blue500
+        font-style=underline
+    }
+
+    "ListPanel RichTextInterior" {
+      bgcolor=none
+      render_bg {} 
+      bgcolor=none
+    }
+    
+    ListPanelSectionCollapser {
+      inset="0 0 0 0"
+      image=graphics\icons\dropdown\padder
+      padding-left=8
+      padding-right=8
+
+      render {}
+      render_bg {
+        0="fill(x0,y0-1,x1+2,y0, dividers_onLightBG)"
+        1="fill(x0,y1-1,x1+2,y1, dividers_onLightBG)"
+        2="image(x0+14,y0+6,x1,y1, graphics\icons\dropdown\standard\down_dark)"
+      }
+    }
+
+      ListPanelSectionCollapser:hover {
+        render_bg {
+          0="fill(x0,y0-1,x1+2,y0, dividers_onLightBG)"
+          1="fill(x0,y1-1,x1+2,y1, dividers_onLightBG)"
+          2="image(x0+14,y0+6,x1,y1, graphics\icons\dropdown\hover\down_dark)"
+        }
+      }
+
+      ListPanelSectionCollapser:selected {
+        render_bg {
+          0="fill(x0,y0-1,x1+2,y0, dividers_onLightBG)"
+          1="fill(x0,y1-1,x1+2,y1, dividers_onLightBG)"
+          2="image(x0+14,y0+6,x1,y1, graphics\icons\dropdown\standard\up_dark)"
+        }
+      }
+
+        ListPanelSectionCollapser:selected:hover {
+          render_bg {
+            0="fill(x0,y0-1,x1+2,y0, dividers_onLightBG)"
+            1="fill(x0,y1-1,x1+2,y1, dividers_onLightBG)"
+            2="image(x0+14,y0+6,x1,y1, graphics\icons\dropdown\hover\up_dark)"
+          }
+        }
+
+
+
+       "CSteamRootDialog Page" {
+        bgcolor="none"
+        render_bg {}
+    }
+
+    PageTab {
+      textcolor=white
+      font-size=16
+      font-style=regular
+      textcolor=secondarytext_onDarkBG
+
+      render_bg {}
+    }
+
+      PageTab:Hover {
+            textcolor=text_onDarkBG
+
+            render_bg {
+              1="image(x0,y0,x0+2,y0+2, graphics/material/tab/white/topleft)"
+              2="image_tiled(x0+2,y0,x1-2, y0+2, graphics/material/tab/white/middle)"
+              3="image_tiled(x0,y0+2,x1, y1, graphics/material/tab/white/middle)"
+              4="image(x1-2,y0,x1,y0+2, graphics/material/tab/white/topright)"
+            }
+          }
+      
+      PageTab:Selected {
+            textcolor=blue500
+
+            render_bg {
+              0="fill(x0,y1-3,x1,y1, blue500)"
+              1="image(x0,y0,x0+2,y0+2, graphics/material/tab/blue/topleft)"
+              2="image_tiled(x0+2,y0,x1-2, y0+2, graphics/material/tab/blue/middle)"
+              3="image_tiled(x0,y0+2,x1, y1, graphics/material/tab/blue/middle)"
+              4="image(x1-2,y0,x1,y0+2, graphics/material/tab/blue/topright)"
+            }
+          }
+
+          PageTab:Selected:hover {
+            textcolor=blue300
+
+            render_bg {
+              0="fill(x0,y1-3,x1,y1, blue300)"
+              1="image(x0,y0,x0+2,y0+2, graphics/material/tab/blue/topleft)"
+              2="image_tiled(x0+2,y0,x1-2, y0+2, graphics/material/tab/blue/middle)"
+              3="image_tiled(x0,y0+2,x1, y1, graphics/material/tab/blue/middle)"
+              4="image(x1-2,y0,x1,y0+2, graphics/material/tab/blue/topright)"
+            }
+          } 
+
+
+          ProgressBar {
+        textcolor=lightgreen500
+        bgcolor="white"
+        inset="0 0 0 0"
+        
+        render {}
+        render_bg {
+          0="fill(x0,y0,x0+1,y1, dividers_OnLightBG)"
+          1="fill(x0+1,y0,x1-1,y0+1, dividers_OnLightBG)"
+          2="fill(x1-1,y0,x1,y1, dividers_OnLightBG)"
+          3="fill(x0+1,y1-1,x1-1,y1, dividers_OnLightBG)"
+        }
+    }
+
+    RadioButtonList {
+        bgcolor=none   
+    }
 
 	} // END STYLES
 }
