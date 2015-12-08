@@ -7,7 +7,7 @@
 		FriendsPanel {			
 			bgcolor=custombackgroundnofocus
 			render {
-				1="image_tiled(x0,y0+137,x1,y0+141, graphics\material\shadows\top)"
+				1="image_tiled(x0,y0+127,x1,y0+131, graphics\material\shadows\top)"
 				2="image_tiled(x0,y1-50,x1,y1-46, graphics\material\shadows\bottom)"
 			}
 			
@@ -134,7 +134,7 @@
 
         render_bg {
             0="fill(x0,y0,x1,y1, white)"
-            1="fill(x0-2,y0,x1,y0+1, dividers_onLightBG)"
+            1="fill(x0-2,y0-1,x1,y0, dividers_onLightBG)"
             2="fill(x0-2,y1-1,x1,y1, dividers_onLightBG)"
         }    
     }
@@ -163,9 +163,6 @@
 		RootMenu {
 			bgcolor=none
 		} 
-	
-
-		SectionedListPanelCollapser {}
 
     
     "CFriendsDialog PropertySheet" {
