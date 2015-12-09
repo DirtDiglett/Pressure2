@@ -236,7 +236,13 @@ controls.styles {
 
 
 
-
+        Slider {
+          textcolor=secondarytext_onLightBG
+        }
+          
+          Slider:focus {
+            textcolor=text_onLightBG  
+          }
 
 
 
@@ -284,5 +290,64 @@ controls.styles {
 
                             render_bg {}
                         }
+
+
+
+                        ComboBox {
+            font-family=mediumfont
+            font-size=16
+            font-weight=400
+            textcolor="blue500"
+            font-style=uppercase
+            //bgcolor=amber500
+
+            padding-left=4
+          padding-right=4
+          minimum-height=29
+          inset-left=7
+          inset-top=1
+      render {
+        0="image( x1 - 17, y0 + 12, x1, y1, graphics/icons/dropdown/standard/down_onLightBG )"
+      }
+      render_bg {}
+
+    }
+
+    ComboBox:hover {
+                textcolor=blue300
+                
+                // We use a render_bg here instead of bgcolor in order to not break every other button that doesn't have a bgcolor defined.
+                render_bg {
+                    0="fill(x0,y0,x1,y1, dividers_onLightBG)"
+                }
+    }
+
+    ComboBox:focus {
+                            textcolor=blue500
+                            bgcolor=none
+
+                            render_bg {}
+                        }
+
+                        ComboBox:active {
+                            textcolor=blue500
+                            bgcolor=blue500transparent
+
+                            render_bg {}
+                        }
+
+                        ComboBox:selected {
+                            textcolor=blue500
+                            bgcolor=blue500transparent
+
+                            render_bg {}
+                        }
+
+    ComboBoxButton {
+      textcolor=none
+      bgcolor=none
+      render_bg {}
+    }
+    
 		}
 }
