@@ -9,7 +9,6 @@
     almostBlack="22 22 22 255"
     almostBlackTrans="22 22 22 204"
     grey="153 153 153 255"
-    none="0 0 0 0"
     yellow="255 255 0 255"
     offwhite="164 164 164 255"
     dullgreen="216 222 211 255"
@@ -220,7 +219,8 @@
     
     
     
-    
+    TextEntry.IMEBGColor        "225 225 225 255"
+    TextEntry.IMEFGColor        "black"
     
 
     // Friends List colors
@@ -304,15 +304,7 @@
    
 
     
-
-    
-      
-    
-   
-   
-
-    
-
+  
     
  
     
