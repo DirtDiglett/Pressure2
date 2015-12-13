@@ -93,6 +93,30 @@ steam.styles {
 				textcolor="blue300"
 			}
 
+		URLLabelSimple {
+	      textcolor="blue500"
+	      font-family=basefont
+	      font-size=15
+	      font-weight=400
+	      font-style=underline
+	    }
+	    
+	      URLLabelSimple:Hover {
+	        textcolor="blue300"
+	      }
+	 
+	    URLLabelSimple2 {
+	      textcolor="blue500"
+	      font-family=basefont
+	      font-size=15
+	      font-weight=400
+	      font-style=underline
+	    }
+	    
+	      URLLabelSimple2:Hover {
+	        textcolor="blue300"
+	      } 
+
 		Menu {
 			bgcolor="white"
 			inset="0 0 0 0"

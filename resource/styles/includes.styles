@@ -361,38 +361,9 @@
       }     
     }
     
+      
     
     
-    URLLabelSimple
-    {
-      textcolor="labelfocus"
-      bgcolor="none"
-      font-family=basefont
-      font-size=14
-      font-weight=400
-      font-style=regular
-    }
-    
-    URLLabelSimple:Hover {
-      font-style=underline
-      textcolor="WHITE"
-    }  
-    
-    URLLabelSimple2
-    {
-      textcolor="labelfocus"
-      bgcolor="none"
-      font-family=basefont
-      font-size=14
-      font-weight=400
-      font-style=regular
-    }
-
-    
-  URLLabelSimple2:Hover
-    {
-      textcolor="WHITE"
-    }  
     
     
 
