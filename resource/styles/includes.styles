@@ -372,19 +372,8 @@
       font-weight=400
       font-style=regular
     }
-
-    URLLabelSimple [$OSX]
-    {
-      textcolor="labelfocus"
-      bgcolor="none"
-      font-family=basefont
-      font-size=13
-      font-weight=400
-      font-style=regular
-    }
     
-  URLLabelSimple:Hover
-    {
+    URLLabelSimple:Hover {
       font-style=underline
       textcolor="WHITE"
     }  
@@ -399,15 +388,6 @@
       font-style=regular
     }
 
-    URLLabelSimple2 [$OSX]
-    {
-      textcolor="labelfocus"
-      bgcolor="none"
-      font-family=basefont
-      font-size=13
-      font-weight=400
-      font-style=regular
-    }
     
   URLLabelSimple2:Hover
     {
@@ -438,25 +418,7 @@
   
     
  
-    "html-findbar" {
-        font-family=basefont
-        font-size=14
-        textcolor="text2"
-        font-weight=400
-        bgcolor="DarkClientBG"
-        selectedtextcolor="TextEntrySelected"
-        selectedbgcolor="TextSelectedBG"
-        shadowtextcolor="Text"  // this is the cursor color
-        inset-left=0
-        inset-top=0
-        
-      render {
-                // lines around
-                0="fill( x0, y0, x0 + 1, y1, ButtonBorder )"
-                1="gradient_horizontal( x0, y0, x1, y0 + 1, ButtonBorder, none )" 
-                2="gradient_horizontal( x0, y1 - 1, x1, y1, ButtonBorder, none )"
-      }         
-    }
+    
         
     "html-imebar"
     {
@@ -489,37 +451,7 @@
         
             
     
-    Chat_MenuButton_withChrome
-    {
-        font-family=basefont
-        font-style="uppercase"
-        font-size="13"
-        font-weight=400
-        textcolor="text"
-        bgcolor="none"
-        render_bg 
-        {     
-            // background fill
-            0="gradient( x0, y0, x1, y1, buttonface, propertysheetbg )"             
-        }
-        minimum-width=120
-    }
     
-    Chat_MenuButton_withChrome:disabled
-  {
-      textcolor="LabelDisabled"
-      render_bg
-      {     
-        // background fill
-        0="fill( x0, y0, x1, y1, none )"
-                
-      }
-    }    
-    
-   
-
-    
-
 
     
     
