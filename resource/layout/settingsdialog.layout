@@ -1,0 +1,100 @@
+"resource/layout/settingsdialog.layout" {
+	styles {
+		CDialogSettings {
+			minimum-width="740"
+			minimum-height="585"
+			
+			render {
+				0="fill(x0,y1-58,x1,y1-57, dividers_onLightBG)"
+			}
+			render_bg {}
+		}
+		
+		PropertySheet {
+			minimum-width="535"
+			minimum-height="505"
+			bgcolor=none//red500
+			render_bg {}
+		}
+		
+		"SettingsList" {
+			inset="0 -3 0 0"
+			minimum-width="196"
+			minimum-height="525"
+			font-size=17
+			bgcolor=white
+			font-family=mediumfont
+			padding-left=18
+
+			render {
+	            0="fill(x1-1,y0,x1,y1, dividers_onLightBG)"
+			}
+		}
+		
+		ListPanelInterior {     
+			inset="0 0 0 0"
+			font-size=15
+			textcolor="text_onLightBG"
+			bgcolor="none" 
+	   		
+	   		render {}
+	   		render_bg {}
+	    } 
+		
+		// There is a header forced to exist on the Settings List. This hides it better.
+		ListPanelSectionHeader {     
+	        inset="0 0 0 0"
+	        textcolor=text_onLightBG
+	        font-style="regular"
+	        font-family=mediumfont
+
+	        render_bg {
+	            0="fill(x0,y0,x1,y1, white)"
+	        }    
+	    }
+		
+	}
+
+	layout {
+		region {
+			name="buttons"
+			width=max
+			height=58
+			align=bottom
+		}
+
+		region {
+			name=body
+			margin-bottom=58
+			width=max
+			height=max
+			y=34
+		}	
+		
+		place {
+			control="settingslist"
+			width=196
+			height=max
+			region=body
+		}
+
+		place {
+			control="sheet"
+			margin-left=196
+			region=body
+			width=max
+			height=max
+		}
+		
+		place {
+			control="okbutton,cancelbutton"
+			region="buttons"
+		    width=92
+		    height=34
+		    align=right
+			margin-right=11
+			margin-top=12
+			spacing=12
+		}
+	}
+}
