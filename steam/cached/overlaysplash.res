@@ -1,8 +1,9 @@
 "steam/cached/OverlaySplash.res" {
 	styles {
 	    Notification {
+	    	textcolor=text_onDarkBG
 			render_bg {
-				0="image(x0+12,y0+4,x1,y1, graphics/notifications/steam)"
+				0="image(x0+17,y0+17,x1,y1, graphics/notifications/steam)"
 			}
 		}
 	}
