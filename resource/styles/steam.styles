@@ -182,8 +182,12 @@ steam.styles {
    
 		MenuSeparator {
 			inset="0 0 0 0"    
-			textcolor="dividers_OnLightBG"
+			textcolor="none"
 			bgcolor=none
+
+			render {
+				1="fill( x0+1, y0+1, x1-1, y0+2, dividers_OnLightBG )"
+			}
 		}
 
 		SuperNavMenu {
@@ -220,7 +224,7 @@ steam.styles {
 		"SuperNavMenuDivider" {
 			textcolor="none"
 			render {
-				1="fill( x0, y0+1, x1, y0+2, dividers_OnLightBG )"
+				1="fill( x0+1, y0+1, x1-1, y0+2, dividers_OnLightBG )"
 			}
 		}
 
