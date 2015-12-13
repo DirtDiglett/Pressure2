@@ -255,5 +255,25 @@ web.styles {
                 }
             }
 
+
+        "html-findbar" {
+            font-family=basefont
+            font-size=18
+            font-weight=400
+            textcolor="text_onLightBG"
+            bgcolor=white
+            selectedtextcolor="white"
+            selectedbgcolor="blue500"
+            shadowtextcolor="disabled_onLightBG"
+            minimum-height=45
+
+            render {
+                0="image_tiled(x0,y1,x1,y1+4, graphics/material/shadows/top)"
+            }
+            render_bg {
+                0="fill(x1,y0,x1,y1, white)"
+            }       
+        }
+
 	}
 }
