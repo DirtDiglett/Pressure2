@@ -9,7 +9,7 @@ scrollbars.styles {
 
 	styles {
 		ScrollBar {
-        	inset="0 -13 1 -13"
+        	inset="0 -15 1 -15"
     	}
 
     	// The scrollbar gutter for vertical scrollbars.
