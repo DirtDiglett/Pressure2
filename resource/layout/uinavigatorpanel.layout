@@ -72,7 +72,7 @@
 				textcolor=text_onDarkBG
 
 				render_bg {
-					0="fill(x0,y0,x1,y1-3, disabled_onDarkBG)"
+					0="fill(x0,y0,x1,y1, disabled_onDarkBG)"
 					1="image(x1-35, y0+21, x1, y1, graphics\icons\dropdown\hover\down)"
 				}
 			}
@@ -512,7 +512,7 @@
 			height=max
 			start=phonereminderbar
 			dir=down
-			margin-top=-2
+			margin-top=0
 			margin-left=-2
 			margin-right=0
 			margin-bottom=-1
