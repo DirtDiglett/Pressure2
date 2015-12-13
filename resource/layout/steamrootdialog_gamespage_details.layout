@@ -24,8 +24,8 @@
 			bgcolor="custombackgroundprimary"
 			inset="0 0 0 0"
 			render {
-				9="fill(x0+308,y0,x1,y0+2, customgreysecondary)"
-				10="image_tiled(x0+308,y0+2,x1,y0+6, graphics\material\shadows\top)"
+				//9="fill(x0+308,y0,x1,y0+2, customgreysecondary)"
+				10="image_tiled(x0+308,y0,x1,y0+4, graphics\material\shadows\top)"
 			}
 			render_bg {}
 		}
@@ -341,7 +341,7 @@
 			control=GamesList
 			width=308
 			height=max
-			margin=0
+			margin-top=-2
 		}
 		
 		place {
@@ -358,7 +358,7 @@
 			height=280
 			x=0
 			y=-400
-			margin-top=2
+			//margin-top=2
 		}
 		
 		place {
@@ -368,7 +368,7 @@
 			height=280
 			x=0
 			y=-400
-						margin-top=2
+			//			margin-top=2
 		}
 		
 		place {
