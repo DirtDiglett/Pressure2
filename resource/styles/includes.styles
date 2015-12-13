@@ -220,8 +220,7 @@
     
     
     
-    TextEntry.IMEBGColor        "225 225 225 255"
-    TextEntry.IMEFGColor        "black"
+    
     
 
     // Friends List colors
@@ -305,79 +304,10 @@
    
 
     
-    TreeNode
-    {
-      bgcolor=none
-      render_bg {}
-    }
-    
-    TreeNodeImage
-    {
-      bgcolor=none
-    }
-    
-    TreeViewSubPanel
-    {
-      bgcolor=none
-    }
-  
-    TreeNodeText
-    {
-      font-family=basefont
-      font-size=13
-      textcolor="Text"
-      selectedtextcolor="TextSelected"
-      selectedbgcolor="TextSelectedBG"
-      bgcolor=none
-      render {}
-      render_bg {}
-    }
-  
-    TreeView
-    {
-      render_bg
-      {
-        -1="fill( x0 + 1, y0 + 1, x1 - 1, y1 - 1, none )"
 
-      // lines around
-            1="fill( x0 + 2, y0, x1 - 2, y0 + 1, ButtonBorder )"  // top
-            2="fill( x0 + 2, y1 - 1, x1 - 2, y1, ButtonBorder )"  // bottom
-            3="fill( x0, y0 + 2, x0 + 1, y1 - 2, ButtonBorder )"  // left
-            4="fill( x1 - 1, y0 + 2, x1, y1 - 2, ButtonBorder )"  // right
-        
-      // single pixel fills in the corners
-            5="fill( x0 + 2, y0, x1 - 2, y0 + 1, ButtonBorderDisabled )"  // top
-            6="fill( x0 + 2, y1 - 1, x1 - 2, y1, ButtonBorderDisabled )"  // bottom
-            7="fill( x0, y0 + 2, x0 + 1, y1 - 2, ButtonBorderDisabled )"  // left
-            8="fill( x1 - 1, y0 + 2, x1, y1 - 2, ButtonBorderDisabled )"  // right
-            11="fill( x0, y0 + 1, x0 + 1, y0 + 2, ButtonBorderDisabled2 )"
-            12="fill( x1 - 1, y0 + 1, x1, y0 + 2, ButtonBorderDisabled2 )"
-            13="fill( x0, y1 - 2, x0 + 1, y1 - 1, ButtonBorderDisabled2 )"
-            14="fill( x1 - 1, y1 - 2, x1, y1 - 1, ButtonBorderDisabled2 )"
-            15="fill( x0 + 1, y0, x0 + 2, y0 + 1, ButtonBorderDisabled2 )"
-            16="fill( x1 - 2, y0, x1 - 1, y0 + 1, ButtonBorderDisabled2 )"
-            17="fill( x0 + 1, y1 - 1, x0 + 2, y1, ButtonBorderDisabled2 )"
-            18="fill( x1 - 2, y1 - 1, x1 - 1, y1, ButtonBorderDisabled2 )"
-      }     
-    }
     
       
     
-    
-    
-    
-
-    WrapPanel {
-      inset="0 0 0 0"
-      font-family=basefont
-      font-size=14
-      font-weight=400
-      textcolor="Text"
-      selectedtextcolor="TextSelected"
-      selectedbgcolor="Focus"
-      bgcolor=none
-      render_bg {}
-    }
    
    
 

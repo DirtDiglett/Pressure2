@@ -17,6 +17,9 @@ steam.styles {
 		ListPanel.DisabledTextColor     text_onDarkBG
 		ListPanel.DisabledSelectedTextColor   disabled_onLightBG
 		ListPanel.EmptyListInfoTextColor    text_onLightBG
+
+		TextEntry.IMEBGColor=none
+    	TextEntry.IMEFGColor=none
 	}
 
 	styles {        
@@ -986,6 +989,35 @@ steam.styles {
     
   MenuButton:selected {
         textcolor="white"
+    }
+
+        TreeNode {
+      bgcolor=none
+      render_bg {}
+    }
+    
+    TreeNodeImage {
+      bgcolor=none
+    }
+    
+    TreeViewSubPanel {
+      bgcolor=none
+    }
+  
+    TreeNodeText {
+      font-family=basefont
+      font-size=15
+      textcolor="text_OnLightBG"
+      selectedtextcolor="white"
+      selectedbgcolor="blue500"
+      bgcolor=none
+
+      render {}
+      render_bg {}
+    }
+  
+    TreeView {
+      render_bg {}     
     }
 
 	} // END STYLES
