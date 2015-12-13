@@ -110,7 +110,7 @@
 		}
 
 		place {
-			control="Next,Previous"
+			control="Previous,Next"
 			end-right=close
 			align=right
 			height=24
