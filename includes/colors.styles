@@ -1,5 +1,6 @@
 colors.styles {
 	colors {
+		none = "0 0 0 0"
 		customgreyprimary = "56 56 56 255"
 		customgreyaccent = "67 67 67 255"
 		customgreysecondary = "41 41 41 255"
