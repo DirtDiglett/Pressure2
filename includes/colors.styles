@@ -181,6 +181,8 @@ colors.styles {
 		grey100transparent="245 245 245 54"
 		grey100lesstransparent="245 245 245 128"
 		blue500transparent = "33 150 243 66"
+		custombackgroundprimarytransparent = "252 252 252 85" // ~33% Opacity. Used as an overlay to cheat a 54% opacity text.
+		custombackgroundnofocustransparent = "232 232 232 85" // ~33% Opacity.
 
 
 		workshopblue="27 40 56 255"
