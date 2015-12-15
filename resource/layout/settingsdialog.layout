@@ -19,27 +19,18 @@
 		
 		"SettingsList" {
 			inset="0 -3 0 0"
-			minimum-width="196"
+			minimum-width="195"
 			minimum-height="525"
-			font-size=17
+			font-size=18
 			bgcolor=white
 			font-family=mediumfont
 			padding-left=18
 
 			render {
-	            0="fill(x1-1,y0,x1,y1, dividers_onLightBG)"
+	            0="fill(x1,y0,x1+1,y1, dividers_onLightBG)"
 			}
 		}
-		
-		ListPanelInterior {     
-			inset="0 0 0 0"
-			font-size=15
-			textcolor="text_onLightBG"
-			bgcolor="none" 
-	   		
-	   		render {}
-	   		render_bg {}
-	    } 
+
 		
 		// There is a header forced to exist on the Settings List. This hides it better.
 		ListPanelSectionHeader {     
