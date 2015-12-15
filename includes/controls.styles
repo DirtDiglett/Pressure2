@@ -38,29 +38,43 @@ controls.styles {
 				font-size=15
 				font-weight=400
 				textcolor="text_OnLightBG"
-				image="graphics/controls/checkbox/unchecked"
+				inset-left=23
+
+				render_bg {
+					0="image(x0,y0,x1,y1, graphics/controls/checkbox/unchecked)"
+				}
 		}
 	
-        	CheckButton:selected {
-        			image="graphics/controls/checkbox/checked"		
+        	CheckButton:selected {	
+    			render_bg {
+					0="image(x0,y0,x1,y1, graphics/controls/checkbox/checked)"
+				}	
         	}
 
             	CheckButton:focus{
-            			image="graphics/controls/checkbox/unchecked"	
+            		render_bg {
+						0="image(x0,y0,x1,y1, graphics/controls/checkbox/unchecked)"
+					}
             	}
 
         	CheckButton:selected:focus {
-        			image="graphics/controls/checkbox/checked"
+    			render_bg {
+					0="image(x0,y0,x1,y1, graphics/controls/checkbox/checked)"
+				}
         	}
         	
         	CheckButton:disabled {
-        			textcolor="disabled_OnLightBG"
-        			image="graphics/controls/checkbox/unchecked_disabled"
+        		textcolor="disabled_OnLightBG"
+        		render_bg {
+					0="image(x0,y0,x1,y1, graphics/controls/checkbox/unchecked_disabled)"
+				}
         	}
         	
             	CheckButton:selected:disabled {
-            			textcolor="disabled_OnLightBG"
-            			image="graphics/controls/checkbox/checked_disabled"
+            		textcolor="disabled_OnLightBG"
+            		render_bg {
+						0="image(x0,y0,x1,y1, graphics/controls/checkbox/checked_disabled)"
+					}
             	}
 
         IndeterminateCheckButton {
@@ -136,29 +150,44 @@ controls.styles {
 						font-size=15
 						font-weight=400
 						textcolor="text_OnLightBG"
-						image="graphics/controls/radio/unchecked"
+
+					inset-left=23
+
+					render_bg {
+						0="image(x0-1,y0-1,x1,y1, graphics/controls/radio/unchecked)"
+					}
 				}		 
 			
 				RadioButton:selected {
-						image="graphics/controls/radio/checked" 
+					render_bg {
+						0="image(x0-1,y0-1,x1,y1, graphics/controls/radio/checked)"
+					}
 				}
 				
 				RadioButton:focus {
-						image="graphics/controls/radio/unchecked"
+					render_bg {
+						0="image(x0-1,y0-1,x1,y1, graphics/controls/radio/unchecked)"
+					}
 				}
 
 				RadioButton:selected:focus {
-						image="graphics/controls/radio/checked"
+						render_bg {
+						0="image(x0-1,y0-1,x1,y1, graphics/controls/radio/checked)"
+					}
 				}
 
 				RadioButton:disabled {
 						textcolor="disabled_OnLightBG"
-						image="graphics/controls/radio/unchecked_disabled"
+					render_bg {
+						0="image(x0-1,y0-1,x1,y1, graphics/controls/radio/unchecked_disabled)"
+					}
 				}
 				
 				RadioButton:selected:disabled {
 						textcolor="disabled_OnLightBG"
-						image="graphics/controls/radio/checked_disabled"
+					render_bg {
+						0="image(x0-1,y0-1,x1,y1, graphics/controls/radio/checked_disabled)"
+					}
 				}
 
 
