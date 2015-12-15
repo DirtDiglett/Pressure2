@@ -95,10 +95,13 @@ controls.styles {
 				textcolor="text_OnLightBG"
 				image="graphics/controls/checkbox/unchecked_small"
 				inset="0 5 0 0"
+				inset-left=0
+
+				render_bg {}
 		}	 
 
 				ListPanelCheckBox:selected {
-						image="graphics/controls/checkbox/checked_small"		
+						image="graphics/controls/checkbox/checked_small"	
 				}
 
 				ListPanelCheckBox:focus {
@@ -126,6 +129,7 @@ controls.styles {
 				textcolor="text_OnLightBG"
 				image="graphics/controls/checkbox/unchecked_small"
 				inset="4 0 0 0" 
+				render_bg {}
 		}
 		 
 				"ListPanelColumnHeader ListPanelCheckBox:selected" {
