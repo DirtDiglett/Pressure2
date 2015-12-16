@@ -1,0 +1,63 @@
+"resource/layout/subpaneloptionsbrowser.layout" {
+	styles {
+		CSettingsSubBrowser {
+			render {
+				0="fill(x0+70,y0+20,x0+396,y0+45, custombackgroundnofocustransparent)" // Account Name
+			}
+			render_bg {
+				5="image(x0+26,y0+27,x1,y1, graphics/icons/accountpage/webbrowser)"
+			}
+		}
+
+		CSettingsSubBrowser:framefocus {
+			render {
+				0="fill(x0+70,y0+20,x0+396,y0+45, custombackgroundprimarytransparent)" // Account Name
+			}
+		}
+	}
+	
+	layout {
+		// Account Zone
+		region {
+			name=browser
+			height=max
+			width=max
+			x=82
+			y=0
+			margin-right=29
+		}
+
+		place {
+			control=OverlayHomePageLabel
+			region=browser
+			y=28
+			dir=down
+			spacing=2
+		}
+
+		place {
+			control=OverlayHomePage
+			start=OverlayHomePageLabel
+			y=2
+			dir=down
+			height=37
+			width=max
+			margin-right=29
+		}
+
+		place {
+			control=ClearAllCookiesButton
+			width=350
+			height=34
+			start=OverlayHomePage
+			dir=down
+			y=4
+		}
+
+		place {
+			controls=Divider1,DescriptionLabel
+			height=0
+		}
+		
+	}
+}
