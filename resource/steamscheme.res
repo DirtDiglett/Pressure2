@@ -1,7 +1,7 @@
-// ***********************************************************************************
-// Old-School SteamScheme.res
-// This file is from the old pre-2010 Update, but we need it to do a global fix to the custom minimize/maximize/close buttons.
-// ***********************************************************************************
+// ***********************************************************************************************************************
+// SteamScheme.res
+// This file is from the pre-2010 UI Update. It is needed for a global fix to the minimize/maximize/close buttons.
+// ***********************************************************************************************************************
 Scheme {
 	LayoutTemplates {
 		Frame {
