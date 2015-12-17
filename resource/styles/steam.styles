@@ -8,34 +8,7 @@ steam.styles {
 	include "includes/controls.styles"
 	include "includes/web.styles"
 	
-	colors {
-		ListPanel.TextColor=text_onLightBG
-		ListPanel.BgColor=none  
-		ListPanel.SelectedTextColor=white
-		ListPanel.SelectedBgColor=blue500
-		ListPanel.SelectedOutOfFocusBgColor=blue800
-		ListPanel.DisabledTextColor=text_onDarkBG
-		ListPanel.DisabledSelectedTextColor=disabled_onLightBG
-		ListPanel.EmptyListInfoTextColor=text_onLightBG
-
-		TextEntry.IMEBGColor=none
-    	TextEntry.IMEFGColor=none
-
-    	PropertySheet.FlashTabColor=orange500
-
-    	DragDrop.DragFrame=none
-	    DragDrop.DropFrame=none
-	    WizardPanel.HeaderBGColor=green500
-	    ChatDialog.URLColor=blue500
-	    ChatOwnTextColor=text_onLightBG
-		ChatDialog.HistoryColor=disabled_onLightBG
-	    ChatGradientTop=none
-	    ChatGradientBottom=none
-
-	    AchievementPopup.TitleColor=text_onDarkBG
-	    AchievementPopup.DescriptionColor=secondaryText_onDarkBG
-	    GiftOnlyInfo.ImagePanelColor=none   
-	}
+	colors {}
 
 	styles {        
 		FrameTitle {
