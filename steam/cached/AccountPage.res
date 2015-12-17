@@ -12,11 +12,11 @@
 				0="fill(x0+71,y0+113,x1,y0+114, dividers_onLightBG)"
 				1="fill(x0+71,y0+213,x1,y0+214, dividers_onLightBG)"
 				2="fill(x0+71,y0+276,x1,y0+277, dividers_onLightBG)"
-				5="image(x0+26,y0+27,x1,y1, graphics/icons/accountpage/account)"
-				6="image(x0+26,y0+127,x1,y1, graphics/icons/accountpage/email)"
-				7="image(x0+26,y0+227,x1,y1, graphics/icons/accountpage/vac)"
-				8="image(x0+26,y0+290,x1,y1, graphics/icons/accountpage/security)"
-				10="image(x0+26,y0+431,x1,y1, graphics/icons/accountpage/beta)"
+				5="image(x0+26,y0+27,x1,y1, graphics/icons/settings/account)"
+				6="image(x0+26,y0+127,x1,y1, graphics/icons/settings/email)"
+				7="image(x0+26,y0+227,x1,y1, graphics/icons/settings/vac)"
+				8="image(x0+26,y0+290,x1,y1, graphics/icons/settings/security)"
+				10="image(x0+26,y0+431,x1,y1, graphics/icons/settings/beta)"
 			}
 		}
 
@@ -189,10 +189,7 @@
 			align=right
 			y=28
 		}
-
-
-	
-
+		
 		//Hidden
 		place {
 			control="Label1,Divider2,SecurityIcon,ChangeUserButton"

@@ -5,7 +5,7 @@
 				0="fill(x0+70,y0+20,x0+396,y0+45, custombackgroundnofocustransparent)" // Account Name
 			}
 			render_bg {
-				5="image(x0+26,y0+27,x1,y1, graphics/icons/accountpage/webbrowser)"
+				5="image(x0+26,y0+27,x1,y1, graphics/icons/settings/webbrowser)"
 			}
 		}
 
