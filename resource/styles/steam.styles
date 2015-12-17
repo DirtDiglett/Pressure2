@@ -9,19 +9,19 @@ steam.styles {
 	include "includes/web.styles"
 	
 	colors {
-		ListPanel.TextColor       text_onLightBG
-		ListPanel.BgColor       none  
-		ListPanel.SelectedTextColor     white
-		ListPanel.SelectedBgColor     blue500
-		ListPanel.SelectedOutOfFocusBgColor   blue800
-		ListPanel.DisabledTextColor     text_onDarkBG
-		ListPanel.DisabledSelectedTextColor   disabled_onLightBG
-		ListPanel.EmptyListInfoTextColor    text_onLightBG
+		ListPanel.TextColor=text_onLightBG
+		ListPanel.BgColor=none  
+		ListPanel.SelectedTextColor=white
+		ListPanel.SelectedBgColor=blue500
+		ListPanel.SelectedOutOfFocusBgColor=blue800
+		ListPanel.DisabledTextColor=text_onDarkBG
+		ListPanel.DisabledSelectedTextColor=disabled_onLightBG
+		ListPanel.EmptyListInfoTextColor=text_onLightBG
 
 		TextEntry.IMEBGColor=none
     	TextEntry.IMEFGColor=none
 
-    	PropertySheet.FlashTabColor	"orange500"
+    	PropertySheet.FlashTabColor=orange500
 
     	DragDrop.DragFrame=none
 	    DragDrop.DropFrame=none
@@ -40,10 +40,10 @@ steam.styles {
 	styles {        
 		FrameTitle {
 				inset="4 1 0 0"
-				padding-right="64"
+				padding-right=64
 				font-weight=400
-				textcolor="disabled_OnDarkBG"
-				bgcolor="customgreyprimary"
+				textcolor=disabled_OnDarkBG
+				bgcolor=customgreyprimary
 				font-family=basefont
 				font-size=24
 
@@ -54,28 +54,27 @@ steam.styles {
 		}
 		
 			FrameTitle:framefocus {
-					textcolor="white"
+					textcolor=white
 			}
 
 		Frame {
-			bgcolor="custombackgroundnofocus"
+			bgcolor=custombackgroundnofocus
 		} 
 			
 			Frame:FrameFocus {
-				bgcolor="custombackgroundprimary"
+				bgcolor=custombackgroundprimary
 			}
 
 		Divider {
-			bgcolor="none"
+			bgcolor=none
 
 			render {
-				//0="fill(x0+10, y1 - 1, x1, y1, dividers_OnLightBG)"
 				0="fill(x0, y1 - 1, x1, y1, dividers_OnLightBG)"       
 			}
 		}
 
 		Page {
-			bgcolor="none"
+			bgcolor=none
 			render_bg {}
 		}
 
@@ -83,25 +82,25 @@ steam.styles {
 			font-family=basefont
 			font-size=15
 			font-weight=400
-			textcolor="text_OnLightBG"
+			textcolor=text_OnLightBG
 		}
 
 		PropertyPage {
-			bgcolor=""
+			bgcolor=none
 		}
 
 		Label {
-			textcolor="text_OnLightBG"
-			selectedtextcolor="white"
-			selectedbgcolor="blue500"
-			bgcolor="none"
+			textcolor=text_OnLightBG
+			selectedtextcolor=white
+			selectedbgcolor=blue500
+			bgcolor=none
 			font-family=basefont
 			font-size=16
 			font-weight=400
 		}
 
 		URLLabel {
-			textcolor="blue500"
+			textcolor=blue500
 			font-family=basefont
 			font-size=16
 			font-weight=400
@@ -109,11 +108,11 @@ steam.styles {
 		}
 		
 			URLLabel:Hover {
-				textcolor="blue300"
+				textcolor=blue300
 			}
 
 		URLLabelSimple {
-	      textcolor="blue500"
+	      textcolor=blue500
 	      font-family=basefont
 	      font-size=16
 	      font-weight=400
@@ -121,11 +120,11 @@ steam.styles {
 	    }
 	    
 	      URLLabelSimple:Hover {
-	        textcolor="blue300"
+	        textcolor=blue300
 	      }
 	 
 	    URLLabelSimple2 {
-	      textcolor="blue500"
+	      textcolor=blue500
 	      font-family=basefont
 	      font-size=16
 	      font-weight=400
@@ -133,11 +132,11 @@ steam.styles {
 	    }
 	    
 	      URLLabelSimple2:Hover {
-	        textcolor="blue300"
+	        textcolor=blue300
 	      } 
 
 		Menu {
-			bgcolor="white"
+			bgcolor=white
 			inset="0 0 0 0"
 			
 			render {}
@@ -151,39 +150,39 @@ steam.styles {
 		
 		MenuItem {
 			font-family=basefont
-			textcolor="text_OnLightBG"
+			textcolor=text_OnLightBG
 			font-size=17
 			font-weight=400
 			inset="0 0 0 0"
 			padding-right=6
 			padding-left=6
-			bgcolor="none"
+			bgcolor=none
 			render_bg {}
 		}
    
 			MenuItem:selected {
-				textcolor="white"
-				bgcolor="blue500"
+				textcolor=white
+				bgcolor=blue500
 			}
 		
 			MenuItem:hover {
-			  textcolor="white"
-			  bgcolor="blue500"
+			  textcolor=white
+			  bgcolor=blue500
 			}
 		
 			MenuItem:disabled {
-				textcolor="disabled_OnLightBG"
+				textcolor=disabled_OnLightBG
 				shadowtextcolor=none
 			}
 		
 				MenuItem:disabled:hover {
-					textcolor="disabled_OnLightBG"
+					textcolor=disabled_OnLightBG
 					shadowtextcolor=none
 				}
    
 		MenuSeparator {
 			inset="0 0 0 0"    
-			textcolor="none"
+			textcolor=none
 			bgcolor=none
 
 			render {
@@ -207,23 +206,23 @@ steam.styles {
 
 		SuperNavMenuItem {
 			font-size=17
-			textcolor="text_OnLightBG"
+			textcolor=text_OnLightBG
 			bgcolor=none
-			font-style="normal"
+			font-style=normal
 		}
 
 			SuperNavMenuItem:hover {
-				textcolor="white"
+				textcolor=white
 				bgcolor=blue500
 			}
 
 			SuperNavMenuItem:selected {
-				textcolor="white"
+				textcolor=white
 				bgcolor=blue500
 			}
 
-		"SuperNavMenuDivider" {
-			textcolor="none"
+		SuperNavMenuDivider {
+			textcolor=none
 			render {
 				1="fill( x0+1, y0+1, x1-1, y0+2, dividers_OnLightBG )"
 			}
@@ -247,30 +246,30 @@ steam.styles {
 
 
 		gamedetails-headerlabel {
-		  font-size="30"
-		  font-style="normal"
+		  font-size=30
+		  font-style=normal
 		  font-family=mediumfont
-		  textcolor="customgreyprimary"
+		  textcolor=customgreyprimary
 		}
 
 		gamedetails-headerlabel-red {
-		  font-size="30"
-		  font-style="normal"
+		  font-size=30
+		  font-style=normal
 		  font-family=mediumfont
-		  textcolor="customgreyprimary"
+		  textcolor=customgreyprimary
 		}  
 		gamedetails-headerlabel-green {
-		  font-size="30"
-		  font-style="normal"
+		  font-size=30
+		  font-style=normal
 		  font-family=mediumfont
-		  textcolor="customgreyprimary"
+		  textcolor=customgreyprimary
 		}
 
 		gamedetails-headerlabel-blue {
-		  font-size="30"
-		  font-style="normal"
+		  font-size=30
+		  font-style=normal
 		  font-family=mediumfont
-		  textcolor="customgreyprimary"
+		  textcolor=customgreyprimary
 		}
 
 
@@ -280,7 +279,7 @@ steam.styles {
 
 
 		TooltipWindow {
-			bgcolor="white"
+			bgcolor=white
 			render_bg {
 				0="fill(x0,y0,x0+1,y1, dividers_OnLightBG)"
 				1="fill(x0+1,y0,x1-1,y0+1, dividers_OnLightBG)"
@@ -294,11 +293,11 @@ steam.styles {
 			padding-right=8
 			padding-bottom=8
 			padding-top=8
-			textcolor="secondaryText_OnLightBG"
+			textcolor=secondaryText_OnLightBG
 		}
 		
 		tooltip_headline {
-			textcolor="text_OnLightBG"
+			textcolor=text_OnLightBG
 			padding-left=8
 			padding-right=8
 			padding-top=8
@@ -322,94 +321,92 @@ steam.styles {
 		}
 
 		friends_chat_text {
-			textcolor="text_OnLightBG"
-			selectedtextcolor="white"   
-			SelectedBgColor="blue500"
+			textcolor=text_OnLightBG
+			selectedtextcolor=white  
+			SelectedBgColor=blue500
 			font-size=17
 		}
 		
 		friends_chat_text_self {
-			textcolor="secondaryText_OnLightBG"
-			selectedtextcolor="white"   
-			selectedbgcolor="blue500"
+			textcolor=secondaryText_OnLightBG
+			selectedtextcolor=white
+			selectedbgcolor=blue500
 			font-size=17
 		}
 
 		friends_chat_history {
-			textcolor="disabled_OnLightBG"
-			selectedtextcolor="white"   
-			selectedbgcolor="blue500"
+			textcolor=disabled_OnLightBG
+			selectedtextcolor=white   
+			selectedbgcolor=blue500
 			font-size=17
 		}
 		
 		friends_chat_event {
-			textcolor="orange500"
+			textcolor=orange500
 			font-size=17
-			selectedtextcolor="white"
-			selectedbgcolor="blue500"
+			selectedtextcolor=white
+			selectedbgcolor=blue500
 		}
 
 		friends_chat_bright_event {
-			textcolor="orange500"
-			selectedtextcolor="white"
+			textcolor=orange500
+			selectedtextcolor=white
 			font-size=17
 			font-weight=1000
 		}
 
 		friends_chat_url {
-			textcolor="blue500"
+			textcolor=blue500
 			font-style=underline
 			font-size=17
-			selectedtextcolor="white"
-			selectedbgcolor="blue500"
+			selectedtextcolor=white
+			selectedbgcolor=blue500
 		}
 		
 		friends_chat_name_ingame {
-			textcolor="lightgreen500"
-			selectedtextcolor="white"   
-			selectedbgcolor="blue500"
+			textcolor=lightgreen500
+			selectedtextcolor=white   
+			selectedbgcolor=blue500
 			font-size=17
-			//font-weight=600
 		}
 
 		friends_chat_name_golden {
-			textcolor="orange500"
-			selectedtextcolor="white"   
-			selectedbgcolor="blue500"
+			textcolor=orange500
+			selectedtextcolor=white   
+			selectedbgcolor=blue500
 			font-size=17
 		}
 
 		friends_chat_self {
-			textcolor="blue500"
-			selectedtextcolor="white"   
-			selectedbgcolor="blue500"
+			textcolor=blue500
+			selectedtextcolor=white  
+			selectedbgcolor=blue500
 			font-size=17
 		}
 		
 		friends_chat_name {
-			textcolor="blue500"
-			selectedtextcolor="white"   
-			selectedbgcolor="blue500"
+			textcolor=blue500
+			selectedtextcolor=white  
+			selectedbgcolor=blue500
 			font-size=17
-			//font-weight=600
 		}
 		
 		friends_chat_accountid {
-			selectedtextcolor="red500"   
-			selectedbgcolor="blue500"
-			textcolor="white"
+			selectedtextcolor=red500  
+			selectedbgcolor=blue500
+			textcolor=white
 			font-size=17
 		}
 		
 		friends_chat_securitylink {
-			textcolor="orange500"
-			bgcolor="none"
+			textcolor=orange500
+			bgcolor=none
 			font-family=basefont
 			font-size=17
 			font-weight=600
 			font-style=none
-			selectedtextcolor="white"    
-			selectedbgcolor="blue500"
+			selectedtextcolor=white   
+			selectedbgcolor=blue500
 		}
 	
 
@@ -417,39 +414,39 @@ steam.styles {
 
 		 // used in friends tooltip and friends list for overriding regular styles with custom colors
 		friends_offline {
-			textcolor="grey500"
+			textcolor=grey500
 		}
 		
 			friends_offline:hover {
-				textcolor="grey400"
+				textcolor=grey400
 			}
 		
 		friends_online {
-			textcolor="lightblue500"
+			textcolor=lightblue500
 		}
 		
 			friends_online:hover {
-				textcolor="lightblue300"
+				textcolor=lightblue300
 			}
 		
 		friends_ingame {
-			textcolor="lightgreen500"
+			textcolor=lightgreen500
 		}
 			
 			friends_ingame:hover {
-				textcolor="lightgreen300"
+				textcolor=lightgreen300
 			}
 
 		friends_golden {
-			textcolor="orange500"
+			textcolor=orange500
 		}
 			
 			friends_golden:hover {
-				textcolor="orange300"
+				textcolor=orange300
 			}
 		
 		friends_ignored {
-			textcolor="red500"
+			textcolor=red500
 		}
 
 
@@ -458,62 +455,62 @@ steam.styles {
  
 
 
-	"GameItem_Uninstalled" {
-	font-size=16
-	font-family=mediumfont
-	  textcolor="disabled_onLightBG"
-	  selectedtextcolor="white"
+	GameItem_Uninstalled {
+		font-size=16
+		font-family=mediumfont
+	  textcolor=disabled_onLightBG
+	  selectedtextcolor=white
 	  selectedbgcolor=blue500
 	}
  
-	"GameItem_Installed" {
+	GameItem_Installed {
 		font-size=16
 		font-family=mediumfont
-	  textcolor="text_onLightBG"
-	  selectedtextcolor="white"
+	  textcolor=text_onLightBG
+	  selectedtextcolor=white
 	  selectedbgcolor=blue500
 	}
 	
-	"GameItem_Shortcut" {
+	GameItem_Shortcut {
 	font-size=16
 	font-family=mediumfont
-	  textcolor="text_onLightBG"
-	  selectedtextcolor="white"
+	  textcolor=text_onLightBG
+	  selectedtextcolor=white
 	  selectedbgcolor=blue500
 	}
 	
-	"GameItem_Mod" {
+	GameItem_Mod {
 	font-size=16
 	font-family=mediumfont
-	  textcolor="bluegrey900"
-	  selectedtextcolor="white"
+	  textcolor=bluegrey900
+	  selectedtextcolor=white
 	  selectedbgcolor=blue500
 	}
 
-	"GameItem_Updating" {
+	GameItem_Updating {
 	font-size=16
 	font-style=italic
 	font-family=mediumfont
-		textcolor="orange500"
-		selectedtextcolor="white"
+		textcolor=orange500
+		selectedtextcolor=white
 		selectedbgcolor=blue500
 	}
 	
-	"GameItem_Decrypting" {
+	GameItem_Decrypting {
 	font-size=16
 	font-style=italic
 	font-family=mediumfont
-		textcolor="green500"
-		selectedtextcolor="white"
+		textcolor=green500
+		selectedtextcolor=white
 		selectedbgcolor=blue500
 	}
 	
-	"GameItem_Syncing" {
+	GameItem_Syncing {
 	font-size=16
 	font-family=mediumfont
 	font-style=italic
-		textcolor="orange500"
-		selectedtextcolor="white"
+		textcolor=orange500
+		selectedtextcolor=white
 		selectedbgcolor=blue500
 	}
 
@@ -537,6 +534,7 @@ steam.styles {
         CGamesListFavoritesToggle:selected:hover {
           image="steam/cached/fav_remove_ovr"
         }
+
 	CConsoleHistory {
       font-family="Lucida Console"
       font-size=9
@@ -580,10 +578,10 @@ steam.styles {
         font-family=basefont
         font-size=15
         font-weight=400
-        textcolor="text_onLightBG"
-        selectedtextcolor="white"
-        selectedbgcolor="blue500"
-        shadowtextcolor="disabled_onLightBG"
+        textcolor=text_onLightBG
+        selectedtextcolor=white
+        selectedbgcolor=blue500
+        shadowtextcolor=disabled_onLightBG
         inset="0 0 0 0"
 
         padding-left=8
@@ -596,21 +594,21 @@ steam.styles {
 		}
     }
     
-    "CGamesListPanel" {
+    CGamesListPanel {
       bgcolor=white
         font-family=basefont
         font-size=16
         font-weight=400
-        textcolor="text_onLightBG"
-        selectedtextcolor="white"
-        selectedbgcolor="blue500"
-        shadowtextcolor="disabled_onLightBG"
+        textcolor=text_onLightBG
+        selectedtextcolor=white
+        selectedbgcolor=blue500
+        shadowtextcolor=disabled_onLightBG
         inset="0 0 0 0"
         render {}       
         render_bg {}
     }
 
-     "GameColumn_BigText" {
+     GameColumn_BigText {
         font-family=basefont
         font-size=18
         font-weight=700
@@ -621,14 +619,14 @@ steam.styles {
         font-family=mediumfont
         font-size=16
         font-weight=400
-        textcolor="secondaryText_OnDarkBG"
-        font-style="normal"
-        bgcolor="customgreyaccent"
+        textcolor=secondaryText_OnDarkBG
+        font-style=normal
+        bgcolor=customgreyaccent
         inset="0 0 0 0"
         minimum-height=0 //reset for button height
         inset-top=1
         textcolor=secondaryText_OnDarkBG
-        font-style="uppercase"
+        font-style=uppercase
         font-weight=600
 
         render_bg {
@@ -690,8 +688,8 @@ steam.styles {
     ListPanelInterior  {     
         inset="0 0 0 0"
         font-size=16
-        textcolor="text_onLightBG"
-        bgcolor="none" 
+        textcolor=text_onLightBG
+        bgcolor=none 
         
         render {}
         render_bg {}
@@ -700,7 +698,7 @@ steam.styles {
       ListPanelInterior:scrollbar {     
           bgcolor=none
           inset="0 0 -1 0"
-          textcolor="text_onLightBG"
+          textcolor=text_onLightBG
           render {}
           render_bg {}
       } 
@@ -708,7 +706,7 @@ steam.styles {
     ListPanelSectionHeader {     
         inset="0 0 0 0"
         textcolor=text_onLightBG
-        font-style="regular"
+        font-style=regular
         font-family=mediumfont
 
         render_bg {
@@ -739,8 +737,7 @@ steam.styles {
 
     "ListPanel RichTextInterior" {
       bgcolor=none
-      render_bg {} 
-      bgcolor=none
+      render_bg {}
     }
     
     ListPanelSectionCollapser {
@@ -784,7 +781,7 @@ steam.styles {
 
 
        "CSteamRootDialog Page" {
-        bgcolor="none"
+        bgcolor=none
         render_bg {}
     }
 
@@ -833,9 +830,9 @@ steam.styles {
           } 
 
 
-          ProgressBar {
+    ProgressBar {
         textcolor=lightgreen500
-        bgcolor="white"
+        bgcolor=white
         inset="0 0 0 0"
         
         render {}
@@ -852,9 +849,9 @@ steam.styles {
     }
 
 
-        RichText {
-        textcolor="text_OnLightBG"
-        selectedtextcolor="text_OnLightBG"        
+    RichText {
+        textcolor=text_OnLightBG
+        selectedtextcolor=text_OnLightBG        
         font-family=basefont
         font-size=15
         font-weight=400
@@ -896,7 +893,7 @@ steam.styles {
         font-style=italic
     }
 
-        SectionedListPanel {
+    SectionedListPanel {
       inset="0 0 0 0" 
       bgcolor=custombackgroundprimary
       font-family=basefont
@@ -934,7 +931,6 @@ steam.styles {
       }
 
       SectionedListPanelCollapser:selected {
-
         render_bg {
           0="fill(x0,y0-1,x1+2,y0, dividers_onLightBG)"
           1="fill(x0,y1-1,x1+2,y1, dividers_onLightBG)"
@@ -950,7 +946,7 @@ steam.styles {
           }
         }
 
-        StatusLabel {
+    StatusLabel {
       font-family=basefont
       font-size=15
       font-weight=400
@@ -962,7 +958,7 @@ steam.styles {
         font-family=basefont
         font-size=14
         font-weight=400
-        textcolor="white"
+        textcolor=white
         font-style=uppercase
       }   
     
@@ -980,11 +976,11 @@ steam.styles {
     }
     
     "MenuBar MenuButton" {
-        textcolor="secondarytext_onDarkBG"
+        textcolor=secondarytext_onDarkBG
     }
     
     "MenuBar MenuButton:frameFocus" {
-        textcolor="text_onDarkBG"
+        textcolor=text_onDarkBG
     }
     
     "MenuBar MenuButton:frameFocus:hover" {
@@ -1002,17 +998,17 @@ steam.styles {
       font-family=basefont
       font-size=14
       font-weight=400
-      textcolor="scrollglyph"
-      bgcolor="none"
+      textcolor=white
+      bgcolor=none
       render_bg {}
     }  
    
   MenuButton:hover {
-      textcolor="white"
+      textcolor=white
     }
     
   MenuButton:selected {
-        textcolor="white"
+        textcolor=white
     }
 
         TreeNode {
@@ -1031,9 +1027,9 @@ steam.styles {
     TreeNodeText {
       font-family=basefont
       font-size=15
-      textcolor="text_OnLightBG"
-      selectedtextcolor="white"
-      selectedbgcolor="blue500"
+      textcolor=text_OnLightBG
+      selectedtextcolor=white
+      selectedbgcolor=blue500
       bgcolor=none
 
       render {}
