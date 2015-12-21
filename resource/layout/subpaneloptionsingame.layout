@@ -1,0 +1,134 @@
+"resource/layout/subpaneloptionsingame.layout" {
+	styles {
+		CSettingsSubInGame {
+			render {
+				0="fill(x0+70,y0+20,x0+396,y0+45, custombackgroundnofocustransparent)" // Account Name
+				1="fill(x0+70,y0+120,x0+396,y0+147, custombackgroundnofocustransparent)" // Email
+				2="fill(x0+70,y0+216,x0+396,y0+247, custombackgroundnofocustransparent)" // VAC
+				3="fill(x0+70,y0+280,x0+396,y0+311, custombackgroundnofocustransparent)" // Security
+				4="fill(x0+70,y0+426,x0+396,y0+451, custombackgroundnofocustransparent)" // Beta
+			}
+			render_bg {
+				0="fill(x0+71,y0+125,x1,y0+126, dividers_onLightBG)"
+				1="fill(x0+71,y0+276,x1,y0+277, dividers_onLightBG)"
+				2="fill(x0+71,y0+392,x1,y0+393, dividers_onLightBG)"
+				5="image(x0+26,y0+27,x1,y1, graphics/icons/settings/overlay)"
+				6="image(x0+26,y0+140,x1,y1, graphics/icons/settings/screenshots)"
+				7="image(x0+26,y0+227,x1,y1, graphics/icons/settings/vac)"
+				8="image(x0+26,y0+290,x1,y1, graphics/icons/settings/security)"
+				10="image(x0+26,y0+431,x1,y1, graphics/icons/settings/beta)"
+			}
+		}
+
+		CSettingsSubInGame:framefocus {
+			render {
+				0="fill(x0+70,y0+20,x0+396,y0+45, custombackgroundprimarytransparent)" // Account Name
+				1="fill(x0+70,y0+120,x0+396,y0+147, custombackgroundprimarytransparent)" // Email
+				2="fill(x0+70,y0+216,x0+396,y0+247, custombackgroundprimarytransparent)" // VAC
+				3="fill(x0+70,y0+280,x0+396,y0+311, custombackgroundprimarytransparent)" // Security
+				4="fill(x0+70,y0+426,x0+396,y0+451, custombackgroundprimarytransparent)" // Beta
+			}
+		}
+	}
+	
+	layout {
+		region {
+			name=shortcut
+			height=125
+			width=max
+			x=82
+			y=0
+			margin-right=29
+		}
+
+		place {
+			control=HotKeySelectorLabel
+			region=shortcut
+			y=28
+			dir=down
+			spacing=2
+		}
+
+		place {
+			control=HotKeySelector
+			width=350
+			height=34
+			start=HotKeySelectorLabel
+			dir=down
+			y=4
+		}
+
+		place {
+			control=EnableOverlayCheck
+			width=max
+			height=18
+			start=HotKeySelector
+			dir=down
+			y=4
+		}
+
+
+		region {
+			name=screenshot
+			height=150
+			width=max
+			x=82
+			y=113
+			margin-right=29
+		}
+
+		place {
+			control=ScreenshotLabel
+			region=screenshot
+			y=28
+			dir=down
+			spacing=2
+		}
+
+		place {
+			control=ScreenshotHotKeySelector
+			width=185
+			height=34
+			start=ScreenshotLabel
+			dir=down
+			y=4
+		}
+
+		place {
+			control=SetScreenshotFolderButton
+			width=185
+			height=34
+			start=ScreenshotHotKeySelector
+			dir=down
+			y=4
+		}
+
+
+
+
+
+
+
+		region { name=box margin-top=10 margin-bottom=20 margin-left=20 margin-right=20 width=max height=max }
+		region { name=top region=box margin-top=10 }
+		region { name=topleft region=top y=500 width=255 margin-right=20 }
+		region { name=topright region=top x=263 width=235 y=501}
+		
+		region { name=bottom region=box y=320 }
+		
+		place { controls=ShowIngameFPSLabel,ShowIngameFPSCombo,ShowIngameFPSContrastCheck dir=down spacing=5 start=HotKeySelector margin-top=44 width=max region=topleft }
+			
+
+		place { control=ScreenshotActionLabel region=topright start=SetScreenshotFolderButton dir=down margin-top=19 }
+		place { controls=ScreenshotNotifyCheck,ScreenshotPlaySoundCheck,ScreenshotSaveUncompressedCheck dir=down start=ScreenshotActionLabel
+			margin-top=6 margin-left=10 height=22 width=max region=topright }
+		
+		place { controls="PingRateLabel" region=bottom start=Divider1 margin-top=10 width=max dir=down }
+		place { controls="PingRateCombo" region=bottom start=PingRateLabel margin-top=10 width=235 dir=down height=25 }
+
+		place {
+			control=PingRateInfo,DescriptionLabel,TitleLabel,Divider1
+			height=0
+		}				
+	}
+}
