@@ -13,7 +13,7 @@
 		PropertySheet {
 			minimum-width="535"
 			minimum-height="505"
-			bgcolor=none//red500
+			bgcolor=none
 			render_bg {}
 		}
 		
