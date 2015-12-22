@@ -38,7 +38,7 @@
 		place {
 			control=OverlayHomePage
 			start=OverlayHomePageLabel
-			y=2
+			y=4
 			dir=down
 			height=37
 			width=max
