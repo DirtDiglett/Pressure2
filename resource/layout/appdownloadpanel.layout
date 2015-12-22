@@ -155,6 +155,15 @@
 		}
 
 		place {
+			control=workshopbanner
+			start=gameimage
+			dir=down
+			width=184
+			height=26
+			y=-26
+		}
+
+		place {
 			control=launchbutton
 			start=gameimage
 			dir=down
