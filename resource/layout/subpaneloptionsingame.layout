@@ -2,11 +2,10 @@
 	styles {
 		CSettingsSubInGame {
 			render {
-				0="fill(x0+70,y0+20,x0+396,y0+45, custombackgroundnofocustransparent)" // Account Name
-				1="fill(x0+70,y0+120,x0+396,y0+147, custombackgroundnofocustransparent)" // Email
-				2="fill(x0+70,y0+216,x0+396,y0+247, custombackgroundnofocustransparent)" // VAC
-				3="fill(x0+70,y0+280,x0+396,y0+311, custombackgroundnofocustransparent)" // Security
-				4="fill(x0+70,y0+426,x0+396,y0+451, custombackgroundnofocustransparent)" // Beta
+				0="fill(x0+70,y0+28,x0+396,y0+47, custombackgroundnofocustransparent)"
+				1="fill(x0+70,y0+140,x0+285,y0+158, custombackgroundnofocustransparent)"
+				2="fill(x0+70,y0+295,x0+396,y0+313, custombackgroundnofocustransparent)"
+				3="fill(x0+70,y0+410,x0+396,y0+428, custombackgroundnofocustransparent)"
 			}
 			render_bg {
 				0="fill(x0+71,y0+125,x1,y0+126, dividers_onLightBG)"
@@ -14,19 +13,17 @@
 				2="fill(x0+71,y0+392,x1,y0+393, dividers_onLightBG)"
 				5="image(x0+26,y0+27,x1,y1, graphics/icons/settings/overlay)"
 				6="image(x0+26,y0+140,x1,y1, graphics/icons/settings/screenshots)"
-				7="image(x0+26,y0+227,x1,y1, graphics/icons/settings/vac)"
-				8="image(x0+26,y0+290,x1,y1, graphics/icons/settings/security)"
-				10="image(x0+26,y0+431,x1,y1, graphics/icons/settings/beta)"
+				7="image(x0+26,y0+294,x1,y1, graphics/icons/settings/fps)"
+				8="image(x0+26,y0+410,x1,y1, graphics/icons/settings/server)"
 			}
 		}
 
 		CSettingsSubInGame:framefocus {
 			render {
-				0="fill(x0+70,y0+20,x0+396,y0+45, custombackgroundprimarytransparent)" // Account Name
-				1="fill(x0+70,y0+120,x0+396,y0+147, custombackgroundprimarytransparent)" // Email
-				2="fill(x0+70,y0+216,x0+396,y0+247, custombackgroundprimarytransparent)" // VAC
-				3="fill(x0+70,y0+280,x0+396,y0+311, custombackgroundprimarytransparent)" // Security
-				4="fill(x0+70,y0+426,x0+396,y0+451, custombackgroundprimarytransparent)" // Beta
+				0="fill(x0+70,y0+28,x0+396,y0+47, custombackgroundprimarytransparent)"
+				1="fill(x0+70,y0+140,x0+285,y0+158, custombackgroundprimarytransparent)"
+				2="fill(x0+70,y0+295,x0+396,y0+313, custombackgroundprimarytransparent)"
+				3="fill(x0+70,y0+410,x0+396,y0+428, custombackgroundprimarytransparent)"
 			}
 		}
 	}
@@ -103,28 +100,85 @@
 			y=4
 		}
 
+		place {
+			control=ScreenshotActionLabel
+			region=screenshot
+			y=27
+			x=226
+			dir=down
+			height=18
+		}
 
+		place {
+			control="ScreenshotNotifyCheck,ScreenshotPlaySoundCheck,ScreenshotSaveUncompressedCheck"
+			start=ScreenshotActionLabel
+			y=9
+			dir=down
+			height=18
+			spacing=18
+		}
 
+		region {
+			name=fps
+			height=115
+			width=max
+			x=82
+			y=267
+			margin-right=29
+		}
 
+		place {
+			control=ShowIngameFPSLabel
+			region=fps
+			y=28
+			dir=down
+			spacing=2
+		}
 
+		place {
+			control=ShowIngameFPSCombo
+			width=185
+			height=34
+			start=ShowIngameFPSLabel
+			dir=down
+			y=4
+		}
 
+		place {
+			control=ShowIngameFPSContrastCheck
+			width=max
+			height=18
+			start=ShowIngameFPSCombo
+			dir=down
+			y=4
+		}
 
-		region { name=box margin-top=10 margin-bottom=20 margin-left=20 margin-right=20 width=max height=max }
-		region { name=top region=box margin-top=10 }
-		region { name=topleft region=top y=500 width=255 margin-right=20 }
-		region { name=topright region=top x=263 width=235 y=501}
-		
-		region { name=bottom region=box y=320 }
-		
-		place { controls=ShowIngameFPSLabel,ShowIngameFPSCombo,ShowIngameFPSContrastCheck dir=down spacing=5 start=HotKeySelector margin-top=44 width=max region=topleft }
-			
+		region {
+			name=server
+			height=115
+			width=max
+			x=82
+			y=383
+			margin-right=29
+		}
 
-		place { control=ScreenshotActionLabel region=topright start=SetScreenshotFolderButton dir=down margin-top=19 }
-		place { controls=ScreenshotNotifyCheck,ScreenshotPlaySoundCheck,ScreenshotSaveUncompressedCheck dir=down start=ScreenshotActionLabel
-			margin-top=6 margin-left=10 height=22 width=max region=topright }
-		
-		place { controls="PingRateLabel" region=bottom start=Divider1 margin-top=10 width=max dir=down }
-		place { controls="PingRateCombo" region=bottom start=PingRateLabel margin-top=10 width=235 dir=down height=25 }
+		place {
+			control=PingRateLabel
+			region=server
+			y=28
+			dir=down
+			spacing=2
+			width=max
+		}
+
+		place {
+			control=PingRateCombo
+			width=185
+			height=34
+			start=PingRateLabel
+			dir=down
+			y=4
+		}
 
 		place {
 			control=PingRateInfo,DescriptionLabel,TitleLabel,Divider1
