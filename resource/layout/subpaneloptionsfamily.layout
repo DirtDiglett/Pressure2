@@ -46,7 +46,6 @@
 		place {
 			control=ShowNotificationsCheck
 			height=18
-			region=page
 			start=BorrowersList
 			width=max
 			dir=down
