@@ -52,12 +52,6 @@ controls.styles {
 				}	
 			}
 
-				CheckButton:selected:focus {
-					render_bg {
-						0="image(x0,y0,x1,y1, graphics/controls/checkbox/checked)"
-					}
-				}
-
 				CheckButton:selected:disabled {
 					textcolor=disabled_OnLightBG
 
@@ -68,9 +62,23 @@ controls.styles {
 
 			CheckButton:focus{
 				render_bg {
-					0="image(x0,y0,x1,y1, graphics/controls/checkbox/unchecked)"
+					-3="image(x0-10,y0-10,x0+9,y0+9, graphics/material/selectionbubbles/hover/blue/topleft)"
+					-2="image(x0-10,y0+9,x0+9,y0+21, graphics/material/selectionbubbles/hover/blue/bottomleft)"
+					-1="image(x0+9,y0-10,x0+28,y0+9, graphics/material/selectionbubbles/hover/blue/topright)"
+					0="image(x0+9,y0+9,x0+28,y0+28, graphics/material/selectionbubbles/hover/blue/bottomright)"
+					1="image(x0,y0,x1,y1, graphics/controls/checkbox/unchecked)"
 				}
 			}
+
+				CheckButton:focus:selected {
+					render_bg {
+						-3="image(x0-10,y0-10,x0+9,y0+9, graphics/material/selectionbubbles/hover/blue/topleft)"
+						-2="image(x0-10,y0+9,x0+9,y0+21, graphics/material/selectionbubbles/hover/blue/bottomleft)"
+						-1="image(x0+9,y0-10,x0+28,y0+9, graphics/material/selectionbubbles/hover/blue/topright)"
+						0="image(x0+9,y0+9,x0+28,y0+28, graphics/material/selectionbubbles/hover/blue/bottomright)"
+						1="image(x0,y0,x1,y1, graphics/controls/checkbox/checked)"
+					}
+				}
 			
 			CheckButton:disabled {
 				textcolor=disabled_OnLightBG
@@ -166,12 +174,6 @@ controls.styles {
 				}
 			}
 
-				RadioButton:selected:focus {
-					render_bg {
-						0="image(x0-1,y0-1,x1,y1, graphics/controls/radio/checked)"
-					}
-				}
-
 				RadioButton:selected:disabled {
 					textcolor=disabled_OnLightBG
 					
@@ -182,9 +184,23 @@ controls.styles {
 
 			RadioButton:focus {
 				render_bg {
-					0="image(x0-1,y0-1,x1,y1, graphics/controls/radio/unchecked)"
+					-3="image(x0-10,y0-10,x0+9,y0+9, graphics/material/selectionbubbles/hover/blue/topleft)"
+					-2="image(x0-10,y0+9,x0+9,y0+21, graphics/material/selectionbubbles/hover/blue/bottomleft)"
+					-1="image(x0+9,y0-10,x0+28,y0+9, graphics/material/selectionbubbles/hover/blue/topright)"
+					0="image(x0+9,y0+9,x0+28,y0+28, graphics/material/selectionbubbles/hover/blue/bottomright)"
+					1="image(x0-1,y0-1,x1,y1, graphics/controls/radio/unchecked)"
 				}
 			}
+
+				RadioButton:focus:selected {
+					render_bg {
+						-3="image(x0-10,y0-10,x0+9,y0+9, graphics/material/selectionbubbles/hover/blue/topleft)"
+						-2="image(x0-10,y0+9,x0+9,y0+21, graphics/material/selectionbubbles/hover/blue/bottomleft)"
+						-1="image(x0+9,y0-10,x0+28,y0+9, graphics/material/selectionbubbles/hover/blue/topright)"
+						0="image(x0+9,y0+9,x0+28,y0+28, graphics/material/selectionbubbles/hover/blue/bottomright)"
+						1="image(x0-1,y0-1,x1,y1, graphics/controls/radio/checked)"
+					}
+				}
 
 			
 			RadioButton:disabled {
@@ -362,6 +378,13 @@ controls.styles {
 				render_bg {}
 			}
 
+				ComboBox:focus:selected {
+					bgcolor=blue500transparent
+					textcolor=blue500
+
+					render_bg {}
+				}
+
 			ComboBox:active {
 				bgcolor=blue500transparent
 				textcolor=blue500
@@ -375,6 +398,8 @@ controls.styles {
 
 				render_bg {}
 			}
+
+
 
 		ComboBoxButton {
 			bgcolor=none
