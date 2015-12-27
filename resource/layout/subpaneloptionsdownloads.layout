@@ -1,0 +1,172 @@
+"resource/layout/subpaneloptionsdownloads.layout" {
+	styles {
+		highlight {
+			textcolor=secondaryText_onLightBG
+		}
+
+		label {
+			textcolor=secondaryText_onLightBG
+		}
+
+		CSubPanelOptionsDownloads {
+			render_bg {
+				5="image(x0+26,y0+27,x1,y1, graphics/icons/settings/libraries)"
+				6="image(x0+26,y0+119,x1,y1, graphics/icons/settings/webbrowser)"
+				7="image(x0+26,y0+211,x1,y1, graphics/icons/settings/downloads)"
+			}
+		}
+	}
+	
+	layout {
+		region {
+			name=contentlibrary
+			height=114
+			width=max
+			x=82
+			y=0
+			margin-right=29
+		}
+
+		place {
+			control=LibrariesLabel
+			region=contentlibrary
+			y=28
+			dir=down
+			spacing=2
+		}
+
+		place {
+			control=ManageInstalledApps
+			width=350
+			height=34
+			start=LibrariesLabel
+			dir=down
+			y=4
+		}
+
+		place {
+			control=Divider1
+			x=71
+			y=100
+			width=max
+			height=1
+			align=left
+		}
+
+		region {
+			name=regions
+			height=114
+			width=max
+			x=82
+			y=92
+			margin-right=29
+		}
+
+		place {
+			control=RegionLabel
+			region=regions
+			y=28
+			dir=down
+			spacing=2
+		}
+
+		place {
+			control=DownloadRegionCombo
+			width=350
+			height=34
+			start=RegionLabel
+			dir=down
+			y=4
+		}
+
+		place {
+			control=Divider2
+			x=71
+			y=192
+			width=max
+			height=1
+			align=left
+		}
+
+		region {
+			name=restrictions
+			height=114
+			width=max
+			x=82
+			y=183
+			margin-right=29
+		}
+
+		place {
+			control=ThrottleRatesLabel
+			region=restrictions
+			y=28
+			dir=down
+		}
+
+		place {
+			control=ThrottleRates
+			width=350
+			height=34
+			start=ThrottleRatesLabel
+			dir=down
+			y=4
+		}
+
+		place {
+			control=AutoUpdateTimeRestrictCheckbox
+			start=ThrottleRates
+			y=18
+			dir=down
+		}
+
+		place {
+			control=AutoUpdateTimeRestrictStartLabel
+			width=170
+			start=AutoUpdateTimeRestrictCheckbox
+			dir=down
+			y=8
+		}
+
+		place {
+			control=AutoUpdateTimeRestrictStart
+			width=170
+			height=34
+			start=AutoUpdateTimeRestrictStartLabel
+			dir=down
+			y=4
+		}
+
+		place {
+			control=AutoUpdateTimeRestrictEndLabel
+			width=170
+			start=AutoUpdateTimeRestrictStartLabel
+			dir=right
+			x=10
+		}
+
+		place {
+			control=AutoUpdateTimeRestrictEnd
+			width=170
+			height=34
+			start=AutoUpdateTimeRestrictEndLabel
+			dir=down
+			y=4
+		}
+
+		place {
+			control=AllowDownloadsDuringGameplayCheckbox,ThrottleDownloadsWhileStreamingCheckbox
+			height=18
+			start=AutoUpdateTimeRestrictStart
+			dir=down
+			y=18
+			spacing=18
+		}
+
+
+		place {
+			control=ManageInstalledappsLabel,RegionInfoLabel,AllowDownloadsDuringGameplayInfo,ThrottleDownloadsWhileStreamingInfo,RestrictionsLabel
+			height=0
+		}
+	}
+}
