@@ -1,0 +1,133 @@
+"resource/layout/settingssubstreaming.layout" {
+	styles {
+		CSettingsSubStreaming {
+			render {
+				0="fill(x0+70,y0+252,x0+396,y0+271, custombackgroundnofocustransparent)"
+				1="fill(x0+70,y0+348,x0+285,y0+367, custombackgroundnofocustransparent)"
+			}
+			render_bg {
+				0="fill(x0+71,y0+233,x1,y0+234, dividers_onLightBG)"
+				1="fill(x0+71,y0+329,x1,y0+330, dividers_onLightBG)"
+
+				5="image(x0+26,y0+251,x1,y1, graphics/icons/settings/host)"
+				6="image(x0+26,y0+347,x1,y1, graphics/icons/settings/group)"
+			}
+		}
+
+		CSettingsSubStreaming:framefocus {
+			render {
+				0="fill(x0+70,y0+252,x0+396,y0+271, custombackgroundprimarytransparent)"
+				1="fill(x0+70,y0+348,x0+285,y0+367, custombackgroundprimarytransparent)"
+			}
+		}
+	}
+
+	layout {
+		region {
+			name=page
+			height=max
+			width=max
+			x=24
+			y=24
+			margin-right=24
+		}
+
+		place {
+			control=DescriptionLabel
+			region=page
+			width=max
+			dir=down
+		}
+
+		place {
+			control=RemoteClientList
+			region=page
+			start=DescriptionLabel
+			width=max
+			height=125
+			dir=down
+			y=7
+		}
+
+		place {
+			control=EnableStreaming
+			height=18
+			start=RemoteClientList
+			width=max
+			dir=down
+			y=7
+		}
+
+		region {
+			name=host
+			height=150
+			width=max
+			x=82
+			y=224
+			margin-right=29
+		}
+
+		place {
+			control=HostLabel
+			region=host
+			y=28
+			dir=down
+			spacing=2
+			width=max
+		}
+
+		place {
+			control=AdvancedHostOptions,UnsupportedPlatform
+			width=185
+			height=34
+			start=HostLabel
+			dir=down
+			y=4
+		}
+
+		region {
+			name=client
+			height=150
+			width=max
+			x=82
+			y=320
+			margin-right=29
+		}
+
+		place {
+			control=ClientLabel
+			region=client
+			y=28
+			dir=down
+			spacing=2
+			width=max
+		}
+
+		place {
+			control=AdvancedClientOptions
+			width=185
+			height=34
+			start=ClientLabel
+			dir=down
+			y=4
+		}
+
+		place {
+			control="QualityFast,QualityBalanced,QualityBeautiful"
+			region=client
+			y=31
+			x=226
+			dir=down
+			height=18
+			spacing=18
+		}
+
+
+		
+		
+		place {
+			control=HostDivider,ClientDivider,SupportInformationLabel
+			height=0
+		}
+	}
+}
