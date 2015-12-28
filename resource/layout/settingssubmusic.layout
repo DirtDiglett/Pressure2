@@ -1,0 +1,192 @@
+"resource/layout/settingssubmusic.layout" {
+	styles {	
+		CSettingsSubMusic {
+			render_bg {
+				5="image(x0+26,y0+27,x1,y1, graphics/icons/settings/music)"
+				6="image(x0+26,y0+212,x1,y1, graphics/icons/settings/libraries)"
+				7="image(x0+26,y0+391,x1,y1, graphics/icons/settings/notifications)"
+			}
+		}
+
+		LibraryListStyle {
+			inset-top=-1
+
+			render {
+				0="fill(x0,y0,x0+1,y1-1, dividers_OnLightBG)"
+				1="fill(x0,y0,x1,y0+1, dividers_OnLightBG)"
+				2="fill(x1-1,y0,x1,y1-1, dividers_OnLightBG)"
+				3="fill(x0, y1-1, x1, y1, dividers_OnLightBG)"
+			}
+		}
+
+		Headertext {
+			textcolor=secondaryText_onLightBG
+		}
+	}
+	
+	layout {
+		region {
+			name=library
+			height=172
+			width=max
+			x=82
+			y=0
+			margin-right=29
+		}
+
+		place {
+			control=LibraryHeader
+			region=library
+			y=28
+			dir=down
+			spacing=2
+		}
+
+		place {
+			control=LibraryList
+			width=437
+			height=60
+			start=LibraryHeader
+			dir=down
+			y=4
+		}
+
+		place {
+			control=AddLibraryButton
+			width=135
+			height=34
+			start=LibraryList
+			dir=down
+			y=4
+		}
+
+		place {
+			control=RemoveLibraryButton,StartCrawlingButton
+			width=135
+			height=34
+			start=AddLibraryButton
+			dir=right
+			x=4
+			spacing=4
+		}
+
+		place {
+			control=LoggingCrawlingCheckbox
+			height=18
+			start=AddLibraryButton
+			dir=down
+			y=8
+		}
+
+		place {
+			control=LibraryDivider
+			x=71
+			y=193
+			width=max
+			height=1
+			align=left
+		}
+
+		region {
+			name=database
+			height=172
+			width=max
+			x=82
+			y=185
+			margin-right=29
+		}
+
+		place {
+			control=DatabaseHeader,DatabaseInfoLabel
+			region=database
+			y=28
+			dir=down
+			spacing=2
+		}
+
+		place {
+			control="DatabaseCrawlAtStartup,DatabaseCrawlSteamInstallFolders"
+			start=DatabaseInfoLabel
+			dir=down
+			height=18
+			spacing=18
+			y=18
+		}
+
+		place {
+			control=ResetDatabaseButton
+			width=350
+			height=34
+			start=DatabaseCrawlSteamInstallFolders
+			dir=down
+			y=4
+		}
+
+		place {
+			control=DatabaseDivider
+			x=71
+			y=372
+			width=max
+			height=1
+			align=left
+		}
+
+
+		region {
+			name=notifications
+			height=172
+			width=max
+			x=82
+			y=373
+			margin-right=29
+		}
+
+		place {
+			control="PauseMusicHeader"
+			region=notifications
+			dir=down
+			height=18
+			spacing=18
+			y=18
+		}
+
+		place {
+			control="PauseMusicWhenStartingApplicationCheckbox,PauseMusicWhenVoiceChatCheckbox"
+			start=PauseMusicHeader
+			dir=down
+			height=18
+			spacing=18
+			y=4
+		}
+
+		place {
+			control="NotificationHeader"
+			region=notifications
+			dir=down
+			height=18
+			spacing=18
+			y=18
+			x=226
+		}
+
+		place {
+			control="NotificationPlaylistNowPlayingCheckbox"
+			start=NotificationHeader
+			dir=down
+			height=18
+			spacing=18
+			y=4
+		}
+
+
+
+
+		
+		place { control=EnableMediaKeysCheckbox y=290 x=250 }
+		
+		place {
+			control=LoggingHeader,VolumeHeader,VolumeSlider,VolumeDivider
+			height=0
+		}
+	}
+}
