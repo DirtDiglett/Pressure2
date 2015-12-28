@@ -1,0 +1,37 @@
+"resource/layout/overlaydialogsettings.layout" {
+	styles {
+		COverlaySettingsDialog {	
+			render_bg {
+				0="fill(x0,y0,x1,y1, red500)"
+			}
+		}
+	}
+	
+	layout {
+		region {
+			name="buttons"
+			width=max
+			height=58
+			align=bottom
+		}
+
+		place {
+			control=sheet
+			height=max
+			width=max
+			margin-bottom=58
+			y=34
+		}
+
+		place {
+			control="OKButton,CancelButton"
+			region="buttons"
+		    width=92
+		    height=34
+		    align=right
+			margin-right=11
+			margin-top=12
+			spacing=12
+		}
+	}
+}
