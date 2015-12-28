@@ -9,7 +9,7 @@
 		}
 
 		LibraryListStyle {
-			inset-top=-1
+			inset-top=-2
 
 			render {
 				0="fill(x0,y0,x0+1,y1-1, dividers_OnLightBG)"
