@@ -1,10 +1,24 @@
 "steam/cached/SettingsSubInterface.res" {
 	styles {
 		CSubPanelOptionsInterface {
+			render {
+				0="fill(x0+70,y0+191,x1,y0+239, custombackgroundnofocustransparent)"
+				1="fill(x0+70,y0+286,x1,y0+312, custombackgroundnofocustransparent)"
+				2="fill(x0+70,y0+358,x1,y0+384, custombackgroundnofocustransparent)"
+			}
+
 			render_bg {
 				0="fill(x0+71,y0+184,x1,y0+185, dividers_onLightBG)"
 				5="image(x0+26,y0+27,x1,y1, graphics/icons/settings/pc)"
 				6="image(x0+26,y0+203,x1,y1, graphics/icons/settings/appearance)"
+			}
+		}
+
+		CSubPanelOptionsInterface:framefocus {
+			render {
+				0="fill(x0+70,y0+191,x1,y0+239, custombackgroundprimarytransparent)"
+				1="fill(x0+70,y0+286,x1,y0+312, custombackgroundprimarytransparent)"
+				2="fill(x0+70,y0+358,x1,y0+384, custombackgroundprimarytransparent)"
 			}
 		}
 	}

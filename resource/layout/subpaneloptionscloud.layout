@@ -5,6 +5,10 @@
 				5="image(x0+26,y0+27,x1,y1, graphics/icons/settings/server)"
 			}
 		}
+
+		label {
+			textcolor=secondaryText_onLightBG
+		}
 	}
 	
 	layout {
