@@ -1,0 +1,117 @@
+"resource/layout/settingssubstreaming_advanced_client.layout" {
+	styles {
+		CSettingsSubStreamingAdvancedClient {	
+			minimum-width=476
+			minimum-height=200
+
+			render {
+				0="fill(x0,y1-58,x1,y1-57, dividers_onLightBG)"
+			}
+			render_bg {
+				0="fill(x0+71,y0+136,x1,y0+137, dividers_onLightBG)"
+				1="fill(x0+71,y0+229,x1,y0+230, dividers_onLightBG)"
+
+				5="image(x0+26,y0+61,x1,y1, graphics/icons/settings/router)"
+				6="image(x0+26,y0+155,x1,y1, graphics/icons/settings/fps)"
+				7="image(x0+26,y0+247,x1,y1, graphics/icons/settings/hardware)"
+			}
+		}
+	}
+	
+	layout {
+		region {
+			name="buttons"
+			width=max
+			height=58
+			align=bottom
+		}
+	
+		region {
+			name=bandwidth
+			height=114
+			width=max
+			x=82
+			y=34
+			margin-right=29
+		}
+
+		place {
+			control=BandwidthLabel
+			region=bandwidth
+			y=28
+			dir=down
+			spacing=2
+			width=max
+		}
+
+		place {
+			control=BandwidthLimit
+			width=350
+			height=34
+			start=BandwidthLabel
+			dir=down
+			y=4
+		}
+
+		region {
+			name=resolution
+			height=114
+			width=max
+			x=82
+			y=128
+			margin-right=29
+		}
+
+		place {
+			control=ResolutionLabel
+			region=resolution
+			y=28
+			dir=down
+			spacing=2
+			width=max
+		}
+
+		place {
+			control=ResolutionLimit
+			width=350
+			height=34
+			start=ResolutionLabel
+			dir=down
+			y=4
+		}
+
+		region {
+			name=hardware
+			height=114
+			width=max
+			x=82
+			y=251
+			margin-right=29
+		}
+
+		place {
+			control=EnableHardwareDecoding,EnableDebugOverlay
+			width=max
+			height=18
+			region=hardware
+			dir=down
+			spacing=18
+		}
+
+		place {
+			control=OKButton
+			region="buttons"
+		    width=92
+		    height=34
+		    align=right
+			margin-right=11
+			margin-top=12
+			spacing=12
+		}
+
+		place {
+			control=SupportInformationLabel,DescriptionLabel
+			height=0
+		}
+	}
+}
