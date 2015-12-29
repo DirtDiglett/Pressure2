@@ -8,7 +8,39 @@
 	}
 
 	layout {
-		place { control="Label1,ShowOnlineStatus,ShowAwayStatus,ShowBusyStatus,ShowAppearOfflineStatus,Label2,ShowStore,ShowCommunity,ShowFriendActivity,ShowMyGames,ShowServers,ShowMusicPlayer,ShowNews,ShowSettings,ShowScreenshots,ShowBigPicture,ShowFriends,ShowExit" dir=down width=max x=16 y=46 spacing=2 }
+		place {
+			control="Label1"
+			y=29
+			x=26
+			dir=down
+			height=18
+		}
+
+		place {
+			controls="ShowOnlineStatus,ShowAwayStatus,ShowBusyStatus,ShowAppearOfflineStatus"
+			start=Label1
+			y=9
+			dir=down
+			height=18
+			spacing=18
+		}
+
+		place {
+			control="Label2"
+			y=18
+			start=ShowAppearOfflineStatus
+			dir=down
+			height=18
+		}
+
+		place {
+			controls="ShowStore,ShowCommunity,ShowFriendActivity,ShowMyGames,ShowServers,ShowMusicPlayer,ShowNews,ShowSettings,ShowScreenshots,ShowBigPicture,ShowFriends,ShowExit"
+			start=Label2
+			y=9
+			dir=down
+			height=18
+			spacing=18
+		}
 
 		region {
 			name="buttons"
