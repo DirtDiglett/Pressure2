@@ -25,13 +25,23 @@
 		
 		//Content
 		place {
-			control="Label2,BetaListComboBox"
+			control=Label2
 			y=218
 			dir=down
 			x=26
 			width=max
 			margin-right=29
 			spacing=4
+		}
+
+		place {
+			control=BetaListComboBox
+			width=max
+			height=34
+			start=Label2
+			dir=down
+			y=4
+			margin-right=29
 		}
 
 		place {
