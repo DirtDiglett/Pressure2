@@ -64,7 +64,7 @@ steam.styles {
 
 		Label {
 			textcolor=text_OnLightBG
-			selectedtextcolor=white
+			selectedtextcolor=text_OnLightBG
 			selectedbgcolor=blue500
 			bgcolor=none
 			font-family=basefont
@@ -1018,9 +1018,15 @@ steam.styles {
 
 
 
-    COverlaySettingsDialog {	
+    	COverlaySettingsDialog {
+    		minimum-width=543 // Matches Settings Dialog
+
+    		render {
+    			0="fill(x0,y1-58,x1,y1-57, dividers_onLightBG)"
+			}
+			
 			render_bg {
-				0="fill(x0,y0,x1,y1, red500)"
+				0="fill(x0,y0,x1, y0+55, customgreyprimary)"
 			}
 		}
 
