@@ -74,43 +74,40 @@
 
 
 			PageTab {
-				//minimum-height=34
-				minimum-width=110
-				padding-left=6
-				padding-right=36
-				textcolor=white
 				font-size=16
 				font-style=regular
 				textcolor=secondarytext_onDarkBG
+				minimum-height=34
 				inset-top=-1
 
+				render {}
 				render_bg {}
+	    }
+	    
+			PageTab:hover {
+		  		textcolor=text_onDarkBG
+
+				render_bg {
+					1="image(x0,y0,x0+2,y0+2, graphics/material/tab/white/topleft)"
+					2="image_tiled(x0+2,y0,x1-2, y0+2, graphics/material/tab/white/middle)"
+					3="image_tiled(x0,y0+2,x1, y1, graphics/material/tab/white/middle)"
+					4="image(x1-2,y0,x1,y0+2, graphics/material/tab/white/topright)"
+				}
 			}
+	  
+			PageTab:selected {
+				textcolor=blue500
 
-				PageTab:Hover {
-					textcolor=text_onDarkBG
-
-					render_bg {
-						1="image(x0,y0,x0+2,y0+2, graphics/material/tab/white/topleft)"
-						2="image_tiled(x0+2,y0,x1-2, y0+2, graphics/material/tab/white/middle)"
-						3="image_tiled(x0,y0+2,x1, y1, graphics/material/tab/white/middle)"
-						4="image(x1-2,y0,x1,y0+2, graphics/material/tab/white/topright)"
-					}
+				render_bg {
+					0="fill(x0,y1-3,x1,y1, blue500)"
+					1="image(x0,y0,x0+2,y0+2, graphics/material/tab/blue/topleft)"
+					2="image_tiled(x0+2,y0,x1-2, y0+2, graphics/material/tab/blue/middle)"
+					3="image_tiled(x0,y0+2,x1, y1, graphics/material/tab/blue/middle)"
+					4="image(x1-2,y0,x1,y0+2, graphics/material/tab/blue/topright)"
 				}
+		  	}
 
-				PageTab:Selected {
-					textcolor=blue500
-
-					render_bg {
-						0="fill(x0,y1-3,x1,y1, blue500)"
-						1="image(x0,y0,x0+2,y0+2, graphics/material/tab/blue/topleft)"
-						2="image_tiled(x0+2,y0,x1-2, y0+2, graphics/material/tab/blue/middle)"
-						3="image_tiled(x0,y0+2,x1, y1, graphics/material/tab/blue/middle)"
-						4="image(x1-2,y0,x1,y0+2, graphics/material/tab/blue/topright)"
-					}
-				}
-
-				PageTab:Selected:hover {
+		  		PageTab:selected:hover {
 					textcolor=blue300
 
 					render_bg {
@@ -224,7 +221,10 @@
 	}
  	
  	layout {
-		place { control="frame_title" visible=0 x=0 y=0 width=max height=0 }
+		place {
+			control="frame_title"
+			height=0
+		}
 
 		place [!$OSX]  {
 			control="frame_minimize,frame_maximize,frame_close"
