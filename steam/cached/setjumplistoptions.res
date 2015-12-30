@@ -1,6 +1,8 @@
 "steam/cached/SetJumplistOptions.res" {
 	styles {
 		CSetJumpListOptions {
+			minimum-width=543
+
 			render {
 				0="fill(x0,y1-58,x1,y1-57, dividers_onLightBG)"
 			}
@@ -10,7 +12,7 @@
 	layout {
 		place {
 			control="Label1"
-			y=29
+			y=64
 			x=26
 			dir=down
 			height=18
@@ -27,8 +29,8 @@
 
 		place {
 			control="Label2"
-			y=18
-			start=ShowAppearOfflineStatus
+			y=64
+			x=269
 			dir=down
 			height=18
 		}
