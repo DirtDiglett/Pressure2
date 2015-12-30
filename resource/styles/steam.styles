@@ -1013,5 +1013,16 @@ steam.styles {
       render_bg {}     
     }
 
+
+
+
+
+
+    COverlaySettingsDialog {	
+			render_bg {
+				0="fill(x0,y0,x1,y1, red500)"
+			}
+		}
+
 	} // END STYLES
 }
