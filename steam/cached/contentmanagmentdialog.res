@@ -20,7 +20,7 @@
 			height=max
 			width=max
 			x=24
-			y=24
+			y=63
 			margin-right=24
 		}
 
@@ -30,7 +30,6 @@
 			width=max
 			height=max
 			dir=down
-			y=7
 			margin-bottom=82
 		}
 
@@ -48,7 +47,7 @@
 		place {
 			control="AddFolderButton,RemoveFolderButton"
 			region="buttons"
-		    width=92
+		    //width=92
 		    height=34
 		    align=left
 			margin-left=11
