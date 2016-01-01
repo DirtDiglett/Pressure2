@@ -1027,6 +1027,7 @@ steam.styles {
 			
 			render_bg {
 				0="fill(x0,y0,x1, y0+55, customgreyprimary)"
+				1="fill(x0,y0,x1,y0+1, customgreyaccent)"
 			}
 		}
 
