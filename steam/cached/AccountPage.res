@@ -192,7 +192,7 @@
 		
 		//Hidden
 		place {
-			control="Label1,Divider2,SecurityIcon,ChangeUserButton"
+			control="Label1,Divider2,SecurityIcon,ChangeUserButton,ValidateContactEmailButton"
 			height=0
 		}
 	}
