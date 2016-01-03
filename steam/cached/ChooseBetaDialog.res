@@ -1,17 +1,35 @@
 "Steam/cached/ChooseBetaDialog.res" {
 	styles {
+		FrameTitle {
+			render {}
+			render_bg {}
+		}
+		
 		CChooseBetaDialog {
 			render {
 				0="fill(x0,y1-58,x1,y1-57, dividers_onLightBG)"
 			}
 
 			render_bg {
-				5="image(x0,y0+34,x1,y1, graphics/steambeta)"
+				5="image(x0,y0,x1,y1, graphics/steambeta)"
 			}
 		}
 	}
 
 	layout {
+		place {
+			control="frame_title"
+			visible=0
+			height=0
+		}
+
+		place {
+			control="frame_captiongrip"
+			margin=0
+			width=max
+			height=113
+		}
+
 		region {
 			name="buttons"
 			width=max
@@ -26,7 +44,7 @@
 		//Content
 		place {
 			control=Label2
-			y=218
+			y=137
 			dir=down
 			x=26
 			width=max
