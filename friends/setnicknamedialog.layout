@@ -1,0 +1,39 @@
+"friends/setnicknamedialog.layout" {
+	layout {
+		place {
+			control=Details
+			x=24 y=24
+			width=max
+			margin-right=24
+		}
+
+		place {
+			control=NicknameEdit
+			width=max
+			start=Details
+			dir=down
+			y=8
+			height=34
+			margin-right=24
+		}
+
+		region {
+			name="buttons"
+			width=max
+			height=58
+			align=bottom
+		}
+
+		place {
+			control="PrevButton,NextButton,OKButton,CancelButton,FinishButton"
+			region="buttons"
+		    width=92
+		    height=34
+		    align=right
+			margin-right=11
+			margin-top=12
+			spacing=12
+		}
+	}
+}
+
