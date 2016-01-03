@@ -2,7 +2,8 @@
 	layout {
 		place {
 			control=Details
-			x=24 y=24
+			x=24 
+			y=54
 			width=max
 			margin-right=24
 		}
@@ -25,7 +26,7 @@
 		}
 
 		place {
-			control="PrevButton,NextButton,OKButton,CancelButton,FinishButton"
+			control="PrevButton,NextButton,OKButton,CancelButton,FinishButton,CloseButton"
 			region="buttons"
 		    width=92
 		    height=34
