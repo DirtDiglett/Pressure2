@@ -1,0 +1,41 @@
+"resource/layout/welcometosteamdialog.layout" {
+	styles {
+		FrameTitle {
+			render {}
+			render_bg {}
+		}
+	}
+
+	layout {
+		place {
+			control="frame_title"
+			visible=0
+			height=0
+		}
+
+		place {
+			control="frame_captiongrip"
+			margin=0
+			width=max
+			height=113
+		}
+
+		region {
+			name="buttons"
+			width=max
+			height=58
+			align=bottom
+		}
+
+		place {
+			control="PrevButton,NextButton,OKButton,CancelButton,FinishButton"
+			region="buttons"
+		    width=92
+		    height=34
+		    align=right
+			margin-right=11
+			margin-top=12
+			spacing=12
+		}
+	}
+}
