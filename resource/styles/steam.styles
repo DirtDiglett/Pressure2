@@ -1043,5 +1043,49 @@ steam.styles {
 			}
 		}
 
+		CValidateContactEmailWizard {
+    		render {
+    			0="fill(x0,y1-58,x1,y1-57, dividers_onLightBG)"
+			}
+		}
+
+		CWelcomeToSteamDialog {
+			render {
+				0="fill(x0,y0,x1-55,y0+1, customgreyprimary)"
+				1="fill(x0,y1-58,x1,y1-57, dividers_onLightBG)"
+			}
+			render_bg {
+				0="fill(x0,y0,x1,y0+113,customgreyprimary)"
+				0="image(x0+146,y0+35,x1,y1, graphics/steamlogo)"
+			}
+		}
+
+		CEmailAddressAlreadyUsedDialog {
+    		render {
+    			0="fill(x0,y1-58,x1,y1-57, dividers_onLightBG)"
+			}
+		}
+
+		CSetNicknameDialog {
+			minimum-height=350
+			
+    		render {
+    			0="fill(x0,y1-58,x1,y1-57, dividers_onLightBG)"
+			}
+		}
+
+		CAboutDialog {
+			minimum-height=332
+
+			render {
+				0="fill(x0,y0,x1-55,y0+1, customgreyprimary)"
+				1="fill(x0,y1-58,x1,y1-57, dividers_onLightBG)"
+			}
+			render_bg {
+				0="fill(x0,y0,x1,y0+113,customgreyprimary)"
+				0="image(x0+106,y0+35,x1,y1, graphics/steamlogo)"
+			}
+		}
+
 	} // END STYLES
 }
