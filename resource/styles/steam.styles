@@ -1096,5 +1096,14 @@ steam.styles {
 			}
 		}
 
+		CFriendNotificationOptionsDialog {
+			minimum-height=432
+			minimum-width=350
+
+    		render {
+    			0="fill(x0,y1-58,x1,y1-57, dividers_onLightBG)"
+			}
+		}
+
 	} // END STYLES
 }
