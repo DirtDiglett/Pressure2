@@ -8,7 +8,7 @@
 		}
 
 		place {
-			control="PrevButton,NextButton,OKButton,CancelButton"
+			control="PrevButton,NextButton,OKButton,CancelButton,FinishButton"
 			region="buttons"
 		    width=92
 		    height=34
