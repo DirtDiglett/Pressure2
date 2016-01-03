@@ -23,8 +23,34 @@
 		}
 
 		controlbutton {
-			minimum-width=120
+			textcolor=none
+			bgcolor=none
+			textcolor=none
+
+			render {
+				1="image(x0,y0,x1,y1, graphics/icons/closebar/standard/closebar)"
+			}
+
+			render_bg {
+				0="fill(x0,y0-19,x1+14,y1+19, customgreysecondary)"
+			}
 		}
+
+			controlbutton:hover {
+				render {
+					1="image(x0,y0,x1,y1, graphics/icons/closebar/hover/closebar)"
+				}
+			}
+
+			controlbutton:active {
+				render {
+					-3="image(x0-9,y0-9,x0+10,y0+10, graphics/material/selectionbubbles/hover/white/topleft)"
+					-2="image(x0-9,y0+10,x0+10,y0+22, graphics/material/selectionbubbles/hover/white/bottomleft)"
+					-1="image(x0+10,y0-9,x0+29,y0+10, graphics/material/selectionbubbles/hover/white/topright)"
+					0="image(x0+10,y0+10,x0+29,y0+29, graphics/material/selectionbubbles/hover/white/bottomright)"
+					1="image(x0,y0,x1,y1, graphics/icons/closebar/hover/closebar)"
+				}
+			}
 
 		CEmoticonButton {
 			render_bg{
@@ -151,21 +177,21 @@
 
 		place {
 			control="VoiceChat"
-			y=6
-			width=36
-			margin-right=8
+			y=76
 			align=right
-			spacing=8
+			width=20
+			height=20
 			dir=right
+			margin-right=14
 		}
 		
 		place {
 			control="VoiceBar"
-			y=34
-			height=24
+			height=58
+			y=57
 			width=max
-			margin-left=8
-			margin-right=52
+			dir=down
+			end-right=VoiceChat
 		}
 		
 		place {
@@ -175,12 +201,13 @@
 		
 		place {
 			control="TradeInviteBar,GameInviteBar,ChatInfoBar,BIBar,BABar,ChatHistory"
-			y=57
 			width=max
 			height=max
 			align=right
 			dir=down
 			margin-bottom=75
+			start=VoiceBar
+			y=0
 		}
 
 		place {
