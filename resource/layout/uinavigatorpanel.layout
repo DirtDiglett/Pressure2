@@ -490,7 +490,7 @@
 		
 		place {
 			control=emailreminderbar
-			height=47
+			height=184
 		}
 
 		place {

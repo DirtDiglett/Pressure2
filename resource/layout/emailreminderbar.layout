@@ -1,0 +1,129 @@
+"resource/layout/emailreminderbar.layout" {
+	styles {
+		CEmailReminderBar {
+			bgcolor=amber500
+			render {
+    			0="fill(x0,y1-1,x1,y1, dividers_onLightBG)"
+			}
+			render_bg {}
+		}
+
+		Label {
+			font-size=24
+			font-style="normal"
+			font-family=mediumfont
+			textcolor=text_onLightBG
+		}
+		
+		soft {			
+			font-size=20
+			font-style=normal
+			font-family=mediumfont
+			textcolor=secondaryText_onLightBG
+		}
+
+		bright {}
+
+		CloseStyle {}
+
+		CloseStyle:hover {}
+		
+		CloseStyle:active {}
+
+		URLLabel {		 
+			bgcolor=none
+			textcolor=blue500
+			font-family=mediumfont
+			font-size=16
+			font-style=uppercase
+			font-weight=400
+			inset-top=3
+			inset-left=4
+			
+			render_bg {}
+		}
+
+			URLLabel:Hover {
+				textcolor=blue300
+				
+				// We use a render_bg here instead of bgcolor in order to not break every other button that doesn't have a bgcolor defined.
+				render_bg {
+					0="fill(x0,y0,x1,y1, dividers_onLightBG)"
+				}
+			}
+
+				URLLabel:disabled {
+					bgcolor=none
+					textcolor=disabled_onLightBG
+					
+					render_bg {}
+				}
+
+
+					URLLabel:focus {
+						bgcolor=none
+						textcolor=blue500
+
+						render_bg {}
+					}
+
+						URLLabel:active {
+							bgcolor=blue500transparent
+							textcolor=blue500
+
+							render_bg {}
+						}
+	}
+	
+	layout {
+		place { control=",,," x=46 height=20 spacing=8 }
+		place { control="," x=46 height=20 y=20 spacing=8 }
+		
+		region {
+			name=main
+			width=max
+			height=max
+			margin-bottom=58
+			margin-right=24
+			y=24
+			x=24
+		}
+
+		place {
+			control=emailreminderbaremail_email
+			region=main
+			width=max
+		}
+
+		place {
+			control=emailreminderbarlabel,emailreminderbar_info
+			start=emailreminderbaremail_email
+			y=20
+			dir=down
+			spacing=3
+		}
+
+		region {
+			name="buttons"
+			width=max
+			height=58
+			align=bottom
+		}
+
+		place {
+			control="emailreminderbar_yesbutton,emailreminderbar_nobutton"
+			region="buttons"
+			width=108
+		    height=34
+		    align=right
+			margin-right=11
+			margin-top=12
+			spacing=12
+		}
+
+		place {
+			control=emailreminderbar_close,emailreminderbar_infolink
+			height=0
+		}
+	}
+}
