@@ -1,0 +1,21 @@
+"resource/layout/validatecontactemailwizard.layout" {
+	layout {
+		region {
+			name="buttons"
+			width=max
+			height=58
+			align=bottom
+		}
+
+		place {
+			control="PrevButton,NextButton,OKButton,CancelButton,FinishButton"
+			region="buttons"
+		    width=92
+		    height=34
+		    align=right
+			margin-right=11
+			margin-top=12
+			spacing=12
+		}
+	}
+}
