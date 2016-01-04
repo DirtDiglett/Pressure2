@@ -248,58 +248,7 @@
 
   styles {
       
-    ToggleButton
-    {
-      inset="1 0 0 0"
-      inset="1 3 0 0" [$OSX]
-      font-family=basefont
-      font-size=13
-      font-weight=400
-      textcolor="Text"
-      bgcolor=none
-      render_bg
-      {
-      
-        // background fill
-       0="gradient( x0, y0, x1, y1, buttonface2, propertysheetbg )"
-      }
-    }
-  
-    ToggleButton:focus
-    {     
-            textcolor="TextHover"
-            bgcolor="none"
-            render_bg
-        {
-            // background fill
-            0="gradient( x0, y0, x1, y1, buttonface2, propertysheetbg )"
-        }
-    }
-    
-    ToggleButton:hover
-    {
-      textcolor="TextHover"
-      bgcolor="none"
-      render_bg
-      {     
-        
-        // background fill
-        0="gradient( x0, y0, x1, y1, buttonfaceactive, propertysheetbg )"
-      }
-    }
-    
-    ToggleButton:selected
-    {
-      
-      textcolor="TextHover"
-      bgcolor="none"
-      render_bg
-      {
-            // background fill
-        0="gradient( x0, y0, x1, y1, backgroundstartopaque, propertysheetbg )"
-      }
-    }
-  
+ 
     
    
 
