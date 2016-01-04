@@ -407,5 +407,82 @@ controls.styles {
 			
 			render_bg {}
 		}
+
+
+
+
+
+
+
+
+
+
+		ToggleButton {
+			textcolor=text_OnLightBG
+			font-family=basefont
+			font-size=15
+			font-weight=400
+			inset-left=23
+			minimum-height=18
+			inset-top=0
+			font-style=none
+
+			render_bg {
+				0="image(x0,y0,x1,y1, graphics/controls/checkbox/unchecked)"
+			}
+		}
+	
+			ToggleButton:selected {	
+				render_bg {
+					0="image(x0,y0,x1,y1, graphics/controls/checkbox/checked)"
+				}	
+			}
+
+				ToggleButton:selected:disabled {
+					textcolor=disabled_OnLightBG
+
+					render_bg {
+						0="image(x0,y0,x1,y1, graphics/controls/checkbox/checked_disabled)"
+					}
+				}
+
+			ToggleButton:focus{
+				render_bg {
+					-3="image(x0-10,y0-10,x0+9,y0+9, graphics/material/selectionbubbles/hover/blue/topleft)"
+					-2="image(x0-10,y0+9,x0+9,y0+21, graphics/material/selectionbubbles/hover/blue/bottomleft)"
+					-1="image(x0+9,y0-10,x0+28,y0+9, graphics/material/selectionbubbles/hover/blue/topright)"
+					0="image(x0+9,y0+9,x0+28,y0+28, graphics/material/selectionbubbles/hover/blue/bottomright)"
+					1="image(x0,y0,x1,y1, graphics/controls/checkbox/unchecked)"
+				}
+			}
+
+				ToggleButton:focus:selected {
+					render_bg {
+						-3="image(x0-10,y0-10,x0+9,y0+9, graphics/material/selectionbubbles/hover/blue/topleft)"
+						-2="image(x0-10,y0+9,x0+9,y0+21, graphics/material/selectionbubbles/hover/blue/bottomleft)"
+						-1="image(x0+9,y0-10,x0+28,y0+9, graphics/material/selectionbubbles/hover/blue/topright)"
+						0="image(x0+9,y0+9,x0+28,y0+28, graphics/material/selectionbubbles/hover/blue/bottomright)"
+						1="image(x0,y0,x1,y1, graphics/controls/checkbox/checked)"
+					}
+				}
+			
+			ToggleButton:disabled {
+				textcolor=disabled_OnLightBG
+
+				render_bg {
+					0="image(x0,y0,x1,y1, graphics/controls/checkbox/unchecked_disabled)"
+				}
+			}
+
+
+
+
+
+
+
+
+
+
+
 	}
 }
