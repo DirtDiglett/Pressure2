@@ -1,6 +1,4 @@
 "friends/PlayersSubRecentPlayers.res" {
-	styles {}
-
 	layout {
 		place {
 			control=PlayersList
