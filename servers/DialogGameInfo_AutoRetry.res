@@ -191,10 +191,11 @@
 
 		place {
 			control=AutoRetryAlert,AutoRetryJoin
-			start=pingLabel
+			start=InfoLabel
 			dir=down
 			y=8
 			width=max
+			spacing=18
 		}
 	}
 }
