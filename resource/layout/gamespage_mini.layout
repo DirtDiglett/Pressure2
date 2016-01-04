@@ -189,7 +189,7 @@
 		place {
 			control="gameslist"
 			align=left
-			margin-top=66
+			margin-top=104
 			width=max
 			height=max
 		}
