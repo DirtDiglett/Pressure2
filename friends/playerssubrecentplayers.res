@@ -7,6 +7,7 @@
 			width=max
 			height=max
 			margin-bottom=57
+			y=10
 		}
 
 		region {
