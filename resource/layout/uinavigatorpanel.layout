@@ -524,10 +524,6 @@
 			dir=down
 			width=max
 			height=max
-			margin-top=0
-			margin-left=0
-			margin-right=0
-			margin-bottom=0
 		}
 		
 		place {
@@ -536,10 +532,6 @@
 			dir=down
 			width=max
 			height=max
-			margin-top=0
-			margin-left=0
-			margin-right=0
-			margin-bottom=0
 		}
 		
 		place {
@@ -549,9 +541,6 @@
 			width=max
 			height=max
 			margin-top=10
-			margin-left=0
-			margin-right=0
-			margin-bottom=0
 		}
 		
 		place {
@@ -560,10 +549,6 @@
 			dir=down
 			width=max
 			height=max
-			margin-top=0
-			margin-left=0
-			margin-right=0
-			margin-bottom=0
 		}
 		
 		place {
@@ -572,10 +557,6 @@
 			dir=down
 			width=max
 			height=max
-			margin-top=0
-			margin-left=0
-			margin-right=0
-			margin-bottom=0
 		}
 		
 		place {
@@ -584,10 +565,6 @@
 			dir=down
 			width=max
 			height=max
-			margin-top=0
-			margin-left=0
-			margin-right=0
-			margin-bottom=0
 		}
 		
 		place {
@@ -596,10 +573,6 @@
 			dir=down
 			width=max
 			height=max
-			margin-top=0
-			margin-left=0
-			margin-right=0
-			margin-bottom=0
 		}
 		
 		place {
@@ -608,20 +581,13 @@
 			dir=down
 			width=max
 			height=max
-			margin-top=0
-			margin-left=0
-			margin-right=0
-			margin-bottom=0
 		}
 		
 		place {
 			control=ConsolePage
 			width=max
 			height=max
-			margin-top=0
-			margin-left=0
-			margin-right=0
-			margin-bottom=0
+			y=-45
 			start=phonereminderbar
 			dir=down
 		}
@@ -630,10 +596,6 @@
 			control=MediaPage
 			width=max
 			height=max
-			margin-top=0
-			margin-left=0
-			margin-right=0
-			margin-bottom=0
 			start=phonereminderbar
 			dir=down
 		}
@@ -643,9 +605,6 @@
 			width=max
 			height=max
 			margin-top=10
-			margin-left=0
-			margin-right=0
-			margin-bottom=0
 			start=phonereminderbar
 			dir=down
 		}
@@ -654,10 +613,6 @@
 			control=MusicPage_Details
 			width=max
 			height=max
-			margin-top=0
-			margin-left=0
-			margin-right=0
-			margin-bottom=0
 			start=phonereminderbar
 			dir=down
 		}
