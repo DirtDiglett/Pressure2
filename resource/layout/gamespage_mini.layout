@@ -64,19 +64,30 @@
 			}
 
 
+		"CGamesPage_Mini ListPanelColumnSelectButton" {
+			inset="0 0 0 0"
+			render {
+				0="fill(x0+5,y0+2,x1,y1, grey200)"
+				4="fill(x0+5,y1-1,x1,y1+1, grey200)"
+				5="image( x0 + 7, y0 + 7, x1, y1, graphics\icons\columnselectbutton\standard\columnselectbutton)"
+			}
+			render_bg {}
+		}
+		
+			"CGamesListPanel ListPanelColumnSelectButton:hover" {
+				render {
+					0="fill(x0+5,y0+2,x1,y1, grey200)"
+					4="fill(x0+5,y1-1,x1,y1+1, grey200)"
+					5="image( x0 + 7, y0 + 7, x1, y1, graphics\icons\columnselectbutton\hover\columnselectbutton)"
+				}
+			}
 
-
-
-		"CGamesPage_Mini ListPanelColumnSelectButton" // the games list column chooser
-			{
-				inset="-3 3 0 0"
-				render
-				{
-				// background fill
-				1="fill( x0, y0 + 1, x1 - 1, y1, none )"  
-				2="image( x0 + 3, y0 + 3, x1, y1, graphics/icon_collapse )"
-				}   
-			     render_bg {}
+			"CGamesListPanel ListPanelColumnSelectButton:selected" {
+				render {
+					0="fill(x0+5,y0+2,x1,y1, grey200)"
+					4="fill(x0+5,y1-1,x1,y1+3, grey200)"
+					5="image( x0 + 7, y0 + 7, x1, y1, graphics\icons\columnselectbutton\hover\columnselectbutton)"
+				}
 			}
 	
 		
@@ -166,21 +177,90 @@
 		
 			LibrarySearchIcon:disabled {}
 
-		ListPanelColumnheader
-		{
+		
+
+
+		"CGamesPage_Mini ListPanel" {
+			padding-left=4
+			padding-right=25
+			
+			bgcolor="none"
+			render_bg {}
 			render {}
+		}
+		
+		"CGamesPage_Mini ListPanelInterior" {
+			bgcolor="none"
+			inset="0 0 0 0"
+			minimum-width=295
+			render {}
+			render_bg {}
+		}
+		
+		"CGamesPage_Mini ListPanelInterior:scrollbar" {
+			inset="2 0 0 0"
 			bgcolor=none
-			render_bg {}	
+			
+			render_bg {}
 		}
 		
-		"CGamesPage_Mini CGameFilterMenuButton"
-		{
-			inset="3 0 0 0"
-			padding-left="-3"
+		ListPanelSectionHeader {
+			inset="0 0 0 0"
+			textcolor=customgreysecondary
+			font-style="uppercase"
+			bgcolor=white
+			font-weight=600
+			padding-top=16
+			padding-bottom=16
+			minimum-height=47
+			
+			render {}
+			render_bg {
+				0="fill(x0,y0-1,x1,y0, divider)"
+				1="fill(x0,y1-1,x1,y1, divider)"
+			}
 		}
 		
-		DetailsBorderPanel
-		{}
+		"CGamesPage_Mini ListPanelSectionCollapser" {
+			inset="0 0 0 0"
+			image=graphics\icons\dropdown\padder
+			padding-left=8
+			padding-right=8
+			render {}
+			render_bg {
+				0="fill(x0,y0-1,x1,y0, divider)"
+				1="fill(x0,y1-1,x1,y1, divider)"
+				2="image(x0+14,y0+18,x1,y1, graphics\icons\dropdown\standard\down_dark)"
+			}
+		}
+		
+		"CGamesPage_Mini ListPanelSectionCollapser:hover" {
+			render_bg {
+				0="fill(x0,y0-1,x1,y0, divider)"
+				1="fill(x0,y1-1,x1,y1, divider)"
+				2="image(x0+14,y0+18,x1,y1, graphics\icons\dropdown\hover\down_dark)"
+			}
+		}
+		
+		"CGamesPage_Mini ListPanelSectionCollapser:selected" {
+			render_bg {
+				0="fill(x0,y0-1,x1,y0, divider)"
+				1="fill(x0,y1-1,x1,y1, divider)"
+				2="image(x0+14,y0+18,x1,y1, graphics\icons\dropdown\standard\up_dark)"
+			}
+		}
+		
+		"CGamesPage_Mini ListPanelSectionCollapser:selected:hover" {
+			render_bg {
+				0="fill(x0,y0-1,x1,y0, divider)"
+				1="fill(x0,y1-1,x1,y1, divider)"
+				2="image(x0+14,y0+18,x1,y1, graphics\icons\dropdown\hover\up_dark)"
+			}
+		}
+		
+		"CGamesPage_Mini CGameFilterMenuButton" {}
+		
+		DetailsBorderPanel {}
 	}
 
  	layout {
@@ -235,7 +315,12 @@
 
 
 		
-		place { control="subnavgroup_library" align=top-center y=38 height=26 width=max margin-right=9 margin-left=9 }
+		place {
+			control="subnavgroup_library"
+			align=top-center
+			y=38
+			height=26
+			width=max margin-right=9 margin-left=9 }
 		
 		place {
 			control="gameslist"
