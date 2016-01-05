@@ -313,14 +313,13 @@
 			spacing=8
 		}
 
-
-		
 		place {
 			control="subnavgroup_library"
 			align=top-center
-			y=38
-			height=26
-			width=max margin-right=9 margin-left=9 }
+			y=55
+			height=45
+			width=max
+		}
 		
 		place {
 			control="gameslist"
