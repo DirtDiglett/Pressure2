@@ -15,6 +15,10 @@
 			}
 		}
 
+			CGamesPage_Mini:FrameFocus {
+				bgcolor=custombackgroundprimary
+			}
+
 		FrameTitle {
 			bgcolor="customgreyprimary"
 			font-family=basefont
@@ -63,41 +67,32 @@
 				}
 			}
 
-
 		"CGamesPage_Mini ListPanelColumnSelectButton" {
 			inset="0 0 0 0"
 			render {
-				0="fill(x0+5,y0+2,x1,y1, grey200)"
-				4="fill(x0+5,y1-1,x1,y1+1, grey200)"
-				5="image( x0 + 7, y0 + 7, x1, y1, graphics\icons\columnselectbutton\standard\columnselectbutton)"
+				0="fill(x0+5,y0,x1+4,y1-1, grey200)"
+				1="image( x0 + 7, y0 + 4, x1, y1, graphics\icons\columnselectbutton\standard\columnselectbutton)"
 			}
 			render_bg {}
 		}
 		
 			"CGamesListPanel ListPanelColumnSelectButton:hover" {
 				render {
-					0="fill(x0+5,y0+2,x1,y1, grey200)"
-					4="fill(x0+5,y1-1,x1,y1+1, grey200)"
-					5="image( x0 + 7, y0 + 7, x1, y1, graphics\icons\columnselectbutton\hover\columnselectbutton)"
+					0="fill(x0+5,y0,x1+2,y1-2, grey200)"
+					1="image( x0 + 7, y0 + 4, x1, y1, graphics\icons\columnselectbutton\hover\columnselectbutton)"
 				}
 			}
 
 			"CGamesListPanel ListPanelColumnSelectButton:selected" {
 				render {
-					0="fill(x0+5,y0+2,x1,y1, grey200)"
-					4="fill(x0+5,y1-1,x1,y1+3, grey200)"
-					5="image( x0 + 7, y0 + 7, x1, y1, graphics\icons\columnselectbutton\hover\columnselectbutton)"
+					0="fill(x0+5,y0,x1+2,y1-2, grey200)"
+					1="image( x0 + 7, y0 + 4, x1, y1, graphics\icons\columnselectbutton\hover\columnselectbutton)"
 				}
 			}
-	
-		
-		
-		grouper {}
-		
 
 		
 		// The game filter dropdown
-		NavLabel2 {
+		CMiniGameFilterMenuButton {
 			textcolor="secondaryText_onDarkBG"
 			bgcolor="none"
 			font-family=basefont
@@ -107,12 +102,13 @@
 			padding-left=10
 			padding-right=35
 			
+			render {}
 			render_bg {
 				0="image(x1-35, y0+21, x1, y1, graphics\icons\dropdown\standard\down)"
 			}
 		}
 		
-			NavLabel2:hover {
+			CMiniGameFilterMenuButton:hover {
 				textcolor=text_onDarkBG
 				
 				render_bg {
@@ -120,7 +116,7 @@
 				}
 			}
 			
-			NavLabel2:selected {
+			CMiniGameFilterMenuButton:selected {
 				textcolor=text_onDarkBG
 
 				render_bg {
@@ -140,7 +136,7 @@
 			bgcolor=custombackgroundprimary
 			
 			render {
-				0="fill(x0-40,y1-1,x1,y1, divider)"
+				0="fill(x0-40,y1-1,x1,y1, dividers_onLightBG)"
 			}
 		}
 		
@@ -171,7 +167,7 @@
 			render_bg {
 				-1="fill(x1,y0,x1+10,y1, custombackgroundprimary)"
 				0="image(x0+14,y0+13,x1,y1, graphics/icons/search/standard)"
-				1="fill(x0,y1-1,x1+25,y1, divider)"
+				1="fill(x0,y1-1,x1+25,y1, dividers_onLightBG)"
 			}
 		}
 		
@@ -185,20 +181,24 @@
 			padding-right=25
 			
 			bgcolor="none"
+
+			inset-top=-2
+
+			
 			render_bg {}
 			render {}
 		}
 		
 		"CGamesPage_Mini ListPanelInterior" {
 			bgcolor="none"
-			inset="0 0 0 0"
-			minimum-width=295
+			inset="2 0 -10 0"
+			minimum-width=9999
 			render {}
 			render_bg {}
 		}
 		
 		"CGamesPage_Mini ListPanelInterior:scrollbar" {
-			inset="2 0 0 0"
+			inset="2 0 -10 0"
 			bgcolor=none
 			
 			render_bg {}
@@ -216,8 +216,8 @@
 			
 			render {}
 			render_bg {
-				0="fill(x0,y0-1,x1,y0, divider)"
-				1="fill(x0,y1-1,x1,y1, divider)"
+				0="fill(x0,y0-1,x1,y0, dividers_onLightBG)"
+				1="fill(x0,y1-1,x1,y1, dividers_onLightBG)"
 			}
 		}
 		
@@ -228,39 +228,35 @@
 			padding-right=8
 			render {}
 			render_bg {
-				0="fill(x0,y0-1,x1,y0, divider)"
-				1="fill(x0,y1-1,x1,y1, divider)"
+				0="fill(x0,y0-1,x1,y0, dividers_onLightBG)"
+				1="fill(x0,y1-1,x1,y1, dividers_onLightBG)"
 				2="image(x0+14,y0+18,x1,y1, graphics\icons\dropdown\standard\down_dark)"
 			}
 		}
 		
 		"CGamesPage_Mini ListPanelSectionCollapser:hover" {
 			render_bg {
-				0="fill(x0,y0-1,x1,y0, divider)"
-				1="fill(x0,y1-1,x1,y1, divider)"
+				0="fill(x0,y0-1,x1,y0, dividers_onLightBG)"
+				1="fill(x0,y1-1,x1,y1, dividers_onLightBG)"
 				2="image(x0+14,y0+18,x1,y1, graphics\icons\dropdown\hover\down_dark)"
 			}
 		}
 		
 		"CGamesPage_Mini ListPanelSectionCollapser:selected" {
 			render_bg {
-				0="fill(x0,y0-1,x1,y0, divider)"
-				1="fill(x0,y1-1,x1,y1, divider)"
+				0="fill(x0,y0-1,x1,y0, dividers_onLightBG)"
+				1="fill(x0,y1-1,x1,y1, dividers_onLightBG)"
 				2="image(x0+14,y0+18,x1,y1, graphics\icons\dropdown\standard\up_dark)"
 			}
 		}
 		
 		"CGamesPage_Mini ListPanelSectionCollapser:selected:hover" {
 			render_bg {
-				0="fill(x0,y0-1,x1,y0, divider)"
-				1="fill(x0,y1-1,x1,y1, divider)"
+				0="fill(x0,y0-1,x1,y0, dividers_onLightBG)"
+				1="fill(x0,y1-1,x1,y1, dividers_onLightBG)"
 				2="image(x0+14,y0+18,x1,y1, graphics\icons\dropdown\hover\up_dark)"
 			}
 		}
-		
-		"CGamesPage_Mini CGameFilterMenuButton" {}
-		
-		DetailsBorderPanel {}
 	}
 
  	layout {
@@ -310,7 +306,7 @@
 			align=left
 			height=max
 			region=subnav
-			spacing=8
+			spacing=0
 		}
 
 		place {
@@ -324,7 +320,8 @@
 		place {
 			control="gameslist"
 			align=left
-			margin-top=104
+			y=100
+			margin-left=-2
 			width=max
 			height=max
 		}
