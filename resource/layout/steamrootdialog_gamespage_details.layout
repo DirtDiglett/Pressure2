@@ -1,6 +1,5 @@
 "resource/layout/steamrootdialog_gamespage_details.layout" {
 	colors {
-		divider="235 235 235 255" // Used in place of dividers_onLightBG due to opacity making them visibly darker in the client.
 		headerimagebg="26 107 118 255"
 
 		ListPanel.PostSectionLeading	14
@@ -66,8 +65,8 @@
 			
 			render {}
 			render_bg {
-				0="fill(x0,y0-1,x1,y0, divider)"
-				1="fill(x0,y1-1,x1,y1, divider)"
+				0="fill(x0,y0-1,x1,y0, dividers_onLightBG)"
+				1="fill(x0,y1-1,x1,y1, dividers_onLightBG)"
 			}
 		}
 		
@@ -78,32 +77,32 @@
 			padding-right=8
 			render {}
 			render_bg {
-				0="fill(x0,y0-1,x1,y0, divider)"
-				1="fill(x0,y1-1,x1,y1, divider)"
+				0="fill(x0,y0-1,x1,y0, dividers_onLightBG)"
+				1="fill(x0,y1-1,x1,y1, dividers_onLightBG)"
 				2="image(x0+14,y0+18,x1,y1, graphics\icons\dropdown\standard\down_dark)"
 			}
 		}
 		
 		"GamesPage_Details ListPanelSectionCollapser:hover" {
 			render_bg {
-				0="fill(x0,y0-1,x1,y0, divider)"
-				1="fill(x0,y1-1,x1,y1, divider)"
+				0="fill(x0,y0-1,x1,y0, dividers_onLightBG)"
+				1="fill(x0,y1-1,x1,y1, dividers_onLightBG)"
 				2="image(x0+14,y0+18,x1,y1, graphics\icons\dropdown\hover\down_dark)"
 			}
 		}
 		
 		"GamesPage_Details ListPanelSectionCollapser:selected" {
 			render_bg {
-				0="fill(x0,y0-1,x1,y0, divider)"
-				1="fill(x0,y1-1,x1,y1, divider)"
+				0="fill(x0,y0-1,x1,y0, dividers_onLightBG)"
+				1="fill(x0,y1-1,x1,y1, dividers_onLightBG)"
 				2="image(x0+14,y0+18,x1,y1, graphics\icons\dropdown\standard\up_dark)"
 			}
 		}
 		
 		"GamesPage_Details ListPanelSectionCollapser:selected:hover" {
 			render_bg {
-				0="fill(x0,y0-1,x1,y0, divider)"
-				1="fill(x0,y1-1,x1,y1, divider)"
+				0="fill(x0,y0-1,x1,y0, dividers_onLightBG)"
+				1="fill(x0,y1-1,x1,y1, dividers_onLightBG)"
 				2="image(x0+14,y0+18,x1,y1, graphics\icons\dropdown\hover\up_dark)"
 			}
 		}
