@@ -1,0 +1,237 @@
+"resource/layout/screenshotmanager.layout" {
+	colors {
+		BorderThumbnailUnpublished="0 0 0 255"
+		BorderThumbnailUploaded="0 0 0 255"
+		BorderThumbnailPublished="0 0 0 255"
+		BorderThumbnailSelected="139 185 224 255"
+	}
+
+	styles {
+		CScreenshotManager {
+			render {
+				0="image_tiled(x0,y0+34,x1,y0+38, graphics\material\shadows\top)"
+				1="fill(x0,y0,x1-55,y0+1, customgreyprimary)"
+				2="fill(x0,y1-58,x1,y1-57, dividers_onLightBG)"
+			}
+			render_bg {
+				0="fill(x0,y0,x1,y0+100, customgreysecondary)"
+			}
+		} 
+
+		WrapPanel {			
+			bgcolor=white
+
+			render_bg {
+				0="fill(x1-1,y0,x1,y1, dividers_onLightBG)"
+			}
+		}
+
+		publishcharsleft_toomanychars {
+			textcolor=red500
+		}
+
+		
+
+
+
+		ThumbnailUnpublished {
+			bgcolor=disabled_onLightBG
+			
+			render {}
+		}
+
+		ThumbnailPublished {
+			bgcolor=disabled_onLightBG
+			
+			render {}
+		}
+
+		ThumbnailSelected {
+			bgcolor=disabled_onLightBG
+
+			render {
+				// lines around
+				1="fill( x0 + 2, y0 + 1, x0 + 3, y1 + 0, blue500 )"  //left
+				2="fill( x1 + 2, y0 + 1, x1 + 3, y1 + 0, blue500 )"  //right
+				3="fill( x0 + 2, y0 + 1, x1 + 3, y0 + 2, blue500 )"  //top
+				4="fill( x0 + 2, y1 + 0, x1 + 3, y1 + 1, blue500 )"  //btm
+			}
+		}
+
+		ThumbnailUploaded {
+			bgcolor=secondaryText_onLightBG
+			render {}
+		}
+
+
+
+		DarkRegionDetails
+		{
+			bgcolor="none"
+		}
+
+		SSDetails
+		{
+			minimum-width=320
+			minimum-height=240
+			bgcolor="0 0 0 255"
+		}
+
+		publishcaption
+		{
+			textcolor="222 222 222 255"
+			font-size=17
+			inset=2
+			font-style="italic"
+		}
+
+
+		publishcaptionprompt {}
+
+		publishcharsleft {}
+
+		
+
+		
+		
+		gameselector {
+			minimum-width=256
+			minimum-height=10
+		}
+		
+		ScreenshotLoadingThrobber
+		{
+			minimum-width=100
+			minimum-height=75
+			bgcolor=black
+		}
+
+		LargeSelectionCount
+		{
+			font-size=60
+			font-family=basefont
+			font-weight=700
+		}
+
+		NoSelectionTitle
+		{
+			font-size=24
+			font-family=basefont
+			font-weight=400
+		}
+
+		NoSelectionInstructions
+		{
+			font-size=16
+			font-family=basefont
+		}
+	}
+	
+	
+	layout {
+
+		
+		
+
+		region { name="details" align=right y=79 margin-bottom=58 width=335 height=max }
+		
+
+		place { control="DarkRegionDetails" region="details" x=0 y=0 width=max height=max z="-1" }
+		place { control="SSDetails" region="details" y=0 width=333 height=250 align="top-center"  }
+		place { control="SSDate" start="SSDetails" dir=down margin-top=4 margin-left=8 align=left }
+		place { control="SSSize,SSSizeOriginal" start="SSDate" margin-right=15 align=right dir=left }
+
+		place { control="publish_caption" region="details" x=5 align=bottom margin-bottom=55 height=40 margin-right=3 width=max  }
+		place { control="publish_charsleft" region="details" x=5 align="bottom-right" margin-bottom=35 height=20 margin-right=5 }
+
+		place { control="null_placer" region="details" width=1 align=bottom margin-bottom=2 }
+		place { control="spoiler_checkbox" start="null_placer" region="details" align=bottom x=3 margin-bottom=30 margin-right=7 spacing=5 }
+
+
+		place { control="details_caption" region="details" x=5 align=bottom margin-bottom=35 height=60 width=max margin-right=7 }
+
+
+		place { control="multi_img" region="details" y=80 align="top-center" }
+		place { control="multi_img_count" region="details" y=92 align="top-center" }
+		place { control="multi_img_selected" region=details y=180  align="top-center" }
+		place { control="multi_img_upload_size,multi_img_upload_size_info" region=details y=205 align="top-center" spacing=5 }
+		place { control="multi_img_storage_remaining,multi_img_storage_remaining_info" region=details y=220 align="top-center" spacing=5 }
+		place { control="multi_img_delete,multi_img_upload" region=details y=260 align="top-center" spacing=8 }
+
+		place { control="file_not_loaded_label" region="details" y=140 align="top-center" }
+		place { control="instr_no_selection_title,instr_no_selection" region="details" y=20 width=max margin-left=15 margin-right=15 dir=down spacing=30 }
+
+
+		region {
+			name=subnav
+			width=max
+			height=45
+			y=34
+		}
+
+		place {
+			control="game_selector"
+			region=subnav
+			dir=right
+			height=max
+		}
+
+		region {
+			name="list"
+			margin-right=340
+			margin-bottom=58
+			width=max
+			y=79
+		}
+
+		place {
+			control="grid"
+			region="list"
+			width=max
+			height=max
+		}
+
+		place {
+			control="no_screenshots"
+			region="list"
+			y=50
+			align="top-center"
+		}
+
+
+
+		region {
+			name="buttons"
+			width=max
+			height=58
+			align=bottom
+		}
+
+		place {
+			control="multiselect_button,view_local_library_button,view_screenshots"
+			region="buttons"
+		    width=92
+		    height=34
+		    align=left
+			margin-left=11
+			margin-top=12
+			spacing=12
+		}
+
+		place {
+			control="delete_button,details_button,publish_button"
+			region="buttons"
+		    height=34
+		    align=right
+			margin-right=11
+			margin-top=12
+			spacing=12
+		}
+
+
+		place {
+			control=selectorlabel
+			height=0
+		}
+	}
+}
