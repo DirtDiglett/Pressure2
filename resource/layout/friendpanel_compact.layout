@@ -1,0 +1,25 @@
+"resource/layout/friendpanel_compact.layout" {
+	styles {
+		inviteLinkStyle {
+			font-family=mediumfont
+			font-size=16
+			font-style=uppercase
+			padding-left=6
+			padding-right=6
+			padding-top=3
+			padding-bottom=3
+		}
+	
+			inviteLinkStyle:hover {
+				bgcolor=dividers_onLightBG
+			}
+	}
+	
+	layout {
+		place {
+			control="ClanStatusImage,NameLabel,FriendsNameInstanceLabel,CompactSeparatorLabel,StatusLabel,GameLabel,AcceptLink,IgnoreLink,BlockLink,SuggestedImage,SuggestedLabel,SuggestedInvite,SuggestedIgnore,MenuButton"
+			spacing=4
+		}
+	}
+
+}
