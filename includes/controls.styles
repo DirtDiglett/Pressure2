@@ -335,6 +335,16 @@ controls.styles {
 						render_bg {}
 					}
 
+						Button:focus:hover {
+							bgcolor=none
+							textcolor=blue500
+
+							// We use a render_bg here instead of bgcolor in order to not break every other button that doesn't have a bgcolor defined.
+							render_bg {
+								0="fill(x0,y0,x1,y1, dividers_onLightBG)"
+							}
+						}
+
 						Button:active {
 							bgcolor=blue500transparent
 							textcolor=blue500
