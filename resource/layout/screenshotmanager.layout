@@ -1,6 +1,9 @@
 "resource/layout/screenshotmanager.layout" {
 	styles {
 		CScreenshotManager {
+			minimum-height=577
+			minimum-width=778
+
 			render {
 				0="image_tiled(x0,y0+34,x1,y0+38, graphics\material\shadows\top)"
 				2="fill(x0,y1-58,x1,y1-57, dividers_onLightBG)"
@@ -12,6 +15,10 @@
 
 		WrapPanel {			
 			bgcolor=white
+			padding-left=4
+			padding-top=4
+			padding-bottom=4
+			padding-right=4
 
 			render_bg {
 				0="fill(x1-1,y0,x1,y1, dividers_onLightBG)"
@@ -35,48 +42,46 @@
 
 			render {
 				// lines around
-				1="fill(x0, y0, x0+1, y1, blue500 )"  //left
-				2="fill(x0, y0, x1, y0+1, blue500 )"  //top
-				3="fill(x1-1, y0, x1, y1, blue500 )"  //right
-				4="fill(x0, y1-1, x1, y1, blue500 )"  //bottom
+				1="fill(x0, y0, x0+2, y1, blue500 )"  //left
+				2="fill(x0, y0, x1, y0+2, blue500 )"  //top
+				3="fill(x1-2, y0, x1, y1, blue500 )"  //right
+				4="fill(x0, y1-2, x1, y1, blue500 )"  //bottom
+
+				10="fill(x0,y0,x1,y1, blue500transparent)"
 			}
 		}
 
 		ThumbnailUploaded {
-			bgcolor=secondaryText_onLightBG
+			bgcolor=disabled_onLightBG
 		}
 
 
 
 
 
-		DarkRegionDetails
-		{
-			bgcolor="none"
-		}
+		DarkRegionDetails {}
 
 		SSDetails {
-			minimum-width=320
-			minimum-height=240
-			bgcolor=lime500
+			minimum-width=340
+			minimum-height=260
+
+			render {
+				0="fill(x0,y1-1,x1,y1, dividers_OnLightBG)"
+			}
 		}
 
 		publishcaption {
-			textcolor=red500
-			font-size=17
-			inset=2
-			font-style="italic"
+			textcolor=secondaryText_onLightBG
+			font-style=italic
 		}
 
 
 		publishcaptionprompt {}
 
-		publishcharsleft {}
+		publishcharsleft {
+			textcolor=disabled_onLightBG
+		}
 
-		
-
-		
-		
 		gameselector {
 			minimum-width=260
 		}
@@ -84,65 +89,155 @@
 		ScreenshotLoadingThrobber {
 			minimum-width=100
 			minimum-height=75
+			bgcolor=disabled_onLightBG
 		}
 
-
-
-		LargeSelectionCount
-		{
+		LargeSelectionCount {
 			font-size=60
-			font-family=basefont
-			font-weight=700
+			font-family=mediumfont
 		}
 
-		NoSelectionTitle
-		{
-			font-size=24
-			font-family=basefont
-			font-weight=400
+		NoSelectionTitle {
+			font-size="30"
+			font-style="normal"
+			font-family=mediumfont
+			textcolor="customgreyprimary"
 		}
 
-		NoSelectionInstructions
-		{
-			font-size=16
-			font-family=basefont
-		}
+		NoSelectionInstructions {}
 	}
 	
 	
 	layout {
-
+		region {
+			name="details"
+			align=right
+			y=79
+			margin-bottom=58
+			width=340
+			height=max
+		}
 		
+		place {
+			control="DarkRegionDetails"
+			region="details"
+			width=max
+			height=max
+			z="-1"
+		}
+
+		place {
+			control="SSDetails"
+			region="details" 
+			width=max
+			height=260
+			align="top-center"
+		}
+
+		place {
+			control=SSDate
+			start=SSDetails
+			dir=down
+			y=8
+			x=8
+			align=left
+		}
+
+		place {
+			control="SSSize,SSSizeOriginal"
+			start="SSDate"
+			margin-right=8
+			align=right
+			dir=left
+		}
+
+		place {
+			control="publish_caption,details_caption"
+			region="details"
+			x=8
+			align=bottom
+			margin-bottom=30
+			height=90
+			margin-right=8
+			width=500
+		}
+
+		place {
+			control="spoiler_checkbox"
+			start="publish_caption"
+			dir=down
+			height=18
+			y=4
+		}
+
+		place {
+			control="publish_charsleft"
+			region="details"
+			start=spoiler_checkbox
+			dir=right
+			align="right"
+			height=18
+			margin-right=8
+		}
+
+		place {
+			control="file_not_loaded_label"
+			region="details"
+			y=100
+			align="top-center"
+		}
 		
 
-		region { name="details" align=right y=79 margin-bottom=58 width=335 height=max }
-		
 
-		place { control="DarkRegionDetails" region="details" x=0 y=0 width=max height=max z="-1" }
-		place { control="SSDetails" region="details" y=0 width=333 height=250 align="top-center"  }
-		place { control="SSDate" start="SSDetails" dir=down margin-top=4 margin-left=8 align=left }
-		place { control="SSSize,SSSizeOriginal" start="SSDate" margin-right=15 align=right dir=left }
+		place {
+			control="multi_img"
+			region="details"
+			y=40
+			align="top-center"
+		}
 
-		place { control="publish_caption" region="details" x=5 align=bottom margin-bottom=55 height=40 margin-right=3 width=max  }
-		place { control="publish_charsleft" region="details" x=5 align="bottom-right" margin-bottom=35 height=20 margin-right=5 }
+		place {
+			control="multi_img_count"
+			region="details"
+			y=80
+			align="top-center"
+		}
 
-		place { control="null_placer" region="details" width=1 align=bottom margin-bottom=2 }
-		place { control="spoiler_checkbox" start="null_placer" region="details" align=bottom x=3 margin-bottom=30 margin-right=7 spacing=5 }
+		place {
+			control="multi_img_selected"
+			region=details
+			start=multi_img
+			dir=down
+			y=18
+			align="top-center"
+		}
 
+		place {
+			control="multi_img_upload_size,multi_img_upload_size_info"
+			region=details
+			y=224
+			align="top-center"
+			spacing=4
+		}
 
-		place { control="details_caption" region="details" x=5 align=bottom margin-bottom=35 height=60 width=max margin-right=7 }
+		place {
+			control="multi_img_storage_remaining,multi_img_storage_remaining_info"
+			region=details
+			y=248
+			align="top-center"
+			spacing=4
+		}
 
-
-		place { control="multi_img" region="details" y=80 align="top-center" }
-		place { control="multi_img_count" region="details" y=92 align="top-center" }
-		place { control="multi_img_selected" region=details y=180  align="top-center" }
-		place { control="multi_img_upload_size,multi_img_upload_size_info" region=details y=205 align="top-center" spacing=5 }
-		place { control="multi_img_storage_remaining,multi_img_storage_remaining_info" region=details y=220 align="top-center" spacing=5 }
-		place { control="multi_img_delete,multi_img_upload" region=details y=260 align="top-center" spacing=8 }
-
-		place { control="file_not_loaded_label" region="details" y=140 align="top-center" }
-		place { control="instr_no_selection_title,instr_no_selection" region="details" y=20 width=max margin-left=15 margin-right=15 dir=down spacing=30 }
-
+		place {
+			control="instr_no_selection_title,instr_no_selection"
+			region="details"
+			y=24
+			width=max
+			x=24
+			margin-right=24
+			dir=down
+			spacing=18
+		}
 
 		region {
 			name=subnav
@@ -167,10 +262,12 @@
 		}
 
 		place {
-			control="grid"
-			region="list"
+			control=grid
+			region=list
 			width=max
 			height=max
+			x=4
+			margin-bottom=-1
 		}
 
 		place {
@@ -179,8 +276,6 @@
 			y=50
 			align="top-center"
 		}
-
-
 
 		region {
 			name="buttons"
@@ -192,7 +287,6 @@
 		place {
 			control="multiselect_button,view_local_library_button,view_screenshots"
 			region="buttons"
-		    width=92
 		    height=34
 		    align=left
 			margin-left=11
@@ -201,7 +295,7 @@
 		}
 
 		place {
-			control="delete_button,details_button,publish_button"
+			control="delete_button,details_button,publish_button,multi_img_delete,multi_img_upload"
 			region="buttons"
 		    height=34
 		    align=right
@@ -210,9 +304,8 @@
 			spacing=12
 		}
 
-
 		place {
-			control=selectorlabel
+			control=selectorlabel,null_placer
 			height=0
 		}
 	}
