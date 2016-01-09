@@ -1,4 +1,3 @@
-• Screenshots Dialog + Delete/Upload Dialogs
 • Backup Dialogs
 • Servers Dialog
 • Friends Dialog
@@ -16,7 +15,6 @@
 • Home Sharing Notifications
 • Sharing stuff in Game Details View
 • Finish Group Chats
-• View CD Key Dialog
 • Game Properties Dialog
 • Event Notifications Dialog
 • Transaction Authorization Dialog (For TF2 items and shit)
@@ -31,3 +29,5 @@ DONE:
 • Workshop Stars
 • Toggle Button styling
 • Small Mode
+• Screenshots Dialog + Delete/Upload Dialogs
+• View CD Key Dialog
