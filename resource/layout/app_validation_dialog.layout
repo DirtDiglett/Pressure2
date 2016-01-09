@@ -1,0 +1,38 @@
+"resource/layout/app_validation_dialog.layout" {
+	layout {
+		region {
+			name="buttons"
+			width=max
+			height=58
+			align=bottom
+		}
+
+		place {
+			control="Button1"
+			region="buttons"
+		    width=92
+		    height=34
+		    align=right
+			margin-right=11
+			margin-top=12
+			spacing=12
+		}
+
+		place {
+			controls=Label1
+			x=24
+			y=58
+			width=max
+			margin-right=24
+		}
+
+		place {
+			controls=ProgressBar1
+			start=label1
+			dir=down
+			y=18
+			width=max
+			margin-right=24
+		}
+	}
+}
