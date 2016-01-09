@@ -1144,11 +1144,19 @@ steam.styles {
 
 		CGameLaunchParametersDialog {
 			minimum-height=198
-			
+
 			render {
     			0="fill(x0,y1-58,x1,y1-57, dividers_onLightBG)"
 			}
 		}
 
+		CEditTagsDialog {
+			render {
+    			0="fill(x0,y1-58,x1,y1-57, dividers_onLightBG)"
+			}
+			render_bg {
+				5="image(x0+26,y0+62,x1,y1, graphics/icons/category/category)"
+			}
+		}
 	} // END STYLES
 }
