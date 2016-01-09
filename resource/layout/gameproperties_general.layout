@@ -1,0 +1,100 @@
+"resource/layout/gameproperties_general.layout" {
+	styles {
+		CSubGamePropertiesGeneralPage {
+			render {
+				0="fill(x0+70,y0+30,x1,y0+55, custombackgroundnofocustransparent)"
+				1="fill(x0+70,y0+84,x1,y0+109, custombackgroundnofocustransparent)"
+				2="fill(x0+70,y0+138,x1,y0+163, custombackgroundnofocustransparent)"
+			}
+			render_bg {
+				1="image(x0+26,y0+37,x1,y1, resource/icon_info)"
+				2="image(x0+26,y0+215,x1,y1, graphics/icons/settings/notifications)"
+			}
+		}
+
+			CSubGamePropertiesGeneralPage:framefocus {
+				render {
+					0="fill(x0+70,y0+30,x1,y0+55, custombackgroundprimarytransparent)"
+					1="fill(x0+70,y0+84,x1,y0+109, custombackgroundprimarytransparent)"
+					2="fill(x0+70,y0+138,x1,y0+163, custombackgroundprimarytransparent)"
+				}
+				render_bg {
+					1="image(x0+26,y0+37,x1,y1, resource/icon_info)"
+					2="image(x0+26,y0+215,x1,y1, graphics/icons/settings/notifications)"
+				}
+			}
+	}
+	
+	layout {
+		region {
+			name=page
+			height=max
+			width=max
+			x=82
+			y=10
+			margin-right=24
+		}
+
+		place {
+			control=HomepageLabelName,HomepageLabel
+			region=page
+			y=28
+			dir=down
+			spacing=4
+		}
+
+		place {
+			control=DeveloperLabelName,DeveloperLabel
+			region=page
+			start=HomePageLabel
+			y=18
+			dir=down
+			spacing=4
+		}
+
+		place {
+			control=ManualLabelName,ManualLabel,NoManualLabel
+			region=page
+			start=DeveloperLabel
+			y=18
+			dir=down
+			spacing=4
+		}
+		
+		place {
+			control=Divider1
+			start=NoManualLabel
+			dir=down
+			y=18
+			x=-11
+			height=1
+			width=max
+		}
+		
+		place {
+			control=EnableOverlayCheck
+			region=page
+			start=divider1
+			y=18
+			x=11
+			dir=down
+			height=18
+			spacing=2
+		}
+
+		place {
+			control=LaunchOptionsButton,CreateDesktopShortcutButton
+			width=350
+			height=34
+			start=EnableOverlayCheck
+			dir=down
+			y=8
+			spacing=4
+		}
+
+		place {
+			control=ExternalSignupLabel,ExternalSignupButton
+			height=0
+		}
+	}
+}
