@@ -1105,6 +1105,13 @@ steam.styles {
 			}
 		}
 
+		CCDKeyDisplayDialog {
+    		render {
+    			0="image(x0+24, y0+58, x1, y1, graphics/icons/key/key)"
+    			1="fill(x0,y1-58,x1,y1-57, dividers_onLightBG)"
+			}
+		}
+
 		CPlayersDialog {
 			render {
 				0="image_tiled(x0,y0+34,x1,y0+38, graphics\material\shadows\top)"
@@ -1121,7 +1128,7 @@ steam.styles {
 				2="fill(x0,y1-58,x1,y1-57, dividers_onLightBG)"
 			}
 			render_bg {
-				0="fill(x0,y0,x1,y0+100, customgreysecondary)"
+				0="fill(x0,y0+34,x1,y0+79, customgreysecondary)"
 			}
 		}
 
