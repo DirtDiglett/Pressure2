@@ -1,0 +1,58 @@
+"resource/layout/editfriendsgroups.layout" {
+	layout {
+		region {
+			name=page
+			height=max
+			width=max
+			x=82
+			y=24
+			margin-right=24
+			margin-bottom=82
+		}
+
+		place {
+			control=Description
+			region=page
+			width=max
+			dir=down
+			spacing=2
+		}
+		
+		place {
+			control=TagChecks
+			start=Description
+			dir=down
+			y=18
+			width=max
+			height=150
+			margin-right=24
+			x=-58
+		}
+			
+		place {
+			control="TextEntry"
+			width=250
+			height=34
+			start=TagChecks
+			dir=down
+			y=8
+		}
+
+		place {
+			control="AddTagButton"
+			width=max
+			height=34
+			start=TextEntry
+			dir=right
+			x=8
+			margin-right=24
+		}
+
+		place {
+			control="HideButton"
+			start=TextEntry
+			dir=down
+			y=8
+		}
+	}
+}
