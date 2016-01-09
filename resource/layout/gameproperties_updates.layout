@@ -1,0 +1,157 @@
+"resource/layout/gameproperties_updates.layout" {
+	styles {
+		CSubGamePropertiesUpdatesPage {
+			render_bg {
+				1="image(x0+26,y0+37,x1,y1, graphics/icons/update/update)"
+				2="image(x0+26,y0+188,x1,y1, graphics/icons/settings/downloads)"
+				3="image(x0+26,y0+320,x1,y1, graphics/icons/settings/server)"
+			}
+		}
+
+		Highlight {
+			textcolor=disabled_onLightBG
+		}
+		
+		CloudUsageLabelStyle:disabled {
+			textcolor=disabled_onLightBG
+		}
+	}
+	
+	layout {
+		region {
+			name=page
+			height=max
+			width=max
+			x=82
+			y=10
+			margin-right=24
+		}
+
+		place {
+			control=AutoUpdatesLabel
+			region=page
+			y=28
+			dir=down
+			spacing=2
+		}
+
+		place {
+			control=UpdateCombo
+			width=350
+			height=34
+			start=AutoUpdatesLabel
+			dir=down
+			y=4
+		}
+
+		place {
+			control=UpdateInfoText,UpdateNewsURL
+			region=page
+			start=UpdateCombo
+			y=8
+			dir=down
+			spacing=8
+			width=max
+		}
+
+		place {
+			control="Divider1"
+			start=UpdateNewsURL
+			dir=down
+			width=max
+			y=18
+			x=-11
+			height=1
+		}
+
+		place {
+			control=BackgroundDownloadsLabel
+			region=page
+			start=divider1
+			y=18
+			x=11
+			dir=down
+			spacing=2
+		}
+
+		place {
+			control=BackgroundDownloadsCombo
+			width=350
+			height=34
+			start=BackgroundDownloadsLabel
+			dir=down
+			y=4
+		}
+
+		place {
+			control=BackgroundDownloadsInfo
+			region=page
+			start=BackgroundDownloadsCombo
+			y=8
+			dir=down
+			spacing=8
+			width=max
+		}
+
+		place {
+			control="Divider2"
+			start=BackgroundDownloadsInfo
+			dir=down
+			width=max
+			y=18
+			x=-11
+			height=1
+		}
+
+		place {
+			control=CloudLabel
+			region=page
+			start=divider2
+			y=18
+			x=11
+			dir=down
+			spacing=2
+		}
+
+		place {
+			control=CloudInfoLabel
+			width=max
+			start=CloudLabel
+			dir=down
+			y=4
+		}
+
+		place {
+			control=EnableCloudCheck
+			width=max
+			height=18
+			start=CloudInfoLabel
+			dir=down
+			y=8
+		}
+
+		place {
+			control=CloudUsageLabel
+			width=max
+			start=EnableCloudCheck
+			dir=down
+			y=4
+			x=24
+		}
+
+		place {
+			control=CloudEnableLinkLabel
+			start=CloudUsageLabel
+			dir=down
+			y=8
+			x=-24
+		}
+
+		place {
+			control=CloudEnableLinkLabelExtraText
+			start=CloudEnableLinkLabel
+			dir=right
+			x=4
+		}
+	}
+}
