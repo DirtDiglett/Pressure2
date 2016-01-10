@@ -1,0 +1,29 @@
+"resource/layout/backupwizard.layout" {
+	layout {
+		place {
+			control=sheet
+			x=0
+			y=34
+			width=max
+			height=max
+			margin-bottom=58
+		}
+		region {
+			name="buttons"
+			width=max
+			height=58
+			align=bottom
+		}
+
+		place {
+			control="PrevButton,NextButton,FinishButton,CancelButton"
+			region="buttons"
+		    width=92
+		    height=34
+		    align=right
+			margin-right=11
+			margin-top=12
+			spacing=12
+		}
+	}
+}
