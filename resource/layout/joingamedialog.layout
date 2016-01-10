@@ -1,0 +1,134 @@
+"resource/layout/joingamedialogexpanded.layout" {
+	styles {
+		CJoinGameDialog {
+			minimum-width=450
+
+			render {
+    			0="fill(x0,y1-58,x1,y1-57, dividers_onLightBG)"
+			}
+			render_bg {
+				0="image(x0+24,y0+58,x1,y1, resource/icon_info)"
+			}
+		}
+
+		highlight {
+			textcolor=red500
+		}	
+	}
+	
+	layout {		
+		region {
+			name=page
+			x=24
+			y=58
+			margin-right=24
+			margin-bottom=58
+		}
+
+		place {
+			controls="InfoLabel"
+			x=50
+			width=max
+			region=page
+		}
+
+		place {
+			control=ReadyToPlayInfoLabel
+			x=50
+			region=page
+		}
+
+		place {
+			control=ReadyToPlayTimeLabel
+			start=ReadyToPlayInfoLabel
+			dir=down
+			y=4
+			region=page
+		}
+
+		place {
+			control=Progress
+			width=max
+			region=page
+			height=34
+			dir=down
+			y=50
+		}
+
+		place {
+			control=OverrideThrottleCheckBox
+			start=Progress
+			dir=down
+			y=4
+			height=18
+			width=max
+		}
+
+		place {
+			control=SkipUpdateLabel
+			start=OverrideThrottleCheckBox
+			dir=down
+			y=4
+			height=18
+			width=max
+		}
+		
+		place {
+			control=Divider
+			y=214
+			height=1
+			width=max
+		}
+
+		place {
+			control=ssaupdatelabel,SSAUpdateURL
+			y=215
+			region=page
+			dir=down
+			spacing=4
+		}
+
+
+		region {
+			name="buttons"
+			width=max
+			height=58
+			align=bottom
+		}
+
+		place {
+			control=AutoLaunchCheckBox
+			region="buttons"
+		    height=18
+		    align=left
+			margin-left=11
+			margin-top=20
+			spacing=12
+		}
+
+		place {
+			control=NewsButton
+			width=160
+		}
+
+		place {
+			control=PlayButton
+			width=126
+		}
+
+		place {
+			control="NewsButton,PlayButton"
+			region="buttons"
+		    height=34
+		    align=right
+			margin-right=11
+			margin-top=12
+			spacing=12
+		}
+
+		place {
+			control=ThrobberThrobberThrobber
+			height=0
+		}
+	}
+}
