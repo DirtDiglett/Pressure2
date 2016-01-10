@@ -1,13 +1,9 @@
-• Install Dialog
 • Servers Dialog
 • Music Details
 • Music Popup Dialog
 • Go Offline Dialog
 • Start Offline Dialog
-• Start Game Dialog
-• Update Game Dialog
 • Friends Dialog (Complete re-do)
-• Friends (No Avatar)
 • Notifications (Re-do)
 • Home Sharing Notifications
 • Sharing stuff in Game Details View
@@ -32,3 +28,7 @@ DONE:
 • Game Categories Dialog
 • Tag Friend As Dialog
 • Backup Dialogs
+• Install Dialog
+• Start Game Dialog
+• Update Game Dialog
+• Friends (No Avatar)
