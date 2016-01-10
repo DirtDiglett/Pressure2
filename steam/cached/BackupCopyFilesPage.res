@@ -1,0 +1,75 @@
+"steam/cached/BackupCopyFilesPage.res" {
+	styles {
+		CBackupCopyFilesPage {
+			render_bg {
+				0="image(x0+24,y0+24,x1,y1, resource/icon_info)"
+			}
+		}
+	}
+
+	layout {
+		region {
+			name=page
+			x=14
+			y=18
+			width=max
+			height=max
+			margin-right=14
+			margin-bottom=10
+		}
+
+		place {
+			control=Label3
+			region=page
+			x=68
+			width=max
+		}
+
+		place {
+			control=Label1
+			region=page
+			start=Label3
+			dir=down
+			y=24
+			x=-68
+			width=max
+		}
+
+		place {
+			control=Label2
+			region=page
+			start=Label1
+			dir=down
+			y=18
+		}
+
+		place {
+			control=TimeReminingLabel
+			region=page
+			start=Label2
+			dir=right
+			x=8
+		}
+
+		place {
+			control=TotalProgress
+			region=page
+			width=max
+			height=34
+			start=Label2
+			dir=down
+			y=8
+		}
+
+		place {
+			control=Label4
+			region=page
+			width=max
+			start=TotalProgress
+			dir=down
+			y=8
+		}
+
+		
+	}
+}
