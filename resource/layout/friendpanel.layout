@@ -85,32 +85,32 @@
 			}
 
 		WebStatusStyle {
-			image="graphics/icon_status_web"
+			image="graphics/webOnline"
 			padding-right=4
 		}
 
 		WebStatusStyleInGame {
-			image="graphics/icon_status_web_ingame"
+			image="graphics/webInGame"
 			padding-left=4
 		}
 	
 		BigPictureStatusStyle {
-			image="graphics/icon_status_bigpic"
+			image="graphics/bpOnline"
 			padding-right=4
 		}
 
 		BigPictureStatusStyleInGame {
-			image="graphics/icon_status_bigpic_ingame"
+			image="graphics/bpInGame"
 			padding-right=4
 		}
 		
 		MobileStatusStyle {
-			image="graphics/icon_status_mobile"
+			image="graphics/mobileOnline"
 			padding-right=4
 		}
 		
 		MobileStatusStyleInGame {
-			image="graphics/icon_status_mobile_ingame"
+			image="graphics/mobileInGame"
 			padding-right=4
 		}
 }
@@ -143,6 +143,7 @@
 			control="Clanstatusimage"
 			x=20
 			width=15
+			y=10
 		}
 
 		place {
