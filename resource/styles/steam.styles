@@ -1016,6 +1016,17 @@ steam.styles {
 
 
 
+    	"GameItem_Uninstalled GGPlaceholderBG" {
+			alpha 138 // 54%
+		}
+		"GameItem_Uninstalled GamesGridImage" {
+			alpha 138 // 54%
+		}
+		"GameItem_Uninstalled GamesGridIcon" {
+			alpha 138 // 54%
+		}
+
+
 
 
     	COverlaySettingsDialog {

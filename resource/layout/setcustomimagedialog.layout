@@ -1,0 +1,83 @@
+"resource/layout/setcustomimagedialog.layout" {
+	styles {
+		SetCustomImageDialog {
+			minimum-width=460
+			minimum-height=320
+
+			render {
+    			0="fill(x0,y1-58,x1,y1-57, dividers_onLightBG)"
+			}
+		}
+	}
+	
+	layout {
+		place {
+			control=ChooseAnImage,ImagePrescription
+			y=58
+			x=24
+			margin-right=24
+			width=max
+			dir=down
+			spacing=8
+		}
+
+		place {
+			control=ThisFile
+			start=ImagePrescription
+			dir=down
+			y=18
+			margin-right=24
+			width=max
+			dir=down
+		}
+
+		place {
+			control=Filename
+			start=ThisFile
+			dir=down
+			width=max
+			margin-right=24
+			y=4
+			height=34
+		}
+
+		place {
+			control=Browse
+			start=Filename
+			dir=down
+			width=260
+			margin-right=24
+			y=4
+			height=34
+		}
+
+		place {
+			control=TryAgain
+			start=Browse
+			dir=down
+			y=8
+			width=max
+			margin-right=24
+		}
+
+		region {
+			name="buttons"
+			width=max
+			height=58
+			align=bottom
+		}
+
+		place {
+			control="OK,Cancel"
+			region="buttons"
+		    width=92
+		    height=34
+		    align=right
+			margin-right=11
+			margin-top=12
+			spacing=12
+		}		
+	}
+
+}
+
