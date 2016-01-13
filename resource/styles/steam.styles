@@ -1202,5 +1202,11 @@ steam.styles {
     			0="fill(x0,y1-58,x1,y1-57, dividers_onLightBG)"
 			}
 		}
+
+		CRegisterSubEnterCDKey {
+    		render {
+    			0="image(x0+14, y0+18, x1, y1, graphics/icons/key/key)"
+			}
+		}
 	} // END STYLES
 }
