@@ -1166,7 +1166,7 @@ steam.styles {
     			0="fill(x0,y1-58,x1,y1-57, dividers_onLightBG)"
 			}
 			render_bg {
-				5="image(x0+26,y0+62,x1,y1, graphics/icons/category/category)"
+				5="image(x0+24,y0+58,x1,y1, graphics/icons/category/category)"
 			}
 		}
 
@@ -1175,7 +1175,7 @@ steam.styles {
     			0="fill(x0,y1-58,x1,y1-57, dividers_onLightBG)"
 			}
 			render_bg {
-				5="image(x0+26,y0+62,x1,y1, graphics/icons/category/category)"
+				5="image(x0+24,y0+58,x1,y1, graphics/icons/category/category)"
 			}
 		}
 
@@ -1203,9 +1203,27 @@ steam.styles {
 			}
 		}
 
+		CRegisterSubIntro {
+    		render {
+    			0="image(x0+14, y0+18, x1, y1, graphics/icons/beta/beta)"
+			}
+		}
+
 		CRegisterSubEnterCDKey {
     		render {
     			0="image(x0+14, y0+18, x1, y1, graphics/icons/key/key)"
+			}
+		}
+
+		CRegisterSubReceipt {
+    		render {
+    			0="image(x0+14, y0+18, x1, y1, resource/icon_info)"
+			}
+		}
+
+		CRegisterCDKeyWizard {
+			render {
+    			0="fill(x0,y1-51,x1,y1-50, dividers_onLightBG)"
 			}
 		}
 	} // END STYLES
