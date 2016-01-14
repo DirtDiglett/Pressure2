@@ -112,7 +112,7 @@ controls.styles {
 		}	 
 
 			ListPanelCheckBox:selected {
-				image="graphics/controls/checkbox/checked_small"	
+				image="graphics/controls/checkbox/unchecked_small"	
 			}
 
 			ListPanelCheckBox:focus {
@@ -130,7 +130,7 @@ controls.styles {
 	
 				ListPanelCheckBox:disabled:selected {
 					textcolor=disabled_OnLightBG
-					image="graphics/controls/checkbox/unchecked_disabled_small"
+					image="graphics/controls/checkbox/checked_disabled_small"
 				}
 		
 		"ListPanelColumnheader ListPanelCheckBox" {
@@ -143,17 +143,27 @@ controls.styles {
 
 			render_bg {}
 		}
-		 
-				"ListPanelColumnHeader ListPanelCheckBox:selected" {
-					image="graphics/controls/checkbox/checked_small"	 
-				}
 
-					"ListPanelColumnheader ListPanelCheckBox:selected:focus" {
-						image="graphics/controls/checkbox/checked_small" 
-					}
-		
-				"ListPanelColumnheader ListPanelCheckBox:focus" {
-					image="graphics/controls/checkbox/checked_small" 
+			"ListPanelColumnheader ListPanelCheckBox:selected" {
+				image="graphics/controls/checkbox/unchecked_small"	
+			}
+
+			"ListPanelColumnheader ListPanelCheckBox:focus" {
+				image="graphics/controls/checkbox/unchecked_small"	
+			}
+
+				"ListPanelColumnheader ListPanelCheckBox:selected:focus" {
+					image="graphics/controls/checkbox/checked_small"
+				}
+	
+			"ListPanelColumnheader ListPanelCheckBox:disabled" {
+				textcolor=disabled_OnLightBG
+				image="graphics/controls/checkbox/unchecked_disabled_small"
+			}
+	
+				"ListPanelColumnheader ListPanelCheckBox:disabled:selected" {
+					textcolor=disabled_OnLightBG
+					image="graphics/controls/checkbox/checked_disabled_small"
 				}
 
 		RadioButton {
@@ -367,7 +377,8 @@ controls.styles {
 			padding-right=4
 
 			render {
-				0="image( x1 - 17, y0 + 12, x1, y1, graphics/icons/dropdown/standard/down_onLightBG )"
+				// We base this assumption on a 34 pixel high combobox.
+				0="image( x1 - 24, y0 + 15, x1, y1, graphics/icons/dropdown/standard/down_onLightBG )"
 			}
 			render_bg {}
 		}
