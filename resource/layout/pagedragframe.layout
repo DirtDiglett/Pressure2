@@ -1,18 +1,15 @@
 "resource/layout/pagedragframe.layout" {
 	styles {
 		PageDragFrame {			
-			bgcolor=amber500
+			bgcolor=customgreyprimary
 
-			render_bg {
-				//0="image( x0, y0, x1, y1, graphics/clienttexture2)"
+			render {
+				0="fill(x0,y0,x1,y0+1, customgreyaccent)"
 			}
 		}
 		
 		PageDragPanel {
-			bgcolor=blue500
-			render_bg {
-				//0="gradient( x0, y0, x1, y1, DialogBG, ClientBG )"
-			}
+			bgcolor=customgreysecondary
 		}
 	}
 		
