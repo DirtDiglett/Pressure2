@@ -1,0 +1,26 @@
+"resource/layout/pagedragframe.layout" {
+	styles {
+		PageDragFrame {			
+			bgcolor=amber500
+
+			render_bg {
+				//0="image( x0, y0, x1, y1, graphics/clienttexture2)"
+			}
+		}
+		
+		PageDragPanel {
+			bgcolor=blue500
+			render_bg {
+				//0="gradient( x0, y0, x1, y1, DialogBG, ClientBG )"
+			}
+		}
+	}
+		
+	layout {
+	  place {
+	  	control="DragPropertySheet"
+	  	width=max
+	  	height=max
+	  }
+	}
+}
