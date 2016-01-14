@@ -5,7 +5,6 @@
 		GridNavDivider {}
 		
 		CUILaunchButton {
-			inset="0 -2 0 0"
 			font-family=mediumfont
 			font-size=20
 			font-weight=600
@@ -51,7 +50,6 @@
 			}
 	
 		"GameItem_Uninstalled CUILaunchButton" {
-			inset="0 0 0 0"
 			font-family=mediumfont
 			font-size=20
 			font-weight=600
@@ -96,8 +94,7 @@
 				}
 			}
 
-		CUIDetailsButton {   
-			inset="0 -2 0 0"
+		CUIDetailsButton {
 			font-family=mediumfont
 			font-size=20
 			font-weight=600
