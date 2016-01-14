@@ -2,7 +2,7 @@
 	styles {
 		CBackupCopyFilesPage {
 			render_bg {
-				0="image(x0+24,y0+24,x1,y1, resource/icon_info)"
+				0="image(x0+14,y0+18,x1,y1, resource/icon_info)"
 			}
 		}
 	}
@@ -21,7 +21,7 @@
 		place {
 			control=Label3
 			region=page
-			x=68
+			x=56
 			width=max
 		}
 
@@ -31,7 +31,7 @@
 			start=Label3
 			dir=down
 			y=24
-			x=-68
+			x=-56
 			width=max
 		}
 
