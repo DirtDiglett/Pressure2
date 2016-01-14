@@ -117,6 +117,7 @@
 			control=AutoUpdateTimeRestrictCheckbox
 			start=ThrottleRates
 			y=18
+			height=18
 			dir=down
 		}
 
