@@ -234,11 +234,11 @@
 		place {
 			control="SendButton"
 			region=bottom
-			height=30
+			height=34
 			width=55
 			align=right
 			margin-right=14
-			y=22
+			y=20
 		}
 
 		place {
