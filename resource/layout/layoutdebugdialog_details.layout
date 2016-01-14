@@ -1,14 +1,33 @@
 "resource/layout/layoutdebugdialog_details.layout" {
-	styles {
-		label {
-			textcolor=lime500
-		}
-	}
 	layout {
-		place { control="style_label" x=6 y=8 width=170 }
-		place { control="parent_label" x=176 y=8 width=170 }
+		place {
+			control="style_label"
+			x=24
+			y=24
+			width=170
+		}
+
+		place {
+			control="parent_label"
+			start=style_label
+			dir=right
+			x=100
+		}
 		
-		place { control="parent_list" x=180 y=30 width=160 }
-		place { control="style_list" x=10 y=30 width=160 }
+		place {
+			control="parent_list"
+			start=parent_label
+			dir=down
+			y=8
+			spacing=4
+		}
+		
+		place {
+			control="style_list"
+			start=style_label
+			dir=down
+			y=8
+			spacing=4
+		}
 	}
 }

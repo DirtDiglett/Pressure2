@@ -12,19 +12,23 @@
 			}
 		}
 
+		PageTab {
+			minimum-height=34
+			inset-top=-1
+		}
 
 		RichText {
-			textcolor=red500
+			textcolor=disabled_onLightBG
 		}
 	}
 
 	layout {		
 		place {
 			control="tabs"
-			y=34
+			y=41
 			width="max"
 			height="max"
-			margin-bottom=58
+			margin-bottom=41
 		}
 		
 		region {
@@ -40,8 +44,10 @@
 		    height=18
 		    align=left
 			margin-left=11
-			margin-top=12
+			margin-top=6
 			spacing=4
+			dir=down
+			end-right=fileurl
 		}
 
 		place {
