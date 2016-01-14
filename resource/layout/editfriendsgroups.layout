@@ -4,8 +4,8 @@
 			name=page
 			height=max
 			width=max
-			x=82
-			y=24
+			x=70
+			y=19
 			margin-right=24
 			margin-bottom=82
 		}
@@ -25,8 +25,8 @@
 			y=18
 			width=max
 			height=150
-			margin-right=24
-			x=-58
+			margin-right=14
+			x=-56
 		}
 			
 		place {
@@ -45,7 +45,7 @@
 			start=TextEntry
 			dir=right
 			x=8
-			margin-right=24
+			margin-right=14
 		}
 
 		place {
