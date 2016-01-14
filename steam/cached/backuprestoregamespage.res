@@ -2,7 +2,7 @@
 	styles {
 		CBackupRestoreGamesPage {
 			render_bg {
-				0="image(x0+24,y0+24,x1,y1, graphics/icons/folder/folder)"
+				0="image(x0+14,y0+18,x1,y1, graphics/icons/folder/folder)"
 			}
 		}
 	}
