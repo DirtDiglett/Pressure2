@@ -1,4 +1,8 @@
-steam/cached/RegisterSubEnterCDKey & Other Register*
+• Parental Lock/Unlock Dialogs
+• Phone Reminder Bar
+• Streaming
+• Broadcast Stuff
+• Steam Cloud Warnings/Dialogs
 • Music Details
 • Music Popup Dialog
 • Go Offline Dialog
@@ -8,9 +12,12 @@ steam/cached/RegisterSubEnterCDKey & Other Register*
 • Home Sharing Notifications
 • Sharing stuff in Game Details View
 • Finish Group Chats
-• Event Notifications Dialog
-• Transaction Authorization Dialog (For TF2 items and shit)
 
+
+BUGS TO FIX:
+• Tooltips in Overlay have white text!?
+• Resize buttons in game details view to be 34px tall.
+• SUPER MINI text for chat history only in the overlay.
 
 
 DONE:
@@ -33,4 +40,5 @@ DONE:
 • Update Game Dialog
 • Friends (No Avatar)
 • Servers Dialog
-overlay_microtxn_authdialog.layout
+• Event Notifications Dialog
+• Transaction Authorization Dialog (For TF2 items and shit)
