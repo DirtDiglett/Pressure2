@@ -2,7 +2,7 @@
 	styles {
 		CBackupSelectGamesPage {
 			render_bg {
-				0="image(x0+24,y0+24,x1,y1, graphics/icons/backup/backup)"
+				0="image(x0+14,y0+18,x1,y1, graphics/icons/backup/backup)"
 			}
 		}
 	}
@@ -21,7 +21,7 @@
 		place {
 			control=label1
 			region=page
-			x=68
+			x=56
 			width=max
 		}
 
@@ -31,7 +31,7 @@
 			start=label1
 			dir=down
 			y=18
-			x=-68
+			x=-56
 			width=max
 			height=max
 			margin-bottom=38
