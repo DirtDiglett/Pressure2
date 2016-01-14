@@ -274,7 +274,7 @@ steam.styles {
 			padding-left=8
 			padding-right=8
 			padding-top=8
-			padding-bottom=-6
+			padding-bottom=0
 			font-size=18     
 			font-weight=600 
 		}
