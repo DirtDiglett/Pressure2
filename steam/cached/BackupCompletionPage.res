@@ -2,7 +2,7 @@
 	styles {
 		CBackupCompletionPage {
 			render_bg {
-				0="image(x0+24,y0+24,x1,y1, graphics/icons/complete/complete)"
+				0="image(x0+14,y0+18,x1,y1, graphics/icons/complete/complete)"
 			}
 		}
 	}
@@ -21,7 +21,7 @@
 		place {
 			control=statuslabel
 			region=page
-			x=68
+			x=56
 			width=max
 		}
 
@@ -31,7 +31,7 @@
 			start=statuslabel
 			dir=down
 			y=24
-			x=-68
+			x=-56
 			width=max
 			height=34
 		}
