@@ -19,7 +19,7 @@
 			margin-right=14
 			y=8
 			x=-52
-			height=150
+			height=75
 		}
 
 		place {
