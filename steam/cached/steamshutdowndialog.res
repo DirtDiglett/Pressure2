@@ -1,99 +1,35 @@
 "steam/cached/steamshutdowndialog.res" {
-	controls {
-	"steamshutdowndialog"
-	{
-		"ControlName"		"CSteamShutdownDialog"
-		"fieldName"		"SteamShutdownDialog"
-		"wide"		"320"
-		"tall"		"128"
-		"autoResize"		"0"
-		"pinCorner"		"0"
-		"visible"		"1"
-		"enabled"		"1"
-		"tabPosition"		"0"
-		"settitlebarvisible"		"1"
-		"title"		"#Steam_Shutdown_Dialog_Title"
-	}
-	
-	"InfoLabel"
-	{
-		"ControlName"		"Label"
-		"fieldName"		"InfoLabel"
-		"xpos"		"20"
-		"ypos"		"42"
-		"wide"		"260"
-		"tall"		"32"
-		"autoResize"		"0"
-		"pinCorner"		"0"
-		"visible"		"1"
-		"enabled"		"1"
-		"labelText"		"#Steam_Shutdown_Dialog_Text"
-		"textAlignment"		"north-west"
-		"dulltext"		"0"
-		"brighttext"		"0"
-		"wrap"		"1"
-	}
-	"Throbber"
-	{
-		"ControlName"		"ThrobberImagePanel"
-		"fieldName"		"Throbber"
-		"xpos"		"280"
-		"ypos"		"36"
-		"wide"		"20"
-		"tall"		"20"
-		"AutoResize"		"0"
-		"PinCorner"		"0"
-		"visible"		"1"
-		"enabled"		"1"
-		"tabPosition"		"0"
-		"paintbackground"		"1"
-	}
-	
-	"ForceQuitButton"
-	{
-		"ControlName"		"Button"
-		"fieldName"		"ForceQuitButton"
-		"xpos"		"40"
-		"ypos"		"84"
-		"wide"		"128"
-		"tall"		"24"
-		"AutoResize"		"0"
-		"PinCorner"		"0"
-		"visible"		"1"
-		"enabled"		"1"
-		"tabPosition"		"2"
-		"paintbackground"		"1"
-		"labelText"		"#Steam_Shutdown_ForceQuit"
-		"textAlignment"		"west"
-		"wrap"		"0"
-		"Command"		"ForceQuit"
-		"Default"		"0"
-	}	
-	"HideDialogButton"
-	{
-		"ControlName"		"Button"
-		"fieldName"		"HideDialogButton"
-		"xpos"		"180"
-		"ypos"		"84"
-		"wide"		"128"
-		"tall"		"24"
-		"AutoResize"		"0"
-		"PinCorner"		"0"
-		"visible"		"1"
-		"enabled"		"1"
-		"tabPosition"		"2"
-		"paintbackground"		"1"
-		"labelText"		"#vgui_OK"
-		"textAlignment"		"west"
-		"wrap"		"0"
-		"Command"		"HideDialog"
-		"Default"		"0"
-	}
-	}
+	layout {
+		place {
+			control=InfoLabel
+			x=24
+			y=58
+			margin-right=24
+		}
 
-	styles {
-		frame {
-			bgcolor=red500
+		place {
+			control=throbber
+			start=infolabel
+			dir=down
+			align=top-center
+			y=8
+		}
+
+		region {
+			name="buttons"
+			width=max
+			height=58
+			align=bottom
+		}
+
+		place {
+			control="ForceQuitButton,HideDialogButton"
+			region="buttons"
+		    height=34
+		    align=right
+			margin-right=11
+			margin-top=12
+			spacing=12
 		}
 	}
 }

@@ -1227,5 +1227,14 @@ steam.styles {
     			0="fill(x0,y1-51,x1,y1-50, dividers_onLightBG)"
 			}
 		}
+
+		CSteamShutdownDialog {
+			minimum-width=320
+			minimum-height=180
+
+			render {
+    			0="fill(x0,y1-58,x1,y1-57, dividers_onLightBG)"
+			}
+		}
 	} // END STYLES
 }
