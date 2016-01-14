@@ -20,7 +20,8 @@ gameoverlay.styles {
 		}
 			    
 		"COverlaySettingsDialog PageTab" {
-			minimum-height=50
+			minimum-height=34
+			inset-top=-1
 		}
 	}
 }
