@@ -2,7 +2,7 @@
 	styles {
 		CBackupSelectOptionsPage {
 			render_bg {
-				0="image(x0+24,y0+24,x1,y1, graphics/icons/disc/disc)"
+				0="image(x0+14,y0+18,x1,y1, graphics/icons/disc/disc)"
 			}
 		}
 	}
@@ -21,7 +21,7 @@
 		place {
 			control=label5
 			region=page
-			x=68
+			x=56
 			width=max
 		}
 
@@ -31,7 +31,7 @@
 			start=label5
 			dir=down
 			y=24
-			x=-68
+			x=-56
 			width=max
 		}
 
@@ -43,6 +43,7 @@
 			dir=down
 			y=4
 			spacing=4
+			margin-right=14
 		}
 
 		place {
@@ -62,6 +63,7 @@
 			dir=down
 			y=4
 			spacing=4
+			margin-right=14
 		}
 
 
