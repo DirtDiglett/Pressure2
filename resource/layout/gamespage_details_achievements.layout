@@ -60,7 +60,7 @@
 			control=viewall
 			align=bottom
 			margin-bottom=2
-			margin-left=-8
+			height=34
 		}
 	}
 }

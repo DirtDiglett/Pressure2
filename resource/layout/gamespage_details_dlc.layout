@@ -106,7 +106,7 @@
 			control=moredlc
 			dir=right
 			spacing=10
-			margin-left=-8
+			height=34
 		}
 	}
 }

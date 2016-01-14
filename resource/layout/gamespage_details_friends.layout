@@ -1,6 +1,6 @@
 "resource/layout/gamespage_details_friends.layout" {
 	colors {
-		GameDetailsFriends.ExtraVerticalSpacing=85	
+		GameDetailsFriends.ExtraVerticalSpacing=95	
 	}
 
 	styles {
@@ -49,7 +49,7 @@
 			control=viewall
 			align=bottom
 			margin-bottom=5
-			margin-left=-8
+			height=34
 		}
 	}
 }

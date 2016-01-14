@@ -52,7 +52,7 @@
 			control=viewall
 			align=bottom
 			margin-bottom=5
-			margin-left=-8
+			height=34
 		}
 	}
 }
