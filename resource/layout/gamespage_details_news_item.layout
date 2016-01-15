@@ -54,21 +54,63 @@
 			selectedtextcolor=white	
 			selectedbgcolor=blue500
 		}
-		
-		more_link {
-			font-size=16
-			font-style="uppercase"
-			font-weight=400
+
+		more_link {		 
+			bgcolor=none
+			textcolor=blue500
 			font-family=mediumfont
-			textcolor="blue500"
-			selectedtextcolor="white"	
-			selectedbgcolor=blue500
+			font-size=16
+			font-style=uppercase
+			font-weight=400
+			inset-top=3
+			padding-left=6
+			padding-top=4
+			padding-bottom=4
+			padding-right=6
+			
+			render_bg {}
 		}
-		
-			more_link:hover {
-				font-style="uppercase,underline"
-				textcolor="blue400"
+
+			more_link:Hover {
+				textcolor=blue300
+				
+				// We use a render_bg here instead of bgcolor in order to not break every other button that doesn't have a bgcolor defined.
+				render_bg {
+					0="fill(x0,y0,x1,y1, dividers_onLightBG)"
+				}
 			}
+
+				more_link:disabled {
+					bgcolor=none
+					textcolor=disabled_onLightBG
+					
+					render_bg {}
+				}
+
+
+					more_link:focus {
+						bgcolor=none
+						textcolor=blue500
+
+						render_bg {}
+					}
+
+						more_link:focus:hover {
+							bgcolor=none
+							textcolor=blue500
+
+							// We use a render_bg here instead of bgcolor in order to not break every other button that doesn't have a bgcolor defined.
+							render_bg {
+								0="fill(x0,y0,x1,y1, dividers_onLightBG)"
+							}
+						}
+
+						more_link:active {
+							bgcolor=blue500transparent
+							textcolor=blue500
+
+							render_bg {}
+						}
 	}
 
 	layout {
@@ -86,7 +128,6 @@
 
 		place {
 			control=newsitem_more
-			width=280
 			start=newsitem_body
 			dir=down
 			y=12
