@@ -12,11 +12,12 @@
 • Home Sharing Notifications
 • Sharing stuff in Game Details View
 • Finish Group Chats
+• Overlay Low-Res Mode
+• Turn Notifications?
+• Possibly FPS Counter
 
 
 BUGS TO FIX:
-• Tooltips in Overlay have white text!?
-• Resize buttons in game details view to be 34px tall.
 • SUPER MINI text for chat history only in the overlay.
 
 
@@ -42,3 +43,7 @@ DONE:
 • Servers Dialog
 • Event Notifications Dialog
 • Transaction Authorization Dialog (For TF2 items and shit)
+
+BUGS FIXED:
+• Tooltips in Overlay have white text!?
+• Resize buttons in game details view to be 34px tall.
