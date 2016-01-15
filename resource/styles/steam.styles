@@ -251,177 +251,13 @@ steam.styles {
 
 
 
-		TooltipWindow {
-			bgcolor=white
-			textcolor=secondaryText_onLightBG
-			render_bg {
-				0="fill(x0,y0,x0+1,y1, dividers_OnLightBG)"
-				1="fill(x0+1,y0,x1-1,y0+1, dividers_OnLightBG)"
-				2="fill(x1-1,y0,x1,y1, dividers_OnLightBG)"
-				3="fill(x0+1,y1-1,x1-1,y1, dividers_OnLightBG)"
-			}
-		}
-
-		"TooltipWindow Label" {
-			padding-left=8
-			padding-right=8
-			padding-bottom=8
-			padding-top=8
-			textcolor=secondaryText_OnLightBG
-		}
-		
-		tooltip_headline {
-			textcolor=text_OnLightBG
-			padding-left=8
-			padding-right=8
-			padding-top=8
-			padding-bottom=0
-			font-size=18     
-			font-weight=600 
-		}
 
 
 
 
 
-		ChatListPanel {   
-			bgcolor=none
-			padding-top=14
-			padding-left=14
-			padding-right=14
-
-			render {}
-			render_bg {}
-		}
-
-		friends_chat_text {
-			textcolor=text_OnLightBG
-			selectedtextcolor=white  
-			SelectedBgColor=blue500
-			font-size=17
-		}
-		
-		friends_chat_text_self {
-			textcolor=secondaryText_OnLightBG
-			selectedtextcolor=white
-			selectedbgcolor=blue500
-			font-size=17
-		}
-
-		friends_chat_history {
-			textcolor=disabled_OnLightBG
-			selectedtextcolor=white   
-			selectedbgcolor=blue500
-			font-size=17
-		}
-		
-		friends_chat_event {
-			textcolor=orange500
-			font-size=17
-			selectedtextcolor=white
-			selectedbgcolor=blue500
-		}
-
-		friends_chat_bright_event {
-			textcolor=orange500
-			selectedtextcolor=white
-			font-size=17
-			font-weight=1000
-		}
-
-		friends_chat_url {
-			textcolor=blue500
-			font-style=underline
-			font-size=17
-			selectedtextcolor=white
-			selectedbgcolor=blue500
-		}
-		
-		friends_chat_name_ingame {
-			textcolor=lightgreen500
-			selectedtextcolor=white   
-			selectedbgcolor=blue500
-			font-size=17
-		}
-
-		friends_chat_name_golden {
-			textcolor=orange500
-			selectedtextcolor=white   
-			selectedbgcolor=blue500
-			font-size=17
-		}
-
-		friends_chat_self {
-			textcolor=blue500
-			selectedtextcolor=white  
-			selectedbgcolor=blue500
-			font-size=17
-		}
-		
-		friends_chat_name {
-			textcolor=blue500
-			selectedtextcolor=white  
-			selectedbgcolor=blue500
-			font-size=17
-		}
-		
-		friends_chat_accountid {
-			selectedtextcolor=red500  
-			selectedbgcolor=blue500
-			textcolor=white
-			font-size=17
-		}
-		
-		friends_chat_securitylink {
-			textcolor=orange500
-			bgcolor=none
-			font-family=basefont
-			font-size=17
-			font-weight=600
-			font-style=none
-			selectedtextcolor=white   
-			selectedbgcolor=blue500
-		}
-	
 
 
-
-		 // used in friends tooltip and friends list for overriding regular styles with custom colors
-		friends_offline {
-			textcolor=grey500
-		}
-		
-			friends_offline:hover {
-				textcolor=grey400
-			}
-		
-		friends_online {
-			textcolor=lightblue500
-		}
-		
-			friends_online:hover {
-				textcolor=lightblue300
-			}
-		
-		friends_ingame {
-			textcolor=lightgreen500
-		}
-			
-			friends_ingame:hover {
-				textcolor=lightgreen300
-			}
-
-		friends_golden {
-			textcolor=orange500
-		}
-			
-			friends_golden:hover {
-				textcolor=orange300
-			}
-		
-		friends_ignored {
-			textcolor=red500
-		}
 
 
 
@@ -1235,6 +1071,191 @@ steam.styles {
 			render {
     			0="fill(x0,y1-58,x1,y1-57, dividers_onLightBG)"
 			}
+		}
+
+
+
+
+
+
+		"NotifyRemoteClientTitle"
+	    {
+	        textcolor="LabelDisabled"
+	    }
+	    
+	    "NotifyRemoteClientInfo"
+	    {
+	        textcolor="176 172 165 255"
+	    }
+
+
+
+	    TooltipWindow {
+			bgcolor=white
+			textcolor=secondaryText_onLightBG
+			render_bg {
+				0="fill(x0,y0,x0+1,y1, dividers_OnLightBG)"
+				1="fill(x0+1,y0,x1-1,y0+1, dividers_OnLightBG)"
+				2="fill(x1-1,y0,x1,y1, dividers_OnLightBG)"
+				3="fill(x0+1,y1-1,x1-1,y1, dividers_OnLightBG)"
+			}
+		}
+
+		"TooltipWindow Label" {
+			padding-left=8
+			padding-right=8
+			padding-bottom=8
+			padding-top=8
+			textcolor=secondaryText_OnLightBG
+		}
+		
+		tooltip_headline {
+			textcolor=text_OnLightBG
+			padding-left=8
+			padding-right=8
+			padding-top=8
+			padding-bottom=0
+			font-size=18     
+			font-weight=600 
+		}
+
+	    ChatListPanel {   
+			bgcolor=none
+			padding-top=14
+			padding-left=14
+			padding-right=14
+
+			render {}
+			render_bg {}
+		}
+
+		friends_chat_text {
+			textcolor=text_OnLightBG
+			selectedtextcolor=white  
+			SelectedBgColor=blue500
+			font-size=17
+		}
+		
+		friends_chat_text_self {
+			textcolor=secondaryText_OnLightBG
+			selectedtextcolor=white
+			selectedbgcolor=blue500
+			font-size=17
+		}
+
+		friends_chat_history {
+			textcolor=disabled_OnLightBG
+			selectedtextcolor=white   
+			selectedbgcolor=blue500
+			font-size=17
+		}
+		
+		friends_chat_event {
+			textcolor=orange500
+			font-size=17
+			selectedtextcolor=white
+			selectedbgcolor=blue500
+		}
+
+		friends_chat_bright_event {
+			textcolor=orange500
+			selectedtextcolor=white
+			font-size=17
+			font-weight=1000
+		}
+
+		friends_chat_url {
+			textcolor=blue500
+			font-style=underline
+			font-size=17
+			selectedtextcolor=white
+			selectedbgcolor=blue500
+		}
+		
+		friends_chat_name_ingame {
+			textcolor=lightgreen500
+			selectedtextcolor=white   
+			selectedbgcolor=blue500
+			font-size=17
+		}
+
+		friends_chat_name_golden {
+			textcolor=orange500
+			selectedtextcolor=white   
+			selectedbgcolor=blue500
+			font-size=17
+		}
+
+		friends_chat_self {
+			textcolor=blue500
+			selectedtextcolor=white  
+			selectedbgcolor=blue500
+			font-size=17
+		}
+		
+		friends_chat_name {
+			textcolor=blue500
+			selectedtextcolor=white  
+			selectedbgcolor=blue500
+			font-size=17
+		}
+		
+		friends_chat_accountid {
+			selectedtextcolor=red500  
+			selectedbgcolor=blue500
+			textcolor=white
+			font-size=17
+		}
+		
+		friends_chat_securitylink {
+			textcolor=orange500
+			bgcolor=none
+			font-family=basefont
+			font-size=17
+			font-weight=600
+			font-style=none
+			selectedtextcolor=white   
+			selectedbgcolor=blue500
+		}
+	
+
+
+
+		 // used in friends tooltip and friends list for overriding regular styles with custom colors
+		friends_offline {
+			textcolor=grey500
+		}
+		
+			friends_offline:hover {
+				textcolor=grey400
+			}
+		
+		friends_online {
+			textcolor=lightblue500
+		}
+		
+			friends_online:hover {
+				textcolor=lightblue300
+			}
+		
+		friends_ingame {
+			textcolor=lightgreen500
+		}
+			
+			friends_ingame:hover {
+				textcolor=lightgreen300
+			}
+
+		friends_golden {
+			textcolor=amber500
+		}
+			
+			friends_golden:hover {
+				textcolor=amber300
+			}
+		
+		friends_ignored {
+			textcolor=red500
 		}
 	} // END STYLES
 }
