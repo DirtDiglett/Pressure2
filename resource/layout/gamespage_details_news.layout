@@ -1,6 +1,6 @@
 "resource/layout/gamespage_details_news.layout" {
 	colors {
-		GameDetailsNewsContainer.ExtraVerticalSpacing "124"
+		GameDetailsNewsContainer.ExtraVerticalSpacing "134"
 	}
 
 	styles {
