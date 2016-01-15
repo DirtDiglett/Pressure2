@@ -130,18 +130,18 @@
 
 			SmRemoveButton:hover { 
 				render_bg {
-					1="image(x0+9, y0+9, x1, y1, graphics/icons/closedownload/hover/closedownload)"
-				}
+		        	1="image(x0+9,y0+9,x1,y1, graphics/icons/closedownload/hover/closedownload)"
+		        }
 			}
 
 			SmRemoveButton:active { 
 				render_bg {
-					-3="image(x0-1,y0-2,x0+18,y0+17, graphics/material/selectionbubbles/hover/blue/topleft)"
-					-2="image(x0-1,y0+17,x0+18,y0+29, graphics/material/selectionbubbles/hover/blue/bottomleft)"
-					-1="image(x0+18,y0-2,x0+37,y0+17, graphics/material/selectionbubbles/hover/blue/topright)"
-					0="image(x0+18,y0+17,x0+37,y0+36, graphics/material/selectionbubbles/hover/blue/bottomright)"
-					1="image(x0+9, y0+9, x1, y1, graphics/icons/closedownload/hover/closedownload)"
-				}
+		    		-3="image(x0-1,y0-2,x0+18,y0+17, graphics/material/selectionbubbles/hover/red/topleft)"
+					-2="image(x0-1,y0+17,x0+18,y0+29, graphics/material/selectionbubbles/hover/red/bottomleft)"
+					-1="image(x0+18,y0-2,x0+37,y0+17, graphics/material/selectionbubbles/hover/red/topright)"
+					0="image(x0+18,y0+17,x0+37,y0+36, graphics/material/selectionbubbles/hover/red/bottomright)"
+		        	1="image(x0+9,y0+9,x1,y1, graphics/icons/closedownload/active/closedownload)"
+		    	}
 			}
 	} 
 
