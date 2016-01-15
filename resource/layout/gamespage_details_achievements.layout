@@ -1,6 +1,6 @@
 "resource/layout/gamespage_details_achievements.layout" {
 	colors {
-		GameDetailsAchievements.ExtraVerticalSpacing "65"
+		GameDetailsAchievements.ExtraVerticalSpacing "75"
 		GameDetailsAchievements.EverythingExtraSpacing "10"
 		RichText.InsetX "0"
 		RichText.InsetY "3" 
