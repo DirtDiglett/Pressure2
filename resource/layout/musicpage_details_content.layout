@@ -1,40 +1,33 @@
 "resource/layout/musicpage_detail_content.layout" {
 	styles {
-		DetailsBorderPanel { 
-			//bgcolor="red"
-
+		DetailsBorderPanel {
 			render_bg {}
 		}
 		
 		AlbumOrArtistListStyle {
 			inset="0 0 0 0"
-			render_bg {}
+			bgcolor=custombackgroundprimary
+			font-size=16
+			padding-left=4
+			padding-right=25
 		}
 		
 		EmptyDatabaseText {
 			textcolor="disabled_onLightBG"
 			font-size="15"
-
-			render_bg {}
 		}
 		
 		CrawlingText {
 			textcolor="disabled_onLightBG"
 			font-size="15"
-			render_bg {}
 		}
 		
 		CMusicPage_Details_Content {
-			inset="0 0 0 0"
-
 			render {}
-			render_bg {
-				 0="gradient( x0, y0, x1, y1, red, blue500 )"
-			}
+			render_bg {}
 		}
 		
 		"MusicPage_Details_Content ListPanel" {
-			bgcolor="None"
 			font-size=15
 			render_bg {}
 			render {}
@@ -44,13 +37,13 @@
 		}
 
 		
-		"MusicPage_Details_Content ListPanelInterior"
-		{
-			bgcolor="none"
-			textcolor="text2"
+		"MusicPage_Details_Content ListPanelInterior" {
 			inset="0 0 -1 0"
+
 			render {}
-			render_bg {} 
+			render_bg {
+				0="fill(x1-1,y0,x1,y1, dividers_onLightBG"
+			} 
 		}
 		
 		"MusicPage_Details_Content ListPanelInterior:scrollbar" {     
@@ -74,10 +67,7 @@
 			font-size=14
 			inset="0 0 0 0"
 			render {}
-			render_bg 
-			{
-				0="gradient_horizontal( x0+1, y0+2, x1, y1 + 1, ButtonFace, none )"
-			}
+			render_bg  {}
 		}
 
 		"AlbumOrArtistListStyle ListPanelColumnSelectButton" {
@@ -104,13 +94,13 @@
 
 		region	{
 			name="list"
-			width=308
+			width=306
 			height=max
 		}
 
 		region {
 			name="details"
-			x=308
+			x=306
 			width=max
 			height=max
 			overflow=scroll-vertical 
@@ -142,9 +132,13 @@
 			margin=-2
 		}
 
-		place { control=AlbumList region=list width=308 height=max margin=0 }
-		place { control=ArtistList region=list width=308 height=max margin=0 }
-		place { control=PlaylistList region=list width=308 height=max margin=0 }
+		place {
+			control=AlbumList,ArtistList,PlaylistList
+			width=306
+			height=max
+			margin-top=-1
+		}
+
 		place { control=*MusicPageDetailsAlbum region=details width=max dir=down spacing=10 }
 		place { control=*MusicPageDetailsPlaylist region=details width=max dir=down spacing=10 }
 		
