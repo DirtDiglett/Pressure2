@@ -121,11 +121,11 @@
 
 			SmRemoveButton:active { 
 				render_bg {
-					-3="image(x0-1,y0-2,x0+18,y0+17, graphics/material/selectionbubbles/hover/white/topleft)"
-					-2="image(x0-1,y0+17,x0+18,y0+29, graphics/material/selectionbubbles/hover/white/bottomleft)"
-					-1="image(x0+18,y0-2,x0+37,y0+17, graphics/material/selectionbubbles/hover/white/topright)"
-					0="image(x0+18,y0+17,x0+37,y0+36, graphics/material/selectionbubbles/hover/white/bottomright)"
-					1="image(x0+9, y0+9, x1, y1, graphics/icons/closedownload/hover/closedownload_light)"
+					-3="image(x0+2,y0+2,x0+21,y0+21, graphics/material/selectionbubbles/hover/red/topleft)"
+                    -2="image(x0+2,y0+21,x0+21,y0+33, graphics/material/selectionbubbles/hover/red/bottomleft)"
+                    -1="image(x0+21,y0+2,x0+40,y0+21, graphics/material/selectionbubbles/hover/red/topright)"
+                    0="image(x0+21,y0+21,x0+40,y0+40, graphics/material/selectionbubbles/hover/red/bottomright)"
+					1="image(x0+9, y0+9, x1, y1, graphics/icons/closedownload/hover/closedownload)"
 				}
 			}
 
