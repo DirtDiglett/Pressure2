@@ -112,7 +112,7 @@ controls.styles {
 		}	 
 
 			ListPanelCheckBox:selected {
-				image="graphics/controls/checkbox/unchecked_small"	
+				image="graphics/controls/checkbox/checked_small"	
 			}
 
 			ListPanelCheckBox:focus {
