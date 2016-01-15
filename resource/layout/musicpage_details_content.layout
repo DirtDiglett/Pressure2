@@ -42,7 +42,7 @@
 
 			render {}
 			render_bg {
-				0="fill(x1-1,y0,x1,y1, dividers_onLightBG"
+				0="fill(x1-1,y0,x1,y1, dividers_onLightBG)"
 			} 
 		}
 		
