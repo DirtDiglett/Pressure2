@@ -83,6 +83,11 @@
 		DetailsBorderPanel {}	
 
 		BackgroundImage {}
+
+		"ListPanel RichText" {
+			textcolor=disabled_onLightBG
+			font-size=15
+		}
 	}
 
 	layout {
