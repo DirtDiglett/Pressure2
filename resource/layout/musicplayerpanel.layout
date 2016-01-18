@@ -1,10 +1,10 @@
 "resource/layout/musicplayerpanel.layout" {
 	styles {
 		CMusicPlayerPanel {
-			bgcolor=custombackgroundprimary
+			bgcolor=customgreysecondary //custombackgroundprimary
 			
-			minimum-width=440
-			minimum-height=122
+			minimum-width=349
+			minimum-height=193
 			
 			render_bg {}
 		}		
@@ -35,6 +35,22 @@
 			font-family=mediumfont
 		}
 
+
+		PlayButtonStyle	{
+			bgcolor=none
+
+			render_bg {}
+			image=graphics/music_play_default
+		}
+
+		PauseButtonStyle {
+			bgcolor=none
+
+			render_bg {}
+			image=graphics/music_pause_default
+		}
+
+
 		RepeatButtonStyle	{	bgcolor=none render_bg={} image=graphics/music_repeat_default	inset="0" padding="0" }
 		RepeatButtonStyle:hover	{	bgcolor=none render_bg={} image=graphics/music_repeat_hover	inset="0" padding="0" }
 		RepeatButtonStyle:selected	{	bgcolor=none render_bg={} image=graphics/music_repeat_enabled }
@@ -51,12 +67,11 @@
 		PreviousButtonStyle:hover	{	bgcolor=none render_bg={} image=graphics/music_trackback_hover }
 		NextButtonStyle	{	bgcolor=none render_bg={} image=graphics/music_trackfwd_default	}
 		NextButtonStyle:hover {	bgcolor=none render_bg={} image=graphics/music_trackfwd_hover	}
-		PlayButtonStyle	{	bgcolor=none render_bg={} image=graphics/music_play_default }
-		PlayButtonStyle:hover {	bgcolor=none render_bg={} image=graphics/music_play_hover }
-		PauseButtonStyle {	bgcolor=none render_bg={} image=graphics/music_pause_default }
-		PauseButtonStyle:hover {	bgcolor=none render_bg={} image=graphics/music_pause_hover }
+		
 		VolumeButtonStyle {	bgcolor=none render_bg={} image=graphics/music_volume_default	}
 		VolumeButtonStyle:hover {	bgcolor=none render_bg={} image=graphics/music_volume_hover }
+		VolumeButtonStyle:selected { bgcolor=red500}
+		VolumeButtonStyle:active {bgcolor=blue500}
 		VolumeButtonActiveStyle {	bgcolor=none render_bg={} image=graphics/music_volume_default	}
 		VolumeButtonActiveStyle:hover {	bgcolor=none render_bg={} image=graphics/music_volume_hover }				
 		MuteVolumeButtonStyle {	bgcolor=none render_bg={} image=graphics/music_volume_mute_default	}
@@ -91,20 +106,36 @@
 		place {
 			control=CurrentTrackLabel,CurrentArtistLabel,InfoLabel
 			x=94
-			y=42
+			y=56
 			dir=down
 			spacing=2
 		}
 
+		place {
+			control=SeekBar
+			x=24
+			y=168
+			height=18
+			width=max
+			margin-right=24
+		}
 
 
+
+		place {
+			control="PlayPauseButton"
+			region=transport
+			x=100
+			y=0
+			width=34
+			height=34
+		}
+		
+		place { control="RepeatButton,ShuffleButton,PreviousButton" region=transport x=0 y=16 spacing=8 margin=0 height=34 }
+		
+		place { control="NextButton,VolumeButton,BrowseButton" region=transport x=164 y=16 spacing=8 margin=0 height=34 }
 
 		
-		place { control="RepeatButton,ShuffleButton,PreviousButton" region=transport x=0 y=16 spacing=8 margin=0 height=18 }
-		place { control="PlayPauseButton" region=transport x=100 y=0 width=56 height=50 }
-		place { control="NextButton,VolumeButton,BrowseButton" region=transport x=164 y=16 spacing=8 margin=0 height=18 }
-
-		place { control=SeekBar region=transport x=0 y=50 height=18 width=260 }
 
 		place {
 			control="NoTracksLabel"
@@ -114,7 +145,7 @@
 
 		place {
 			control="TrackList"
-			y=122
+			y=193
 			width=max
 			height=max
 		}
