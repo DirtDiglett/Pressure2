@@ -1,24 +1,19 @@
-"resource/layout/musicpage_details_album.layout" {
+"resource/layout/musicpage_details_playlist.layout" {
 	styles {
-		CMusicPage_Details_Album {
+		CMusicPage_Details_Playlist {
 			bgcolor=none
 
 			render {}
 			render_bg {}
 		}
 		
-		AlbumTitleStyle {
+		PlaylistTitleStyle {
 			font-size="30"
 			font-style="normal"
 			textcolor=text_onLightBG
 		}
 
-		ArtistStyle {
-			font-size=24
-			textcolor=secondaryText_onLightBG
-		}
-		
-		TracksInfoStyle {
+		TracksInfoLabelStyle {
 			font-size=17
 			textcolor=secondaryText_onLightBG
 		}
@@ -32,7 +27,7 @@
 			}
 		}
 		
-		AdditionalActionButtonStyle{}
+		AdditionalActionButtonStyle {}
 		
 		
 		ActionButtonStyle { 
@@ -79,7 +74,7 @@
 		}
 
 		place {
-			control=AlbumTitleLabel
+			control=PlaylistTitleLabel
 			start=CoverImage
 			x=24
 			y=18
@@ -96,7 +91,7 @@
 		}
 
 		place {
-			control=PlayTracksButton
+			control=PlayPlaylistButton
 			height=48
 			width=48
 			region=bodyregion
@@ -105,10 +100,10 @@
 		}
 
 		place {
-			control=AddTracksToQueueButton,AddTracksToPlaylistButton,PlayAlbumButton,AddAlbumToQueueButton,AddAlbumToPlaylistButton,ShowAlbumInSystemButton
+			control=AddPlaylistToQueueButton,AddRandomTracksToPlaylistButton
 			region=bodyregion
 			dir=down
-			start=PlayTracksButton
+			start=PlayPlaylistButton
 			y=18
 			height=34
 			spacing=4
@@ -116,18 +111,13 @@
 
 		place {
 			region=bodyregion
-			control=*MusicPageDetailsTrack
+			control=*MusicPageDetailsPlaylistTrack
 			dir=down
 			start=CoverImage
 			y=24
 			width=max
 			spacing=10
 			height=40
-		}
-
-		place {
-			control=ShowAlbumButton
-			height=0
 		}
 	}
 }
