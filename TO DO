@@ -3,8 +3,6 @@
 • Streaming
 • Broadcast Stuff
 • Steam Cloud Warnings/Dialogs
-• Music Details
-
 • Go Offline Dialog
 • Start Offline Dialog
 • Friends Dialog (Complete re-do)
@@ -22,6 +20,7 @@ BUGS TO FIX:
 
 
 DONE:
+• Music Details
 • Music Popup Dialog
 • View Aliases
 • Notification Options Dialog
