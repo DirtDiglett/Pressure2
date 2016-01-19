@@ -1,0 +1,91 @@
+"resource/layout/parentalunlockdialog.layout" {
+	styles {
+		ParentalUnlockDialog {
+			minimum-width=380
+			minimum-height=286
+
+			render {
+				0="fill(x0,y1-58,x1,y1-57, dividers_onLightBG)"
+			}
+		}
+
+		Password {
+			minimum-height=50
+			font-size=40
+		}
+
+		Hey {
+			font-family=mediumfont
+			font-size=15
+			textcolor=text_onLightBG
+		}
+		
+		Hey2 {}
+		
+		Key {
+			image="graphics/icons/familyviewdialog/familyview"
+		}
+
+	}
+	
+	layout {
+		place {
+			control=KeyImage
+			x=24
+			y=58
+		}
+
+		place {
+			control=Instructions
+			start=KeyImage
+			dir=right
+			x=24
+			width=max
+			height=max
+			margin-right=24
+		}
+
+		place { 
+			control=Password
+			start=KeyImage
+			dir=down
+			y=24
+			width=max
+			margin-right=24
+		}
+
+		region {
+			name="buttons"
+			width=max
+			height=58
+			align=bottom
+		}
+
+		place {
+			control="OK,Cancel"
+			region="buttons"
+		    width=92
+		    height=34
+		    align=right
+			margin-right=11
+			margin-top=12
+			spacing=12
+		}
+
+		place {
+			control="Recovery"
+			region="buttons"
+			end-right=OK
+		    height=18
+		    align=left
+			margin-left=11
+			margin-top=20
+			spacing=12
+		}
+
+		place {
+			control=Instructions2
+			height=0
+		}
+	}
+}
