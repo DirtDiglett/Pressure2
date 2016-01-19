@@ -63,19 +63,9 @@
 			height=max
 			overflow=scroll-vertical
 		}
-		
-		place {
-			control=CoverImage
-			width=300
-			height=300
-			x=0
-			y=0
-			region=bodyregion
-		}
 
 		place {
 			control=PlaylistTitleLabel
-			start=CoverImage
 			x=24
 			y=18
 			margin-right=24
@@ -85,7 +75,7 @@
 		
 		place {
 			control=ArtistLabel,TracksInfoLabel
-			start=AlbumTitleLabel
+			start=PlaylistTitleLabel
 			dir=down
 			region=bodyregion
 		}
@@ -113,8 +103,9 @@
 			region=bodyregion
 			control=*MusicPageDetailsPlaylistTrack
 			dir=down
-			start=CoverImage
+			start=AddRandomTracksToPlaylistButton
 			y=24
+			x=-24
 			width=max
 			spacing=10
 			height=40
