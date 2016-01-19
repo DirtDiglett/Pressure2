@@ -1,11 +1,10 @@
-• Rename Playlist dialog
 • Parental Lock/Unlock Dialogs
 • Phone Reminder Bar
 • Streaming
 • Broadcast Stuff
 • Steam Cloud Warnings/Dialogs
 • Music Details
-• Music Popup Dialog
+
 • Go Offline Dialog
 • Start Offline Dialog
 • Friends Dialog (Complete re-do)
@@ -23,6 +22,7 @@ BUGS TO FIX:
 
 
 DONE:
+• Music Popup Dialog
 • View Aliases
 • Notification Options Dialog
 • Players Dialog
