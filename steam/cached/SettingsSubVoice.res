@@ -70,17 +70,22 @@
 			margin-right=29
 		}
 
-		place {
-			control=MicBoost
-			height=18
-		}
+		
 
 		place {
-			control=MicrophoneLabel,MicrophoneVolume,MicBoost
+			control=MicrophoneLabel,MicrophoneVolume
 			region=mic
 			y=28
 			dir=down
 			spacing=4
+		}
+
+		place {
+			control=MicBoost
+			height=18
+			start=MicrophoneVolume
+			dir=down
+			y=4
 		}
 
 		place {
