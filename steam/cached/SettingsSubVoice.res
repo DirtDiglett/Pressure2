@@ -71,6 +71,11 @@
 		}
 
 		place {
+			control=MicBoost
+			height=18
+		}
+
+		place {
 			control=MicrophoneLabel,MicrophoneVolume,MicBoost
 			region=mic
 			y=28
