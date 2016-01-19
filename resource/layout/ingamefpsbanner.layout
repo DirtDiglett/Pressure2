@@ -1,0 +1,36 @@
+"resource/layout/ingamefpsbanner.layout" {
+	styles {
+		CounterTextSmall {
+			font-size=15
+		}
+		
+		CounterTextMedium {
+			font-size=16
+		}
+		
+		CounterTextLarge {
+			font-size=17
+		}
+		
+		HighContrast {
+			bgcolor="0 0 0 80"
+			padding-left=4
+			padding-right=4
+			padding-top=4
+			padding-bottom=4
+			textcolor="0 255 0 255"
+		}
+	  
+		LowContrast {
+			textcolor=text_onDarkBG
+		}
+	}
+	
+	layout {
+		place {
+			control="TextLabel"
+			margin=4
+			align=center
+		}
+	}
+}
