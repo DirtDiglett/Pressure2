@@ -1,8 +1,6 @@
 • Phone Reminder Bar
 • Streaming
 • Broadcast Stuff
-• Go Offline Dialog
-• Start Offline Dialog
 • Friends Dialog (Complete re-do)
 • Notifications (Re-do)
 • Home Sharing Notifications
@@ -18,6 +16,7 @@ BUGS TO FIX:
 
 
 DONE:
+• Start Offline Dialog
 • Steam Cloud Warnings/Dialogs
 • Possibly FPS Counter
 • Parental Lock/Unlock Dialogs
