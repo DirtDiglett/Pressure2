@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700);
+
 ::-webkit-scrollbar,
 ::-webkit-scrollbar-corner {
 	width: 15px;
@@ -39,3 +41,128 @@
 	display: none;
 }
 
+
+/* http://steamcommunity.com/miniprofile/35358856?client=1 */
+/* Here we can override CSS provided elsewhere. We use this to modify popups and such */
+.miniprofile_content {
+	color: rgba(0,0,0,0.54) !important;
+	background: #fff !important;
+	border-radius: 0 !important;
+	border: 1px solid #e0e0e0 !important;
+	box-shadow: none !important;
+}
+
+.miniprofile_top {
+	border: none !important;
+	padding: 0 !important;
+	background: #fcfcfc !important;
+}
+
+.miniprofile_player {
+	padding: 8px !important;
+	min-height: 70px !important;
+}
+
+.miniprofile_player .playerAvatar {
+	top: 8px !important;
+	left: 8px !important;
+}
+
+.miniprofile_content .playerAvatar.medium {
+    width: 70px !important;
+    height: 70px !important;
+    border-radius: 3px !important;
+}
+
+.miniprofile_content .playerAvatar.medium img {
+	margin-top: 3px !important;
+	margin-left: 3px !important;
+}
+
+.miniprofile_player .player_content {
+	position: relative !important;
+	display: inline-block !important;
+}
+
+.miniprofile_favorite_badge {
+	border-radius: 0 !important;
+	border: 0 !important;
+	background: rgba(0,0,0,0.87) !important;
+	margin-top: 4px !important;
+	padding: 8px !important;
+}
+
+.miniprofile_favorite_badge .favorite_badge_icon {
+    top: 8px !important;
+    left: 8px !important;
+    width: 34px !important;
+    height: 34px !important;
+}
+
+.miniprofile_favorite_badge .favorite_badge_description .name {
+	font-weight: bold !important;
+	color: rgba(255,255,255,0.87) !important;
+}
+
+.miniprofile_favorite_badge .favorite_badge_description .xp {
+	color: rgba(255,255,255,0.54) !important;
+}
+
+.miniprofile_content .playerAvatar img {
+	background: none !important;
+}
+
+.miniprofile_content .playerAvatar img {
+	padding: 0 !important;
+}
+
+.miniprofile_content .playerAvatar.online {
+	background: #02a8f3 !important;
+}
+
+.miniprofile_content .persona.online {
+	color: #02a8f3 !important;
+	font-weight: bold !important;
+}
+
+.miniprofile_content .playerAvatar.in-game {
+	background: #8ac249 !important;
+}
+
+.miniprofile_content .persona.in-game {
+	color: #8ac249 !important;
+	font-weight: bold !important;
+}
+
+.miniprofile_content .playerAvatar.offline {
+	background: #9d9d9d !important;
+}
+
+.miniprofile_content .persona.offline {
+	color: #9d9d9d !important;
+	font-weight: bold !important;
+}
+
+.miniprofile_player .playername .nickname {
+	color: rgba(0,0,0,0.54) !important;
+	display: block !important;
+	font-weight: normal !important;
+	font-size: 80% !important;
+}
+
+.miniprofile_content .miniprofile_ingame {
+	border: 0 !important;
+	background: #8ac249 !important;
+	height: 38px !important;
+}
+
+.miniprofile_content .miniprofile_ingame .game_logo {
+	top: 4px !important;
+	left: 4px !important;
+}
+
+.miniprofile_content .miniprofile_ingame .game_content {
+	padding-top: 4px !important;
+	color: rgba(0,0,0,0.54) !important;
+    font-weight: bold !important;
+}
