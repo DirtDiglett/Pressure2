@@ -75,10 +75,7 @@
 						}
 	}
 	
-	layout {
-		place { control=",,," x=46 height=20 spacing=8 }
-		place { control="," x=46 height=20 y=20 spacing=8 }
-		
+	layout {		
 		region {
 			name=main
 			width=max
