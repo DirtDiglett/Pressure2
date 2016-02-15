@@ -1,5 +1,7 @@
 "resource/layout/appdownloadpanel.layout" {	
 	styles {
+		panelBgColorActive {}
+
 		panelStyle {
 			bgcolor=none
 			minimum-height=139
@@ -17,24 +19,26 @@
 
 		gameImagePanel {   
 			inset="0 0 0 0"
-			render_bg {}
+
 			render {}
+			render_bg {}
 		}
 		
 		gameImagePanelHighlight {   
-			inset="0 0 0 0"
 			bgcolor=none
+			inset="0 0 0 0"
+			
 			render_bg {}
 		}	
 
 		DetailsLaunchButton {
-			inset="65 0 0 0"
+			bgcolor=none
+			textcolor="lightgreen900"
 			font-family=mediumfont
 			font-size=20
 			font-weight=600
-			textcolor="lightgreen900"
 			font-style=uppercase
-			bgcolor=none
+			inset="65 0 0 0"
 			padding-left=0
 			padding-right=0
 			
@@ -59,30 +63,30 @@
 			}
 
 		ModuleHeading {
-			font-size=24
 			textcolor=text_onLightBG
+			font-size=24
 			font-weight=600
 		}	
 
 		label {
-			font-size=18
 			textcolor=secondaryText_onLightBG
+			font-size=18
 		}
 
 		label2 {
-			font-size=17
 			textcolor=secondaryText_onLightBG
 			font-family=mediumfont
+			font-size=17
 		}
 
 		label3 {
-			font-size=18
 			textcolor=secondaryText_onLightBG
-			font-size="normal"
+			font-size=18
+			font-style=normal
 		}
 
 		SlimProgressBar {
-			textcolor="lime500"
+			textcolor=lime500
 			
 			render {}
 			render_bg {
@@ -92,21 +96,19 @@
 
 		Button {
 			bgcolor=none
-		}		
-
-		panelBgColorActive {}
+		}
 		
 		topOfQueueButton {
 			bgcolor=none
 
 			render_bg {
-				1="image(x0+9, y0+9, x1, y1, graphics/icons/move_to_top/standard/move_to_top)"
+				0="image(x0+9, y0+9, x1, y1, graphics/icons/move_to_top/standard/move_to_top)"
 			}
 		}
 
 			topOfQueueButton:hover {
 				render_bg {
-					1="image(x0+9, y0+9, x1, y1, graphics/icons/move_to_top/hover/move_to_top)"
+					0="image(x0+9, y0+9, x1, y1, graphics/icons/move_to_top/hover/move_to_top)"
 				}
 			}
 
@@ -124,30 +126,36 @@
 			bgcolor=none
 
 			render_bg {
-				1="image(x0+9, y0+9, x1, y1, graphics/icons/closedownload/standard/closedownload)"
+				0="image(x0+9, y0+9, x1, y1, graphics/icons/closedownload/standard/closedownload)"
 			}
 		}
 
 			SmRemoveButton:hover { 
 				render_bg {
-		        	1="image(x0+9,y0+9,x1,y1, graphics/icons/closedownload/hover/closedownload)"
-		        }
+					0="image(x0+9,y0+9,x1,y1, graphics/icons/closedownload/hover/closedownload)"
+				}
 			}
 
 			SmRemoveButton:active { 
 				render_bg {
-		    		-3="image(x0-1,y0-2,x0+18,y0+17, graphics/material/selectionbubbles/hover/red/topleft)"
+					-3="image(x0-1,y0-2,x0+18,y0+17, graphics/material/selectionbubbles/hover/red/topleft)"
 					-2="image(x0-1,y0+17,x0+18,y0+29, graphics/material/selectionbubbles/hover/red/bottomleft)"
 					-1="image(x0+18,y0-2,x0+37,y0+17, graphics/material/selectionbubbles/hover/red/topright)"
 					0="image(x0+18,y0+17,x0+37,y0+36, graphics/material/selectionbubbles/hover/red/bottomright)"
-		        	1="image(x0+9,y0+9,x1,y1, graphics/icons/closedownload/active/closedownload)"
-		    	}
+					1="image(x0+9,y0+9,x1,y1, graphics/icons/closedownload/active/closedownload)"
+				}
 			}
 	} 
 
 	layout {
 		place {
-			control="gameimage"
+			control=spacer,updatetypelabel,settingslink,newslink,downloadtotallabel,pausereasonlabel
+			width=0
+			height=0
+		}
+		
+		place {
+			control=gameimage
 			x=14
 			y=14
 			width=184
@@ -158,9 +166,9 @@
 			control=workshopbanner
 			start=gameimage
 			dir=down
+			y=-26
 			width=184
 			height=26
-			y=-26
 		}
 
 		place {
@@ -212,8 +220,8 @@
 
 		place {
 			control=starttimefield
-			dir=right
 			start=starttimelabel
+			dir=right
 			x=4
 			y=-2
 		}
@@ -227,8 +235,8 @@
 
 		place {
 			control=timeremainingfield
-			dir=right
 			start=timeremaininglabel
+			dir=right
 			x=4
 			y=-2
 		}
@@ -242,27 +250,21 @@
 
 		place {
 			control=timecompletedfield
-			dir=right
 			start=timecompletedlabel
+			dir=right
 			x=4
 			y=-2
 		}
 
 		place {
-			control="topofqueuebutton,removefromqueuebutton" 
-			height=36
-			width=36
-			dir=right
-			spacing=12
-			y=51
+			control=topofqueuebutton,removefromqueuebutton
 			align=right
+			dir=right
+			y=51
+			width=36
+			height=36
 			margin-right=18
-		}
-
-		place {
-			control=spacer,updatetypelabel,settingslink,newslink,downloadtotallabel,pausereasonlabel
-			width=0
-			height=0
+			spacing=12
 		}
 	}
 }
