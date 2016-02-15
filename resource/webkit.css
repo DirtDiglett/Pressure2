@@ -1,5 +1,3 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700);
-
 ::-webkit-scrollbar,
 ::-webkit-scrollbar-corner {
 	width: 15px;
@@ -50,6 +48,10 @@
 	border-radius: 0 !important;
 	border: 1px solid #e0e0e0 !important;
 	box-shadow: none !important;
+}
+
+.miniprofile_content * {
+	font-family: "Roboto", sans-serif !important;
 }
 
 .miniprofile_top {
