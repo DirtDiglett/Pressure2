@@ -47,3 +47,62 @@ DONE:
 BUGS FIXED:
 • Tooltips in Overlay have white text!?
 • Resize buttons in game details view to be 34px tall.
+
+
+
+
+
+
+ORDER METHOD:
+
+
+
+// Styling
+bgcolor
+selectedbgcolor
+textcolor
+selectedtextcolor
+shadowtextcolor
+
+// Font settings.
+font-family
+font-size
+font-weight
+font-style
+font-outerglow-color
+font-outerglow-filtersize
+font-outerglow-offset
+
+// Positioning
+minimum-height
+minimum-width
+
+inset
+inset-left
+inset-top
+inset-right
+inset-bottom
+padding-left
+padding-top
+padding-right
+padding-bottom
+
+// Content-Additions
+image
+
+
+
+name
+control
+region
+start
+align
+dir
+x
+y
+width
+height
+margin
+spacing
+overflow
+end-right
