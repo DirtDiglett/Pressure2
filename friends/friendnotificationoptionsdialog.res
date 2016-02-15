@@ -78,10 +78,10 @@
 		place {
 			control=OKButton,Button1
 			region=buttons
-		    align=right
-		    width=92
-		    height=34
-		    margin-top=12
+			align=right
+			width=92
+			height=34
+			margin-top=12
 			margin-right=11
 			spacing=12
 		}

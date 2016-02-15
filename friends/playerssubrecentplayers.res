@@ -18,9 +18,9 @@
 		place {
 			control=AddFriendButton
 			region=buttons
-		    align=left
-		    width=140
-		    height=34
+			align=left
+			width=140
+			height=34
 			margin-left=11
 			margin-top=12
 			spacing=12

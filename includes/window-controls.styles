@@ -1,111 +1,106 @@
-window-controls.styles {
-	colors {}
-
+"window-controls.styles" {
 	styles {
-        FrameMinimizeButton {
-            minimum-height=24
-            minimum-width=24
+		FrameBRGripPanel {}
 
-            render_bg {
-                1="image(x0+7,y0+7,x1,y1, graphics/icons/window_controls/standard/minimize)"
-            }
-        }
+		FrameMinimizeButton {
+			minimum-width=24
+			minimum-height=24
 
-            FrameMinimizeButton:hover {
-                render_bg {
-                    1="image(x0+7,y0+7,x1,y1, graphics/icons/window_controls/hover/minimize)"
-                }
-            }
+			render_bg {
+				1="image(x0+7,y0+7,x1,y1, graphics/icons/window_controls/standard/minimize)"
+			}
+		}
 
-            FrameMinimizeButton:active {
-                render_bg {
-                    -3="image(x0-7,y0-7,x0+12,y0+12, graphics/material/selectionbubbles/hover/white/topleft)"
-                    -2="image(x0-7,y0+12,x0+12,y0+24, graphics/material/selectionbubbles/hover/white/bottomleft)"
-                    -1="image(x0+12,y0-7,x0+31,y0+12, graphics/material/selectionbubbles/hover/white/topright)"
-                    0="image(x0+12,y0+12,x0+31,y0+31, graphics/material/selectionbubbles/hover/white/bottomright)"
-                    1="image(x0+7,y0+7,x1,y1, graphics/icons/window_controls/hover/minimize)"
-                }
-            }
+			FrameMinimizeButton:hover {
+				render_bg {
+					1="image(x0+7,y0+7,x1,y1, graphics/icons/window_controls/hover/minimize)"
+				}
+			}
 
-        FrameMaximizeButton {
-            minimum-height=24
-            minimum-width=24
+			FrameMinimizeButton:active {
+				render_bg {
+					-3="image(x0-7,y0-7,x0+12,y0+12, graphics/material/selectionbubbles/hover/white/topleft)"
+					-2="image(x0-7,y0+12,x0+12,y0+24, graphics/material/selectionbubbles/hover/white/bottomleft)"
+					-1="image(x0+12,y0-7,x0+31,y0+12, graphics/material/selectionbubbles/hover/white/topright)"
+					0="image(x0+12,y0+12,x0+31,y0+31, graphics/material/selectionbubbles/hover/white/bottomright)"
+					1="image(x0+7,y0+7,x1,y1, graphics/icons/window_controls/hover/minimize)"
+				}
+			}
 
-            render_bg {
-                1="image(x0+7,y0+7,x1,y1, graphics/icons/window_controls/standard/maximize)"
-            }
-        }
+		FrameMaximizeButton {
+			minimum-width=24
+			minimum-height=24
 
-            FrameMaximizeButton:hover {
-                render_bg {
-                    1="image(x0+7,y0+7,x1,y1, graphics/icons/window_controls/hover/maximize)"
-                }
-            }
+			render_bg {
+				1="image(x0+7,y0+7,x1,y1, graphics/icons/window_controls/standard/maximize)"
+			}
+		}
 
-            FrameMaximizeButton:active {
-                render_bg {
-                    -3="image(x0-7,y0-7,x0+12,y0+12, graphics/material/selectionbubbles/hover/white/topleft)"
-                    -2="image(x0-7,y0+12,x0+12,y0+24, graphics/material/selectionbubbles/hover/white/bottomleft)"
-                    -1="image(x0+12,y0-7,x0+31,y0+12, graphics/material/selectionbubbles/hover/white/topright)"
-                    0="image(x0+12,y0+12,x0+31,y0+31, graphics/material/selectionbubbles/hover/white/bottomright)"
-                    1="image(x0+7,y0+7,x1,y1, graphics/icons/window_controls/hover/maximize)"
-                }
-            }
+			FrameMaximizeButton:hover {
+				render_bg {
+					1="image(x0+7,y0+7,x1,y1, graphics/icons/window_controls/hover/maximize)"
+				}
+			}
+
+			FrameMaximizeButton:active {
+				render_bg {
+					-3="image(x0-7,y0-7,x0+12,y0+12, graphics/material/selectionbubbles/hover/white/topleft)"
+					-2="image(x0-7,y0+12,x0+12,y0+24, graphics/material/selectionbubbles/hover/white/bottomleft)"
+					-1="image(x0+12,y0-7,x0+31,y0+12, graphics/material/selectionbubbles/hover/white/topright)"
+					0="image(x0+12,y0+12,x0+31,y0+31, graphics/material/selectionbubbles/hover/white/bottomright)"
+					1="image(x0+7,y0+7,x1,y1, graphics/icons/window_controls/hover/maximize)"
+				}
+			}
 
 
-        FrameRestoreButton {
-            minimum-height=24
-            minimum-width=24
+		FrameRestoreButton {
+			minimum-width=24
+			minimum-height=24
 
-            render_bg {
-                1="image(x0+7,y0+7,x1,y1, graphics/icons/window_controls/standard/restore)"
-            }
-        }
+			render_bg {
+				1="image(x0+7,y0+7,x1,y1, graphics/icons/window_controls/standard/restore)"
+			}
+		}
 
-            FrameRestoreButton:hover {
-                render_bg {
-                    1="image(x0+7,y0+7,x1,y1, graphics/icons/window_controls/hover/restore)"
-                }
-            }
+			FrameRestoreButton:hover {
+				render_bg {
+					1="image(x0+7,y0+7,x1,y1, graphics/icons/window_controls/hover/restore)"
+				}
+			}
 
-            FrameRestoreButton:active {
-                render_bg {
-                    -3="image(x0-7,y0-7,x0+12,y0+12, graphics/material/selectionbubbles/hover/white/topleft)"
-                    -2="image(x0-7,y0+12,x0+12,y0+24, graphics/material/selectionbubbles/hover/white/bottomleft)"
-                    -1="image(x0+12,y0-7,x0+31,y0+12, graphics/material/selectionbubbles/hover/white/topright)"
-                    0="image(x0+12,y0+12,x0+31,y0+31, graphics/material/selectionbubbles/hover/white/bottomright)"
-                    1="image(x0+7,y0+7,x1,y1, graphics/icons/window_controls/hover/restore)"
-                }
-            }
-       
-        FrameCloseButton {
-            minimum-height=24
-            minimum-width=24
+			FrameRestoreButton:active {
+				render_bg {
+					-3="image(x0-7,y0-7,x0+12,y0+12, graphics/material/selectionbubbles/hover/white/topleft)"
+					-2="image(x0-7,y0+12,x0+12,y0+24, graphics/material/selectionbubbles/hover/white/bottomleft)"
+					-1="image(x0+12,y0-7,x0+31,y0+12, graphics/material/selectionbubbles/hover/white/topright)"
+					0="image(x0+12,y0+12,x0+31,y0+31, graphics/material/selectionbubbles/hover/white/bottomright)"
+					1="image(x0+7,y0+7,x1,y1, graphics/icons/window_controls/hover/restore)"
+				}
+			}
+	
+		FrameCloseButton {
+			minimum-width=24
+			minimum-height=24
 
-            render_bg {
-                1="image(x0+7,y0+7,x1,y1, graphics/icons/window_controls/standard/close)"
-            }
-        }
+			render_bg {
+				1="image(x0+7,y0+7,x1,y1, graphics/icons/window_controls/standard/close)"
+			}
+		}
 
-            FrameCloseButton:hover {
-                render_bg {
-                    1="image(x0+7,y0+7,x1,y1, graphics/icons/window_controls/hover/close)"
-                }
-            }
+			FrameCloseButton:hover {
+				render_bg {
+					1="image(x0+7,y0+7,x1,y1, graphics/icons/window_controls/hover/close)"
+				}
+			}
 
-            FrameCloseButton:active {
-                render_bg {
-                    -3="image(x0-7,y0-7,x0+12,y0+12, graphics/material/selectionbubbles/hover/red/topleft)"
-                    -2="image(x0-7,y0+12,x0+12,y0+24, graphics/material/selectionbubbles/hover/red/bottomleft)"
-                    -1="image(x0+12,y0-7,x0+31,y0+12, graphics/material/selectionbubbles/hover/red/topright)"
-                    0="image(x0+12,y0+12,x0+31,y0+31, graphics/material/selectionbubbles/hover/red/bottomright)"
-                    1="image(x0+7,y0+7,x1,y1, graphics/icons/window_controls/hover/close)"
-                }
-            }
-
-        // Reset the grabber at the bottom of the window to be invisible.
-        FrameBRGripPanel {}
-    
-            FrameBRGripPanel:hover {}
+			FrameCloseButton:active {
+				render_bg {
+					-3="image(x0-7,y0-7,x0+12,y0+12, graphics/material/selectionbubbles/hover/red/topleft)"
+					-2="image(x0-7,y0+12,x0+12,y0+24, graphics/material/selectionbubbles/hover/red/bottomleft)"
+					-1="image(x0+12,y0-7,x0+31,y0+12, graphics/material/selectionbubbles/hover/red/topright)"
+					0="image(x0+12,y0+12,x0+31,y0+31, graphics/material/selectionbubbles/hover/red/bottomright)"
+					1="image(x0+7,y0+7,x1,y1, graphics/icons/window_controls/hover/close)"
+				}
+			}
 	}
 }

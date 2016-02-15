@@ -1,4 +1,4 @@
-colors.styles {
+"colors.styles" {
 	colors {
 		none = "0 0 0 0"
 		customgreyprimary = "56 56 56 255"
@@ -68,7 +68,7 @@ colors.styles {
 		lightgreenA400 = "118 255 3 255"
 		lightgreenA700 = "100 221 23 255"
 
-		lime500  = "205 220 57 255"
+		lime500 = "205 220 57 255"
 		lime50 = "249 251 231 255"
 		lime100 = "240 244 195 255"
 		lime200 = "230 238 156 255"
@@ -170,7 +170,7 @@ colors.styles {
 		custombackgroundnofocustransparent = "232 232 232 85" // ~33% Opacity.
 
 		workshopblue = "27 40 56 255"
-		notificationbg=custombackgroundprimary
+		notificationbg = "custombackgroundprimary"
 
 		Friends.InGameColor = "182 224 32 250"
 		Friends.InGameHoverColor = "203 250 35 250"
@@ -186,31 +186,31 @@ colors.styles {
 		Friends.IgnoredColor = "orange500"
 		Friends.ListHeaderFadeOut = "0 0 0 0"
 
-		ListPanel.TextColor = text_onLightBG
-		ListPanel.BgColor = none  
-		ListPanel.SelectedTextColor = white
-		ListPanel.SelectedBgColor = blue500
-		ListPanel.SelectedOutOfFocusBgColor = blue800
-		ListPanel.DisabledTextColor = text_onDarkBG
-		ListPanel.DisabledSelectedTextColor = disabled_onLightBG
-		ListPanel.EmptyListInfoTextColor = text_onLightBG
+		ListPanel.TextColor = "text_onLightBG"
+		ListPanel.BgColor = "none"
+		ListPanel.SelectedTextColor = "white"
+		ListPanel.SelectedBgColor = "blue500"
+		ListPanel.SelectedOutOfFocusBgColor = "blue800"
+		ListPanel.DisabledTextColor = "text_onDarkBG"
+		ListPanel.DisabledSelectedTextColor = "disabled_onLightBG"
+		ListPanel.EmptyListInfoTextColor = "text_onLightBG"
 
-		TextEntry.IMEBGColor = none
-		TextEntry.IMEFGColor = none
+		TextEntry.IMEBGColor = "none"
+		TextEntry.IMEFGColor = "none"
 
-		PropertySheet.FlashTabColor = orange500
+		PropertySheet.FlashTabColor = "orange500"
 
-		DragDrop.DragFrame = none
-		DragDrop.DropFrame = none
-		WizardPanel.HeaderBGColor = green500
-		ChatDialog.URLColor = blue500
-		ChatOwnTextColor = text_onLightBG
-		ChatDialog.HistoryColor = disabled_onLightBG
-		ChatGradientTop = none
-		ChatGradientBottom = none
+		DragDrop.DragFrame = "none"
+		DragDrop.DropFrame = "none"
+		WizardPanel.HeaderBGColor = "green500"
+		ChatDialog.URLColor = "blue500"
+		ChatOwnTextColor = "text_onLightBG"
+		ChatDialog.HistoryColor = "disabled_onLightBG"
+		ChatGradientTop = "none"
+		ChatGradientBottom = "none"
 
-		AchievementPopup.TitleColor = text_onDarkBG
-		AchievementPopup.DescriptionColor = secondaryText_onDarkBG
-		GiftOnlyInfo.ImagePanelColor = none
+		AchievementPopup.TitleColor = "text_onDarkBG"
+		AchievementPopup.DescriptionColor = "secondaryText_onDarkBG"
+		GiftOnlyInfo.ImagePanelColor = "none"
 	}
 }

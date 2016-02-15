@@ -1,19 +1,19 @@
-web.styles {
+"web.styles" {
 	colors {
-	    HTML.SearchInsetY = 5
-	    HTML.SearchInsetX = 10
-	    HTML.SearchWide = 348
-	    HTML.SearchTall = 38
-	    HTML.SearchAnimationTime = 0.25
+		HTML.SearchInsetY = "5"
+		HTML.SearchInsetX = "10"
+		HTML.SearchWide = "348"
+		HTML.SearchTall = "38"
+		HTML.SearchAnimationTime = "0.25"
 
-	    HTML.IMEInsetY = 5
-	    HTML.IMEInsetX = 10
-	    HTML.IMEWide = 348
-	    HTML.IMETall = 38
-	    HTML.IMEAnimationTime = 0.25
+		HTML.IMEInsetY = "5"
+		HTML.IMEInsetX = "10"
+		HTML.IMEWide = "348"
+		HTML.IMETall = "38"
+		HTML.IMEAnimationTime = "0.25"
 
-	    html.secureurl "126 166 75 255"
-    	html.insecureurl "173 69 72 255"
+		html.secureurl = "green500"
+		html.insecureurl = "red500"
 	}
 
 	styles {
@@ -26,17 +26,17 @@ web.styles {
 		}
 
 		TextEntryURL {
+			bgcolor=custombackgroundprimary
+			selectedbgcolor=blue500
+			textcolor=text_onLightBG
+			selectedtextcolor=white
+			shadowtextcolor=disabled_onLightBG
 			font-family=basefont
 			font-size=18
 			font-weight=400
-			textcolor="text_onLightBG"
-			inset-top=0
 			inset-left=8
-			bgcolor=custombackgroundprimary
-			selectedtextcolor="white"
-			selectedbgcolor="blue500"
-			shadowtextcolor="disabled_onLightBG"
-
+			inset-top=0
+			
 			render {}
 			render_bg {
 				-1="fill(x1,y0,x1+25,y1, custombackgroundprimary)"
@@ -46,234 +46,235 @@ web.styles {
 			TextEntryURL:Hover {}
 
 			TextEntryURL:Disabled {
-				textcolor="disabled_onLightBG"
+				textcolor=disabled_onLightBG
 			}
 		
 		LabelEVCert {
+			bgcolor=lime500
+			textcolor=grey900
 			font-family=basefont
 			font-size=15
-			textcolor="grey900"
 			font-weight=400
-			bgcolor="lime500"
 			inset-left=4
-			inset-right=4
 			inset-top=0
+			inset-right=4
 		}
 		
 		URLStatusImage {}
 		
 		URLBarSecure {
-			textcolor="lightgreen800"
+			textcolor=lightgreen800
 		}
 		
 		URLBarBrokenSecure {
-			textcolor="redA700"
+			textcolor=redA700
 		}
 
 		ReloadButton {
-	      bgcolor=none
-	      inset="-5 -1 0 0"
-	      textcolor=none
-	      image="graphics\icons\refresh\standard\refresh"
+			bgcolor=none
+			textcolor=none
+			inset="-5 -1 0 0"
+			image="graphics\icons\refresh\standard\refresh"
 
-	      render_bg {}	      
-	    }
-	    
-		    ReloadButton:hover {
-		        image="graphics\icons\refresh\hover\refresh"
-		    }
+			render_bg {}
+		}
+		
+			ReloadButton:hover {
+				image="graphics\icons\refresh\hover\refresh"
+			}
 
-		    ReloadButton:active {
-		        image="graphics\icons\refresh\hover\refresh"
+			ReloadButton:active {
+				image="graphics\icons\refresh\hover\refresh"
 
-		        render_bg {
-			        -3="image(x0-6,y0+4,x0+13,y0+23, graphics/material/selectionbubbles/hover/white/topleft)"
-		            -2="image(x0-6,y0+23,x0+13,y0+35, graphics/material/selectionbubbles/hover/white/bottomleft)"
-		            -1="image(x0+13,y0+4,x0+32,y0+23, graphics/material/selectionbubbles/hover/white/topright)"
-		            0="image(x0+13,y0+23,x0+32,y0+42, graphics/material/selectionbubbles/hover/white/bottomright)"
-		        }
-		    }
+				render_bg {
+					-3="image(x0-6,y0+4,x0+13,y0+23, graphics/material/selectionbubbles/hover/white/topleft)"
+					-2="image(x0-6,y0+23,x0+13,y0+35, graphics/material/selectionbubbles/hover/white/bottomleft)"
+					-1="image(x0+13,y0+4,x0+32,y0+23, graphics/material/selectionbubbles/hover/white/topright)"
+					0="image(x0+13,y0+23,x0+32,y0+42, graphics/material/selectionbubbles/hover/white/bottomright)"
+				}
+			}
 
-		    ReloadButton:disabled {
-		        image="graphics\icons\refresh\disabled\refresh"
-		    }
+			ReloadButton:disabled {
+				image="graphics\icons\refresh\disabled\refresh"
+			}
 
-	   	StopButton {
-	        bgcolor=none
-	        inset="-5 -1 0 0"
-	        image="graphics\icons\stopbutton\standard\stop"
+		StopButton {
+			bgcolor=none
+			inset="-5 -1 0 0"
+			image="graphics\icons\stopbutton\standard\stop"
 
-	        render_bg {}
-	    }
-	    
-		    StopButton:hover {
-		        image="graphics\icons\stopbutton\hover\stop"
-		    }
+			render_bg {}
+		}
+		
+			StopButton:hover {
+				image="graphics\icons\stopbutton\hover\stop"
+			}
 
-		    StopButton:active {
-		        image="graphics\icons\stopbutton\hover\stop"
+			StopButton:active {
+				image="graphics\icons\stopbutton\hover\stop"
 
-		        render_bg {
-		            -3="image(x0-6,y0+4,x0+13,y0+23, graphics/material/selectionbubbles/hover/white/topleft)"
-		            -2="image(x0-6,y0+23,x0+13,y0+35, graphics/material/selectionbubbles/hover/white/bottomleft)"
-		            -1="image(x0+13,y0+4,x0+32,y0+23, graphics/material/selectionbubbles/hover/white/topright)"
-		            0="image(x0+13,y0+23,x0+32,y0+42, graphics/material/selectionbubbles/hover/white/bottomright)"
-		        }
-		    }
+				render_bg {
+					-3="image(x0-6,y0+4,x0+13,y0+23, graphics/material/selectionbubbles/hover/white/topleft)"
+					-2="image(x0-6,y0+23,x0+13,y0+35, graphics/material/selectionbubbles/hover/white/bottomleft)"
+					-1="image(x0+13,y0+4,x0+32,y0+23, graphics/material/selectionbubbles/hover/white/topright)"
+					0="image(x0+13,y0+23,x0+32,y0+42, graphics/material/selectionbubbles/hover/white/bottomright)"
+				}
+			}
 
-		    StopButton:disabled {
-		        image="graphics\icons\stopbutton\disabled\stop"
-		    }
+			StopButton:disabled {
+				image="graphics\icons\stopbutton\disabled\stop"
+			}
 
 		BackButton {
-          bgcolor=none
-          inset="0 0 0 0"
-          textcolor=none
-          
-            render_bg {
-                0="image(x0,y0,x1,y1, graphics\icons\backbutton\standard\back)"
-            }
-        }
-        
-            BackButton:hover {
-                render_bg {
-                    0="image(x0,y0,x1,y1, graphics\icons\backbutton\hover\back)"
-                }
-            }
-            
-            BackButton:active {
-                render_bg {
-                    -3="image(x0-7,y0-7,x0+12,y0+12, graphics/material/selectionbubbles/hover/white/topleft)"
-                    -2="image(x0-7,y0+12,x0+12,y0+24, graphics/material/selectionbubbles/hover/white/bottomleft)"
-                    -1="image(x0+12,y0-7,x0+31,y0+12, graphics/material/selectionbubbles/hover/white/topright)"
-                    0="image(x0+12,y0+12,x0+31,y0+31, graphics/material/selectionbubbles/hover/white/bottomright)"
-                    1="image(x0,y0,x1,y1, graphics\icons\backbutton\hover\back)"
-                }
-            }
-            
-            BackButton:disabled {
-              bgcolor=none
-              render_bg {
-                    0="image(x0,y0,x1,y1, graphics\icons\backbutton\disabled\back)"
-                }
-            }
-        
-        ForwardButton {
-          bgcolor=none
-          inset="0 0 0 0"
-          textcolor=none
-          
-            render_bg {
-                0="image(x0,y0,x1,y1, graphics\icons\forwardbutton\standard\forward)"
-            }
-        }
-        
-            ForwardButton:hover {
-                render_bg {
-                    0="image(x0,y0,x1,y1, graphics\icons\forwardbutton\hover\forward)"
-                }
-            }
-            
-            ForwardButton:active {
-                render_bg {
-                    -3="image(x0-7,y0-7,x0+12,y0+12, graphics/material/selectionbubbles/hover/white/topleft)"
-                    -2="image(x0-7,y0+12,x0+12,y0+24, graphics/material/selectionbubbles/hover/white/bottomleft)"
-                    -1="image(x0+12,y0-7,x0+31,y0+12, graphics/material/selectionbubbles/hover/white/topright)"
-                    0="image(x0+12,y0+12,x0+31,y0+31, graphics/material/selectionbubbles/hover/white/bottomright)"
-                    1="image(x0,y0,x1,y1, graphics\icons\forwardbutton\hover\forward)"
-                }
-            }
-            
-            ForwardButton:disabled {
-              bgcolor=none
-              render_bg {
-                    0="image(x0,y0,x1,y1, graphics\icons\forwardbutton\disabled\forward)"
-                }
-            }
+			bgcolor=none
+			textcolor=none
+			inset="0 0 0 0"
+		
+			render_bg {
+				0="image(x0,y0,x1,y1, graphics\icons\backbutton\standard\back)"
+			}
+		}
+		
+			BackButton:hover {
+				render_bg {
+					0="image(x0,y0,x1,y1, graphics\icons\backbutton\hover\back)"
+				}
+			}
+			
+			BackButton:active {
+				render_bg {
+					-3="image(x0-7,y0-7,x0+12,y0+12, graphics/material/selectionbubbles/hover/white/topleft)"
+					-2="image(x0-7,y0+12,x0+12,y0+24, graphics/material/selectionbubbles/hover/white/bottomleft)"
+					-1="image(x0+12,y0-7,x0+31,y0+12, graphics/material/selectionbubbles/hover/white/topright)"
+					0="image(x0+12,y0+12,x0+31,y0+31, graphics/material/selectionbubbles/hover/white/bottomright)"
+					1="image(x0,y0,x1,y1, graphics\icons\backbutton\hover\back)"
+				}
+			}
+			
+			BackButton:disabled {
+				bgcolor=none
 
-        BackButtonSm {
-            bgcolor=none
-            inset="0 0 0 0"
-            textcolor=none
-          
-            render_bg {
-                0="image(x0,y0+12,x1,y1, graphics\icons\backbutton\standard\back)"
-            }
-        }
-        
-            BackButtonSm:hover {
-                render_bg {
-                    0="image(x0,y0+12,x1,y1, graphics\icons\backbutton\hover\back)"
-                }
-            }
-            
-            BackButtonSm:active {
-                render_bg {
-                    -3="image(x0-7,y0+4,x0+12,y0+23, graphics/material/selectionbubbles/hover/white/topleft)"
-                      -2="image(x0-7,y0+23,x0+12,y0+35, graphics/material/selectionbubbles/hover/white/bottomleft)"
-                      -1="image(x0+12,y0+4,x0+31,y0+23, graphics/material/selectionbubbles/hover/white/topright)"
-                      0="image(x0+12,y0+23,x0+31,y0+42, graphics/material/selectionbubbles/hover/white/bottomright)"
-                    1="image(x0,y0+12,x1,y1, graphics\icons\backbutton\hover\back)"
-                }
-            }
-            
-            BackButtonSm:disabled {
-                render_bg {
-                    0="image(x0,y0+12,x1,y1, graphics\icons\backbutton\disabled\back)"
-                }
-            }
-        
-        ForwardButtonSm {
-            bgcolor=none
-            inset="0 0 0 0"
-            textcolor=none
-          
-            render_bg {
-                0="image(x0,y0+12,x1,y1, graphics\icons\forwardbutton\standard\forward)"
-            }
-        }
-        
-            ForwardButtonSm:hover {
-                render_bg {
-                    0="image(x0,y0+12,x1,y1, graphics\icons\forwardbutton\hover\forward)"
-                }
-            }
-            
-            ForwardButtonSm:active {
-                render_bg {
-                    -3="image(x0-7,y0+4,x0+12,y0+23, graphics/material/selectionbubbles/hover/white/topleft)"
-                    -2="image(x0-7,y0+23,x0+12,y0+35, graphics/material/selectionbubbles/hover/white/bottomleft)"
-                    -1="image(x0+12,y0+4,x0+31,y0+23, graphics/material/selectionbubbles/hover/white/topright)"
-                    0="image(x0+12,y0+23,x0+31,y0+42, graphics/material/selectionbubbles/hover/white/bottomright)"
-                    1="image(x0,y0+12,x1,y1, graphics\icons\forwardbutton\hover\forward)"
-                }
-            }
-            
-            ForwardButtonSm:disabled {
-                render_bg {
-                    0="image(x0,y0+12,x1,y1, graphics\icons\forwardbutton\disabled\forward)"
-                }
-            }
+				render_bg {
+					0="image(x0,y0,x1,y1, graphics\icons\backbutton\disabled\back)"
+				}
+			}
+		
+		ForwardButton {
+			textcolor=none
+			bgcolor=none
+			inset="0 0 0 0"
+		
+			render_bg {
+				0="image(x0,y0,x1,y1, graphics\icons\forwardbutton\standard\forward)"
+			}
+		}
+		
+			ForwardButton:hover {
+				render_bg {
+					0="image(x0,y0,x1,y1, graphics\icons\forwardbutton\hover\forward)"
+				}
+			}
+			
+			ForwardButton:active {
+				render_bg {
+					-3="image(x0-7,y0-7,x0+12,y0+12, graphics/material/selectionbubbles/hover/white/topleft)"
+					-2="image(x0-7,y0+12,x0+12,y0+24, graphics/material/selectionbubbles/hover/white/bottomleft)"
+					-1="image(x0+12,y0-7,x0+31,y0+12, graphics/material/selectionbubbles/hover/white/topright)"
+					0="image(x0+12,y0+12,x0+31,y0+31, graphics/material/selectionbubbles/hover/white/bottomright)"
+					1="image(x0,y0,x1,y1, graphics\icons\forwardbutton\hover\forward)"
+				}
+			}
+			
+			ForwardButton:disabled {
+				bgcolor=none
+
+				render_bg {
+					0="image(x0,y0,x1,y1, graphics\icons\forwardbutton\disabled\forward)"
+				}
+			}
+
+		BackButtonSm {
+			bgcolor=none
+			textcolor=none
+			inset="0 0 0 0"
+		
+			render_bg {
+				0="image(x0,y0+12,x1,y1, graphics\icons\backbutton\standard\back)"
+			}
+		}
+		
+			BackButtonSm:hover {
+				render_bg {
+					0="image(x0,y0+12,x1,y1, graphics\icons\backbutton\hover\back)"
+				}
+			}
+			
+			BackButtonSm:active {
+				render_bg {
+					-3="image(x0-7,y0+4,x0+12,y0+23, graphics/material/selectionbubbles/hover/white/topleft)"
+					-2="image(x0-7,y0+23,x0+12,y0+35, graphics/material/selectionbubbles/hover/white/bottomleft)"
+					-1="image(x0+12,y0+4,x0+31,y0+23, graphics/material/selectionbubbles/hover/white/topright)"
+					0="image(x0+12,y0+23,x0+31,y0+42, graphics/material/selectionbubbles/hover/white/bottomright)"
+					1="image(x0,y0+12,x1,y1, graphics\icons\backbutton\hover\back)"
+				}
+			}
+			
+			BackButtonSm:disabled {
+				render_bg {
+					0="image(x0,y0+12,x1,y1, graphics\icons\backbutton\disabled\back)"
+				}
+			}
+		
+		ForwardButtonSm {
+			bgcolor=none
+			textcolor=none
+			inset="0 0 0 0"
+		
+			render_bg {
+				0="image(x0,y0+12,x1,y1, graphics\icons\forwardbutton\standard\forward)"
+			}
+		}
+		
+			ForwardButtonSm:hover {
+				render_bg {
+					0="image(x0,y0+12,x1,y1, graphics\icons\forwardbutton\hover\forward)"
+				}
+			}
+			
+			ForwardButtonSm:active {
+				render_bg {
+					-3="image(x0-7,y0+4,x0+12,y0+23, graphics/material/selectionbubbles/hover/white/topleft)"
+					-2="image(x0-7,y0+23,x0+12,y0+35, graphics/material/selectionbubbles/hover/white/bottomleft)"
+					-1="image(x0+12,y0+4,x0+31,y0+23, graphics/material/selectionbubbles/hover/white/topright)"
+					0="image(x0+12,y0+23,x0+31,y0+42, graphics/material/selectionbubbles/hover/white/bottomright)"
+					1="image(x0,y0+12,x1,y1, graphics\icons\forwardbutton\hover\forward)"
+				}
+			}
+			
+			ForwardButtonSm:disabled {
+				render_bg {
+					0="image(x0,y0+12,x1,y1, graphics\icons\forwardbutton\disabled\forward)"
+				}
+			}
 
 
-        "html-findbar" {
-            font-family=basefont
-            font-size=18
-            font-weight=400
-            textcolor="text_onLightBG"
-            bgcolor=white
-            selectedtextcolor="white"
-            selectedbgcolor="blue500"
-            shadowtextcolor="disabled_onLightBG"
-            minimum-height=45
+		html-findbar {
+			bgcolor=white
+			selectedbgcolor=blue500
+			textcolor=text_onLightBG
+			selectedtextcolor=white
+			shadowtextcolor=disabled_onLightBG
+			font-family=basefont
+			font-size=18
+			font-weight=400
+			minimum-height=45
 
-            render {
-                0="image_tiled(x0,y1,x1,y1+4, graphics/material/shadows/top)"
-            }
-            render_bg {
-                0="fill(x1,y0,x1,y1, white)"
-            }       
-        }
-
+			render {
+				0="image_tiled(x0,y1,x1,y1+4, graphics/material/shadows/top)"
+			}
+			render_bg {
+				0="fill(x1,y0,x1,y1, white)"
+			}
+		}
 	}
 }

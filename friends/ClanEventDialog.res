@@ -5,7 +5,7 @@
 			minimum-height=200
 
 			render {
-    			0="fill(x0,y1-58,x1,y1-57, dividers_onLightBG)"
+				0="fill(x0,y1-58,x1,y1-57, dividers_onLightBG)"
 			}
 		}
 	}
@@ -38,10 +38,10 @@
 		place {
 			control=ViewEventButton,CloseButton
 			region=buttons
-		    align=right
-		    width=92
-		    height=34
-		    margin-top=12
+			align=right
+			width=92
+			height=34
+			margin-top=12
 			margin-right=11
 			spacing=12
 		}

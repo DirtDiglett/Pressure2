@@ -1,5 +1,7 @@
-controls.styles {
+"controls.styles" {
 	styles {
+		CheckButtonList:scrollbar {} 
+
 		downarrow {
 			image="graphics/icon_down_default"
 
@@ -60,7 +62,7 @@ controls.styles {
 					}
 				}
 
-			CheckButton:focus{
+			CheckButton:focus {
 				render_bg {
 					-3="image(x0-10,y0-10,x0+9,y0+9, graphics/material/selectionbubbles/hover/blue/topleft)"
 					-2="image(x0-10,y0+9,x0+9,y0+21, graphics/material/selectionbubbles/hover/blue/bottomleft)"
@@ -105,7 +107,7 @@ controls.styles {
 			font-size=14
 			font-weight=400
 			inset="0 5 0 0"
-			inset-left=0
+			inset-left=0 // This is used as a global override for scenarious that inset alone does not override.
 			image="graphics/controls/checkbox/unchecked_small"
 
 			render_bg {}
@@ -115,14 +117,14 @@ controls.styles {
 				image="graphics/controls/checkbox/checked_small"	
 			}
 
+				ListPanelCheckBox:selected:focus {
+					image="graphics/controls/checkbox/checked_small"
+				}
+
 			ListPanelCheckBox:focus {
 				image="graphics/controls/checkbox/unchecked_small"	
 			}
 
-				ListPanelCheckBox:selected:focus {
-					image="graphics/controls/checkbox/checked_small"
-				}
-	
 			ListPanelCheckBox:disabled {
 				textcolor=disabled_OnLightBG
 				image="graphics/controls/checkbox/unchecked_disabled_small"
@@ -148,13 +150,13 @@ controls.styles {
 				image="graphics/controls/checkbox/unchecked_small"	
 			}
 
-			"ListPanelColumnheader ListPanelCheckBox:focus" {
-				image="graphics/controls/checkbox/unchecked_small"	
-			}
-
 				"ListPanelColumnheader ListPanelCheckBox:selected:focus" {
 					image="graphics/controls/checkbox/checked_small"
 				}
+
+			"ListPanelColumnheader ListPanelCheckBox:focus" {
+				image="graphics/controls/checkbox/unchecked_small"	
+			}
 	
 			"ListPanelColumnheader ListPanelCheckBox:disabled" {
 				textcolor=disabled_OnLightBG
@@ -212,7 +214,6 @@ controls.styles {
 					}
 				}
 
-			
 			RadioButton:disabled {
 				textcolor=disabled_OnLightBG
 
@@ -226,15 +227,13 @@ controls.styles {
 			textcolor=text_onLightBG
 			
 			render {
-				0="fill(x0, y0, x0+1, y1, grey200)" // Left
-				1="fill(x0, y0, x1, y0+1, grey200)" // Top
-				2="fill(x1-1, y0, x1, y1, grey200)" // Right
-				3="fill(x0, y1-1, x1, y1, grey200)" // Bottom
+				0="fill(x0, y0, x0+1, y1, grey200)"
+				1="fill(x0, y0, x1, y0+1, grey200)"
+				2="fill(x1-1, y0, x1, y1, grey200)"
+				3="fill(x0, y1-1, x1, y1, grey200)"
 			} 
 			render_bg {}
-		} 
-		
-		CheckButtonList:scrollbar {} 
+		}
 
 		TextEntry {
 			bgcolor=white
@@ -248,19 +247,19 @@ controls.styles {
 			inset-left=3
 
 			render {
-				0="fill(x0, y0, x0+1, y1, grey200)" // Left
-				1="fill(x0, y0, x1, y0+1, grey200)" // Top
-				2="fill(x1-1, y0, x1, y1, grey200)" // Right
-				3="fill(x0, y1-1, x1, y1, grey200)" // Bottom
+				0="fill(x0, y0, x0+1, y1, grey200)"
+				1="fill(x0, y0, x1, y0+1, grey200)"
+				2="fill(x1-1, y0, x1, y1, grey200)"
+				3="fill(x0, y1-1, x1, y1, grey200)"
 			}
 		}
 				
 			TextEntry:focus {
 				render {
-					0="fill(x0, y0, x0+1, y1, grey400)" // Left
-					1="fill(x0, y0, x1, y0+1, grey400)" // Top
-					2="fill(x1-1, y0, x1, y1, grey400)" // Right
-					3="fill(x0, y1-1, x1, y1, grey400)" // Bottom
+					0="fill(x0, y0, x0+1, y1, grey400)"
+					1="fill(x0, y0, x1, y0+1, grey400)"
+					2="fill(x1-1, y0, x1, y1, grey400)"
+					3="fill(x0, y1-1, x1, y1, grey400)"
 				}
 			}
 
@@ -268,10 +267,10 @@ controls.styles {
 				textcolor=disabled_OnLightBG
 
 				render {
-					0="fill(x0, y0, x0+1, y1, disabled_onLightBG)" // Left
-					1="fill(x0+1, y0, x1-1, y0+1, disabled_onLightBG)" // Top
-					2="fill(x1-1, y0, x1, y1, disabled_onLightBG)" // Right
-					3="fill(x0+1, y1-1, x1-1, y1, disabled_onLightBG)" // Bottom
+					0="fill(x0, y0, x0+1, y1, disabled_onLightBG)"
+					1="fill(x0+1, y0, x1-1, y0+1, disabled_onLightBG)"
+					2="fill(x1-1, y0, x1, y1, disabled_onLightBG)"
+					3="fill(x0+1, y1-1, x1-1, y1, disabled_onLightBG)"
 				}
 			}
 
@@ -284,10 +283,6 @@ controls.styles {
 		TextEntryLarge {
 			font-size=22	
 		}
-
-			TextEntryLarge:focus {}
-			
-			TextEntryLarge:disabled {}
 
 		TextEntryURL {
 			textcolor=blue500
@@ -324,7 +319,7 @@ controls.styles {
 			Button:Hover {
 				textcolor=blue300
 				
-				// We use a render_bg here instead of bgcolor in order to not break every other button that doesn't have a bgcolor defined.
+				// Render_bg instead of bgcolor avoids breaking every other strange button-types (Such as New Tab) that don't have a bgcolor specifically defined.
 				render_bg {
 					0="fill(x0,y0,x1,y1, dividers_onLightBG)"
 				}
@@ -349,7 +344,7 @@ controls.styles {
 							bgcolor=none
 							textcolor=blue500
 
-							// We use a render_bg here instead of bgcolor in order to not break every other button that doesn't have a bgcolor defined.
+							// Render_bg instead of bgcolor avoids breaking every other strange button-types (Such as New Tab) that don't have a bgcolor specifically defined.
 							render_bg {
 								0="fill(x0,y0,x1,y1, dividers_onLightBG)"
 							}
@@ -362,17 +357,15 @@ controls.styles {
 							render_bg {}
 						}
 
-
-
 		ComboBox {
 			textcolor=blue500
 			font-family=mediumfont
 			font-size=16
 			font-style=uppercase
 			font-weight=400
+			minimum-height=29
 			inset-left=7
 			inset-top=1
-			minimum-height=29
 			padding-left=4
 			padding-right=4
 
@@ -386,7 +379,6 @@ controls.styles {
 			ComboBox:hover {
 				textcolor=blue300
 				
-				// We use a render_bg here instead of bgcolor in order to not break every other button that doesn't have a bgcolor defined.
 				render_bg {
 					0="fill(x0,y0,x1,y1, dividers_onLightBG)"
 				}
@@ -420,8 +412,6 @@ controls.styles {
 				render_bg {}
 			}
 
-
-
 		ComboBoxButton {
 			bgcolor=none
 			textcolor=none
@@ -429,25 +419,16 @@ controls.styles {
 			render_bg {}
 		}
 
-
-
-
-
-
-
-
-
-
 		ToggleButton {
 			textcolor=text_OnLightBG
 			font-family=basefont
 			font-size=15
 			font-weight=400
-			inset-left=23
-			minimum-height=18
-			inset-top=0
 			font-style=none
-
+			minimum-height=18
+			inset-left=23
+			inset-top=0
+			
 			render_bg {
 				0="image(x0,y0,x1,y1, graphics/controls/checkbox/unchecked)"
 			}
@@ -494,16 +475,5 @@ controls.styles {
 					0="image(x0,y0,x1,y1, graphics/controls/checkbox/unchecked_disabled)"
 				}
 			}
-
-
-
-
-
-
-
-
-
-
-
 	}
 }

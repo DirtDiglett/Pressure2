@@ -28,9 +28,9 @@
 		place {
 			control=PrevButton,NextButton,OKButton,CancelButton,FinishButton,CloseButton
 			region=buttons
-		    align=right
-		    width=92
-		    height=34
+			align=right
+			width=92
+			height=34
 			margin-top=12
 			margin-right=11
 			spacing=12

@@ -7,7 +7,7 @@
 			bgcolor=customgreysecondary
 
 			render {
-    			0="fill(x0,y1-1,x1,y1, dividers_onLightBG)"
+				0="fill(x0,y1-1,x1,y1, dividers_onLightBG)"
 			}
 
 			render_bg {
@@ -50,11 +50,11 @@
 		place {
 			control=action2
 			region=buttons
-		    align=right
-		    dir=right
-		    width=92
-		    height=34
-		    margin-top=12
+			align=right
+			dir=right
+			width=92
+			height=34
+			margin-top=12
 			margin-right=14
 			spacing=12
 		}
