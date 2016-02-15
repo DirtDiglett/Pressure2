@@ -2,8 +2,6 @@
 	styles {
 		menuButtonStyle {}
 		
-		menuButtonStyle:hover {}
-		
 		Label {
 			textcolor=text_onDarkBG
 			font-family=mediumfont
@@ -18,7 +16,13 @@
 	
 	layout {
 		place {
-			control="AvatarImage"
+			control=MenuButton
+			width=0
+			height=0
+		}
+		
+		place {
+			control=AvatarImage
 			x=0
 			y=1
 			width=40
@@ -38,7 +42,7 @@
 		}
 
 		place {
-			control="LockImage"
+			control=LockImage
 			x=46
 			y=23
 		}
@@ -49,12 +53,6 @@
 			dir=right
 			x=2
 			y=-1
-		}
-
-		place {
-			control=MenuButton
-			width=0
-			height=0
 		}
 	}
 }

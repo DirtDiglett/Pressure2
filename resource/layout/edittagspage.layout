@@ -2,9 +2,9 @@
 	layout {
 		region {
 			name=page
-			height=max
-			width=max
 			x=70
+			width=max
+			height=max
 			margin-right=24
 			margin-bottom=82
 		}
@@ -12,44 +12,44 @@
 		place {
 			control=Description
 			region=page
-			width=max
 			dir=down
-			spacing=2
 			y=-5
+			width=max
+			spacing=2
 		}
 		
 		place {
 			control=TagChecks
 			start=Description
 			dir=down
+			x=-56
 			y=18
 			width=max
 			height=150
 			margin-right=14
-			x=-56
 		}
 			
 		place {
-			control="TextEntry"
-			width=250
-			height=34
+			control=TextEntry
 			start=TagChecks
 			dir=down
 			y=8
+			width=250
+			height=34
 		}
 
 		place {
-			control="AddTagButton"
-			width=max
-			height=34
+			control=AddTagButton
 			start=TextEntry
 			dir=right
 			x=8
+			width=max
+			height=34
 			margin-right=14
 		}
 
 		place {
-			control="HideButton"
+			control=HideButton
 			start=TextEntry
 			dir=down
 			y=8

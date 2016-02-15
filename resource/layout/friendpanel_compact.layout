@@ -5,8 +5,8 @@
 			font-size=16
 			font-style=uppercase
 			padding-left=6
-			padding-right=6
 			padding-top=3
+			padding-right=6
 			padding-bottom=3
 		}
 	
@@ -17,14 +17,13 @@
 	
 	layout {
 		place {
-			control="ClanStatusImage,NameLabel,FriendsNameInstanceLabel,CompactSeparatorLabel,StatusLabel,GameLabel,AcceptLink,IgnoreLink,BlockLink,SuggestedImage,SuggestedLabel,SuggestedInvite,SuggestedIgnore"
-			spacing=4
-		}
-
-		place {
 			control=MenuButton
 			height=0
 		}
-	}
 
+		place {
+			control=ClanStatusImage,NameLabel,FriendsNameInstanceLabel,CompactSeparatorLabel,StatusLabel,GameLabel,AcceptLink,IgnoreLink,BlockLink,SuggestedImage,SuggestedLabel,SuggestedInvite,SuggestedIgnore
+			spacing=4
+		}
+	}
 }

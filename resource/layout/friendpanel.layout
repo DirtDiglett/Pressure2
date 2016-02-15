@@ -1,10 +1,7 @@
 "resource/layout/friendpanel.layout" {
 	styles {
 		CFriendPanel {}
-
 		SelfPanel {}
-		
-			SelfPanel:hover {}
 	
 		namestyle {
 			font-family=mediumfont
@@ -13,8 +10,8 @@
 		}
 		
 		nameInstanceStyle {
-			font-family=basefont
 			textcolor=secondarytext_onLightBG
+			font-family=basefont
 			font-size=16
 		}
 		
@@ -28,21 +25,20 @@
 
 			render {}
 			render_bg {
-				1="image(x0+2, y0+5, x1, y1, graphics/icons/dropdown/standard/down)"
+				0="image(x0+2, y0+5, x1, y1, graphics/icons/dropdown/standard/down)"
 			}
 		}
 
 			menuButtonStyle:hover {
 				render_bg {
-					1="image(x0+2, y0+5, x1, y1, graphics/icons/dropdown/hover/down)"
+					0="image(x0+2, y0+5, x1, y1, graphics/icons/dropdown/hover/down)"
 				}
 			}
 
 			menuButtonStyle:selected {
 				render {
-					1="image(x0-3, y0-1, x1+3, y1+3, graphics/icons/dropdown/selected/down)"
+					0="image(x0-3, y0-1, x1+3, y1+3, graphics/icons/dropdown/selected/down)"
 				}
-
 				render_bg {}
 			}
 
@@ -51,8 +47,8 @@
 			font-size=16
 			font-style=uppercase
 			padding-left=6
-			padding-right=6
 			padding-top=3
+			padding-right=6
 			padding-bottom=3
 		}
 
@@ -61,9 +57,9 @@
 			}
 
 		statusStyle {
+			textcolor=secondarytext_onLightBG
 			font-family=basefont
 			font-size=16
-			textcolor=secondarytext_onLightBG
 		}
 		
 			statusStyle:hover {
@@ -75,8 +71,8 @@
 			font-size=16
 			font-style=uppercase
 			padding-left=6
-			padding-right=6
 			padding-top=3
+			padding-right=6
 			padding-bottom=3
 		}
 	
@@ -85,54 +81,37 @@
 			}
 
 		WebStatusStyle {
-			image="graphics/webOnline"
 			padding-right=4
+			image="graphics/webOnline"
 		}
 
 		WebStatusStyleInGame {
-			image="graphics/webInGame"
 			padding-left=4
+			image="graphics/webInGame"
 		}
 	
 		BigPictureStatusStyle {
-			image="graphics/bpOnline"
 			padding-right=4
+			image="graphics/bpOnline"
 		}
 
 		BigPictureStatusStyleInGame {
-			image="graphics/bpInGame"
 			padding-right=4
+			image="graphics/bpInGame"
 		}
 		
 		MobileStatusStyle {
-			image="graphics/mobileOnline"
 			padding-right=4
+			image="graphics/mobileOnline"
 		}
 		
 		MobileStatusStyleInGame {
-			image="graphics/mobileInGame"
 			padding-right=4
+			image="graphics/mobileInGame"
 		}
 }
 	
 	layout {
-		place {
-			control="AvatarOverlayImage"
-			x=0
-			y=1
-			width=40
-			height=40
-		}
-
-		place {
-			control="AvatarImage"
-			x=4
-			y=5
-			width=32
-			height=32
-		}
-
-
 		place {
 			control=MenuButton
 			width=0
@@ -140,29 +119,45 @@
 		}
 
 		place {
-			control="Clanstatusimage"
-			x=20
-			width=15
-			y=10
+			control=AvatarOverlayImage
+			x=0
+			y=1
+			width=40
+			height=40
 		}
 
 		place {
-			control="ClanStatusImage,NameLabel,FriendsNameInstanceLabel"
+			control=AvatarImage
+			x=4
+			y=5
+			width=32
+			height=32
+		}
+
+		place {
+			control=Clanstatusimage
+			x=20
+			y=10
+			width=15
+		}
+
+		place {
+			control=ClanStatusImage,NameLabel,FriendsNameInstanceLabel
 			x=46
 			y=0
 			spacing=2
 		}
 
 		place {
-			control="BigPictureStatusImage,MobileStatusImage,WebStatusImage,BigPictureStatusImageInGame,MobileStatusImageInGame,WebStatusImageInGame,StatusLabel"
+			control=BigPictureStatusImage,MobileStatusImage,WebStatusImage,BigPictureStatusImageInGame,MobileStatusImageInGame,WebStatusImageInGame,StatusLabel
 			x=46
 			y=13
 		}
 
 		place {
-			control="GameLabel"
-			dir=down
+			control=GameLabel
 			start=statuslabel
+			dir=down
 			y=-3
 		}
 
@@ -174,26 +169,22 @@
 		}
 
 		place {
-			control="IgnoreLink,BlockLink"
+			control=IgnoreLink,BlockLink
 			start=AcceptLink
 			dir=right
 			x=2
 			spacing=2
 		}
 
-		// this control is shown in the invite-to-game dialog in the overlay
+		// This control is shown in the invite-to-game dialog in the overlay
 		place {
-			control="InviteToGameButton"
+			control=InviteToGameButton
 			align=right
 			y=4
-			padding-right=6
 			margin-right=20
 		}
 
-
-
-
-		place { control="SuggestedImage,SuggestedLabel" x=50 y=19 spacing=4 }
+		place { control="	" x=50 y=19 spacing=4 }
 		place { control="SuggestedInvite,SuggestedIgnore" x=50 y=31 spacing=8 }
 	}
 }

@@ -9,20 +9,20 @@
 			margin-bottom=58
 		}
 		region {
-			name="buttons"
+			name=buttons
+			align=bottom
 			width=max
 			height=58
-			align=bottom
 		}
 
 		place {
-			control="PrevButton,NextButton,FinishButton,CancelButton"
-			region="buttons"
-		    width=92
-		    height=34
-		    align=right
-			margin-right=11
+			control=PrevButton,NextButton,FinishButton,CancelButton
+			region=buttons
+			align=right
+			width=92
+			height=34
 			margin-top=12
+			margin-right=11
 			spacing=12
 		}
 	}

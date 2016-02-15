@@ -1,9 +1,10 @@
-
 "resource/layout/cloud_conflict_dialog.layout" {
 	styles {
+		arrows {}
+
 		CSyncConflictDialog {
-    		render {
-    			0="fill(x0,y1-58,x1,y1-57, dividers_onLightBG)"
+			render {
+				0="fill(x0,y1-58,x1,y1-57, dividers_onLightBG)"
 			}
 
 			render_bg {
@@ -15,26 +16,28 @@
 
 		intro {
 			textcolor=text_onLightBG
-			font-size=16
 			font-family=basefont
+			font-size=16
 			font-weight=700
 		}
 
 		bold {
 			textcolor=text_onLightBG
-			font-size=16
 			font-family=mediumfont
+			font-size=16
 		}
 
 		text {
 			textcolor=secondaryText_onLightBG
 		}
-
-		arrows {}
 	}
 	
 	layout {
-		
+		place {
+			control=TextCancelNote,BottomDivider,UploadIcon,DownloadIcon,WarningIcon,LocalFilesIcon,CloudFilesIcon,TopDivider
+			height=0
+		}
+
 		place { 
 			controls=TextIntro
 			x=86
@@ -45,8 +48,8 @@
 
 		place {
 			control=TextCloudFiles
-			y=144
 			x=126
+			y=144
 			width=max
 			margin-right=24
 		}
@@ -71,8 +74,8 @@
 		
 		place {
 			control=TextLocalFiles
-			y=264
 			x=126
+			y=264
 			width=max
 			margin-right=24
 		}
@@ -96,25 +99,20 @@
 		}
 
 		region {
-			name="buttons"
+			name=buttons
+			align=bottom
 			width=max
 			height=58
-			align=bottom
 		}
 
 		place {
-			control="OKButton,CancelButton"
-			region="buttons"
-		    height=34
-		    align=right
-			margin-right=11
+			control=OKButton,CancelButton
+			region=buttons
+			align=right
+			height=34
 			margin-top=12
+			margin-right=11
 			spacing=12
-		}
-
-		place {
-			control=TextCancelNote,BottomDivider,UploadIcon,DownloadIcon,WarningIcon,LocalFilesIcon,CloudFilesIcon,TopDivider
-			height=0
 		}
 	}
 }
