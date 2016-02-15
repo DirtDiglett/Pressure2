@@ -10,10 +10,15 @@
 	}
 
 	colors {
-		Black="0 0 0 0"
+		Black = "0 0 0 0"
 	}
 
 	layout {
+		place {
+			control=LabelHotkey
+			height=0
+		}
+		
 		place {
 			control="ImageAvatar"
 			x=10
@@ -45,14 +50,9 @@
 			dir=down
 			y=4
 			width=max
-			margin-right=12
 			height=max
+			margin-right=12
 			margin-bottom=12
-		}
-
-		place {
-			control="LabelHotkey"
-			height=0
 		}
 	}
 }
