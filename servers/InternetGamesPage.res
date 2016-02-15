@@ -1,29 +1,29 @@
 "servers/InternetGamesPage.res" {
 	styles {
 		ListPanelColumnSelectButton {
-	        inset="0 0 0 0"
+			inset="0 0 0 0"
 
-	        render {
-	          0="image( x0+4, y0+3, x1, y1, graphics/icons/columnselectbutton/standard/columnselectbutton_light )"
-	        }   
+			render {
+			  0="image( x0+4, y0+3, x1, y1, graphics/icons/columnselectbutton/standard/columnselectbutton_light )"
+			}
+			render_bg {
+			  1="fill( x0, y0, x1, y1+1, customgreysecondary )"
+			}
+		}
+		
+		  ListPanelColumnSelectButton:hover {
+				render {
+				  0="image( x0+4, y0+3, x1, y1, graphics/icons/columnselectbutton/hover/columnselectbutton_light )"
+				}
+		  }
 
-	        render_bg {
-	          1="fill( x0, y0, x1, y1+1, customgreysecondary )"
-	        }
-	    }
-	    
-	      ListPanelColumnSelectButton:hover {
-	            render {
-	              0="image( x0+4, y0+3, x1, y1, graphics/icons/columnselectbutton/hover/columnselectbutton_light )"
-	            }  
-	      }
-
-	      ListPanelColumnSelectButton:selected {
-	            render {
-	              0="image( x0+4, y0+3, x1, y1, graphics/icons/columnselectbutton/hover/columnselectbutton_light )"
-	            } 
-	      }
+		  ListPanelColumnSelectButton:selected {
+				render {
+				  0="image( x0+4, y0+3, x1, y1, graphics/icons/columnselectbutton/hover/columnselectbutton_light )"
+				}
+		  }
 	}
+	
 	layout {
 		place {
 			control=gamelist
@@ -33,28 +33,29 @@
 			height=max
 			margin-bottom=57
 		}
+
 		region {
-			name="buttons"
+			name=buttons
+			align=bottom
 			width=max
 			height=58
-			align=bottom
 		}
 
 		place {
-			control="AddServerButton,RefreshQuickButton,RefreshButton,ConnectButton"
-			region="buttons"
-		    height=34
-		    align=right
-			margin-right=11
+			control=AddServerButton,RefreshQuickButton,RefreshButton,ConnectButton
+			region=buttons
+			align=right
+			height=34
 			margin-top=12
+			margin-right=11
 			spacing=12
 		}
 
 		place {
-			control="Filter"
-			region="buttons"
-		    height=18
-		    align=left
+			control=Filter
+			region=buttons
+			align=left
+			height=18
 			margin-left=11
 			margin-top=20
 		}

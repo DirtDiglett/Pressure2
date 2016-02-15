@@ -4,36 +4,41 @@
 			minimum-height=200
 
 			render {
-    			0="fill(x0,y1-58,x1,y1-57, dividers_onLightBG)"
+				0="fill(x0,y1-58,x1,y1-57, dividers_onLightBG)"
 			}
 		}
 
 		PageTab {
-			textcolor=none
 			bgcolor=none
+			textcolor=none
+			minimum-height=0
+
 			render {}
 			render_bg {}
-			minimum-height=0
 		}
 	}
 
-	layout {		
+	layout {
+		place {
+			control=ExampleLabel,SelectedOKButton
+			height=0
+		}
 
 		place {
 			control=InfoLabel
-			y=58
 			x=24
-			margin-right=24
+			y=58
 			width=max
+			margin-right=24
 		}
 
 		place {
 			control=ServerNameText
-			width=max
-			height=34
 			start=InfoLabel
 			dir=down
 			y=8
+			width=max
+			height=34
 			margin-right=24
 		}
 		
@@ -49,26 +54,20 @@
 		}
 
 		region {
-			name="buttons"
+			name=buttons
+			align=bottom
 			width=max
 			height=58
-			align=bottom
 		}
 
 		place {
-			control="TestServersButton,OKButton,CancelButton"
-			region="buttons"
-		    height=34
-		    align=right
-			margin-right=11
+			control=TestServersButton,OKButton,CancelButton
+			region=buttons
+			align=right
+			height=34
 			margin-top=12
+			margin-right=11
 			spacing=12
-		}
-
-
-		place {
-			control="ExampleLabel,SelectedOKButton" 
-			height=0
 		}
 	}
 }

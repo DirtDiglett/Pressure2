@@ -4,8 +4,8 @@
 			minimum-width=724
 			minimum-height=440
 
-    		render {
-    			0="fill(x0,y1-58,x1,y1-57, dividers_onLightBG)"
+			render {
+				0="fill(x0,y1-58,x1,y1-57, dividers_onLightBG)"
 			}
 		}
 	}
@@ -13,11 +13,11 @@
 	layout {
 		region {
 			name=left
-			width=max
-			margin-right=392
-			height=300
 			x=24
 			y=58
+			height=300
+			width=max
+			margin-right=392
 		}
 
 		place {
@@ -37,10 +37,10 @@
 		place {
 			control=serverIPLabel
 			region=left
-			width=108
 			start=serverlabel
 			dir=down
 			y=24
+			width=108
 		}
 
 		place {
@@ -53,9 +53,9 @@
 		place {
 			control=GameLabel
 			region=left
-			width=108
 			start=serverIPLabel
 			dir=down
+			width=108
 			y=24
 		}
 
@@ -70,9 +70,9 @@
 		place {
 			control=MapLabel
 			region=left
-			width=108
 			start=GameLabel
 			dir=down
+			width=108
 			y=24
 		}
 
@@ -87,10 +87,10 @@
 		place {
 			control=PlayersLabel
 			region=left
-			width=108
 			start=MapLabel
 			dir=down
 			y=24
+			width=108
 		}
 
 		place {
@@ -104,10 +104,10 @@
 		place {
 			control=label1
 			region=left
-			width=108
 			start=PlayersLabel
 			dir=down
 			y=24
+			width=108
 		}
 
 		place {
@@ -121,10 +121,10 @@
 		place {
 			control=pingLabel
 			region=left
-			width=108
 			start=label1
 			dir=down
 			y=24
+			width=108
 		}
 
 		place {
@@ -138,11 +138,11 @@
 		region {
 			name=right
 			align=right
+			x=356
+			y=34
 			width=368
 			height=max
 			margin-bottom=57
-			x=356
-			y=34
 		}
 
 		place {
@@ -153,29 +153,29 @@
 		}
 
 		region {
-			name="buttons"
+			name=buttons
+			align=bottom
 			width=max
 			height=58
-			align=bottom
 		}
 
 		place {
 			control=Connect,Refresh,Close
-			region="buttons"
-		    width=92
-		    height=34
-		    align=right
-			margin-right=11
+			region=buttons
+			align=right
+			width=92
+			height=34
 			margin-top=12
+			margin-right=11
 			spacing=12
 		}
 
 		place {
 			control=AutoRetry
-			height=18
 			region=buttons
-			width=120
 			align=left
+			width=120
+			height=18
 			margin-left=20
 			margin-top=20
 		}
@@ -184,9 +184,9 @@
 			control=InfoLabel
 			region=left
 			start=pingLabel
-			width=max
 			dir=down
 			y=24
+			width=max
 		}
 
 		place {
@@ -195,7 +195,6 @@
 			dir=down
 			y=8
 			width=max
-			spacing=18
 		}
 	}
 }
