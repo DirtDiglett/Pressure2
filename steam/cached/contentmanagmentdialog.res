@@ -8,56 +8,55 @@
 	}
 	
 	layout {
+		place {
+			control=Label1
+			height=0
+		}
+
 		region {
-			name="buttons"
+			name=buttons
+			align=bottom
 			width=max
 			height=58
-			align=bottom
 		}
 
 		region {
 			name=page
-			height=max
-			width=max
 			x=24
 			y=63
+			width=max
+			height=max
 			margin-right=24
 		}
 
 		place {
-			control="InstallFoldersList"
+			control=InstallFoldersList
 			region=page
+			dir=down
 			width=max
 			height=max
-			dir=down
 			margin-bottom=82
 		}
 
 		place {
-			control="CloseButton"
-			region="buttons"
-		    width=92
-		    height=34
-		    align=right
-			margin-right=11
+			control=CloseButton
+			region=buttons
+			align=right
+			width=92
+			height=34
 			margin-top=12
+			margin-right=11
 			spacing=12
 		}
 
 		place {
-			control="AddFolderButton,RemoveFolderButton"
-			region="buttons"
-		    //width=92
-		    height=34
-		    align=left
+			control=AddFolderButton,RemoveFolderButton
+			region=buttons
+			align=left
+			height=34
 			margin-left=11
 			margin-top=12
 			spacing=12
-		}
-	
-		place {
-			control="Label1"
-			height=0
 		}
 	}
 }

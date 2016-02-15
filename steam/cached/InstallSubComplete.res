@@ -27,21 +27,21 @@
 
 		place {
 			control=DownloadsPageLink
+			region=page
 			start=InstallCompleteLabel
 			dir=down
 			y=8
 			width=max
-			region=page
 		}
 
 		place {
 			control=AutoLaunchCheck
+			region=page
 			start=DownloadsPageLink
 			dir=down
 			y=18
-			height=18
 			width=max
-			region=page
+			height=18
 		}
 	}
 }

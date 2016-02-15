@@ -1,9 +1,10 @@
 "Steam/Cached/RegisterSubEnterCDKey.res" {
-	styles {
-
-	}
-
 	layout {
+		place {
+			control=Label2
+			height=0
+		}
+
 		place {
 			control=InfoLabel
 			x=66
@@ -13,13 +14,13 @@
 
 		place {
 			control=CDKeyEntry
-			height=34
-			width=max
-			margin-right=14
 			start=InfoLabel
 			dir=down
-			y=18
 			x=-52
+			y=18
+			width=max
+			height=34
+			margin-right=14
 		}
 
 		place {
@@ -27,14 +28,8 @@
 			start=CDKeyEntry
 			dir=down
 			y=8
-			margin-right=14
 			width=max
-		}
-
-
-		place {
-			control=Label2
-			height=0
+			margin-right=14
 		}
 	}
 }

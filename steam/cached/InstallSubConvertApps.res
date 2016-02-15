@@ -27,50 +27,50 @@
 
 		place {
 			control=StatusLabel
+			region=page
 			start=infolabel
 			dir=down
-			y=48
 			x=-68
+			y=48
 			width=max
-			region=page
 		}
 
 		place {
 			control=ProgressBar
+			region=page
 			start=StatusLabel
 			dir=down
 			y=4
 			width=max
 			height=34
-			region=page
 		}
 
 		place {
 			control=DiskProgressLabel
+			region=page
 			start=ProgressBar
 			dir=down
 			y=24
 			width=max
-			region=page
 		}
 
 		place {
 			control=ProgressBarSingleDisk
+			region=page
 			start=DiskProgressLabel
 			dir=down
 			y=4
 			width=max
 			height=34
-			region=page
 		}
 
 		place {
 			control=BytesProgressLabel
+			region=page
 			start=ProgressBarSingleDisk
 			dir=down
 			y=8
 			width=max
-			region=page
 		}
 	}
 }

@@ -30,8 +30,8 @@
 			region=page
 			start=label1
 			dir=down
-			y=18
 			x=-56
+			y=18
 			width=max
 			height=max
 			margin-bottom=38

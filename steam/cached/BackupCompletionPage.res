@@ -30,8 +30,8 @@
 			region=page
 			start=statuslabel
 			dir=down
-			y=24
 			x=-56
+			y=24
 			width=max
 			height=34
 		}

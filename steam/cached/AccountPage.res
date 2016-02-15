@@ -2,61 +2,65 @@
 	styles {
 		CAccountPage {
 			render {
-				0="fill(x0+70,y0+20,x0+396,y0+45, custombackgroundnofocustransparent)" // Account Name
-				1="fill(x0+70,y0+120,x0+396,y0+147, custombackgroundnofocustransparent)" // Email
-				2="fill(x0+70,y0+216,x0+396,y0+247, custombackgroundnofocustransparent)" // VAC
-				3="fill(x0+70,y0+280,x0+396,y0+311, custombackgroundnofocustransparent)" // Security
-				4="fill(x0+70,y0+426,x0+396,y0+451, custombackgroundnofocustransparent)" // Beta
+				0="fill(x0+70,y0+20,x0+396,y0+45, custombackgroundnofocustransparent)"
+				1="fill(x0+70,y0+120,x0+396,y0+147, custombackgroundnofocustransparent)"
+				2="fill(x0+70,y0+216,x0+396,y0+247, custombackgroundnofocustransparent)"
+				3="fill(x0+70,y0+280,x0+396,y0+311, custombackgroundnofocustransparent)"
+				4="fill(x0+70,y0+426,x0+396,y0+451, custombackgroundnofocustransparent)"
 			}
 			render_bg {
 				0="fill(x0+71,y0+113,x1,y0+114, dividers_onLightBG)"
 				1="fill(x0+71,y0+213,x1,y0+214, dividers_onLightBG)"
 				2="fill(x0+71,y0+276,x1,y0+277, dividers_onLightBG)"
-				5="image(x0+26,y0+27,x1,y1, graphics/icons/settings/account)"
-				6="image(x0+26,y0+127,x1,y1, graphics/icons/settings/email)"
-				7="image(x0+26,y0+227,x1,y1, graphics/icons/settings/vac)"
-				8="image(x0+26,y0+290,x1,y1, graphics/icons/settings/security)"
-				10="image(x0+26,y0+431,x1,y1, graphics/icons/settings/beta)"
+				3="image(x0+26,y0+27,x1,y1, graphics/icons/settings/account)"
+				4="image(x0+26,y0+127,x1,y1, graphics/icons/settings/email)"
+				5="image(x0+26,y0+227,x1,y1, graphics/icons/settings/vac)"
+				6="image(x0+26,y0+290,x1,y1, graphics/icons/settings/security)"
+				7="image(x0+26,y0+431,x1,y1, graphics/icons/settings/beta)"
 			}
 		}
 
 		CAccountPage:framefocus {
 			render {
-				0="fill(x0+70,y0+20,x0+396,y0+45, custombackgroundprimarytransparent)" // Account Name
-				1="fill(x0+70,y0+120,x0+396,y0+147, custombackgroundprimarytransparent)" // Email
-				2="fill(x0+70,y0+216,x0+396,y0+247, custombackgroundprimarytransparent)" // VAC
-				3="fill(x0+70,y0+280,x0+396,y0+311, custombackgroundprimarytransparent)" // Security
-				4="fill(x0+70,y0+426,x0+396,y0+451, custombackgroundprimarytransparent)" // Beta
+				0="fill(x0+70,y0+20,x0+396,y0+45, custombackgroundprimarytransparent)"
+				1="fill(x0+70,y0+120,x0+396,y0+147, custombackgroundprimarytransparent)"
+				2="fill(x0+70,y0+216,x0+396,y0+247, custombackgroundprimarytransparent)"
+				3="fill(x0+70,y0+280,x0+396,y0+311, custombackgroundprimarytransparent)"
+				4="fill(x0+70,y0+426,x0+396,y0+451, custombackgroundprimarytransparent)"
 			}
 		}
 	}
 
 	layout {
-		// Account Zone
+		place {
+			control=Label1,Divider2,SecurityIcon,ChangeUserButton,ValidateContactEmailButton
+			height=0
+		}
+
 		region {
 			name=account
-			height=114
-			width=max
 			x=82
 			y=0
+			width=max
+			height=114
 			margin-right=29
 		}
 
 		place {
 			control=LogOutLabel,AccountInfo
 			region=account
-			y=28
 			dir=down
+			y=28
 			spacing=2
 		}
 
 		place {
 			control=ChangePasswordButton
-			width=350
-			height=34
 			start=AccountInfo
 			dir=down
 			y=4
+			width=350
+			height=34
 		}
 
 		place {
@@ -66,111 +70,105 @@
 			x=12
 		}
 
-		// Email Zone
 		region {
 			name=email
-			height=100
-			width=max
 			x=82
 			y=100
+			width=max
+			height=100
 			margin-right=29
 		}
 
 		place {
 			control=ContactEmailLabel,EmailInfo
 			region=email
-			y=28
 			dir=down
+			y=28
 			spacing=2
 		}
 
 		place {
 			control=ChangeContactEmailButton
-			width=350
-			height=34
 			start=EmailInfo
 			dir=down
 			y=4
+			width=350
+			height=34
 		}
 
-		// VAC Zone
 		region {
 			name=vac
-			height=100
-			width=max
 			x=82
 			y=200
+			width=max
+			height=100
 			margin-right=29
 		}
 
 		place {
 			control=Label2,VACStatusLabel
 			region=vac
-			y=28
 			dir=down
+			y=28
 			spacing=2
 		}
 		
-		// Security Zone
 		region {
 			name=security
-			height=127
-			width=max
 			x=82
 			y=263
+			width=max
+			height=127
 			margin-right=29
 		}
 
 		place {
 			control=SecurityStatusLabel,SecurityStatusState
 			region=security
-			y=28
 			dir=down
+			y=28
 			spacing=2
 		}
 
 		place {
 			control=NoPersonalInfoCheck
-			width=max
-			height=18
 			start=SecurityStatusState
 			dir=down
 			y=4
+			width=max
+			height=18
 		}
 
 		place {
 			control=ManageSecurityButton
-			width=350
-			height=34
 			start=NoPersonalInfoCheck
 			dir=down
 			y=4
+			width=350
+			height=34
 		}
 
-		
-
-		// Steam Beta Zone
 		place {
 			control=Divider1
+			y=404
 			width=max
 			height=1
-			y=404
 		}
 
 		region {
 			name=beta
-			height=88
-			width=max
 			x=82
 			y=405
+			width=max
+			height=88
 			margin-right=29
 		}
 
 		place {
 			control=BetaParticipationLabel,CurrentBetaLabel
 			region=beta
-			y=27
 			dir=down
+			y=27
 			spacing=2
 		}
 
@@ -184,16 +182,10 @@
 		place {
 			control=ChangeBetaButton
 			region=beta
-			width=106
-			height=34
 			align=right
 			y=28
-		}
-		
-		//Hidden
-		place {
-			control="Label1,Divider2,SecurityIcon,ChangeUserButton,ValidateContactEmailButton"
-			height=0
+			width=106
+			height=34
 		}
 	}
 }

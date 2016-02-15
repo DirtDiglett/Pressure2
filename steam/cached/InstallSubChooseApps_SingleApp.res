@@ -10,10 +10,10 @@
 	layout {
 		region {
 			name=page
-			x=14
-			y=18
 			width=max
 			height=max
+			x=14
+			y=18
 			margin-right=14
 			margin-bottom=10
 		}
@@ -78,8 +78,8 @@
 			region=page
 			start=DownloadTimeLabel
 			dir=down
-			y=24
 			x=-68
+			y=24
 		}
 
 		place {
@@ -101,6 +101,5 @@
 			height=18
 			spacing=18
 		}
-
 	}
 }

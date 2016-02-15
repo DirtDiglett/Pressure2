@@ -15,10 +15,10 @@
 
 		place {
 			control=entry
-			width=max
-			height=34
 			start=console
 			dir=down
+			width=max
+			height=34
 		}
 	}
 }

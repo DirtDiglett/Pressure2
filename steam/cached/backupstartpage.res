@@ -19,10 +19,10 @@
 		place {
 			control=RadioButtonBackup,RadioButtonRestore
 			start=Label1
-			y=8
-			height=18
-			width=max
 			dir=down
+			y=8
+			width=max
+			height=18
 			spacing=18
 		}
 	}

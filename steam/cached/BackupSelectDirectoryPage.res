@@ -30,33 +30,30 @@
 			region=page
 			start=label2
 			dir=down
-			y=18
 			x=-56
+			y=18
 			width=max
 		}
 
 		place {
 			control=DirectoryLabel
-			width=350
-			height=34
 			start=label1
 			dir=down
 			y=4
+			width=350
+			height=34
 			spacing=4
 		}
 
 		place {
 			control=Button1
-			width=350
-			height=34
 			start=DirectoryLabel
 			dir=down
 			y=4
+			width=350
+			height=34
 			spacing=4
 		}
-
-
-
 
 		place {
 			control=label3

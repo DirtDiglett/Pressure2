@@ -2,29 +2,29 @@
 	layout {
 		place {
 			control=PasswordEntryLabel
+			x=14
+			y=13
 			width=max
 			height=18
-			y=13
-			x=14
 			margin-right=14
 		}
 
 		place {
 			control=PasswordEntry
+			start=PasswordEntryLabel
+			dir=down
+			y=4
 			width=max
 			height=34
-			start=PasswordEntryLabel
-			y=4
-			dir=down
 			margin-right=14
 		}
 
 		place {
 			control=EmailProgress
-			width=max
 			start=PasswordEntry
 			dir=down
 			y=24
+			width=max
 			margin-right=14
 		}
 	}

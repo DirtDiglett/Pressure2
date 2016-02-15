@@ -2,7 +2,7 @@
 	styles {
 		CSubGamePropertiesDLCPage {
 			render_bg {
-				1="image(x0+26,y0+37,x1,y1, graphics/icons/settings/downloads)"
+				0="image(x0+26,y0+37,x1,y1, graphics/icons/settings/downloads)"
 			}
 		}
 	}
@@ -10,39 +10,39 @@
 	layout {
 		region {
 			name=page
-			height=max
-			width=max
 			x=24
 			y=10
+			height=max
+			width=max
 			margin-right=24
 		}
 
 		place {
-			control="DescriptionLabel"
+			control=DescriptionLabel
 			region=page
-			y=24
 			x=58
+			y=24
 			width=max
 		}
 		
 		place {
-			control="ContentList"
+			control=ContentList
 			region=page
+			start=DescriptionLabel
+			dir=down
+			x=-58
+			y=18
 			width=max
 			height=max
 			margin-bottom=87
-			start=DescriptionLabel
-			y=18
-			x=-58
-			dir=down
 		}
 
 		place {
-			control="StoreDLCURL"
+			control=StoreDLCURL
 			start=ContentList
-			width=max
 			dir=down
 			y=18
+			width=max
 		}
 	}
 }

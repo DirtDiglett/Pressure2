@@ -10,27 +10,26 @@
 		place {
 			control=throbber
 			start=infolabel
-			dir=down
 			align=top-center
+			dir=down
 			y=8
 		}
 
 		region {
-			name="buttons"
+			name=buttons
+			align=bottom
 			width=max
 			height=58
-			align=bottom
 		}
 
 		place {
-			control="ForceQuitButton,HideDialogButton"
-			region="buttons"
-		    height=34
-		    align=right
-			margin-right=11
+			control=ForceQuitButton,HideDialogButton
+			region=buttons
+			align=right
+			height=34
 			margin-top=12
+			margin-right=11
 			spacing=12
 		}
 	}
 }
- 

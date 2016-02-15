@@ -11,60 +11,60 @@
 
 	layout {
 		place {
-			control="Label1"
-			y=64
-			x=26
+			control=Divider1,Divider2
+			height=0
+		}
+
+		place {
+			control=Label1
 			dir=down
+			x=26
+			y=64
 			height=18
 		}
 
 		place {
-			controls="ShowOnlineStatus,ShowAwayStatus,ShowBusyStatus,ShowAppearOfflineStatus"
+			controls=ShowOnlineStatus,ShowAwayStatus,ShowBusyStatus,ShowAppearOfflineStatus
 			start=Label1
-			y=9
 			dir=down
+			y=9
 			height=18
 			spacing=18
 		}
 
 		place {
-			control="Label2"
-			y=64
-			x=269
+			control=Label2
 			dir=down
+			x=269
+			y=64
 			height=18
 		}
 
 		place {
-			controls="ShowStore,ShowCommunity,ShowFriendActivity,ShowMyGames,ShowServers,ShowMusicPlayer,ShowNews,ShowSettings,ShowScreenshots,ShowBigPicture,ShowFriends,ShowExit"
+			controls=ShowStore,ShowCommunity,ShowFriendActivity,ShowMyGames,ShowServers,ShowMusicPlayer,ShowNews,ShowSettings,ShowScreenshots,ShowBigPicture,ShowFriends,ShowExit
 			start=Label2
-			y=9
 			dir=down
+			y=9
 			height=18
 			spacing=18
 		}
 
 		region {
-			name="buttons"
+			name=buttons
+			align=bottom
 			width=max
 			height=58
-			align=bottom
 		}
 
 		place {
-			control="OKButton,CancelButton"
-			region="buttons"
-		    width=92
-		    height=34
-		    align=right
-			margin-right=11
+			control=OKButton,CancelButton
+			region=buttons
+			align=right
+			width=92
+			height=34
 			margin-top=12
+			margin-right=11
 			spacing=12
-		}
-		
-		place {
-			control=Divider1,Divider2
-			height=0
 		}
 	}
 }

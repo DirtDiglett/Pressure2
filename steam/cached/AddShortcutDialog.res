@@ -5,7 +5,7 @@
 				0="image_tiled(x0,y0+34,x1,y0+38, graphics\material\shadows\top)"
 			}
 			render_bg {
-    			0="fill(x0,y0+34,x1,y0+44, customgreysecondary)"
+				0="fill(x0,y0+34,x1,y0+44, customgreysecondary)"
 			}
 		}
 
@@ -24,7 +24,11 @@
 	}
 
 	layout {
-
+		place {
+			control=Label1
+			height=0
+		}
+		
 		place {
 			control=AppList
 			y=44
@@ -34,25 +38,20 @@
 		}
 
 		region {
-			name="buttons"
+			name=buttons
+			align=bottom
 			width=max
 			height=58
-			align=bottom
 		}
 
 		place {
-			control="BrowseButton,AddSelectedButton,CloseButton"
-			region="buttons"
-		    height=34
-		    align=right
-			margin-right=11
+			control=BrowseButton,AddSelectedButton,CloseButton
+			region=buttons
+			align=right
+			height=34
 			margin-top=12
+			margin-right=11
 			spacing=12
-		}
-
-		place {
-			control=Label1
-			height=0
 		}
 	}
 }

@@ -30,8 +30,8 @@
 			region=page
 			start=Label3
 			dir=down
-			y=24
 			x=-56
+			y=24
 			width=max
 		}
 
@@ -54,22 +54,20 @@
 		place {
 			control=TotalProgress
 			region=page
-			width=max
-			height=34
 			start=Label2
 			dir=down
 			y=8
+			width=max
+			height=34
 		}
 
 		place {
 			control=Label4
 			region=page
-			width=max
 			start=TotalProgress
 			dir=down
 			y=8
+			width=max
 		}
-
-		
 	}
 }

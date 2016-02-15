@@ -22,34 +22,34 @@
 
 	layout {
 		place {
-			control="GamePropertiesBetas"
+			control=GamePropertiesBetas
 			height=0
 		}
 
 		region {
 			name=page
-			height=max
-			width=max
 			x=82
 			y=10
+			height=max
+			width=max
 			margin-right=24
 		}
 
 		place {
 			control=Label1
 			region=page
-			y=28
 			dir=down
+			y=28
 			spacing=2
 		}
 
 		place {
 			control=UpdateCombo
-			width=350
-			height=34
 			start=Label1
 			dir=down
 			y=4
+			width=350
+			height=34
 		}
 
 		place {
@@ -58,16 +58,15 @@
 			start=UpdateCombo
 			dir=down
 			y=37
-			dir=down
 		}
 
 		place {
 			control=PasswordEntry
-			width=350
-			height=34
 			start=PasswordLabel
 			dir=down
 			y=4
+			width=350
+			height=34
 		}
 
 		place {
@@ -75,18 +74,18 @@
 			region=page
 			start=PasswordEntry
 			dir=right
+			x=4
 			width=max
 			height=34
-			x=4
 		}
 
 		place {
-			control="BetaResultsLabel"
+			control=BetaResultsLabel
 			region=page
 			start=PasswordEntry
+			dir=down
 			y=8
 			width=max
-			dir=down
 		}
 	}
 }

@@ -1,9 +1,10 @@
 "steam/cached/Receipt_CDKey_Success.res" {
-	styles {
-
-	}
-
 	layout {
+		place {
+			control=headline
+			height=0
+		}
+
 		place {
 			control=Details
 			x=66
@@ -15,24 +16,19 @@
 			control=LineItemsList
 			start=details
 			dir=down
-			width=max
-			margin-right=14
-			y=8
 			x=-52
+			y=8
+			width=max
 			height=75
+			margin-right=14
 		}
 
 		place {
 			control=PrintReceipt
-			width=260
 			start=LineItemsList
 			dir=down
 			y=8
-		}
-
-		place {
-			control=headline
-			height=0
+			width=260
 		}
 	}
 }

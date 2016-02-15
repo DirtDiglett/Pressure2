@@ -30,8 +30,8 @@
 			region=page
 			start=label2
 			dir=down
-			y=24
 			x=-68
+			y=24
 			width=max
 		}
 

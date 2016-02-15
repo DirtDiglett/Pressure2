@@ -2,9 +2,9 @@
 	layout {
 		place {
 			control=ChangeContactEmailLabel
-			width=max
-			y=13
 			x=14
+			y=13
+			width=max
 			margin-right=14
 		}
 
@@ -12,19 +12,19 @@
 			control=OldEntryLabel
 			start=ChangeContactEmailLabel
 			dir=down
+			y=24
 			width=max
 			height=18
-			y=24
 			margin-right=14
 		}
 
 		place {
 			control=OldEntry
+			start=OldEntryLabel
+			dir=down
+			y=4
 			width=max
 			height=34
-			start=OldEntryLabel
-			y=4
-			dir=down
 			margin-right=14
 		}
 
@@ -32,19 +32,19 @@
 			control=EmailAddressEntryLabel
 			start=OldEntry
 			dir=down
+			y=24
 			width=max
 			height=18
-			y=24
 			margin-right=14
 		}
 
 		place {
 			control=EmailAddressEntry
+			start=EmailAddressEntryLabel
+			dir=down
+			y=4
 			width=max
 			height=34
-			start=EmailAddressEntryLabel
-			y=4
-			dir=down
 			margin-right=14
 		}
 
@@ -52,9 +52,9 @@
 			control=SMSInfoLabel
 			start=EmailAddressEntry
 			dir=down
+			y=24
 			width=max
 			height=18
-			y=24
 			margin-right=14
 		}
 	}

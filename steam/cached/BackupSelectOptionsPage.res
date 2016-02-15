@@ -30,20 +30,20 @@
 			region=page
 			start=label5
 			dir=down
-			y=24
 			x=-56
+			y=24
 			width=max
 		}
 
 		place {
 			control=ArchiveName
-			width=max
-			height=34
 			start=Label2
 			dir=down
 			y=4
-			spacing=4
+			width=max
+			height=34
 			margin-right=14
+			spacing=4
 		}
 
 		place {
@@ -57,15 +57,14 @@
 
 		place {
 			control=SizeCombo
-			width=max
-			height=34
 			start=Label1
 			dir=down
 			y=4
-			spacing=4
+			width=max
+			height=34
 			margin-right=14
+			spacing=4
 		}
-
 
 		place {
 			control=label4
