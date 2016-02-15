@@ -2,9 +2,9 @@
 	styles {
 		CSubGamePropertiesUpdatesPage {
 			render_bg {
-				1="image(x0+26,y0+37,x1,y1, graphics/icons/update/update)"
-				2="image(x0+26,y0+188,x1,y1, graphics/icons/settings/downloads)"
-				3="image(x0+26,y0+320,x1,y1, graphics/icons/settings/server)"
+				0="image(x0+26,y0+37,x1,y1, graphics/icons/update/update)"
+				1="image(x0+26,y0+188,x1,y1, graphics/icons/settings/downloads)"
+				2="image(x0+26,y0+320,x1,y1, graphics/icons/settings/server)"
 			}
 		}
 
@@ -20,47 +20,47 @@
 	layout {
 		region {
 			name=page
-			height=max
-			width=max
 			x=82
 			y=10
+			width=max
+			height=max
 			margin-right=24
 		}
 
 		place {
 			control=AutoUpdatesLabel
 			region=page
-			y=28
 			dir=down
+			y=28
 			spacing=2
 		}
 
 		place {
 			control=UpdateCombo
-			width=350
-			height=34
 			start=AutoUpdatesLabel
 			dir=down
 			y=4
+			width=350
+			height=34
 		}
 
 		place {
 			control=UpdateInfoText,UpdateNewsURL
 			region=page
 			start=UpdateCombo
-			y=8
 			dir=down
-			spacing=8
+			y=8
 			width=max
+			spacing=8
 		}
 
 		place {
-			control="Divider1"
+			control=Divider1
 			start=UpdateNewsURL
 			dir=down
-			width=max
-			y=18
 			x=-11
+			y=18
+			width=max
 			height=1
 		}
 
@@ -68,19 +68,19 @@
 			control=BackgroundDownloadsLabel
 			region=page
 			start=divider1
-			y=18
 			x=11
+			y=18
 			dir=down
 			spacing=2
 		}
 
 		place {
 			control=BackgroundDownloadsCombo
-			width=350
-			height=34
 			start=BackgroundDownloadsLabel
 			dir=down
 			y=4
+			width=350
+			height=34
 		}
 
 		place {
@@ -89,17 +89,17 @@
 			start=BackgroundDownloadsCombo
 			y=8
 			dir=down
-			spacing=8
 			width=max
+			spacing=8
 		}
 
 		place {
-			control="Divider2"
+			control=Divider2
 			start=BackgroundDownloadsInfo
 			dir=down
-			width=max
-			y=18
 			x=-11
+			y=18
+			width=max
 			height=1
 		}
 
@@ -107,44 +107,44 @@
 			control=CloudLabel
 			region=page
 			start=divider2
-			y=18
-			x=11
 			dir=down
+			x=11
+			y=18
 			spacing=2
 		}
 
 		place {
 			control=CloudInfoLabel
-			width=max
 			start=CloudLabel
 			dir=down
 			y=4
+			width=max
 		}
 
 		place {
 			control=EnableCloudCheck
-			width=max
-			height=18
 			start=CloudInfoLabel
 			dir=down
 			y=8
+			width=max
+			height=18
 		}
 
 		place {
 			control=CloudUsageLabel
-			width=max
 			start=EnableCloudCheck
 			dir=down
-			y=4
 			x=24
+			y=4
+			width=max
 		}
 
 		place {
 			control=CloudEnableLinkLabel
 			start=CloudUsageLabel
 			dir=down
-			y=8
 			x=-24
+			y=8
 		}
 
 		place {

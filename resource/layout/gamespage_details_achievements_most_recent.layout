@@ -1,41 +1,39 @@
 "resource/layout/gamespage_details_achievements_most_recent.layout" {
 	colors {
-		// ProgressBarMarings must be the combined left+right margin of the actual bar from it's container
-		GameDetailsAchievements.ProgressBarMargins "8"
+		// ProgressBarMargins must be the combined left+right margin of the actual bar from it's container
+		GameDetailsAchievements.ProgressBarMargins = "8"
 		
-		Tooltip.Anchor=Parent
-
-		lime500transparent = "205 220 57 66" // lime500 @ 26%
+		Tooltip.Anchor = "Parent"
 	}
 
 	styles {
 		mostrecent {
-			minimum-height="118"
+			minimum-height=118
 		}
 
 		achievementimagebg {
 			bgcolor=none
 			inset="0 0 0 0"
-      		image="graphics/achievementbg_recent"    
+	  		image="graphics/achievementbg_recent"	
 		}
 
 		mostrecent_label {
-			font-size=20
-			textcolor="text_onLightBG"
-			font-weight=400
+			textcolor=text_onLightBG
 			font-family=mediumfont
+			font-size=20
+			font-weight=400
 		}
 		
 		mostrecent_name {
+			textcolor=secondarytext_onLightBG
 			font-size=18
-			textcolor="secondarytext_onLightBG"
 		}
 
 		mostrecent_unlockedsofar {
-			font-size=18
 			textcolor=secondarytext_onLightBG
-			font-weight=400
 			font-family=basefont
+			font-size=18
+			font-weight=400
 		}
 
 		progressbackground {
@@ -46,38 +44,13 @@
 			}
 		}
 
-		progressbarimage
-		{
-			bgcolor="lime500"
-			render_bg = {}
+		progressbarimage {
+			bgcolor=lime500
+			render_bg {}
 		}
 	}
 
 	layout {
-		region {
-			name=body
-			margin=0
-			width=max
-			height=max
-		}
-
-		place {
-			region=body
-			control=mostrecent_label
-			x=76
-			y=55
-			width=max
-		}
-		
-		place {
-			region=body
-			control=mostrecent_name
-			x=76
-			y=75
-			width=max
-		}
-		
-
 		place {
 			region=body
 			control=mostrecent_background
@@ -85,9 +58,32 @@
 			height=0
 		}
 
+		region {
+			name=body
+			width=max
+			height=max
+			margin=0
+		}
+
 		place {
+			control=mostrecent_label
 			region=body
+			x=76
+			y=55
+			width=max
+		}
+		
+		place {
+			control=mostrecent_name
+			region=body
+			x=76
+			y=75
+			width=max
+		}
+
+		place {
 			control=mostrecent_image
+			region=body
 			x=0
 			y=42
 			width=64
@@ -95,16 +91,16 @@
 		}
 
 		place {
-			region=body
 			control=mostrecent_unlockedsofar
+			region=body
 			x=0
 			y=8
 			width=max
 		}
 		
 		place {
-			region=body
 			control=progressbackground
+			region=body
 			y=28
 			width=max
 			height=10
@@ -112,8 +108,8 @@
 		}
 
 		place {
-			region=body
 			control=progressbarimage
+			region=body
 			y=28
 			height=10
 			margin-right=25

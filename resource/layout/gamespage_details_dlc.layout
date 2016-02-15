@@ -1,11 +1,13 @@
 "resource/layout/gamespage_details_dlc.layout" {
 	colors {
-		RichText.InsetX "0"
-		RichText.InsetY "3" 
-		GameDetailsDLC.ExtraVerticalSpacing "240"
+		RichText.InsetX = "0"
+		RichText.InsetY = "3" 
+		GameDetailsDLC.ExtraVerticalSpacing = "240"
 	}
 
 	styles {
+		mostrecenttime {}
+
 		dlcdetails {
 			render_bg {
 				0="fill(x0-20,y0-15,x1,y0-14, dividers_onLightBG)"
@@ -13,24 +15,22 @@
 		}
 
 		bodycontent {
-			textcolor="text_onLightBG"
-			selectedtextcolor="white"	
+			textcolor=text_onLightBG
+			selectedtextcolor=white	
 			font-size=18
 
 			render_bg {}
 		}
 
-		"DLC_Uninstalled" {
-			textcolor="disabled_onLightBG"
-			selectedtextcolor="white"
+		DLC_Uninstalled {
+			textcolor=disabled_onLightBG
+			selectedtextcolor=white
 		}
 
-		"DLC_Installed" {
-			textcolor="text_onLightBG"
-			selectedtextcolor="white"
+		DLC_Installed {
+			textcolor=text_onLightBG
+			selectedtextcolor=white
 		}
-
-		"mostrecenttime" {}
 
 		button {
 			padding-left=8
@@ -49,35 +49,6 @@
 	}
 
 	layout {
-		region {
-			name=body
-			margin=8
-			width=max
-			height=max
-		}
-
-		place {
-			region=body
-			control=headerlabel
-			width=max
-		}
-
-		place {
-			region=body
-			y=40
-			control=latestimage
-			width=257
-			height=120
-		}
-
-		place {
-			region=body
-			y=42
-			control=overlayimage
-			width=257
-			height=120
-		}
-
 		place {
 			control=latesttimelabel
 			region=body
@@ -85,28 +56,57 @@
 			height=0
 		}
 
-		place {
-			region=body
+		region {
+			name=body
 			width=max
-			control=dlclist
+			height=max
+			margin=8
 		}
 
 		place {
+			control=headerlabel
+			region=body
+			width=max
+		}
+
+		place {
+			control=latestimage
+			region=body
+			y=40
+			width=257
+			height=120
+		}
+
+		place {
+			control=overlayimage
 			region=body
 			y=42
+			width=257
+			height=120
+		}
+
+		place {
+			control=dlclist
+			region=body
+			width=max
+		}
+
+		place {
 			control=latestimage,dlclist
+			region=body
 			dir=right
+			y=42
 			height=120
 			spacing=8
 		}
 
 		place {
-			region=body
-			y=175
 			control=moredlc
+			region=body
 			dir=right
-			spacing=10
+			y=175
 			height=34
+			spacing=10
 		}
 	}
 }

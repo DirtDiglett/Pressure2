@@ -1,77 +1,69 @@
 "resource/layout/gamespage_details_achievements_locked.layout" {
 	colors {
-		GameDetailsAchievements.ImageAreaSpacing "7"
-		GameDetailsAchievements.ImageWidth "45"
-		GameDetailsAchievements.LockedImageBorder "3"
-		Tooltip.Anchor=Parent
+		GameDetailsAchievements.ImageAreaSpacing = "7"
+		GameDetailsAchievements.ImageWidth = "45"
+		GameDetailsAchievements.LockedImageBorder = "3"
+		Tooltip.Anchor = "Parent"
 	}
 
 	styles {
+		achievementimagebg {}
+
 		lockedarea { 
-			minimum-height="76"
+			minimum-height=76
 		}
 
 		infolabel {
-
-			font-size=18
 			textcolor=text_onLightBG
+			font-size=18
 		}
 
 		achievementlabelmore {
-			font-family=basefont
+			textcolor=white
+			font-family=mediumfont
 			font-size=16
-			font-style=regular
 			font-weight=600
+			font-style=regular
 			inset-top=2
 			padding-left=18
-			padding-right=18
 			padding-top=10
-			padding-bottom=10
-			textcolor="white"
+			padding-right=18
+			padding-bottom=10			
 			
 			render_bg {
 				0="fill(x0+2,y0+2,x1-2,y1-2, blue500)"
-				
 				1="image(x0-3,y1-2,x0+2,y1+4, graphics\material\buttons\blue\bottomleft)"
 				2="image_tiled(x0+2,y1-2,x1-2,y1+4, graphics/material/buttons/blue/bottommiddle)"
 				3="image(x1-2,y1-2,x1+3,y1+2, graphics/material/buttons/blue/bottomright)"
-				
 				4="image_tiled(x0-3,y0+2,x0+2,y1-2, graphics/material/buttons/blue/leftmiddle)"
 				5="image_tiled(x1-2,y0+2,x1+3,y1-2, graphics/material/buttons/blue/rightmiddle)"
-				
 				6="image(x0-3,y0-2,x0+2,y0+2, graphics/material/buttons/blue/topleft)"
 				7="image_tiled(x0+2,y0-2,x1-2,y0+2, graphics/material/buttons/blue/topmiddle)"
 				8="image(x1-2,y0-2,x1+3,y0+2, graphics/material/buttons/blue/topright)"
 			}
-    	}   
-    		   
+		}   
+			   
 			achievementlabelmore:hover {
 				render_bg {
 					0="fill(x0+2,y0+2,x1-2,y1-2, blue400)"
-					
 					1="image(x0-3,y1-2,x0+2,y1+4, graphics\material\buttons\blue\hover/bottomleft)"
 					2="image_tiled(x0+2,y1-2,x1-2,y1+4, graphics/material/buttons/blue/hover/bottommiddle)"
 					3="image(x1-2,y1-2,x1+3,y1+2, graphics/material/buttons/blue/hover/bottomright)"
-					
 					4="image_tiled(x0-3,y0+2,x0+2,y1-2, graphics/material/buttons/blue/hover/leftmiddle)"
 					5="image_tiled(x1-2,y0+2,x1+3,y1-2, graphics/material/buttons/blue/hover/rightmiddle)"
-					
 					6="image(x0-3,y0-2,x0+2,y0+2, graphics/material/buttons/blue/hover/topleft)"
 					7="image_tiled(x0+2,y0-2,x1-2,y0+2, graphics/material/buttons/blue/hover/topmiddle)"
 					8="image(x1-2,y0-2,x1+3,y0+2, graphics/material/buttons/blue/hover/topright)"
 				}
-    		}     
-
-		achievementimagebg {}
-	
+			}	 
 	}
 
 	layout {
 		region {
 			name=body
-			margin=0
 			width=max
 			height=max
+			margin=0
 		}
 
 		region {
@@ -84,8 +76,8 @@
 		}
 		
 		place {
-			region=body
 			control=imageexplanation
+			region=body
 			y=0
 		}
 
@@ -102,8 +94,8 @@
 		}
 			
 		place { 
-			region=images 
 			control=*achievementimage,achievementlabelmore
+			region=images
 			dir=right
 			spacing=4
 		}

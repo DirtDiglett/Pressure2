@@ -7,8 +7,8 @@
 				2="fill(x0+70,y0+138,x1,y0+163, custombackgroundnofocustransparent)"
 			}
 			render_bg {
-				1="image(x0+26,y0+37,x1,y1, resource/icon_info)"
-				2="image(x0+26,y0+215,x1,y1, graphics/icons/settings/notifications)"
+				0="image(x0+26,y0+37,x1,y1, resource/icon_info)"
+				1="image(x0+26,y0+215,x1,y1, graphics/icons/settings/notifications)"
 			}
 		}
 
@@ -19,27 +19,32 @@
 					2="fill(x0+70,y0+138,x1,y0+163, custombackgroundprimarytransparent)"
 				}
 				render_bg {
-					1="image(x0+26,y0+37,x1,y1, resource/icon_info)"
-					2="image(x0+26,y0+215,x1,y1, graphics/icons/settings/notifications)"
+					0="image(x0+26,y0+37,x1,y1, resource/icon_info)"
+					1="image(x0+26,y0+215,x1,y1, graphics/icons/settings/notifications)"
 				}
 			}
 	}
 	
 	layout {
+		place {
+			control=ExternalSignupLabel,ExternalSignupButton
+			height=0
+		}
+
 		region {
 			name=page
-			height=max
-			width=max
 			x=82
 			y=10
+			width=max
+			height=max
 			margin-right=24
 		}
 
 		place {
 			control=HomepageLabelName,HomepageLabel
 			region=page
-			y=28
 			dir=down
+			y=28
 			spacing=4
 		}
 
@@ -47,8 +52,8 @@
 			control=DeveloperLabelName,DeveloperLabel
 			region=page
 			start=HomePageLabel
-			y=18
 			dir=down
+			y=18
 			spacing=4
 		}
 
@@ -56,8 +61,8 @@
 			control=ManualLabelName,ManualLabel,NoManualLabel
 			region=page
 			start=DeveloperLabel
-			y=18
 			dir=down
+			y=18
 			spacing=4
 		}
 		
@@ -65,36 +70,31 @@
 			control=Divider1
 			start=NoManualLabel
 			dir=down
-			y=18
 			x=-11
-			height=1
+			y=18
 			width=max
+			height=1
 		}
 		
 		place {
 			control=EnableOverlayCheck
 			region=page
 			start=divider1
-			y=18
-			x=11
 			dir=down
+			x=11
+			y=18
 			height=18
 			spacing=2
 		}
 
 		place {
 			control=LaunchOptionsButton,CreateDesktopShortcutButton
-			width=350
-			height=34
 			start=EnableOverlayCheck
 			dir=down
 			y=8
+			width=350
+			height=34
 			spacing=4
-		}
-
-		place {
-			control=ExternalSignupLabel,ExternalSignupButton
-			height=0
 		}
 	}
 }
