@@ -10,31 +10,30 @@
 
 		place {
 			control=NicknameEdit
-			width=max
 			start=Details
-			dir=down
+			dir=down			
 			y=8
+			width=max
 			height=34
 			margin-right=24
 		}
 
 		region {
-			name="buttons"
+			name=buttons
+			align=bottom
 			width=max
 			height=58
-			align=bottom
 		}
 
 		place {
-			control="PrevButton,NextButton,OKButton,CancelButton,FinishButton,CloseButton"
-			region="buttons"
+			control=PrevButton,NextButton,OKButton,CancelButton,FinishButton,CloseButton
+			region=buttons
+		    align=right
 		    width=92
 		    height=34
-		    align=right
-			margin-right=11
 			margin-top=12
+			margin-right=11
 			spacing=12
 		}
 	}
 }
-

@@ -13,36 +13,36 @@
 	layout {
 		place {
 			control=ImageAvatar
-			y=58
 			x=24
+			y=58
 		}
 
 		place {
 			control=LabelGroup,LabelInfo,LabelEventTitle
+			dir=down
 			x=70
 			y=58
-			dir=down
 			width=max
 			margin-right=24
-			spacing=4
 			margin-bottom=82
+			spacing=4
 		}
 
 		region {
-			name="buttons"
+			name=buttons
+			align=bottom
 			width=max
 			height=58
-			align=bottom
 		}
 
 		place {
-			control="ViewEventButton,CloseButton"
-			region="buttons"
+			control=ViewEventButton,CloseButton
+			region=buttons
+		    align=right
 		    width=92
 		    height=34
-		    align=right
+		    margin-top=12
 			margin-right=11
-			margin-top=12
 			spacing=12
 		}
 	}

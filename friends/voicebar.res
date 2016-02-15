@@ -1,5 +1,8 @@
 "friends/voicebar.res" {
 	styles {
+		settingsstyle {}
+		voice_image {}
+
 		CVoiceBar {
 			bgcolor=customgreysecondary
 
@@ -12,25 +15,22 @@
 			}
 		}
 
-		settingsstyle {}
-		
 		status_label {
+			textcolor=text_onDarkBG
 			font-family=mediumfont
 			font-size=15
-			textcolor=text_onDarkBG
 		}
-
-		voice_image {}
 	}
 	
 	layout {
 		place {
 			control=VoiceImage,micvolume,speakervolume
+			dir=right
 			x=53
 			y=18
 			spacing=16
-			dir=right
 		}
+
 		place {
 			control=StatusLabel
 			x=53
@@ -38,26 +38,25 @@
 			width=max
 			margin-right=144
 			spacing=16
-			dir=right
 		}
 
 		region {
-			name="buttons"
+			name=buttons
+			align=bottom
 			width=max
 			height=58
-			align=bottom
 		}
 
 		place {
-			control="action2"
-			region="buttons"
+			control=action2
+			region=buttons
+		    align=right
+		    dir=right
 		    width=92
 		    height=34
-		    align=right
+		    margin-top=12
 			margin-right=14
-			margin-top=12
 			spacing=12
-			dir=right
 		}
 	}
 }

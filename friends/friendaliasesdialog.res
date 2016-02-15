@@ -20,37 +20,37 @@
 			control=Date1,Date2,Date3,Date4,Date5,Date6,Date7,Date8,Date9,Date10
 			start=caption
 			dir=down
-			spacing=4
 			align=left
 			y=24
+			spacing=4
 		}
 
 		place {
 			control=Label1,Label2,Label3,Label4,Label5,Label6,Label7,Label8,Label9,Label10
 			start=caption
 			dir=down
+			x=104
+			y=24
 			margin-right=24
 			spacing=4
-			y=24
-			x=104
 		}
 
 
 		region {
-			name="buttons"
+			name=buttons
+			align=bottom
 			width=max
 			height=58
-			align=bottom
 		}
 
 		place {
 			control=CloseButton
-			region="buttons"
+			region=buttons
+		    align=right
 		    width=92
 		    height=34
-		    align=right
+		    margin-top=12
 			margin-right=11
-			margin-top=12
 			spacing=12
 		}
 	}

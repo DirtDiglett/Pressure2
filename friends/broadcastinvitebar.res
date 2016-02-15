@@ -46,34 +46,28 @@
 	}
 	layout {
 		place {
-			control="InviteImage,InviteSentImage"
+			control=InviteImage,InviteSentImage,ClickHereLabel
 			width=0
 			height=0
 		}
 
 		place {
-			control="InviteLabel,GameLabel,InviteSentLabel,WaitingForResponseLabel"
-			width=max
+			control=InviteLabel,GameLabel,InviteSentLabel,WaitingForResponseLabel
 			dir=down
-			spacing=4
+			width=max
+			margin-left=72
 			margin-top=20
 			margin-right=45
-			margin-left=72
+			spacing=4
 		}
 
 		place {
-			control="CloseButton"
+			control=CloseButton
 			align=right
+			y=26
 			width=20
 			height=20
 			margin-right=14
-			y=26
-		}
-
-		place {
-			control="ClickHereLabel"
-			width=0
-			height=0
 		}
 	}
 }

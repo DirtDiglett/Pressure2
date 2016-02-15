@@ -2,6 +2,7 @@
 	styles {
 		Frame {
 			minimum-height=230
+
 			render {
     			0="fill(x0,y1-58,x1,y1-57, dividers_onLightBG)"
 			}
@@ -14,29 +15,30 @@
 	layout {
 		place {
 			control=Label3,Label4
+			dir=down
 			x=80
 			y=58
 			width=max
 			margin-right=24
-			dir=down
 			spacing=8
 		}
 
 		region {
-			name="buttons"
+			name=buttons
+			align=bottom
 			width=max
 			height=58
-			align=bottom
+			
 		}
 
 		place {
-			control="ContinueButton"
-			region="buttons"
+			control=ContinueButton
+			region=buttons
+			align=right
 			width=92
 		    height=34
-		    align=right
-			margin-right=11
 			margin-top=12
+			margin-right=11
 			spacing=12
 		}
 	}

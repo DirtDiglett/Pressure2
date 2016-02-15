@@ -2,25 +2,25 @@
 	layout {
 		place {
 			control=PlayersList
+			y=10
 			width=max
 			height=max
 			margin-bottom=57
-			y=10
 		}
 
 		region {
 			name=buttons
-			height=58
 			align=bottom
 			width=max
+			height=58
 		}
 		
 		place {
-			control="AddFriendButton"
-			region="buttons"
+			control=AddFriendButton
+			region=buttons
+		    align=left
 		    width=140
 		    height=34
-		    align=left
 			margin-left=11
 			margin-top=12
 			spacing=12

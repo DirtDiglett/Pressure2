@@ -47,28 +47,28 @@
 	
 	layout {
 		place {
-			control="InviteImage,InviteSentImage"
+			control=InviteImage,InviteSentImage
 			width=0
 			height=0
 		}
 		
 		place {
-			control="InviteLabel,ClickHereLabel,InviteSentLabel,WaitingForResponseLabel"
-			width=max
+			control=InviteLabel,ClickHereLabel,InviteSentLabel,WaitingForResponseLabel
 			dir=down
-			spacing=4
+			width=max
+			margin-left=72
 			margin-top=20
 			margin-right=45
-			margin-left=72
+			spacing=4
 		}
 		
 		place {
-			control="CloseButton"
+			control=CloseButton
 			align=right
+			y=26
 			width=20
 			height=20
 			margin-right=14
-			y=26
 		}
 	}
 }
