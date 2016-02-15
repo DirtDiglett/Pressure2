@@ -8,12 +8,13 @@
 			height=max
 			margin-right=14
 		}
+
 		place {
 			control=HelpImage
 			x=142
 			y=188
-			height=max
 			width=max
+			height=max
 		}
 	}
 }

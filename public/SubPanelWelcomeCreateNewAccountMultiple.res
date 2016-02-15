@@ -1,9 +1,9 @@
 "Public/SubPanelWelcomeCreateNewAccountMultiple.res" {
 	styles {
 		Important {			
+			textcolor=text_onLightBG
 			font-family=mediumfont
 			font-size=15
-			textcolor=text_onLightBG
 		}	
 	}	
 

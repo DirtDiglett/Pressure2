@@ -11,10 +11,10 @@
 		place {
 			control=emaillabel1
 			start=nameinfo
+			dir=down
 			y=18
 			width=max
 			margin-right=14
-			dir=down
 		}
 
 		place {
@@ -30,19 +30,19 @@
 		place {
 			control=validaccountlabel
 			start=EmailEntry
+			dir=down
 			y=4
 			width=max
 			margin-right=14
-			dir=down
 		}
 
 		place {
 			control=Password1
 			start=validaccountlabel
+			dir=down
 			y=18
 			width=max
 			margin-right=14
-			dir=down
 		}
 
 		place {

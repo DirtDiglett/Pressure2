@@ -8,10 +8,15 @@
 
 	layout {
 		place {
+			control=BigLogo
+			height=0
+		}
+
+		place {
 			control=infolabel
+			align=top
 			x=14
 			y=93
-			align=top
 		}
 
 		place {
@@ -20,20 +25,15 @@
 			dir=down
 			y=24
 			width=350
-			spacing=12
 			height=34
+			spacing=12
 		}
 
 		place {
 			control=ValveLogo
-			x=4
 			align=bottom
+			x=4
 			margin-bottom=0
-		}
-
-		place {
-			control=BigLogo
-			height=0
 		}
 	}
 }

@@ -7,7 +7,7 @@
 
 	layout {
 		place {
-			control="SSA"
+			control=SSA
 			width=max
 			height=max
 			margin-top=34
@@ -15,29 +15,29 @@
 		}
 
 		region {
-			name="buttons"
+			name=buttons
+			align=bottom
 			width=max
 			height=58
-			align=bottom
 		}
 
 		place {
-			control="AgreeButton,CancelButton"
-			region="buttons"
-		    height=34
-		    align=right
-			margin-right=11
+			control=AgreeButton,CancelButton
+			region=buttons
+			align=right
+			height=34
 			margin-top=12
+			margin-right=11
 			spacing=12
 		}
 
 		place {
-			control="PrintLink"
-			region="buttons"
-		    height=34
-		    align=left
-			margin-left=11
+			control=PrintLink
+			region=buttons
+			align=left
+			height=34
 			margin-top=12
+			margin-left=11
 			spacing=12
 		}
 	}

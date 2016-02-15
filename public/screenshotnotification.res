@@ -1,22 +1,22 @@
 "public/ScreenshotNotification.res" {
 	styles {
-    	Notification {
-				render_bg {}
-	    }
+		Notification {
+			render_bg {}
+		}
 	}
 
 	layout {
 		place {
-			control="LabelGame,LabelInfo"
+			control=LabelGame,LabelInfo
 			dir=down
 			x=109
 			y=19
-			height=max
 			width=max
+			height=max
 		}
 
 		place {
-			control="ScreenshotImage"
+			control=ScreenshotImage
 			x=13
 			height=max
 		}

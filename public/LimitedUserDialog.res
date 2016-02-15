@@ -1,37 +1,38 @@
 "public/LimitedUserDialog.res" {
 	styles {
 		CLimitedUserDialog {
-    		render {
-    			0="fill(x0,y1-58,x1,y1-57, dividers_onLightBG)"
+			render {
+				0="fill(x0,y1-58,x1,y1-57, dividers_onLightBG)"
 			}
 		}
 	}
+
 	layout {
 		place {
 			control=label1,LimitedFeature,Label3,URLLabel1
+			dir=down
 			x=24
 			y=58
-			margin-right=24
 			width=max
-			dir=down
+			margin-right=24
 			spacing=8
 		}
 
 		region {
-			name="buttons"
+			name=buttons
+			align=bottom
 			width=max
 			height=58
-			align=bottom
 		}
 
 		place {
-			control="OKButton,CancelButton,CloseButton"
-			region="buttons"
-		    width=92
-		    height=34
-		    align=right
-			margin-right=11
+			control=OKButton,CancelButton,CloseButton
+			region=buttons
+			align=right
+			width=92
+			height=34
 			margin-top=12
+			margin-right=11
 			spacing=12
 		}
 	}

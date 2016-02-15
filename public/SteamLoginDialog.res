@@ -1,5 +1,8 @@
 "Public/SteamLoginDialog.res" {
 	styles {
+		loginprocess_style_head {}
+		loginprocess_style_body {}
+
 		FrameTitle {
 			render {}
 			render_bg {}
@@ -14,112 +17,108 @@
 			}
 		}
 
-		loginprocess_style_head {}
-
-		loginprocess_style_body {}
-
 		loginerror_style_body {
-			textcolor=white
 			bgcolor=red500
+			textcolor=white
 			padding=8
 		}
 	}
 
 	layout {
 		place {
-			control="frame_title"
+			control=frame_title,ImagePanelLogo,Label4,Label2,CancelButton
 			visible=0
 			height=0
 		}
 
 		place {
-			control="frame_captiongrip"
-			margin=0
+			control=frame_captiongrip
 			width=max
 			height=113
+			margin=0
 		}
 
 
 		place {
 			control=LoginErrorText
+			x=24
 			y=133
 			width=max
 			margin-right=24
-			x=24
 		}
 
 		place {
 			control=UserNameLabel
+			start=LoginErrorText
+			dir=down
+			y=4
 			width=95
 			height=34
-			start=LoginErrorText
-			y=4
-			dir=down
 		}
 
 		place {
 			control=UserNameEdit
 			start=UserNameLabel
-			width=max
-			x=8
-			margin-right=24
 			dir=right
+			x=8
+			width=max
 			height=34
+			margin-right=24
 		}
 
 		place {
 			control=PasswordLabel
 			start=UserNameLabel
-			width=95
-			y=24
-			height=34
 			dir=down
+			y=24
+			width=95
+			height=34
 		}
 
 		place {
 			control=PasswordEdit
 			start=PasswordLabel
-			width=max
-			x=8
-			margin-right=24
 			dir=right
+			x=8
+			width=max
 			height=34
+			margin-right=24
 		}
 
 		place {
 			control=SavePasswordCheck
 			start=PasswordEdit
-			width=max
-			margin-right=24
-			y=8
-			height=18
 			dir=down
+			y=8
+			width=max
+			height=18
+			margin-right=24
 		}
 		
 
 		region {
-			name="buttons"
+			name=buttons
+			align=bottom
 			width=max
 			height=163
-			align=bottom
 		}
 
 		place {
-			control="LoginButton"
-			region="buttons"
-		    width=92
-		    height=34
-		    align=right
-			margin-right=11
+			control=LoginButton
+			region=buttons
+			align=right
+			width=92
+			height=34
 			margin-top=12
+			margin-right=11
 			spacing=12
 		}
 
 		region {
-			name="buttons2"
+			name=buttons2
+			align=bottom
 			width=max
 			height=105
-			align=bottom
 		}
 
 		place {
@@ -130,20 +129,15 @@
 		}
 
 		place {
-			control="CreateNewAccountButton,LostPasswordButton"
-			region="buttons2"
-		    width=250
-		    height=34
-		    align=left
+			control=CreateNewAccountButton,LostPasswordButton
+			region=buttons2
+			align=left
+			dir=down
+			width=250
+			height=34
 			margin-left=11
 			margin-top=12
 			spacing=12
-			dir=down
-		}
-
-		place {
-			control=ImagePanelLogo,Label4,Label2,CancelButton
-			height=0
 		}
 	}
 }

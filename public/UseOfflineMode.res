@@ -2,7 +2,7 @@
 	styles {
 		CUseOfflineModeDialog {
 			render {
-    			0="fill(x0,y1-58,x1,y1-57, dividers_onLightBG)"
+				0="fill(x0,y1-58,x1,y1-57, dividers_onLightBG)"
 			}
 
 			render_bg {
@@ -13,35 +13,35 @@
 
 	layout {
 		place {
+			control=QuitButton
+			height=0
+		}
+
+		place {
 			control=Label1,Label3,URLLabel1
+			dir=down
 			x=86
 			y=58
-			margin-right=24
 			width=max
-			dir=down
+			margin-right=24
 			spacing=8
 		}
 
 		region {
-			name="buttons"
+			name=buttons
+			align=bottom
 			width=max
 			height=58
-			align=bottom
 		}
 
 		place {
-			control="RetryButton,OfflineModeButton"
-			region="buttons"
-		    height=34
-		    align=right
-			margin-right=11
+			control=RetryButton,OfflineModeButton
+			region=buttons
+			align=right
+			height=34
 			margin-top=12
+			margin-right=11
 			spacing=12
-		}
-
-		place {
-			control=QuitButton
-			height=0
 		}
 	}
 }
