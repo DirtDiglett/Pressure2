@@ -16,31 +16,13 @@
 		}
 		
 		menuButtonStyle {
-			minimum-width=14
-			minimum-height=14
-
 			// Hack to hide the down arrow and replace it with the proper one.
 			// There appears to be no other reasonable way to do this, as it will ignore any image defined here.
 			inset="-50 0 0 0"
 
 			render {}
-			render_bg {
-				0="image(x0+2, y0+5, x1, y1, graphics/icons/dropdown/standard/down)"
-			}
+			render_bg {}
 		}
-
-			menuButtonStyle:hover {
-				render_bg {
-					0="image(x0+2, y0+5, x1, y1, graphics/icons/dropdown/hover/down)"
-				}
-			}
-
-			menuButtonStyle:selected {
-				render {
-					0="image(x0-3, y0-1, x1+3, y1+3, graphics/icons/dropdown/selected/down)"
-				}
-				render_bg {}
-			}
 
 		controlPanelLinkStyle {
 			font-family=mediumfont
@@ -120,14 +102,13 @@
 	layout {
 		place {
 			control=MenuButton
-			width=0
 			height=0
 		}
 
 		place {
 			control=AvatarOverlayImage
 			x=0
-			y=1
+			y=5
 			width=40
 			height=40
 		}
@@ -135,7 +116,7 @@
 		place {
 			control=AvatarImage
 			x=4
-			y=5
+			y=9
 			width=32
 			height=32
 		}
@@ -143,21 +124,21 @@
 		place {
 			control=Clanstatusimage
 			x=20
-			y=10
+			y=14
 			width=15
 		}
 
 		place {
 			control=ClanStatusImage,NameLabel,FriendsNameInstanceLabel
 			x=46
-			y=0
+			y=4
 			spacing=2
 		}
 
 		place {
 			control=BigPictureStatusImage,MobileStatusImage,WebStatusImage,BigPictureStatusImageInGame,MobileStatusImageInGame,WebStatusImageInGame,StatusLabel
 			x=46
-			y=13
+			y=17
 		}
 
 		place {
@@ -171,7 +152,7 @@
 			control=AcceptLink,ControlPanelLink
 			dir=down
 			x=41
-			y=18
+			y=22
 		}
 
 		place {
@@ -186,11 +167,10 @@
 		place {
 			control=InviteToGameButton
 			align=right
-			y=4
+			y=8
 			margin-right=20
 		}
 
-		place { control="	" x=50 y=19 spacing=4 }
 		place { control="SuggestedInvite,SuggestedIgnore" x=50 y=31 spacing=8 }
 	}
 }

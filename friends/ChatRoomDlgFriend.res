@@ -165,13 +165,13 @@
 		}
 
 		place { 
-			control="TitlePanel"
+			control=TitlePanel
 			region=container
-			height=50
+			height=49
 			width=max
 			margin-right=6
 			end-right=ChatActionsButton
-			y=2
+			margin-top=-2
 			x=3
 		}
 
