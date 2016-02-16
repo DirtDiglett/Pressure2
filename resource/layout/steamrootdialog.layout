@@ -2,45 +2,36 @@
 	styles {
 		AccountBalanceSeparatorStyle {}
 		AddGameButton {}
-		AddGameButton:hover {}
 		FullscreenButton {}
 		VRButton {}
 		VRButtonExit {}
 		AccountURLStyle {}
-		AccountURLStyle:hover {}
-		AccountURLStyle:selected {}
-		AccountURLStyle:disabled {}
 		
 		AccountBalanceStyle {
+			textcolor=orange500
 			font-family=basefont
 			font-size=14
-			font-style=normal
 			font-weight=400
-			textcolor="orange500"
+			font-style=normal
 		}
 		
-			AccountBalanceStyle:Hover {
-				textcolor="orange300"
+			AccountBalanceStyle:hover {
+				textcolor=orange300
 			}
 		
 		CSteamRootDialog {
 			bgcolor=custombackgroundnofocus
 			
 			render {
-				1="image_tiled(x0,y0+55,x1,y0+59, graphics\material\shadows\top)"
-				2="image_tiled(x0,y1-50,x1,y1-46, graphics\material\shadows\bottom)"
+				0="image_tiled(x0,y0+55,x1,y0+59, graphics/material/shadows/top)"
+				1="image_tiled(x0,y1-50,x1,y1-46, graphics/material/shadows/bottom)"
 			}
 			
 			render_bg {
-				// fill in the bottom area
 				0="fill( x0, y1 - 46, x1, y1, customgreyprimary )"
 				1="fill(x0, y1-46, x1, y1-45, customgreyaccent)"
-				
-				
-				//Apply the subnav
 				2="fill(x0,y0+55,x1,y0+100, customgreysecondary)"
-				3="fill(x0,y0+100,x1,y0+120, customgreysecondary)"
-				
+				3="fill(x0,y0+100,x1,y0+120, customgreysecondary)"	
 			}
 		}
 		
@@ -49,22 +40,21 @@
 			}
 		
 		FrameTitle {
-			bgcolor="customgreyprimary"
+			bgcolor=customgreyprimary
+			textcolor=disabled_OnDarkBG
 			font-family=basefont
 			font-size=24
 			font-weight=400
-			inset="0 0 0 0"
 			minimum-height=55
-			textcolor="disabled_OnDarkBG"
-			
+			inset="0 0 0 0"
+
 			render_bg {
-				// Adds the 1 pixel highlight on the top of the title bar.
 				0="fill(x0,y0,x1,y0+1, customgreyaccent)"
 			}
 		}
 		
 			FrameTitle:framefocus {
-				textcolor="white"
+				textcolor=white
 			}
 		
 		RootMenu {
@@ -74,10 +64,10 @@
 		}
 		
 		"MenuBar MenuButton" {
-			bgcolor="none"
+			bgcolor=none
+			textcolor=none
 			minimum-height=35
 			minimum-width=35
-			textcolor=none
 			
 			render_bg {
 				0="image(x0+5,y0+5,x1,y1, graphics/icons/mainmenu/standard/steam)"
@@ -101,73 +91,65 @@
 		}
 		
 		view_friends {
+			textcolor=none
 			font-family=basefont
 			font-size=0
-			font-style=none
 			font-weight=400
-			textcolor="none"
+			font-style=none
 			
 			render_bg {}
 		}
 		
-			view_friends:Hover {}
-		
-			view_friends:disabled {}
-		
 		online_friends {
+			textcolor=white
 			font-family=basefont
 			font-size=16
-			font-style=regular
 			font-weight=600
+			font-style=regular
 			inset-top=2
 			padding-left=29
 			padding-right=52
-			textcolor="white"
 			
 			render_bg {
 				0="fill(x0+2,y0+2,x1-2,y1-2, blue500)"
-				
-				1="image(x0-3,y1-2,x0+2,y1+4, graphics\material\buttons\blue\bottomleft)"
+				1="image(x0-3,y1-2,x0+2,y1+4, graphics/material/buttons/blue/bottomleft)"
 				2="image_tiled(x0+2,y1-2,x1-2,y1+4, graphics/material/buttons/blue/bottommiddle)"
 				3="image(x1-2,y1-2,x1+3,y1+2, graphics/material/buttons/blue/bottomright)"
-				
 				4="image_tiled(x0-3,y0+2,x0+2,y1-2, graphics/material/buttons/blue/leftmiddle)"
 				5="image_tiled(x1-2,y0+2,x1+3,y1-2, graphics/material/buttons/blue/rightmiddle)"
-				
 				6="image(x0-3,y0-2,x0+2,y0+2, graphics/material/buttons/blue/topleft)"
 				7="image_tiled(x0+2,y0-2,x1-2,y0+2, graphics/material/buttons/blue/topmiddle)"
 				8="image(x1-2,y0-2,x1+3,y0+2, graphics/material/buttons/blue/topright)"
-				
 				10="image(x1-46, y0+11, x1, y1, graphics/icons/button_friends)"
 			}
 		}
 		
 			online_friends:disabled {
-				textcolor="disabled_onDarkBG"
+				textcolor=disabled_onDarkBG
 				
 				render_bg {}
 			}
 		
 		inbox_button {
+			textcolor=none
 			font-family=basefont
 			font-size=17
-			font-style=none
 			font-weight=600
+			font-style=none
 			inset="0 4 0 0"
 			padding-left=10
-			padding-right=10
 			padding-top=0
-			textcolor=none
+			padding-right=10
 
 			render {}
 			render_bg {
-				10="image(x1-24, y0+13, x1, y1, graphics\icons\inbox\empty\envelope)"
+				0="image(x1-24, y0+13, x1, y1, graphics/icons/inbox/empty/envelope)"
 			}
 		}
 		
 			inbox_button:hover {
 				render_bg {
-					10="image(x1-24, y0+13, x1, y1, graphics\icons\inbox\empty_hover\envelope)"
+					0="image(x1-24, y0+13, x1, y1, graphics/icons/inbox/empty_hover/envelope)"
 				}
 			}
 			
@@ -177,165 +159,151 @@
 					-2="image(x0-3,y0+18,x0+16,y0+28, graphics/material/selectionbubbles/hover/white/bottomleft)"
 					-1="image(x0+16,y0-1,x0+35,y0+18, graphics/material/selectionbubbles/hover/white/topright)"
 					0="image(x0+16,y0+18,x0+35,y0+37, graphics/material/selectionbubbles/hover/white/bottomright)"
-					10="image(x1-24, y0+13, x1, y1, graphics\icons\inbox\empty_hover\envelope)"
+					1="image(x1-24, y0+13, x1, y1, graphics/icons/inbox/empty_hover/envelope)"
 				}
 			}
 			
 			inbox_button:disabled {
 				render_bg {
-					10="image(x1-24, y0+13, x1, y1, graphics\icons\inbox\empty_disabled\envelope)"
+					0="image(x1-24, y0+13, x1, y1, graphics/icons/inbox/empty_disabled/envelope)"
 				}
 			}
 		
 		inbox_button_active {
+			textcolor=lightgreen900
 			font-family=basefont
 			font-size=17
-			font-style=none
 			font-weight=600
+			font-style=none
 			inset="0 4 0 0"
 			padding-left=25
-			padding-right=39
 			padding-top=0
-			textcolor=lightgreen900
-			
+			padding-right=39
+
 			render {}
 			render_bg {
 				0="fill(x0+2,y0+2,x1-2,y1-2, limeA400)"
-				
-				1="image(x0-3,y1-2,x0+2,y1+4, graphics\material\buttons\lime\bottomleft)"
+				1="image(x0-3,y1-2,x0+2,y1+4, graphics/material/buttons/lime/bottomleft)"
 				2="image_tiled(x0+2,y1-2,x1-2,y1+4, graphics/material/buttons/lime/bottommiddle)"
 				3="image(x1-2,y1-2,x1+3,y1+2, graphics/material/buttons/lime/bottomright)"
-				
 				4="image_tiled(x0-3,y0+2,x0+2,y1-2, graphics/material/buttons/lime/leftmiddle)"
 				5="image_tiled(x1-2,y0+2,x1+3,y1-2, graphics/material/buttons/lime/rightmiddle)"
-				
 				6="image(x0-3,y0-2,x0+2,y0+2, graphics/material/buttons/lime/topleft)"
 				7="image_tiled(x0+2,y0-2,x1-2,y0+2, graphics/material/buttons/lime/topmiddle)"
 				8="image(x1-2,y0-2,x1+3,y0+2, graphics/material/buttons/lime/topright)"
-				
-				10="image(x1-42, y0+12, x1, y1, graphics\icons\inbox\standard\envelope)"
+				9="image(x1-42, y0+12, x1, y1, graphics/icons/inbox/standard/envelope)"
 			}
 		}
 		
 			inbox_button_active:hover {
 				render_bg {
 					0="fill(x0+2,y0+2,x1-2,y1-2, limeA200)"
-					
-					1="image(x0-3,y1-2,x0+2,y1+4, graphics\material\buttons\lime\hover\bottomleft)"
-					2="image_tiled(x0+2,y1-2,x1-2,y1+4, graphics/material/buttons/lime/hover\bottommiddle)"
-					3="image(x1-2,y1-2,x1+3,y1+2, graphics/material/buttons/lime/hover\bottomright)"
-					
-					4="image_tiled(x0-3,y0+2,x0+2,y1-2, graphics/material/buttons/lime/hover\leftmiddle)"
-					5="image_tiled(x1-2,y0+2,x1+3,y1-2, graphics/material/buttons/lime/hover\rightmiddle)"
-					
-					6="image(x0-3,y0-2,x0+2,y0+2, graphics/material/buttons/lime/hover\topleft)"
-					7="image_tiled(x0+2,y0-2,x1-2,y0+2, graphics/material/buttons/lime/hover\topmiddle)"
-					8="image(x1-2,y0-2,x1+3,y0+2, graphics/material/buttons/lime/hover\topright)"
-					
-					10="image(x1-42, y0+12, x1, y1, graphics\icons\inbox\standard\envelope)"
+					1="image(x0-3,y1-2,x0+2,y1+4, graphics/material/buttons/lime/hover/bottomleft)"
+					2="image_tiled(x0+2,y1-2,x1-2,y1+4, graphics/material/buttons/lime/hover/bottommiddle)"
+					3="image(x1-2,y1-2,x1+3,y1+2, graphics/material/buttons/lime/hover/bottomright)"
+					4="image_tiled(x0-3,y0+2,x0+2,y1-2, graphics/material/buttons/lime/hover/leftmiddle)"
+					5="image_tiled(x1-2,y0+2,x1+3,y1-2, graphics/material/buttons/lime/hover/rightmiddle)"
+					6="image(x0-3,y0-2,x0+2,y0+2, graphics/material/buttons/lime/hover/topleft)"
+					7="image_tiled(x0+2,y0-2,x1-2,y0+2, graphics/material/buttons/lime/hover/topmiddle)"
+					8="image(x1-2,y0-2,x1+3,y0+2, graphics/material/buttons/lime/hover/topright)"
+					9="image(x1-42, y0+12, x1, y1, graphics/icons/inbox/standard/envelope)"
 				}
 			}
 			
 			inbox_button_active:selected {
 				render_bg {
 					0="fill(x0+2,y0+2,x1-2,y1-2, limeA700)"
-					
-					1="image(x0-3,y1-2,x0+2,y1+4, graphics\material\buttons\lime\active\bottomleft)"
-					2="image_tiled(x0+2,y1-2,x1-2,y1+4, graphics/material/buttons/lime/active\bottommiddle)"
-					3="image(x1-2,y1-2,x1+3,y1+2, graphics/material/buttons/lime/active\bottomright)"
-					
-					4="image_tiled(x0-3,y0+2,x0+2,y1-2, graphics/material/buttons/lime/active\leftmiddle)"
-					5="image_tiled(x1-2,y0+2,x1+3,y1-2, graphics/material/buttons/lime/active\rightmiddle)"
-					
-					6="image(x0-3,y0-2,x0+2,y0+2, graphics/material/buttons/lime/active\topleft)"
-					7="image_tiled(x0+2,y0-2,x1-2,y0+2, graphics/material/buttons/lime/active\topmiddle)"
-					8="image(x1-2,y0-2,x1+3,y0+2, graphics/material/buttons/lime/active\topright)"
-					
-					10="image(x1-42, y0+12, x1, y1, graphics\icons\inbox\standard\envelope)"
+					1="image(x0-3,y1-2,x0+2,y1+4, graphics/material/buttons/lime/active/bottomleft)"
+					2="image_tiled(x0+2,y1-2,x1-2,y1+4, graphics/material/buttons/lime/active/bottommiddle)"
+					3="image(x1-2,y1-2,x1+3,y1+2, graphics/material/buttons/lime/active/bottomright)"
+					4="image_tiled(x0-3,y0+2,x0+2,y1-2, graphics/material/buttons/lime/active/leftmiddle)"
+					5="image_tiled(x1-2,y0+2,x1+3,y1-2, graphics/material/buttons/lime/active/rightmiddle)"
+					6="image(x0-3,y0-2,x0+2,y0+2, graphics/material/buttons/lime/active/topleft)"
+					7="image_tiled(x0+2,y0-2,x1-2,y0+2, graphics/material/buttons/lime/active/topmiddle)"
+					8="image(x1-2,y0-2,x1+3,y0+2, graphics/material/buttons/lime/active/topright)"
+					9="image(x1-42, y0+12, x1, y1, graphics/icons/inbox/standard/envelope)"
 				}
 			}
 		
-			inbox_button_active:disabled {}
-		
 		inboxmenuitem {
-			bgcolor="none"
+			bgcolor=none
+			textcolor=disabled_onLightBG
 			font-family=basefont
 			font-size=16
 			font-weight=400
 			inset="-4 0 0 0"
 			padding-right=6
-			textcolor="disabled_onLightBG"
+			
 			render_bg {}
 		}
 
 			inboxmenuitem:hover {
-				bgcolor="blue500"
-				textcolor="white"
+				textcolor=white
+				bgcolor=blue500
 			}
 		
 		inboxmenuitem_active {
-			bgcolor="none"
+			bgcolor=none
+			textcolor=text_OnLightBG
 			font-family=basefont
 			font-size=16
 			font-weight=400
 			inset="-4 0 0 0"
 			padding-right=6
-			textcolor="text_OnLightBG"
+			
 			render_bg {}
 		}
 		
 			inboxmenuitem_active:selected {
-				bgcolor="blue500"
-				textcolor="white"
+				bgcolor=blue500
+				textcolor=white
 			}
 			
 			inboxmenuitem_active:hover {
-				bgcolor="blue500"
-				textcolor="white"
+				bgcolor=blue500
+				textcolor=white
 			}
 		
-		// OFF
 		parental_lock_button {
 			inset="0 0 0 0"
 			
 			render {}
 			render_bg {
-				0="image(x0,y0,x1,y1, graphics\icons\familyview\inactive\familyview)"
+				0="image(x0,y0,x1,y1, graphics/icons/familyview/inactive/familyview)"
 			}
 		}
 		
 			parental_lock_button:hover {
 				render_bg {
-					0="image(x0,y0,x1,y1, graphics\icons\familyview\inactive_hover\familyview)"
+					0="image(x0,y0,x1,y1, graphics/icons/familyview/inactive_hover/familyview)"
 				}
 			}
 		
-		// ON
 		parental_lock_button:selected {
 			render_bg {
-				0="image(x0,y0,x1,y1, graphics\icons\familyview\standard\familyview)"
+				0="image(x0,y0,x1,y1, graphics/icons/familyview/standard/familyview)"
 			}
 		}
 
 			parental_lock_button:selected:hover	{
 				render_bg {
-					0="image(x0,y0,x1,y1, graphics\icons\familyview\hover\familyview)"
+					0="image(x0,y0,x1,y1, graphics/icons/familyview/hover/familyview)"
 				}
 			}
 		
 		support_alert {
+			textcolor=white
 			font-family=basefont
 			font-size=20
-			font-style=none
 			font-weight=400
+			font-style=none
 			inset="40 0 0 0"
-			textcolor=white
+
 			render {}
 			render_bg {
 				0="fill( x0, y0, x1, y1, orange900)"
 				1="image_tiled(x0,y0,x1,y0+4, graphics/material/shadows/top)"
-				
-				10="image(x0+10, y0+10, x1, y1, graphics\icons\supportmessage)"
+				2="image(x0+10, y0+10, x1, y1, graphics/icons/supportmessage)"
 			}
 		}
 		
@@ -343,38 +311,35 @@
 				render_bg {
 					0="fill( x0, y0, x1, y1, orange800)"
 					1="image_tiled(x0,y0,x1,y0+4, graphics/material/shadows/top)"
-					
-					10="image(x0+10, y0+10, x1, y1, graphics\icons\supportmessage)"
+					2="image(x0+10, y0+10, x1, y1, graphics/icons/supportmessage)"
 				}
 			}
 	}
 	
 	layout {
-		// Remove these elements
 		place {
-			control="New,add_game,account_balance_seperator, account_URL, universe_label, startvr, exitvr, fullscreen"
-			width=0
+			control=New,add_game,account_balance_seperator,account_URL,universe_label,startvr,exitvr,fullscreen
 			height=0
 		}
 		
 		place [!$OSX] {
-			control="MenuBar"
+			control=MenuBar
 			align=top
-			width=45
-			height=45
 			x=6
 			y=6
+			width=45
+			height=45
 		}
 		
 		place {
-			control="frame_captiongrip"
-			margin=0
+			control=frame_captiongrip
 			width=max
 			height=104
+			margin=0
 		}
 		
 		place [!$OSX]  {
-			control="frame_minimize,frame_maximize,frame_close"
+			control=frame_minimize,frame_maximize,frame_close
 			align=right
 			margin-top=16
 			margin-right=15
@@ -382,29 +347,29 @@
 		}
 		
 		place {
-			control="UINavigatorPanel"
+			control=UINavigatorPanel
 			width=max
 			height=max
 			margin-bottom=46
 		}
 		
 		place {
-			control="ParentalLockButton"
-			end-right=inboxbutton
+			control=ParentalLockButton
 			align=right
+			y=10
 			width=35
 			height=35
-			y=10
 			margin-right=10
+			end-right=inboxbutton
 		}
 		
 		place {
-			control="InboxButton"
+			control=InboxButton
 			align=right
-			end-right=frame_minimize
-			height=34
 			y=10
+			height=34
 			margin-right=20
+			end-right=frame_minimize
 		}
 		
 		place {
@@ -422,18 +387,18 @@
 		}
 		
 		place {
-			control="UIStatusPanel"
+			control=UIStatusPanel
+			align=bottom
 			width=max
 			height=47
-			align=bottom
 		}
 		
 		place {
-			control="FriendPanel"
-			height=48
-			width=48
+			control=FriendPanel
 			region=bottom
 			align=right
+			width=48
+			height=48
 			margin-top=-3
 			margin-right=-5
 		}
@@ -441,30 +406,29 @@
 		place {
 			control=SupportAlert
 			align=left
+			y=55
 			width=max
 			height=45
-			y=55
 		}
 		
-		// Overlay the button for opening the friends list over the number of online friends.
 		place {
-			control="view_friends"
-			height=34
-			width=147
-			y=6
+			control=view_friends
 			region=bottom
 			align=right
 			dir=right
+			y=6
+			width=147
+			height=34			
 			margin-right=50
 		}
 		
 		place {
-			control="online_friends"
-			y=6
-			height=34
+			control=online_friends
 			region=bottom
 			align=right
 			dir=right
+			y=6
+			height=34
 			margin-right=50
 		}
 	}

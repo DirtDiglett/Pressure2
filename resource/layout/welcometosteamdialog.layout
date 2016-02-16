@@ -8,33 +8,33 @@
 
 	layout {
 		place {
-			control="frame_title"
+			control=frame_title
 			visible=0
 			height=0
 		}
 
 		place {
-			control="frame_captiongrip"
-			margin=0
+			control=frame_captiongrip
 			width=max
 			height=113
+			margin=0
 		}
 
 		region {
-			name="buttons"
+			name=buttons
+			align=bottom
 			width=max
 			height=58
-			align=bottom
 		}
 
 		place {
-			control="PrevButton,NextButton,OKButton,CancelButton,FinishButton"
-			region="buttons"
-		    width=92
-		    height=34
-		    align=right
-			margin-right=11
+			control=PrevButton,NextButton,OKButton,CancelButton,FinishButton
+			region=buttons
+			align=right
+			width=92
+			height=34
 			margin-top=12
+			margin-right=11
 			spacing=12
 		}
 	}

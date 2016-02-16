@@ -11,178 +11,177 @@
 				0="fill(x0+71,y0+125,x1,y0+126, dividers_onLightBG)"
 				1="fill(x0+71,y0+276,x1,y0+277, dividers_onLightBG)"
 				2="fill(x0+71,y0+392,x1,y0+393, dividers_onLightBG)"
-				5="image(x0+26,y0+27,x1,y1, graphics/icons/settings/overlay)"
-				6="image(x0+26,y0+140,x1,y1, graphics/icons/settings/screenshots)"
-				7="image(x0+26,y0+294,x1,y1, graphics/icons/settings/fps)"
-				8="image(x0+26,y0+410,x1,y1, graphics/icons/settings/server)"
+				3="image(x0+26,y0+27,x1,y1, graphics/icons/settings/overlay)"
+				4="image(x0+26,y0+140,x1,y1, graphics/icons/settings/screenshots)"
+				5="image(x0+26,y0+294,x1,y1, graphics/icons/settings/fps)"
+				6="image(x0+26,y0+410,x1,y1, graphics/icons/settings/server)"
 			}
 		}
 
-		CSettingsSubInGame:framefocus {
-			render {
-				0="fill(x0+70,y0+28,x0+396,y0+47, custombackgroundprimarytransparent)"
-				1="fill(x0+70,y0+140,x0+285,y0+158, custombackgroundprimarytransparent)"
-				2="fill(x0+70,y0+295,x0+396,y0+313, custombackgroundprimarytransparent)"
-				3="fill(x0+70,y0+410,x0+396,y0+428, custombackgroundprimarytransparent)"
+			CSettingsSubInGame:framefocus {
+				render {
+					0="fill(x0+70,y0+28,x0+396,y0+47, custombackgroundprimarytransparent)"
+					1="fill(x0+70,y0+140,x0+285,y0+158, custombackgroundprimarytransparent)"
+					2="fill(x0+70,y0+295,x0+396,y0+313, custombackgroundprimarytransparent)"
+					3="fill(x0+70,y0+410,x0+396,y0+428, custombackgroundprimarytransparent)"
+				}
 			}
-		}
 	}
 	
 	layout {
+		place {
+			control=PingRateInfo,DescriptionLabel,TitleLabel,Divider1
+			height=0
+		}
+		
 		region {
 			name=shortcut
-			height=125
-			width=max
 			x=82
 			y=0
+			width=max
+			height=125			
 			margin-right=29
 		}
 
 		place {
 			control=HotKeySelectorLabel
 			region=shortcut
-			y=28
 			dir=down
+			y=28
 			spacing=2
 		}
 
 		place {
 			control=HotKeySelector
-			width=350
-			height=34
 			start=HotKeySelectorLabel
 			dir=down
 			y=4
+			width=350
+			height=34
 		}
 
 		place {
 			control=EnableOverlayCheck
-			width=max
-			height=18
 			start=HotKeySelector
 			dir=down
 			y=4
+			width=max
+			height=18
 		}
-
 
 		region {
 			name=screenshot
-			height=150
-			width=max
 			x=82
 			y=113
+			width=max
+			height=150
 			margin-right=29
 		}
 
 		place {
 			control=ScreenshotLabel
 			region=screenshot
-			y=28
 			dir=down
+			y=28
 			spacing=2
 		}
 
 		place {
 			control=ScreenshotHotKeySelector
-			width=185
-			height=34
 			start=ScreenshotLabel
 			dir=down
 			y=4
+			width=185
+			height=34
 		}
 
 		place {
 			control=SetScreenshotFolderButton
-			width=185
-			height=34
 			start=ScreenshotHotKeySelector
 			dir=down
 			y=4
+			width=185
+			height=34
 		}
 
 		place {
 			control=ScreenshotActionLabel
 			region=screenshot
-			y=27
-			x=226
 			dir=down
+			x=226
+			y=27
 			height=18
 		}
 
 		place {
-			control="ScreenshotNotifyCheck,ScreenshotPlaySoundCheck,ScreenshotSaveUncompressedCheck"
+			control=ScreenshotNotifyCheck,ScreenshotPlaySoundCheck,ScreenshotSaveUncompressedCheck
 			start=ScreenshotActionLabel
-			y=9
 			dir=down
+			y=9
 			height=18
 			spacing=18
 		}
 
 		region {
 			name=fps
-			height=115
-			width=max
 			x=82
 			y=267
+			width=max
+			height=115
 			margin-right=29
 		}
 
 		place {
 			control=ShowIngameFPSLabel
 			region=fps
-			y=28
 			dir=down
+			y=28
 			spacing=2
 		}
 
 		place {
 			control=ShowIngameFPSCombo
-			width=185
-			height=34
 			start=ShowIngameFPSLabel
 			dir=down
 			y=4
+			width=185
+			height=34
 		}
 
 		place {
 			control=ShowIngameFPSContrastCheck
-			width=max
-			height=18
 			start=ShowIngameFPSCombo
 			dir=down
 			y=4
+			width=max
+			height=18
 		}
 
 		region {
 			name=server
-			height=115
-			width=max
 			x=82
 			y=383
+			width=max
+			height=115
 			margin-right=29
 		}
 
 		place {
 			control=PingRateLabel
 			region=server
-			y=28
 			dir=down
-			spacing=2
+			y=28
 			width=max
+			spacing=2
 		}
 
 		place {
 			control=PingRateCombo
-			width=185
-			height=34
 			start=PingRateLabel
 			dir=down
 			y=4
-		}
-
-		place {
-			control=PingRateInfo,DescriptionLabel,TitleLabel,Divider1
-			height=0
-		}				
+			width=185
+			height=34
+		}			
 	}
 }

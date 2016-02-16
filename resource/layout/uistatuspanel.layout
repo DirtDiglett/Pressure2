@@ -1,22 +1,22 @@
 "resource/layout/uistatuspanel.layout" {	
 	styles {
 		StatusLabel {
-			font-size=18
-			font-family=basefont
 			textcolor=text_onDarkBG
+			font-family=basefont
+			font-size=18
 			font-style=normal
 			inset-top=-2
 		}
 		
 		StatusLabelDim {
-			font-size=16
-			font-family=basefont
 			textcolor=secondarytext_onDarkBG
+			font-family=basefont
+			font-size=16
 			font-style=normal
 		}
 		
 		SlimProgressBar {
-			textcolor="lime500"
+			textcolor=lime500
 			
 			render {}
 			render_bg {
@@ -27,26 +27,26 @@
 	
 	layout {
 		region {
-			name="statusregion"
-			width=max
-			height=max
+			name=statusregion
 			x=12
 			y=6
+			width=max
+			height=max
 			margin-bottom=12
 		}
 		
 		place {
-			control="StatusDownloading,StatusPaused, StatusComplete"
-			region="statusregion"
-			align="left"
-			margin-top=0
+			control=StatusDownloading,StatusPaused,StatusComplete
+			region=statusregion
+			align=left
 			dir=right
 			height=max
+			margin-top=0
 		}
 		
 		place {
-			control="StatusProgressbar"
-			region="statusregion"
+			control=StatusProgressbar
+			region=statusregion
 			align=bottom
 			width=300
 			height=4

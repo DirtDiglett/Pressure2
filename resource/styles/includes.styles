@@ -6,7 +6,7 @@ includes.styles
 
 	
     
-    AchievementPopup.TitleColor   "Text"
+    AchievementPopup.TitleColor   "red500"
     AchievementPopup.DescriptionColor "180 180 180 255"
     
     GiftOnlyInfo.ImagePanelColor  "GrayBG"

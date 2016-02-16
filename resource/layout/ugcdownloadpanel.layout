@@ -1,17 +1,20 @@
 "resource/layout/ugcdownloadpanel.layout" {
 	styles {
+		panelBgColorActive {}
+		graphdownloadrate {}
+
 		panelStyle {
 			bgcolor=workshopblue
 			minimum-height=139
 			
 			render {
 				0="fill(x0,y1, x1, y1+1, workshopblue)"
-				1="image_tiled( x0, y0, x1, y0 + 4, graphics/material/shadows/top )" // 4px
-				2="image_tiled( x0, y1-4, x1, y1, graphics/material/shadows/bottom )" // 4px
+				1="image_tiled( x0, y0, x1, y0 + 4, graphics/material/shadows/top )"
+				2="image_tiled( x0, y1-4, x1, y1, graphics/material/shadows/bottom )"
 			}
 
 			render_bg {
-				1="image(x0,y0,x1,y1, graphics/workshopbg_nologo)"
+				0="image(x0,y0,x1,y1, graphics/workshopbg_nologo)"
 			}
 		}
 		
@@ -21,52 +24,54 @@
 			
 			render {
 				0="fill(x0,y1, x1, y1+1, workshopblue)"
-				1="image_tiled( x0, y0, x1, y0 + 4, graphics/material/shadows/top )" // 4px
-				2="image_tiled( x0, y1-4, x1, y1, graphics/material/shadows/bottom )" // 4px
+				1="image_tiled( x0, y0, x1, y0 + 4, graphics/material/shadows/top )"
+				2="image_tiled( x0, y1-4, x1, y1, graphics/material/shadows/bottom )"
 			}
 
 			render_bg {
-				1="image(x0,y0,x1,y1, graphics/workshopbg_nologo)"
+				0="image(x0,y0,x1,y1, graphics/workshopbg_nologo)"
 			}		
 		}
 
 		gameImagePanel {   
 			inset="0 0 0 0"
-			render_bg {}
+
 			render {}
+			render_bg {}
 		}
 		
 		gameImagePanelHighlight {   
-			inset="0 0 0 0"
 			bgcolor=none
+			inset="0 0 0 0"
+
 			render_bg {}
 		}	
 
 		ModuleHeading {
-			font-size=24
 			textcolor=text_onDarkBG
+			font-size=24
 			font-weight=600
 		}	
 
 		label {
-			font-size=18
 			textcolor=secondaryText_onDarkBG
+			font-size=18
 		}
 
 		label2 {
-			font-size=17
 			textcolor=secondaryText_onDarkBG
 			font-family=mediumfont
+			font-size=17
 		}
 
 		label3 {
-			font-size=18
 			textcolor=secondaryText_onDarkBG
-			font-size="normal"
+			font-size=18
+			font-size=normal
 		}
 
 		SlimProgressBar {
-			textcolor="lime500"
+			textcolor=lime500
 			
 			render {}
 			render_bg {
@@ -76,21 +81,19 @@
 
 		Button {
 			bgcolor=none
-		}		
-
-		panelBgColorActive {}
+		}
 		
 		topOfQueueButton {
 			bgcolor=none
 
 			render_bg {
-				1="image(x0+9, y0+9, x1, y1, graphics/icons/move_to_top/standard/move_to_top)"
+				0="image(x0+9, y0+9, x1, y1, graphics/icons/move_to_top/standard/move_to_top)"
 			}
 		}
 
 			topOfQueueButton:hover {
 				render_bg {
-					1="image(x0+9, y0+9, x1, y1, graphics/icons/move_to_top/hover/move_to_top)"
+					0="image(x0+9, y0+9, x1, y1, graphics/icons/move_to_top/hover/move_to_top)"
 				}
 			}
 
@@ -109,38 +112,38 @@
 			textcolor=none
 
 			render_bg {
-				1="image(x0+9, y0+9, x1, y1, graphics/icons/closedownload/standard/closedownload_light)"
+				0="image(x0+9, y0+9, x1, y1, graphics/icons/closedownload/standard/closedownload_light)"
 			}
 		}
 
 			SmRemoveButton:hover { 
 				render_bg {
-					1="image(x0+9, y0+9, x1, y1, graphics/icons/closedownload/hover/closedownload_light)"
+					0="image(x0+9, y0+9, x1, y1, graphics/icons/closedownload/hover/closedownload_light)"
 				}
 			}
 
 			SmRemoveButton:active { 
 				render_bg {
 					-3="image(x0+2,y0+2,x0+21,y0+21, graphics/material/selectionbubbles/hover/red/topleft)"
-                    -2="image(x0+2,y0+21,x0+21,y0+33, graphics/material/selectionbubbles/hover/red/bottomleft)"
-                    -1="image(x0+21,y0+2,x0+40,y0+21, graphics/material/selectionbubbles/hover/red/topright)"
-                    0="image(x0+21,y0+21,x0+40,y0+40, graphics/material/selectionbubbles/hover/red/bottomright)"
+					-2="image(x0+2,y0+21,x0+21,y0+33, graphics/material/selectionbubbles/hover/red/bottomleft)"
+					-1="image(x0+21,y0+2,x0+40,y0+21, graphics/material/selectionbubbles/hover/red/topright)"
+					0="image(x0+21,y0+21,x0+40,y0+40, graphics/material/selectionbubbles/hover/red/bottomright)"
 					1="image(x0+9, y0+9, x1, y1, graphics/icons/closedownload/hover/closedownload)"
 				}
 			}
 
 		ViewModsButton {
-			textcolor=none
 			bgcolor=none
+			textcolor=none			
 
 			render_bg {
-				1="image(x0+9, y0+9, x1, y1, graphics/icons/view/standard/view)"
+				0="image(x0+9, y0+9, x1, y1, graphics/icons/view/standard/view)"
 			}	
 		}
 
 			ViewModsButton:hover { 
 				render_bg {
-					1="image(x0+9, y0+9, x1, y1, graphics/icons/view/hover/view)"
+					0="image(x0+9, y0+9, x1, y1, graphics/icons/view/hover/view)"
 				}
 			}
 
@@ -154,20 +157,18 @@
 				}
 			}
 
-		graphdownloadrate {}
-
 		SmPauseButton {
 			bgcolor=none
 			textcolor=none
 
 			render_bg {
-				1="image(x0+9, y0+9, x1, y1, graphics/icons/pause/standard/pause)"
+				0="image(x0+9, y0+9, x1, y1, graphics/icons/pause/standard/pause)"
 			}
 		}
 
 			SmPauseButton:hover { 
 				render_bg {
-					1="image(x0+9, y0+9, x1, y1, graphics/icons/pause/hover/pause)"
+					0="image(x0+9, y0+9, x1, y1, graphics/icons/pause/hover/pause)"
 				}
 			}
 
@@ -186,13 +187,13 @@
 			textcolor=none
 
 			render_bg {
-				1="image(x0+9, y0+9, x1, y1, graphics/icons/resume/standard/resume)"
+				0="image(x0+9, y0+9, x1, y1, graphics/icons/resume/standard/resume)"
 			}
 		}
 		
 			SmResumeButton:hover { 
 				render_bg {
-					1="image(x0+9, y0+9, x1, y1, graphics/icons/resume/hover/resume)"
+					0="image(x0+9, y0+9, x1, y1, graphics/icons/resume/hover/resume)"
 				}
 			}
 
@@ -209,7 +210,13 @@
 
 	layout {
 		place {
-			control="gameimage"
+			control=updatetypelabel,graphdownloadrate,downloadtotallabel
+			width=0
+			height=0
+		}
+		
+		place {
+			control=gameimage
 			x=14
 			y=14
 			width=184
@@ -264,8 +271,8 @@
 
 		place {
 			control=starttimefield
-			dir=right
 			start=starttimelabel
+			dir=right
 			x=4
 			y=-2
 		}
@@ -279,8 +286,8 @@
 
 		place {
 			control=timeremainingfield
-			dir=right
 			start=timeremaininglabel
+			dir=right
 			x=4
 			y=-2
 		}
@@ -294,28 +301,21 @@
 
 		place {
 			control=downloadfilesfield
-			dir=right
 			start=downloadfileslabel
+			dir=right
 			x=4
 			y=-2
 		}
 
 		place {
-			control="viewmodsbutton,pauseresumebutton" 
-			height=36
-			width=36
-			dir=right
-			spacing=12
-			y=51
+			control=viewmodsbutton,pauseresumebutton
 			align=right
+			dir=right
+			y=51
+			width=36
+			height=36
 			margin-right=18
+			spacing=12
 		}
-
-		place {
-			control=updatetypelabel,graphdownloadrate,downloadtotallabel
-			width=0
-			height=0
-		}
-
 	}
 }

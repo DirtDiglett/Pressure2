@@ -9,88 +9,88 @@
 			}
 			render_bg {
 				0="fill(x0+71,y0+136,x1,y0+137, dividers_onLightBG)"
-				5="image(x0+26,y0+61,x1,y1, graphics/icons/settings/hardware)"
-				6="image(x0+26,y0+155,x1,y1, graphics/icons/settings/router)"
+				1="image(x0+26,y0+61,x1,y1, graphics/icons/settings/hardware)"
+				2="image(x0+26,y0+155,x1,y1, graphics/icons/settings/router)"
 			}
 		}
 	}
 	
 	layout {
+		place {
+			control=SupportInformationLabel
+			height=0
+		}
+
 		region {
-			name="buttons"
+			name=buttons
+			align=bottom
 			width=max
 			height=58
-			align=bottom
 		}
 
 		region {
 			name=hardware
-			height=114
-			width=max
 			x=82
 			y=34
+			width=max
+			height=114
 			margin-right=29
 		}
 
 		place {
 			control=DescriptionLabel
 			region=hardware
-			y=28
 			dir=down
-			spacing=2
+			y=28
 			width=max
+			spacing=2
 		}
 
 		place {
 			control=EnableHardwareEncoding
-			width=max
-			height=18
 			start=DescriptionLabel
 			dir=down
 			y=4
+			width=max
+			height=18
 		}
 
 		region {
 			name=traffic
-			height=114
-			width=max
 			x=82
 			y=124
+			width=max
+			height=114
 			margin-right=29
 		}
 
 		place {
 			control=EnableTrafficPriorityLabel
 			region=traffic
-			y=28
 			dir=down
-			spacing=2
+			y=28
 			width=max
+			spacing=2
 		}
 
 		place {
 			control=EnableTrafficPriority
-			width=max
-			height=18
 			start=EnableTrafficPriorityLabel
 			dir=down
 			y=4
+			width=max
+			height=18
 		}
 		
 		place {
 			control=OKButton
-			region="buttons"
-		    width=92
-		    height=34
-		    align=right
-			margin-right=11
+			region=buttons
+			align=right
+			width=92
+			height=34
 			margin-top=12
+			margin-right=11
 			spacing=12
-		}
-
-		place {
-			control=SupportInformationLabel
-			height=0
 		}
 	}
 }

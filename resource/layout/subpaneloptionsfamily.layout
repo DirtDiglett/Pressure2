@@ -1,89 +1,92 @@
 "resource/layout/subpaneloptionscloud.layout" {
 	styles {
 		highlight {
-			font-size="30"
-			font-style="normal"
+			textcolor=customgreyprimary
 			font-family=mediumfont
-			textcolor="customgreyprimary"
+			font-size=30
+			font-style=normal
 		}
 	}
 	
 	layout {
+		place {
+			control=FamilySharingTextState
+			height=0
+		}
 		
 		region {
 			name=page
-			height=max
-			width=max
 			x=24
 			y=24
+			width=max
+			height=max
 			margin-right=24
 		}
 
 		place {
-			controls="FamilySharingTitle"
+			controls=FamilySharingTitle
 			region=page
 		}
 
 		place {
-			control="BorrowersLabel"
+			control=BorrowersLabel
 			region=page
 			start=FamilySharingTitle
-			width=max
 			dir=down
 			y=7
+			width=max
 		}
 
 		place {
-			control="BorrowersList"
+			control=BorrowersList
 			region=page
 			start=BorrowersLabel
-			width=max
-			height=125
 			dir=down
 			y=7
+			width=max
+			height=125
 		}
 
 		place {
 			control=ShowNotificationsCheck
-			height=18
 			start=BorrowersList
-			width=max
 			dir=down
 			y=7
+			width=max
+			height=18
 		}
 
 		place {
-			controls="AuthorizeDeviceButton,DeauthorizeDeviceButton,ManageSharingButton"
+			controls=AuthorizeDeviceButton,DeauthorizeDeviceButton,ManageSharingButton
 			region=page
 			start=ShowNotificationsCheck
 			dir=down
+			y=4
 			width=350
 			height=34
-			y=4
 			spacing=4
 		}
 
 		place {
-			controls="Divider1"
+			controls=Divider1
 			start=ManageSharingButton
 			dir=down
-			width=max
-			y=19
 			x=46
-		}	
-
-
-		place {
-			controls="FamilyOptionsTitle"
-			region=page
-			start=Divider1
-			dir=down
 			y=19
-			x=-56
+			width=max
 		}
 
 		place {
-			control="FamilyOptionsText"
+			controls=FamilyOptionsTitle
+			region=page
+			start=Divider1
+			dir=down
+			x=-56
+			y=19
+		}
+
+		place {
+			control=FamilyOptionsText
 			region=page
 			start=FamilyOptionsTitle
 			width=max
@@ -92,19 +95,14 @@
 		}
 
 		place {
-			controls="ManageOptionsButton"
+			controls=ManageOptionsButton
 			region=page
 			start=FamilyOptionsText
 			dir=down
+			y=4
 			width=350
 			height=34
-			y=4
 			spacing=4
-		}		
-		
-		place {
-			control=FamilySharingTextState
-			height=0
 		}
 	}
 }

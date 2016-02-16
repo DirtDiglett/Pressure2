@@ -1,11 +1,12 @@
 "resource/layout/steamrootdialog_gamespage_details.layout" {
 	colors {
-		headerimagebg="26 107 118 255"
-
-		ListPanel.PostSectionLeading	14
+		headerimagebg = "26 107 118 255"
+		ListPanel.PostSectionLeading = "14"
 	}
 	
 	styles {
+		rightcolumntag {}
+
 		CGamesListPanel {
 			bgcolor=custombackgroundprimary
 			font-size=16
@@ -14,54 +15,56 @@
 		}
 		
 		emptylisttext {
-			textcolor="disabled_onLightBG"
-			font-size="18"
+			textcolor=disabled_onLightBG
+			font-size=18
+
 			render_bg {}
 		}
 		
 		CGamesPage_Details {
-			bgcolor="custombackgroundprimary"
+			bgcolor=custombackgroundprimary
 			inset="0 0 0 0"
+
 			render {
-				//9="fill(x0+308,y0,x1,y0+2, customgreysecondary)"
-				10="image_tiled(x0+308,y0,x1,y0+4, graphics\material\shadows\top)"
+				0="image_tiled(x0+308,y0,x1,y0+4, graphics/material/shadows/top)"
 			}
 			render_bg {}
 		}
 		
 		"GamesPage_Details ListPanel" {
+			bgcolor=none
 			padding-left=4
-			padding-right=25
+			padding-right=25			
 			
-			bgcolor="none"
-			render_bg {}
 			render {}
+			render_bg {}
 		}
 		
 		"GamesPage_Details ListPanelInterior" {
-			bgcolor="none"
-			inset="0 0 0 0"
+			bgcolor=none
 			minimum-width=295
+			inset="0 0 0 0"			
+
 			render {}
 			render_bg {}
 		}
 		
 		"GamesPage_Details ListPanelInterior:scrollbar" {
-			inset="2 0 0 0"
 			bgcolor=none
+			inset="2 0 0 0"
 			
 			render_bg {}
 		}
 		
 		ListPanelSectionHeader {
-			inset="0 0 0 0"
-			textcolor=customgreysecondary
-			font-style="uppercase"
 			bgcolor=white
+			textcolor=customgreysecondary
 			font-weight=600
-			padding-top=16
-			padding-bottom=16
+			font-style=uppercase
 			minimum-height=47
+			inset="0 0 0 0"
+			padding-top=16
+			padding-bottom=16			
 			
 			render {}
 			render_bg {
@@ -72,61 +75,65 @@
 		
 		"GamesPage_Details ListPanelSectionCollapser" {
 			inset="0 0 0 0"
-			image=graphics\icons\dropdown\padder
 			padding-left=8
 			padding-right=8
+			image=graphics/icons/dropdown/padder
+
 			render {}
 			render_bg {
 				0="fill(x0,y0-1,x1,y0, dividers_onLightBG)"
 				1="fill(x0,y1-1,x1,y1, dividers_onLightBG)"
-				2="image(x0+14,y0+18,x1,y1, graphics\icons\dropdown\standard\down_dark)"
+				2="image(x0+14,y0+18,x1,y1, graphics/icons/dropdown/standard/down_dark)"
 			}
 		}
 		
-		"GamesPage_Details ListPanelSectionCollapser:hover" {
-			render_bg {
-				0="fill(x0,y0-1,x1,y0, dividers_onLightBG)"
-				1="fill(x0,y1-1,x1,y1, dividers_onLightBG)"
-				2="image(x0+14,y0+18,x1,y1, graphics\icons\dropdown\hover\down_dark)"
+			"GamesPage_Details ListPanelSectionCollapser:hover" {
+				render_bg {
+					0="fill(x0,y0-1,x1,y0, dividers_onLightBG)"
+					1="fill(x0,y1-1,x1,y1, dividers_onLightBG)"
+					2="image(x0+14,y0+18,x1,y1, graphics/icons/dropdown/hover/down_dark)"
+				}
 			}
-		}
-		
-		"GamesPage_Details ListPanelSectionCollapser:selected" {
-			render_bg {
-				0="fill(x0,y0-1,x1,y0, dividers_onLightBG)"
-				1="fill(x0,y1-1,x1,y1, dividers_onLightBG)"
-				2="image(x0+14,y0+18,x1,y1, graphics\icons\dropdown\standard\up_dark)"
+			
+			"GamesPage_Details ListPanelSectionCollapser:selected" {
+				render_bg {
+					0="fill(x0,y0-1,x1,y0, dividers_onLightBG)"
+					1="fill(x0,y1-1,x1,y1, dividers_onLightBG)"
+					2="image(x0+14,y0+18,x1,y1, graphics/icons/dropdown/standard/up_dark)"
+				}
 			}
-		}
-		
-		"GamesPage_Details ListPanelSectionCollapser:selected:hover" {
-			render_bg {
-				0="fill(x0,y0-1,x1,y0, dividers_onLightBG)"
-				1="fill(x0,y1-1,x1,y1, dividers_onLightBG)"
-				2="image(x0+14,y0+18,x1,y1, graphics\icons\dropdown\hover\up_dark)"
-			}
-		}
+			
+				"GamesPage_Details ListPanelSectionCollapser:selected:hover" {
+					render_bg {
+						0="fill(x0,y0-1,x1,y0, dividers_onLightBG)"
+						1="fill(x0,y1-1,x1,y1, dividers_onLightBG)"
+						2="image(x0+14,y0+18,x1,y1, graphics/icons/dropdown/hover/up_dark)"
+					}
+				}
 		
 		"GamesPage_Details ListPanelDragger" {
-			bgcolor="none"
+			bgcolor=none
+
 			render {}
 			render_bg {}
 		}
 		
 		"GamesPage_Details ListPanelColumnHeader" {
-			bgcolor="none"
+			bgcolor=none
 			font-size=14
 			inset="0 0 0 0"
+
 			render {}
 			render_bg {}
 		}
 		
 		"CGamesListPanel ListPanelColumnSelectButton" {
 			inset="0 0 0 0"
+
 			render {
 				0="fill(x0+5,y0+2,x1,y1, grey200)"
-				4="fill(x0+5,y1-1,x1,y1+1, grey200)"
-				5="image( x0 + 7, y0 + 7, x1, y1, graphics\icons\columnselectbutton\standard\columnselectbutton)"
+				1="fill(x0+5,y1-1,x1,y1+1, grey200)"
+				2="image( x0 + 7, y0 + 7, x1, y1, graphics/icons/columnselectbutton/standard/columnselectbutton)"
 			}
 			render_bg {}
 		}
@@ -134,16 +141,16 @@
 			"CGamesListPanel ListPanelColumnSelectButton:hover" {
 				render {
 					0="fill(x0+5,y0+2,x1,y1, grey200)"
-					4="fill(x0+5,y1-1,x1,y1+1, grey200)"
-					5="image( x0 + 7, y0 + 7, x1, y1, graphics\icons\columnselectbutton\hover\columnselectbutton)"
+					1="fill(x0+5,y1-1,x1,y1+1, grey200)"
+					2="image( x0 + 7, y0 + 7, x1, y1, graphics/icons/columnselectbutton/hover/columnselectbutton)"
 				}
 			}
 
 			"CGamesListPanel ListPanelColumnSelectButton:selected" {
 				render {
 					0="fill(x0+5,y0+2,x1,y1, grey200)"
-					4="fill(x0+5,y1-1,x1,y1+3, grey200)"
-					5="image( x0 + 7, y0 + 7, x1, y1, graphics\icons\columnselectbutton\hover\columnselectbutton)"
+					1="fill(x0+5,y1-1,x1,y1+3, grey200)"
+					2="image( x0 + 7, y0 + 7, x1, y1, graphics/icons/columnselectbutton/hover/columnselectbutton)"
 				}
 			}
 		
@@ -158,25 +165,22 @@
 			}
 		}
 		
-		// We use the header for the right column as a background for the links region.
+		// Using the heading for the right column as a substitute background for the links region.
 		rightcolumnheadertext {
-			inset="0 0 0 0"
-			font-style=normal
-			font-family=basefont
-			font-weight=400
-			font-size=14
 			textcolor=none
+			font-family=basefont
+			font-size=14
+			font-weight=400
+			font-style=normal
+			inset="0 0 0 0"
 			
 			render_bg {
 				0="fill(x0+2,y0+2,x1-2,y1-2, white)"
-				
-				1="image(x0-3,y1-2,x0+2,y1+4, graphics\material\buttons\white\bottomleft)"
+				1="image(x0-3,y1-2,x0+2,y1+4, graphics/material/buttons/white/bottomleft)"
 				2="image_tiled(x0+2,y1-2,x1-2,y1+4, graphics/material/buttons/white/bottommiddle)"
 				3="image(x1-2,y1-2,x1+3,y1+2, graphics/material/buttons/white/bottomright)"
-				
 				4="image_tiled(x0-3,y0+2,x0+2,y1-2, graphics/material/buttons/white/leftmiddle)"
 				5="image_tiled(x1-2,y0+2,x1+3,y1-2, graphics/material/buttons/white/rightmiddle)"
-				
 				6="image(x0-3,y0-2,x0+2,y0+2, graphics/material/buttons/white/topleft)"
 				7="image_tiled(x0+2,y0-2,x1-2,y0+2, graphics/material/buttons/white/topmiddle)"
 				8="image(x1-2,y0-2,x1+3,y0+2, graphics/material/buttons/white/topright)"
@@ -184,23 +188,20 @@
 		}
 		
 		rightcolumnheadertext-red {
-			inset="0 0 0 0"
-			font-style=normal
-			font-family=basefont
-			font-weight=400
-			font-size=14
 			textcolor=none
+			font-family=basefont
+			font-size=14
+			font-weight=400
+			font-style=normal
+			inset="0 0 0 0"
 			
 			render_bg {
 				0="fill(x0+2,y0+2,x1-2,y1-2, white)"
-				
-				1="image(x0-3,y1-2,x0+2,y1+4, graphics\material\buttons\white\bottomleft)"
+				1="image(x0-3,y1-2,x0+2,y1+4, graphics/material/buttons/white/bottomleft)"
 				2="image_tiled(x0+2,y1-2,x1-2,y1+4, graphics/material/buttons/white/bottommiddle)"
 				3="image(x1-2,y1-2,x1+3,y1+2, graphics/material/buttons/white/bottomright)"
-				
 				4="image_tiled(x0-3,y0+2,x0+2,y1-2, graphics/material/buttons/white/leftmiddle)"
 				5="image_tiled(x1-2,y0+2,x1+3,y1-2, graphics/material/buttons/white/rightmiddle)"
-				
 				6="image(x0-3,y0-2,x0+2,y0+2, graphics/material/buttons/white/topleft)"
 				7="image_tiled(x0+2,y0-2,x1-2,y0+2, graphics/material/buttons/white/topmiddle)"
 				8="image(x1-2,y0-2,x1+3,y0+2, graphics/material/buttons/white/topright)"
@@ -208,23 +209,20 @@
 		}
 		
 		rightcolumnheadertext-green {
-			inset="0 0 0 0"
-			font-style=normal
-			font-family=basefont
-			font-weight=400
-			font-size=14
 			textcolor=none
+			font-family=basefont
+			font-size=14
+			font-weight=400
+			font-style=normal
+			inset="0 0 0 0"
 			
 			render_bg {
 				0="fill(x0+2,y0+2,x1-2,y1-2, white)"
-				
-				1="image(x0-3,y1-2,x0+2,y1+4, graphics\material\buttons\white\bottomleft)"
+				1="image(x0-3,y1-2,x0+2,y1+4, graphics/material/buttons/white/bottomleft)"
 				2="image_tiled(x0+2,y1-2,x1-2,y1+4, graphics/material/buttons/white/bottommiddle)"
 				3="image(x1-2,y1-2,x1+3,y1+2, graphics/material/buttons/white/bottomright)"
-				
 				4="image_tiled(x0-3,y0+2,x0+2,y1-2, graphics/material/buttons/white/leftmiddle)"
 				5="image_tiled(x1-2,y0+2,x1+3,y1-2, graphics/material/buttons/white/rightmiddle)"
-				
 				6="image(x0-3,y0-2,x0+2,y0+2, graphics/material/buttons/white/topleft)"
 				7="image_tiled(x0+2,y0-2,x1-2,y0+2, graphics/material/buttons/white/topmiddle)"
 				8="image(x1-2,y0-2,x1+3,y0+2, graphics/material/buttons/white/topright)"
@@ -232,23 +230,20 @@
 		}
 		
 		rightcolumnheadertext-blue {
-			inset="0 0 0 0"
-			font-style=normal
-			font-family=basefont
-			font-weight=400
-			font-size=14
 			textcolor=none
+			font-family=basefont
+			font-size=14
+			font-weight=400
+			font-style=normal
+			inset="0 0 0 0"
 			
 			render_bg {
 				0="fill(x0+2,y0+2,x1-2,y1-2, white)"
-				
-				1="image(x0-3,y1-2,x0+2,y1+4, graphics\material\buttons\white\bottomleft)"
+				1="image(x0-3,y1-2,x0+2,y1+4, graphics/material/buttons/white/bottomleft)"
 				2="image_tiled(x0+2,y1-2,x1-2,y1+4, graphics/material/buttons/white/bottommiddle)"
 				3="image(x1-2,y1-2,x1+3,y1+2, graphics/material/buttons/white/bottomright)"
-				
 				4="image_tiled(x0-3,y0+2,x0+2,y1-2, graphics/material/buttons/white/leftmiddle)"
 				5="image_tiled(x1-2,y0+2,x1+3,y1-2, graphics/material/buttons/white/rightmiddle)"
-				
 				6="image(x0-3,y0-2,x0+2,y0+2, graphics/material/buttons/white/topleft)"
 				7="image_tiled(x0+2,y0-2,x1-2,y0+2, graphics/material/buttons/white/topmiddle)"
 				8="image(x1-2,y0-2,x1+3,y0+2, graphics/material/buttons/white/topright)"
@@ -256,76 +251,72 @@
 		}
 		
 		rightcolumnlink {
-			inset="0 0 0 0"
-			font-size=17
-			font-style=normal
 			textcolor=blue500
 			font-family=basefont
+			font-size=17
+			font-style=normal
+			inset="0 0 0 0"
 		}
 		
-		rightcolumnlink:hover {
-			textcolor=blue300
-		}
-		
-		rightcolumnlink:disabled {
-			textcolor=disabled_onLightBG
-		}
-		
-		rightcolumntag {}
+			rightcolumnlink:hover {
+				textcolor=blue300
+			}
+			
+			rightcolumnlink:disabled {
+				textcolor=disabled_onLightBG
+			}
 		
 		DetailsBorderPanel {
-			bgcolor = none
+			bgcolor=none
 			
 			render {}
 		}
 	}
 	
 	layout {
-		// Remove certain elements altogether.
 		place {
 			control=linkslabel,sendguestpasslink,achievementslink,dlclink,guidelink,*taglink
-			width=0
 			height=0
 		}
 		
 		region {
-			name="details"
-			y=0
+			name=details
 			x=308
+			y=0
 			width=max
 			height=max
-			overflow=scroll-vertical
 			margin-left=0
 			margin-top=0
-			margin-bottom=1
 			margin-right=-1
+			margin-bottom=1
+			overflow=scroll-vertical
 		}
 		
 		region {
-			name="headertext"
+			name=headertext
 			region=details
-			y=0
 			x=0
+			y=0
 			width=max
 			height=280
 			margin-right=0
 		}
 		
 		region {
-			name="rightcolumn"
+			name=rightcolumn
 			region=details
 			start=headertext
 			dir=down
-			height=150
 			width=max
+			height=150
 		}
 		
 		region {
-			name="detailsbody"
+			name=detailsbody
 			region=details
 			y=280
-			height=max
 			width=max
+			height=max
 			overflow=allow-vertical
 		}
 		
@@ -349,47 +340,45 @@
 			height=max
 		}
 		
-		// Using a y=-400 this attemps to vertically horizontally align most screenshots.
+		// Using a y=-400 this "sort-of" vertically aligns most imagery.
 		place  {
 			control=headerimagea
 			region=details
-			width=1280
-			height=280
 			x=0
 			y=-400
-			//margin-top=2
+			width=1280
+			height=280
 		}
 		
 		place {
 			control=headerimageb
 			region=details
-			width=1280
-			height=280
 			x=0
 			y=-400
-			//			margin-top=2
+			width=1280
+			height=280
 		}
 		
 		place {
 			control=gametitleheader
 			region=headertext
 			dir=down
-			height=96
 			x=33
+			height=96
 		}
 		
 		place {
 			control=gamesubheader
-			start=gametitleheader
 			region=headertext
+			start=gametitleheader
 			dir=down
 			height=180
 		}
 		
 		region {
 			name=links
-			y=0
 			region=detailsbody
+			y=0
 			width=max
 			height=162
 		}
@@ -397,45 +386,45 @@
 		place {
 			control=tagslabel
 			region=links
-			height=max
 			width=max
+			height=max
 			margin-left=12
-			margin-right=12
 			margin-top=16
+			margin-right=12
 			margin-bottom=16
 		}
 		
 		region {
 			name=linksleft
 			region=links
+			align=left
 			width=200
 			height=130
-			align=left
 		}
 		
 		place {
 			control=gamehublink,forumlink,ogglink,newslink
 			region=linksleft
-			dir=down
 			align=left
-			y=30
+			dir=down
 			x=30
+			y=30
 			spacing=8
 		}
 		
 		region {
 			name=linkscenter
 			region=links
+			align=top-center
 			width=200
 			height=130
-			align=top-center
 		}
 		
 		place {
 			control=cdkeylink,manuallink,storelink,guideslink
 			region=linkscenter
-			dir=down
 			align=left
+			dir=down
 			y=30
 			spacing=8
 		}
@@ -443,28 +432,28 @@
 		region {
 			name=linksright
 			region=links
+			align=right
 			width=200
 			height=130
-			align=right
 		}
 		
 		place {
 			control=recommendlink,supportlink,edittagslink
 			region=linksright
-			dir=down
 			align=left
+			dir=down
 			y=30
 			spacing=8
 		}
 		
-		place  {
+		place {
 			control=welcomedetails,turnnotifications,friendsdetails,achievementsdetails,clouddetails,communityfilesdetails,dlcdetails,newsdetails,nonsteamdetails,screenshotsdetails
 			region=detailsbody
 			start=tagslabel
 			dir=down
+			y=16
 			width=max
 			spacing=20
-			y=16
 		}
 	}
 }

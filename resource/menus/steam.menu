@@ -2,7 +2,7 @@
 	Steam [!$OSX] {
 		text="#steam_menu_file"
 		SkinVersion {
-			text="Pressure² (1.0.0)"
+			text="Pressure² (1.0)"
 			shellcmd="steam://url/GroupSteamIDPage/103582791435510416"
 		}
 		About {
@@ -54,10 +54,6 @@
 		ViewPlayerList {
 			text="#steam_menu_view_players"
 			shellcmd="steam://url/RecentlyPlayedWith"
-		}
-		PlayersListDialog {
-			text="View Players (Dialog)"
-			shellcmd="steam://friends/players"
 		}
 		Servers {
 			text="#steam_menu_servers"
@@ -399,7 +395,7 @@
 		}
 		Divider {}
 		SkinVersion {
-			text="Pressure² v1.0.0"
+			text="Pressure² (1.0)"
 			shellcmd="steam://url/GroupSteamIDPage/103582791435510416"
 		}
 	}

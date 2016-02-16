@@ -2,6 +2,7 @@
 	styles {
 		CMusicPage_Details {
 			bgcolor=custombackgroundprimary
+			
 			render {}
 			render_bg {}
 		}

@@ -5,58 +5,57 @@
 				0="fill(x0+70,y0+20,x0+396,y0+45, custombackgroundnofocustransparent)"
 			}
 			render_bg {
-				5="image(x0+26,y0+27,x1,y1, graphics/icons/settings/webbrowser)"
+				0="image(x0+26,y0+27,x1,y1, graphics/icons/settings/webbrowser)"
 			}
 		}
 
-		CSettingsSubBrowser:framefocus {
-			render {
-				0="fill(x0+70,y0+20,x0+396,y0+45, custombackgroundprimarytransparent)"
+			CSettingsSubBrowser:framefocus {
+				render {
+					0="fill(x0+70,y0+20,x0+396,y0+45, custombackgroundprimarytransparent)"
+				}
 			}
-		}
 	}
 	
 	layout {
+		place {
+			controls=Divider1,DescriptionLabel
+			height=0
+		}
+
 		region {
 			name=browser
-			height=max
-			width=max
 			x=82
 			y=0
+			width=max
+			height=max
 			margin-right=29
 		}
 
 		place {
 			control=OverlayHomePageLabel
 			region=browser
-			y=28
 			dir=down
+			y=28
 			spacing=2
 		}
 
 		place {
 			control=OverlayHomePage
 			start=OverlayHomePageLabel
-			y=4
 			dir=down
-			height=37
+			y=4
 			width=max
+			height=37			
 			margin-right=29
 		}
 
 		place {
 			control=ClearAllCookiesButton
-			width=350
-			height=34
 			start=OverlayHomePage
 			dir=down
 			y=4
+			width=350
+			height=34
 		}
-
-		place {
-			controls=Divider1,DescriptionLabel
-			height=0
-		}
-		
 	}
 }

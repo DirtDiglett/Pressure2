@@ -9,9 +9,9 @@ steam.styles {
 	include "includes/web.styles"
 
 	styles {
-	"ChatListPanel RichText" {
-		font-size=20
-	}
+		"ChatListPanel RichText" {
+			font-size=20
+		}
 
 		FrameTitle {
 				inset="4 1 0 0"

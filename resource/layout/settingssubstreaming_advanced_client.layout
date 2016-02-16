@@ -10,108 +10,107 @@
 			render_bg {
 				0="fill(x0+71,y0+136,x1,y0+137, dividers_onLightBG)"
 				1="fill(x0+71,y0+229,x1,y0+230, dividers_onLightBG)"
-
-				5="image(x0+26,y0+61,x1,y1, graphics/icons/settings/router)"
-				6="image(x0+26,y0+155,x1,y1, graphics/icons/settings/fps)"
-				7="image(x0+26,y0+247,x1,y1, graphics/icons/settings/hardware)"
+				2="image(x0+26,y0+61,x1,y1, graphics/icons/settings/router)"
+				3="image(x0+26,y0+155,x1,y1, graphics/icons/settings/fps)"
+				4="image(x0+26,y0+247,x1,y1, graphics/icons/settings/hardware)"
 			}
 		}
 	}
 	
 	layout {
+		place {
+			control=SupportInformationLabel,DescriptionLabel
+			height=0
+		}
+		
 		region {
-			name="buttons"
+			name=buttons
+			align=bottom
 			width=max
 			height=58
-			align=bottom
 		}
 	
 		region {
 			name=bandwidth
-			height=114
-			width=max
 			x=82
 			y=34
+			width=max
+			height=114
 			margin-right=29
 		}
 
 		place {
 			control=BandwidthLabel
 			region=bandwidth
-			y=28
 			dir=down
-			spacing=2
+			y=28
 			width=max
+			spacing=2
 		}
 
 		place {
 			control=BandwidthLimit
-			width=350
-			height=34
 			start=BandwidthLabel
 			dir=down
 			y=4
+			width=350
+			height=34
 		}
 
 		region {
 			name=resolution
-			height=114
-			width=max
 			x=82
 			y=128
+			width=max
+			height=114
 			margin-right=29
 		}
 
 		place {
 			control=ResolutionLabel
 			region=resolution
-			y=28
 			dir=down
-			spacing=2
+			y=28
 			width=max
+			spacing=2
 		}
 
 		place {
 			control=ResolutionLimit
-			width=350
-			height=34
 			start=ResolutionLabel
 			dir=down
 			y=4
+			width=350
+			height=34
 		}
 
 		region {
 			name=hardware
-			height=114
-			width=max
 			x=82
 			y=251
+			width=max
+			height=114
 			margin-right=29
 		}
 
 		place {
 			control=EnableHardwareDecoding,EnableDebugOverlay
-			width=max
-			height=18
 			region=hardware
 			dir=down
+			width=max
+			height=18
 			spacing=18
 		}
 
 		place {
 			control=OKButton
-			region="buttons"
-		    width=92
-		    height=34
-		    align=right
-			margin-right=11
+			region=buttons
+			align=right
+			width=92
+			height=34
 			margin-top=12
+			margin-right=11
 			spacing=12
-		}
-
-		place {
-			control=SupportInformationLabel,DescriptionLabel
-			height=0
 		}
 	}
 }

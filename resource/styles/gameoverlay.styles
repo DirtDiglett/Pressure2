@@ -2,10 +2,10 @@ gameoverlay.styles {
 	include "resource/styles/steam.styles"
 	
 	colors  {
-		mostly_black "41 41 41 240"
-		semi_black "20 20 20 128"
-		semi_gray "20 20 20 220"
-		Notifications.PanelPosition=BottomRight
+		mostly_black = "41 41 41 240"
+		semi_black = "20 20 20 128"
+		semi_gray = "20 20 20 220"
+		Notifications.PanelPosition = "BottomRight"
 	}
 	
 	styles {
@@ -14,9 +14,9 @@ gameoverlay.styles {
 		}	
 		
 		detailsboxtitle {
+			textcolor=text_onDarkBG
 			font-size=28
 			font-style=normal
-			textcolor=text_onDarkBG
 		}
 			    
 		"COverlaySettingsDialog PageTab" {
@@ -27,6 +27,7 @@ gameoverlay.styles {
 		 TooltipWindow {
 			bgcolor=customgreyprimary
 			textcolor=secondaryText_onDarkBG
+			
 			render_bg {
 				0="fill(x0,y0,x0+1,y1, dividers_OnDarkBG)"
 				1="fill(x0+1,y0,x1-1,y0+1, dividers_OnDarkBG)"
