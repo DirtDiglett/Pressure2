@@ -81,32 +81,38 @@
 			}
 
 		WebStatusStyle {
-			padding-right=4
+			padding-right=2
+			inset-top=2
 			image="graphics/webOnline"
 		}
 
 		WebStatusStyleInGame {
-			padding-left=4
+			padding-left=2
+			inset-top=2
 			image="graphics/webInGame"
 		}
 	
 		BigPictureStatusStyle {
-			padding-right=4
+			padding-right=2
+			inset-top=2
 			image="graphics/bpOnline"
 		}
 
 		BigPictureStatusStyleInGame {
-			padding-right=4
+			padding-right=2
+			inset-top=2
 			image="graphics/bpInGame"
 		}
 		
 		MobileStatusStyle {
-			padding-right=4
+			padding-right=2
+			inset-top=2
 			image="graphics/mobileOnline"
 		}
 		
 		MobileStatusStyleInGame {
-			padding-right=4
+			padding-right=2
+			inset-top=2
 			image="graphics/mobileInGame"
 		}
 }
