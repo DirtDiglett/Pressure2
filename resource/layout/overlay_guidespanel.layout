@@ -21,6 +21,14 @@
 				textcolor=lightblue200
 			}
 
+			button:selected {
+				bgcolor=none
+			}
+
+			button:active {
+				bgcolor=none
+			}
+
 		detailsbox {
 			render_bg {
 				0="image(x0,y0+2,x1,y1, graphics/overlay/buttons/guides)"
