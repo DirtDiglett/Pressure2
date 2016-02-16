@@ -25,7 +25,7 @@
 	
 	layout {
 		place {
-			control=TranslationLabel,Label2,Divider1,Divider2"
+			control=TranslationLabel,Label2,Divider1,Divider2
 			height=0
 		}
 
