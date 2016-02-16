@@ -1,4 +1,9 @@
 "resource/layout/uinavigatorpanel.layout" {
+	colors {
+		// Due to the way certain elements have to overlap, I cannot use dividers_onLightBG here with opacity.
+		divider="235 235 235 255"
+	}
+
 	styles {
 		CUINavButton {
 			bgcolor=none
