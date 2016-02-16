@@ -13,6 +13,15 @@
 			inviteLinkStyle:hover {
 				bgcolor=dividers_onLightBG
 			}
+
+		menuButtonStyle {
+			// Hack to hide the down arrow and replace it with the proper one.
+			// There appears to be no other reasonable way to do this, as it will ignore any image defined here.
+			inset="-50 0 0 0"
+
+			render {}
+			render_bg {}
+		}
 	}
 	
 	layout {
