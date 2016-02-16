@@ -1,0 +1,93 @@
+"resource/layout/overlaydesktop_lores.layout" {
+	styles {
+		sidemenu {}
+		
+		topbar {
+			textcolor=text_onDarkBG
+			font-family=heavyfont
+			font-size=30
+			font-weight=400
+		}
+		
+		clocksuffix {
+			textcolor=text_onDarkBG
+			font-family=heavyfont
+			font-size=30
+			font-weight=400
+			font-style=uppercase
+		}
+		
+		timeStrings {
+			textcolor=disabled_OnDarkBG
+			font-family=basefontfont
+			font-size=18
+			font-weight=400
+		}
+	}
+	
+	layout {
+		region {
+			name=overlay
+			align=top-center
+			width=max
+			margin-left=15
+			margin-top=8
+			margin-right=15
+			margin-bottom=15
+		}
+
+		region {
+			name=buttonsarea
+			region=overlay
+			y=124
+			width=560
+			height=max
+		}
+
+		region {
+			name=broadcastarea
+			region=overlay
+			align=right
+			width=645
+			height=max
+		}
+		
+		region {
+			name=taskbar
+			align=top-center
+			width=400
+			height=100
+		}
+		
+		place {
+			controls=BroadcastDetailPanel
+			region=broadcastarea
+			align=bottom
+			width=645
+			height=160
+		}
+		
+		place {
+			controls=GameHubButton,GameGroupsButton,ChatRoomButton,DLCButton,GuideButton,GuidesButton,LegacyCDKeyButton,WebSiteButton,ForumsButton,RecommendButton,WorkshopButton,FriendsButton,PlayersButton,AchievementsButton,ScreenshotsButton
+			region=buttonsarea
+			align=left
+			dir=down
+			y=50
+			spacing=8
+		}
+		
+		place {
+			control=Clock,ClockSuffix
+			region=overlay
+			align=top-center
+		}
+
+		place {
+			control=SessionText,TwoWeeksText,ForeverText
+			region=overlay
+			dir=down
+			y=43
+			spacing=3
+		}
+	}	
+}
