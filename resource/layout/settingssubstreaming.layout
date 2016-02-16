@@ -8,9 +8,8 @@
 			render_bg {
 				0="fill(x0+71,y0+233,x1,y0+234, dividers_onLightBG)"
 				1="fill(x0+71,y0+329,x1,y0+330, dividers_onLightBG)"
-
-				5="image(x0+26,y0+251,x1,y1, graphics/icons/settings/host)"
-				6="image(x0+26,y0+347,x1,y1, graphics/icons/settings/group)"
+				2="image(x0+26,y0+251,x1,y1, graphics/icons/settings/host)"
+				3="image(x0+26,y0+347,x1,y1, graphics/icons/settings/group)"
 			}
 		}
 
@@ -23,111 +22,108 @@
 	}
 
 	layout {
+		place {
+			control=HostDivider,ClientDivider,SupportInformationLabel
+			height=0
+		}
+		
 		region {
 			name=page
-			height=max
-			width=max
 			x=24
 			y=24
+			width=max
+			height=max
 			margin-right=24
 		}
 
 		place {
 			control=DescriptionLabel
 			region=page
-			width=max
 			dir=down
+			width=max
 		}
 
 		place {
 			control=RemoteClientList
 			region=page
 			start=DescriptionLabel
-			width=max
-			height=125
 			dir=down
 			y=7
+			width=max
+			height=125
 		}
 
 		place {
 			control=EnableStreaming
-			height=18
 			start=RemoteClientList
-			width=max
 			dir=down
 			y=7
+			width=max
+			height=18
 		}
 
 		region {
 			name=host
-			height=150
-			width=max
 			x=82
 			y=224
+			width=max
+			height=150
 			margin-right=29
 		}
 
 		place {
 			control=HostLabel
 			region=host
-			y=28
 			dir=down
-			spacing=2
+			y=28
 			width=max
+			spacing=2			
 		}
 
 		place {
 			control=AdvancedHostOptions,UnsupportedPlatform
-			width=185
-			height=34
 			start=HostLabel
 			dir=down
 			y=4
+			width=185
+			height=34			
 		}
 
 		region {
 			name=client
-			height=150
-			width=max
 			x=82
 			y=320
+			width=max
+			height=150
 			margin-right=29
 		}
 
 		place {
 			control=ClientLabel
 			region=client
-			y=28
 			dir=down
-			spacing=2
+			y=28
 			width=max
+			spacing=2			
 		}
 
 		place {
 			control=AdvancedClientOptions
-			width=185
-			height=34
 			start=ClientLabel
 			dir=down
 			y=4
+			width=185
+			height=34			
 		}
 
 		place {
-			control="QualityFast,QualityBalanced,QualityBeautiful"
+			control=QualityFast,QualityBalanced,QualityBeautiful
 			region=client
-			y=31
-			x=226
 			dir=down
+			x=226
+			y=31
 			height=18
 			spacing=18
-		}
-
-
-		
-		
-		place {
-			control=HostDivider,ClientDivider,SupportInformationLabel
-			height=0
 		}
 	}
 }
