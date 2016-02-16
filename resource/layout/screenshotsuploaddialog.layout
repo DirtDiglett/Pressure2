@@ -8,7 +8,6 @@
 				0="fill(x0,y1-58,x1,y1-57, dividers_onLightBG)"
 				1="fill(x0+70,y0+139,x1,y0+140, dividers_onLightBG)"
 			}
-
 			render_bg {
 				0="image(x0+30,y0+64,x1,y1, graphics/icons/upload/upload)"
 			}
@@ -19,31 +18,31 @@
 		}
 
 		SlimProgressBar {
+			render {}
 			render_bg {
-			    0="fill( x0, y0, x1, y1, lime500transparent )"
-			}
-			
-			render {}      
+				0="fill( x0, y0, x1, y1, lime500transparent )"
+			}	 
 		}
 		
 		SlimProgressBarError {
 			textcolor=red500
+
 			render_bg {
-			    0="fill( x0, y0, x1, y1, disabled_onLightBG )"
+				0="fill( x0, y0, x1, y1, disabled_onLightBG )"
 			}
 		}
 	}
 	
 	layout {
 		place {
-			control="upload_question"
+			control=upload_question
 			x=105
 			y=58
 			margin-right=24
 		}
 
 		place {
-			control="upload_info"
+			control=upload_info
 			x=105
 			y=58
 			width=max
@@ -51,7 +50,7 @@
 		}
 
 		place {
-			control="upload_size"
+			control=upload_size
 			start=upload_info
 			dir=down
 			y=24
@@ -72,63 +71,60 @@
 		}
 
 		place {
-			control="upload_size_info"
+			control=upload_size_info
 			start=upload_size
 			dir=right
 			x=4
 		}
 
-
-
 		place {
-			control="error_info" 
+			control=error_info
 			x=105
 			y=58
-			margin-right=24
 			width=max
+			margin-right=24
 		}
 
 		place {
-			control="upload_progress"
+			control=upload_progress
 			start=upload_info
 			dir=down
-			width=max
-			margin-right=24
-			height=5
 			y=8
+			width=max
+			height=5
+			margin-right=24
 		}
 		
-		
 		place {
-			control="visiblity_label"
+			control=visiblity_label
 			x=105
 			y=157
 		}
 		
 		place {
-			control="visibility_options"
-			start="visiblity_label"
-			y=4
+			control=visibility_options
+			start=visiblity_label
 			dir=down
+			y=4
 			height=34
 		}
 
 		place {
-			control="share_to_facebook_check_button"
+			control=share_to_facebook_check_button
 			start=visibility_options
-			height=18
 			dir=down
 			y=8
+			height=18
 		}
 
 		place {
-			control="facebook_logo"
-			start="share_to_facebook_check_button"
+			control=facebook_logo
+			start=share_to_facebook_check_button
 			y=3
 		}
 
 		place {
-			control="shared_to_facebook_ok_label,shared_to_facebook_no_multi_label,shared_to_facebook_no_private_label"
+			control=shared_to_facebook_ok_label,shared_to_facebook_no_multi_label,shared_to_facebook_no_private_label
 			start=share_to_facebook_check_button
 			dir=down
 			y=8
@@ -136,22 +132,21 @@
 			margin-right=24
 		}
 
-
 		region {
-			name="buttons"
+			name=buttons
+			align=bottom
 			width=max
 			height=58
-			align=bottom
 		}
 
 		place {
-			control="upload_button,cancel_button"
-			region="buttons"
-		    width=92
-		    height=34
-		    align=right
-			margin-right=11
+			control=upload_button,cancel_button
+			region=buttons
+			align=right
+			width=92
+			height=34
 			margin-top=12
+			margin-right=11
 			spacing=12
 		}
 	}

@@ -1,12 +1,16 @@
 "resource/layout/screenshotmanager.layout" {
 	styles {
+		DarkRegionDetails {}
+		publishcaptionprompt {}
+		NoSelectionInstructions {}
+
 		CScreenshotManager {
 			minimum-height=577
 			minimum-width=778
 
 			render {
 				0="image_tiled(x0,y0+34,x1,y0+38, graphics\material\shadows\top)"
-				2="fill(x0,y1-58,x1,y1-57, dividers_onLightBG)"
+				1="fill(x0,y1-58,x1,y1-57, dividers_onLightBG)"
 			}
 			render_bg {
 				0="fill(x0,y0,x1,y0+79, customgreysecondary)"
@@ -17,8 +21,8 @@
 			bgcolor=white
 			padding-left=4
 			padding-top=4
-			padding-bottom=4
 			padding-right=4
+			padding-bottom=4
 
 			render_bg {
 				0="fill(x1-1,y0,x1,y1, dividers_onLightBG)"
@@ -41,25 +45,17 @@
 			bgcolor=disabled_onLightBG
 
 			render {
-				// lines around
-				1="fill(x0, y0, x0+2, y1, blue500 )"  //left
-				2="fill(x0, y0, x1, y0+2, blue500 )"  //top
-				3="fill(x1-2, y0, x1, y1, blue500 )"  //right
-				4="fill(x0, y1-2, x1, y1, blue500 )"  //bottom
-
-				10="fill(x0,y0,x1,y1, blue500transparent)"
+				0="fill(x0, y0, x0+2, y1, blue500 )"
+				1="fill(x0, y0, x1, y0+2, blue500 )"
+				2="fill(x1-2, y0, x1, y1, blue500 )"
+				3="fill(x0, y1-2, x1, y1, blue500 )"
+				4="fill(x0,y0,x1,y1, blue500transparent)"
 			}
 		}
 
 		ThumbnailUploaded {
 			bgcolor=disabled_onLightBG
 		}
-
-
-
-
-
-		DarkRegionDetails {}
 
 		SSDetails {
 			minimum-width=340
@@ -75,9 +71,6 @@
 			font-style=italic
 		}
 
-
-		publishcaptionprompt {}
-
 		publishcharsleft {
 			textcolor=disabled_onLightBG
 		}
@@ -87,26 +80,23 @@
 		}
 		
 		ScreenshotLoadingThrobber {
+			bgcolor=disabled_onLightBG
 			minimum-width=100
 			minimum-height=75
-			bgcolor=disabled_onLightBG
 		}
 
 		LargeSelectionCount {
-			font-size=60
 			font-family=mediumfont
+			font-size=60
 		}
 
 		NoSelectionTitle {
-			font-size="30"
-			font-style="normal"
+			textcolor=customgreyprimary
 			font-family=mediumfont
-			textcolor="customgreyprimary"
+			font-size=30
+			font-style=normal
 		}
 
-		NoSelectionInstructions {}
-
-		// Our combobox is much taller than a regular one.
 		ComboBox {
 			render {
 				0="image( x1 - 24, y0 + 20, x1, y1, graphics/icons/dropdown/standard/down_onLightBG )"
@@ -116,133 +106,136 @@
 	
 	
 	layout {
+		place {
+			control=selectorlabel,null_placer
+			height=0
+		}
+		
 		region {
-			name="details"
+			name=details
 			align=right
 			y=79
-			margin-bottom=58
 			width=340
 			height=max
+			margin-bottom=58
 		}
 		
 		place {
-			control="DarkRegionDetails"
-			region="details"
+			control=DarkRegionDetails
+			region=details
 			width=max
 			height=max
-			z="-1"
+			z=-1
 		}
 
 		place {
-			control="SSDetails"
-			region="details" 
+			control=SSDetails
+			region=details
 			width=max
 			height=260
-			align="top-center"
+			align=top-center
 		}
 
 		place {
 			control=SSDate
 			start=SSDetails
-			dir=down
-			y=8
-			x=8
 			align=left
-		}
-
-		place {
-			control="SSSize,SSSizeOriginal"
-			start="SSDate"
-			margin-right=8
-			align=right
-			dir=left
-		}
-
-		place {
-			control="publish_caption,details_caption"
-			region="details"
+			dir=down
 			x=8
-			align=bottom
-			margin-bottom=30
-			height=90
-			margin-right=8
-			width=500
+			y=8
 		}
 
 		place {
-			control="spoiler_checkbox"
-			start="publish_caption"
+			control=SSSize,SSSizeOriginal
+			align=right
+			start=SSDate
+			dir=left
+			margin-right=8
+		}
+
+		place {
+			control=publish_caption,details_caption
+			region=details
+			align=bottom
+			x=8
+			margin-right=8
+			margin-bottom=30
+			width=500
+			height=90
+		}
+
+		place {
+			control=spoiler_checkbox
+			start=publish_caption
 			dir=down
 			height=18
 			y=4
 		}
 
 		place {
-			control="publish_charsleft"
-			region="details"
+			control=publish_charsleft
+			region=details
 			start=spoiler_checkbox
+			align=right
 			dir=right
-			align="right"
 			height=18
 			margin-right=8
 		}
 
 		place {
-			control="file_not_loaded_label"
-			region="details"
-			y=100
-			align="top-center"
-		}
-		
-
-
-		place {
-			control="multi_img"
-			region="details"
-			y=40
-			align="top-center"
-		}
-
-		place {
-			control="multi_img_count"
-			region="details"
-			y=80
-			align="top-center"
-		}
-
-		place {
-			control="multi_img_selected"
+			control=file_not_loaded_label
 			region=details
+			align=top-center
+			y=100
+		}
+
+		place {
+			control=multi_img
+			region=details
+			align=top-center
+			y=40
+		}
+
+		place {
+			control=multi_img_count
+			region=details
+			align=top-center
+			y=80
+		}
+
+		place {
+			control=multi_img_selected
+			region=details
+			align=top-center
 			start=multi_img
 			dir=down
 			y=18
-			align="top-center"
 		}
 
 		place {
-			control="multi_img_upload_size,multi_img_upload_size_info"
+			control=multi_img_upload_size,multi_img_upload_size_info
 			region=details
+			align=top-center
 			y=224
-			align="top-center"
 			spacing=4
 		}
 
 		place {
-			control="multi_img_storage_remaining,multi_img_storage_remaining_info"
+			control=multi_img_storage_remaining,multi_img_storage_remaining_info
 			region=details
+			align=top-center
 			y=248
-			align="top-center"
 			spacing=4
 		}
 
 		place {
-			control="instr_no_selection_title,instr_no_selection"
-			region="details"
+			control=instr_no_selection_title,instr_no_selection
+			region=details
+			dir=down
+			x=24
 			y=24
 			width=max
-			x=24
 			margin-right=24
-			dir=down
 			spacing=18
 		}
 
@@ -254,14 +247,14 @@
 		}
 
 		place {
-			control="game_selector"
+			control=game_selector
 			region=subnav
 			dir=right
 			height=max
 		}
 
 		region {
-			name="list"
+			name=list
 			margin-right=340
 			margin-bottom=58
 			width=max
@@ -271,49 +264,44 @@
 		place {
 			control=grid
 			region=list
+			x=4
 			width=max
 			height=max
-			x=4
 			margin-bottom=-1
 		}
 
 		place {
-			control="no_screenshots"
-			region="list"
+			control=no_screenshots
+			region=list
+			align="top-center
 			y=50
-			align="top-center"
 		}
 
 		region {
-			name="buttons"
+			name=buttons
+			align=bottom
 			width=max
 			height=58
-			align=bottom
 		}
 
 		place {
-			control="multiselect_button,view_local_library_button,view_screenshots"
-			region="buttons"
-		    height=34
-		    align=left
+			control=multiselect_button,view_local_library_button,view_screenshots
+			region=buttons
+			align=left
+			height=34
 			margin-left=11
 			margin-top=12
 			spacing=12
 		}
 
 		place {
-			control="delete_button,details_button,publish_button,multi_img_delete,multi_img_upload"
-			region="buttons"
-		    height=34
-		    align=right
-			margin-right=11
+			control=delete_button,details_button,publish_button,multi_img_delete,multi_img_upload
+			region=buttons
+			align=right
+			height=34
 			margin-top=12
+			margin-right=11
 			spacing=12
-		}
-
-		place {
-			control=selectorlabel,null_placer
-			height=0
 		}
 	}
 }

@@ -5,7 +5,7 @@
 			minimum-height=320
 
 			render {
-    			0="fill(x0,y1-58,x1,y1-57, dividers_onLightBG)"
+				0="fill(x0,y1-58,x1,y1-57, dividers_onLightBG)"
 			}
 		}
 	}
@@ -13,11 +13,11 @@
 	layout {
 		place {
 			control=ChooseAnImage,ImagePrescription
-			y=58
-			x=24
-			margin-right=24
-			width=max
 			dir=down
+			x=24
+			y=58
+			width=max
+			margin-right=24
 			spacing=8
 		}
 
@@ -26,29 +26,28 @@
 			start=ImagePrescription
 			dir=down
 			y=18
-			margin-right=24
 			width=max
-			dir=down
+			margin-right=24
 		}
 
 		place {
 			control=Filename
 			start=ThisFile
 			dir=down
-			width=max
-			margin-right=24
 			y=4
+			width=max
 			height=34
+			margin-right=24
 		}
 
 		place {
 			control=Browse
 			start=Filename
 			dir=down
-			width=260
-			margin-right=24
 			y=4
+			width=260
 			height=34
+			margin-right=24
 		}
 
 		place {
@@ -61,23 +60,21 @@
 		}
 
 		region {
-			name="buttons"
+			name=buttons
+			align=bottom
 			width=max
 			height=58
-			align=bottom
 		}
 
 		place {
-			control="OK,Cancel"
-			region="buttons"
-		    width=92
-		    height=34
-		    align=right
-			margin-right=11
+			control=OK,Cancel
+			region=buttons
+			align=right
+			width=92
+			height=34
 			margin-top=12
+			margin-right=11
 			spacing=12
 		}		
 	}
-
 }
-

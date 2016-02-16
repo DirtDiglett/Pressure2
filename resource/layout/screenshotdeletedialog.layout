@@ -5,7 +5,7 @@
 			minimum-height=200
 
 			render {
-				2="fill(x0,y1-58,x1,y1-57, dividers_onLightBG)"
+				0="fill(x0,y1-58,x1,y1-57, dividers_onLightBG)"
 			}
 
 			render_bg {
@@ -17,7 +17,12 @@
 	
 	layout {
 		place {
-			control="WarningText"
+			control=Warning
+			height=0
+		}
+
+		place {
+			control=WarningText
 			x=105
 			y=58
 			width=max
@@ -25,34 +30,29 @@
 		}
 
 		place {
-			control="DeleteFromCloudBox"
-			start="WarningText"
+			control=DeleteFromCloudBox
+			start=WarningText
 			dir=down
 			y=4
 			height=18
 		}
 
 		region {
-			name="buttons"
+			name=buttons
+			align=bottom
 			width=max
 			height=58
-			align=bottom
 		}
 
 		place {
-			control="Delete,Cancel"
-			region="buttons"
-		    width=92
-		    height=34
-		    align=right
-			margin-right=11
+			control=Delete,Cancel
+			region=buttons
+			align=right
+			width=92
+			height=34
 			margin-top=12
+			margin-right=11
 			spacing=12
-		}
-
-		place {
-			control=Warning
-			height=0
 		}
 	}
 }

@@ -1,10 +1,10 @@
 "resource/layout/pendinggiftsdialog.layout" {
 	layout {
 		place {
-			control="HTML"
+			control=HTML
+			y=34
 			width=max
 			height=max
-			y=34
 		}
 	}
 }

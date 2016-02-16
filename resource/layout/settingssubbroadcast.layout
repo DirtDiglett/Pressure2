@@ -10,149 +10,147 @@
 			}
 
 			render_bg {
-				5="image(x0+26,y0+27,x1,y1, graphics/icons/settings/privacy)"
-				6="image(x0+26,y0+119,x1,y1, graphics/icons/settings/host)"
+				0="image(x0+26,y0+27,x1,y1, graphics/icons/settings/privacy)"
+				1="image(x0+26,y0+119,x1,y1, graphics/icons/settings/host)"
 			}
 		}
 
-		CSettingsSubBroadcast:framefocus {
-			render {
-				0="fill(x0+70,y0+10,x1,y0+47, custombackgroundprimarytransparent)"
-				1="fill(x0+70,y0+105,x0+300,y0+139, custombackgroundprimarytransparent)"
-				2="fill(x0+70,y0+176,x1,y0+200, custombackgroundprimarytransparent)"
-				3="fill(x0+70,y0+238,x1,y0+263, custombackgroundprimarytransparent)"
-				4="fill(x0+70,y0+304,x1,y0+324, custombackgroundprimarytransparent)"
+			CSettingsSubBroadcast:framefocus {
+				render {
+					0="fill(x0+70,y0+10,x1,y0+47, custombackgroundprimarytransparent)"
+					1="fill(x0+70,y0+105,x0+300,y0+139, custombackgroundprimarytransparent)"
+					2="fill(x0+70,y0+176,x1,y0+200, custombackgroundprimarytransparent)"
+					3="fill(x0+70,y0+238,x1,y0+263, custombackgroundprimarytransparent)"
+					4="fill(x0+70,y0+304,x1,y0+324, custombackgroundprimarytransparent)"
+				}
 			}
-		}
 	}
 
 	layout {
+		place {
+			control=ConfigMic,RequiresRestartLabel,ShowReminder,EnableHardwareSupport,BroadcastHelpURL,BroadcastHelpHeader,BroadcastStatus,BroadcastStatusHeader,BroadcastDisabledSupportURL,BroadcastDisabledLabel
+			height=0
+		}
+		
 		region {
 			name=privacy
-			height=114
-			width=max
 			x=82
 			y=0
+			width=max
+			height=114
 			margin-right=29
 		}
 
 		place {
 			control=PermissionsHeader
 			region=privacy
-			y=28
 			dir=down
+			y=28
 			spacing=2
 		}
 
 		place {
 			control=Permissions
-			width=350
-			height=34
 			start=PermissionsHeader
 			dir=down
 			y=4
+			width=350
+			height=34
 		}
 
 		place {
 			control=Divider1
+			align=left
 			x=71
 			y=100
 			width=max
 			height=1
-			align=left
 		}
 
 		region {
 			name=broadcast
-			height=max
-			width=max
 			x=82
 			y=92
+			width=max
+			height=max
 			margin-right=29
 		}
 
 		place {
 			control=DimensionsHeader
 			region=broadcast
-			y=28
 			dir=down
+			y=28
 			spacing=2
 		}
 
 		place {
 			control=Dimensions
-			width=350
-			height=34
 			start=DimensionsHeader
 			dir=down
 			y=4
+			width=350
+			height=34
 		}
 
 		place {
 			control=BitrateLimitHeader
 			start=Dimensions
-			y=8
 			dir=down
+			y=8
 			spacing=2
 		}
 
 		place {
 			control=BitrateLimit
-			width=350
-			height=34
 			start=BitrateLimitHeader
 			dir=down
 			y=4
+			width=350
+			height=34
 		}
 
 		place {
 			control=EncoderHeader
 			start=BitrateLimit
-			y=8
 			dir=down
+			y=8
 			spacing=2
 		}
 
 		place {
 			control=EncoderSetting
-			width=350
-			height=34
 			start=EncoderHeader
 			dir=down
 			y=4
+			width=350
+			height=34
 		}
 		
 		place {
 			control=ShowChatHeader
 			start=EncoderSetting
-			y=8
 			dir=down
+			y=8
 			spacing=2
 		}
 
 		place {
 			control=ShowChatCombo
-			width=350
-			height=34
 			start=ShowChatHeader
 			dir=down
 			y=4
+			width=350
+			height=34
 		}
 		
 		place {
 			control=IncludeDesktop,RecordSystemAudio,RecordMic,ShowDebugInfo
 			start=ShowChatCombo
-			y=8
 			dir=down
+			y=8
 			height=18
 			spacing=8
-		}	
-
-		
-
-		place {
-			control=ConfigMic,RequiresRestartLabel,ShowReminder,EnableHardwareSupport,BroadcastHelpURL,BroadcastHelpHeader,BroadcastStatus,BroadcastStatusHeader,BroadcastDisabledSupportURL,BroadcastDisabledLabel
-			height=0
 		}
 	}
 }
