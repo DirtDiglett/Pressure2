@@ -2,7 +2,7 @@
 	styles {
 		CServerBrowserDialog {
 			render {
-				0="image_tiled(x0,y0+34,x1,y0+38, graphics\material\shadows\top)"
+				0="image_tiled(x0,y0+34,x1,y0+38, graphics/material/shadows/top)"
 			}
 			render_bg {
 				0="fill(x0,y0,x1,y0+72, customgreysecondary)"

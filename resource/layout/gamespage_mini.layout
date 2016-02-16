@@ -4,7 +4,7 @@
 			bgcolor=custombackgroundnofocus
 			
 			render {
-				0="image_tiled(x0,y0+55,x1,y0+59, graphics\material\shadows\top)"
+				0="image_tiled(x0,y0+55,x1,y0+59, graphics/material/shadows/top)"
 				1="fill(x1-2,y0+100,x1, y0+119, grey200)"
 			}
 			
@@ -62,7 +62,7 @@
 		ListPanelColumnSelectButton {
 			render {
 				0="fill(x0+5,y0,x1+4,y1-1, grey200)"
-				1="image( x0 + 7, y0 + 4, x1, y1, graphics\icons\columnselectbutton\standard\columnselectbutton)"
+				1="image( x0 + 7, y0 + 4, x1, y1, graphics/icons/columnselectbutton/standard/columnselectbutton)"
 			}
 			render_bg {}
 		}
@@ -70,14 +70,14 @@
 			ListPanelColumnSelectButton:hover {
 				render {
 					0="fill(x0+5,y0,x1+4,y1-1, grey200)"
-					1="image( x0 + 7, y0 + 4, x1, y1, graphics\icons\columnselectbutton\hover\columnselectbutton)"
+					1="image( x0 + 7, y0 + 4, x1, y1, graphics/icons/columnselectbutton/hover/columnselectbutton)"
 				}
 			}
 
 			ListPanelColumnSelectButton:selected {
 				render {
 					0="fill(x0+5,y0,x1+4,y1-1, grey200)"
-					1="image( x0 + 7, y0 + 4, x1, y1, graphics\icons\columnselectbutton\hover\columnselectbutton)"
+					1="image( x0 + 7, y0 + 4, x1, y1, graphics/icons/columnselectbutton/hover/columnselectbutton)"
 				}
 			}
 
@@ -87,20 +87,20 @@
 			inset="-40 -40 0 0" // Remove the down arrow that can't be disabled, only moved. So we hide it instead.
 			
 			render {
-				0="image(x0+14, y0+14, x1, y1, graphics\icons\category\standard\category)"
+				0="image(x0+14, y0+14, x1, y1, graphics/icons/category/standard/category)"
 			}
 		}
 		
 			CMiniGameFilterMenuButton:hover {				
 				render {
-					0="image(x0+14, y0+14, x1, y1, graphics\icons\category\hover\category)"
+					0="image(x0+14, y0+14, x1, y1, graphics/icons/category/hover/category)"
 				}
 			}
 			
 			CMiniGameFilterMenuButton:selected {
 				render {
 					0="fill(x0,y0,x1,y1, disabled_onDarkBG)"
-					1="image(x0+14, y0+14, x1, y1, graphics\icons\category\hover\category)"
+					1="image(x0+14, y0+14, x1, y1, graphics/icons/category/hover/category)"
 				}
 			}
 		
@@ -197,13 +197,13 @@
 			inset="0 0 0 0"
 			padding-left=8
 			padding-right=8
-			image=graphics\icons\dropdown\padder
+			image=graphics/icons/dropdown/padder
 
 			render {}
 			render_bg {
 				0="fill(x0,y0-1,x1,y0, dividers_onLightBG)"
 				1="fill(x0,y1-1,x1,y1, dividers_onLightBG)"
-				2="image(x0+14,y0+18,x1,y1, graphics\icons\dropdown\standard\down_dark)"
+				2="image(x0+14,y0+18,x1,y1, graphics/icons/dropdown/standard/down_dark)"
 			}
 		}
 		
@@ -211,7 +211,7 @@
 				render_bg {
 					0="fill(x0,y0-1,x1,y0, dividers_onLightBG)"
 					1="fill(x0,y1-1,x1,y1, dividers_onLightBG)"
-					2="image(x0+14,y0+18,x1,y1, graphics\icons\dropdown\hover\down_dark)"
+					2="image(x0+14,y0+18,x1,y1, graphics/icons/dropdown/hover/down_dark)"
 				}
 			}
 			
@@ -219,7 +219,7 @@
 				render_bg {
 					0="fill(x0,y0-1,x1,y0, dividers_onLightBG)"
 					1="fill(x0,y1-1,x1,y1, dividers_onLightBG)"
-					2="image(x0+14,y0+18,x1,y1, graphics\icons\dropdown\standard\up_dark)"
+					2="image(x0+14,y0+18,x1,y1, graphics/icons/dropdown/standard/up_dark)"
 				}
 			}
 			
@@ -227,7 +227,7 @@
 					render_bg {
 						0="fill(x0,y0-1,x1,y0, dividers_onLightBG)"
 						1="fill(x0,y1-1,x1,y1, dividers_onLightBG)"
-						2="image(x0+14,y0+18,x1,y1, graphics\icons\dropdown\hover\up_dark)"
+						2="image(x0+14,y0+18,x1,y1, graphics/icons/dropdown/hover/up_dark)"
 					}
 				}
 	}

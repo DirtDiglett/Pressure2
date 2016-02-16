@@ -1,4 +1,4 @@
-"Servers\DialogGameInfo.res" {
+"Servers/DialogGameInfo.res" {
 	styles {
 		CDialogGameInfo {
 			minimum-width=724

@@ -7,8 +7,8 @@
 		FriendsPanel {			
 			bgcolor=custombackgroundnofocus
 			render {
-				1="image_tiled(x0,y0+127,x1,y0+131, graphics\material\shadows\top)"
-				2="image_tiled(x0,y1-50,x1,y1-46, graphics\material\shadows\bottom)"
+				1="image_tiled(x0,y0+127,x1,y0+131, graphics/material/shadows/top)"
+				2="image_tiled(x0,y1-50,x1,y1-46, graphics/material/shadows/bottom)"
 			}
 			
 			render_bg {

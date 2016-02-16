@@ -37,19 +37,19 @@
 			
 			render {}
 			render_bg {				
-				0="image(x0, y0, x1, y1, graphics\icons\playalbum\standard\playalbum)"
+				0="image(x0, y0, x1, y1, graphics/icons/playalbum/standard/playalbum)"
 			}	
 		}
 
 			ActionButtonStyle:hover { 
 				render_bg {				
-					0="image(x0, y0, x1, y1, graphics\icons\playalbum\hover\playalbum)"
+					0="image(x0, y0, x1, y1, graphics/icons/playalbum/hover/playalbum)"
 				}	
 			}
 
 			ActionButtonStyle:active { 
 				render_bg {				
-					0="image(x0, y0, x1, y1, graphics\icons\playalbum\active\playalbum)"
+					0="image(x0, y0, x1, y1, graphics/icons/playalbum/active/playalbum)"
 				}	
 			}
 	}

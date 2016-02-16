@@ -4,7 +4,7 @@
 			bgcolor=red500
 
 			render {
-				1="image_tiled(x0,y1,x1,y1+4, graphics\material\shadows\top)"
+				1="image_tiled(x0,y1,x1,y1+4, graphics/material/shadows/top)"
 			}
 			render_bg {
 				0="image(x0+12,y0+16,x1,y1, graphics/invitebars/broadcast)"

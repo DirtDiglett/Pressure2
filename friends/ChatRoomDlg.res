@@ -8,7 +8,7 @@
 		CChatRoomDlg {
 			render {
 				0="fill(x0,y1-76,x1,y1-75, grey200)"
-				1="image_tiled(x0,y0+57,x1,y0+61, graphics\material\shadows\top)"
+				1="image_tiled(x0,y0+57,x1,y0+61, graphics/material/shadows/top)"
 			}
 			render_bg {
 				0="fill(x0,y0+55,x1,y0+57, customgreysecondary)"

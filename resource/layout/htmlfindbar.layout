@@ -36,7 +36,7 @@
 
 		 	render {}
 		 	render_bg {
-				0="image(x0+14,y0+13,x1,y1, graphics\icons\search\standard)"
+				0="image(x0+14,y0+13,x1,y1, graphics/icons/search/standard)"
 		 	}
 		 }
 

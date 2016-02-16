@@ -554,7 +554,7 @@ steam.styles {
 	
 	ListPanelSectionCollapser {
 	  inset="0 0 0 0"
-	  image=graphics\icons\dropdown\padder
+	  image=graphics/icons/dropdown/padder
 	  padding-left=8
 	  padding-right=8
 
@@ -562,7 +562,7 @@ steam.styles {
 	  render_bg {
 		0="fill(x0,y0-1,x1+2,y0, dividers_onLightBG)"
 		1="fill(x0,y1-1,x1+2,y1, dividers_onLightBG)"
-		2="image(x0+14,y0+6,x1,y1, graphics\icons\dropdown\standard\down_dark)"
+		2="image(x0+14,y0+6,x1,y1, graphics/icons/dropdown/standard/down_dark)"
 	  }
 	}
 
@@ -570,7 +570,7 @@ steam.styles {
 		render_bg {
 		  0="fill(x0,y0-1,x1+2,y0, dividers_onLightBG)"
 		  1="fill(x0,y1-1,x1+2,y1, dividers_onLightBG)"
-		  2="image(x0+14,y0+6,x1,y1, graphics\icons\dropdown\hover\down_dark)"
+		  2="image(x0+14,y0+6,x1,y1, graphics/icons/dropdown/hover/down_dark)"
 		}
 	  }
 
@@ -578,7 +578,7 @@ steam.styles {
 		render_bg {
 		  0="fill(x0,y0-1,x1+2,y0, dividers_onLightBG)"
 		  1="fill(x0,y1-1,x1+2,y1, dividers_onLightBG)"
-		  2="image(x0+14,y0+6,x1,y1, graphics\icons\dropdown\standard\up_dark)"
+		  2="image(x0+14,y0+6,x1,y1, graphics/icons/dropdown/standard/up_dark)"
 		}
 	  }
 
@@ -586,7 +586,7 @@ steam.styles {
 		  render_bg {
 			0="fill(x0,y0-1,x1+2,y0, dividers_onLightBG)"
 			1="fill(x0,y1-1,x1+2,y1, dividers_onLightBG)"
-			2="image(x0+14,y0+6,x1,y1, graphics\icons\dropdown\hover\up_dark)"
+			2="image(x0+14,y0+6,x1,y1, graphics/icons/dropdown/hover/up_dark)"
 		  }
 		}
 
@@ -721,7 +721,7 @@ steam.styles {
 	
 	SectionedListPanelCollapser {
 	  inset="0 0 0 0"
-	  image=graphics\icons\dropdown\padder
+	  image=graphics/icons/dropdown/padder
 	  padding-left=8
 	  padding-right=8
 	  bgcolor=none
@@ -730,7 +730,7 @@ steam.styles {
 	  render_bg {
 		0="fill(x0,y0-1,x1+2,y0, dividers_onLightBG)"
 		1="fill(x0,y1-1,x1+2,y1, dividers_onLightBG)"
-		2="image(x0+14,y0+6,x1,y1, graphics\icons\dropdown\standard\down_dark)"
+		2="image(x0+14,y0+6,x1,y1, graphics/icons/dropdown/standard/down_dark)"
 	  }
 	}
 
@@ -738,7 +738,7 @@ steam.styles {
 		render_bg {
 		  0="fill(x0,y0-1,x1+2,y0, dividers_onLightBG)"
 		  1="fill(x0,y1-1,x1+2,y1, dividers_onLightBG)"
-		  2="image(x0+14,y0+6,x1,y1, graphics\icons\dropdown\hover\down_dark)"
+		  2="image(x0+14,y0+6,x1,y1, graphics/icons/dropdown/hover/down_dark)"
 		}
 	  }
 
@@ -746,7 +746,7 @@ steam.styles {
 		render_bg {
 		  0="fill(x0,y0-1,x1+2,y0, dividers_onLightBG)"
 		  1="fill(x0,y1-1,x1+2,y1, dividers_onLightBG)"
-		  2="image(x0+14,y0+6,x1,y1, graphics\icons\dropdown\standard\up_dark)"
+		  2="image(x0+14,y0+6,x1,y1, graphics/icons/dropdown/standard/up_dark)"
 		}
 	  }
 
@@ -754,7 +754,7 @@ steam.styles {
 		  render_bg {
 			0="fill(x0,y0-1,x1+2,y0, dividers_onLightBG)"
 			1="fill(x0,y1-1,x1+2,y1, dividers_onLightBG)"
-			2="image(x0+14,y0+6,x1,y1, graphics\icons\dropdown\hover\up_dark)"
+			2="image(x0+14,y0+6,x1,y1, graphics/icons/dropdown/hover/up_dark)"
 		  }
 		}
 
@@ -964,7 +964,7 @@ steam.styles {
 
 		CPlayersDialog {
 			render {
-				0="image_tiled(x0,y0+34,x1,y0+38, graphics\material\shadows\top)"
+				0="image_tiled(x0,y0+34,x1,y0+38, graphics/material/shadows/top)"
 			}
 			render_bg {
 				0="fill(x0,y0,x1,y0+100, customgreysecondary)"

@@ -24,7 +24,7 @@
 
 		detailsbox {
 			render_bg {
-				0="image(x0,y0+2,x1,y1, graphics\overlay\buttons\friends)"
+				0="image(x0,y0+2,x1,y1, graphics/overlay/buttons/friends)"
 			}
 		}
 
