@@ -1,20 +1,20 @@
 "resource/layout/overlaydialogsettings.layout" {
 	layout {
 		place {
-			control="frame_title"
+			control=frame_title
 			visible=0
 			height=0
 		}
 
 		place {
-			control="frame_captiongrip"
+			control=frame_captiongrip
 			margin=0
 			width=max
 			height=55
 		}
 		
 		place [!$OSX]  {
-			control="frame_minimize,frame_maximize,frame_close"
+			control=frame_minimize,frame_maximize,frame_close
 			align=right
 			margin-top=16
 			margin-right=15
@@ -22,28 +22,28 @@
 		}
 
 		region {
-			name="buttons"
+			name=buttons
+			align=bottom
 			width=max
 			height=58
-			align=bottom
 		}
 
 		place {
 			control=sheet
+			y=17
 			height=max
 			width=max
 			margin-bottom=58
-			y=17
 		}
 
 		place {
-			control="OKButton,CancelButton"
-			region="buttons"
-		    width=92
-		    height=34
-		    align=right
-			margin-right=11
+			control=OKButton,CancelButton
+			region=buttons
+			align=right
+			width=92
+			height=34
 			margin-top=12
+			margin-right=11
 			spacing=12
 		}
 	}

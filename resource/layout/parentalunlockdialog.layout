@@ -1,5 +1,7 @@
 "resource/layout/parentalunlockdialog.layout" {
 	styles {
+		Hey2 {}
+
 		ParentalUnlockDialog {
 			minimum-width=380
 			minimum-height=286
@@ -10,25 +12,27 @@
 		}
 
 		Password {
-			minimum-height=50
 			font-size=40
+			minimum-height=50
 		}
 
 		Hey {
+			textcolor=text_onLightBG
 			font-family=mediumfont
 			font-size=15
-			textcolor=text_onLightBG
 		}
-		
-		Hey2 {}
-		
+
 		Key {
 			image="graphics/icons/familyviewdialog/familyview"
 		}
-
 	}
 	
 	layout {
+		place {
+			control=Instructions2
+			height=0
+		}
+
 		place {
 			control=KeyImage
 			x=24
@@ -55,37 +59,32 @@
 		}
 
 		region {
-			name="buttons"
+			name=buttons
+			align=bottom
 			width=max
 			height=58
-			align=bottom
 		}
 
 		place {
-			control="OK,Cancel"
-			region="buttons"
-		    width=92
-		    height=34
-		    align=right
-			margin-right=11
+			control=OK,Cancel
+			region=buttons
+			align=right
+			width=92
+			height=34
 			margin-top=12
+			margin-right=11
 			spacing=12
 		}
 
 		place {
-			control="Recovery"
-			region="buttons"
-			end-right=OK
-		    height=18
-		    align=left
+			control=Recovery
+			region=buttons
+			align=left
+			height=18
 			margin-left=11
 			margin-top=20
 			spacing=12
-		}
-
-		place {
-			control=Instructions2
-			height=0
+			end-right=OK
 		}
 	}
 }

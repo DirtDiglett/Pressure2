@@ -2,36 +2,39 @@
 	styles {		
 		sidemenu {}
 		
-			sidemenu:hover {}
-		
 		topbar {
-			font-size=30
 			textcolor=text_onDarkBG
-			font-weight=400
 			font-family=heavyfont
+			font-size=30
+			font-weight=400
 		}
 		
 		clocksuffix {
-			font-size=30
 			textcolor=text_onDarkBG
-			font-weight=400
 			font-family=heavyfont
-			font-style=uppercase;
+			font-size=30
+			font-weight=400
+			font-style=uppercase
 		}
 		
 		timeStrings {
-			font-size=18
 			textcolor=disabled_OnDarkBG
-			font-family=basefontfont
+			font-family=basefont
+			font-size=18
 			font-weight=400
 		}
 	}
 	
 	layout {
+		place {
+			controls=GameGroupsButton,ChatRoomButton,DLCButton,GuideButton,LegacyCDKeyButton,WebSiteButton,RecommendButton,WorkshopButton,NewsDetailPanel
+			height=0
+		}
+
 		region {
 			name=overlay
-			width=max
 			align=top-center
+			width=max
 			margin-left=15
 			margin-top=8
 			margin-right=15
@@ -41,34 +44,22 @@
 		region {
 			name=buttonsarea
 			region=overlay
+			y=144
 			width=560
 			height=max
-			y=144
 			margin-bottom=270
 		}
 
 		region {
 			name=broadcastarea
 			region=overlay
+			align=right
 			width=645
 			height=max
-			align=right
 		}
 
-		region { name="detailpanelsTop"    region=overlay align=bottom width=max height=594 margin-bottom=480 }	
-		region	{ name="detailpanelsMiddle" region=overlay align=bottom width=max height=466 margin-bottom=406 x=600 }
-		region	{ name="detailpanelsBottom" region=overlay align=bottom width=max height=210 margin-bottom=300 }
-		region 	{ name="topbar" region=overlay width="max" height=50 }
-		region	{ name="taskbar" region=overlay width="max" height=75 align=bottom }
-
 		place {
-			controls="GameGroupsButton,ChatRoomButton,DLCButton,GuideButton,LegacyCDKeyButton,WebSiteButton,RecommendButton,WorkshopButton,NewsDetailPanel"
-			width=0
-			height=0
-		}
-		
-		place {
-			controls="BroadcastDetailPanel"
+			controls=BroadcastDetailPanel
 			region=broadcastarea
 			align=bottom
 			width=645
@@ -82,7 +73,7 @@
 
 		place {
 			control=FriendsDetailPanel
-			height=117 // 44 + 44 + 29
+			height=117 // 44 + 44 + 29, This accounts for it being Friends + Players buttons, and the 29 spacing used for the other controls.
 		}
 
 		place {
@@ -90,29 +81,29 @@
 			region=buttonsarea
 			align=left-center
 			dir=down
-			spacing=29
 			width=max
+			spacing=29
 		}
 
 		place {
-			control="Clock,ClockSuffix"
+			control=Clock,ClockSuffix
 			region=overlay
 			align=top-center
 		}
 
 		place {
-			control="SessionText,TwoWeeksText,ForeverText"
-			dir=down
+			control=SessionText,TwoWeeksText,ForeverText
 			region=overlay
+			dir=down
 			y=43
 			spacing=3
 		}
 
 		place {
 			control=AchievementsDetailPanel
-			dir=down
 			region=overlay
 			align=bottom
+			dir=down
 			width=475
 			height=240
 		}

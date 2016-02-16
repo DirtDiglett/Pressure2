@@ -10,9 +10,9 @@
 		}
 
 		Hey {
+			textcolor=text_onLightBG
 			font-family=mediumfont
 			font-size=15
-			textcolor=text_onLightBG
 		}
 
 		Key {
@@ -30,28 +30,28 @@
 		place {
 			control=Instructions
 			start=KeyImage
-			x=24
 			dir=right
+			x=24
 			width=max
 			height=max
 			margin-right=24
 		}
 		
 		region {
-			name="buttons"
+			name=buttons
+			align=bottom
 			width=max
 			height=58
-			align=bottom
 		}
 
 		place {
-			control="OK,Cancel"
-			region="buttons"
-		    width=92
-		    height=34
-		    align=right
-			margin-right=11
+			control=OK,Cancel
+			region=buttons
+			align=right
+			width=92
+			height=34
 			margin-top=12
+			margin-right=11
 			spacing=12
 		}
 	}

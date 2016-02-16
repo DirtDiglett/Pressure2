@@ -15,7 +15,7 @@
 		
 	layout {
 	  place {
-	  	control="DragPropertySheet"
+	  	control=DragPropertySheet
 	  	width=max
 	  	height=max
 	  }
