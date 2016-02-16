@@ -1,11 +1,9 @@
 • Streaming (Including in Game Details View)
 • Broadcast Stuff
 • Friends Dialog (Complete re-do)
-• Notifications (Re-do)
 • Home Sharing Notifications
 • Sharing stuff in Game Details View
 • Finish Group Chats
-• Overlay Low-Res Mode
 • Turn Notifications?
 • Check Mac styling? Add Mac Specific window controls.
 
@@ -15,6 +13,8 @@ BUGS TO FIX:
 
 
 DONE:
+• Notifications (Re-do)
+• Overlay Low-Res Mode
 • Phone Reminder Bar
 • Start Offline Dialog
 • Steam Cloud Warnings/Dialogs
