@@ -49,8 +49,8 @@
 			
 			render {}
 			render_bg {
-				0="fill(x0,y0-1,x1,y0, dividers_onLightBG)"
-				1="fill(x0,y1-1,x1,y1, dividers_onLightBG)"
+				0="fill(x0,y0-1,x1,y0, dividers_onLightBG_solid)"
+				1="fill(x0,y1-1,x1,y1, dividers_onLightBG_solid)"
 			}
 		}
 		
@@ -61,32 +61,32 @@
 			padding-right=8
 			render {}
 			render_bg {
-				0="fill(x0,y0-1,x1,y0, dividers_onLightBG)"
-				1="fill(x0,y1-1,x1,y1, dividers_onLightBG)"
+				0="fill(x0,y0-1,x1,y0, dividers_onLightBG_solid)"
+				1="fill(x0,y1-1,x1,y1, dividers_onLightBG_solid)"
 				2="image(x0+14,y0+18,x1,y1, graphics/icons/dropdown/standard/down_dark)"
 			}
 		}
 		
 			ListPanelSectionCollapser:hover {
 				render_bg {
-					0="fill(x0,y0-1,x1,y0, dividers_onLightBG)"
-					1="fill(x0,y1-1,x1,y1, dividers_onLightBG)"
+					0="fill(x0,y0-1,x1,y0, dividers_onLightBG_solid)"
+					1="fill(x0,y1-1,x1,y1, dividers_onLightBG_solid)"
 					2="image(x0+14,y0+18,x1,y1, graphics/icons/dropdown/hover/down_dark)"
 				}
 			}
 			
 			ListPanelSectionCollapser:selected {
 				render_bg {
-					0="fill(x0,y0-1,x1,y0, dividers_onLightBG)"
-					1="fill(x0,y1-1,x1,y1, dividers_onLightBG)"
+					0="fill(x0,y0-1,x1,y0, dividers_onLightBG_solid)"
+					1="fill(x0,y1-1,x1,y1, dividers_onLightBG_solid)"
 					2="image(x0+14,y0+18,x1,y1, graphics/icons/dropdown/standard/up_dark)"
 				}
 			}
 			
 				ListPanelSectionCollapser:selected:hover {
 					render_bg {
-						0="fill(x0,y0-1,x1,y0, dividers_onLightBG)"
-						1="fill(x0,y1-1,x1,y1, dividers_onLightBG)"
+						0="fill(x0,y0-1,x1,y0, dividers_onLightBG_solid)"
+						1="fill(x0,y1-1,x1,y1, dividers_onLightBG_solid)"
 						2="image(x0+14,y0+18,x1,y1, graphics/icons/dropdown/hover/up_dark)"
 					}
 				}

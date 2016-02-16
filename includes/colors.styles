@@ -13,6 +13,7 @@
 		secondaryText_OnLightBG = "0 0 0 138" // ~54% Opacity
 		disabled_OnLightBG = "0 0 0 66" // ~26% Opacity
 		dividers_OnLightBG = "0 0 0 31" // ~12% Opacity
+		dividers_onLightBG_solid = "235 235 235 255" // Due to the way certain elements have to overlap, I cannot use dividers_onLightBG here with opacity.
 
 		white = "255 255 255 255"
 		text_OnDarkBG = "255 255 255 255" // 100% Opacity of white.
