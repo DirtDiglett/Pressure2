@@ -3,11 +3,11 @@
 		CDetailsGameTitleHeaderPanel {}
 
 		headertextlarge {
-			font-size=60
+			bgcolor=none
 			textcolor=white
 			font-family=basefont
-			font-weight=400 
-			bgcolor=none
+			font-size=60
+			font-weight=400
 		}
 	}
 

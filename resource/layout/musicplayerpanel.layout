@@ -1,8 +1,8 @@
 "resource/layout/musicplayerpanel.layout" {
 	styles {
+		TrackListStyle {}
+
 		CMusicPlayerPanel {
-			//bgcolor=customgreysecondary //custombackgroundprimary
-			
 			minimum-width=349
 			minimum-height=193
 			
@@ -10,16 +10,16 @@
 		}		
 		
 		MusicListPanelInterior {
-			font-size=15
+			bgcolor=custombackgroundprimary
 			textcolor=text_onLightBG
-			bgcolor=custombackgroundprimary 
+			font-size=15
 			inset-top=-1
 			
 			render {}
 			render_bg {}
-    	} 
-    
-    	ClientTitle {
+		} 
+	
+		ClientTitle {
 			textcolor=none		
 		}
 
@@ -32,10 +32,9 @@
 
 		StatusStyle	{
 			textcolor=text_onLightBG
-			font-size=15
 			font-family=mediumfont
+			font-size=15
 		}
-
 
 		PlayButtonStyle {
 			inset-left=0
@@ -56,7 +55,6 @@
 				render_bg {}
 			}
 
-
 		PauseButtonStyle {
 			inset-left=0
 			image=graphics/icons/pausemusic/standard/pausemusic
@@ -75,9 +73,6 @@
 			PauseButtonStyle:focus {
 				render_bg {}
 			}
-
-
-
 
 		RepeatButtonStyle {
 			inset-left=0
@@ -190,7 +185,6 @@
 			VolumeButtonActiveStyle:active {
 				image=graphics/icons/volume/active/volume
 			}
-		
 
 		MuteVolumeButtonStyle {
 			inset-left=0
@@ -222,22 +216,18 @@
 				image=graphics/icons/volume/active/mute
 			}
 
-		
-		
 		StatusStyleDim {
-			font-family=basefont
 			textcolor=disabled_onLightBG
+			font-family=basefont
 			font-size=15
 		}
 
 		InfoLabelStyle {
+			textcolor=disabled_onLightBG
 			font-family=basefont
 			font-size=15
-			textcolor=disabled_onLightBG
 		}
 
-		TrackListStyle {}
-		
 		NoTracksLabelStyle	{
 			render {}
 			render_bg {}
@@ -252,22 +242,24 @@
 	
 	
 	layout {
-		region { name=transport y=20 width=271 height=70 align=right}
-		region { name=currenttrack x=10 y=20 width=max height=50 margin-right=271 }
-		
 		place {
-			control="CurrentAlbumImage"
-			width=86
-			height=86
+			control=CurrentStatusLabel
+			height=0
+		}
+
+		place {
+			control=CurrentAlbumImage
 			x=1
 			y=35
+			width=86
+			height=86
 		}
 
 		place {
 			control=CurrentTrackLabel,CurrentArtistLabel,InfoLabel
+			dir=down
 			x=94
 			y=56
-			dir=down
 			spacing=2
 		}
 
@@ -275,39 +267,32 @@
 			control=SeekBar
 			x=24
 			y=168
-			height=18
 			width=max
+			height=18
 			margin-right=24
 		}
 
-
-
 		place {
-			control="ShuffleButton,RepeatButton,PreviousButton,PlayPauseButton,NextButton,VolumeButton,BrowseButton"
+			control=ShuffleButton,RepeatButton,PreviousButton,PlayPauseButton,NextButton,VolumeButton,BrowseButton
 			align=top-center
+			dir=right
 			y=132
 			width=34
 			height=34
-			dir=right
 			spacing=16
 		}		
 
 		place {
-			control="NoTracksLabel"
+			control=NoTracksLabel
+			align=top-center
 			y=124
-			align="top-center"
 		}
 
 		place {
-			control="TrackList"
+			control=TrackList
 			y=193
 			width=max
 			height=max
-		}
-
-		place {
-			control=CurrentStatusLabel
-			height=0
 		}
 	}	
 }

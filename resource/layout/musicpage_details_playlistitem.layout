@@ -6,28 +6,28 @@
 			textcolor=secondarytext_onLightBG
 			font-family=mediumfont	
 			font-size=19
-			inset-left=24
 			padding-top=15
-			padding-bottom=15
 			padding-right=24
+			padding-bottom=15
+			inset-left=24
 		}
 		
-		TrackLabelStyle:hover {
-			textcolor=text_onLightBG
-			bgcolor=dividers_onLightBG
-		}
+			TrackLabelStyle:hover {
+				bgcolor=dividers_onLightBG
+				textcolor=text_onLightBG
+			}
 	}
 	
 	
 	layout {
 		place {
-			control="TrackLabel"
-			width=max
+			control=PositionLabel
+			height=0
 		}
 
 		place {
-			control="PositionLabel"
-			height=0
+			control=TrackLabel
+			width=max
 		}
 	}
 }

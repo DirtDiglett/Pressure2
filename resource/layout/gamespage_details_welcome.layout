@@ -1,17 +1,18 @@
 "resource/layout/gamespage_details_welcome.layout" {
 	colors {
-		RichText.InsetX "0"
-		RichText.InsetY "3" 
-		GameDetailsWelcome.ExtraVerticalSpacing "82"
-		GameDetailsWelcome.WelcomeTextSpacing "0"
+		RichText.InsetX = "0"
+		RichText.InsetY = "3" 
+		GameDetailsWelcome.ExtraVerticalSpacing = "82"
+		GameDetailsWelcome.WelcomeTextSpacing = "0"
 	}
 
 	styles {
 		nonsteamdetails {}
 
 		bodycontent {
-			textcolor="text_onLightBG"
+			textcolor=text_onLightBG
 			font-size=16
+
 			render_bg {}
 		}
 
@@ -24,22 +25,22 @@
 	layout {
 		region {
 			name=body
-			margin=8
 			width=max
 			height=max
+			margin=8
 		}
 
 		place {
-			region=body
 			control=headerlabel
+			region=body
 			width=max
 		}
 
 		place {
-			region=body
-			y=36
 			control=bodybasic,bodynofriends,bodyhelp
+			region=body
 			dir=down
+			y=36
 			width=max
 			spacing=6
 		}

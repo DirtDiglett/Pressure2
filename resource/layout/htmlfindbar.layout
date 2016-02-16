@@ -2,42 +2,42 @@
 	styles {
 		FindEntry {}
 
-		// Applies to the count of items found.
 		Label {
 			textcolor=disabled_onLightBG
 		}
 
 		CloseButtonSm {
-	    	bgcolor=none
-	    	textcolor=none
+			bgcolor=none
+			textcolor=none
 
-	        render_bg {
-	        	1="image(x0,y0,x1,y1, graphics/icons/closefindbar/standard/closefindbar)"
-	        }
-	    }
+			render_bg {
+				0="image(x0,y0,x1,y1, graphics/icons/closefindbar/standard/closefindbar)"
+			}
+		}
 
-		    CloseButtonSm:hover {
-		        render_bg {
-		        	1="image(x0,y0,x1,y1, graphics/icons/closefindbar/hover/closefindbar)"
-		        } 
-		    }
+			CloseButtonSm:hover {
+				render_bg {
+					0="image(x0,y0,x1,y1, graphics/icons/closefindbar/hover/closefindbar)"
+				} 
+			}
 
-		    CloseButtonSm:active {
-		    	render_bg {
-		    		-3="image(x0-7,y0-7,x0+12,y0+12, graphics/material/selectionbubbles/hover/red/topleft)"
-                    -2="image(x0-7,y0+12,x0+12,y0+24, graphics/material/selectionbubbles/hover/red/bottomleft)"
-                    -1="image(x0+12,y0-7,x0+31,y0+12, graphics/material/selectionbubbles/hover/red/topright)"
-                    0="image(x0+12,y0+12,x0+31,y0+31, graphics/material/selectionbubbles/hover/red/bottomright)"
-		        	1="image(x0,y0,x1,y1, graphics/icons/closefindbar/active/closefindbar)"
-		    	}
-		    }
+			CloseButtonSm:active {
+				render_bg {
+					-3="image(x0-7,y0-7,x0+12,y0+12, graphics/material/selectionbubbles/hover/red/topleft)"
+					-2="image(x0-7,y0+12,x0+12,y0+24, graphics/material/selectionbubbles/hover/red/bottomleft)"
+					-1="image(x0+12,y0-7,x0+31,y0+12, graphics/material/selectionbubbles/hover/red/topright)"
+					0="image(x0+12,y0+12,x0+31,y0+31, graphics/material/selectionbubbles/hover/red/bottomright)"
+					1="image(x0,y0,x1,y1, graphics/icons/closefindbar/active/closefindbar)"
+				}
+			}
 
 		TextEntry {
 		 	inset-left=42
-		 	render_bg {
-                1="image(x0+14,y0+13,x1,y1, graphics\icons\search\standard)"
-		 	}
+
 		 	render {}
+		 	render_bg {
+				0="image(x0+14,y0+13,x1,y1, graphics\icons\search\standard)"
+		 	}
 		 }
 
 
@@ -60,9 +60,9 @@
 
 				render_bg {
 					-3="image(x0-7,y0-7,x0+12,y0+12, graphics/material/selectionbubbles/hover/blue/topleft)"
-                    -2="image(x0-7,y0+12,x0+12,y0+24, graphics/material/selectionbubbles/hover/blue/bottomleft)"
-                    -1="image(x0+12,y0-7,x0+31,y0+12, graphics/material/selectionbubbles/hover/blue/topright)"
-                    0="image(x0+12,y0+12,x0+31,y0+31, graphics/material/selectionbubbles/hover/blue/bottomright)"
+					-2="image(x0-7,y0+12,x0+12,y0+24, graphics/material/selectionbubbles/hover/blue/bottomleft)"
+					-1="image(x0+12,y0-7,x0+31,y0+12, graphics/material/selectionbubbles/hover/blue/topright)"
+					0="image(x0+12,y0+12,x0+31,y0+31, graphics/material/selectionbubbles/hover/blue/bottomright)"
 					1="image(x0+6,y0+8,x1,y1,graphics/icons/dropdown/hover/down_dark)"
 				}
 			}
@@ -86,9 +86,9 @@
 				
 				render_bg {
 					-3="image(x0-7,y0-7,x0+12,y0+12, graphics/material/selectionbubbles/hover/blue/topleft)"
-                    -2="image(x0-7,y0+12,x0+12,y0+24, graphics/material/selectionbubbles/hover/blue/bottomleft)"
-                    -1="image(x0+12,y0-7,x0+31,y0+12, graphics/material/selectionbubbles/hover/blue/topright)"
-                    0="image(x0+12,y0+12,x0+31,y0+31, graphics/material/selectionbubbles/hover/blue/bottomright)"
+					-2="image(x0-7,y0+12,x0+12,y0+24, graphics/material/selectionbubbles/hover/blue/bottomleft)"
+					-1="image(x0+12,y0-7,x0+31,y0+12, graphics/material/selectionbubbles/hover/blue/topright)"
+					0="image(x0+12,y0+12,x0+31,y0+31, graphics/material/selectionbubbles/hover/blue/bottomright)"
 					1="image(x0+6,y0+8,x1,y1,graphics/icons/dropdown/hover/up_dark)"
 				}
 			}
@@ -96,42 +96,42 @@
 		
 	layout {
 		place {
-			control="FindEntry"
-			width=170
+			control=SearchThisPage
+			width=0
+			height=0
+		}
+
+		place {
+			control=FindEntry
 			align=left
+			width=170
 			height=max
 		}
 
 		place {
-			control="FindCount"
+			control=FindCount
+			start=FindEntry
 			width=70
 			height=max
-			start=FindEntry
 		}
 
 		place {
-			control="Previous,Next"
-			end-right=close
+			control=Previous,Next
 			align=right
-			height=24
-			width=24
-			margin-right=16
 			y=11
+			width=24
+			height=24
+			margin-right=16
+			end-right=close
 		}
 
 		place {
 			control=Close
 			align=right
-			height=24
-			width=24
-			margin-right=16
 			y=11
-		}
-		
-		place {
-			control="SearchThisPage"
-			width=0
-			height=0
+			width=24
+			height=24
+			margin-right=16
 		}
 	}
 }

@@ -1,11 +1,11 @@
 "resource/layout/htmlpopup.layout" {
 	styles {
 		Frame {			
-			bgcolor="custombackgroundnofocus"
+			bgcolor=custombackgroundnofocus
 			inset="0 0 0 0"
 
 			render {
-				1="image_tiled(x0,y0+34,x1,y0+38, graphics\material\shadows\top)"
+				0="image_tiled(x0,y0+34,x1,y0+38, graphics\material\shadows\top)"
 			}
 				
 			render_bg {
@@ -16,35 +16,40 @@
 		}
 		
 			Frame:framefocus {			
-				bgcolor="custombackgroundprimary"
+				bgcolor=custombackgroundprimary
 			}
 
 		TextEntryURL {
+			bgcolor=custombackgroundprimary
+			selectedbgcolor=blue500
+			textcolor=text_onLightBG
+			selectedtextcolor=white
+			shadowtextcolor=disabled_onLightBG
 			font-family=basefont
 			font-size=18
 			font-weight=400
-			textcolor="text_onLightBG"
-			inset-top=0
 			inset-left=8
-			bgcolor=custombackgroundprimary
-			selectedtextcolor="white"
-			selectedbgcolor="blue500"
-			shadowtextcolor="disabled_onLightBG"
-
+			inset-top=0
+			
 			render {}
 			render_bg {
-				-1="fill(x1,y0,x1+25,y1, custombackgroundprimary)"
+				0="fill(x1,y0,x1+25,y1, custombackgroundprimary)"
 			}
 		}
 		
-			TextEntryURL:Hover {}
+			TextEntryURL:hover {}
 
-			TextEntryURL:Disabled {
-				textcolor="disabled_onLightBG"
+			TextEntryURL:disabled {
+				textcolor=disabled_onLightBG
 			}
 	}
 	
 	layout {
+		place {
+			control=URLStatusImage,HomeButton,StatusText
+			width=0
+			height=0
+		}
 
 		place {
 			control=frame_captiongrip
@@ -53,28 +58,28 @@
 		}
 
 		region {
-			name="subnav"
+			name=subnav
+			y=34
 			width=max
 			height=45
-			y=34
 		}
 
 		region {
 			name=body
+			y=79
 			height=max
 			width=max
-			y=79
 		}
 
 		place {
-			control="htmlpopupchild"
+			control=htmlpopupchild
 			region=body
 			width=max
 			height=max
 		}	
 
 		place {
-			control="PageLoadThrobber"
+			control=PageLoadThrobber
 			region=subnav
 			align=right
 			height=max
@@ -84,28 +89,22 @@
 			control=BackButton,ForwardButton,ReloadButton,StopButton
 			region=subnav
 			align=left
+			x=8
 			width=24
 			height=max
-			x=8
 			spacing=6
 		}
 
 		place {
-			control="EVCert,URLBar"
+			control=EVCert,URLBar
 			region=subnav
-			align=left
-			height=max
-			width=max
-			spacing=0
 			start=stopbutton
+			align=left
+			width=max
+			height=max
 			margin-left=8
+			spacing=0
 			end-right=PageLoadThrobber
-		}
-
-		place {
-			control=URLStatusImage,HomeButton,StatusText
-			width=0
-			height=0
 		}
 	}
 }

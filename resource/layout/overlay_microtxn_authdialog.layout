@@ -1,45 +1,39 @@
 "resource/layout/overlay_microtxn_authdialog.layout" {
 	styles {
+		ListPanel {}
+		ItemListStyle {}
+		TotalAmtStyle {}
+		AuthBtnStyle {}
+
 		Frame {
 			render {
-    			0="fill(x0,y1-58,x1,y1-57, dividers_onLightBG)"
+				0="fill(x0,y1-58,x1,y1-57, dividers_onLightBG)"
 			}
 		}
-		ListPanel {}
 
-		ItemListStyle {}
-		
 		BalanceStyle {
 			textcolor=text_onLightBG
-			//bgcolor=lime500
 			padding-left=8
 			padding-right=8
 
 			render_bg {
 				0="fill(x0+2,y0+2,x1-2,y1-2, limeA400)"
-				
 				1="image(x0-3,y1-2,x0+2,y1+4, graphics\material\buttons\lime\bottomleft)"
 				2="image_tiled(x0+2,y1-2,x1-2,y1+4, graphics/material/buttons/lime/bottommiddle)"
 				3="image(x1-2,y1-2,x1+3,y1+2, graphics/material/buttons/lime/bottomright)"
-				
 				4="image_tiled(x0-3,y0+2,x0+2,y1-2, graphics/material/buttons/lime/leftmiddle)"
 				5="image_tiled(x1-2,y0+2,x1+3,y1-2, graphics/material/buttons/lime/rightmiddle)"
-				
 				6="image(x0-3,y0-2,x0+2,y0+2, graphics/material/buttons/lime/topleft)"
 				7="image_tiled(x0+2,y0-2,x1-2,y0+2, graphics/material/buttons/lime/topmiddle)"
 				8="image(x1-2,y0-2,x1+3,y0+2, graphics/material/buttons/lime/topright)"
 			}
 		}
 
-		TotalAmtStyle {}
-
-		AuthBtnStyle {}
-
 		RefundTextStyle {
-			textcolor=secondaryText_onLightBG
-			font-size=15
-			selectedtextcolor=white
 			selectedbgcolor=blue500
+			textcolor=secondaryText_onLightBG
+			selectedtextcolor=white
+			font-size=15
 
 			render_bg {}
 		}
@@ -65,44 +59,47 @@
 	
 	layout {
 		place {
+			control=BalanceDescLabel,ReasonLabel,Separator
+			height=0
+		}
+
+		place {
 			control=BalanceLabel
 			align=right
-			height=28
 			y=3
+			height=28
 			margin-right=18
 			end-right=frame_close
 		}
 
 		place {
 			control=ItemList
+			dir=down
+			x=24
 			y=58
 			width=max
-			x=24
 			height=max
-			dir=down
-			margin-bottom=160
 			margin-right=24
+			margin-bottom=160
 		}
-
-		
 
 		place {
 			control=TotalLabel,TotalAmtLabel
 			start=itemlist
-			dir=down
 			align=right
+			dir=down
 			y=8
-			end-right=totalamtlabel
 			margin-right=8
+			end-right=totalamtlabel
 		}
 
 		place {
 			control=TotalAmtLabel
-			width=90
 			start=itemlist
+			align=right
 			dir=down
 			y=8
-			align=right
+			width=90
 			margin-right=24
 		}
 
@@ -119,17 +116,17 @@
 		place {
 			control=ConvertedTotalLabel,ConvertedTotalAmtLabel
 			start=TotalLabel
+			align=right
 			dir=down
 			y=4
-			align=right
 			margin-right=24
 		}
 
 		region {
 			name=refundzone
 			align=bottom
-			height=116
 			width=max
+			height=116
 			margin-bottom=58
 		}
 
@@ -142,28 +139,21 @@
 			margin-right=24
 		}
 		
-		
 		region {
-			name="buttons"
+			name=buttons
+			align=bottom
 			width=max
 			height=58
-			align=bottom
 		}
 
 		place {
-			control="AuthorizeButton,CancelButton"
-			region="buttons"
-		    height=34
-		    align=right
-			margin-right=11
+			control=AuthorizeButton,CancelButton
+			region=buttons
+			align=right
+			height=34
 			margin-top=12
+			margin-right=11
 			spacing=12
-		}
-
-		//Hidden
-		place {
-			control=BalanceDescLabel,ReasonLabel,Separator
-			height=0
 		}
 	}
 }

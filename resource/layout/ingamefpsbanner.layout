@@ -13,12 +13,12 @@
 		}
 		
 		HighContrast {
-			bgcolor="0 0 0 80"
+			bgcolor=secondaryText_OnLightBG
+			textcolor=red500
 			padding-left=4
-			padding-right=4
 			padding-top=4
+			padding-right=4
 			padding-bottom=4
-			textcolor="0 255 0 255"
 		}
 	  
 		LowContrast {
@@ -28,9 +28,9 @@
 	
 	layout {
 		place {
-			control="TextLabel"
-			margin=4
+			control=TextLabel
 			align=center
+			margin=4
 		}
 	}
 }

@@ -5,15 +5,15 @@
 		GridNavDivider {}
 		
 		CUILaunchButton {
+			bgcolor=none
+			textcolor=limeA400
 			font-family=mediumfont
 			font-size=20
 			font-weight=600
-			textcolor="limeA400"
 			font-style=uppercase
-			bgcolor=none
 			padding-left=30
-			padding-right=30
 			padding-top=10
+			padding-right=30
 			padding-bottom=10
 			
 			render {}
@@ -28,8 +28,8 @@
 		}
 		
 			CUILaunchButton:Hover {   
-			    render_bg {
-			    	-1="fill(x0,y0,x1,y1, secondaryText_onLightBG)"
+				render_bg {
+					-1="fill(x0,y0,x1,y1, secondaryText_onLightBG)"
 					0="fill(x0,y0,x1,y1, limeA400lesstransparent)"
 					1="fill(x0,y0,x0+3,y1, limeA400)"
 					2="fill(x0,y0,x1,y0+3, limeA400)"
@@ -50,15 +50,15 @@
 			}
 	
 		"GameItem_Uninstalled CUILaunchButton" {
+			bgcolor=none
+			textcolor=lightblueA200
 			font-family=mediumfont
 			font-size=20
 			font-weight=600
-			textcolor="lightblueA200"
 			font-style=uppercase
-			bgcolor=none
 			padding-left=30
-			padding-right=30
 			padding-top=10
+			padding-right=30
 			padding-bottom=10
 			
 			render {}
@@ -95,15 +95,15 @@
 			}
 
 		CUIDetailsButton {
+			bgcolor=none
+			textcolor=grey100
 			font-family=mediumfont
 			font-size=20
 			font-weight=600
-			textcolor="grey100"
 			font-style=uppercase
-			bgcolor=none
 			padding-left=30
-			padding-right=30
 			padding-top=10
+			padding-right=30
 			padding-bottom=10
 			
 			render {}
@@ -141,12 +141,18 @@
 	}
 	
 	layout {
+		place {
+			control=details,divider
+			width=0
+			height=0
+		}
+
 		region {
-			name="actions"
+			name=actions
 			align=bottom
+			x=0
 			width=max
 			height=75
-			x=0
 			margin-bottom=24
 		}
 		
@@ -160,15 +166,9 @@
 		}
 
 		place {
-			control="launch"
-			region="actions"
+			control=launch
+			region=actions
 			align=top-center
-		}
-
-		place {
-			control=details,divider
-			width=0
-			height=0
 		}
 	}
 }

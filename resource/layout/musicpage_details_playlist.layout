@@ -1,5 +1,8 @@
 "resource/layout/musicpage_details_playlist.layout" {
 	styles {
+		TrackStyle {}
+		AdditionalActionButtonStyle {}
+
 		CMusicPage_Details_Playlist {
 			bgcolor=none
 
@@ -8,17 +11,15 @@
 		}
 		
 		PlaylistTitleStyle {
-			font-size="30"
-			font-style="normal"
 			textcolor=text_onLightBG
+			font-size=30
+			font-style=normal
 		}
 
 		TracksInfoLabelStyle {
-			font-size=17
 			textcolor=secondaryText_onLightBG
+			font-size=17
 		}
-		
-		TrackStyle {}
 		
 		CoverStyle {
 			render_bg {
@@ -27,31 +28,28 @@
 			}
 		}
 		
-		AdditionalActionButtonStyle {}
-		
-		
 		ActionButtonStyle { 
-			textcolor=none
 			bgcolor=none
+			textcolor=none
 			font-size=0
 			minimum-width=48
 			minimum-height=48
 			
 			render {}
 			render_bg {				
-				1="image(x0, y0, x1, y1, graphics\icons\playalbum\standard\playalbum)"
+				0="image(x0, y0, x1, y1, graphics\icons\playalbum\standard\playalbum)"
 			}	
 		}
 
 			ActionButtonStyle:hover { 
 				render_bg {				
-					1="image(x0, y0, x1, y1, graphics\icons\playalbum\hover\playalbum)"
+					0="image(x0, y0, x1, y1, graphics\icons\playalbum\hover\playalbum)"
 				}	
 			}
 
 			ActionButtonStyle:active { 
 				render_bg {				
-					1="image(x0, y0, x1, y1, graphics\icons\playalbum\active\playalbum)"
+					0="image(x0, y0, x1, y1, graphics\icons\playalbum\active\playalbum)"
 				}	
 			}
 	}
@@ -66,49 +64,49 @@
 
 		place {
 			control=PlaylistTitleLabel
+			region=bodyregion
 			x=24
 			y=18
-			margin-right=24
 			width=max
-			region=bodyregion
+			margin-right=24
 		}
 		
 		place {
 			control=ArtistLabel,TracksInfoLabel
+			region=bodyregion
 			start=PlaylistTitleLabel
 			dir=down
-			region=bodyregion
 		}
 
 		place {
 			control=PlayPlaylistButton
-			height=48
-			width=48
 			region=bodyregion
 			start=TracksInfoLabel
 			dir=down
+			width=48
+			height=48
 		}
 
 		place {
 			control=AddPlaylistToQueueButton,AddRandomTracksToPlaylistButton
 			region=bodyregion
-			dir=down
 			start=PlayPlaylistButton
+			dir=down
 			y=18
 			height=34
 			spacing=4
 		}
 
 		place {
-			region=bodyregion
 			control=*MusicPageDetailsPlaylistTrack
-			dir=down
+			region=bodyregion
 			start=AddRandomTracksToPlaylistButton
-			y=24
+			dir=down
 			x=-24
+			y=24
 			width=max
-			spacing=10
 			height=40
+			spacing=10
 		}
 	}
 }

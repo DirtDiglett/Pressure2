@@ -1,21 +1,21 @@
 "resource/layout/layoutdebugdialog_details.layout" {
 	layout {
 		place {
-			control="style_label"
+			control=style_label
 			x=24
 			y=24
 			width=170
 		}
 
 		place {
-			control="parent_label"
+			control=parent_label
 			start=style_label
 			dir=right
 			x=100
 		}
 		
 		place {
-			control="parent_list"
+			control=parent_list
 			start=parent_label
 			dir=down
 			y=8
@@ -23,7 +23,7 @@
 		}
 		
 		place {
-			control="style_list"
+			control=style_list
 			start=style_label
 			dir=down
 			y=8

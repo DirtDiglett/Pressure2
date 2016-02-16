@@ -1,15 +1,18 @@
 "resource/layout/overlay_guidespanel.layout" {
 	styles {
+		DarkRegion {}
+		PreviewImage {}
+
 		Button {
-			font-size=20
-			font-family=heavyfont
-			font-weight=400
-			padding-top=0
-			inset-top=-18
-			inset-left=-6
-			padding-left=57
 			textcolor=lightblue300
+			font-family=heavyfont
+			font-size=20
+			font-weight=400
 			font-style=normal
+			padding-left=57
+			padding-top=0
+			inset-left=-6
+			inset-top=-18
 
 			render_bg {}			
 		}
@@ -18,31 +21,24 @@
 				textcolor=lightblue200
 			}
 
-			Button:selected {
-		        bgcolor=none
-		    }
-
-		    Button:active {
-		        bgcolor=none
-		    }
-
 		detailsbox {
 			render_bg {
 				0="image(x0,y0+2,x1,y1, graphics\overlay\buttons\guides)"
 			}
 		}
 
-		DarkRegion {}
-
-		PreviewImage {}
-
 		highlight {
-			font-size=17
 			textcolor=text_onDarkBG
+			font-size=17
 		}
 	}
 	
 	layout {
+		place {
+			control=TitleText,*guideitem
+			height=0
+		}
+
 		region {
 			name=actions
 			width=max
@@ -50,28 +46,17 @@
 		}
 
 		place {
-			control="TitleText"
-			width=0
-			height=0
-		}
-
-		place {
-			control="NumGuidesText"
+			control=NumGuidesText
 			region=actions
-			y=23
 			x=57
+			y=23
 		}
 
 		place {
-			control="ViewGuides"
-			region="actions"
+			control=ViewGuides
+			region=actions
 			width=max
 			height=max
-		}
-		place {
-			control=*guideitem
-			width=0
-			height=0
 		}
 	}
 }

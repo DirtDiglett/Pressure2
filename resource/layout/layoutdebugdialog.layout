@@ -22,47 +22,47 @@
 		}
 	}
 
-	layout {		
+	layout {
 		place {
-			control="tabs"
+			control=wiki_link
+			height=0
+		}
+
+		place {
+			control=tabs
 			y=41
-			width="max"
-			height="max"
+			width=max
+			height=max
 			margin-bottom=41
 		}
 		
 		region {
-			name="buttons"
+			name=buttons
+			align=bottom
 			width=max
 			height=58
-			align=bottom
 		}
 
 		place {
-			control="containerlabel,selectionlabel"
-			region="buttons"
-		    height=18
-		    align=left
+			control=containerlabel,selectionlabel
+			region=buttons
+			align=left
+			dir=down
+			height=18
 			margin-left=11
 			margin-top=6
 			spacing=4
-			dir=down
 			end-right=fileurl
 		}
 
 		place {
 			control=fileurl
-			region="buttons"
-		    height=18
-		    align=right
-			margin-right=11
+			region=buttons
+			align=right
+			height=18
 			margin-top=12
+			margin-right=11
 			spacing=4
-		}
-
-		place {
-			control="wiki_link"
-			height=0
 		}
 	}
 }

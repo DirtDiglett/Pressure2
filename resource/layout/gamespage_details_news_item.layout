@@ -3,56 +3,52 @@
 		// The extra space needed vertical beyond the autocomputed size of the blurb contents
 		// this is used in code to make the vertical size of the panel fit the title/author/morelink
 		// and should be updated if you change vertical padding/margins/layout.
-		GameDetailsNewsItem.ExtraVerticalSpacing "76"
+		GameDetailsNewsItem.ExtraVerticalSpacing = "76"
 
 		// Override base style rich text x inset inside this control
-		RichText.InsetX "0"
-		RichText.InsetY "3" 
+		RichText.InsetX = "0"
+		RichText.InsetY = "3" 
 	}
 
 	styles {
 		title_label {
-			font-size="18"
-			textcolor="text_onLightBG"
+			textcolor=text_onLightBG
 			font-family=mediumfont
+			font-size=18
 		}
 
 		date_and_author {
-			font-size=16
 			textcolor=secondaryText_OnLightBG
+			font-size=16
 		}
 
 		newsitem_body {
-			textcolor="text_onLightBG"
-			selectedtextcolor="white"
 			selectedbgcolor=blue500	
-			font-size=16
+			textcolor=text_onLightBG
+			selectedtextcolor=white
 			font-family=basefont
+			font-size=16
 
 			render_bg {}
 		}
 		
 		"newsitem_body url" {
-			font-size=16
-			font-style="underline"
-			selectedtextcolor="white"
 			selectedbgcolor=blue500
-			textcolor=blue500	
+			textcolor=blue500
+			selectedtextcolor=white
+			font-size=16
+			font-style=underline
 		}
 		
 			"newsitem_body url:hover" {
-				font-size=16
-				font-style="underline"
-				textcolor="blue400"
-				selectedtextcolor="white"
-				selectedbgcolor=blue500	
+				textcolor=blue400
 			}
 		
 		"newsitem_body bold" {
-			font-weight=600
-			textcolor="text_onLightBG"
-			selectedtextcolor=white	
 			selectedbgcolor=blue500
+			textcolor=text_onLightBG
+			selectedtextcolor=white
+			font-weight=600
 		}
 
 		more_link {		 
@@ -60,70 +56,68 @@
 			textcolor=blue500
 			font-family=mediumfont
 			font-size=16
-			font-style=uppercase
 			font-weight=400
+			font-style=uppercase
 			inset-top=3
 			padding-left=6
 			padding-top=4
-			padding-bottom=4
 			padding-right=6
+			padding-bottom=4
 			
 			render_bg {}
 		}
 
-			more_link:Hover {
+			more_link:hover {
 				textcolor=blue300
 				
-				// We use a render_bg here instead of bgcolor in order to not break every other button that doesn't have a bgcolor defined.
 				render_bg {
 					0="fill(x0,y0,x1,y1, dividers_onLightBG)"
 				}
 			}
 
-				more_link:disabled {
+			more_link:disabled {
+				bgcolor=none
+				textcolor=disabled_onLightBG
+				
+				render_bg {}
+			}
+
+
+			more_link:focus {
+				bgcolor=none
+				textcolor=blue500
+
+				render_bg {}
+			}
+
+				more_link:focus:hover {
 					bgcolor=none
-					textcolor=disabled_onLightBG
-					
-					render_bg {}
+					textcolor=blue500
+
+					render_bg {
+						0="fill(x0,y0,x1,y1, dividers_onLightBG)"
+					}
 				}
 
+			more_link:active {
+				bgcolor=blue500transparent
+				textcolor=blue500
 
-					more_link:focus {
-						bgcolor=none
-						textcolor=blue500
-
-						render_bg {}
-					}
-
-						more_link:focus:hover {
-							bgcolor=none
-							textcolor=blue500
-
-							// We use a render_bg here instead of bgcolor in order to not break every other button that doesn't have a bgcolor defined.
-							render_bg {
-								0="fill(x0,y0,x1,y1, dividers_onLightBG)"
-							}
-						}
-
-						more_link:active {
-							bgcolor=blue500transparent
-							textcolor=blue500
-
-							render_bg {}
-						}
+				render_bg {}
+			}
 	}
 
 	layout {
 		region {
 			name=body
-			margin=0
 			width=max
+			margin=0
 		}
 
 		place {
 			control=newsitem_title,newsitem_dateandauthor,newsitem_body
-			width=max
 			dir=down
+			width=max
 		}
 
 		place {

@@ -1,8 +1,4 @@
 "resource/layout/overlay_achievementsdetails.layout" {
-	colors {
-		lime500transparent = "205 220 57 66" // lime500 @ 26%
-	}
-
 	styles {
 		detailsboxtitle {
 			render_bg {}
@@ -14,12 +10,13 @@
 		
 		highlight {
 			textcolor=white
-			font-size=28
 			font-family=mediumfont
+			font-size=28
 		}
 
 		progressbackground {
 			bgcolor=none
+
 			render_bg {
 				 0="fill(x0,y0,x1,y1, lime500transparent)"
 			}
@@ -27,14 +24,14 @@
 
 		progressbarimage {
 			bgcolor=lime500
+
 			render_bg {}
 		}
 	}
 	
 	layout {		
 		place {
-			control="TitleText"
-			width=0
+			control=TitleText
 			height=0
 		}
 
@@ -70,10 +67,10 @@
 
 		place {
 			control=*achievement
-			width=max
-			height=64
 			align=bottom
 			dir=down
+			width=max
+			height=64
 			spacing=15
 		}		
 	}

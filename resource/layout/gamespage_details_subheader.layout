@@ -1,15 +1,12 @@
 "resource/layout/gamespage_details_subheader.layout" {
 	colors {
-		GameDetailsSubHeader.HorizontalSpacing=10
-		GameDetailsSubHeader.VerticalMargin=10
+		GameDetailsSubHeader.HorizontalSpacing = "10"
+		GameDetailsSubHeader.VerticalMargin = "10"
 	}
 	
 	styles {
 		CDetailsGameSubHeaderPanel {}
 		
-		
-
-
 		// TO DO TO DO TO DO
 		ClientListButton {
 			inset="20 0 0 0"
@@ -78,17 +75,17 @@
 		
 		// This button is for "Activate" when received games as gifts.
 		DetailsButton {
-			inset="0 -2 0 0"
+			bgcolor=none
+			textcolor=grey100
 			font-family=mediumfont
 			font-size=28
 			font-weight=600
-			textcolor="grey100"
 			font-style=uppercase
-			bgcolor=none
 			padding-left=60
-			padding-right=60
 			padding-top=10
+			padding-right=60
 			padding-bottom=10
+			inset="0 -2 0 0"
 			
 			render {}
 			render_bg {
@@ -100,38 +97,38 @@
 			}
 		}
 		
-		DetailsButton:hover {
-			render_bg {
-				0="fill(x0,y0,x1,y1, grey100lesstransparent)"
-				1="fill(x0,y0,x0+3,y1, grey100)"
-				2="fill(x0,y0,x1,y0+3, grey100)"
-				3="fill(x1-3,y0,x1,y1, grey100)"
-				4="fill(x0,y1-3,x1,y1, grey100)"
+			DetailsButton:hover {
+				render_bg {
+					0="fill(x0,y0,x1,y1, grey100lesstransparent)"
+					1="fill(x0,y0,x0+3,y1, grey100)"
+					2="fill(x0,y0,x1,y0+3, grey100)"
+					3="fill(x1-3,y0,x1,y1, grey100)"
+					4="fill(x0,y1-3,x1,y1, grey100)"
+				}
 			}
-		}
-		
-		DetailsButton:active {
-			render_bg {
-				0="fill(x0,y0,x1,y1, grey100lesstransparent)"
-				1="fill(x0,y0,x0+3,y1, grey100)"
-				2="fill(x0,y0,x1,y0+3, grey100)"
-				3="fill(x1-3,y0,x1,y1, grey100)"
-				4="fill(x0,y1-3,x1,y1, grey100)"
+			
+			DetailsButton:active {
+				render_bg {
+					0="fill(x0,y0,x1,y1, grey100lesstransparent)"
+					1="fill(x0,y0,x0+3,y1, grey100)"
+					2="fill(x0,y0,x1,y0+3, grey100)"
+					3="fill(x1-3,y0,x1,y1, grey100)"
+					4="fill(x0,y1-3,x1,y1, grey100)"
+				}
 			}
-		}
 		
 		DetailsLaunchButton {
-			inset="0 -2 0 0"
+			bgcolor=none
+			textcolor=limeA400
 			font-family=mediumfont
 			font-size=28
 			font-weight=600
-			textcolor="limeA400"
 			font-style=uppercase
-			bgcolor=none
 			padding-left=60
-			padding-right=60
 			padding-top=10
+			padding-right=60
 			padding-bottom=10
+			inset="0 -2 0 0"
 			
 			render {}
 			render_bg {
@@ -143,49 +140,48 @@
 			}
 		}
 		
-		DetailsLaunchButton:Hover {
-			render_bg {
-				0="fill(x0,y0,x1,y1, limeA400lesstransparent)"
-				1="fill(x0,y0,x0+3,y1, limeA400)"
-				2="fill(x0,y0,x1,y0+3, limeA400)"
-				3="fill(x1-3,y0,x1,y1, limeA400)"
-				4="fill(x0,y1-3,x1,y1, limeA400)"
+			DetailsLaunchButton:Hover {
+				render_bg {
+					0="fill(x0,y0,x1,y1, limeA400lesstransparent)"
+					1="fill(x0,y0,x0+3,y1, limeA400)"
+					2="fill(x0,y0,x1,y0+3, limeA400)"
+					3="fill(x1-3,y0,x1,y1, limeA400)"
+					4="fill(x0,y1-3,x1,y1, limeA400)"
+				}
 			}
-		}
-		
-		DetailsLaunchButton:Selected {
-			render_bg {
-				0="fill(x0,y0,x1,y1, limeA400lesstransparent)"
-				1="fill(x0,y0,x0+3,y1, limeA700)"
-				2="fill(x0,y0,x1,y0+3, limeA700)"
-				3="fill(x1-3,y0,x1,y1, limeA700)"
-				4="fill(x0,y1-3,x1,y1, limeA700)"
+			
+			DetailsLaunchButton:Selected {
+				render_bg {
+					0="fill(x0,y0,x1,y1, limeA400lesstransparent)"
+					1="fill(x0,y0,x0+3,y1, limeA700)"
+					2="fill(x0,y0,x1,y0+3, limeA700)"
+					3="fill(x1-3,y0,x1,y1, limeA700)"
+					4="fill(x0,y1-3,x1,y1, limeA700)"
+				}
 			}
-		}
 		
-		
-		DetailsLaunchButton:Active {
-			render_bg {
-				0="fill(x0,y0,x1,y1, limeA400lesstransparent)"
-				1="fill(x0,y0,x0+3,y1, limeA700)"
-				2="fill(x0,y0,x1,y0+3, limeA700)"
-				3="fill(x1-3,y0,x1,y1, limeA700)"
-				4="fill(x0,y1-3,x1,y1, limeA700)"
+			DetailsLaunchButton:Active {
+				render_bg {
+					0="fill(x0,y0,x1,y1, limeA400lesstransparent)"
+					1="fill(x0,y0,x0+3,y1, limeA700)"
+					2="fill(x0,y0,x1,y0+3, limeA700)"
+					3="fill(x1-3,y0,x1,y1, limeA700)"
+					4="fill(x0,y1-3,x1,y1, limeA700)"
+				}
 			}
-		}
 		
 		DetailsInstallButton {
-			inset="0 0 0 0"
+			bgcolor=none
+			textcolor=lightblueA200
 			font-family=mediumfont
 			font-size=28
 			font-weight=600
-			textcolor="lightblueA200"
 			font-style=uppercase
-			bgcolor=none
 			padding-left=60
-			padding-right=60
 			padding-top=10
+			padding-right=60
 			padding-bottom=10
+			inset="0 0 0 0"
 			
 			render {}
 			render_bg {
@@ -197,50 +193,48 @@
 			}
 		}
 		
-		DetailsInstallButton:Hover {
-			render_bg {
-				0="fill(x0,y0,x1,y1, lightblueA200lesstransparent)"
-				1="fill(x0,y0,x0+3,y1, lightblueA200)"
-				2="fill(x0,y0,x1,y0+3, lightblueA200)"
-				3="fill(x1-3,y0,x1,y1, lightblueA200)"
-				4="fill(x0,y1-3,x1,y1, lightblueA200)"
+			DetailsInstallButton:Hover {
+				render_bg {
+					0="fill(x0,y0,x1,y1, lightblueA200lesstransparent)"
+					1="fill(x0,y0,x0+3,y1, lightblueA200)"
+					2="fill(x0,y0,x1,y0+3, lightblueA200)"
+					3="fill(x1-3,y0,x1,y1, lightblueA200)"
+					4="fill(x0,y1-3,x1,y1, lightblueA200)"
+				}
 			}
-		}
-		
-		DetailsInstallButton:Selected {
-			render_bg {
-				0="fill(x0,y0,x1,y1, lightblueA200lesstransparent)"
-				1="fill(x0,y0,x0+3,y1, lightblueA400)"
-				2="fill(x0,y0,x1,y0+3, lightblueA400)"
-				3="fill(x1-3,y0,x1,y1, lightblueA400)"
-				4="fill(x0,y1-3,x1,y1, lightblueA400)"
+			
+			DetailsInstallButton:Selected {
+				render_bg {
+					0="fill(x0,y0,x1,y1, lightblueA200lesstransparent)"
+					1="fill(x0,y0,x0+3,y1, lightblueA400)"
+					2="fill(x0,y0,x1,y0+3, lightblueA400)"
+					3="fill(x1-3,y0,x1,y1, lightblueA400)"
+					4="fill(x0,y1-3,x1,y1, lightblueA400)"
+				}
 			}
-		}
 		
-		
-		DetailsInstallButton:Active {
-			render_bg {
-				0="fill(x0,y0,x1,y1, lightblueA200lesstransparent)"
-				1="fill(x0,y0,x0+3,y1, lightblueA400)"
-				2="fill(x0,y0,x1,y0+3, lightblueA400)"
-				3="fill(x1-3,y0,x1,y1, lightblueA400)"
-				4="fill(x0,y1-3,x1,y1, lightblueA400)"
+			DetailsInstallButton:Active {
+				render_bg {
+					0="fill(x0,y0,x1,y1, lightblueA200lesstransparent)"
+					1="fill(x0,y0,x0+3,y1, lightblueA400)"
+					2="fill(x0,y0,x1,y0+3, lightblueA400)"
+					3="fill(x1-3,y0,x1,y1, lightblueA400)"
+					4="fill(x0,y1-3,x1,y1, lightblueA400)"
+				}
 			}
-		}
-		
 		
 		DetailsBuyButton {
-			inset="0 0 0 0"
+			bgcolor=none
+			textcolor=amberA400
 			font-family=mediumfont
 			font-size=28
 			font-weight=600
-			textcolor="amberA400"
 			font-style=uppercase
-			bgcolor=none
 			padding-left=60
-			padding-right=60
 			padding-top=10
+			padding-right=60
 			padding-bottom=10
+			inset="0 0 0 0"
 			
 			render {}
 			render_bg {
@@ -252,44 +246,52 @@
 			}
 		}
 		
-		DetailsBuyButton:hover {
-			render_bg {
-				0="fill(x0,y0,x1,y1, amberA400lesstransparent)"
-				1="fill(x0,y0,x0+3,y1, amberA400)"
-				2="fill(x0,y0,x1,y0+3, amberA400)"
-				3="fill(x1-3,y0,x1,y1, amberA400)"
-				4="fill(x0,y1-3,x1,y1, amberA400)"
+			DetailsBuyButton:hover {
+				render_bg {
+					0="fill(x0,y0,x1,y1, amberA400lesstransparent)"
+					1="fill(x0,y0,x0+3,y1, amberA400)"
+					2="fill(x0,y0,x1,y0+3, amberA400)"
+					3="fill(x1-3,y0,x1,y1, amberA400)"
+					4="fill(x0,y1-3,x1,y1, amberA400)"
+				}
 			}
-		}
-		
-		DetailsBuyButton:active {
-			render_bg {
-				0="fill(x0,y0,x1,y1, amberA400lesstransparent)"
-				1="fill(x0,y0,x0+3,y1, amberA700)"
-				2="fill(x0,y0,x1,y0+3, amberA700)"
-				3="fill(x1-3,y0,x1,y1, amberA700)"
-				4="fill(x0,y1-3,x1,y1, amberA700)"
+			
+			DetailsBuyButton:active {
+				render_bg {
+					0="fill(x0,y0,x1,y1, amberA400lesstransparent)"
+					1="fill(x0,y0,x0+3,y1, amberA700)"
+					2="fill(x0,y0,x1,y0+3, amberA700)"
+					3="fill(x1-3,y0,x1,y1, amberA700)"
+					4="fill(x0,y1-3,x1,y1, amberA700)"
+				}
 			}
-		}
 		
-		
-		DetailsBuyButton:Selected {
-			render_bg {
-				0="fill(x0,y0,x1,y1, amberA400lesstransparent)"
-				1="fill(x0,y0,x0+3,y1, amberA700)"
-				2="fill(x0,y0,x1,y0+3, amberA700)"
-				3="fill(x1-3,y0,x1,y1, amberA700)"
-				4="fill(x0,y1-3,x1,y1, amberA700)"
+			DetailsBuyButton:selected {
+				render_bg {
+					0="fill(x0,y0,x1,y1, amberA400lesstransparent)"
+					1="fill(x0,y0,x0+3,y1, amberA700)"
+					2="fill(x0,y0,x1,y0+3, amberA700)"
+					3="fill(x1-3,y0,x1,y1, amberA700)"
+					4="fill(x0,y1-3,x1,y1, amberA700)"
+				}
 			}
-		}
+
+			DetailsBuyButton:active {
+				render_bg {
+					0="fill(x0,y0,x1,y1, amberA400lesstransparent)"
+					1="fill(x0,y0,x0+3,y1, amberA700)"
+					2="fill(x0,y0,x1,y0+3, amberA700)"
+					3="fill(x1-3,y0,x1,y1, amberA700)"
+					4="fill(x0,y1-3,x1,y1, amberA700)"
+				}
+			}
 	}
 	
 	layout {
-		// Y offset here should match the vertical padding value above in the colors section
 		region {
-			name="header"
-			y=0
+			name=header
 			x=0
+			y=0
 			width=max
 			height=max
 		}
@@ -303,8 +305,8 @@
 		}
 		
 		place {
-			start=launchbutton
 			control=clientlist
+			start=launchbutton
 			region=header
 			dir=right
 			align=middle
@@ -314,8 +316,8 @@
 		}
 		
 		place {
-			start=launchbutton
 			control=subheaderlabels
+			start=launchbutton
 			region=header
 			dir=down
 			align=left

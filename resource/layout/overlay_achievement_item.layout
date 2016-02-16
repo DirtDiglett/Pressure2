@@ -1,14 +1,14 @@
 "resource/layout/overlay_achievement_item.layout" {
 	styles {
 		label {
-			font-size=18
 			textcolor=secondarytext_onDarkBG
 			font-family=mediumfont
+			font-size=18
 		}
 		name {
-			font-size=18
 			textcolor=text_onDarkBG
 			font-family=basefont
+			font-size=18
 		}
 	
 	}
@@ -16,8 +16,8 @@
 	layout {
 		place {
 			control=icon
-			y=0
 			x=0
+			y=0
 			width=64
 			height=64
 		}
@@ -25,10 +25,10 @@
 		place {
 			control=caption,name
 			dir=down
-			spacing=2
-			y=13
 			x=80
+			y=13
 			width=max
+			spacing=2
 		}
 	}
 }

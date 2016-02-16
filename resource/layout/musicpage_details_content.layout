@@ -1,25 +1,28 @@
 "resource/layout/musicpage_detail_content.layout" {
 	styles {
+		DetailsBorderPanel {}
+		BackgroundImage {}
+
 		DetailsBorderPanel {
 			render_bg {}
 		}
 		
 		AlbumOrArtistListStyle {
-			inset="0 0 0 0"
 			bgcolor=custombackgroundprimary
 			font-size=16
 			padding-left=4
 			padding-right=25
+			inset="0 0 0 0"
 		}
 		
 		EmptyDatabaseText {
-			textcolor="disabled_onLightBG"
-			font-size="15"
+			textcolor=disabled_onLightBG
+			font-size=15
 		}
 		
 		CrawlingText {
-			textcolor="disabled_onLightBG"
-			font-size="15"
+			textcolor=disabled_onLightBG
+			font-size=15
 		}
 		
 		CMusicPage_Details_Content {
@@ -28,12 +31,13 @@
 		}
 		
 		"MusicPage_Details_Content ListPanel" {
-			font-size=15
-			render_bg {}
-			render {}
+			font-size=15			
 			padding-left=4
 			padding-right=2
 			inset="0 0 -1 0"
+
+			render {}
+			render_bg {}
 		}
 
 		
@@ -46,44 +50,41 @@
 			} 
 		}
 		
-		"MusicPage_Details_Content ListPanelInterior:scrollbar" {     
-			inset="0 0 -1 0"
+		"MusicPage_Details_Content ListPanelInterior:scrollbar" {
 			bgcolor=none
+			inset="0 0 -1 0"
 			
 			render_bg {}
-			}
+		}
 		
-		"MusicPage_Details_Content ListPanelDragger"
-		{
+		"MusicPage_Details_Content ListPanelDragger" {
+			bgcolor=none
 			inset="0 0 0 0"
-			bgcolor="none"
+			
 			render {}
 			render_bg {}
 		}
 
-		"MusicPage_Details_Content ListPanelColumnHeader" [!$OSX]
-		{
-			bgcolor="none"
+		"MusicPage_Details_Content ListPanelColumnHeader" {
+			bgcolor=none
 			font-size=14
 			inset="0 0 0 0"
+
 			render {}
 			render_bg  {}
 		}
 
 		"AlbumOrArtistListStyle ListPanelColumnSelectButton" {
-       		inset="-3 3 0 0"
-        		render {
-          			5="image( x0 + 3, y0 + 3, x1, y1, graphics/icon_collapse )"
-        		}   
-        		render_bg {
-        			1="fill( x0 + 1, y0, x1 - 1, y1, orange500 )"
-        		}
+	   		inset="-3 3 0 0"
+
+			render {
+	  			5="image( x0 + 3, y0 + 3, x1, y1, graphics/icon_collapse )"
+			}   
+			render_bg {
+				1="fill( x0 + 1, y0, x1 - 1, y1, orange500 )"
+			}
 		}
 		
-		DetailsBorderPanel {}	
-
-		BackgroundImage {}
-
 		"ListPanel RichText" {
 			textcolor=disabled_onLightBG
 			font-size=15
@@ -92,24 +93,24 @@
 
 	layout {
 		region {
-			name="background"
+			name=background,BackgroundImageA,BackgroundImageB,BackgroundImageMask
 			width=0
 			height=0
 		}
 
 		region	{
-			name="list"
+			name=list
 			width=306
 			height=max
 		}
 
 		region {
-			name="details"
+			name=details
+			dir=down
 			x=306
 			width=max
 			height=max
-			overflow=scroll-vertical 
-			dir=down
+			overflow=scroll-vertical
 		}
 		
 		place {
@@ -144,14 +145,20 @@
 			margin-top=-1
 		}
 
-		place { control=*MusicPageDetailsAlbum region=details width=max dir=down spacing=10 }
-		place { control=*MusicPageDetailsPlaylist region=details width=max dir=down spacing=10 }
-		
 		place {
-			control=BackgroundImageA,BackgroundImageB,BackgroundImageMask
-			width=0
-			height=0
+			control=*MusicPageDetailsAlbum
+			region=details
+			width=max
+			dir=down
+			spacing=10
+		}
+
+		place {
+			control=*MusicPageDetailsPlaylist
+			region=details
+			dir=down
+			width=max
+			spacing=10
 		}
 	}
-
 }
