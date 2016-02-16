@@ -273,7 +273,7 @@
 		place {
 			control=no_screenshots
 			region=list
-			align="top-center
+			align=top-center
 			y=50
 		}
 
