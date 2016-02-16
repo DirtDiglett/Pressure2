@@ -384,7 +384,7 @@
 	
 	layout {
 		place {
-			control=URLStatusImage, label_community_friends,label_community_profile,label_community_gamehubs,label_community_forums,label_community_workshop,label_community_greenlight,label_community_marketplace,label_community_new,label_zoom_separator,subnavgroup_library,label_library_view
+			control=URLStatusImage,label_community_friends,label_community_profile,label_community_gamehubs,label_community_forums,label_community_workshop,label_community_greenlight,label_community_marketplace,label_community_new,label_zoom_separator,subnavgroup_library,label_library_view
 			height=0
 		}
 
