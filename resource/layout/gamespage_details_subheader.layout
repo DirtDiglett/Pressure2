@@ -9,63 +9,47 @@
 		
 		// TO DO TO DO TO DO
 		ClientListButton {
-			inset="20 0 0 0"
 			// minimum-width=20
 			// minimum-height set by code to match actual height of Launch button
 			// Do not set either minimum-width or -height here or it will override the code and the layout will break
 			bgcolor=none
-			render_bg
-			{
-				// background fill
-				0="gradient( x0+2, y0+1, x1, y1-1, launch1, launch2 )"
-			}
-			render
-			{
-				1="image( x0 + 6, y0 + 11, x1, y1, graphics/icon_down_hover )"
+
+			render_bg {}
+			render {
+				0="image(x0 + 6, y0 + 11, x1, y1, graphics/icons/dropdown/standard/down)"
 			}
 		}
 		
-		ClientListButton:hover {
-			inset="20 0 0 0"
-			bgcolor=none
-			render_bg
-			{
-				// background fill
-				0="gradient( x0+2, y0+1, x1, y1-1, launch0, launch2 )"
+			ClientListButton:hover {
+				render {
+					1="image( x0 + 6, y0 + 11, x1, y1, graphics/icons/dropdown/hover/down)"
+				}
 			}
-			render
-			{
-				1="image( x0 + 6, y0 + 11, x1, y1, graphics/icon_down_hover )"
+			
+			ClientListButton:active {
+				render_bg{
+					-3="image(x0-7,y0-7,x0+12,y0+12, graphics/material/selectionbubbles/hover/blue/topleft)"
+					-2="image(x0-7,y0+12,x0+12,y0+24, graphics/material/selectionbubbles/hover/blue/bottomleft)"
+					-1="image(x0+12,y0-7,x0+31,y0+12, graphics/material/selectionbubbles/hover/blue/topright)"
+					0="image(x0+12,y0+12,x0+31,y0+31, graphics/material/selectionbubbles/hover/blue/bottomright)"
+				}
+				render {
+					1="image( x0 + 6, y0 + 11, x1, y1, graphics/icons/dropdown/selected/down)"
+				}
 			}
-		}
-		
-		ClientListButton:active {
-			inset="20 0 0 0"
-			bgcolor=none
-			render_bg
-			{
-				// background fill
-				0="gradient( x0+2, y0+1, x1, y1-1, focus, launch2 )"
+			
+			ClientListButton:selected {
+				render_bg{
+					-3="image(x0-7,y0-7,x0+12,y0+12, graphics/material/selectionbubbles/hover/blue/topleft)"
+					-2="image(x0-7,y0+12,x0+12,y0+24, graphics/material/selectionbubbles/hover/blue/bottomleft)"
+					-1="image(x0+12,y0-7,x0+31,y0+12, graphics/material/selectionbubbles/hover/blue/topright)"
+					0="image(x0+12,y0+12,x0+31,y0+31, graphics/material/selectionbubbles/hover/blue/bottomright)"
+				}
+
+				render {
+					1="image( x0 + 6, y0 + 11, x1, y1, graphics/icons/dropdown/selected/down)"
+				}
 			}
-			render
-			{
-				1="image( x0 + 6, y0 + 11, x1, y1, graphics/icon_down_hover )"
-			}
-		}
-		
-		ClientListButton:selected {
-			inset="20 0 0 0"
-			bgcolor=none
-			render_bg
-			{
-				// background fill
-				0="gradient( x0+2, y0+1, x1, y1-1, focus, launch2 )"
-			}
-			render
-			{
-				1="image( x0 + 6, y0 + 11, x1, y1, graphics/icon_down_hover )"
-			}
-		}
 		
 
 
