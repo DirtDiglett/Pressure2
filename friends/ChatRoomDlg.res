@@ -28,13 +28,13 @@
 
 		CEmoticonButton {
 			render_bg{
-				1="image(x0+12,y0+5,x1,y1, graphics/icons/emote/standard/emote)"
+				0="image(x0+12,y0+5,x1,y1, graphics/icons/emote/standard/emote)"
 			}
 		}
 
 			CEmoticonButton:hover {
 				render_bg{
-					1="image(x0+12,y0+5,x1,y1, graphics/icons/emote/hover/emote)"
+					0="image(x0+12,y0+5,x1,y1, graphics/icons/emote/hover/emote)"
 				}
 			}
 
@@ -49,17 +49,17 @@
 			}
 
 		EmoticonMenuItemStyle {
-			font-size=24
-			textcolor=text_onLightBG
 			bgcolor=none
+			textcolor=text_onLightBG
+			font-size=24
+			inset="-3 -1 0 0"
 			padding-left=0
 			padding-right=0
-			inset="-3 -1 0 0"
 		}
 		
 			EmoticonMenuItemStyle:hover {
-				textcolor=secondarytext_onLightBG
 				bgcolor=none
+				textcolor=secondarytext_onLightBG				
 
 				render_bg {
 					0="fill(x0,y0,x1,y1, blue500)"
@@ -67,34 +67,34 @@
 			}
 		
 			EmoticonMenuItemStyle:selected {
-				textcolor=secondaryText_onLightBG
 				bgcolor=none
+				textcolor=secondaryText_onLightBG
 			}
 
-		 Button:selected {
-	        textcolor=blue500
-	        bgcolor=none
+		Button:selected {
+			bgcolor=none
+			textcolor=blue500
 
-	        render_bg {}
-	      }
+			render_bg {}
+		}
 
-	        "Page Button:selected" {}
-	      
-	      Button:disabled {
-	        textcolor=disabled_onLightBG
-	        render_bg {}
-	      }   
+			"Page Button:selected" {}
+		  
+			Button:disabled {
+				textcolor=disabled_onLightBG
 
+				render_bg {}
+			}
 
 		CChatActionsButton {
 			render_bg{
-				1="image(x0+10,y0+15,x1,y1, graphics/icons/menu/standard/menu)"
+				0="image(x0+10,y0+15,x1,y1, graphics/icons/menu/standard/menu)"
 			}
 		}
 		
 			CChatActionsButton:hover{
 				render_bg{
-					1="image(x0+10,y0+15,x1,y1, graphics/icons/menu/hover/menu)"
+					0="image(x0+10,y0+15,x1,y1, graphics/icons/menu/hover/menu)"
 				}
 			}
 
@@ -114,6 +114,7 @@
 
 		SectionedListPanelInterior {
 			bgcolor=white
+
 			render {}
 			render_bg {}
 		}
@@ -121,7 +122,7 @@
 	
 	layout {
 		place {
-			control="Splitter"
+			control=Splitter
 			width=4
 		}
 
@@ -135,8 +136,8 @@
 		region {
 			name=bottom
 			align=bottom
-			height=76
 			width=max
+			height=76			
 		}
 
 		place {
@@ -149,99 +150,99 @@
 		}
 
 		place { 
-			control="TitlePanel"
+			control=TitlePanel
 			region=container
-			height=50
-			width=max
-			margin-right=6
-			end-right=ChatActionsButton
-			y=2
 			x=3
+			y=2
+			width=max
+			height=50
+			margin-right=6
+			end-right=ChatActionsButton			
 		}
 
 		place {
-			control="Splitter,UserList"
-			align=right
+			control=Splitter,UserList
 			region=container
+			align=right
+			y=47
 			height=max
 			margin-right=0
 			margin-bottom=75
 			spacing=-3
-			y=47
 		}
 
 		place {
-			control="VoiceChat"
+			control=VoiceChat
+			align=right
+			dir=right
 			y=6
 			width=36
 			margin-right=8
-			align=right
 			spacing=8
-			dir=right
 		}
 		
 		place {
-			control="VoiceBar"
+			control=VoiceBar
 			y=34
-			height=24
 			width=max
+			height=24
 			margin-left=8
 			margin-right=52
 		}
 		
 		place {
-			control="GameInviteBar,TradeInviteBar,ChatInfoBar,BIBar,BABar"
+			control=GameInviteBar,TradeInviteBar,ChatInfoBar,BIBar,BABar
 			height=72
 		}
 		
 		place {
-			control="TradeInviteBar,GameInviteBar,ChatInfoBar,BIBar,BABar,ChatHistory"
+			control=TradeInviteBar,GameInviteBar,ChatInfoBar,BIBar,BABar,ChatHistory
+			align=right
+			dir=down
 			y=57
 			width=max
 			height=max
-			align=right
-			dir=down
 			margin-bottom=75
 			end-right=UserList
 		}
 
 		place {
-			control="TextEntry"
+			control=TextEntry
 			region=bottom
-			end-right="EmoticonButton"
+			x=5
+			y=5
 			height=max
 			width=max
-			y=5
-			x=5
 			margin-bottom=20
+			end-right=EmoticonButton
 		}
 		
 		place {
 			control=EmoticonButton
 			region=bottom
 			align=right
+			y=24
 			width=26
 			height=26
-			y=24
 			margin-right=70
 		}
 
 		place {
-			control="SendButton"
+			control=SendButton
 			region=bottom
-			height=30
-			width=55
 			align=right
-			margin-right=14
 			y=22
+			width=55
+			height=30
+			margin-right=14
 		}
 
 		place {
-			control="StatusLabel"
+			control=StatusLabel
 			align=bottom
 			width=max
-			margin-bottom=5
 			margin-left=5
+			margin-bottom=5
 		}
 	}
 }
