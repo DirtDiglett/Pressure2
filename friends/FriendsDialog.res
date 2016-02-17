@@ -1,9 +1,16 @@
 "Friends/FriendsDialog.res" {
 	colors {
-		PropertySheet.TabGap 1
+		PropertySheet.TabGap = "1"
 	}
 
 	styles {
+		CFriendsListSectionAffordance {}
+		CFriendPanel {}
+		AddFriendsButton {}
+		FriendsSearch:selected {}
+		FriendsSearchIcon:disabled {}
+
+
 		FriendsPanel {			
 			bgcolor=custombackgroundnofocus
 			render {
@@ -77,7 +84,7 @@
 				font-size=16
 				font-style=regular
 				textcolor=secondarytext_onDarkBG
-				minimum-height=34
+				minimum-height=24
 				inset-top=-1
 
 				render {}
@@ -121,7 +128,7 @@
 
 
 
-    CFriendsListSectionAffordance {}
+
     
     CFriendsListSectionHeader {
     	inset="0 0 0 0"
@@ -136,7 +143,7 @@
         }    
     }
             
-    CFriendPanel {}
+
 
 	Page {
 		bgcolor=none
@@ -153,9 +160,7 @@
     	inset="0 0 0 0"
     }   
 
-		AddFriendsButton {}
-		  
-		AddFriendsButton:hover {}	  	
+			  	
 		
 		RootMenu {
 			bgcolor=none
@@ -186,7 +191,7 @@
 			}
 		}
 		
-			FriendsSearch:selected {}
+
 			
 			FriendsSearch:empty {
 				font-style=italic
@@ -216,13 +221,11 @@
 				1="fill(x0,y1-1,x1+25,y1, divider)"
 			}
 		}
-		
-			FriendsSearchIcon:disabled {}
 	}
  	
  	layout {
 		place {
-			control="frame_title"
+			control=frame_title,addFriendsButton
 			height=0
 		}
 
@@ -291,12 +294,6 @@
 			height=max
 			margin-bottom=46
 			spacing=0
-		}	
-		
-		place {
-			control="addFriendsButton"
-			width=0
-			height=0
 		}
  	}
 }
