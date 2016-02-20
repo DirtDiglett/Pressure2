@@ -1,0 +1,39 @@
+"resource/layout/streamingintro.layout" {
+	layout {
+		place {
+			control=StreamingIntroImage
+			x=24
+			y=58
+			width=356
+			height=130
+		}
+
+		place {
+			control=IntroLabel,IntroLabel2
+			start=StreamingIntroImage
+			dir=down
+			y=18
+			width=max
+			margin-right=24
+			spacing=18
+		}
+
+		region {
+			name=buttons
+			align=bottom
+			width=max
+			height=58
+		}
+
+		place {
+			control=okbutton,cancelbutton
+			region=buttons
+			align=right
+			width=92
+			height=34
+			margin-top=12
+			margin-right=11
+			spacing=12
+		}
+	}
+}
