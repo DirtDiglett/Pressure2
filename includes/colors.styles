@@ -211,5 +211,7 @@
 		ChatGradientBottom = "none"
 
 		GiftOnlyInfo.ImagePanelColor = "none"
+
+		NotificationBodyText = "secondaryText_onDarkBG"
 	}
 }
