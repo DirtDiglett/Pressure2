@@ -1,5 +1,9 @@
 "friends/AchievementNotification.res" {
 	styles {
+		Label {
+			textcolor=secondaryText_onDarkBG
+		}
+
 		Notification {
 			minimum-width=289
 
@@ -11,6 +15,8 @@
 
 	colors {
 		Black = "0 0 0 0"
+		AchievementPopup.TitleColor = "amber500"
+		AchievementPopup.DescriptionColor = "secondaryText_onDarkBG"
 	}
 
 	layout {
@@ -21,15 +27,15 @@
 		
 		place {
 			control=AchievementIcon
-			x=10
-			y=13
+			x=12
+			y=15
 		}
 
 		place {
 			control=LabelTitle
-			dir=down
-			x=65
-			y=11
+			start=AchievementIcon
+			dir=right
+			x=15
 			width=max
 			margin-right=12
 			spacing=3
