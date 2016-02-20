@@ -1,7 +1,7 @@
 "friends/broadcastinvitebar.res" {
 	styles {
 		CBroadcastInviteBar {
-			bgcolor=red500
+			bgcolor=orange500
 
 			render {
 				1="image_tiled(x0,y1,x1,y1+4, graphics/material/shadows/top)"
