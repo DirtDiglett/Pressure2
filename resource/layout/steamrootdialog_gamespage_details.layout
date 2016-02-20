@@ -447,7 +447,7 @@
 		}
 		
 		place {
-			control=welcomedetails,turnnotifications,friendsdetails,achievementsdetails,clouddetails,communityfilesdetails,dlcdetails,newsdetails,nonsteamdetails,screenshotsdetails
+			control=welcomedetails,friendsdetails,turnnotifications,achievementsdetails,clouddetails,communityfilesdetails,dlcdetails,newsdetails,nonsteamdetails,screenshotsdetails
 			region=detailsbody
 			start=tagslabel
 			dir=down
