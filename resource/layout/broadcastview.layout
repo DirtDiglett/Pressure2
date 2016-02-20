@@ -1,0 +1,45 @@
+"resource/layout/broadcastview.layout" {
+	styles {
+		CloseButtonStyle {
+			minimum-width=24
+			minimum-height=24
+
+			render_bg {
+				1="image(x0+7,y0+7,x1,y1, graphics/icons/window_controls/standard/close)"
+			}
+		}
+
+			CloseButtonStyle:hover {
+				render_bg {
+					1="image(x0+7,y0+7,x1,y1, graphics/icons/window_controls/hover/close)"
+				}
+			}
+
+			CloseButtonStyle:active {
+				bgcolor=none
+				
+				render_bg {
+					-3="image(x0-7,y0-7,x0+12,y0+12, graphics/material/selectionbubbles/hover/red/topleft)"
+					-2="image(x0-7,y0+12,x0+12,y0+24, graphics/material/selectionbubbles/hover/red/bottomleft)"
+					-1="image(x0+12,y0-7,x0+31,y0+12, graphics/material/selectionbubbles/hover/red/topright)"
+					0="image(x0+12,y0+12,x0+31,y0+31, graphics/material/selectionbubbles/hover/red/bottomright)"
+					1="image(x0+7,y0+7,x1,y1, graphics/icons/window_controls/hover/close)"
+				}
+			}
+	} 
+
+	layout {
+		place {
+			control=clickpanel
+			width=max
+			height=max
+		}
+
+		place {
+			control=closebutton
+			align=right
+			width=24
+			height=24			
+		}
+	}
+}

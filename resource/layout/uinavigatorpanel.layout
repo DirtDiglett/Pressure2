@@ -332,7 +332,6 @@
 		BroadcastPanelMinimized {
 			bgcolor=text_OnLightBG
 			textcolor=text_onDarkBG
-			inset="1 1 1 1"
 			
 			render_bg {}
 		}
@@ -586,22 +585,28 @@
 			dir=down
 			width=max
 			height=max
+			margin-left=-1
+			margin-top=-1
+			margin-right=-1
+			margin-bottom=-1
 		}
 		
 		place {
 			control=BroadcastPageMin
-			start=phonereminderbar
-			dir=down
-			width=max
-			height=max
+			width=300
+			height=168
+			margin-right=24
+			margin-bottom=24
+			align=bottom-right
 		}
-		
+
 		place {
 			control=BroadcastPageMinHoriz
-			start=phonereminderbar
-			dir=down
-			width=max
-			height=max
+			width=300
+			height=168
+			margin-right=24
+			margin-bottom=24
+			align=bottom-right
 		}
 		
 		place {
