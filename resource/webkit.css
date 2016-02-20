@@ -168,3 +168,33 @@
 	color: rgba(0,0,0,0.54) !important;
     font-weight: bold !important;
 }
+
+
+/* Overrides for the Steam Updates Popup */
+#all {
+	background: none !important;
+	background-image: url(data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7) !important;
+}
+
+#MessageContent {
+	background: none !important;
+	background-image: url(data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7) !important;
+}
+
+.legal {
+	color: transparent !important;
+}
+
+#ButtonContainer {
+	background: #fff !important;
+	background-image: url(data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7) !important;
+}
+
+#ShareLinks {
+    left: -9999px !important;
+}
+
+#Price {
+	background: none !important;
+	background-image: url(data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7) !important;
+}
