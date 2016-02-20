@@ -3,24 +3,6 @@
 		DarkRegion {}
 		PreviewImage {}
 
-		Button {
-			textcolor=lightblue300
-			font-family=heavyfont
-			font-size=20
-			font-weight=400
-			font-style=normal
-			padding-left=57
-			padding-top=0
-			inset-left=-6
-			inset-top=-18
-
-			render_bg {}			
-		}
-
-			button:hover {
-				textcolor=lightblue200
-			}
-
 		detailsbox {
 			render_bg {
 				0="fill(x0,y0,x1,y1, secondaryText_OnLightBG)"
@@ -42,17 +24,11 @@
 		region {
 			name=title
 			width=max
-			height=111
-			margin-left=23
-			margin-top=29
+			height=max
+			x=23
+			y=29
 			margin-right=23
-		}
-
-		region {
-			name=actions
-			align=bottom
-			width=max
-			height=100
+			margin-bottom=58
 		}
 
 		place {
@@ -62,17 +38,31 @@
 			spacing=20
 		}
 
+		region {
+			name=buttons
+			align=bottom
+			width=max
+			height=58
+		}
+
 		place {
 			control=StopBroadcast
-			region=actions
+			region=buttons
 			align=left
+			height=34
+			margin-left=11
+			margin-top=12			
+			spacing=12
 		}
 
 		place {
 			control=ShowBroadcast,ShowChat
-			region=actions
+			region=buttons
 			align=right
-			margin-right=4
+			height=34
+			margin-top=12
+			margin-right=11
+			spacing=12
 		}
 	}
 }
