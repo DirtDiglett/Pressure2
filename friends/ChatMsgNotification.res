@@ -20,7 +20,7 @@
 		}
 		
 		place {
-			control="ImageAvatar"
+			control=ImageAvatar
 			x=10
 			y=13
 		}
