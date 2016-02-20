@@ -47,7 +47,6 @@
 	layout {
 		place {
 			control=InviteImage,InviteSentImage,ClickHereLabel
-			width=0
 			height=0
 		}
 
