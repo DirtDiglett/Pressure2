@@ -53,8 +53,9 @@
 		region {
 			name=broadcastarea
 			region=overlay
-			align=right
-			width=645
+			align=top-center
+			y=100
+			width=420
 			height=max
 		}
 
@@ -62,8 +63,8 @@
 			controls=BroadcastDetailPanel
 			region=broadcastarea
 			align=bottom
-			width=645
-			height=160
+			width=420
+			height=180
 		}
 		
 		place {
