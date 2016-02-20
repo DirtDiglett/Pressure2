@@ -1,7 +1,8 @@
 "public/ScreenshotNotification.res" {
 	styles {
 		Notification {
-			minimum-width=289			
+			minimum-width=289
+			minimum-height=98			
 
 			render_bg {
 				//0="image(x1-83,y0+17,x1,y1, graphics/notifications/achievement)"
@@ -16,18 +17,28 @@
 
 	layout {
 		place {
-			control=LabelGame,LabelInfo
-			dir=down
-			x=109
-			y=19
-			width=max
-			height=max
+			control=ScreenshotImage
+			x=12
+			y=15
 		}
 
 		place {
-			control=ScreenshotImage
-			x=13
-			height=max
+			control=LabelGame
+			start=ScreenshotImage
+			dir=right
+			x=15
+			width=max
+			margin-right=12
+			spacing=3
+		}
+
+		place {
+			control=LabelInfo
+			start=LabelGame
+			dir=down
+			y=4
+			width=max
+			margin-right=12
 		}
 	}
 }
