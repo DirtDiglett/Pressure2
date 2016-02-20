@@ -73,56 +73,65 @@
 		ReloadButton {
 			bgcolor=none
 			textcolor=none
-			inset="-5 -1 0 0"
-			image="graphics/icons/refresh/standard/refresh"
+			inset="0 0 0 0"
 
-			render_bg {}
+			render_bg {
+				0="image(x0,y0+11,x1,y1, graphics/icons/refresh/standard/refresh)"
+			}
 		}
 		
 			ReloadButton:hover {
-				image="graphics/icons/refresh/hover/refresh"
+				render_bg {
+					0="image(x0,y0+11,x1,y1, graphics/icons/refresh/hover/refresh)"
+				}
 			}
 
 			ReloadButton:active {
-				image="graphics/icons/refresh/hover/refresh"
-
 				render_bg {
-					-3="image(x0-6,y0+4,x0+13,y0+23, graphics/material/selectionbubbles/hover/white/topleft)"
-					-2="image(x0-6,y0+23,x0+13,y0+35, graphics/material/selectionbubbles/hover/white/bottomleft)"
-					-1="image(x0+13,y0+4,x0+32,y0+23, graphics/material/selectionbubbles/hover/white/topright)"
-					0="image(x0+13,y0+23,x0+32,y0+42, graphics/material/selectionbubbles/hover/white/bottomright)"
+					-3="image(x0-7,y0+4,x0+12,y0+23, graphics/material/selectionbubbles/hover/white/topleft)"
+					-2="image(x0-7,y0+23,x0+12,y0+35, graphics/material/selectionbubbles/hover/white/bottomleft)"
+					-1="image(x0+12,y0+4,x0+31,y0+23, graphics/material/selectionbubbles/hover/white/topright)"
+					0="image(x0+12,y0+23,x0+31,y0+42, graphics/material/selectionbubbles/hover/white/bottomright)"
+					1="image(x0,y0+11,x1,y1, graphics/icons/refresh/hover/refresh)"
 				}
 			}
 
 			ReloadButton:disabled {
-				image="graphics/icons/refresh/disabled/refresh"
+				render_bg {
+					0="image(x0,y0+11,x1,y1, graphics/icons/refresh/disabled/refresh)"
+				}
 			}
 
 		StopButton {
 			bgcolor=none
-			inset="-5 -1 0 0"
-			image="graphics/icons/stopbutton/standard/stop"
+			textcolor=none
+			inset="0 0 0 0"
 
-			render_bg {}
+			render_bg {
+				0="image(x0,y0+11,x1,y1, graphics/icons/stopbutton/standard/stop)"
+			}
 		}
 		
 			StopButton:hover {
-				image="graphics/icons/stopbutton/hover/stop"
+				render_bg {
+					0="image(x0,y0+11,x1,y1, graphics/icons/stopbutton/hover/stop)"
+				}
 			}
 
 			StopButton:active {
-				image="graphics/icons/stopbutton/hover/stop"
-
 				render_bg {
-					-3="image(x0-6,y0+4,x0+13,y0+23, graphics/material/selectionbubbles/hover/white/topleft)"
-					-2="image(x0-6,y0+23,x0+13,y0+35, graphics/material/selectionbubbles/hover/white/bottomleft)"
-					-1="image(x0+13,y0+4,x0+32,y0+23, graphics/material/selectionbubbles/hover/white/topright)"
-					0="image(x0+13,y0+23,x0+32,y0+42, graphics/material/selectionbubbles/hover/white/bottomright)"
+					-3="image(x0-7,y0+4,x0+12,y0+23, graphics/material/selectionbubbles/hover/white/topleft)"
+					-2="image(x0-7,y0+23,x0+12,y0+35, graphics/material/selectionbubbles/hover/white/bottomleft)"
+					-1="image(x0+12,y0+4,x0+31,y0+23, graphics/material/selectionbubbles/hover/white/topright)"
+					0="image(x0+12,y0+23,x0+31,y0+42, graphics/material/selectionbubbles/hover/white/bottomright)"
+					1="image(x0,y0+11,x1,y1, graphics/icons/stopbutton/hover/stop)"
 				}
 			}
 
 			StopButton:disabled {
-				image="graphics/icons/stopbutton/disabled/stop"
+				render_bg {
+					0="image(x0,y0+11,x1,y1, graphics/icons/stopbutton/disabled/stop)"
+				}
 			}
 
 		BackButton {
@@ -199,13 +208,13 @@
 			inset="0 0 0 0"
 		
 			render_bg {
-				0="image(x0,y0+12,x1,y1, graphics/icons/backbutton/standard/back)"
+				0="image(x0,y0+11,x1,y1, graphics/icons/backbutton/standard/back)"
 			}
 		}
 		
 			BackButtonSm:hover {
 				render_bg {
-					0="image(x0,y0+12,x1,y1, graphics/icons/backbutton/hover/back)"
+					0="image(x0,y0+11,x1,y1, graphics/icons/backbutton/hover/back)"
 				}
 			}
 			
@@ -215,13 +224,13 @@
 					-2="image(x0-7,y0+23,x0+12,y0+35, graphics/material/selectionbubbles/hover/white/bottomleft)"
 					-1="image(x0+12,y0+4,x0+31,y0+23, graphics/material/selectionbubbles/hover/white/topright)"
 					0="image(x0+12,y0+23,x0+31,y0+42, graphics/material/selectionbubbles/hover/white/bottomright)"
-					1="image(x0,y0+12,x1,y1, graphics/icons/backbutton/hover/back)"
+					1="image(x0,y0+11,x1,y1, graphics/icons/backbutton/hover/back)"
 				}
 			}
 			
 			BackButtonSm:disabled {
 				render_bg {
-					0="image(x0,y0+12,x1,y1, graphics/icons/backbutton/disabled/back)"
+					0="image(x0,y0+11,x1,y1, graphics/icons/backbutton/disabled/back)"
 				}
 			}
 		
@@ -231,13 +240,13 @@
 			inset="0 0 0 0"
 		
 			render_bg {
-				0="image(x0,y0+12,x1,y1, graphics/icons/forwardbutton/standard/forward)"
+				0="image(x0,y0+11,x1,y1, graphics/icons/forwardbutton/standard/forward)"
 			}
 		}
 		
 			ForwardButtonSm:hover {
 				render_bg {
-					0="image(x0,y0+12,x1,y1, graphics/icons/forwardbutton/hover/forward)"
+					0="image(x0,y0+11,x1,y1, graphics/icons/forwardbutton/hover/forward)"
 				}
 			}
 			
@@ -247,13 +256,13 @@
 					-2="image(x0-7,y0+23,x0+12,y0+35, graphics/material/selectionbubbles/hover/white/bottomleft)"
 					-1="image(x0+12,y0+4,x0+31,y0+23, graphics/material/selectionbubbles/hover/white/topright)"
 					0="image(x0+12,y0+23,x0+31,y0+42, graphics/material/selectionbubbles/hover/white/bottomright)"
-					1="image(x0,y0+12,x1,y1, graphics/icons/forwardbutton/hover/forward)"
+					1="image(x0,y0+11,x1,y1, graphics/icons/forwardbutton/hover/forward)"
 				}
 			}
 			
 			ForwardButtonSm:disabled {
 				render_bg {
-					0="image(x0,y0+12,x1,y1, graphics/icons/forwardbutton/disabled/forward)"
+					0="image(x0,y0+11,x1,y1, graphics/icons/forwardbutton/disabled/forward)"
 				}
 			}
 
