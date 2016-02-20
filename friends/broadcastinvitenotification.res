@@ -1,5 +1,9 @@
 "friends/BroadcastInviteNotification.res" {
 	styles {
+		Label {
+			textcolor=secondaryText_onDarkBG
+		}
+		
 		Notification {
 			minimum-width=289
 
