@@ -92,9 +92,8 @@
 	}
 
 	layout {
-		region {
-			name=background,BackgroundImageA,BackgroundImageB,BackgroundImageMask
-			width=0
+		place {
+			control=background,BackgroundImageA,BackgroundImageB,BackgroundImageMask
 			height=0
 		}
 
