@@ -99,7 +99,7 @@
 
 		ComboBox {
 			render {
-				0="image( x1 - 24, y0 + 20, x1, y1, graphics/icons/dropdown/standard/down_onLightBG )"
+				0="image( x1 - 24, y0 + 20, x1, y1, graphics/icons/dropdown/standard/down)"
 			}
 		}
 	}
