@@ -47,27 +47,27 @@
 				}
 			}
 
-				URLLabel:disabled {
-					bgcolor=none
-					textcolor=disabled_onLightBG
-					
-					render_bg {}
-				}
+			URLLabel:disabled {
+				bgcolor=none
+				textcolor=disabled_onLightBG
+				
+				render_bg {}
+			}
 
 
-					URLLabel:focus {
-						bgcolor=none
-						textcolor=blue500
+			URLLabel:focus {
+				bgcolor=none
+				textcolor=blue500
 
-						render_bg {}
-					}
+				render_bg {}
+			}
 
-						URLLabel:active {
-							bgcolor=blue500transparent
-							textcolor=blue500
+			URLLabel:active {
+				bgcolor=blue500transparent
+				textcolor=blue500
 
-							render_bg {}
-						}
+				render_bg {}
+			}
 	}
 	
 	layout {
