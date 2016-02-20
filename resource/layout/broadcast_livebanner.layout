@@ -1,0 +1,46 @@
+"resource/layout/broadcast_livebanner.layout" {
+	styles {
+		Label {
+			textcolor=secondaryText_onDarkBG
+		}
+
+		ViewersTextStyle {
+			textcolor=text_onDarkBG
+			font-size=20
+		}		
+		
+		LiveBannerStyleIngame {   
+			render_bg { 
+				0="fill(x0, y0, x1, y1, secondaryText_onLightBG)"
+			}
+		}
+		
+		LiveBannerStyleDesktop {   
+			render_bg {
+				0="fill(x0, y0, x1, y1, secondaryText_onLightBG)"
+			}
+		}
+	}
+	
+	layout {
+		place {
+			control=MicrophoneImage,LiveImage,RequestsImage,RequestsText,ViewersImage,ViewersText
+			align=right
+			margin-right=4
+			spacing=2			
+		}
+
+		place {
+			control=DebugText
+			align=right
+			y=22
+			margin-right=4
+			spacing=4
+		}
+
+		place {
+			control=DebugLine
+			y=22
+		}
+	}
+}
