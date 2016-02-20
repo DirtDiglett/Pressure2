@@ -176,25 +176,69 @@
 	background-image: url(data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7) !important;
 }
 
-#MessageContent {
+#messagecontent {
 	background: none !important;
 	background-image: url(data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7) !important;
 }
 
-.legal {
-	color: transparent !important;
+#messagecontent .legal {
+	display: none !important;
 }
 
-#ButtonContainer {
+#buttoncontainer {
 	background: #fff !important;
 	background-image: url(data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7) !important;
+	padding-top: 0 !important;
+	height: 58px !important;
 }
 
-#ShareLinks {
-    left: -9999px !important;
+#buttoncontainer .btn {
+	margin: 12px !important;
+    background: none !important;
+    text-align: left !important;
+    padding: 8px 16px !important;
+    height: auto !important;
+    font-size: 12px !important;
+    font-weight: 500 !important;
+    font-family: "Roboto", sans-serif !important;
+    color: #2196F3 !important;
+    width: auto !important;
+    position: absolute !important;
+    display: inline-block !important;
+    left: 0 !important;
 }
 
-#Price {
+	#buttoncontainer .btn:hover {
+	    background: rgba(0,0,0,0.12) !important;
+	}
+
+	#buttoncontainer .btn:active {
+	    background: rgba(33,150,243,0.26) !important;
+	}
+
+#buttoncontainer #price {
+	height: 58px !important;
 	background: none !important;
 	background-image: url(data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7) !important;
+	width: auto !important;
+    margin-right: 12px !important;
+}
+
+#buttoncontainer #price #priceregular {
+	margin-top: 7px !important;
+    color: rgba(0,0,0,0.56) !important;
+    font-weight: bold !important;
+    font-family: "Roboto", sans-serif !important;
+}
+
+#buttoncontainer #price #pricereal {
+	font-weight: bold !important;
+    color: rgba(0,0,0,0.87) !important;
+    font-family: "Roboto", sans-serif !important;
+    margin: 0 !important;
+    line-height: 58px !important;
+}
+
+#sharelinks {
+    left: -9999px !important;
 }
