@@ -11,17 +11,6 @@
 				1="fill(x0-20,y0-15,x1,y0-14, dividers_onLightBG)"
 			}
 		}
-
-		button {
-			padding-left=8
-			padding-right=4
-			
-			render_bg {}
-		}
-
-			button:hover {
-				bgcolor=dividers_OnLightBG
-			}
 	}
 
 	layout {

@@ -19,17 +19,6 @@
 				0="image(x0-12,y0-15,x1,y1, graphics/workshopbg)"
 			}
 		}
-		
-		button {
-			padding-left=8
-			padding-right=4
-			
-			render_bg {}
-		}
-
-			button:hover {
-				bgcolor=dividers_OnLightBG
-			}
 	}
 
 	layout {

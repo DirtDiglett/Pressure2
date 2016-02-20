@@ -32,17 +32,6 @@
 			selectedtextcolor=white
 		}
 
-		button {
-			padding-left=8
-			padding-right=4
-			
-			render_bg {}
-		}
-
-			button:hover {
-				bgcolor=dividers_OnLightBG
-			}
-
 		ListPanelColumnHeader {
 			inset-top=0
 		}
