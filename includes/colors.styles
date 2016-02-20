@@ -210,8 +210,6 @@
 		ChatGradientTop = "none"
 		ChatGradientBottom = "none"
 
-		AchievementPopup.TitleColor = "text_onDarkBG"
-		AchievementPopup.DescriptionColor = "secondaryText_onDarkBG"
 		GiftOnlyInfo.ImagePanelColor = "none"
 	}
 }
