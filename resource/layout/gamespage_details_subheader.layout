@@ -7,55 +7,45 @@
 	styles {
 		CDetailsGameSubHeaderPanel {}
 		
-		// TO DO TO DO TO DO
 		ClientListButton {
-			// minimum-width=20
-			// minimum-height set by code to match actual height of Launch button
-			// Do not set either minimum-width or -height here or it will override the code and the layout will break
-			bgcolor=none
+			inset="-40 0 0 0"
 
-			render_bg {}
 			render {
-				0="image(x0 + 6, y0 + 11, x1, y1, graphics/icons/dropdown/standard/down)"
+				0="image(x0+10, y0+22, x1, y1, graphics/icons/menu/standard/menu)"
 			}
+			render_bg {}			
 		}
 		
 			ClientListButton:hover {
 				render {
-					1="image( x0 + 6, y0 + 11, x1, y1, graphics/icons/dropdown/hover/down)"
+					0="image(x0+10, y0+22, x1, y1, graphics/icons/menu/hover/menu)"
 				}
 			}
 			
 			ClientListButton:active {
 				render_bg{
-					-3="image(x0-7,y0-7,x0+12,y0+12, graphics/material/selectionbubbles/hover/blue/topleft)"
-					-2="image(x0-7,y0+12,x0+12,y0+24, graphics/material/selectionbubbles/hover/blue/bottomleft)"
-					-1="image(x0+12,y0-7,x0+31,y0+12, graphics/material/selectionbubbles/hover/blue/topright)"
-					0="image(x0+12,y0+12,x0+31,y0+31, graphics/material/selectionbubbles/hover/blue/bottomright)"
+					-3="image(x0-7,y0+11,x0+12,y0+30, graphics/material/selectionbubbles/hover/white/topleft)"
+					-2="image(x0-7,y0+30,x0+12,y0+42, graphics/material/selectionbubbles/hover/white/bottomleft)"
+					-1="image(x0+12,y0+11,x0+31,y0+30, graphics/material/selectionbubbles/hover/white/topright)"
+					0="image(x0+12,y0+30,x0+31,y0+49, graphics/material/selectionbubbles/hover/white/bottomright)"
 				}
 				render {
-					1="image( x0 + 6, y0 + 11, x1, y1, graphics/icons/dropdown/selected/down)"
+					0="image(x0+10, y0+22, x1, y1, graphics/icons/menu/hover/menu)"
 				}
 			}
 			
 			ClientListButton:selected {
 				render_bg{
-					-3="image(x0-7,y0-7,x0+12,y0+12, graphics/material/selectionbubbles/hover/blue/topleft)"
-					-2="image(x0-7,y0+12,x0+12,y0+24, graphics/material/selectionbubbles/hover/blue/bottomleft)"
-					-1="image(x0+12,y0-7,x0+31,y0+12, graphics/material/selectionbubbles/hover/blue/topright)"
-					0="image(x0+12,y0+12,x0+31,y0+31, graphics/material/selectionbubbles/hover/blue/bottomright)"
+					-3="image(x0-7,y0+11,x0+12,y0+30, graphics/material/selectionbubbles/hover/white/topleft)"
+					-2="image(x0-7,y0+30,x0+12,y0+42, graphics/material/selectionbubbles/hover/white/bottomleft)"
+					-1="image(x0+12,y0+11,x0+31,y0+30, graphics/material/selectionbubbles/hover/white/topright)"
+					0="image(x0+12,y0+30,x0+31,y0+49, graphics/material/selectionbubbles/hover/white/bottomright)"
 				}
 
 				render {
-					1="image( x0 + 6, y0 + 11, x1, y1, graphics/icons/dropdown/selected/down)"
+					0="image(x0+10, y0+22, x1, y1, graphics/icons/menu/hover/menu)"
 				}
 			}
-		
-
-
-
-
-
 		
 		// This button is for "Activate" when received games as gifts.
 		DetailsButton {
@@ -293,10 +283,8 @@
 			start=launchbutton
 			region=header
 			dir=right
-			align=middle
-			margin-left=0
-			margin-right=0
-			spacing=0
+			x=8
+			width=24
 		}
 		
 		place {
