@@ -4,7 +4,10 @@
 	}
 
 	styles {
-		CFriendsListSectionAffordance {}
+		CFriendsListSectionAffordance {
+			bgcolor=red500
+		}
+
 		CFriendPanel {}
 		AddFriendsButton {}
 		FriendsSearch:selected {}
@@ -14,7 +17,7 @@
 		FriendsPanel {			
 			bgcolor=custombackgroundnofocus
 			render {
-				1="image_tiled(x0,y0+127,x1,y0+131, graphics/material/shadows/top)"
+				1="image_tiled(x0,y0+134,x1,y0+138, graphics/material/shadows/top)"
 				2="image_tiled(x0,y1-50,x1,y1-46, graphics/material/shadows/bottom)"
 			}
 			
@@ -80,25 +83,28 @@
 
 
 
-			PageTab {
-				font-size=16
-				font-style=regular
-				textcolor=secondarytext_onDarkBG
-				minimum-height=24
-				inset-top=-1
+		PageTab {
+			font-size=16
+			font-style=regular
+			textcolor=secondarytext_onDarkBG
+			minimum-height=24
+			minimum-width=100
+			inset-top=-4
+			padding-left=4
+			bgcolor=none
 
-				render {}
-				render_bg {}
+			render {}
+			render_bg {}
 	    }
 	    
 			PageTab:hover {
 		  		textcolor=text_onDarkBG
 
 				render_bg {
-					1="image(x0,y0,x0+2,y0+2, graphics/material/tab/white/topleft)"
-					2="image_tiled(x0+2,y0,x1-2, y0+2, graphics/material/tab/white/middle)"
-					3="image_tiled(x0,y0+2,x1, y1, graphics/material/tab/white/middle)"
-					4="image(x1-2,y0,x1,y0+2, graphics/material/tab/white/topright)"
+					1="image(x0,y0-4,x0+2,y0-2, graphics/material/tab/white/topleft)"
+					2="image_tiled(x0+2,y0-4,x1-2, y0-2, graphics/material/tab/white/middle)"
+					3="image_tiled(x0,y0-2,x1, y1, graphics/material/tab/white/middle)"
+					4="image(x1-2,y0-4,x1,y0-2, graphics/material/tab/white/topright)"
 				}
 			}
 	  
@@ -107,10 +113,10 @@
 
 				render_bg {
 					0="fill(x0,y1-3,x1,y1, blue500)"
-					1="image(x0,y0,x0+2,y0+2, graphics/material/tab/blue/topleft)"
-					2="image_tiled(x0+2,y0,x1-2, y0+2, graphics/material/tab/blue/middle)"
-					3="image_tiled(x0,y0+2,x1, y1, graphics/material/tab/blue/middle)"
-					4="image(x1-2,y0,x1,y0+2, graphics/material/tab/blue/topright)"
+					1="image(x0,y0-4,x0+2,y0-2, graphics/material/tab/blue/topleft)"
+					2="image_tiled(x0+2,y0-4,x1-2, y0-2, graphics/material/tab/blue/middle)"
+					3="image_tiled(x0,y0-2,x1, y1, graphics/material/tab/blue/middle)"
+					4="image(x1-2,y0-4,x1,y0-2, graphics/material/tab/blue/topright)"
 				}
 		  	}
 
@@ -119,29 +125,68 @@
 
 					render_bg {
 						0="fill(x0,y1-3,x1,y1, blue300)"
-						1="image(x0,y0,x0+2,y0+2, graphics/material/tab/blue/topleft)"
-						2="image_tiled(x0+2,y0,x1-2, y0+2, graphics/material/tab/blue/middle)"
-						3="image_tiled(x0,y0+2,x1, y1, graphics/material/tab/blue/middle)"
-						4="image(x1-2,y0,x1,y0+2, graphics/material/tab/blue/topright)"
+						1="image(x0,y0-4,x0+2,y0-2, graphics/material/tab/blue/topleft)"
+						2="image_tiled(x0+2,y0-4,x1-2, y0-2, graphics/material/tab/blue/middle)"
+						3="image_tiled(x0,y0-2,x1, y1, graphics/material/tab/blue/middle)"
+						4="image(x1-2,y0-4,x1,y0-2, graphics/material/tab/blue/topright)"
 					}
 				}
 
 
 
 
-    
-    CFriendsListSectionHeader {
-    	inset="0 0 0 0"
-        textcolor=text_onLightBG
-        font-family=basefont
-        font-weight=800
 
-        render_bg {
-            0="fill(x0,y0,x1,y1, white)"
-            1="fill(x0-2,y0-1,x1,y0, dividers_onLightBG)"
-            2="fill(x0-2,y1-1,x1,y1, dividers_onLightBG)"
-        }    
-    }
+    
+    	CFriendsListSectionHeader {
+	    	inset="0 0 0 0"
+	        textcolor=text_onLightBG
+			// This control is bullshit. It ignores any font declaration so it's impossible to adjust.
+
+	        render_bg {
+	            0="fill(x0,y0,x1,y1, white)"
+	            1="fill(x0-2,y0-1,x1,y0, dividers_onLightBG_solid)"
+	            2="fill(x0-2,y1,x1,y1+1, dividers_onLightBG_solid)"
+	        }    
+	    }
+
+	    SectionedListPanelCollapser {
+		  inset="0 0 0 0"
+		  image=graphics/icons/dropdown/padder
+		  padding-left=8
+		  padding-right=8
+		  bgcolor=none
+
+		  render {}
+		  render_bg {
+			0="fill(x0,y0-1,x1+2,y0, dividers_onLightBG_solid)"
+			1="fill(x0,y1,x1+2,y1+1, dividers_onLightBG_solid)"
+			2="image(x0+14,y0+6,x1,y1, graphics/icons/dropdown/standard/down_dark)"
+		  }
+		}
+
+		  SectionedListPanelCollapser:hover {
+			render_bg {
+			  0="fill(x0,y0-1,x1+2,y0, dividers_onLightBG_solid)"
+			  1="fill(x0,y1,x1+2,y1+1, dividers_onLightBG_solid)"
+			  2="image(x0+14,y0+6,x1,y1, graphics/icons/dropdown/hover/down_dark)"
+			}
+		  }
+
+		  SectionedListPanelCollapser:selected {
+			render_bg {
+			  0="fill(x0,y0-1,x1+2,y0, dividers_onLightBG_solid)"
+			  1="fill(x0,y1,x1+2,y1+1, dividers_onLightBG_solid)"
+			  2="image(x0+14,y0+6,x1,y1, graphics/icons/dropdown/standard/up_dark)"
+			}
+		  }
+
+			SectionedListPanelCollapser:selected:hover {
+			  render_bg {
+				0="fill(x0,y0-1,x1+2,y0, dividers_onLightBG_solid)"
+				1="fill(x0,y1,x1+2,y1+1, dividers_onLightBG_solid)"
+				2="image(x0+14,y0+6,x1,y1, graphics/icons/dropdown/hover/up_dark)"
+			  }
+			}
             
 
 
@@ -187,7 +232,7 @@
 			bgcolor=custombackgroundprimary
 			
 			render {
-				0="fill(x0-40,y1-1,x1,y1, divider)"
+				0="fill(x0-40,y1-1,x1,y1, dividers_onLightBG_solid)"
 			}
 		}
 		
@@ -218,7 +263,7 @@
 			render_bg {
 				-1="fill(x1,y0,x1+10,y1, custombackgroundprimary)"
 				0="image(x0+14,y0+13,x1,y1, graphics/icons/search/standard)"
-				1="fill(x0,y1-1,x1+25,y1, divider)"
+				1="fill(x0,y1-1,x1+25,y1, dividers_onLightBG_solid)"
 			}
 		}
 	}
@@ -281,14 +326,14 @@
 			control="FriendPanelSelf"
 			x=3
 			align=bottom
-			margin-bottom=4
+			margin-bottom=8
 			height=40
 		}
 		
 		place {
 			control="FriendsDialogSheet"
 			start=friends_search_icon
-			y=-1
+			y=6
 			dir=down
 			width=max
 			height=max
