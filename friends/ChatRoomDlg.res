@@ -22,9 +22,34 @@
 			render {}
 		}
 
-		controlbutton {
-			minimum-width=120
+		Chat_MenuButton_WithChrome {
+			bgcolor=none
+			textcolor=none
+
+			render {
+				0="image(x0,y0,x1,y1, graphics/icons/closebar/standard/closebar)"
+			}
+
+			render_bg {
+				0="fill(x0,y0-19,x1+14,y1+19, customgreysecondary)"
+			}
 		}
+
+			Chat_MenuButton_WithChrome:hover {
+				render {
+					0="image(x0,y0,x1,y1, graphics/icons/closebar/hover/closebar)"
+				}
+			}
+
+			Chat_MenuButton_WithChrome:active {
+				render {
+					-3="image(x0-9,y0-9,x0+10,y0+10, graphics/material/selectionbubbles/hover/white/topleft)"
+					-2="image(x0-9,y0+10,x0+10,y0+22, graphics/material/selectionbubbles/hover/white/bottomleft)"
+					-1="image(x0+10,y0-9,x0+29,y0+10, graphics/material/selectionbubbles/hover/white/topright)"
+					0="image(x0+10,y0+10,x0+29,y0+29, graphics/material/selectionbubbles/hover/white/bottomright)"
+					1="image(x0,y0,x1,y1, graphics/icons/closebar/hover/closebar)"
+				}
+			}
 
 		CEmoticonButton {
 			render_bg{
@@ -69,22 +94,7 @@
 			EmoticonMenuItemStyle:selected {
 				bgcolor=none
 				textcolor=secondaryText_onLightBG
-			}
-
-		Button:selected {
-			bgcolor=none
-			textcolor=blue500
-
-			render_bg {}
-		}
-
-			"Page Button:selected" {}
-		  
-			Button:disabled {
-				textcolor=disabled_onLightBG
-
-				render_bg {}
-			}
+			}  
 
 		CChatActionsButton {
 			render_bg{
@@ -118,6 +128,58 @@
 			render {}
 			render_bg {}
 		}
+
+		CFriendsListSectionHeader {
+	    	inset="0 0 0 0"
+	        textcolor=text_onLightBG
+			font-style=regular
+			font-family=mediumfont
+
+	        render_bg {
+	            0="fill(x0,y0,x1,y1, white)"
+	            1="fill(x0-2,y0-1,x1,y0, dividers_onLightBG_solid)"
+	            2="fill(x0-2,y1,x1,y1+1, dividers_onLightBG_solid)"
+	        }    
+	    }
+
+	    SectionedListPanelCollapser {
+		  inset="0 0 0 0"
+		  image=graphics/icons/dropdown/padder
+		  padding-left=8
+		  padding-right=8
+		  bgcolor=none
+
+		  render {}
+		  render_bg {
+			0="fill(x0,y0-1,x1+2,y0, dividers_onLightBG_solid)"
+			1="fill(x0,y1,x1+2,y1+1, dividers_onLightBG_solid)"
+			2="image(x0+14,y0+6,x1,y1, graphics/icons/dropdown/standard/down_dark)"
+		  }
+		}
+
+		  SectionedListPanelCollapser:hover {
+			render_bg {
+			  0="fill(x0,y0-1,x1+2,y0, dividers_onLightBG_solid)"
+			  1="fill(x0,y1,x1+2,y1+1, dividers_onLightBG_solid)"
+			  2="image(x0+14,y0+6,x1,y1, graphics/icons/dropdown/hover/down_dark)"
+			}
+		  }
+
+		  SectionedListPanelCollapser:selected {
+			render_bg {
+			  0="fill(x0,y0-1,x1+2,y0, dividers_onLightBG_solid)"
+			  1="fill(x0,y1,x1+2,y1+1, dividers_onLightBG_solid)"
+			  2="image(x0+14,y0+6,x1,y1, graphics/icons/dropdown/standard/up_dark)"
+			}
+		  }
+
+			SectionedListPanelCollapser:selected:hover {
+			  render_bg {
+				0="fill(x0,y0-1,x1+2,y0, dividers_onLightBG_solid)"
+				1="fill(x0,y1,x1+2,y1+1, dividers_onLightBG_solid)"
+				2="image(x0+14,y0+6,x1,y1, graphics/icons/dropdown/hover/up_dark)"
+			  }
+			}
 	}
 	
 	layout {
@@ -161,33 +223,22 @@
 		}
 
 		place {
-			control=Splitter,UserList
-			region=container
-			align=right
-			y=47
-			height=max
-			margin-right=0
-			margin-bottom=75
-			spacing=-3
-		}
-
-		place {
 			control=VoiceChat
 			align=right
 			dir=right
-			y=6
-			width=36
-			margin-right=8
-			spacing=8
+			y=76			
+			width=20
+			height=20			
+			margin-right=14
 		}
 		
 		place {
 			control=VoiceBar
-			y=34
-			width=max
-			height=24
-			margin-left=8
-			margin-right=52
+			dir=down
+			y=57
+			height=58			
+			width=max			
+			end-right=VoiceChat
 		}
 		
 		place {
@@ -197,13 +248,25 @@
 		
 		place {
 			control=TradeInviteBar,GameInviteBar,ChatInfoBar,BIBar,BABar,ChatHistory
+			start=VoiceBar
 			align=right
 			dir=down
-			y=57
 			width=max
 			height=max
 			margin-bottom=75
 			end-right=UserList
+		}
+
+		place {
+			control=Splitter,UserList
+			region=container
+			start=ChatHistory
+			dir=right
+			align=right
+			height=max
+			margin-right=0
+			margin-bottom=75
+			spacing=-3
 		}
 
 		place {
