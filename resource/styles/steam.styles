@@ -14,22 +14,22 @@ steam.styles {
 		}
 
 		FrameTitle {
-				inset="4 1 0 0"
-				padding-right=64
-				font-weight=400
-				textcolor=disabled_OnDarkBG
-				bgcolor=customgreyprimary
-				font-family=basefont
-				font-size=24
+			inset="4 1 0 0"
+			padding-right=64
+			font-weight=400
+			textcolor=disabled_OnDarkBG
+			bgcolor=customgreyprimary
+			font-family=basefont
+			font-size=24
 
-				render_bg {
-					// Adds the 1 pixel highlight on the top of the title bar.
-					0="fill(x0,y0,x1,y0+1, customgreyaccent)"
-				}
+			render_bg {
+				// Adds the 1 pixel highlight on the top of the title bar.
+				0="fill(x0,y0,x1,y0+1, customgreyaccent)"
+			}
 		}
 		
 			FrameTitle:framefocus {
-					textcolor=white
+				textcolor=white
 			}
 
 		Frame {
@@ -1093,6 +1093,10 @@ steam.styles {
 			}
 			render_bg {}
 		}
+
+
+
+		
 
 
 
