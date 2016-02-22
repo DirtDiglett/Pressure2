@@ -4,15 +4,16 @@
 	}
 
 	styles {
-		CFriendsListSectionAffordance {
-			bgcolor=red500
-		}
-
 		CFriendPanel {}
 		AddFriendsButton {}
 		FriendsSearch:selected {}
 		FriendsSearchIcon:disabled {}
+		CFriendsListSectionAffordance {}
 
+		downarrow {
+			inset="-2 1 0 0"
+			image="graphics/icons/dropdown/standard/down_onLightBG"
+		}
 
 		FriendsPanel {			
 			bgcolor=custombackgroundnofocus
