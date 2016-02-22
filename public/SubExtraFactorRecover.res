@@ -8,10 +8,7 @@
 			font-weight=400
 			font-style=uppercase
 			inset-top=3
-			//padding-left=8
-			//padding-top=8
-			//padding-right=8
-			//padding-bottom=8
+			inset-left=4
 			
 			render_bg {}
 		}
@@ -78,6 +75,7 @@
 			dir=right
 			x=24
 			width=max
+			height=36
 			margin-right=14
 		}
 
