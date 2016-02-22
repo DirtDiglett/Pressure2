@@ -1,0 +1,21 @@
+"resource/layout/lockedaccountaddcomputerwizard.layout" {
+	layout {
+		region {
+			name=buttons
+			align=bottom
+			width=max
+			height=58
+		}
+
+		place {
+			control=PrevButton,NextButton,CancelButton,FinishButton
+			region=buttons
+			align=right
+			width=92
+			height=34
+			margin-top=12
+			margin-right=11
+			spacing=12
+		}
+	}
+}
