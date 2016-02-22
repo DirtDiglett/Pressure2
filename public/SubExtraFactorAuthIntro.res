@@ -29,16 +29,16 @@
 
 		place {
 			control=URLLabel1
-			align=bottom
-			x=14
+			start=Label2
+			dir=down
+			y=8
 			width=max
 			margin-right=14
-			margin-bottom=34
 		}
 
 		place {
 			control=ControlUseCodeRadio,ControlRecoverRadio
-			start=Label2
+			start=URLLabel1
 			dir=down
 			y=24
 			width=max
