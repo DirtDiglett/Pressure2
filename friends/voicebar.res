@@ -12,7 +12,7 @@
 
 			render_bg {
 				-1="fill(x1,y0,x1+50,y1, customgreysecondary)"
-				0="image(x0+11,y0+12,x1,y1, graphics/voicebar)"
+				0="image(x0+11,y0+12,x1,y1, graphics/invitebars/voice)"
 			}
 		}
 
