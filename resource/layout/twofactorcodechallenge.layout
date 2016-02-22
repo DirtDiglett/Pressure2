@@ -7,13 +7,14 @@
 			render {
 				0="fill(x0,y1-58,x1,y1-57, dividers_onLightBG)"
 			}
+			
 			render_bg {
 				0="image(x0,y0,x1,y1, graphics/steamguardheader)"
 			}
 		}
 
 		Key {
-			image="graphics/icon_security_key"
+			image="graphics/icon_mobile_security_key"
 		}
 		
 		AuthCode {
@@ -35,7 +36,7 @@
 	
 	layout {
 		place {
-			control=Label1,Background
+			control=Label1,Background,OK
 			height=0
 		}
 
@@ -82,7 +83,7 @@
 		}
 
 		place {
-			control=OK,Cancel
+			control=Cancel
 			region=buttons
 			align=right
 			width=92
