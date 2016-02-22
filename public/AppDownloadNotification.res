@@ -7,6 +7,10 @@
 				0="image(x1-83,y0+17,x1,y1, graphics/notifications/download)"
 			}
 		}
+
+		Label {
+			textcolor=text_onDarkBG
+		}
 	}
 
 	colors {
