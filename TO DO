@@ -1,8 +1,8 @@
+TO DO:
 • Check Mac styling? Add Mac Specific window controls.
 • Test the pile of radiobuttons launch dialog (Like Ark's)
 • Update Patreon page with Pressure2 info.
-• Add tweak to disable the green overlay on the game details view heading
-
+• Add Roboto fonts to skin dir
 
 BUGS TO FIX:
 • SUPER MINI text for chat history only in the overlay. (Also, make an issue on the issue tracker as an example.)
