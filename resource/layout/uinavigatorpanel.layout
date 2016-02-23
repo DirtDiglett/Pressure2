@@ -390,6 +390,7 @@
 		place {
 			control=back,forward
 			x=69
+			x=15 [$OSX]
 			y=16
 			width=24
 			height=24			
@@ -398,8 +399,9 @@
 		
 		place {
 			control=label_store,label_library,label_community,label_me,label_news,label_console
-			x=140
-			y=0
+			start=forward
+			x=17
+			y=-16
 			height=55
 			spacing=18
 		}

@@ -376,6 +376,7 @@
 			control=account_balance
 			align=left
 			x=152
+			x=98 [$OSX]
 			y=36
 		}
 		

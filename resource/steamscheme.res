@@ -27,36 +27,26 @@ Scheme {
 
 			frame_minimize {
 				xpos	r53
-				xpos	22 [$OSX]
 				ypos	5
-				ypos	3 [$OSX]
 				wide	24
 				tall	24
 				PinCorner	1
-				PinCorner	0 [$OSX]
 			}
 
 			frame_maximize {
 				xpos	r59
-				xpos	43 [$OSX]
 				ypos	5
-				ypos	3 [$OSX]
 				wide	24
 				tall	24
-				visible 0 [!$OSX]
 				PinCorner	1
-				PinCorner	0 [$OSX]
 			}
 
 			frame_close {
 				xpos	r28
-				xpos	1 [$OSX]
 				ypos	5
-				ypos	2 [$OSX]
 				wide	24
 				tall	24
 				PinCorner	1
-				PinCorner	0 [$OSX]
 			}
 
 			frame_brGrip {
