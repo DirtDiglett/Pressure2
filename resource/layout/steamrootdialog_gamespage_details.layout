@@ -154,17 +154,6 @@
 				}
 			}
 		
-		headerimage {
-			render {
-				-1="gradient(x0,y1-140,x1+9999,y1, none, text_OnLightBG)"
-				0="image(x0, y0, x1, y1, graphics/gamedetailsbg)"
-			}
-			
-			render_bg {
-				0="fill(x0, y0, x1+9999, y1, headerimagebg)"
-			}
-		}
-		
 		// Using the heading for the right column as a substitute background for the links region.
 		rightcolumnheadertext {
 			textcolor=none
