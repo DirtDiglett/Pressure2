@@ -1,7 +1,7 @@
 • Check Mac styling? Add Mac Specific window controls.
 • File Cleanup
 • Readme.md
-• Fix Download Complete notification
+
 • Test the pile of radiobuttons launch dialog (Like Ark's)
 
 
@@ -10,6 +10,7 @@ BUGS TO FIX:
 
 
 DONE:
+• Fix Download Complete notification
 • Friends Dialog (Complete re-do)
 • Finish Group Chats
 • Streaming (Including in Game Details View)
