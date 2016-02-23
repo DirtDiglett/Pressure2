@@ -2,12 +2,12 @@
 	styles {
 		"GamesPage_Details headerimage" {
 			render {
-				-1="gradient(x0,y1-140,x1+9999,y1, none, text_OnLightBG)"
-				0="fill(x0, y0, x1, y1, secondaryText_onLightBG)"
+				-1="gradient(x0,y1-140,x1+9999,y1, none, secondaryText_OnLightBG)"
+				0="fill(x0, y0, x1, y1, disabled_OnLightBG)"
 			}
 			
 			render_bg {
-				0="fill(x0, y0, x1+9999, y1, secondaryText_onLightBG)"
+				0="fill(x0, y0, x1+9999, y1, disabled_OnLightBG)"
 			}
 		}
 	}
