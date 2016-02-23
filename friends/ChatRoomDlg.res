@@ -180,6 +180,15 @@
 				2="image(x0+14,y0+6,x1,y1, graphics/icons/dropdown/hover/up_dark)"
 			  }
 			}
+
+		RichText {
+			selectedbgcolor=blue500
+			textcolor=disabled_OnLightBG
+			selectedtextcolor=white
+			font-family=basefont
+			font-size=17
+			font-weight=400
+		}
 	}
 	
 	layout {

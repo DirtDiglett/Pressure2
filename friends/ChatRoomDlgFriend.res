@@ -136,6 +136,15 @@
 					1="image(x0+10,y0+15,x1,y1, graphics/icons/menu/selected/menu)"
 				}
 			}
+
+		RichText {
+			selectedbgcolor=blue500
+			textcolor=disabled_OnLightBG
+			selectedtextcolor=white
+			font-family=basefont
+			font-size=17
+			font-weight=400
+		}
 	}
 	
 	layout {
