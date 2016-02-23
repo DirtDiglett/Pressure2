@@ -1218,5 +1218,56 @@ steam.styles {
 		friends_ignored {
 			textcolor=red500
 		}
+
+
+		ProgressBox {
+			minimum-height=128
+			//width is 384
+
+			render {
+				0="fill( x0, y0, x1, y1, custombackgroundprimary)"
+				1="image(x0+91, y0+42, x1, y1, graphics/logo)"
+			}
+		}
+
+		"ProgressBox FrameTitle" {
+			bgcolor=none
+			textcolor=none
+
+			render {}
+			render_bg {}
+		}
+
+		"ProgressBox Button" {
+			textcolor=none
+			
+			render_bg {}
+		}
+
+		"ProgressBox FrameCloseButton" {
+			render_bg {
+				0="image(x0+7,y0+7,x1,y1, graphics/icons/window_controls/standard/close_onLightBG)"
+			}
+		}
+
+			"ProgressBox FrameCloseButton:hover" {
+				render_bg {
+					1="image(x0+7,y0+7,x1,y1, graphics/icons/window_controls/hover/close)"
+				}
+			}
+
+			"ProgressBox FrameCloseButton:active" {
+				render_bg {
+					-3="image(x0-7,y0-7,x0+12,y0+12, graphics/material/selectionbubbles/hover/red/topleft)"
+					-2="image(x0-7,y0+12,x0+12,y0+24, graphics/material/selectionbubbles/hover/red/bottomleft)"
+					-1="image(x0+12,y0-7,x0+31,y0+12, graphics/material/selectionbubbles/hover/red/topright)"
+					0="image(x0+12,y0+12,x0+31,y0+31, graphics/material/selectionbubbles/hover/red/bottomright)"
+					1="image(x0+7,y0+7,x1,y1, graphics/icons/window_controls/hover/close)"
+				}
+			}
+
+		"ProgressBox Label" {
+			textcolor=secondaryText_onLightBG
+		}
 	}
 }
