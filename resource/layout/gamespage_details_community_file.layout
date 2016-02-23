@@ -10,6 +10,7 @@
 		communityfile_name {
 			textcolor=text_onDarkBG
 			font-size=18
+			font-size=19 [$OSX]
 		}
 		
 		communityfile_image_border {

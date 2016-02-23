@@ -53,6 +53,7 @@
 			textcolor=grey100
 			font-family=mediumfont
 			font-size=28
+			font-size=29 [$OSX]
 			font-weight=600
 			font-style=uppercase
 			padding-left=60
@@ -96,6 +97,7 @@
 			textcolor=limeA400
 			font-family=mediumfont
 			font-size=28
+			font-size=29 [$OSX]
 			font-weight=600
 			font-style=uppercase
 			padding-left=60
@@ -149,6 +151,7 @@
 			textcolor=lightblueA200
 			font-family=mediumfont
 			font-size=28
+			font-size=29 [$OSX]
 			font-weight=600
 			font-style=uppercase
 			padding-left=60
@@ -202,6 +205,7 @@
 			textcolor=amberA400
 			font-family=mediumfont
 			font-size=28
+			font-size=29 [$OSX]
 			font-weight=600
 			font-style=uppercase
 			padding-left=60

@@ -23,6 +23,7 @@
 			textcolor=disabled_OnDarkBG
 			font-family=basefont
 			font-size=24
+			font-size=25 [$OSX]
 			font-weight=400
 			minimum-height=55
 			inset="0 0 0 0"
@@ -109,6 +110,7 @@
 			textcolor=text_onLightBG
 			font-family=basefont
 			font-size=18
+			font-size=19 [$OSX]
 			font-weight=400
 			inset-top=0
 			inset-left=1

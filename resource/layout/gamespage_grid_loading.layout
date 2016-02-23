@@ -4,6 +4,7 @@
 			textcolor=text_onLightBG
 			font-family=basefont
 			font-size=18
+			font-size=19 [$OSX]
 			font-weight=600
 		}
 

@@ -23,6 +23,7 @@
 			textcolor=text_onDarkBG
 			font-family=heavyfont
 			font-size=30
+			font-size=31 [$OSX]
 			font-weight=600
 		}
 				

@@ -4,6 +4,7 @@
 			textcolor=customgreyprimary
 			font-family=mediumfont
 			font-size=30
+			font-size=31 [$OSX]
 			font-style=normal
 		}
 	}

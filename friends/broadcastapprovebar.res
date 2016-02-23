@@ -42,6 +42,7 @@
 			textcolor=white
 			font-family=mediumfont
 			font-size=16
+			font-size=17 [$OSX]
 		}
 		
 		URLLabel {		 
@@ -49,6 +50,7 @@
 			textcolor=blue500
 			font-family=mediumfont
 			font-size=16
+			font-size=17 [$OSX]
 			font-weight=400
 			font-style=uppercase
 			inset-left=4

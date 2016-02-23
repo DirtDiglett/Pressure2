@@ -6,6 +6,7 @@
 		namestyle {
 			font-family=mediumfont
 			font-size=17
+			font-size=18 [$OSX]
 			font-weight=600
 		}
 		
@@ -13,6 +14,7 @@
 			textcolor=secondarytext_onLightBG
 			font-family=basefont
 			font-size=16
+			font-size=17 [$OSX]
 		}
 		
 		menuButtonStyle {
@@ -27,6 +29,7 @@
 		controlPanelLinkStyle {
 			font-family=mediumfont
 			font-size=16
+			font-size=17 [$OSX]
 			font-style=uppercase
 			padding-left=6
 			padding-top=3
@@ -42,6 +45,7 @@
 			textcolor=secondarytext_onLightBG
 			font-family=basefont
 			font-size=16
+			font-size=17 [$OSX]
 		}
 		
 			statusStyle:hover {
@@ -51,6 +55,7 @@
 		inviteLinkStyle {
 			font-family=mediumfont
 			font-size=16
+			font-size=17 [$OSX]
 			font-style=uppercase
 			padding-left=6
 			padding-top=3
@@ -97,7 +102,7 @@
 			inset-top=2
 			image="graphics/mobileInGame"
 		}
-}
+	}
 	
 	layout {
 		place {

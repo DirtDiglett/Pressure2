@@ -18,6 +18,7 @@
 			textcolor=text_onLightBG
 			selectedtextcolor=white	
 			font-size=18
+			font-size=19 [$OSX]
 
 			render_bg {}
 		}

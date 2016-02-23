@@ -9,6 +9,7 @@
 
 			render {}			
 		}
+
 		ListPanelStyle {
 			bgcolor=custombackgroundprimary
 			selectedbgcolor=blue500
@@ -17,6 +18,7 @@
 			shadowtextcolor=disabled_onLightBG	
 			font-family=basefont
 			font-size=14
+			font-size=15 [$OSX]
 			font-weight=400
 			
 			render {

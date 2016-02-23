@@ -13,12 +13,14 @@
 		PlaylistTitleStyle {
 			textcolor=text_onLightBG
 			font-size=30
+			font-size=31 [$OSX]
 			font-style=normal
 		}
 
 		TracksInfoLabelStyle {
 			textcolor=secondaryText_onLightBG
 			font-size=17
+			font-size=18 [$OSX]
 		}
 		
 		CoverStyle {

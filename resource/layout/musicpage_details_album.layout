@@ -13,17 +13,20 @@
 		AlbumTitleStyle {
 			textcolor=text_onLightBG
 			font-size=30
+			font-size=31 [$OSX]
 			font-style=normal
 		}
 
 		ArtistStyle {
 			textcolor=secondaryText_onLightBG
 			font-size=24
+			font-size=25 [$OSX]
 		}
 		
 		TracksInfoStyle {
 			textcolor=secondaryText_onLightBG
 			font-size=17
+			font-size=18 [$OSX]
 		}
 		
 		CoverStyle {

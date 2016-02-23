@@ -31,6 +31,7 @@
 			shadowtextcolor=disabled_onLightBG
 			font-family=basefont
 			font-size=15
+			font-size=16 [$OSX]
 			font-weight=400
 			
 			render {}		 
@@ -44,6 +45,7 @@
 			shadowtextcolor=disabled_onLightBG
 			font-family=basefont
 			font-size=18
+			font-size=19 [$OSX]
 			font-weight=400
 			inset-left=8
 			inset-top=0
@@ -65,6 +67,7 @@
 			textcolor=grey900
 			font-family=basefont
 			font-size=15
+			font-size=16 [$OSX]
 			font-weight=400
 			inset-left=4
 			inset-top=0
@@ -286,6 +289,7 @@
 			shadowtextcolor=disabled_onLightBG
 			font-family=basefont
 			font-size=18
+			font-size=19 [$OSX]
 			font-weight=400
 			minimum-height=45
 

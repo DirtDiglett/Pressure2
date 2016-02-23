@@ -16,12 +16,14 @@
 		infolabel {
 			textcolor=text_onLightBG
 			font-size=18
+			font-size=19 [$OSX]
 		}
 
 		achievementlabelmore {
 			textcolor=white
 			font-family=mediumfont
 			font-size=16
+			font-size=17 [$OSX]
 			font-weight=600
 			font-style=regular
 			inset-top=2

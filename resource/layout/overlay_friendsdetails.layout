@@ -8,6 +8,7 @@
 			textcolor=lightblue300
 			font-family=heavyfont
 			font-size=20
+			font-size=21 [$OSX]
 			font-weight=400
 			font-style=normal
 			padding-top=0
@@ -39,6 +40,7 @@
 		highlight {
 			textcolor=text_onDarkBG
 			font-size=17
+			font-size=18 [$OSX]
 		}
 	}
 	

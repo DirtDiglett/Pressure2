@@ -27,7 +27,6 @@
 				0="fill( x0, y1 - 46, x1, y1, customgreyprimary )"
 				1="fill(x0, y1-46, x1, y1-45, customgreyaccent)"
 				
-				
 				//Apply the subnav
 				2="fill(x0,y0+55,x1,y0+137, customgreysecondary)"				
 			}
@@ -38,9 +37,10 @@
 			}	
 		
 		FrameTitle {
-			bgcolor="customgreyprimary"
+			bgcolor=customgreyprimary
 			font-family=basefont
 			font-size=24
+			font-size=25 [$OSX]
 			font-weight=400
 			inset="0 0 0 0"
 			minimum-height=55
@@ -57,10 +57,10 @@
 
 
 		"MenuBar MenuButton" {
-			bgcolor="none"
-			minimum-height=35
-			minimum-width=35
+			bgcolor=none
 			textcolor=none
+			minimum-height=35
+			minimum-width=35			
 			
 			render_bg {
 				0="image(x0+5,y0+5,x1,y1, graphics/icons/friendmenu/standard/friendmenu)"
@@ -79,13 +79,9 @@
 				}
 			}
 
-
-
-
-
-
 		PageTab {
 			font-size=16
+			font-size=17 [$OSX]
 			font-style=regular
 			textcolor=secondarytext_onDarkBG
 			minimum-height=24
@@ -133,11 +129,6 @@
 					}
 				}
 
-
-
-
-
-    
     	CFriendsListSectionHeader {
 	    	inset="0 0 0 0"
 	        textcolor=text_onLightBG
@@ -206,8 +197,6 @@
     	inset="0 0 0 0"
     }   
 
-			  	
-		
 		RootMenu {
 			bgcolor=none
 		} 
@@ -226,6 +215,7 @@
 			padding-left=0
 			font-family=basefont
 			font-size=18
+			font-size=19 [$OSX]
 			font-weight=400
 			textcolor="text_onLightBG"
 			inset-top=0
@@ -236,9 +226,7 @@
 				0="fill(x0-40,y1-1,x1,y1, dividers_onLightBG_solid)"
 			}
 		}
-		
-
-			
+					
 			FriendsSearch:empty {
 				font-style=italic
 				textcolor="disabled_onLightBG"

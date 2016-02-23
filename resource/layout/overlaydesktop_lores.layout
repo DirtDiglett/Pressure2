@@ -6,6 +6,7 @@
 			textcolor=text_onDarkBG
 			font-family=heavyfont
 			font-size=30
+			font-size=31 [$OSX]
 			font-weight=400
 		}
 		
@@ -13,6 +14,7 @@
 			textcolor=text_onDarkBG
 			font-family=heavyfont
 			font-size=30
+			font-size=31 [$OSX]
 			font-weight=400
 			font-style=uppercase
 		}
@@ -21,6 +23,7 @@
 			textcolor=disabled_OnDarkBG
 			font-family=basefontfont
 			font-size=18
+			font-size=19 [$OSX]
 			font-weight=400
 		}
 	}

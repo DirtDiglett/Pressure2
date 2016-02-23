@@ -4,11 +4,13 @@
 			textcolor=text_onLightBG
 			font-family=mediumfont
 			font-size=15
+			font-size=16 [$OSX]
 		}
 		
 		codeentry {
 			minimum-height=50
 			font-size=40
+			font-size=41 [$OSX]
 		}
 
 		friendlyname {}

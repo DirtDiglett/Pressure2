@@ -6,7 +6,6 @@
 			}
 		}
 
-
 		Label {
 			textcolor=text_onDarkBG
 		}

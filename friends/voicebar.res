@@ -20,6 +20,7 @@
 			textcolor=text_onDarkBG
 			font-family=mediumfont
 			font-size=15
+			font-size=16 [$OSX]
 		}
 	}
 	

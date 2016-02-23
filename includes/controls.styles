@@ -40,6 +40,7 @@
 			textcolor=text_OnLightBG
 			font-family=basefont
 			font-size=15
+			font-size=16 [$OSX]
 			font-weight=400
 			inset-left=23
 
@@ -94,6 +95,7 @@
 			textcolor=text_OnLightBG
 			font-family=basefont
 			font-size=15
+			font-size=16 [$OSX]
 			font-weight=400
 			image="graphics/controls/checkbox/indeterminate"
 		}
@@ -105,6 +107,7 @@
 			textcolor=text_OnLightBG
 			font-family=basefont
 			font-size=14
+			font-size=15 [$OSX]
 			font-weight=400
 			inset="0 5 0 0"
 			inset-left=0 // This is used as a global override for scenarious that inset alone does not override.
@@ -139,6 +142,7 @@
 			textcolor=text_OnLightBG
 			font-family=basefont
 			font-size=14
+			font-size=15 [$OSX]
 			font-weight=400
 			inset="4 0 0 0" 
 			image="graphics/controls/checkbox/unchecked_small"
@@ -172,6 +176,7 @@
 			textcolor=text_OnLightBG
 			font-family=basefont
 			font-size=15
+			font-size=16 [$OSX]
 			font-weight=400
 			inset-left=23
 
@@ -243,6 +248,7 @@
 			shadowtextcolor=disabled_OnLightBG
 			font-family=basefont
 			font-size=18
+			font-size=19 [$OSX]
 			font-weight=400
 			inset-left=3
 
@@ -281,7 +287,8 @@
 		}
 
 		TextEntryLarge {
-			font-size=22	
+			font-size=22
+			font-size=23 [$OSX]	
 		}
 
 		TextEntryURL {
@@ -289,6 +296,7 @@
 			shadowtextcolor=disabled_OnLightBG	
 			font-family=basefont
 			font-size=15
+			font-size=16 [$OSX]
 			font-weight=400			 
 		}
 
@@ -309,6 +317,7 @@
 			textcolor=blue500
 			font-family=mediumfont
 			font-size=16
+			font-size=17 [$OSX]
 			font-style=uppercase
 			font-weight=400
 			inset-top=3
@@ -361,6 +370,7 @@
 			textcolor=blue500
 			font-family=mediumfont
 			font-size=16
+			font-size=17 [$OSX]
 			font-style=uppercase
 			font-weight=400
 			minimum-height=29
@@ -423,6 +433,7 @@
 			textcolor=text_OnLightBG
 			font-family=basefont
 			font-size=15
+			font-size=16 [$OSX]
 			font-weight=400
 			font-style=none
 			minimum-height=18

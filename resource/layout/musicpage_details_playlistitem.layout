@@ -6,6 +6,7 @@
 			textcolor=secondarytext_onLightBG
 			font-family=mediumfont	
 			font-size=19
+			font-size=20 [$OSX]
 			padding-top=15
 			padding-right=24
 			padding-bottom=15

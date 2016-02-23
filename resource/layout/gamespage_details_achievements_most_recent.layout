@@ -21,18 +21,21 @@
 			textcolor=text_onLightBG
 			font-family=mediumfont
 			font-size=20
+			font-size=21 [$OSX]
 			font-weight=400
 		}
 		
 		mostrecent_name {
 			textcolor=secondarytext_onLightBG
 			font-size=18
+			font-size=19 [$OSX]
 		}
 
 		mostrecent_unlockedsofar {
 			textcolor=secondarytext_onLightBG
 			font-family=basefont
 			font-size=18
+			font-size=19 [$OSX]
 			font-weight=400
 		}
 

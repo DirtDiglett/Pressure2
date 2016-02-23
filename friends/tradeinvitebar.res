@@ -42,6 +42,7 @@
 			textcolor=white
 			font-family=mediumfont
 			font-size=16
+			font-size=17 [$OSX]
 		}
 	}
 	

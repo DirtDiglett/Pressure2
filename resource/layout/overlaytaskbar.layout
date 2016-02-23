@@ -7,6 +7,7 @@
 			textcolor=blue300
 			font-family=heavyfont
 			font-size=18
+			font-size=19 [$OSX]
 			font-style=uppercase
 		}
 		

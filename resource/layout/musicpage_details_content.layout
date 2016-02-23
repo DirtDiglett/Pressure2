@@ -10,6 +10,7 @@
 		AlbumOrArtistListStyle {
 			bgcolor=custombackgroundprimary
 			font-size=16
+			font-size=17 [$OSX]
 			padding-left=4
 			padding-right=25
 			inset="0 0 0 0"
@@ -18,11 +19,13 @@
 		EmptyDatabaseText {
 			textcolor=disabled_onLightBG
 			font-size=15
+			font-size=16 [$OSX]
 		}
 		
 		CrawlingText {
 			textcolor=disabled_onLightBG
 			font-size=15
+			font-size=16 [$OSX]
 		}
 		
 		CMusicPage_Details_Content {
@@ -31,7 +34,8 @@
 		}
 		
 		"MusicPage_Details_Content ListPanel" {
-			font-size=15			
+			font-size=15
+			font-size=16 [$OSX]		
 			padding-left=4
 			padding-right=2
 			inset="0 0 -1 0"
@@ -68,6 +72,7 @@
 		"MusicPage_Details_Content ListPanelColumnHeader" {
 			bgcolor=none
 			font-size=14
+			font-size=15 [$OSX]
 			inset="0 0 0 0"
 
 			render {}
@@ -88,6 +93,7 @@
 		"ListPanel RichText" {
 			textcolor=disabled_onLightBG
 			font-size=15
+			font-size=16 [$OSX]
 		}
 	}
 

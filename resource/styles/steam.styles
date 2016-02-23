@@ -16,6 +16,7 @@ steam.styles {
 			textcolor=disabled_OnDarkBG
 			font-family=basefont
 			font-size=24
+			font-size=25 [$OSX]
 			font-weight=400
 			padding-right=64			
 			inset="4 1 0 0"
@@ -56,6 +57,7 @@ steam.styles {
 			textcolor=text_OnLightBG
 			font-family=basefont
 			font-size=15
+			font-size=16 [$OSX]
 			font-weight=400
 		}
 
@@ -70,6 +72,7 @@ steam.styles {
 			selectedtextcolor=text_OnLightBG
 			font-family=basefont
 			font-size=16
+			font-size=17 [$OSX]
 			font-weight=400
 		}
 
@@ -77,6 +80,7 @@ steam.styles {
 			textcolor=blue500
 			font-family=basefont
 			font-size=16
+			font-size=17 [$OSX]
 			font-weight=400
 			font-style=underline
 		}
@@ -89,6 +93,7 @@ steam.styles {
 			textcolor=blue500
 			font-family=basefont
 			font-size=16
+			font-size=17 [$OSX]
 			font-weight=400
 			font-style=underline
 		}
@@ -101,6 +106,7 @@ steam.styles {
 			textcolor=blue500
 			font-family=basefont
 			font-size=16
+			font-size=17 [$OSX]
 			font-weight=400
 			font-style=underline
 		}
@@ -127,6 +133,7 @@ steam.styles {
 			textcolor=text_OnLightBG
 			font-family=basefont			
 			font-size=17
+			font-size=18 [$OSX]
 			font-weight=400
 			inset="0 0 0 0"
 			padding-left=6
@@ -183,6 +190,7 @@ steam.styles {
 			bgcolor=none
 			textcolor=text_OnLightBG
 			font-size=17
+			font-size=18 [$OSX]
 			font-style=normal
 		}
 
@@ -209,6 +217,7 @@ steam.styles {
 			textcolor=text_onDarkBG
 			font-family=basefont
 			font-size=16
+			font-size=17 [$OSX]
 			font-weight=400
 			minimum-width=289
 			minimum-height=98		
@@ -224,6 +233,7 @@ steam.styles {
 			textcolor=customgreyprimary
 			font-family=mediumfont
 			font-size=30
+			font-size=31 [$OSX]
 			font-style=normal
 		}
 
@@ -231,6 +241,7 @@ steam.styles {
 			textcolor=customgreyprimary
 			font-family=mediumfont
 			font-size=30
+			font-size=31 [$OSX]
 			font-style=normal
 		}
 
@@ -238,6 +249,7 @@ steam.styles {
 			textcolor=customgreyprimary
 			font-family=mediumfont
 			font-size=30
+			font-size=31 [$OSX]
 			font-style=normal
 		}
 
@@ -245,6 +257,7 @@ steam.styles {
 			textcolor=customgreyprimary
 			font-family=mediumfont
 			font-size=30
+			font-size=31 [$OSX]
 			font-style=normal
 		}
 
@@ -254,6 +267,7 @@ steam.styles {
 			selectedtextcolor=white		
 			font-family=mediumfont
 			font-size=16
+			font-size=17 [$OSX]
 		}
 	 
 		GameItem_Installed {
@@ -262,7 +276,7 @@ steam.styles {
 			selectedtextcolor=white		
 			font-family=mediumfont
 			font-size=16
-				
+			font-size=17 [$OSX]				
 		}
 		
 		GameItem_Shortcut {
@@ -271,6 +285,7 @@ steam.styles {
 			selectedtextcolor=white
 			font-family=mediumfont
 			font-size=16
+			font-size=17 [$OSX]
 		}
 	
 		GameItem_Mod {
@@ -279,6 +294,7 @@ steam.styles {
 			selectedtextcolor=white
 			font-family=mediumfont
 			font-size=16
+			font-size=17 [$OSX]
 		}
 
 		GameItem_Updating {
@@ -287,6 +303,7 @@ steam.styles {
 			selectedtextcolor=white
 			font-family=mediumfont
 			font-size=16
+			font-size=17 [$OSX]
 			font-style=italic			
 		}
 		
@@ -296,6 +313,7 @@ steam.styles {
 			selectedtextcolor=white
 			font-family=mediumfont
 			font-size=16
+			font-size=17 [$OSX]
 			font-style=italic			
 		}
 		
@@ -305,6 +323,7 @@ steam.styles {
 			selectedtextcolor=white
 			font-family=mediumfont
 			font-size=16
+			font-size=17 [$OSX]
 			font-style=italic
 		}
 
@@ -377,6 +396,7 @@ steam.styles {
 			shadowtextcolor=disabled_onLightBG
 			font-family=basefont
 			font-size=15
+			font-size=16 [$OSX]
 			font-weight=400
 			inset="0 0 0 0"
 			padding-left=8
@@ -396,6 +416,7 @@ steam.styles {
 			shadowtextcolor=disabled_onLightBG
 			font-family=basefont
 			font-size=16
+			font-size=17 [$OSX]
 			font-weight=400
 			inset="0 0 0 0"
 
@@ -407,6 +428,7 @@ steam.styles {
 			textcolor=text_onLightBG
 			font-family=basefont
 			font-size=18
+			font-size=19 [$OSX]
 			font-weight=700			
 		}
 
@@ -415,6 +437,7 @@ steam.styles {
 			textcolor=secondaryText_OnDarkBG
 			font-family=mediumfont
 			font-size=16
+			font-size=17 [$OSX]
 			font-weight=600
 			font-style=uppercase
 			minimum-height=0
@@ -480,6 +503,7 @@ steam.styles {
 			bgcolor=none
 			textcolor=text_onLightBG
 			font-size=16
+			font-size=17 [$OSX]
 			inset="0 0 0 0"
 			
 			render {}
@@ -516,14 +540,16 @@ steam.styles {
 			bgcolor=none
 			textcolor=text_onLightBG
 			font-family=basefont
-			font-size=15			
+			font-size=15
+			font-size=16 [$OSX]			
 
 			render_bg {}
 		}
 
 		"ListPanel RichText url" {
 			textcolor=blue500
-			font-size=15			
+			font-size=15
+			font-size=16 [$OSX]		
 			font-style=underline
 		}
 
@@ -580,6 +606,7 @@ steam.styles {
 		PageTab {
 			textcolor=secondarytext_onDarkBG
 			font-size=16
+			font-size=17 [$OSX]
 			font-style=regular
 
 			render_bg {}
@@ -643,6 +670,7 @@ steam.styles {
 			selectedtextcolor=text_OnLightBG		
 			font-family=basefont
 			font-size=15
+			font-size=16 [$OSX]
 			font-weight=400
 			inset="0 0 0 0"
 		
@@ -658,16 +686,19 @@ steam.styles {
 			textcolor=blue500
 			selectedtextcolor=white
 			font-size=15
+			font-size=16 [$OSX]
 			font-style=underline
 		}
 
 		"RichText bold" {
 			font-size=15
+			font-size=16 [$OSX]
 			font-weight=1000
 		}
 		
 		"RichText emphasis" {
 			font-size=15
+			font-size=16 [$OSX]
 			font-style=italic
 		}
 		
@@ -679,6 +710,7 @@ steam.styles {
 			textcolor=blue500
 			font-style=underline
 			font-size=14
+			font-size=15 [$OSX]
 		}	
 
 		SectionedListPanel {			
@@ -688,6 +720,7 @@ steam.styles {
 			selectedtextcolor=white
 			font-family=basefont
 			font-size=15
+			font-size=16 [$OSX]
 			font-weight=400			
 			inset="0 0 0 0"			
 
@@ -738,6 +771,7 @@ steam.styles {
 			textcolor=secondaryText_OnLightBG
 			font-family=basefont
 			font-size=15
+			font-size=16 [$OSX]
 			font-weight=400			
 			font-style=uppercase
 		}
@@ -754,6 +788,7 @@ steam.styles {
 			textcolor=disabled_OnLightBG
 			font-family=basefont
 			font-size=15
+			font-size=16 [$OSX]
 			font-weight=400
 			font-style=normal
 		}
@@ -787,6 +822,7 @@ steam.styles {
 			textcolor=white
 			font-family=basefont
 			font-size=14
+			font-size=15 [$OSX]
 			font-weight=400			
 			
 			render_bg {}
@@ -821,6 +857,7 @@ steam.styles {
 			selectedtextcolor=white
 			font-family=basefont
 			font-size=15
+			font-size=16 [$OSX]
 
 			render {}
 			render_bg {}
@@ -1090,7 +1127,8 @@ steam.styles {
 		
 		tooltip_headline {
 			textcolor=text_OnLightBG
-			font-size=18	 
+			font-size=18
+			font-size=19 [$OSX]	 
 			font-weight=600
 			padding-left=8
 			padding-top=8
@@ -1113,6 +1151,7 @@ steam.styles {
 			textcolor=text_OnLightBG
 			selectedtextcolor=white 			
 			font-size=17
+			font-size=18 [$OSX]
 		}
 		
 		friends_chat_text_self {
@@ -1120,19 +1159,22 @@ steam.styles {
 			textcolor=secondaryText_OnLightBG
 			selectedtextcolor=white			
 			font-size=17
+			font-size=18 [$OSX]
 		}
 		
 		friends_chat_event {
 			selectedbgcolor=blue500
 			textcolor=orange500
 			selectedtextcolor=white
-			font-size=17			
+			font-size=17
+			font-size=18 [$OSX]		
 		}
 
 		friends_chat_bright_event {
 			textcolor=orange500
 			selectedtextcolor=white
 			font-size=17
+			font-size=18 [$OSX]
 			font-weight=1000
 		}
 
@@ -1142,6 +1184,7 @@ steam.styles {
 			selectedtextcolor=white
 			font-style=underline
 			font-size=17
+			font-size=18 [$OSX]
 		}
 		
 		friends_chat_name_ingame {
@@ -1149,6 +1192,7 @@ steam.styles {
 			textcolor=lightgreen500
 			selectedtextcolor=white			
 			font-size=17
+			font-size=18 [$OSX]
 		}
 
 		friends_chat_name_golden {
@@ -1156,6 +1200,7 @@ steam.styles {
 			textcolor=orange500
 			selectedtextcolor=white
 			font-size=17
+			font-size=18 [$OSX]
 		}
 
 		friends_chat_self {
@@ -1163,6 +1208,7 @@ steam.styles {
 			textcolor=blue500
 			selectedtextcolor=white
 			font-size=17
+			font-size=18 [$OSX]
 		}
 		
 		friends_chat_name {
@@ -1170,6 +1216,7 @@ steam.styles {
 			textcolor=blue500
 			selectedtextcolor=white			
 			font-size=17
+			font-size=18 [$OSX]
 		}
 		
 		friends_chat_accountid {
@@ -1177,6 +1224,7 @@ steam.styles {
 			textcolor=white
 			selectedtextcolor=red500
 			font-size=17
+			font-size=18 [$OSX]
 		}
 		
 		friends_chat_securitylink {
@@ -1186,6 +1234,7 @@ steam.styles {
 			selectedtextcolor=white
 			font-family=basefont
 			font-size=17
+			font-size=18 [$OSX]
 			font-weight=600
 			font-style=none
 		}
@@ -1195,6 +1244,7 @@ steam.styles {
 			textcolor=disabled_OnLightBG
 			selectedtextcolor=white
 			font-size=17
+			font-size=18 [$OSX]
 		}
 
 		friends_offline {

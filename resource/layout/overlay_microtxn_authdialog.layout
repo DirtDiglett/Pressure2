@@ -34,6 +34,7 @@
 			textcolor=secondaryText_onLightBG
 			selectedtextcolor=white
 			font-size=15
+			font-size=16 [$OSX]
 
 			render_bg {}
 		}
@@ -42,6 +43,7 @@
 			textcolor=blue500
 			font-family=basefont
 			font-size=16
+			font-size=17 [$OSX]
 			font-weight=400
 			font-style=underline
 		}

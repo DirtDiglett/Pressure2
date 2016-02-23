@@ -36,6 +36,7 @@
 			textcolor="lightgreen900"
 			font-family=mediumfont
 			font-size=20
+			font-size=21 [$OSX]
 			font-weight=600
 			font-style=uppercase
 			inset="65 0 0 0"
@@ -65,23 +66,27 @@
 		ModuleHeading {
 			textcolor=text_onLightBG
 			font-size=24
+			font-size=25 [$OSX]
 			font-weight=600
 		}	
 
 		label {
 			textcolor=secondaryText_onLightBG
 			font-size=18
+			font-size=19 [$OSX]
 		}
 
 		label2 {
 			textcolor=secondaryText_onLightBG
 			font-family=mediumfont
 			font-size=17
+			font-size=18 [$OSX]
 		}
 
 		label3 {
 			textcolor=secondaryText_onLightBG
 			font-size=18
+			font-size=19 [$OSX]
 			font-style=normal
 		}
 
