@@ -275,7 +275,7 @@
 			height=0
 		}
 
-		place [!$OSX]  {
+		place {
 			control="frame_minimize,frame_maximize,frame_close"
 			align=right
 			margin-top=16
