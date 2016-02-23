@@ -1,7 +1,5 @@
 • Check Mac styling? Add Mac Specific window controls.
 • File Cleanup
-• Readme.md
-
 • Test the pile of radiobuttons launch dialog (Like Ark's)
 
 
@@ -10,6 +8,7 @@ BUGS TO FIX:
 
 
 DONE:
+• Readme.md
 • Fix Download Complete notification
 • Friends Dialog (Complete re-do)
 • Finish Group Chats
@@ -68,8 +67,6 @@ selectedbgcolor
 textcolor
 selectedtextcolor
 shadowtextcolor
-
-// Font settings.
 font-family
 font-size
 font-weight
@@ -77,11 +74,8 @@ font-style
 font-outerglow-color
 font-outerglow-filtersize
 font-outerglow-offset
-
-// Positioning
-minimum-height
 minimum-width
-
+minimum-height
 inset
 inset-left
 inset-top
@@ -91,8 +85,6 @@ padding-left
 padding-top
 padding-right
 padding-bottom
-
-// Content-Additions
 image
 
 
