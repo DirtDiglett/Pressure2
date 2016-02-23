@@ -1,8 +1,7 @@
 • Check Mac styling? Add Mac Specific window controls.
-• File Cleanup
 • Test the pile of radiobuttons launch dialog (Like Ark's)
 • Update Patreon page with Pressure2 info.
-• Add a Pressure2 progress box?
+• Add tweak to disable the green overlay on the game details view heading
 
 
 BUGS TO FIX:
@@ -10,6 +9,8 @@ BUGS TO FIX:
 
 
 DONE:
+• File Cleanup
+• Add a Pressure2 progress box?
 • Readme.md
 • Fix Download Complete notification
 • Friends Dialog (Complete re-do)
