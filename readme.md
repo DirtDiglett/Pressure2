@@ -1,4 +1,4 @@
-![Pressure² Logo](logo.png "Pressure²")
+[![Pressure² Logo](logo.png "Pressure²")](http://www.pressureforsteam.com)
 
 # Pressure² for Steam
 Pressure² is a blend of beauty and function. Every part of Steam has been carefully considered and reworked to create the most fluid and wonderful experience possible, by blending Google's Material Design concepts with added flair Steam can finally sit at the adult table and stop sticking crayons up its nose.
@@ -28,6 +28,7 @@ To view a preview of the skin visit www.pressureforsteam.com
 The easiest way to keep up-to-date with Pressure² is to join the [Steam Community Group.](http://steamcommunity.com/groups/pressureskin) Any new releases will be announced there.
 
 ## [Frequently Asked Questions](https://github.com/DirtDiglett/Pressure2/wiki)
+View the list of frequently asked questions... Occasionally some even have answers.
 
 
 ## [View The Plaque of Legends](http://pressureforsteam.com/#supporters)
