@@ -5,9 +5,6 @@
 		}
 
 		Notification {
-			minimum-width=289
-			minimum-height=98
-
 			render_bg {
 				-1="image(x0+11,y0+14,x1,y1, graphics/icon_toast_broadcast)"
 				0="image(x1-83,y0+17,x1,y1, graphics/notifications/broadcast)"

@@ -1,8 +1,6 @@
 "friends/VoiceChatInviteNotification.res" {
 	styles {
 		Notification {
-			minimum-width=289
-
 			render_bg {
 				0="image(x1-83,y0+17,x1,y1, graphics/notifications/voice)"
 			}
