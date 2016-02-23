@@ -27,6 +27,8 @@ To view a preview of the skin visit www.pressureforsteam.com
 ## Staying updated
 The easiest way to keep up-to-date with Pressure² is to join the [Steam Community Group.](http://steamcommunity.com/groups/pressureskin) Any new releases will be announced there.
 
+## [Frequently Asked Questions](https://github.com/DirtDiglett/Pressure2/wiki/Wiki-Home)
+
 
 ## [View The Plaque of Legends](http://pressureforsteam.com/#supporters)
 These legendary folk have pledged support and invested in Pressure²'s future.
