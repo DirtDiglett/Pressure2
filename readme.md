@@ -7,7 +7,8 @@ To view a preview of the skin visit www.pressureforsteam.com
 
 [![Pledge on Patreon](patreon.png)](https://www.patreon.com/dirtdiglett)
 
-#### Downloading and Installing
+
+## Downloading and Installing
 1. Download the [latest release.](https://github.com/DirtDiglett/Pressure2/releases/latest)
 2. Extract the ZIP and move the folder to:
 	* Windows: the `Program Files (x86)/Steam/skins` folder, or your Steam install directory if different.
@@ -22,9 +23,11 @@ To view a preview of the skin visit www.pressureforsteam.com
 5. After choosing Pressure² as your Steam skin, hit OK in Settings, you will be prompted to restart Steam. *Restart Steam.*
 6. You're good to go, captain. Welcome to your new Steam experience. Enjoy.
 
-#### Staying updated
+
+## Staying updated
 The easiest way to keep up-to-date with Pressure² is to join the [Steam Community Group.](http://steamcommunity.com/groups/pressureskin) Any new releases will be announced there.
 
-#### [View The Plaque of Legends](http://pressureforsteam.com/#supporters)
+
+## [View The Plaque of Legends](http://pressureforsteam.com/#supporters)
 These legendary folk have pledged support and invested in Pressure²'s future.
 You can join this chorus of giving by pledging [support on Patreon](https://www.patreon.com/dirtdiglett) or via [PayPal](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=WAC672ATU68E4).
