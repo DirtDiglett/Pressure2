@@ -4,9 +4,6 @@ TO DO:
 • Update Patreon page with Pressure2 info.
 • Add Roboto fonts to skin dir
 
-BUGS TO FIX:
-• SUPER MINI text for chat history only in the overlay. (Also, make an issue on the issue tracker as an example.)
-
 
 DONE:
 • File Cleanup
@@ -54,6 +51,7 @@ DONE:
 BUGS FIXED:
 • Tooltips in Overlay have white text!?
 • Resize buttons in game details view to be 34px tall.
+• SUPER MINI text for chat history only in the overlay. (Also, make an issue on the issue tracker as an example.)
 
 
 
