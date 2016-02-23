@@ -213,5 +213,9 @@
 		GiftOnlyInfo.ImagePanelColor = "none"
 
 		NotificationBodyText = "secondaryText_onDarkBG"
+
+		GiftOnlyInfo.ImagePanelColor = "none"
+		TextEntry.IMEBGColor = "disabled_onLightBG"
+		TextEntry.IMEFGColor = "text_onLightBG"
 	}
 }

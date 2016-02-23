@@ -25,6 +25,17 @@
 			}
 		}
 
+		html-imebar {
+			bgcolor=disabled_onLightBG
+			textcolor=text_onLightBG
+			shadowtextcolor=disabled_onLightBG
+			font-family=basefont
+			font-size=15
+			font-weight=400
+			
+			render {}		 
+		}
+
 		TextEntryURL {
 			bgcolor=custombackgroundprimary
 			selectedbgcolor=blue500

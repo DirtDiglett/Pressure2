@@ -1,5 +1,4 @@
 steam.styles {
-	include "resource/styles/includes.styles"
 	include "includes/colors.styles"
 	include "includes/settings.styles"
 	include "includes/fonts.styles"
