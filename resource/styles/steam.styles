@@ -6,6 +6,7 @@ steam.styles {
 	include "includes/window-controls.styles"
 	include "includes/controls.styles"
 	include "includes/web.styles"
+	include "config.ini"
 
 	styles {
 		"Csteamrootdialog ListPanelColumnHeader:hover" {}
@@ -390,18 +391,6 @@ steam.styles {
 			font-family=basefont
 			font-size=18
 			font-weight=700			
-		}
-
-		"GameItem_Uninstalled GGPlaceholderBG" {
-			alpha=138 // ~54%
-		}
-
-		"GameItem_Uninstalled GamesGridImage" {
-			alpha=138 // ~54%
-		}
-
-		"GameItem_Uninstalled GamesGridIcon" {
-			alpha=138 // ~54%
 		}
 
 		ListPanelColumnheader {
