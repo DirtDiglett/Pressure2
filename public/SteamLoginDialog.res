@@ -32,6 +32,14 @@
 		}
 
 		place {
+			control=frame_minimize,frame_maximize,frame_close
+			align=right
+			margin-top=16
+			margin-right=15
+			spacing=1
+		}
+
+		place {
 			control=frame_captiongrip
 			width=max
 			height=113
