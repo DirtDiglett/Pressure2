@@ -2,7 +2,7 @@
 	styles {
 		CSettingsSubStreamingAdvancedClient {	
 			minimum-width=476
-			minimum-height=200
+			minimum-height=494
 
 			render {
 				0="fill(x0,y1-58,x1,y1-57, dividers_onLightBG)"
@@ -10,9 +10,11 @@
 			render_bg {
 				0="fill(x0+71,y0+136,x1,y0+137, dividers_onLightBG)"
 				1="fill(x0+71,y0+229,x1,y0+230, dividers_onLightBG)"
-				2="image(x0+26,y0+61,x1,y1, graphics/icons/settings/router)"
-				3="image(x0+26,y0+155,x1,y1, graphics/icons/settings/fps)"
-				4="image(x0+26,y0+247,x1,y1, graphics/icons/settings/hardware)"
+				2="fill(x0+71,y0+322,x1,y0+323, dividers_onLightBG)"
+				3="image(x0+26,y0+61,x1,y1, graphics/icons/settings/router)"
+				4="image(x0+26,y0+155,x1,y1, graphics/icons/settings/fps)"
+				5="image(x0+26,y0+247,x1,y1, graphics/icons/settings/audio)"
+				6="image(x0+26,y0+341,x1,y1, graphics/icons/settings/hardware)"
 			}
 		}
 	}
@@ -85,9 +87,36 @@
 		}
 
 		region {
+			name=audio
+			x=82
+			y=215
+			width=max
+			height=114
+			margin-right=29
+		}
+
+		place {
+			control=AudioChannelsLabel
+			region=audio
+			dir=down
+			y=28
+			width=max
+			spacing=2
+		}
+
+		place {
+			control=AudioChannelSelect
+			start=AudioChannelsLabel
+			dir=down
+			y=4
+			width=350
+			height=34
+		}
+
+		region {
 			name=hardware
 			x=82
-			y=251
+			y=338
 			width=max
 			height=114
 			margin-right=29
