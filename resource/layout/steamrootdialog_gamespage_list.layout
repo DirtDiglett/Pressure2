@@ -15,6 +15,7 @@
 
 		ListPanelColumnheader {
 			inset-top=-8
+			inset-top=-6 [$OSX]
 			padding-left=2
 
 			render_bg {
