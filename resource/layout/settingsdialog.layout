@@ -2,7 +2,7 @@
 	styles {
 		CDialogSettings {
 			minimum-width=740
-			minimum-height=585
+			minimum-height=609
 			
 			render {
 				0="fill(x0,y1-58,x1,y1-57, dividers_onLightBG)"
