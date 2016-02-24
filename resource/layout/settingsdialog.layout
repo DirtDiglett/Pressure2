@@ -13,7 +13,7 @@
 		PropertySheet {
 			bgcolor=none
 			minimum-width=535
-			minimum-height=505
+			minimum-height=517
 			
 			render_bg {}
 		}
@@ -24,13 +24,14 @@
 			font-size=18
 			font-size=19 [$OSX]
 			minimum-width=195
-			minimum-height=525
+			minimum-height=517
 			inset="0 -3 0 0"
 			padding-left=18
 			
 			render {
 				0="fill(x1,y0,x1+1,y1, dividers_onLightBG)"
 			}
+			render_bg {}
 		}
 
 		// There is a header forced to exist on the Settings List. This hides it better.
