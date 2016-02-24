@@ -20,7 +20,7 @@ steam.styles {
 			font-weight=400
 			padding-right=64			
 			inset="4 1 0 0"
-			inset-top=5 [$OSX]
+			inset="0 8 0 0" [$OSX]
 
 			render_bg {
 				0="fill(x0,y0,x1,y0+1, customgreyaccent)"
