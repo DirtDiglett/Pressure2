@@ -27,6 +27,7 @@ Scheme {
 
 			frame_minimize {
 				xpos	r53
+				xpos	r78 [$OSX]
 				ypos	5
 				wide	24
 				tall	24
@@ -35,9 +36,11 @@ Scheme {
 
 			frame_maximize {
 				xpos	r59
+				xpos	r53 [$OSX]
 				ypos	5
 				wide	24
 				tall	24
+				visible 0 [!$OSX]
 				PinCorner	1
 			}
 
@@ -135,7 +138,7 @@ Scheme {
 	Fonts {
 		"Default" {
 			"1" {
-				"name" "Roboto"
+				"name" "Roboto" [!$OSX]
 				"name" "Roboto Regular" [$OSX]
 				"tall" "16"
 				"weight" "400"
@@ -144,7 +147,8 @@ Scheme {
 
 		"DefaultBold" {
 			"1" {
-				"name" "Roboto"
+				"name" "Roboto" [!$OSX]
+				"name" "Roboto Regular" [$OSX]
 				"tall" "16"
 				"weight" "1000"
 			}
@@ -152,7 +156,8 @@ Scheme {
 
 		"DefaultUnderline" {
 			"1" {
-				"name" "Roboto"
+				"name" "Roboto" [!$OSX]
+				"name" "Roboto Regular" [$OSX]
 				"tall" "16"
 				"weight" "400"
 				"underline" "1"
@@ -161,7 +166,8 @@ Scheme {
 
 		"DefaultSmall" {
 			"1" {
-				"name" "Roboto"
+				"name" "Roboto" [!$OSX]
+				"name" "Roboto Regular" [$OSX]
 				"tall" "11"
 				"weight" "400"
 			}
@@ -169,14 +175,16 @@ Scheme {
 		
 		ListSmall {
 			1 {
-				"name" "Roboto"
+				"name" "Roboto" [!$OSX]
+				"name" "Roboto Regular" [$OSX]
 				"tall" "11"
 				"weight" "400"
 			}
 		}
 		"DefaultVerySmall" {
 			"1" {
-				"name" "Roboto"
+				"name" "Roboto" [!$OSX]
+				"name" "Roboto Regular" [$OSX]
 				"tall" "11"
 				"weight" "400"
 			}
@@ -184,7 +192,8 @@ Scheme {
 
 		"DefaultLarge" {
 			"1" {
-				"name" "Roboto"
+				"name" "Roboto" [!$OSX]
+				"name" "Roboto Regular" [$OSX]
 				"tall" "18"
 				"weight" "400"
 			}
@@ -192,7 +201,8 @@ Scheme {
 
 		"UiBold" {
 			"1" {
-				"name" "Roboto"
+				"name" "Roboto" [!$OSX]
+				"name" "Roboto Bold" [$OSX]
 				"tall" "16"
 				"weight" "1000"
 			}
@@ -200,7 +210,8 @@ Scheme {
 		
 		"HeadlineLarge" {
 			"1" {
-				"name" "Roboto"
+				"name" "Roboto" [!$OSX]
+				"name" "Roboto Regular" [$OSX]
 				"tall" "22"
 				"weight" "1000"
 				"antialias" "1"
@@ -209,7 +220,8 @@ Scheme {
 
 		"UiHeadline" {
 			"1" {
-				"name" "Roboto"
+				"name" "Roboto" [!$OSX]
+				"name" "Roboto Regular" [$OSX]
 				"tall" "13"
 				"weight" "400"
 			}
@@ -217,7 +229,8 @@ Scheme {
 
 		"MenuLarge" {
 			"1" {
-				"name" "Roboto"
+				"name" "Roboto" [!$OSX]
+				"name" "Roboto Regular" [$OSX]
 				"tall" "16"
 				"weight" "600"
 				"antialias" "1"
@@ -245,7 +258,7 @@ Scheme {
 
 		"DefaultFixed" {
 			"1" {
-				"name" "Lucida Console"
+				"name" "Lucida Console" [!$OSX]
 				"name" "Monaco" [$OSX]
 				"tall" "10"
 				"weight" "0"
@@ -254,7 +267,7 @@ Scheme {
 
 		"ConsoleText" {
 			"1" {
-				"name" "Lucida Console"
+				"name" "Lucida Console" [!$OSX]
 				"name" "Monaco" [$OSX]
 				"tall" "10"
 				"weight" "500"
@@ -263,7 +276,8 @@ Scheme {
 
 		FriendsSmall {
 			"1" {
-				"name" "Roboto"
+				"name" "Roboto" [!$OSX]
+				"name" "Roboto Regular" [$OSX]
 				"tall" "12"
 				"weight" "800"
 			}
@@ -271,7 +285,8 @@ Scheme {
 
 		FriendsMedium {
 			"1" {
-				"name" "Roboto"
+				"name" "Roboto" [!$OSX]
+				"name" "Roboto Regular" [$OSX]
 				"tall" "13"
 				"weight" "800"
 			}
@@ -279,7 +294,8 @@ Scheme {
 
 		FriendsVerySmall {
 			"1" {
-				"name" "Roboto"
+				"name" "Roboto" [!$OSX]
+				"name" "Roboto Regular" [$OSX]
 				"tall" "12"
 				"weight" "0"
 			}
@@ -287,7 +303,8 @@ Scheme {
 
 		FriendsVerySmallUnderline {
 			"1" {
-				"name" "Roboto"
+				"name" "Roboto" [!$OSX]
+				"name" "Roboto Regular" [$OSX]
 				"tall" "12"
 				"weight" "0"
 				"underline" "1"
@@ -296,7 +313,8 @@ Scheme {
 
 		OverlayTaskbarFont {
 			"1" {
-				"name" "Roboto"
+				"name" "Roboto" [!$OSX]
+				"name" "Roboto Regular" [$OSX]
 				"tall" "16"
 				"weight" "1000"
 			}
