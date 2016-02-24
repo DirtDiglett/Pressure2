@@ -25,13 +25,24 @@
 		}
 
 		place {
-			control=LabelInfo
+			control=LabelStreaming
 			dir=down
 			x=65
 			y=11
 			width=max
 			margin-right=12
 			spacing=3
+		}
+
+		place {
+			control=LabelInfo
+			start=LabelStreaming
+			dir=down
+			y=4
+			width=max
+			height=max
+			margin-right=12
+			margin-bottom=12
 		}
 	}
 }
