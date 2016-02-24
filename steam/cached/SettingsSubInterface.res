@@ -7,10 +7,22 @@
 				2="fill(x0+70,y0+358,x1,y0+384, custombackgroundnofocustransparent)"
 			}
 
+			render [$OSX] {
+				0="fill(x0+70,y0+97,x1,y0+136, custombackgroundnofocustransparent)"
+				1="fill(x0+70,y0+192,x1,y0+214, custombackgroundnofocustransparent)"
+				2="fill(x0+70,y0+264,x1,y0+284, custombackgroundnofocustransparent)"
+			}
+
 			render_bg {
 				0="fill(x0+71,y0+184,x1,y0+185, dividers_onLightBG)"
 				1="image(x0+26,y0+27,x1,y1, graphics/icons/settings/pc)"
 				2="image(x0+26,y0+203,x1,y1, graphics/icons/settings/appearance)"
+			}
+
+			render_bg [$OSX] {
+				0="fill(x0+71,y0+90,x1,y0+91, dividers_onLightBG)"
+				1="image(x0+26,y0+27,x1,y1, graphics/icons/settings/pc)"
+				2="image(x0+26,y0+109,x1,y1, graphics/icons/settings/appearance)"
 			}
 		}
 
@@ -19,6 +31,12 @@
 					0="fill(x0+70,y0+191,x1,y0+239, custombackgroundprimarytransparent)"
 					1="fill(x0+70,y0+286,x1,y0+312, custombackgroundprimarytransparent)"
 					2="fill(x0+70,y0+358,x1,y0+384, custombackgroundprimarytransparent)"
+				}
+
+				render [$OSX] {
+					0="fill(x0+70,y0+97,x1,y0+136, custombackgroundprimarytransparent)"
+					1="fill(x0+70,y0+192,x1,y0+214, custombackgroundprimarytransparent)"
+					2="fill(x0+70,y0+264,x1,y0+284, custombackgroundprimarytransparent)"
 				}
 			}
 	}
@@ -61,6 +79,7 @@
 			name=steam
 			x=82
 			y=176
+			y=82 [$OSX]
 			width=max
 			height=114
 			margin-right=29
