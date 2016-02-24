@@ -280,15 +280,31 @@
 				}
 			}
 
-		// This style applies to things like "Search" AKA Hint Text
-		TextEntry:empty {
-			textcolor=disabled_OnLightBG
-			font-style=italic	
-		}
+			// This style applies to things like "Search" AKA Hint Text
+			TextEntry:empty {
+				bgcolor=white
+				selectedbgcolor=blue500
+				textcolor=text_OnLightBG
+				selectedtextcolor=white
+				shadowtextcolor=disabled_OnLightBG
+				font-family=basefont
+				font-size=18
+				font-size=19 [$OSX]
+				font-weight=400
+				inset-left=3	
+			}
 
 		TextEntryLarge {
+			bgcolor=white
+			selectedbgcolor=blue500
+			textcolor=text_OnLightBG
+			selectedtextcolor=white
+			shadowtextcolor=disabled_OnLightBG
+			font-family=basefont
 			font-size=22
 			font-size=23 [$OSX]	
+			font-weight=400
+			inset-left=3
 		}
 
 		TextEntryURL {
