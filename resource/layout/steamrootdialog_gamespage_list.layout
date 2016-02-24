@@ -15,7 +15,7 @@
 
 		ListPanelColumnheader {
 			inset-top=-8
-			inset-top=-6 [$OSX]
+			inset-top=-5 [$OSX]
 			padding-left=2
 
 			render_bg {
@@ -26,12 +26,14 @@
 		GameColumnHeaderFavorites {
 			inset-left=-1
 			inset-top=-8
+			inset-top=-5 [$OSX]
 			image=graphics/icons/favorite/normal/header
 		}
 
 			GameColumnHeaderFavorites:hover {
 				inset-left=-1
 				inset-top=-8
+				inset-top=-5 [$OSX]
 				image=graphics/icons/favorite/hover/header
 			}
 
