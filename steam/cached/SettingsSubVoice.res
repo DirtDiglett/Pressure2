@@ -4,7 +4,7 @@
 			render {
 				0="fill(x0+70,y0+10,x1,y0+47, custombackgroundnofocustransparent)"
 				1="fill(x0+70,y0+179,x0+300,y0+218, custombackgroundnofocustransparent)"
-				2="fill(x0+70,y0+280,x1,y0+307, custombackgroundnofocustransparent)"
+				2="fill(x0+70,y0+280,x1,y0+300, custombackgroundnofocustransparent)"
 				3="fill(x0+70,y0+330,x1,y0+372, custombackgroundnofocustransparent)"
 			}
 
@@ -18,7 +18,7 @@
 				render {
 					0="fill(x0+70,y0+10,x1,y0+47, custombackgroundprimarytransparent)"
 					1="fill(x0+70,y0+179,x0+300,y0+218, custombackgroundprimarytransparent)"
-					2="fill(x0+70,y0+280,x1,y0+307, custombackgroundprimarytransparent)"
+					2="fill(x0+70,y0+280,x1,y0+300, custombackgroundprimarytransparent)"
 					3="fill(x0+70,y0+330,x1,y0+372, custombackgroundprimarytransparent)"
 				}
 			}
