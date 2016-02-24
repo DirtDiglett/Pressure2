@@ -394,34 +394,6 @@
 				}
 			}
 
-			ComboBox:focus {
-				bgcolor=none
-				textcolor=blue500
-
-				render_bg {}
-			}
-
-				ComboBox:focus:selected {
-					bgcolor=blue500transparent
-					textcolor=blue500
-
-					render_bg {}
-				}
-
-			ComboBox:active {
-				bgcolor=blue500transparent
-				textcolor=blue500
-
-				render_bg {}
-			}
-
-			ComboBox:selected {
-				bgcolor=blue500transparent
-				textcolor=blue500
-
-				render_bg {}
-			}
-
 		ComboBoxButton {
 			bgcolor=none
 			textcolor=none
@@ -484,6 +456,54 @@
 
 				render_bg {
 					0="image(x0,y0,x1,y1, graphics/controls/checkbox/unchecked_disabled)"
+				}
+			}
+
+		
+
+		HotkeyEntryClearButton {
+			inset-left=-50
+			minimum-width=24
+			minimum-height=24
+
+			render {
+				0="image(x0+3,y0+3,x1,y1, graphics\icons\closedownload\standard\closedownload)"
+			}
+		}
+
+			HotkeyEntryClearButton:hover {
+				render {
+					0="image(x0+3,y0+3,x1,y1, graphics\icons\closedownload\hover\closedownload)"
+				}
+			}
+
+			HotkeyEntryClearButton:selected {
+				render {
+					-1="fill(x0-10,y0-10,x1+10,y1+10, disabled_onLightBG)"
+					0="image(x0+3,y0+3,x1,y1, graphics\icons\closedownload\active\closedownload)"
+				}
+			}
+
+		TextEntryClearButton {
+			inset-left=-50
+			minimum-width=24
+			minimum-height=24
+
+			render {
+				0="image(x0+3,y0+3,x1,y1, graphics\icons\closedownload\standard\closedownload)"
+			}
+		}
+
+			TextEntryClearButton:hover {
+				render {
+					0="image(x0+3,y0+3,x1,y1, graphics\icons\closedownload\hover\closedownload)"
+				}
+			}
+
+			TextEntryClearButton:selected {
+				render {
+					-1="fill(x0-10,y0-10,x1+10,y1+10, disabled_onLightBG)"
+					0="image(x0+3,y0+3,x1,y1, graphics\icons\closedownload\active\closedownload)"
 				}
 			}
 	}
