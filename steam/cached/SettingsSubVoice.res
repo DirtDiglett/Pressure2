@@ -8,11 +8,6 @@
 				3="fill(x0+70,y0+330,x1,y0+366, custombackgroundnofocustransparent)"
 			}
 
-			render_bg {
-				0="image(x0+26,y0+27,x1,y1, graphics/icons/settings/voiceinput)"
-				1="image(x0+26,y0+195,x1,y1, graphics/icons/settings/microphone)"
-			}
-
 			render [$OSX] {
 				0="fill(x0+70,y0+10,x1,y0+47, custombackgroundnofocustransparent)"
 				1="fill(x0+70,y0+145,x0+300,y0+184, custombackgroundnofocustransparent)"
@@ -20,6 +15,11 @@
 				3="fill(x0+70,y0+296,x1,y0+332, custombackgroundnofocustransparent)"
 			}
 
+			render_bg {
+				0="image(x0+26,y0+27,x1,y1, graphics/icons/settings/voiceinput)"
+				1="image(x0+26,y0+195,x1,y1, graphics/icons/settings/microphone)"
+			}
+			
 			render_bg [$OSX] {
 				0="image(x0+26,y0+27,x1,y1, graphics/icons/settings/voiceinput)"
 				1="image(x0+26,y0+161,x1,y1, graphics/icons/settings/microphone)"
@@ -54,6 +54,7 @@
 			align=left
 			x=71
 			y=176
+			y=142 [$OSX]
 			width=max
 			height=1
 		}
