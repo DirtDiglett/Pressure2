@@ -18,17 +18,15 @@
 		FriendsPanel {			
 			bgcolor=custombackgroundnofocus
 			render {
-				1="image_tiled(x0,y0+134,x1,y0+138, graphics/material/shadows/top)"
-				2="image_tiled(x0,y1-50,x1,y1-46, graphics/material/shadows/bottom)"
+				0="image_tiled(x0,y1-50,x1,y1-46, graphics/material/shadows/bottom)"
 			}
 			
 			render_bg {
+				0="image_tiled(x0,y0+55,x1,y0+59, graphics/material/shadows/top)"
+				1="image_tiled(x0,y0+134,x1,y0+138, graphics/material/shadows/top)"
 				// fill in the bottom area
-				0="fill( x0, y1 - 46, x1, y1, customgreyprimary )"
-				1="fill(x0, y1-46, x1, y1-45, customgreyaccent)"
-				
-				//Apply the subnav
-				2="fill(x0,y0+55,x1,y0+137, customgreysecondary)"				
+				2="fill( x0, y1 - 46, x1, y1, customgreyprimary )"
+				3="fill(x0, y1-46, x1, y1-45, customgreyaccent)"				
 			}
 		}
 
@@ -224,6 +222,10 @@
 			
 			render {
 				0="fill(x0-40,y1-1,x1,y1, dividers_onLightBG_solid)"
+			}
+
+			render_bg {
+				0="fill(x0,y1,x1,y1+34, customgreysecondary)"
 			}
 		}
 					
