@@ -50,7 +50,7 @@
 			y=144
 			width=560
 			height=max
-			margin-bottom=270
+//			margin-bottom=240
 		}
 
 		region {
