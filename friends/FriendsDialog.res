@@ -23,7 +23,6 @@
 			
 			render_bg {
 				0="image_tiled(x0,y0+55,x1,y0+59, graphics/material/shadows/top)"
-				1="image_tiled(x0,y0+134,x1,y0+138, graphics/material/shadows/top)"
 				// fill in the bottom area
 				2="fill( x0, y1 - 46, x1, y1, customgreyprimary )"
 				3="fill(x0, y1-46, x1, y1-45, customgreyaccent)"				
@@ -222,10 +221,11 @@
 			
 			render {
 				0="fill(x0-40,y1-1,x1,y1, dividers_onLightBG_solid)"
+				1="image_tiled(x0,y0+34,x1,y0+38, graphics/material/shadows/top)"
 			}
 
 			render_bg {
-				0="fill(x0,y1,x1,y1+34, customgreysecondary)"
+				0="fill(x0,y1,x1,y1+34, red500)"
 			}
 		}
 					
