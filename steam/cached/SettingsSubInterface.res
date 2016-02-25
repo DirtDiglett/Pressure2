@@ -68,6 +68,7 @@
 		place {
 			control=SetJumpListOptionsButton
 			start=H264HWAccelCheck
+			start=BigPictureModeCheck [$LINUX]
 			dir=down
 			y=4
 			width=350
