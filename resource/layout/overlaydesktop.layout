@@ -108,7 +108,7 @@
 			region=overlay
 			align=bottom
 			dir=down
-			width=475
+			width=max
 			height=240
 		}
 	}

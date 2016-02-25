@@ -54,7 +54,7 @@
 			start=viewachievementsbutton
 			dir=down
 			y=15
-			width=max
+			width=475
 			height=5
 		}
 
@@ -63,6 +63,7 @@
 			start=viewachievementsbutton
 			dir=down
 			y=15
+			width=475
 			height=5
 		}
 
@@ -70,7 +71,7 @@
 			control=*achievement
 			align=bottom
 			dir=down
-			width=max
+			width=475
 			height=64
 			spacing=15
 		}		
