@@ -196,9 +196,6 @@
 		ListPanel.DisabledSelectedTextColor = "disabled_onLightBG"
 		ListPanel.EmptyListInfoTextColor = "text_onLightBG"
 
-		TextEntry.IMEBGColor = "none"
-		TextEntry.IMEFGColor = "none"
-
 		PropertySheet.FlashTabColor = "orange500"
 
 		DragDrop.DragFrame = "none"
@@ -215,7 +212,7 @@
 		NotificationBodyText = "secondaryText_onDarkBG"
 
 		GiftOnlyInfo.ImagePanelColor = "none"
-		TextEntry.IMEBGColor = "disabled_onLightBG"
-		TextEntry.IMEFGColor = "text_onLightBG"
+		TextEntry.IMEBGColor = "none"
+		TextEntry.IMEFGColor = "disabled_onLightBG"
 	}
 }
