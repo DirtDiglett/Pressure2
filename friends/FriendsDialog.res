@@ -221,11 +221,11 @@
 			
 			render {
 				0="fill(x0-40,y1-1,x1,y1, dividers_onLightBG_solid)"
-				1="image_tiled(x0,y0+34,x1,y0+38, graphics/material/shadows/top)"
+				1="image_tiled(x0,y1+34,x1,y1+38, graphics/material/shadows/top)"
 			}
 
 			render_bg {
-				0="fill(x0,y1,x1,y1+34, red500)"
+				0="fill(x0-10,y1-10,x1+10,y1+34, red500)"
 			}
 		}
 					
