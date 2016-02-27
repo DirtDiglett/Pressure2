@@ -380,12 +380,19 @@
 			end-right=frame_minimize
 		}
 		
+		region {
+			name=accountbalance
+			y=3
+			x=65
+			width=205
+			height=15
+		}
+
 		place {
 			control=account_balance
-			align=left
-			x=152
-			x=98 [$OSX]
-			y=36
+			region=accountbalance
+			align=top-center
+			y=2
 		}
 		
 		region {
