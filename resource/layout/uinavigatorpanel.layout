@@ -420,7 +420,8 @@
 		
 		place {
 			control=library_search
-			width=261
+			width=254
+			//width=261
 		}
 		
 		place {
