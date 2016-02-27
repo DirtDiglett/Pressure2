@@ -23,6 +23,13 @@
 			render {}
 			render_bg {}
 		}
+
+		nameInstanceStyle {
+			textcolor=grey600
+			font-family=basefont
+			font-size=16
+			font-size=17 [$OSX]
+		}
 	}
 	
 	layout {
