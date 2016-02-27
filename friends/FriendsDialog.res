@@ -18,7 +18,6 @@
 		FriendsPanel {			
 			bgcolor=custombackgroundnofocus
 			render {
-				1="image_tiled(x0,y0+134,x1,y0+138, graphics/material/shadows/top)"
 				2="image_tiled(x0,y1-50,x1,y1-46, graphics/material/shadows/bottom)"
 			}
 			
@@ -28,7 +27,8 @@
 				1="fill(x0, y1-46, x1, y1-45, customgreyaccent)"
 				
 				//Apply the subnav
-				2="fill(x0,y0+55,x1,y0+137, customgreysecondary)"				
+				//2="image_tiled(x0,y0+55,x1,y0+59, graphics/material/shadows/top)"
+				3="fill(x0,y0+55,x1,y0+134, customgreysecondary)"				
 			}
 		}
 
@@ -114,6 +114,8 @@
 					2="image_tiled(x0+2,y0-4,x1-2, y0-2, graphics/material/tab/blue/middle)"
 					3="image_tiled(x0,y0-2,x1, y1, graphics/material/tab/blue/middle)"
 					4="image(x1-2,y0-4,x1,y0-2, graphics/material/tab/blue/topright)"
+
+					
 				}
 		  	}
 
@@ -179,8 +181,20 @@
 				2="image(x0+14,y0+6,x1,y1, graphics/icons/dropdown/hover/up_dark)"
 			  }
 			}
-            
+         
+		label {
+			render_bg {
+				0="fill(x0-24,y0-24,x1+24,y1+100, custombackgroundprimary)"
+				1="image_tiled(x0-24,y0-24,x1+24,y0-20, graphics/material/shadows/top)"
+			}
+		}
 
+        "SectionedListPanel Label" {
+        	textcolor=customgreysecondary
+        	font-family=mediumfont
+
+        	render_bg {}
+        }
 
 	Page {
 		bgcolor=none
@@ -222,9 +236,7 @@
 			inset-left=1
 			bgcolor=custombackgroundprimary
 			
-			render {
-				0="fill(x0-40,y1-1,x1,y1, dividers_onLightBG_solid)"
-			}
+			render {}
 		}
 					
 			FriendsSearch:empty {
@@ -248,86 +260,116 @@
 		FriendsSearchIcon {
 			bgcolor=custombackgroundprimary
 			textcolor=none
-			
+
+			render {
+				0="image_tiled(x0,y1+34,x1+9999,y1+38, graphics/material/shadows/top)"
+			}
+
 			render_bg {
-				-1="fill(x1,y0,x1+10,y1, custombackgroundprimary)"
 				0="image(x0+14,y0+13,x1,y1, graphics/icons/search/standard)"
-				1="fill(x0,y1-1,x1+25,y1, dividers_onLightBG_solid)"
 			}
 		}
 	}
  	
- 	layout {
+layout {
 		place {
-			control=frame_title,addFriendsButton
+			control=frame_title
+			visible=0
+			x=0
+			y=0
+			width=max
 			height=0
 		}
 
 		place {
-			control="frame_minimize,frame_maximize,frame_close"
+			control=frame_captiongrip
+			margin=2
+			width=max
+			height=55
+		}
+
+		place {
+			control=frame_minimize,frame_maximize,frame_close
 			align=right
 			margin-top=16
 			margin-right=15
 			spacing=1
 		}
 
- 		// the title bar is missing, so increase the size of the grip
-		place {
-			control="frame_captiongrip"
-			width=max
-			height=55
-		}
-
-		place {
-			control="MenuBar"
+		place [!$OSX] {
+			control=MenuBar
+			margin-left=6
 			width=45
 			height=45
-			x=6
-			y=6
+			margin-top=6
 		}
-		
-		region {
-			name="subnav"
-			width=max
-			height=45
-			y=55
-		}
-		
-		place {
-			control="friends_search"
-			width=max
-		}
-		
-		place {
-			control=friends_search_icon
-			width=40
-		}
-		
-		place {
-			control="friends_search_icon,friends_search"
-			align=left
-			height=max
-			region=subnav
-			spacing=8
-		}		
 
 		place {
-			control="FriendPanelSelf"
-			x=3
+			control=FriendPanelSelf
+			y=0
 			align=bottom
-			margin-bottom=8
-			height=40
+			margin-left=3
+			margin-bottom=-2
 		}
-		
+
 		place {
-			control="FriendsDialogSheet"
+			control=friends_search_icon
+			y=50
+			width=40
+			height=45
+			dir=down
+			margin-top=5
+		}
+
+		place {
+			control=friends_search
 			start=friends_search_icon
-			y=6
+			height=45
+			dir=right
+			margin-right=0
+			x=0
+			y=0
+			width=max
+		}
+
+		place {
+			control=FriendsDialogSheet
+			start=friends_search_icon
+			margin-left=0
 			dir=down
 			width=max
 			height=max
+			spacing=3
+			margin-top=6
 			margin-bottom=46
-			spacing=0
+			margin-right=0
 		}
- 	}
+
+		place {
+			control=DownLabel
+			dir=down
+			align=left
+			y=79
+			x=24
+			width=max
+			margin-right=24
+			
+		}
+
+		place {
+			control=NoFriendsAddFriendButton
+			start=DownLabel
+			dir=down
+			align=left
+			y=8
+			width=max
+			height=34
+			margin-right=24
+		}
+
+		place {
+			control=addFriendsButton
+			height=0
+		}
+	}
 }
