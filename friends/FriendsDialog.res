@@ -18,7 +18,6 @@
 		FriendsPanel {			
 			bgcolor=custombackgroundnofocus
 			render {
-				1="image_tiled(x0,y0+134,x1,y0+138, graphics/material/shadows/top)"
 				2="image_tiled(x0,y1-50,x1,y1-46, graphics/material/shadows/bottom)"
 			}
 			
@@ -28,7 +27,8 @@
 				1="fill(x0, y1-46, x1, y1-45, customgreyaccent)"
 				
 				//Apply the subnav
-				2="fill(x0,y0+55,x1,y0+137, customgreysecondary)"				
+				//2="image_tiled(x0,y0+55,x1,y0+59, graphics/material/shadows/top)"
+				3="fill(x0,y0+55,x1,y0+134, customgreysecondary)"				
 			}
 		}
 
@@ -114,6 +114,8 @@
 					2="image_tiled(x0+2,y0-4,x1-2, y0-2, graphics/material/tab/blue/middle)"
 					3="image_tiled(x0,y0-2,x1, y1, graphics/material/tab/blue/middle)"
 					4="image(x1-2,y0-4,x1,y0-2, graphics/material/tab/blue/topright)"
+
+					
 				}
 		  	}
 
@@ -179,7 +181,14 @@
 				2="image(x0+14,y0+6,x1,y1, graphics/icons/dropdown/hover/up_dark)"
 			  }
 			}
-            
+         
+		label {
+			render_bg {
+				0="fill(x0-24,y0-24,x1+24,y1+100, custombackgroundprimary)"
+				1="image_tiled(x0-24,y0-24,x1+24,y0-20, graphics/material/shadows/top)"
+			}
+		}
+
 
 
 	Page {
@@ -222,9 +231,7 @@
 			inset-left=1
 			bgcolor=custombackgroundprimary
 			
-			render {
-				0="fill(x0-40,y1-1,x1,y1, dividers_onLightBG_solid)"
-			}
+			render {}
 		}
 					
 			FriendsSearch:empty {
@@ -248,7 +255,11 @@
 		FriendsSearchIcon {
 			bgcolor=custombackgroundprimary
 			textcolor=none
-			
+
+			render {
+				0="image_tiled(x0,y1+34,x1+9999,y1+38, graphics/material/shadows/top)"
+			}
+
 			render_bg {
 				0="image(x0+14,y0+13,x1,y1, graphics/icons/search/standard)"
 			}
@@ -327,7 +338,29 @@ layout {
 			margin-top=6
 			margin-bottom=46
 			margin-right=0
-		}	 
+		}
+
+		place {
+			control=DownLabel
+			dir=down
+			align=left
+			y=79
+			x=24
+			width=max
+			margin-right=24
+			
+		}
+
+		place {
+			control=NoFriendsAddFriendButton
+			start=DownLabel
+			dir=down
+			align=left
+			y=8
+			width=max
+			height=34
+			margin-right=24
+		}
 
 		place {
 			control=addFriendsButton
