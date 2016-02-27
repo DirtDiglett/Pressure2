@@ -110,8 +110,12 @@
 				}
 
 		URLLabel {
-			textcolor=blue200
+			textcolor=blue800
 		}
+
+			URLLabel:hover {
+				textcolor=blue700
+			}
 	}
 	
 	layout {
