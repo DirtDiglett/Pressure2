@@ -421,7 +421,6 @@
 		place {
 			control=library_search
 			width=254
-			//width=261
 		}
 		
 		place {
