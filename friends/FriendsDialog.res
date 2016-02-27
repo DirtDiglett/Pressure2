@@ -189,7 +189,12 @@
 			}
 		}
 
+        "SectionedListPanel Label" {
+        	textcolor=customgreysecondary
+        	font-family=mediumfont
 
+        	render_bg {}
+        }
 
 	Page {
 		bgcolor=none
