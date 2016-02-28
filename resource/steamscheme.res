@@ -62,10 +62,10 @@ Scheme {
 
 		PropertyDialog {
 			sheet {
-				xpos=9
-				ypos=40
-				wide=r9
-				tall=r39
+				xpos=0
+				ypos=34
+				wide=r0
+				tall=r58
 			}
 			// these buttons are still a bit special - if some of them are hidden, they shuffle
 			// across taking the place of other buttons to make sure there aren't gaps
@@ -93,42 +93,43 @@ Scheme {
 
 		WizardPanel {
 			subpanel {
-				xpos=10
-				ypos=40
-				wide=r10
-				tall=r48
+				xpos=0
+				ypos=34
+				wide=r0
+				tall=r58
 				AutoResize=3
 			}
 
 			PrevButton {
-				xpos=r306
-				ypos=r39
-				wide=92
-				tall=28
+				xpos=r335
+				ypos=r46
+				wide=100
+				tall=34
 				PinCorner=3
 			}
 
 			NextButton {
-				xpos=r204
-				ypos=r39
-				wide=92
-				tall=28
+				xpos=r223
+				ypos=r46
+				wide=100
+				tall=34
 				PinCorner=3
 			}
 
+			// functional
 			CancelButton {
-				xpos=r102
-				ypos=r39
-				wide=92
-				tall=28
+				xpos=r111
+				ypos=r46
+				wide=100
+				tall=34
 				PinCorner=3
 			}
 
 			FinishButton {
-				xpos=r102
-				ypos=r39
-				wide=92
-				tall=28
+				xpos=r111
+				ypos=r46
+				wide=100
+				tall=34
 				PinCorner=3
 			}
 		}
