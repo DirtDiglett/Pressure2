@@ -10,14 +10,7 @@
 #### What Operating System are you using? (Windows 10, Mac OSX 11.1, Linux, Ubuntu etc.)
 
 
-<<<<<<< HEAD
 #### Are you using the latest stable release or using the latest commit version?
-=======
-#### What Operating System are you using? (Windows 10, Mac OSX, Linux, etc.)
-
-
-#### Are you using the latest release or a dev version
->>>>>>> origin/master
 
 
 #### A screenshot of the issue.
