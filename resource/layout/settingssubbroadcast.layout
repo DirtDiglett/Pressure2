@@ -47,6 +47,8 @@
 			region=privacy
 			dir=down
 			y=28
+			width=max
+			margin-right=18
 			spacing=2
 		}
 
@@ -55,6 +57,8 @@
 			start=BroadcastDisabledLabel
 			dir=down
 			y=4
+			width=max
+			margin-right=18
 		}
 
 		place {
