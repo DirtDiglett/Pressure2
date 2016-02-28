@@ -2,11 +2,11 @@
 	layout {
 		place {
 			control=OldEntryLabel
-			x=14
+			x=24
 			y=13
 			width=max
 			height=18
-			margin-right=14
+			margin-right=24
 		}
 
 		place {
@@ -16,7 +16,7 @@
 			y=4
 			width=max
 			height=34
-			margin-right=14
+			margin-right=24
 		}
 
 		place {
@@ -26,7 +26,7 @@
 			y=18
 			width=max
 			height=18
-			margin-right=14
+			margin-right=24
 		}
 
 		place {
@@ -36,7 +36,7 @@
 			y=4
 			width=max
 			height=34
-			margin-right=14
+			margin-right=24
 		}
 
 		place {
@@ -46,7 +46,7 @@
 			y=18
 			width=max
 			height=18
-			margin-right=14
+			margin-right=24
 		}
 
 		place {
@@ -56,7 +56,7 @@
 			y=4
 			width=max
 			height=34
-			margin-right=14
+			margin-right=24
 		}
 
 		place {
@@ -66,7 +66,7 @@
 			y=18
 			width=max
 			height=18
-			margin-right=14
+			margin-right=24
 		}
 
 		place {
@@ -76,7 +76,7 @@
 			y=22
 			width=max
 			height=34
-			margin-right=14
+			margin-right=24
 		}
 	}
 }

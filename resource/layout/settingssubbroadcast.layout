@@ -28,7 +28,7 @@
 
 	layout {
 		place {
-			control=ConfigMic,RequiresRestartLabel,ShowReminder,EnableHardwareSupport,BroadcastHelpURL,BroadcastHelpHeader,BroadcastStatus,BroadcastStatusHeader,BroadcastDisabledSupportURL,BroadcastDisabledLabel
+			control=ConfigMic,RequiresRestartLabel,ShowReminder,EnableHardwareSupport,BroadcastHelpURL,BroadcastHelpHeader,BroadcastStatus,BroadcastStatusHeader
 			height=0
 		}
 		
@@ -39,6 +39,26 @@
 			width=max
 			height=114
 			margin-right=29
+		}
+
+		
+		place {
+			control=BroadcastDisabledLabel
+			region=privacy
+			dir=down
+			y=28
+			width=max
+			margin-right=18
+			spacing=2
+		}
+
+		place {
+			control=BroadcastDisabledSupportURL
+			start=BroadcastDisabledLabel
+			dir=down
+			y=4
+			width=max
+			margin-right=18
 		}
 
 		place {

@@ -44,7 +44,7 @@
 		
 		"GamesPage_Details ListPanelInterior" {
 			bgcolor=none
-			minimum-width=295
+			minimum-width=308
 			inset="0 0 0 0"			
 
 			render {}

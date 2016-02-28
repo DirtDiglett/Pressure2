@@ -6,7 +6,8 @@
 
 		Button {
 			textcolor=lightblue300
-			font-family=heavyfont
+			font-family=mediumfont
+			font-weight=800
 			font-size=20
 			font-size=21 [$OSX]
 			font-weight=400

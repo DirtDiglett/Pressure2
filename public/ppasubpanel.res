@@ -13,9 +13,9 @@
 			control=ssa
 			width=max
 			height=150
-			x=14
-			y=97
-			margin-right=14
+			x=24
+			y=87
+			margin-right=24
 		}
 
 		place {
@@ -25,7 +25,7 @@
 			y=24
 			width=max
 			height=max
-			margin-right=14
+			margin-right=24
 		}
 
 		place {

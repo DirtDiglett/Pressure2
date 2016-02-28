@@ -32,10 +32,10 @@
 
 		place {
 			control=Label2
-			x=14
+			x=24
 			y=87
 			width=max
-			margin-right=14
+			margin-right=24
 		}
 
 		place {
@@ -61,10 +61,10 @@
 			control=RememberThisComputer
 			align=bottom
 			dir=down
-			x=14
+			x=24
 			width=max
 			height=18
-			margin-right=14
+			margin-right=24
 			margin-bottom=56
 		}
 
@@ -75,7 +75,7 @@
 			y=4
 			width=max
 			height=34
-			margin-right=14
+			margin-right=24
 		}
 	}
 }

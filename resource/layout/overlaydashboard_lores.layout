@@ -21,7 +21,8 @@
 				
 		topbar {
 			textcolor=text_onDarkBG
-			font-family=heavyfont
+			font-family=mediumfont
+			font-weight=800
 			font-size=30
 			font-size=31 [$OSX]
 			font-weight=600

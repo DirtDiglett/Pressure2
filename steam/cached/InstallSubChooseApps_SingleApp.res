@@ -12,9 +12,9 @@
 			name=page
 			width=max
 			height=max
-			x=14
+			x=24
 			y=18
-			margin-right=14
+			margin-right=24
 			margin-bottom=10
 		}
 

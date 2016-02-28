@@ -15,7 +15,7 @@
 		place {
 			control=infolabel
 			align=top
-			x=14
+			x=24
 			y=93
 		}
 
