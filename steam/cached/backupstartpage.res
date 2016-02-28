@@ -2,11 +2,11 @@
 	layout {
 		region {
 			name=page
-			x=14
+			x=24
 			y=18
 			width=max
 			height=max
-			margin-right=14
+			margin-right=24
 			margin-bottom=10
 		}
 

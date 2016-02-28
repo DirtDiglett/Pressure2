@@ -3,10 +3,10 @@
 		place {
 			control=label1,AccountName
 			dir=right
-			x=14
+			x=24
 			y=97
 			width=max
-			margin-right=14
+			margin-right=24
 			spacing=4
 		}
 
@@ -16,7 +16,7 @@
 			dir=down
 			y=8
 			width=max
-			margin-right=14
+			margin-right=24
 			spacing=8
 		}
 		
@@ -26,14 +26,14 @@
 			dir=down
 			y=8
 			width=max
-			margin-right=14
+			margin-right=24
 			spacing=18
 		}
 
 		place {
 			control=SuggestionsList
 			align=bottom
-			x=14
+			x=24
 			height=85
 			margin-right=5
 			margin-bottom=34

@@ -21,10 +21,10 @@
 
 		place {
 			control=Label2
-			x=14
+			x=24
 			y=87
 			width=max
-			margin-right=14
+			margin-right=24
 		}
 
 		place {
@@ -33,7 +33,7 @@
 			dir=down
 			y=8
 			width=max
-			margin-right=14
+			margin-right=24
 		}
 
 		place {
@@ -42,7 +42,7 @@
 			dir=down
 			y=24
 			width=max
-			margin-right=14
+			margin-right=24
 			spacing=18
 		}
 	}

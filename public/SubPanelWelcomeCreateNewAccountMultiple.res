@@ -11,7 +11,7 @@
 	layout {
 		place {
 			control=IconInfo
-			x=14
+			x=24
 			y=97
 			width=36
 			height=36

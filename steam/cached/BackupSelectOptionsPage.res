@@ -2,7 +2,7 @@
 	styles {
 		CBackupSelectOptionsPage {
 			render_bg {
-				0="image(x0+14,y0+18,x1,y1, graphics/icons/disc/disc)"
+				0="image(x0+24,y0+18,x1,y1, graphics/icons/disc/disc)"
 			}
 		}
 	}
@@ -10,11 +10,11 @@
 	layout {
 		region {
 			name=page
-			x=14
+			x=24
 			y=18
 			width=max
 			height=max
-			margin-right=14
+			margin-right=24
 			margin-bottom=10
 		}
 
@@ -42,7 +42,7 @@
 			y=4
 			width=max
 			height=34
-			margin-right=14
+			margin-right=24
 			spacing=4
 		}
 
@@ -62,7 +62,7 @@
 			y=4
 			width=max
 			height=34
-			margin-right=14
+			margin-right=24
 			spacing=4
 		}
 

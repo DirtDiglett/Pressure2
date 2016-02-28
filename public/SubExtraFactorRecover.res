@@ -64,7 +64,7 @@
 
 		place {
 			control=IconSteam
-			x=14
+			x=24
 			y=87			
 			width=36
 			height=36
@@ -77,7 +77,7 @@
 			x=24
 			width=max
 			height=36
-			margin-right=14
+			margin-right=24
 		}
 
 		place {
@@ -87,7 +87,7 @@
 			y=18
 			x=-60
 			width=max
-			margin-right=14
+			margin-right=24
 		}
 
 		place {
@@ -96,7 +96,7 @@
 			dir=down
 			y=18
 			width=max
-			margin-right=14
+			margin-right=24
 		}
 
 		place {
@@ -106,7 +106,7 @@
 			y=18
 			width=max
 			height=34
-			margin-right=14
+			margin-right=24
 		}
 	}
 }

@@ -15,7 +15,7 @@
 
 		place {
 			control=IconJunk
-			x=14
+			x=24
 			y=87			
 			width=36
 			height=36
@@ -27,7 +27,7 @@
 			dir=right
 			x=24
 			width=max
-			margin-right=14
+			margin-right=24
 		}
 
 		place {
@@ -37,7 +37,7 @@
 			y=24
 			x=-60
 			width=max
-			margin-right=14
+			margin-right=24
 		}
 	}
 }
