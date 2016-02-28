@@ -6,130 +6,130 @@ Scheme {
 	LayoutTemplates {
 		Frame {
 			frame_menu {
-				visible	0
+				visible=0
 			}
 
 			frame_title {
-				xpos	0
-				ypos	0
-				wide	max
-				tall	34
-				AutoResize	1
+				xpos=0
+				ypos=0
+				wide=max
+				tall=34
+				AutoResize=1
 			}
 
 			frame_captiongrip {
-				xpos	0
-				ypos	0
-				wide	r2
-				tall	34
-				AutoResize	1
+				xpos=0
+				ypos=0
+				wide=r2
+				tall=34
+				AutoResize=1
 			}
 
 			frame_minimize {
-				xpos	r53
-				xpos	r78 [$OSX]
-				ypos	5
-				wide	24
-				tall	24
-				PinCorner	1
+				xpos=r53
+				xpos=r78 [$OSX]
+				ypos=5
+				wide=24
+				tall=24
+				PinCorner=1
 			}
 
 			frame_maximize {
-				xpos	r59
-				xpos	r53 [$OSX]
-				ypos	5
-				wide	24
-				tall	24
-				PinCorner	1
+				xpos=r59
+				xpos=r53 [$OSX]
+				ypos=5
+				wide=24
+				tall=24
+				PinCorner=1
 			}
 
 			frame_close {
-				xpos	r28
-				ypos	5
-				wide	24
-				tall	24
-				PinCorner	1
+				xpos=r28
+				ypos=5
+				wide=24
+				tall=24
+				PinCorner=1
 			}
 
 			frame_brGrip {
-				xpos	r15
-				ypos	r15
-				wide	14
-				tall	14
-				PinCorner	3
+				xpos=r15
+				ypos=r15
+				wide=14
+				tall=14
+				PinCorner=3
 			}
 		}
 
 		PropertyDialog {
 			sheet {
-				xpos	9
-				ypos	40
-				wide	r9
-				tall	r39
+				xpos=9
+				ypos=40
+				wide=r9
+				tall=r39
 			}
 			// these buttons are still a bit special - if some of them are hidden, they shuffle
 			// across taking the place of other buttons to make sure there aren't gaps
 			ApplyButton {
-				xpos	r101
-				ypos	r39
-				wide	111
-				tall	34
+				xpos=r101
+				ypos=r39
+				wide=111
+				tall=34
 			}
 
 			CancelButton {
-				xpos	r203
-				ypos	r39
-				wide	111
-				tall	34
+				xpos=r203
+				ypos=r39
+				wide=111
+				tall=34
 			}
 
 			OKButton {
-				xpos	r320
-				ypos	r39
-				wide	111
-				tall	34
+				xpos=r320
+				ypos=r39
+				wide=111
+				tall=34
 			}
 		}
 
 		WizardPanel {
 			subpanel {
-				xpos	10
-				ypos	40
-				wide	r10
-				tall	r48
-				AutoResize	3
+				xpos=10
+				ypos=40
+				wide=r10
+				tall=r48
+				AutoResize=3
 			}
 
 			PrevButton {
-				xpos	r306
-				ypos	r39
-				wide	92
-				tall	28
-				PinCorner	3
+				xpos=r306
+				ypos=r39
+				wide=92
+				tall=28
+				PinCorner=3
 			}
 
 			NextButton {
-				xpos	r204
-				ypos	r39
-				wide	92
-				tall	28
-				PinCorner	3
+				xpos=r204
+				ypos=r39
+				wide=92
+				tall=28
+				PinCorner=3
 			}
 
 			CancelButton {
-				xpos	r102
-				ypos	r39
-				wide	92
-				tall	28
-				PinCorner	3
+				xpos=r102
+				ypos=r39
+				wide=92
+				tall=28
+				PinCorner=3
 			}
 
 			FinishButton {
-				xpos	r102
-				ypos	r39
-				wide	92
-				tall	28
-				PinCorner	3
+				xpos=r102
+				ypos=r39
+				wide=92
+				tall=28
+				PinCorner=3
 			}
 		}
 	}
