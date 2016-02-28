@@ -40,7 +40,6 @@ Scheme {
 				ypos	5
 				wide	24
 				tall	24
-				visible 0
 				PinCorner	1
 			}
 
