@@ -11,7 +11,7 @@
 
 		place {
 			control=HelpImage
-			x=142
+			x=122
 			y=188
 			width=max
 			height=max
