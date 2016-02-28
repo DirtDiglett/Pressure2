@@ -5,7 +5,8 @@
 
 		taskbar {
 			textcolor=blue300
-			font-family=heavyfont
+			font-family=mediumfont
+			font-weight=800
 			font-size=18
 			font-size=19 [$OSX]
 			font-style=uppercase
