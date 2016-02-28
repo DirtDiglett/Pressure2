@@ -384,6 +384,7 @@
 
 		ComboBox {
 			textcolor=blue500
+			selectedtextcolor=blue500
 			font-family=mediumfont
 			font-size=16
 			font-size=17 [$OSX]
