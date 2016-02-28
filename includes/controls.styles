@@ -41,6 +41,7 @@
 			font-family=basefont
 			font-size=15
 			font-size=16 [$OSX]
+			font-size=13 [$LINUX]
 			font-weight=400
 			inset-left=23
 
@@ -96,6 +97,7 @@
 			font-family=basefont
 			font-size=15
 			font-size=16 [$OSX]
+			font-size=13 [$LINUX]
 			font-weight=400
 			image="graphics/controls/checkbox/indeterminate"
 		}
