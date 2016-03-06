@@ -71,7 +71,7 @@
 			control=*achievement
 			align=bottom
 			dir=right
-			width=475
+			width=320
 			height=64
 			spacing=15
 		}		
