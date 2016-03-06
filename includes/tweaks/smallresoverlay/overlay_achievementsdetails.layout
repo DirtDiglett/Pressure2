@@ -1,0 +1,79 @@
+"resource/layout/overlay_achievementsdetails.layout" {
+	styles {
+		detailsboxtitle {
+			render_bg {}
+		}
+
+		button {
+			render_bg {}
+		}
+		
+		highlight {
+			textcolor=white
+			font-family=mediumfont
+			font-size=28
+			font-size=29 [$OSX]
+		}
+
+		progressbackground {
+			bgcolor=none
+
+			render_bg {
+				 0="fill(x0,y0,x1,y1, lime500transparent)"
+			}
+		}
+
+		progressbarimage {
+			bgcolor=lime500
+
+			render_bg {}
+		}
+	}
+	
+	layout {		
+		place {
+			control=TitleText
+			height=0
+		}
+
+		place {
+			controls=ProgressTextEarned
+			dir=down
+			spacing=4
+		}
+
+		place {
+			control=ViewAchievementsButton
+			start=ProgressTextEarned
+			dir=down
+			margin-left=-4
+		}
+		
+		place {
+			control=progressbackground
+			start=viewachievementsbutton
+			dir=down
+			y=15
+			width=475
+			height=5
+		}
+
+		place { 
+			control=progressbarimage
+			start=viewachievementsbutton
+			dir=down
+			y=15
+			width=475
+			height=5
+		}
+
+		place {
+			control=*achievement
+			align=bottom
+			dir=right
+			width=320
+			height=64
+			spacing=15
+		}		
+	}
+}

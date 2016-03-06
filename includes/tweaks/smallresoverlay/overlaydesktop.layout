@@ -1,0 +1,117 @@
+"resource/layout/overlaydesktop.layout" {
+	styles {		
+		sidemenu {}
+		
+		topbar {
+			textcolor=text_onDarkBG
+			font-family=mediumfont
+			font-weight=800
+			font-size=30
+			font-size=31 [$OSX]
+			font-weight=400
+		}
+		
+		clocksuffix {
+			textcolor=text_onDarkBG
+			font-family=mediumfont
+			font-weight=800
+			font-size=30
+			font-size=31 [$OSX]
+			font-weight=400
+			font-style=uppercase
+		}
+		
+		timeStrings {
+			textcolor=disabled_OnDarkBG
+			font-family=basefont
+			font-size=18
+			font-size=19 [$OSX]
+			font-weight=400
+		}
+	}
+	
+	layout {
+		place {
+			controls=GameGroupsButton,ChatRoomButton,DLCButton,GuideButton,LegacyCDKeyButton,WebSiteButton,RecommendButton,WorkshopButton,NewsDetailPanel
+			height=0
+		}
+
+		region {
+			name=overlay
+			align=top-center
+			width=max
+			margin-left=15
+			margin-top=8
+			margin-right=15
+			margin-bottom=15
+		}
+
+		region {
+			name=buttonsarea
+			region=overlay
+			y=144
+			width=560
+			height=max
+//			margin-bottom=240
+		}
+
+		region {
+			name=broadcastarea
+			region=overlay
+			align=top-center
+			y=100
+			width=420
+			height=max
+		}
+
+		place {
+			controls=BroadcastDetailPanel
+			region=broadcastarea
+			align=bottom
+			width=420
+			height=180
+		}
+		
+		place {
+			control=CommunityHubDetailPanel,GuidesDetailPanel,CommunityDiscussionsDetailPanel,ScreenshotsDetailPanel
+			height=44
+		}
+
+		place {
+			control=FriendsDetailPanel
+			height=117 // 44 + 44 + 29, This accounts for it being Friends + Players buttons, and the 29 spacing used for the other controls.
+		}
+
+		place {
+			control=CommunityHubDetailPanel,GuidesDetailPanel,CommunityDiscussionsDetailPanel,ScreenshotsDetailPanel,FriendsDetailPanel
+			region=buttonsarea
+			align=left-center
+			dir=down
+			width=max
+			spacing=29
+		}
+
+		place {
+			control=Clock,ClockSuffix
+			region=overlay
+			align=top-center
+		}
+
+		place {
+			control=SessionText,TwoWeeksText,ForeverText
+			region=overlay
+			dir=down
+			y=43
+			spacing=3
+		}
+
+		place {
+			control=AchievementsDetailPanel
+			region=overlay
+			align=bottom
+			dir=down
+			width=max
+			height=161
+		}
+	}
+}

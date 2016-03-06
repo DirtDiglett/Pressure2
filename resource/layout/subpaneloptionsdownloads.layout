@@ -161,7 +161,7 @@
 		}
 
 		place {
-			control=AllowDownloadsDuringGameplayCheckbox,ThrottleDownloadsWhileStreamingCheckbox
+			control=AllowDownloadsDuringGameplayCheckbox,ThrottleDownloadsWhileStreamingCheckbox,DownloadRatesinBitsCheckbox
 			start=AutoUpdateTimeRestrictStart
 			dir=down
 			y=18

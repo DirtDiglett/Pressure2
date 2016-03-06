@@ -15,6 +15,15 @@
 			font-weight=600
 			font-style=normal
 		}
+
+		bigtextNonUpper {
+			textcolor=text_onDarkBG
+			font-family=basefont
+			font-size=18
+			font-size=19 [$OSX]
+			font-weight=600
+			font-style=normal
+		}
 		
 		bigtextlabel {
 			textcolor=secondarytext_onDarkBG

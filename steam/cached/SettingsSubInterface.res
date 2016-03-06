@@ -138,12 +138,20 @@
 		}
 
 		place {
-			control=UrlBarCheck,NotifyAvailableGamesCheck
+			control=UrlBarCheck
 			start=LanguageCombo
 			dir=down
 			y=8
 			height=18
 			spacing=8
+		}
+
+		place {
+			control=NotifyAvailableGamesCheck
+			start=URLBarCheck
+			dir=down
+			y=8
+			height=36
 		}
 	}
 }
