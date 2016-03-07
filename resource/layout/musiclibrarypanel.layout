@@ -8,6 +8,10 @@
 				0="image_tiled(x0,y0+34,x1,y0+38, graphics/material/shadows/top)"
 				1="image_tiled(x0,y0+79,x1,y0+83, graphics/material/shadows/top)"
 			}
+
+			render_bg {
+				0="fill(x0,y0+34,x1,y0+79, customgreysecondary)"
+			}
 		}
 			
 		LibrarySearch {
@@ -21,9 +25,7 @@
 			inset-top=0
 			padding-left=0
 			
-			render {
-				0="fill(x0-40,y1-1,x1,y1, dividers_onLightBG)"
-			}
+			render {}
 		}
 		
 			LibrarySearch:selected {}
@@ -53,7 +55,6 @@
 			render_bg {
 				-1="fill(x1,y0,x1+10,y1, custombackgroundprimary)"
 				0="image(x0+14,y0+13,x1,y1, graphics/icons/search/standard)"
-				1="fill(x0,y1-1,x1+25,y1, dividers_onLightBG)"
 			}
 		}
 		
@@ -165,7 +166,7 @@
 
 		place {
 			control=library_search
-			width=261
+			width=269
 			width=254 [$LINUX]
 		}
 		
@@ -175,11 +176,20 @@
 		}
 		
 		place {
-			control=label_search_icon,library_search,library_filters,library_music_menu
+			control=label_search_icon,library_search
 			region=subnav
 			align=left
 			height=max
 			spacing=8
+		}
+
+		place {
+			control=library_filters,library_music_menu
+			region=subnav
+			align=left
+			start=library_search
+			dir=right
+			height=max
 		}
 
 		place {
