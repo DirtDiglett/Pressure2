@@ -16,13 +16,13 @@
 			}
 		}
 	}
-	
+
 	layout {
 		place {
 			control=ManageInstalledappsLabel,RegionInfoLabel,AllowDownloadsDuringGameplayInfo,ThrottleDownloadsWhileStreamingInfo,RestrictionsLabel
 			height=0
 		}
-		
+
 		region {
 			name=contentlibrary
 			x=82
@@ -161,11 +161,11 @@
 		}
 
 		place {
-			control=AllowDownloadsDuringGameplayCheckbox,ThrottleDownloadsWhileStreamingCheckbox,DownloadRatesinBitsCheckbox
+			control=AllowDownloadsDuringGameplayCheckbox,ThrottleDownloadsWhileStreamingCheckbox,DownloadRatesInBitsCheckbox
 			start=AutoUpdateTimeRestrictStart
 			dir=down
 			y=18
-			height=18			
+			height=18
 			spacing=18
 		}
 	}
