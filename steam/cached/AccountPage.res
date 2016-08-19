@@ -106,13 +106,13 @@
 		}
 
 		place {
-			control=Label2,VACStatusLabel
+			control=Label2,VACStatusLabel,VACInfoLink
 			region=vac
 			dir=down
 			y=28
 			spacing=2
 		}
-		
+				
 		region {
 			name=security
 			x=82

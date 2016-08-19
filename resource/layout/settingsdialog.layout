@@ -1,7 +1,7 @@
 "resource/layout/settingsdialog.layout" {
 	styles {
 		CDialogSettings {
-			minimum-width=740
+			minimum-width=780
 			minimum-height=609
 			
 			render {
