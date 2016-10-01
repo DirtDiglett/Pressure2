@@ -96,5 +96,13 @@
 			height=34
 			spacing=4
 		}
+		
+		place {
+			control=FamilySharingUnsupportedLabel
+			region=page
+			start=CreateDesktopShortcutButton
+			dir=down
+			y=20					
+		}
 	}
 }
