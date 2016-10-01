@@ -10,9 +10,9 @@
 
 		CSubPanelOptionsDownloads {
 			render_bg {
-				0="image(x0+26,y0+27,x1,y1, graphics/icons/settings/libraries)"
-				1="image(x0+26,y0+119,x1,y1, graphics/icons/settings/webbrowser)"
-				2="image(x0+26,y0+211,x1,y1, graphics/icons/settings/downloads)"
+				0="image(x0+26,y0+17,x1,y1, graphics/icons/settings/libraries)"
+				1="image(x0+26,y0+109,x1,y1, graphics/icons/settings/webbrowser)"
+				2="image(x0+26,y0+191,x1,y1, graphics/icons/settings/downloads)"
 			}
 		}
 	}
@@ -53,7 +53,7 @@
 			control=Divider1
 			align=left
 			x=71
-			y=100
+			y=90
 			width=max
 			height=1
 		}
@@ -61,7 +61,7 @@
 		region {
 			name=regions
 			x=82
-			y=92
+			y=82
 			width=max
 			height=114
 			margin-right=29
@@ -88,7 +88,7 @@
 			control=Divider2
 			align=left
 			x=71
-			y=192
+			y=172
 			width=max
 			height=1
 		}
@@ -96,7 +96,7 @@
 		region {
 			name=restrictions
 			x=82
-			y=183
+			y=163
 			height=114
 			width=max
 			margin-right=29
@@ -122,7 +122,7 @@
 			control=AutoUpdateTimeRestrictCheckbox
 			start=ThrottleRates
 			dir=down
-			y=18
+			y=8
 			height=18
 		}
 
@@ -164,9 +164,33 @@
 			control=AllowDownloadsDuringGameplayCheckbox,ThrottleDownloadsWhileStreamingCheckbox,DownloadRatesInBitsCheckbox
 			start=AutoUpdateTimeRestrictStart
 			dir=down
-			y=18
+			y=8
 			height=18
-			spacing=18
+			spacing=6
 		}
+		place {
+			control=Divider3
+			align=left
+			x=71
+			y=420
+			width=max
+			height=1
+		}
+		place {
+			control=FlushDownloadConfig
+			start=Divider3
+			dir=down
+			y=4
+			width=350
+			height=35
+		}
+		place {
+			control=FlushDownloadConfigLabel
+			start=FlushDownloadConfig
+			dir=down
+			y=4
+			height=18
+		}
+
 	}
 }
