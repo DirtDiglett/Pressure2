@@ -11,12 +11,12 @@
 		Highlight {
 			textcolor=secondaryText_onLightBG
 		}
-		
+
 		CloudUsageLabelStyle:disabled {
 			textcolor=disabled_onLightBG
 		}
 	}
-	
+
 	layout {
 		region {
 			name=page
@@ -40,7 +40,7 @@
 			start=AutoUpdatesLabel
 			dir=down
 			y=4
-			width=350
+			width=470
 			height=34
 		}
 
@@ -79,7 +79,7 @@
 			start=BackgroundDownloadsLabel
 			dir=down
 			y=4
-			width=350
+			width=470
 			height=34
 		}
 
