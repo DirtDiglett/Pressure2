@@ -34,10 +34,10 @@
 			control=EnableCloudCheck,EnableScreenshotsCheck
 			start=SteamCloudInfo
 			dir=down
-			y=4
+			y=6
 			width=max
 			height=18
-			spacing=18
+			spacing=10
 		}
 	}
 }

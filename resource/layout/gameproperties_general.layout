@@ -24,7 +24,7 @@
 				}
 			}
 	}
-	
+
 	layout {
 		place {
 			control=ExternalSignupLabel,ExternalSignupButton
@@ -65,7 +65,7 @@
 			y=18
 			spacing=4
 		}
-		
+
 		place {
 			control=Divider1
 			start=NoManualLabel
@@ -75,26 +75,34 @@
 			width=max
 			height=1
 		}
-		
+
 		place {
-			control=EnableOverlayCheck
+			control=EnableOverlayCheck,EnableDesktopGameTheater
 			region=page
 			start=divider1
 			dir=down
 			x=11
 			y=18
 			height=18
-			spacing=2
+			spacing=18
 		}
 
 		place {
 			control=LaunchOptionsButton,CreateDesktopShortcutButton
-			start=EnableOverlayCheck
+			start=EnableDesktopGameTheater
 			dir=down
 			y=8
 			width=350
 			height=34
 			spacing=4
+		}
+		
+		place {
+			control=FamilySharingUnsupportedLabel
+			region=page
+			start=CreateDesktopShortcutButton
+			dir=down
+			y=20					
 		}
 	}
 }

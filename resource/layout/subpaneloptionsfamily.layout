@@ -8,13 +8,8 @@
 			font-style=normal
 		}
 	}
-	
+
 	layout {
-		place {
-			control=FamilySharingTextState
-			height=0
-		}
-		
 		region {
 			name=page
 			x=24
@@ -24,86 +19,89 @@
 			margin-right=24
 		}
 
+    place {
+      controls="FamilyOptionsTitle"
+      region=page
+      dir=down
+    }
 		place {
-			controls=FamilySharingTitle
-			region=page
-		}
+      controls="FamilyOptionsText"
+      start=FamilyOptionsTitle
+      y=8
+      width=490
+      dir=down
+    }
+		place {
+      controls="ManageOptionsLabel"
+      start=FamilyOptionsText
+      y=5
+      width=235
+      height=24
+      dir=down
+    }
 
 		place {
-			control=BorrowersLabel
-			region=page
-			start=FamilySharingTitle
-			dir=down
-			y=7
-			width=max
-		}
+      controls="Divider1"
+      start=ManageOptionsLabel
+      dir=down
+      y=16
+      width=max
+    }
+		place {
+      controls="FamilySharingTitle"
+      start=Divider1
+      dir=down
+      y=16
+    }
 
 		place {
-			control=BorrowersList
-			region=page
-			start=BorrowersLabel
-			dir=down
-			y=7
-			width=max
-			height=125
-		}
+      controls="FamilySharingInfoText"
+      start=FamilySharingTitle
+      y=8
+      width=490
+      dir=down
+    }
+		place {
+      controls="AuthorizedDeviceCheck"
+      y=13
+      x=10
+      width=300
+      height=24
+      start=FamilySharingInfoText
+      dir=down
+    }
+		place {
+      controls="ManageSharingLabel"
+      y=13
+      width=235
+      height=24
+      margin-left=320
+      start=FamilySharingInfoText
+      dir=down
+    }
 
 		place {
-			control=ShowNotificationsCheck
-			start=BorrowersList
-			dir=down
-			y=7
-			width=max
-			height=18
-		}
-
+      controls="BorrowersLabel"
+      start=FamilySharingInfoText
+      y=44
+      width=490
+      dir=down
+    }
 		place {
-			controls=AuthorizeDeviceButton,DeauthorizeDeviceButton,ManageSharingButton
-			region=page
-			start=ShowNotificationsCheck
-			dir=down
-			y=4
-			width=350
-			height=34
-			spacing=4
-		}
-
+      controls="BorrowersList"
+      region=page
+      start=BorrowersLabel
+      width=max
+      height=125
+      y=6
+      dir=down
+    }
 		place {
-			controls=Divider1
-			start=ManageSharingButton
-			dir=down
-			x=46
-			y=19
-			width=max
-		}
-
-		place {
-			controls=FamilyOptionsTitle
-			region=page
-			start=Divider1
-			dir=down
-			x=-56
-			y=19
-		}
-
-		place {
-			control=FamilyOptionsText
-			region=page
-			start=FamilyOptionsTitle
-			width=max
-			dir=down
-			y=7
-		}
-
-		place {
-			controls=ManageOptionsButton
-			region=page
-			start=FamilyOptionsText
-			dir=down
-			y=4
-			width=350
-			height=34
-			spacing=4
-		}
+      controls="ShowNotificationsCheck"
+      start=BorrowersList
+      y=10
+      x=10
+      dir=down
+    }
 	}
 }

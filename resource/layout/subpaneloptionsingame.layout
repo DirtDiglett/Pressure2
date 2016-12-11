@@ -3,16 +3,16 @@
 		CSettingsSubInGame {
 			render {
 				0="fill(x0+70,y0+28,x0+396,y0+47, custombackgroundnofocustransparent)"
-				1="fill(x0+70,y0+166,x0+285,y0+184, custombackgroundnofocustransparent)"
+				1="fill(x0+70,y0+179,x0+285,y0+197, custombackgroundnofocustransparent)"
 				2="fill(x0+70,y0+321,x0+396,y0+339, custombackgroundnofocustransparent)"
 				3="fill(x0+70,y0+436,x0+396,y0+454, custombackgroundnofocustransparent)"
 			}
 			render_bg {
-				0="fill(x0+71,y0+151,x1,y0+152, dividers_onLightBG)"
+				0="fill(x0+71,y0+168,x1,y0+169, dividers_onLightBG)"
 				1="fill(x0+71,y0+302,x1,y0+303, dividers_onLightBG)"
 				2="fill(x0+71,y0+418,x1,y0+419, dividers_onLightBG)"
 				3="image(x0+26,y0+27,x1,y1, graphics/icons/settings/overlay)"
-				4="image(x0+26,y0+166,x1,y1, graphics/icons/settings/screenshots)"
+				4="image(x0+26,y0+179,x1,y1, graphics/icons/settings/screenshots)"
 				5="image(x0+26,y0+320,x1,y1, graphics/icons/settings/fps)"
 				6="image(x0+26,y0+436,x1,y1, graphics/icons/settings/server)"
 			}
@@ -50,19 +50,19 @@
 				}
 			}
 	}
-	
+
 	layout {
 		place {
 			control=PingRateInfo,DescriptionLabel,TitleLabel,Divider1
 			height=0
 		}
-		
+
 		region {
 			name=shortcut
 			x=82
 			y=0
 			width=max
-			height=125			
+			height=125
 			margin-right=29
 		}
 
@@ -84,7 +84,7 @@
 		}
 
 		place {
-			control=EnableOverlayCheck,EnableSCTenfootOverlayCheck
+			control=EnableOverlayCheck,EnableSCTenfootOverlayCheck,EnableVRDesktopGameTheaterCheck
 			start=HotKeySelector
 			dir=down
 			y=4
@@ -96,7 +96,7 @@
 		region {
 			name=screenshot
 			x=82
-			y=139
+			y=152
 			y=113 [$OSX&&$LINUX]
 			width=max
 			height=150
@@ -144,7 +144,7 @@
 			dir=down
 			y=9
 			height=18
-			spacing=18
+			spacing=14
 		}
 
 		region {
@@ -209,6 +209,6 @@
 			y=4
 			width=185
 			height=34
-		}			
+		}
 	}
 }

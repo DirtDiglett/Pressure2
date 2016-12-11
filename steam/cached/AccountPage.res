@@ -11,7 +11,7 @@
 			render_bg {
 				0="fill(x0+71,y0+113,x1,y0+114, dividers_onLightBG)"
 				1="fill(x0+71,y0+213,x1,y0+214, dividers_onLightBG)"
-				2="fill(x0+71,y0+276,x1,y0+277, dividers_onLightBG)"
+				2="fill(x0+71,y0+278,x1,y0+279, dividers_onLightBG)"
 				3="image(x0+26,y0+27,x1,y1, graphics/icons/settings/account)"
 				4="image(x0+26,y0+127,x1,y1, graphics/icons/settings/email)"
 				5="image(x0+26,y0+227,x1,y1, graphics/icons/settings/vac)"
@@ -106,13 +106,13 @@
 		}
 
 		place {
-			control=Label2,VACStatusLabel
+			control=Label2,VACStatusLabel,VACInfoLink
 			region=vac
 			dir=down
 			y=28
 			spacing=2
 		}
-		
+
 		region {
 			name=security
 			x=82
@@ -134,7 +134,7 @@
 			control=NoPersonalInfoCheck
 			start=SecurityStatusState
 			dir=down
-			y=4
+			y=7
 			width=max
 			height=18
 		}
@@ -143,14 +143,14 @@
 			control=ManageSecurityButton
 			start=NoPersonalInfoCheck
 			dir=down
-			y=4
+			y=3
 			width=350
 			height=34
 		}
 
 		place {
 			control=Divider1
-			y=404
+			y=406
 			width=max
 			height=1
 		}

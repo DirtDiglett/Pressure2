@@ -40,7 +40,6 @@
 			width=max
 			height=max
 			margin-right=12
-			margin-bottom=12
 		}
 	}
 }

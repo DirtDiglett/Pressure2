@@ -2,7 +2,7 @@
 	Steam [!$OSX] {
 		text="#steam_menu_file"
 		SkinVersion {
-			text="Pressure² (1.0)"
+			text="Pressure² (1.0.1)"
 			shellcmd="steam://url/GroupSteamIDPage/103582791435510416"
 		}
 		About {
@@ -395,7 +395,7 @@
 		}
 		Divider {}
 		SkinVersion {
-			text="Pressure² (1.0)"
+			text="Pressure² (1.0.1)"
 			shellcmd="steam://url/GroupSteamIDPage/103582791435510416"
 		}
 	}

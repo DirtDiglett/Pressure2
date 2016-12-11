@@ -57,5 +57,13 @@
 			width=350
 			height=34
 		}
+		place {
+			control=ClearWebCacheButton
+			start=ClearAllCookiesButton
+			dir=down
+			y=4
+			width=350
+			height=34
+		}
 	}
 }
