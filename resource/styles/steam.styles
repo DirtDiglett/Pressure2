@@ -1204,7 +1204,7 @@ steam.styles {
 
 		friends_chat_name_golden {
 			selectedbgcolor=blue500
-			textcolor=orange500
+			textcolor="255 215 0 255"
 			selectedtextcolor=white
 			font-size=17
 			font-size=18 [$OSX]
@@ -1279,11 +1279,11 @@ steam.styles {
 			}
 
 		friends_golden {
-			textcolor=amber500
+			textcolor="255 215 0 255"
 		}
 			
 			friends_golden:hover {
-				textcolor=amber300
+				textcolor="255 225 65 255"
 			}
 		
 		friends_ignored {
