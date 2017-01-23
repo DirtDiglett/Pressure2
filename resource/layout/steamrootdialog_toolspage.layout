@@ -41,8 +41,8 @@
 			}
 
 		ListPanelSectionHeader {
-			bgcolor=grey900
-			textcolor=customgreysecondary			
+			bgcolor=grey800
+			textcolor=text_onDarkBG			
 			font-weight=600
 			font-style=uppercase
 			minimum-height=47
@@ -62,6 +62,8 @@
 			image=graphics/icons/dropdown/padder
 			padding-left=8
 			padding-right=8
+			bgcolor=grey800
+			
 			render {}
 			render_bg {
 				0="fill(x0,y0-1,x1,y0, dividers_onDarkBG_solid)"
