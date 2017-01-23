@@ -9,11 +9,11 @@
 		}
 
 		Highlight {
-			textcolor=secondaryText_onLightBG
+			textcolor=secondaryText_onDarkBG
 		}
 
 		CloudUsageLabelStyle:disabled {
-			textcolor=disabled_onLightBG
+			textcolor=disabled_onDarkBG
 		}
 	}
 

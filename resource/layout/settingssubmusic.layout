@@ -12,15 +12,15 @@
 			inset-top=-2
 
 			render {
-				0="fill(x0,y0,x0+1,y1-1, dividers_OnLightBG)"
-				1="fill(x0,y0,x1,y0+1, dividers_OnLightBG)"
-				2="fill(x1-1,y0,x1,y1-1, dividers_OnLightBG)"
-				3="fill(x0, y1-1, x1, y1, dividers_OnLightBG)"
+				0="fill(x0,y0,x0+1,y1-1, dividers_onDarkBG)"
+				1="fill(x0,y0,x1,y0+1, dividers_onDarkBG)"
+				2="fill(x1-1,y0,x1,y1-1, dividers_onDarkBG)"
+				3="fill(x0, y1-1, x1, y1, dividers_onDarkBG)"
 			}
 		}
 
 		Headertext {
-			textcolor=secondaryText_onLightBG
+			textcolor=secondaryText_onDarkBG
 		}
 	}
 	

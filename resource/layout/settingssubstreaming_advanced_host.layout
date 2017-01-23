@@ -5,10 +5,10 @@
 			minimum-height=200
 
 			render {
-				0="fill(x0,y1-58,x1,y1-57, dividers_onLightBG)"
+				0="fill(x0,y1-58,x1,y1-57, dividers_onDarkBG)"
 			}
 			render_bg {
-				0="fill(x0+71,y0+136,x1,y0+137, dividers_onLightBG)"
+				0="fill(x0+71,y0+136,x1,y0+137, dividers_onDarkBG)"
 				1="image(x0+26,y0+61,x1,y1, graphics/icons/settings/hardware)"
 				2="image(x0+26,y0+155,x1,y1, graphics/icons/settings/router)"
 			}

@@ -8,12 +8,12 @@
 	styles {
 		nonsteamdetails { 
 			render_bg {
-				0="fill(x0-20,y0-15,x1,y0-14, dividers_onLightBG)"
+				0="fill(x0-20,y0-15,x1,y0-14, dividers_onDarkBG)"
 			}
 		}
 
 		bodycontent {
-			textcolor=text_onLightBG
+			textcolor=text_onDarkBG
 			font-size=16
 			font-size=17 [$OSX]
 

@@ -12,21 +12,21 @@
 
 	styles {
 		title_label {
-			textcolor=text_onLightBG
+			textcolor=text_onDarkBG
 			font-family=mediumfont
 			font-size=18
 			font-size=19 [$OSX]
 		}
 
 		date_and_author {
-			textcolor=secondaryText_OnLightBG
+			textcolor=secondaryText_onDarkBG
 			font-size=16
 			font-size=17 [$OSX]
 		}
 
 		newsitem_body {
 			selectedbgcolor=blue500	
-			textcolor=text_onLightBG
+			textcolor=text_onDarkBG
 			selectedtextcolor=white
 			font-family=basefont
 			font-size=16
@@ -50,7 +50,7 @@
 		
 		"newsitem_body bold" {
 			selectedbgcolor=blue500
-			textcolor=text_onLightBG
+			textcolor=text_onDarkBG
 			selectedtextcolor=white
 			font-weight=600
 		}

@@ -1,11 +1,11 @@
 "resource/layout/subpaneloptionsdownloads.layout" {
 	styles {
 		highlight {
-			textcolor=secondaryText_onLightBG
+			textcolor=secondaryText_onDarkBG
 		}
 
 		label {
-			textcolor=secondaryText_onLightBG
+			textcolor=secondaryText_onDarkBG
 		}
 
 		CSubPanelOptionsDownloads {

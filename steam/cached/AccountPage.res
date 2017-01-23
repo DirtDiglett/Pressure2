@@ -9,9 +9,9 @@
 				4="fill(x0+70,y0+426,x0+396,y0+451, custombackgroundnofocustransparent)"
 			}
 			render_bg {
-				0="fill(x0+71,y0+113,x1,y0+114, dividers_onLightBG)"
-				1="fill(x0+71,y0+213,x1,y0+214, dividers_onLightBG)"
-				2="fill(x0+71,y0+278,x1,y0+279, dividers_onLightBG)"
+				0="fill(x0+71,y0+113,x1,y0+114, dividers_onDarkBG)"
+				1="fill(x0+71,y0+213,x1,y0+214, dividers_onDarkBG)"
+				2="fill(x0+71,y0+278,x1,y0+279, dividers_onDarkBG)"
 				3="image(x0+26,y0+27,x1,y1, graphics/icons/settings/account)"
 				4="image(x0+26,y0+127,x1,y1, graphics/icons/settings/email)"
 				5="image(x0+26,y0+227,x1,y1, graphics/icons/settings/vac)"

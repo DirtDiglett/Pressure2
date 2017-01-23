@@ -7,7 +7,7 @@
 			minimum-height=139
 			
 			render_bg {
-				0="fill(x0,y0-1, x1, y0, dividers_onLightBG)"
+				0="fill(x0,y0-1, x1, y0, dividers_onDarkBG)"
 			}
 		}
 		
@@ -64,27 +64,27 @@
 			}
 
 		ModuleHeading {
-			textcolor=text_onLightBG
+			textcolor=text_onDarkBG
 			font-size=24
 			font-size=25 [$OSX]
 			font-weight=600
 		}	
 
 		label {
-			textcolor=secondaryText_onLightBG
+			textcolor=secondaryText_onDarkBG
 			font-size=18
 			font-size=19 [$OSX]
 		}
 
 		label2 {
-			textcolor=secondaryText_onLightBG
+			textcolor=secondaryText_onDarkBG
 			font-family=mediumfont
 			font-size=17
 			font-size=18 [$OSX]
 		}
 
 		label3 {
-			textcolor=secondaryText_onLightBG
+			textcolor=secondaryText_onDarkBG
 			font-size=18
 			font-size=19 [$OSX]
 			font-style=normal

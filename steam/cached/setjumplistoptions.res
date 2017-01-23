@@ -4,7 +4,7 @@
 			minimum-width=543
 
 			render {
-				0="fill(x0,y1-58,x1,y1-57, dividers_onLightBG)"
+				0="fill(x0,y1-58,x1,y1-57, dividers_onDarkBG)"
 			}
 		}
 	}

@@ -18,7 +18,7 @@
 		}
 
 		RichText {
-			textcolor=disabled_onLightBG
+			textcolor=disabled_onDarkBG
 		}
 	}
 

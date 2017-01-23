@@ -8,7 +8,7 @@
 	styles {
 		screenshotsdetails { 
 			render_bg {
-				1="fill(x0-20,y0-15,x1,y0-14, dividers_onLightBG)"
+				1="fill(x0-20,y0-15,x1,y0-14, dividers_onDarkBG)"
 			}
 		}
 	}

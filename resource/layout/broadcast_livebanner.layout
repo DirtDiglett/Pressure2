@@ -12,13 +12,13 @@
 		
 		LiveBannerStyleIngame {   
 			render_bg { 
-				0="fill(x0, y0, x1, y1, secondaryText_onLightBG)"
+				0="fill(x0, y0, x1, y1, secondaryText_onDarkBG)"
 			}
 		}
 		
 		LiveBannerStyleDesktop {   
 			render_bg {
-				0="fill(x0, y0, x1, y1, secondaryText_onLightBG)"
+				0="fill(x0, y0, x1, y1, secondaryText_onDarkBG)"
 			}
 		}
 	}

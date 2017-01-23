@@ -232,7 +232,7 @@
 		
 		inboxmenuitem {
 			bgcolor=none
-			textcolor=disabled_onLightBG
+			textcolor=disabled_onDarkBG
 			font-family=basefont
 			font-size=16
 			font-size=17 [$OSX]
@@ -250,7 +250,7 @@
 		
 		inboxmenuitem_active {
 			bgcolor=none
-			textcolor=text_OnLightBG
+			textcolor=text_onDarkBG
 			font-family=basefont
 			font-size=16
 			font-size=17 [$OSX]

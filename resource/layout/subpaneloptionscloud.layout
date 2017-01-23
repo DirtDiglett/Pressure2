@@ -7,7 +7,7 @@
 		}
 
 		label {
-			textcolor=secondaryText_onLightBG
+			textcolor=secondaryText_onDarkBG
 		}
 	}
 	

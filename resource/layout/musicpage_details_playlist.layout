@@ -11,21 +11,21 @@
 		}
 		
 		PlaylistTitleStyle {
-			textcolor=text_onLightBG
+			textcolor=text_onDarkBG
 			font-size=30
 			font-size=31 [$OSX]
 			font-style=normal
 		}
 
 		TracksInfoLabelStyle {
-			textcolor=secondaryText_onLightBG
+			textcolor=secondaryText_onDarkBG
 			font-size=17
 			font-size=18 [$OSX]
 		}
 		
 		CoverStyle {
 			render_bg {
-				-1="fill(x0,y1-1,x1+9999,y1, dividers_onLightBG)"
+				-1="fill(x0,y1-1,x1+9999,y1, dividers_onDarkBG)"
 				0="image(x0,y0,x1,y1, graphics/music_placeholder)"
 			}
 		}

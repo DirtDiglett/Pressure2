@@ -5,8 +5,8 @@
 			minimum-height=380
 
 			render {
-				0="fill(x0,y1-58,x1,y1-57, dividers_onLightBG)"
-				1="fill(x0+70,y0+139,x1,y0+140, dividers_onLightBG)"
+				0="fill(x0,y1-58,x1,y1-57, dividers_onDarkBG)"
+				1="fill(x0+70,y0+139,x1,y0+140, dividers_onDarkBG)"
 			}
 			render_bg {
 				0="image(x0+30,y0+64,x1,y1, graphics/icons/upload/upload)"
@@ -28,7 +28,7 @@
 			textcolor=red500
 
 			render_bg {
-				0="fill( x0, y0, x1, y1, disabled_onLightBG )"
+				0="fill( x0, y0, x1, y1, disabled_onDarkBG)"
 			}
 		}
 	}

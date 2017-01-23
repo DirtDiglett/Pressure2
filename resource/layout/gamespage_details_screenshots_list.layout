@@ -13,7 +13,7 @@
 
 	styles {
 		infolabel {
-			textcolor=text_onLightBG
+			textcolor=text_onDarkBG
 			font-size=18
 			font-size=19 [$OSX]
 		}

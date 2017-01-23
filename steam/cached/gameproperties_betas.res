@@ -6,7 +6,7 @@
 				1="fill(x0+70,y0+121,x1,y0+146, custombackgroundnofocustransparent)"
 			}
 			render_bg {
-				0="fill(x0+71,y0+110,x1,y0+111, dividers_onLightBG)"
+				0="fill(x0+71,y0+110,x1,y0+111, dividers_onDarkBG)"
 				1="image(x0+26,y0+37,x1,y1, graphics/icons/beta/beta)"
 				2="image(x0+26,y0+127,x1,y1, graphics/icons/key/key)"
 			}

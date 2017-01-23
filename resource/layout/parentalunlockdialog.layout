@@ -7,7 +7,7 @@
 			minimum-height=286
 
 			render {
-				0="fill(x0,y1-58,x1,y1-57, dividers_onLightBG)"
+				0="fill(x0,y1-58,x1,y1-57, dividers_onDarkBG)"
 			}
 		}
 
@@ -18,7 +18,7 @@
 		}
 
 		Hey {
-			textcolor=text_onLightBG
+			textcolor=text_onDarkBG
 			font-family=mediumfont
 			font-size=15
 			font-size=16 [$OSX]

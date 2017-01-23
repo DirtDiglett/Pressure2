@@ -5,8 +5,8 @@
 		customgreyaccent = "67 67 67 255"
 		customgreysecondary = "41 41 41 255"
 
-		custombackgroundprimary = "252 252 252 255"
-		custombackgroundnofocus = "232 232 232 255"
+		custombackgroundprimary = "48 48 48 255"
+		custombackgroundnofocus = "52 52 52 255"
 
 		black = "0 0 0 255"
 		text_OnLightBG = "0 0 0 222" // 87% Opacity of black.
@@ -15,11 +15,13 @@
 		dividers_OnLightBG = "0 0 0 31" // ~12% Opacity
 		dividers_onLightBG_solid = "235 235 235 255" // Due to the way certain elements have to overlap, I cannot use dividers_onLightBG here with opacity.
 
+
 		white = "255 255 255 255"
 		text_OnDarkBG = "255 255 255 255" // 100% Opacity of white.
 		secondaryText_OnDarkBG = "255 255 255 179" // ~70% Opacity
-		disabled_OnDarkBG = "255 255 255 77" // ~30% Opacity
+		disabled_OnDarkBG = "255 255 255 127" // ~50% Opacity
 		dividers_OnDarkBG = "255 255 255 31" // ~12% Opacity
+		dividers_onDarkBG_solid = "73 73 73 255"
 
 		red500 = "244 67 54 255"
 		red50 = "255 235 238 255"
@@ -167,8 +169,8 @@
 		grey100transparent = "245 245 245 54"
 		grey100lesstransparent = "245 245 245 128"
 		blue500transparent = "33 150 243 66"
-		custombackgroundprimarytransparent = "252 252 252 85" // ~33% Opacity. Used as an overlay to cheat a 54% opacity text.
-		custombackgroundnofocustransparent = "232 232 232 85" // ~33% Opacity.
+		custombackgroundprimarytransparent = "48 48 48 85" // ~33% Opacity. Used as an overlay to cheat a 54% opacity text.
+		custombackgroundnofocustransparent = "52 52 52 85" // ~33% Opacity.
 
 		workshopblue = "27 40 56 255"
 		notificationbg = "custombackgroundprimary"
@@ -193,8 +195,8 @@
 		ListPanel.SelectedBgColor = "blue500"
 		ListPanel.SelectedOutOfFocusBgColor = "blue800"
 		ListPanel.DisabledTextColor = "text_onDarkBG"
-		ListPanel.DisabledSelectedTextColor = "disabled_onLightBG"
-		ListPanel.EmptyListInfoTextColor = "text_onLightBG"
+		ListPanel.DisabledSelectedTextColor = "disabled_onDarkBG"
+		ListPanel.EmptyListInfoTextColor = "text_onDarkBG"
 
 		PropertySheet.FlashTabColor = "orange500"
 
@@ -202,8 +204,8 @@
 		DragDrop.DropFrame = "none"
 		WizardPanel.HeaderBGColor = "green500"
 		ChatDialog.URLColor = "blue500"
-		ChatOwnTextColor = "text_onLightBG"
-		ChatDialog.HistoryColor = "disabled_onLightBG"
+		ChatOwnTextColor = "text_onDarkBG"
+		ChatDialog.HistoryColor = "disabled_onDarkBG"
 		ChatGradientTop = "none"
 		ChatGradientBottom = "none"
 
@@ -213,6 +215,6 @@
 
 		GiftOnlyInfo.ImagePanelColor = "none"
 		TextEntry.IMEBGColor = "none"
-		TextEntry.IMEFGColor = "disabled_onLightBG"
+		TextEntry.IMEFGColor = "disabled_onDarkBG"
 	}
 }

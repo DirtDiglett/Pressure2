@@ -3,7 +3,7 @@
 		PositionLabelStyle {}
 		
 		TrackLabelStyle { 
-			textcolor=secondarytext_onLightBG
+			textcolor=secondarytext_onDarkBG
 			font-family=mediumfont	
 			font-size=19
 			font-size=20 [$OSX]
@@ -14,8 +14,8 @@
 		}
 		
 			TrackLabelStyle:hover {
-				bgcolor=dividers_onLightBG
-				textcolor=text_onLightBG
+				bgcolor=dividers_onDarkBG
+				textcolor=text_onDarkBG
 			}
 	}
 	

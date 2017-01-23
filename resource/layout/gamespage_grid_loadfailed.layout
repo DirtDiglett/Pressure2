@@ -1,7 +1,7 @@
 "resource/layout/gamespage_grid_loadfailed.layout" {
 	styles {
 		GamesGridPlaceholder {
-			textcolor=text_onLightBG
+			textcolor=text_onDarkBG
 			font-family=basefont
 			font-size=18
 			font-size=19 [$OSX]
@@ -20,7 +20,7 @@
 		}
 
 		"GameItem_installed GamesGridPlaceholder" {
-			textcolor=text_onLightBG
+			textcolor=text_onDarkBG
 		}
 	}
 

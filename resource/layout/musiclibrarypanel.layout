@@ -16,7 +16,7 @@
 			
 		LibrarySearch {
 			bgcolor=custombackgroundprimary
-			textcolor=text_onLightBG
+			textcolor=text_onDarkBG
 			font-family=basefont
 			font-size=18
 			font-size=19 [$OSX]
@@ -32,20 +32,20 @@
 			
 			LibrarySearch:empty {
 				font-style=italic
-				textcolor=disabled_onLightBG
+				textcolor=disabled_onDarkBG
 			}
 
 				LibrarySearch:empty:hover {
-					textcolor=secondaryText_onLightBG
+					textcolor=secondaryText_onDarkBG
 				}
 			
 			LibrarySearch:hover {
-				textcolor=text_onLightBG
+				textcolor=text_onDarkBG
 			}
 			
 			LibrarySearch:disabled {
 				font-style=italic
-				textcolor=disabled_onLightBG
+				textcolor=disabled_onDarkBG
 			}
 		
 		LibrarySearchIcon {

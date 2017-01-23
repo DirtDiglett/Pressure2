@@ -6,7 +6,7 @@
 	styles {
 		newsdetails { 
 			render_bg {
-				0="fill(x0-20,y0-15,x1,y0-14, dividers_onLightBG)"
+				0="fill(x0-20,y0-15,x1,y0-14, dividers_onDarkBG)"
 			}
 		}
 	}

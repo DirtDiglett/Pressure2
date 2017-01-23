@@ -5,12 +5,12 @@
 			minimum-height=494
 
 			render {
-				0="fill(x0,y1-58,x1,y1-57, dividers_onLightBG)"
+				0="fill(x0,y1-58,x1,y1-57, dividers_onDarkBG)"
 			}
 			render_bg {
-				0="fill(x0+71,y0+136,x1,y0+137, dividers_onLightBG)"
-				1="fill(x0+71,y0+229,x1,y0+230, dividers_onLightBG)"
-				2="fill(x0+71,y0+322,x1,y0+323, dividers_onLightBG)"
+				0="fill(x0+71,y0+136,x1,y0+137, dividers_onDarkBG)"
+				1="fill(x0+71,y0+229,x1,y0+230, dividers_onDarkBG)"
+				2="fill(x0+71,y0+322,x1,y0+323, dividers_onDarkBG)"
 				3="image(x0+26,y0+61,x1,y1, graphics/icons/settings/router)"
 				4="image(x0+26,y0+155,x1,y1, graphics/icons/settings/fps)"
 				5="image(x0+26,y0+247,x1,y1, graphics/icons/settings/audio)"

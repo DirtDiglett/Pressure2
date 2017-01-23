@@ -76,7 +76,7 @@
 		
 		LibrarySearch {
 			bgcolor=custombackgroundprimary
-			textcolor=text_onLightBG
+			textcolor=text_onDarkBG
 			font-family=basefont
 			font-size=18
 			font-size=19 [$OSX]
@@ -86,7 +86,7 @@
 			padding-left=0
 			
 			render {
-				0="fill(x0-40,y1-1,x1,y1, dividers_onLightBG_solid)"
+				0="fill(x0-40,y1-1,x1,y1, dividers_onDarkBG_solid)"
 			}
 		}
 		
@@ -94,20 +94,20 @@
 			
 			LibrarySearch:empty {
 				font-style=italic
-				textcolor=disabled_onLightBG
+				textcolor=disabled_onDarkBG
 			}
 
 				LibrarySearch:empty:hover {
-					textcolor=secondaryText_onLightBG
+					textcolor=secondaryText_onDarkBG
 				}
 			
 			LibrarySearch:hover {
-				textcolor=text_onLightBG
+				textcolor=text_onDarkBG
 			}
 			
 			LibrarySearch:disabled {
 				font-style=italic
-				textcolor=disabled_onLightBG
+				textcolor=disabled_onDarkBG
 			}
 		
 		LibrarySearchIcon {
@@ -117,7 +117,7 @@
 			render_bg {
 				-1="fill(x1,y0,x1+10,y1, custombackgroundprimary)"
 				0="image(x0+14,y0+13,x1,y1, graphics/icons/search/standard)"
-				1="fill(x0,y1-1,x1+25,y1, dividers_onLightBG_solid)"
+				1="fill(x0,y1-1,x1+25,y1, dividers_onDarkBG_solid)"
 			}
 		}
 		
@@ -245,12 +245,12 @@
 			}
 		
 		zoomslider {
-			textcolor=secondaryText_OnDarkBG
+			textcolor=secondaryText_onDarkBG
 			inset="0 -1 0 0"
 		}
 		
 			zoomslider:hover {
-				textcolor=text_OnDarkBG
+				textcolor=text_onDarkBG
 			}
 		
 		MusicAddButton {
@@ -317,7 +317,7 @@
 		
 		// Acts as the background for the pageloadthrobber
 		Panel_transparent {
-			bgcolor=white
+			bgcolor=custombackgroundprimary
 		}
 		
 		WebPanelStyle {
@@ -333,7 +333,7 @@
 		}
 		
 		BroadcastPanelMinimized {
-			bgcolor=text_OnLightBG
+			bgcolor=text_onDarkBG
 			textcolor=text_onDarkBG
 			
 			render_bg {}
@@ -342,9 +342,9 @@
 		TextEntryURL {
 			bgcolor=custombackgroundprimary
 			selectedbgcolor=blue500
-			textcolor=text_onLightBG
+			textcolor=text_onDarkBG
 			selectedtextcolor=white
-			shadowtextcolor=disabled_onLightBG
+			shadowtextcolor=disabled_onDarkBG
 			font-family=basefont
 			font-size=18
 			font-size=19 [$OSX]

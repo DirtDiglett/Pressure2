@@ -1,19 +1,19 @@
 "friends/ChatRoomDlgFriend.res" {
 	styles {
 		Label {
-			textcolor=disabled_onLightBG
+			textcolor=disabled_onDarkBG
 			font-size=14
 			font-size=15 [$OSX]
 		}
 
 		CChatRoomDlg {
 			render {
-				0="fill(x0,y1-76,x1,y1-75, grey200)"
+				0="fill(x0,y1-76,x1,y1-75, dividers_onDarkBG)"
 				1="image_tiled(x0,y0+57,x1,y0+61, graphics/material/shadows/top)"
 			}
 			render_bg {
 				0="fill(x0,y0+55,x1,y0+57, customgreysecondary)"
-				1="fill(x0,y1-75,x1,y1, white)"
+				1="fill(x0,y1-75,x1,y1, grey900)"
 			}
 		}
 
@@ -82,7 +82,7 @@
 
 		EmoticonMenuItemStyle {
 			bgcolor=none
-			textcolor=text_onLightBG
+			textcolor=text_onDarkBG
 			font-size=24
 			font-size=25 [$OSX]
 			inset="-3 -1 0 0"
@@ -92,7 +92,7 @@
 		
 			EmoticonMenuItemStyle:hover {
 				bgcolor=none
-				textcolor=secondarytext_onLightBG
+				textcolor=secondarytext_onDarkBG
 
 				render_bg {
 					0="fill(x0,y0,x1,y1, blue500)"
@@ -101,7 +101,7 @@
 		
 			EmoticonMenuItemStyle:selected {
 				bgcolor=none
-				textcolor=secondaryText_onLightBG
+				textcolor=secondaryText_onDarkBG
 			}
 
 		Button:selected {
@@ -114,7 +114,7 @@
 			"Page Button:selected" {}
 		  
 		Button:disabled {
-			textcolor=disabled_onLightBG
+			textcolor=disabled_onDarkBG
 			render_bg {}
 		}   
 
@@ -142,7 +142,7 @@
 
 		RichText {
 			selectedbgcolor=blue500
-			textcolor=disabled_OnLightBG
+			textcolor=disabled_onDarkBG
 			selectedtextcolor=white
 			font-family=basefont
 			font-size=17

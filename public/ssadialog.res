@@ -1,7 +1,7 @@
 "public/ssadialog.res" {
 	styles {
 		Important {
-			textcolor=text_onLightBG
+			textcolor=text_onDarkBG
 		}	
 	}
 

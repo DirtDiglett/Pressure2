@@ -7,7 +7,7 @@
 			bgcolor=customgreysecondary
 
 			render {
-				0="fill(x0,y1-1,x1,y1, dividers_onLightBG)"
+				0="fill(x0,y1-1,x1,y1, dividers_onDarkBG)"
 			}
 
 			render_bg {

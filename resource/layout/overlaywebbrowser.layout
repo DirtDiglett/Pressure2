@@ -3,9 +3,9 @@
 		TextEntryURL {
 			bgcolor=custombackgroundprimary
 			selectedbgcolor=blue500
-			textcolor=text_onLightBG
+			textcolor=text_onDarkBG
 			selectedtextcolor=white
-			shadowtextcolor=disabled_onLightBG
+			shadowtextcolor=disabled_onDarkBG
 			font-family=basefont
 			font-size=18
 			font-size=19 [$OSX]
@@ -22,7 +22,7 @@
 			TextEntryURL:hover {}
 
 			TextEntryURL:Disabled {
-				textcolor=disabled_onLightBG
+				textcolor=disabled_onDarkBG
 			}
 	}
 	

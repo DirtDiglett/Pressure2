@@ -10,12 +10,12 @@
 
 		dlcdetails {
 			render_bg {
-				0="fill(x0-20,y0-15,x1,y0-14, dividers_onLightBG)"
+				0="fill(x0-20,y0-15,x1,y0-14, dividers_onDarkBG)"
 			}
 		}
 
 		bodycontent {
-			textcolor=text_onLightBG
+			textcolor=text_onDarkBG
 			selectedtextcolor=white	
 			font-size=18
 			font-size=19 [$OSX]
@@ -24,12 +24,12 @@
 		}
 
 		DLC_Uninstalled {
-			textcolor=disabled_onLightBG
+			textcolor=disabled_onDarkBG
 			selectedtextcolor=white
 		}
 
 		DLC_Installed {
-			textcolor=text_onLightBG
+			textcolor=text_onDarkBG
 			selectedtextcolor=white
 		}
 

@@ -11,7 +11,7 @@
 		
 		MusicListPanelInterior {
 			bgcolor=custombackgroundprimary
-			textcolor=text_onLightBG
+			textcolor=text_onDarkBG
 			font-size=15
 			font-size=16 [$OSX]
 			inset-top=-1
@@ -32,7 +32,7 @@
 		}
 
 		StatusStyle	{
-			textcolor=text_onLightBG
+			textcolor=text_onDarkBG
 			font-family=mediumfont
 			font-size=15
 			font-size=16 [$OSX]
@@ -219,14 +219,14 @@
 			}
 
 		StatusStyleDim {
-			textcolor=disabled_onLightBG
+			textcolor=disabled_onDarkBG
 			font-family=basefont
 			font-size=15
 			font-size=16 [$OSX]
 		}
 
 		InfoLabelStyle {
-			textcolor=disabled_onLightBG
+			textcolor=disabled_onDarkBG
 			font-family=basefont
 			font-size=15
 			font-size=16 [$OSX]

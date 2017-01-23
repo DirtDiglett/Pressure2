@@ -133,13 +133,13 @@
 
     	CFriendsListSectionHeader {
 	    	inset="0 0 0 0"
-	        textcolor=text_onLightBG
+	        textcolor=text_onDarkBG
 			// This control is bullshit. It ignores any font declaration so it's impossible to adjust.
 
 	        render_bg {
-	            0="fill(x0,y0,x1,y1, white)"
-	            1="fill(x0-2,y0-1,x1,y0, dividers_onLightBG_solid)"
-	            2="fill(x0-2,y1,x1,y1+1, dividers_onLightBG_solid)"
+	            0="fill(x0,y0,x1,y1, grey900)"
+	            1="fill(x0-2,y0-1,x1,y0, dividers_onDarkBG_solid)"
+	            2="fill(x0-2,y1,x1,y1+1, dividers_onDarkBG_solid)"
 	        }    
 	    }
 
@@ -152,32 +152,32 @@
 
 		  render {}
 		  render_bg {
-			0="fill(x0,y0-1,x1+2,y0, dividers_onLightBG_solid)"
-			1="fill(x0,y1,x1+2,y1+1, dividers_onLightBG_solid)"
+			0="fill(x0,y0-1,x1+2,y0, dividers_onDarkBG_solid)"
+			1="fill(x0,y1,x1+2,y1+1, dividers_onDarkBG_solid)"
 			2="image(x0+14,y0+6,x1,y1, graphics/icons/dropdown/standard/down_dark)"
 		  }
 		}
 
 		  SectionedListPanelCollapser:hover {
 			render_bg {
-			  0="fill(x0,y0-1,x1+2,y0, dividers_onLightBG_solid)"
-			  1="fill(x0,y1,x1+2,y1+1, dividers_onLightBG_solid)"
+			  0="fill(x0,y0-1,x1+2,y0, dividers_onDarkBG_solid)"
+			  1="fill(x0,y1,x1+2,y1+1, dividers_onDarkBG_solid)"
 			  2="image(x0+14,y0+6,x1,y1, graphics/icons/dropdown/hover/down_dark)"
 			}
 		  }
 
 		  SectionedListPanelCollapser:selected {
 			render_bg {
-			  0="fill(x0,y0-1,x1+2,y0, dividers_onLightBG_solid)"
-			  1="fill(x0,y1,x1+2,y1+1, dividers_onLightBG_solid)"
+			  0="fill(x0,y0-1,x1+2,y0, dividers_onDarkBG_solid)"
+			  1="fill(x0,y1,x1+2,y1+1, dividers_onDarkBG_solid)"
 			  2="image(x0+14,y0+6,x1,y1, graphics/icons/dropdown/standard/up_dark)"
 			}
 		  }
 
 			SectionedListPanelCollapser:selected:hover {
 			  render_bg {
-				0="fill(x0,y0-1,x1+2,y0, dividers_onLightBG_solid)"
-				1="fill(x0,y1,x1+2,y1+1, dividers_onLightBG_solid)"
+				0="fill(x0,y0-1,x1+2,y0, dividers_onDarkBG_solid)"
+				1="fill(x0,y1,x1+2,y1+1, dividers_onDarkBG_solid)"
 				2="image(x0+14,y0+6,x1,y1, graphics/icons/dropdown/hover/up_dark)"
 			  }
 			}
@@ -231,7 +231,7 @@
 			font-size=18
 			font-size=19 [$OSX]
 			font-weight=400
-			textcolor="text_onLightBG"
+			textcolor=text_onDarkBG
 			inset-top=0
 			inset-left=1
 			bgcolor=custombackgroundprimary
@@ -241,20 +241,20 @@
 					
 			FriendsSearch:empty {
 				font-style=italic
-				textcolor="disabled_onLightBG"
+				textcolor="disabled_onDarkBG"
 			}
 			
 			FriendsSearch:hover {
-				textcolor="text_onLightBG"
+				textcolor="text_onDarkBG"
 			}
 			
 			FriendsSearch:empty:hover {
-				textcolor="secondaryText_onLightBG"
+				textcolor="secondaryText_onDarkBG"
 			}
 			
 			FriendsSearch:disabled {
 				font-style=italic
-				textcolor="disabled_onLightBG"
+				textcolor="disabled_onDarkBG"
 			}
 		
 		FriendsSearchIcon {

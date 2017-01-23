@@ -52,7 +52,7 @@
 			}	  
 		 
 		infolabel {
-			textcolor=secondaryText_OnLightBG
+			textcolor=secondaryText_onDarkBG
 			font-size=18
 			font-size=19 [$OSX]
 		}	
