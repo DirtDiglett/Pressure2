@@ -2,10 +2,10 @@
 	colors {
 		// These colors emulate the same scrollbar as seen in Google Chrome/Chromium.
 		ScrollBar.Wide = 16
-		scrollbarhandle = "188 188 188 255"
-		scrollbarhandlehover = "170 170 171 255"
-		scrollbarhandleborder = "168 168 168 255"
-		scrollbarhandleborderhover = "154 154 154 255"
+		scrollbarhandle = "66 66 66 255"
+		scrollbarhandlehover = "76 76 76 255"
+		scrollbarhandleborder = "76 76 76 255"
+		scrollbarhandleborderhover = "82 82 82 255"
 	}
 
 	styles {
@@ -17,7 +17,7 @@
 
 		// Gutter for vertical scrollbars.
 		ScrollBarSlider {
-			bgcolor=grey200
+			bgcolor=grey900
 
 			render {}
 			render_bg {}
@@ -29,7 +29,7 @@
 		
 		// Gutter for horizontal scrollbars.
 		ScrollBarSliderHoriz {
-			bgcolor=grey200
+			bgcolor=grey900
 
 			render {}
 			render_bg {}
@@ -40,7 +40,7 @@
 			}
 
 		"ScrollBar SliderHoriz" {
-			bgcolor=grey200
+			bgcolor=grey900
 
 			render {}
 			render_bg {}

@@ -33,7 +33,7 @@
 
 		DetailsLaunchButton {
 			bgcolor=none
-			textcolor="lightgreen900"
+			textcolor="limeA400"
 			font-family=mediumfont
 			font-size=20
 			font-size=21 [$OSX]

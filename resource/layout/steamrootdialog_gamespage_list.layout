@@ -5,6 +5,8 @@
 
 	styles {
 		CGamesPage_List {
+			bgcolor=customgreyprimary
+		
 			render {
 				0="image_tiled(x0, y0+21, x1, y0+25, graphics/material/shadows/top)"
 			}
@@ -59,6 +61,7 @@
 			padding-left=8
 			padding-right=8
 			image=graphics/icons/dropdown/padder
+			bgcolor=grey800
 
 			render {}
 			render_bg {

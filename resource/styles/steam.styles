@@ -409,7 +409,7 @@ steam.styles {
 		}
 		
 		CGamesListPanel {
-			bgcolor=white
+			bgcolor=custombackgroundprimary
 			selectedbgcolor=blue500
 			textcolor=text_onDarkBG
 			selectedtextcolor=white

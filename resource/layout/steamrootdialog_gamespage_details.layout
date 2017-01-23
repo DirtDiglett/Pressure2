@@ -135,8 +135,8 @@
 			inset="0 0 0 0"
 
 			render {
-				0="fill(x0+5,y0+2,x1,y1, grey200)"
-				1="fill(x0+5,y1-1,x1,y1+1, grey200)"
+				0="fill(x0+5,y0+2,x1,y1, grey900)"
+				1="fill(x0+5,y1-1,x1,y1+1, grey900)"
 				2="image( x0 + 7, y0 + 7, x1, y1, graphics/icons/columnselectbutton/standard/columnselectbutton)"
 			}
 			render_bg {}
@@ -144,16 +144,16 @@
 		
 			"CGamesListPanel ListPanelColumnSelectButton:hover" {
 				render {
-					0="fill(x0+5,y0+2,x1,y1, grey200)"
-					1="fill(x0+5,y1-1,x1,y1+1, grey200)"
+					0="fill(x0+5,y0+2,x1,y1, grey900)"
+					1="fill(x0+5,y1-1,x1,y1+1, grey900)"
 					2="image( x0 + 7, y0 + 7, x1, y1, graphics/icons/columnselectbutton/hover/columnselectbutton)"
 				}
 			}
 
 			"CGamesListPanel ListPanelColumnSelectButton:selected" {
 				render {
-					0="fill(x0+5,y0+2,x1,y1, grey200)"
-					1="fill(x0+5,y1-1,x1,y1+3, grey200)"
+					0="fill(x0+5,y0+2,x1,y1, grey900)"
+					1="fill(x0+5,y1-1,x1,y1+3, grey900)"
 					2="image( x0 + 7, y0 + 7, x1, y1, graphics/icons/columnselectbutton/hover/columnselectbutton)"
 				}
 			}
