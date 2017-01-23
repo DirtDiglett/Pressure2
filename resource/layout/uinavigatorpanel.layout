@@ -69,7 +69,7 @@
 				textcolor=text_onDarkBG
 
 				render_bg {
-					0="fill(x0,y0,x1,y1, disabled_onDarkBG)"
+					0="fill(x0,y0,x1,y1, disabled_onLightBG)"
 					1="image(x1-35, y0+21, x1, y1, graphics/icons/dropdown/hover/down)"
 				}
 			}

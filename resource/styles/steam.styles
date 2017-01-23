@@ -465,7 +465,7 @@ steam.styles {
 			inset="0 0 0 0"
 			
 			render_bg {
-				0="fill(x0 , y0, x1, y1 - 1, dividers_onDarkBG)"
+				0="fill(x0 , y0, x1, y1 - 1, grey800)"
 			}	
 		}
 		

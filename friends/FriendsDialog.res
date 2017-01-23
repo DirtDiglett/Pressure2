@@ -137,7 +137,7 @@
 			// This control is bullshit. It ignores any font declaration so it's impossible to adjust.
 
 	        render_bg {
-	            0="fill(x0,y0,x1,y1, grey900)"
+	            0="fill(x0,y0,x1,y1, grey800)"
 	            1="fill(x0-2,y0-1,x1,y0, dividers_onDarkBG_solid)"
 	            2="fill(x0-2,y1,x1,y1+1, dividers_onDarkBG_solid)"
 	        }    
@@ -148,7 +148,7 @@
 		  image=graphics/icons/dropdown/padder
 		  padding-left=8
 		  padding-right=8
-		  bgcolor=none
+		  bgcolor=grey800
 
 		  render {}
 		  render_bg {

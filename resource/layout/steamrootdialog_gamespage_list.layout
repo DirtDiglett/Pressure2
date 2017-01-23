@@ -38,8 +38,8 @@
 			}
 
 		ListPanelSectionHeader {
-			bgcolor=grey900
-			textcolor=customgreysecondary
+			bgcolor=grey800
+			textcolor=white
 			font-weight=600
 			font-style=uppercase
 			minimum-height=47

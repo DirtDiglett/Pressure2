@@ -59,8 +59,8 @@
 		}
 		
 		ListPanelSectionHeader {
-			bgcolor=grey900
-			textcolor=customgreysecondary
+			bgcolor=grey800
+			textcolor=text_onDarkBG
 			font-weight=600
 			font-style=uppercase
 			minimum-height=47
@@ -80,6 +80,7 @@
 			padding-left=8
 			padding-right=8
 			image=graphics/icons/dropdown/padder
+			bgcolor=grey800
 
 			render {}
 			render_bg {
@@ -168,15 +169,15 @@
 			inset="0 0 0 0"
 			
 			render_bg {
-				0="fill(x0+2,y0+2,x1-2,y1-2, grey900)"
-				1="image(x0-3,y1-2,x0+2,y1+4, graphics/material/buttons/white/bottomleft)"
-				2="image_tiled(x0+2,y1-2,x1-2,y1+4, graphics/material/buttons/white/bottommiddle)"
-				3="image(x1-2,y1-2,x1+3,y1+2, graphics/material/buttons/white/bottomright)"
-				4="image_tiled(x0-3,y0+2,x0+2,y1-2, graphics/material/buttons/white/leftmiddle)"
-				5="image_tiled(x1-2,y0+2,x1+3,y1-2, graphics/material/buttons/white/rightmiddle)"
-				6="image(x0-3,y0-2,x0+2,y0+2, graphics/material/buttons/white/topleft)"
-				7="image_tiled(x0+2,y0-2,x1-2,y0+2, graphics/material/buttons/white/topmiddle)"
-				8="image(x1-2,y0-2,x1+3,y0+2, graphics/material/buttons/white/topright)"
+				0="fill(x0+2,y0+2,x1-2,y1-2, grey800)"
+				1="image(x0-3,y1-2,x0+2,y1+4, graphics/material/buttons/grey/bottomleft)"
+				2="image_tiled(x0+2,y1-2,x1-2,y1+4, graphics/material/buttons/grey/bottommiddle)"
+				3="image(x1-2,y1-2,x1+3,y1+2, graphics/material/buttons/grey/bottomright)"
+				4="image_tiled(x0-3,y0+2,x0+2,y1-2, graphics/material/buttons/grey/leftmiddle)"
+				5="image_tiled(x1-2,y0+2,x1+3,y1-2, graphics/material/buttons/grey/rightmiddle)"
+				6="image(x0-3,y0-2,x0+2,y0+2, graphics/material/buttons/grey/topleft)"
+				7="image_tiled(x0+2,y0-2,x1-2,y0+2, graphics/material/buttons/grey/topmiddle)"
+				8="image(x1-2,y0-2,x1+3,y0+2, graphics/material/buttons/grey/topright)"
 			}
 		}
 		
@@ -190,15 +191,15 @@
 			inset="0 0 0 0"
 			
 			render_bg {
-				0="fill(x0+2,y0+2,x1-2,y1-2, grey900)"
-				1="image(x0-3,y1-2,x0+2,y1+4, graphics/material/buttons/white/bottomleft)"
-				2="image_tiled(x0+2,y1-2,x1-2,y1+4, graphics/material/buttons/white/bottommiddle)"
-				3="image(x1-2,y1-2,x1+3,y1+2, graphics/material/buttons/white/bottomright)"
-				4="image_tiled(x0-3,y0+2,x0+2,y1-2, graphics/material/buttons/white/leftmiddle)"
-				5="image_tiled(x1-2,y0+2,x1+3,y1-2, graphics/material/buttons/white/rightmiddle)"
-				6="image(x0-3,y0-2,x0+2,y0+2, graphics/material/buttons/white/topleft)"
-				7="image_tiled(x0+2,y0-2,x1-2,y0+2, graphics/material/buttons/white/topmiddle)"
-				8="image(x1-2,y0-2,x1+3,y0+2, graphics/material/buttons/white/topright)"
+				0="fill(x0+2,y0+2,x1-2,y1-2, grey800)"
+				1="image(x0-3,y1-2,x0+2,y1+4, graphics/material/buttons/grey/bottomleft)"
+				2="image_tiled(x0+2,y1-2,x1-2,y1+4, graphics/material/buttons/grey/bottommiddle)"
+				3="image(x1-2,y1-2,x1+3,y1+2, graphics/material/buttons/grey/bottomright)"
+				4="image_tiled(x0-3,y0+2,x0+2,y1-2, graphics/material/buttons/grey/leftmiddle)"
+				5="image_tiled(x1-2,y0+2,x1+3,y1-2, graphics/material/buttons/grey/rightmiddle)"
+				6="image(x0-3,y0-2,x0+2,y0+2, graphics/material/buttons/grey/topleft)"
+				7="image_tiled(x0+2,y0-2,x1-2,y0+2, graphics/material/buttons/grey/topmiddle)"
+				8="image(x1-2,y0-2,x1+3,y0+2, graphics/material/buttons/grey/topright)"
 			}
 		}
 		
@@ -212,15 +213,15 @@
 			inset="0 0 0 0"
 			
 			render_bg {
-				0="fill(x0+2,y0+2,x1-2,y1-2, grey900)"
-				1="image(x0-3,y1-2,x0+2,y1+4, graphics/material/buttons/white/bottomleft)"
-				2="image_tiled(x0+2,y1-2,x1-2,y1+4, graphics/material/buttons/white/bottommiddle)"
-				3="image(x1-2,y1-2,x1+3,y1+2, graphics/material/buttons/white/bottomright)"
-				4="image_tiled(x0-3,y0+2,x0+2,y1-2, graphics/material/buttons/white/leftmiddle)"
-				5="image_tiled(x1-2,y0+2,x1+3,y1-2, graphics/material/buttons/white/rightmiddle)"
-				6="image(x0-3,y0-2,x0+2,y0+2, graphics/material/buttons/white/topleft)"
-				7="image_tiled(x0+2,y0-2,x1-2,y0+2, graphics/material/buttons/white/topmiddle)"
-				8="image(x1-2,y0-2,x1+3,y0+2, graphics/material/buttons/white/topright)"
+				0="fill(x0+2,y0+2,x1-2,y1-2, grey800)"
+				1="image(x0-3,y1-2,x0+2,y1+4, graphics/material/buttons/grey/bottomleft)"
+				2="image_tiled(x0+2,y1-2,x1-2,y1+4, graphics/material/buttons/grey/bottommiddle)"
+				3="image(x1-2,y1-2,x1+3,y1+2, graphics/material/buttons/grey/bottomright)"
+				4="image_tiled(x0-3,y0+2,x0+2,y1-2, graphics/material/buttons/grey/leftmiddle)"
+				5="image_tiled(x1-2,y0+2,x1+3,y1-2, graphics/material/buttons/grey/rightmiddle)"
+				6="image(x0-3,y0-2,x0+2,y0+2, graphics/material/buttons/grey/topleft)"
+				7="image_tiled(x0+2,y0-2,x1-2,y0+2, graphics/material/buttons/grey/topmiddle)"
+				8="image(x1-2,y0-2,x1+3,y0+2, graphics/material/buttons/grey/topright)"
 			}
 		}
 		
@@ -234,15 +235,15 @@
 			inset="0 0 0 0"
 			
 			render_bg {
-				0="fill(x0+2,y0+2,x1-2,y1-2, grey900)"
-				1="image(x0-3,y1-2,x0+2,y1+4, graphics/material/buttons/white/bottomleft)"
-				2="image_tiled(x0+2,y1-2,x1-2,y1+4, graphics/material/buttons/white/bottommiddle)"
-				3="image(x1-2,y1-2,x1+3,y1+2, graphics/material/buttons/white/bottomright)"
-				4="image_tiled(x0-3,y0+2,x0+2,y1-2, graphics/material/buttons/white/leftmiddle)"
-				5="image_tiled(x1-2,y0+2,x1+3,y1-2, graphics/material/buttons/white/rightmiddle)"
-				6="image(x0-3,y0-2,x0+2,y0+2, graphics/material/buttons/white/topleft)"
-				7="image_tiled(x0+2,y0-2,x1-2,y0+2, graphics/material/buttons/white/topmiddle)"
-				8="image(x1-2,y0-2,x1+3,y0+2, graphics/material/buttons/white/topright)"
+				0="fill(x0+2,y0+2,x1-2,y1-2, grey800)"
+				1="image(x0-3,y1-2,x0+2,y1+4, graphics/material/buttons/grey/bottomleft)"
+				2="image_tiled(x0+2,y1-2,x1-2,y1+4, graphics/material/buttons/grey/bottommiddle)"
+				3="image(x1-2,y1-2,x1+3,y1+2, graphics/material/buttons/grey/bottomright)"
+				4="image_tiled(x0-3,y0+2,x0+2,y1-2, graphics/material/buttons/grey/leftmiddle)"
+				5="image_tiled(x1-2,y0+2,x1+3,y1-2, graphics/material/buttons/grey/rightmiddle)"
+				6="image(x0-3,y0-2,x0+2,y0+2, graphics/material/buttons/grey/topleft)"
+				7="image_tiled(x0+2,y0-2,x1-2,y0+2, graphics/material/buttons/grey/topmiddle)"
+				8="image(x1-2,y0-2,x1+3,y0+2, graphics/material/buttons/grey/topright)"
 			}
 		}
 		
