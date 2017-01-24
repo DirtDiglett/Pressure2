@@ -12,7 +12,7 @@
 		}
 		
 		panelStyleHighlight {
-			bgcolor=white
+			bgcolor=custombackgroundprimary
 
 			render_bg {}			
 		}

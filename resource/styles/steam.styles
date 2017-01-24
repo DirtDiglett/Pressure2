@@ -525,6 +525,10 @@ steam.styles {
 			font-style=regular
 			inset="0 0 0 0"
 
+			render {
+				0="fill(x0-7,y0,x0,y1, red500)"
+			}
+
 			render_bg {
 				0="fill(x0,y0,x1,y1, grey900)"
 				1="fill(x0,y0,x1,y0+1, dividers_onDarkBG)"
