@@ -69,7 +69,9 @@
 		SectionHeaderStyle {
 			bgcolor=grey800
 
-			render {}
+			render {
+				0="fill(x0-7,y0+1,x0,y1-1, grey800)"
+			}
 			render_bg {
 				0="fill(x0,y0+1,x0-10,y1-1, grey800)"
 				1="fill(x0,y0-1,x1,y0, dividers_onDarkBG)"

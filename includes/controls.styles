@@ -229,14 +229,14 @@
 			}
 			
 		CheckButtonList {
-			bgcolor=white
+			bgcolor=grey900
 			textcolor=text_OnDarkBG
 			
 			render {
-				0="fill(x0, y0, x0+1, y1, grey200)"
-				1="fill(x0, y0, x1, y0+1, grey200)"
-				2="fill(x1-1, y0, x1, y1, grey200)"
-				3="fill(x0, y1-1, x1, y1, grey200)"
+				0="fill(x0, y0, x0+1, y1, dividers_onDarkBG)"
+				1="fill(x0, y0, x1, y0+1, dividers_onDarkBG)"
+				2="fill(x1-1, y0, x1, y1, dividers_onDarkBG)"
+				3="fill(x0, y1-1, x1, y1, dividers_onDarkBG)"
 			} 
 			render_bg {}
 		}

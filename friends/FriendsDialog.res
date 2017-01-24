@@ -136,6 +136,10 @@
 	        textcolor=text_onDarkBG
 			// This control is bullshit. It ignores any font declaration so it's impossible to adjust.
 
+			render {
+				0="fill(x0-7,y0+1,x0,y1-1, grey800)"
+			}
+
 	        render_bg {
 	            0="fill(x0,y0,x1,y1, grey800)"
 	            1="fill(x0-2,y0-1,x1,y0, dividers_onDarkBG_solid)"
