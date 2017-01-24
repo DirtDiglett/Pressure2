@@ -1,0 +1,11 @@
+"steam/cached/accountsettingswebdialog.layout" {
+	layout {
+		place {
+			controls="HTML"
+			width=max
+			height=max
+			margin=0
+			margin-top=34
+		}
+	}
+}
