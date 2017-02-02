@@ -12,7 +12,7 @@
 			control=Label1,Label2,Label3,URLLabel2
 			height=0
 		}
-		
+
 		place {
 			control=ImageAvatar
 			x=27
@@ -66,14 +66,14 @@
 			x=24
 			y=101
 			height=18
-			spacing=18
+			spacing=14
 		}
 
 		place {
 			control=Divider2
 			align=left
 			x=71
-			y=208
+			y=203
 			width=max
 			height=1
 		}
@@ -92,14 +92,14 @@
 			dir=down
 			y=9
 			height=18
-			spacing=18
+			spacing=14
 		}
 
 		place {
 			control=Label6
 			dir=down
 			x=24
-			y=331
+			y=321
 			height=18
 		}
 
@@ -109,7 +109,24 @@
 			dir=down
 			y=9
 			height=18
-			spacing=18
+			spacing=14
+		}
+
+		place {
+			control=LabelGroupEvents
+			dir=down
+			x=24
+			y=418
+			height=18
+		}
+
+		place {
+			control=EventsAndAnnouncementsNotifyCheck,EventsAndAnnouncementsPlaySoundCheck
+			start=LabelGroupEvents
+			dir=down
+			y=9
+			height=18
+			spacing=14
 		}
 
 		place {
@@ -126,14 +143,14 @@
 			dir=down
 			y=9
 			height=18
-			spacing=18
+			spacing=14
 		}
 
 		place {
 			control=Label7
 			dir=down
 			x=269
-			y=331
+			y=321
 			height=18
 		}
 
@@ -143,7 +160,7 @@
 			dir=down
 			y=9
 			height=18
-			spacing=18
+			spacing=14
 		}
 	}
 }
