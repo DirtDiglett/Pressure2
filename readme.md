@@ -1,7 +1,7 @@
 [![Pressure² Logo](logo.png "Pressure²")](http://www.pressureforsteam.com)
 
 # Pressure² for Steam
-Pressure² is a blend of beauty and function. Every part of Steam has been carefully considered and reworked to create the most fluid and wonderful experience possible, by blending Google's Material Design concepts with added flair Steam can finally sit at the adult table and stop sticking crayons up its nose.
+Pressure² is a blend of beauty and function. Every part of Steam has been carefully considered and reworked to create the most fluid and wonderful experience possible. By blending Google's Material Design concepts with added flair, Steam can finally sit at the adult table and stop sticking crayons up its nose.
 
 To view a preview of the skin visit www.pressureforsteam.com
 
