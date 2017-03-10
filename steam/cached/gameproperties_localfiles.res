@@ -35,7 +35,7 @@
 		}
 
 		place {
-			control=BackupButton,DeleteButton,VerifyButton,DefragButton,OpenInstallFolder
+			control=MoveInstallFolder,BackupButton,DeleteButton,VerifyButton,DefragButton,OpenInstallFolder
 			start=DiskUsageLabel
 			dir=down
 			y=4
