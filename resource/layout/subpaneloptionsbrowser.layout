@@ -48,10 +48,17 @@
 			height=37			
 			margin-right=29
 		}
-
+		place {
+			control=ClientBrowserAuthHomePage
+			start=OverlayHomePage
+			dir=down
+			y=4
+			width=400
+			height=34
+		}	
 		place {
 			control=ClearAllCookiesButton
-			start=OverlayHomePage
+			start=ClientBrowserAuthHomePage
 			dir=down
 			y=4
 			width=350
@@ -63,14 +70,6 @@
 			dir=down
 			y=4
 			width=350
-			height=34
-		}
-		place {
-			control=ClientBrowserAuthHomePage
-			start=ClearWebCacheButton
-			dir=down
-			y=4
-			width=400
 			height=34
 		}	
 	}
