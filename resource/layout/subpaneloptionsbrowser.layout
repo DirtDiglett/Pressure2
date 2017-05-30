@@ -65,5 +65,13 @@
 			width=350
 			height=34
 		}
+		place {
+			control=ClientBrowserAuthHomePage
+			start=ClearWebCacheButton
+			dir=down
+			y=4
+			width=400
+			height=34
+		}	
 	}
 }
