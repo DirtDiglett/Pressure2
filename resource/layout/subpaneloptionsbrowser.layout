@@ -2,7 +2,7 @@
 	styles {
 		CSettingsSubBrowser {
 			render {
-				0="fill(x0+70,y0+20,x0+396,y0+45, custombackgroundnofocustransparent)"
+				0="fill(x0+70,y0+60,x0+396,y0+85, custombackgroundnofocustransparent)"
 			}
 			render_bg {
 				0="image(x0+26,y0+27,x1,y1, graphics/icons/settings/webbrowser)"
@@ -11,21 +11,24 @@
 
 			CSettingsSubBrowser:framefocus {
 				render {
-					0="fill(x0+70,y0+20,x0+396,y0+45, custombackgroundprimarytransparent)"
+					0="fill(x0+70,y0+60,x0+396,y0+85, custombackgroundprimarytransparent)"
 				}
 			}
 	}
 	
 	layout {
 		place {
-			controls=Divider1,DescriptionLabel
-			height=0
+			controls=DescriptionLabel
+			x=82
+			width=max
+			margin-top=20
+			margin-right=43
 		}
 
 		region {
 			name=browser
 			x=82
-			y=0
+			y=40
 			width=max
 			height=max
 			margin-right=29
@@ -48,6 +51,7 @@
 			height=37			
 			margin-right=29
 		}
+		
 		place {
 			control=ClientBrowserAuthHomePage
 			start=OverlayHomePage
@@ -55,15 +59,28 @@
 			y=4
 			width=400
 			height=34
+			margin-top=15
+			margin-right=43
 		}	
+		
+		place {
+			controls=Divider1
+			region=bottom
+			start=ClientBrowserAuthHomePage
+			dir=down
+			width=max
+			margin-top=15
+		}	
+		
 		place {
 			control=ClearAllCookiesButton
-			start=ClientBrowserAuthHomePage
+			start=Divider1
 			dir=down
 			y=4
 			width=350
 			height=34
 		}
+		
 		place {
 			control=ClearWebCacheButton
 			start=ClearAllCookiesButton
