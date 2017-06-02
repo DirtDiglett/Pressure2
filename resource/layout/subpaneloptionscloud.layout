@@ -38,6 +38,7 @@
 			width=max
 			height=18
 			spacing=10
+			margin-top=3
 		}
 	}
 }
