@@ -58,8 +58,18 @@
 			start=RemoteClientList
 			dir=down
 			y=7
-			width=max
+			width=130
 			height=18
+			margin-top=5
+		}
+		
+		place {
+			control=SetPIN
+			start=RemoteClientList
+			dir=down
+			x=300
+			y=7
+			width=180
 		}
 
 		region {
