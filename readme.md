@@ -12,7 +12,8 @@ To view a preview of the skin visit www.pressureforsteam.com
 1. Download the [latest release.](https://github.com/DirtDiglett/Pressure2/releases/latest)
 2. Extract the ZIP and move the folder to:
 	* Windows: the `Program Files (x86)/Steam/skins` folder, or your Steam install directory if different.
-	* Mac: right-click `Steam.app` and choose `show package contents` then go to - `/Contents/MacOS/skins`
+	* Mac: In Finder, select `Go > Go to Folder` and type `~/users/user_name/library/Application Support/Steam/Steam.AppBundle/Steam/Contents/MacOS/skins`
+	  * Replace `user_name` with the relavent username found on your computer
 	* Linux: the `~/.local/share/Steam/skins/` folder
     * Ubuntu: the `~/.steam/skins` folder
 3. Open the folder `fonts` found inside the Pressure² folder, and for the files in here:
