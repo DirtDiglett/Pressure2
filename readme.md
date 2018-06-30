@@ -5,8 +5,6 @@ Pressure² is a blend of beauty and function. Every part of Steam has been caref
 
 To view a preview of the skin visit www.pressureforsteam.com
 
-[![Pledge on Patreon](patreon.png)](https://www.patreon.com/dirtdiglett)
-
 
 ## Downloading and Installing
 1. Download the [latest release.](https://github.com/DirtDiglett/Pressure2/releases/latest)
@@ -31,8 +29,3 @@ The easiest way to keep up-to-date with Pressure² is to join the [Steam Communi
 
 ## [Frequently Asked Questions](https://github.com/DirtDiglett/Pressure2/wiki)
 View the list of frequently asked questions... Occasionally some even have answers.
-
-
-## [View The Plaque of Legends](http://pressureforsteam.com/#supporters)
-These legendary folk have pledged support and invested in Pressure²'s future.
-You can join this chorus of giving by pledging [support on Patreon](https://www.patreon.com/dirtdiglett) or via [PayPal](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=WAC672ATU68E4).
