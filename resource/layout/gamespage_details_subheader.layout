@@ -1,7 +1,7 @@
 "resource/layout/gamespage_details_subheader.layout" {
 	colors {
-		GameDetailsSubHeader.HorizontalSpacing = "10"
-		GameDetailsSubHeader.VerticalMargin = "10"
+		GameDetailsSubHeader.HorizontalSpacing 	= "10"
+		GameDetailsSubHeader.VerticalMargin 		= "10"
 	}
 	
 	styles {
@@ -64,7 +64,7 @@
 			
 			render {}
 			render_bg {
-				0="fill(x0,y0,x1,y1, grey100transparent)"
+				0="fill(x0,y0,x1,y1, grey100--21opacity)"
 				1="fill(x0,y0,x0+3,y1, grey100)"
 				2="fill(x0,y0,x1,y0+3, grey100)"
 				3="fill(x1-3,y0,x1,y1, grey100)"
@@ -74,7 +74,7 @@
 		
 			DetailsButton:hover {
 				render_bg {
-					0="fill(x0,y0,x1,y1, grey100lesstransparent)"
+					0="fill(x0,y0,x1,y1, grey100--50opacity)"
 					1="fill(x0,y0,x0+3,y1, grey100)"
 					2="fill(x0,y0,x1,y0+3, grey100)"
 					3="fill(x1-3,y0,x1,y1, grey100)"
@@ -84,7 +84,7 @@
 			
 			DetailsButton:active {
 				render_bg {
-					0="fill(x0,y0,x1,y1, grey100lesstransparent)"
+					0="fill(x0,y0,x1,y1, grey100--50opacity)"
 					1="fill(x0,y0,x0+3,y1, grey100)"
 					2="fill(x0,y0,x1,y0+3, grey100)"
 					3="fill(x1-3,y0,x1,y1, grey100)"
@@ -108,7 +108,7 @@
 			
 			render {}
 			render_bg {
-				0="fill(x0,y0,x1,y1, limeA400transparent)"
+				0="fill(x0,y0,x1,y1, color__play_button_background)"
 				1="fill(x0,y0,x0+3,y1, limeA400)"
 				2="fill(x0,y0,x1,y0+3, limeA400)"
 				3="fill(x1-3,y0,x1,y1, limeA400)"
@@ -118,7 +118,7 @@
 		
 			DetailsLaunchButton:Hover {
 				render_bg {
-					0="fill(x0,y0,x1,y1, limeA400lesstransparent)"
+					0="fill(x0,y0,x1,y1, color__play_button_background__hover)"
 					1="fill(x0,y0,x0+3,y1, limeA400)"
 					2="fill(x0,y0,x1,y0+3, limeA400)"
 					3="fill(x1-3,y0,x1,y1, limeA400)"
@@ -128,7 +128,7 @@
 			
 			DetailsLaunchButton:Selected {
 				render_bg {
-					0="fill(x0,y0,x1,y1, limeA400lesstransparent)"
+					0="fill(x0,y0,x1,y1, color__play_button_background__hover)"
 					1="fill(x0,y0,x0+3,y1, limeA700)"
 					2="fill(x0,y0,x1,y0+3, limeA700)"
 					3="fill(x1-3,y0,x1,y1, limeA700)"
@@ -138,7 +138,7 @@
 		
 			DetailsLaunchButton:Active {
 				render_bg {
-					0="fill(x0,y0,x1,y1, limeA400lesstransparent)"
+					0="fill(x0,y0,x1,y1, color__play_button_background__hover)"
 					1="fill(x0,y0,x0+3,y1, limeA700)"
 					2="fill(x0,y0,x1,y0+3, limeA700)"
 					3="fill(x1-3,y0,x1,y1, limeA700)"
@@ -162,7 +162,7 @@
 			
 			render {}
 			render_bg {
-				0="fill(x0,y0,x1,y1, lightblueA200transparent)"
+				0="fill(x0,y0,x1,y1, lightblueA200--26opacity)"
 				1="fill(x0,y0,x0+3,y1, lightblueA200)"
 				2="fill(x0,y0,x1,y0+3, lightblueA200)"
 				3="fill(x1-3,y0,x1,y1, lightblueA200)"
@@ -172,7 +172,7 @@
 		
 			DetailsInstallButton:Hover {
 				render_bg {
-					0="fill(x0,y0,x1,y1, lightblueA200lesstransparent)"
+					0="fill(x0,y0,x1,y1, lightblueA200--50opacity)"
 					1="fill(x0,y0,x0+3,y1, lightblueA200)"
 					2="fill(x0,y0,x1,y0+3, lightblueA200)"
 					3="fill(x1-3,y0,x1,y1, lightblueA200)"
@@ -182,7 +182,7 @@
 			
 			DetailsInstallButton:Selected {
 				render_bg {
-					0="fill(x0,y0,x1,y1, lightblueA200lesstransparent)"
+					0="fill(x0,y0,x1,y1, lightblueA200--50opacity)"
 					1="fill(x0,y0,x0+3,y1, lightblueA400)"
 					2="fill(x0,y0,x1,y0+3, lightblueA400)"
 					3="fill(x1-3,y0,x1,y1, lightblueA400)"
@@ -192,7 +192,7 @@
 		
 			DetailsInstallButton:Active {
 				render_bg {
-					0="fill(x0,y0,x1,y1, lightblueA200lesstransparent)"
+					0="fill(x0,y0,x1,y1, lightblueA200--50opacity)"
 					1="fill(x0,y0,x0+3,y1, lightblueA400)"
 					2="fill(x0,y0,x1,y0+3, lightblueA400)"
 					3="fill(x1-3,y0,x1,y1, lightblueA400)"

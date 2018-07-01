@@ -1,5 +1,6 @@
 steam.styles {
 	include "includes/colors.styles"
+	include "theme.ini"
 	include "includes/settings.styles"
 	include "includes/fonts.styles"
 	include "includes/scrollbars.styles"

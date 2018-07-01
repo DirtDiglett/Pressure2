@@ -45,7 +45,7 @@
 			
 			render {}
 			render_bg {
-				0="fill(x0,y0,x1,y1, limeA400transparent)"
+				0="fill(x0,y0,x1,y1, limeA400--26opacity)"
 				1="fill(x0,y0,x0+3,y1, limeA400)"
 				2="fill(x0,y0,x1,y0+3, limeA400)"
 				3="fill(x1-3,y0,x1,y1, limeA400)"
@@ -55,7 +55,7 @@
 	
 			DetailsLaunchButton:Hover {   
 				render_bg {
-					0="fill(x0,y0,x1,y1, limeA400lesstransparent)"
+					0="fill(x0,y0,x1,y1, limeA400--50opacity)"
 					1="fill(x0,y0,x0+3,y1, limeA400)"
 					2="fill(x0,y0,x1,y0+3, limeA400)"
 					3="fill(x1-3,y0,x1,y1, limeA400)"
