@@ -13,8 +13,8 @@ steam.styles {
 		"Csteamrootdialog ListPanelColumnHeader:hover" {}
 
 		FrameTitle {
-			bgcolor=customgreyprimary
-			textcolor=disabled_OnDarkBG
+			bgcolor=color__titleBarBackground
+			textcolor=color__disabled__alternate
 			font-family=basefont
 			font-size=24
 			font-size=25 [$OSX]
@@ -24,7 +24,7 @@ steam.styles {
 			inset="0 8 0 0" [$OSX]
 
 			render_bg {
-				0="fill(x0,y0,x1,y0+1, customgreyaccent)"
+				0="fill(x0,y0,x1,y0+1, color__titleBarBackground__accent)"
 			}
 		}
 		
@@ -33,18 +33,18 @@ steam.styles {
 			}
 
 		Frame {
-			bgcolor=custombackgroundnofocus
+			bgcolor=color__background__secondary
 		} 
 			
 			Frame:FrameFocus {
-				bgcolor=custombackgroundprimary
+				bgcolor=color__background
 			}
 
 		Divider {
 			bgcolor=none
 
 			render {
-				0="fill(x0, y1 - 1, x1, y1, dividers_OnLightBG)"
+				0="fill(x0, y1 - 1, x1, y1, color__divider)"
 			}
 		}
 
@@ -55,7 +55,7 @@ steam.styles {
 		}
 
 		Panel { 
-			textcolor=text_OnLightBG
+			textcolor=color__text
 			font-family=basefont
 			font-size=15
 			font-size=16 [$OSX]
@@ -69,8 +69,8 @@ steam.styles {
 		Label {
 			bgcolor=none
 			selectedbgcolor=blue500
-			textcolor=text_OnLightBG
-			selectedtextcolor=text_OnLightBG
+			textcolor=color__text
+			selectedtextcolor=color__text
 			font-family=basefont
 			font-size=16
 			font-size=17 [$OSX]
@@ -122,16 +122,16 @@ steam.styles {
 			
 			render {}
 			render_bg {
-				0="fill(x0,y0,x0+1,y1, dividers_OnLightBG)"
-				1="fill(x0+1,y0,x1-1,y0+1, dividers_OnLightBG)"
-				2="fill(x1-1,y0,x1,y1, dividers_OnLightBG)"
-				3="fill(x0+1,y1-1,x1-1,y1, dividers_OnLightBG)"
+				0="fill(x0,y0,x0+1,y1, color__divider)"
+				1="fill(x0+1,y0,x1-1,y0+1, color__divider)"
+				2="fill(x1-1,y0,x1,y1, color__divider)"
+				3="fill(x0+1,y1-1,x1-1,y1, color__divider)"
 			}
 		}
 		
 		MenuItem {
 			bgcolor=none
-			textcolor=text_OnLightBG
+			textcolor=color__text
 			font-family=basefont			
 			font-size=17
 			font-size=18 [$OSX]
@@ -149,12 +149,12 @@ steam.styles {
 			}
 		
 			MenuItem:disabled {
-				textcolor=disabled_OnLightBG
+				textcolor=color__disabled
 				shadowtextcolor=none
 			}
 		
 				MenuItem:disabled:hover {
-					textcolor=disabled_OnLightBG
+					textcolor=color__disabled
 					shadowtextcolor=none
 				}
 
@@ -169,7 +169,7 @@ steam.styles {
 			inset="0 0 0 0"			
 
 			render {
-				0="fill(x0+1, y0+1, x1-1, y0+2, dividers_OnLightBG)"
+				0="fill(x0+1, y0+1, x1-1, y0+2, color__divider)"
 			}
 		}
 
@@ -180,16 +180,16 @@ steam.styles {
 
 			render {}
 			render_bg {
-				0="fill(x0,y0,x0+1,y1, dividers_OnLightBG)"
-				1="fill(x0+1,y0,x1-1,y0+1, dividers_OnLightBG)"
-				2="fill(x1-1,y0,x1,y1, dividers_OnLightBG)"
-				3="fill(x0+1,y1-1,x1-1,y1, dividers_OnLightBG)"
+				0="fill(x0,y0,x0+1,y1, color__divider)"
+				1="fill(x0+1,y0,x1-1,y0+1, color__divider)"
+				2="fill(x1-1,y0,x1,y1, color__divider)"
+				3="fill(x0+1,y1-1,x1-1,y1, color__divider)"
 			}
 		}
 
 		SuperNavMenuItem {
 			bgcolor=none
-			textcolor=text_OnLightBG
+			textcolor=color__text
 			font-size=17
 			font-size=18 [$OSX]
 			font-style=normal
@@ -209,13 +209,13 @@ steam.styles {
 			textcolor=none
 
 			render {
-				1="fill(x0+1, y0+1, x1-1, y0+2, dividers_OnLightBG)"
+				1="fill(x0+1, y0+1, x1-1, y0+2, color__divider)"
 			}
 		}
 
 		Notification {
-			bgcolor=customgreysecondary
-			textcolor=text_onDarkBG
+			bgcolor=color__notificationBackground
+			textcolor=color__text__alternate
 			font-family=basefont
 			font-size=16
 			font-size=17 [$OSX]
@@ -224,14 +224,14 @@ steam.styles {
 			minimum-height=98		
 
 			render {
-				0="fill(x0,y0,x0+1,y1, dividers_onDarkBG)"
-				1="fill(x0+1,y0,x1,y0+1, dividers_onDarkBG)"
-				2="fill(x1-1,y0+1,x1,y1, dividers_onDarkBG)"
+				0="fill(x0,y0,x0+1,y1, color__divider__alternate)"
+				1="fill(x0+1,y0,x1,y0+1, color__divider__alternate)"
+				2="fill(x1-1,y0+1,x1,y1, color__divider__alternate)"
 			}
 		}
 
 		gamedetails-headerlabel {
-			textcolor=customgreyprimary
+			textcolor=color__headingText
 			font-family=mediumfont
 			font-size=30
 			font-size=31 [$OSX]
@@ -239,7 +239,7 @@ steam.styles {
 		}
 
 		gamedetails-headerlabel-red {
-			textcolor=customgreyprimary
+			textcolor=color__headingText
 			font-family=mediumfont
 			font-size=30
 			font-size=31 [$OSX]
@@ -247,7 +247,7 @@ steam.styles {
 		}
 
 		gamedetails-headerlabel-green {
-			textcolor=customgreyprimary
+			textcolor=color__headingText
 			font-family=mediumfont
 			font-size=30
 			font-size=31 [$OSX]
@@ -255,7 +255,7 @@ steam.styles {
 		}
 
 		gamedetails-headerlabel-blue {
-			textcolor=customgreyprimary
+			textcolor=color__headingText
 			font-family=mediumfont
 			font-size=30
 			font-size=31 [$OSX]
@@ -264,7 +264,7 @@ steam.styles {
 
 		GameItem_Uninstalled {
 			selectedbgcolor=blue500
-			textcolor=disabled_onLightBG
+			textcolor=color__disabled
 			selectedtextcolor=white		
 			font-family=mediumfont
 			font-size=16
@@ -273,7 +273,7 @@ steam.styles {
 	 
 		GameItem_Installed {
 			selectedbgcolor=blue500
-			textcolor=text_onLightBG
+			textcolor=color__text
 			selectedtextcolor=white		
 			font-family=mediumfont
 			font-size=16
@@ -282,7 +282,7 @@ steam.styles {
 		
 		GameItem_Shortcut {
 			selectedbgcolor=blue500
-			textcolor=text_onLightBG
+			textcolor=color__text
 			selectedtextcolor=white
 			font-family=mediumfont
 			font-size=16
@@ -349,9 +349,9 @@ steam.styles {
 				}
 
 		CConsoleHistory {
-			bgcolor=customgreysecondary
+			bgcolor=color__consoleBackground
 			selectedbgcolor=blue500
-			textcolor=text_onDarkBG
+			textcolor=color__text__alternate
 			selectedtextcolor=white
 			font-family="Lucida Console"
 			font-family="Menlo" [$OSX]
@@ -374,7 +374,7 @@ steam.styles {
 		
 		console_text {
 			selectedbgcolor=blue500
-			textcolor=text_onDarkBG
+			textcolor=color__text__alternate
 			selectedtextcolor=white
 			font-family="Lucida Console"
 			font-family="Menlo" [$OSX]
@@ -392,9 +392,9 @@ steam.styles {
 		ListPanel {
 			bgcolor=white
 			selectedbgcolor=blue500
-			textcolor=text_onLightBG
+			textcolor=color__text
 			selectedtextcolor=white
-			shadowtextcolor=disabled_onLightBG
+			shadowtextcolor=color__disabled
 			font-family=basefont
 			font-size=15
 			font-size=16 [$OSX]
@@ -403,18 +403,18 @@ steam.styles {
 			padding-left=8
 
 			render {
-				0="fill(x0,y0,x0+1,y1-1, dividers_OnLightBG)"
-				1="fill(x1-1,y0,x1,y1-1, dividers_OnLightBG)"
-				2="fill(x0, y1-1, x1, y1, dividers_OnLightBG)"
+				0="fill(x0,y0,x0+1,y1-1, color__divider)"
+				1="fill(x1-1,y0,x1,y1-1, color__divider)"
+				2="fill(x0, y1-1, x1, y1, color__divider)"
 			}
 		}
 		
 		CGamesListPanel {
 			bgcolor=white
 			selectedbgcolor=blue500
-			textcolor=text_onLightBG
+			textcolor=color__text
 			selectedtextcolor=white
-			shadowtextcolor=disabled_onLightBG
+			shadowtextcolor=color__disabled
 			font-family=basefont
 			font-size=16
 			font-size=17 [$OSX]
@@ -426,7 +426,7 @@ steam.styles {
 		}
 
 		GameColumn_BigText {
-			textcolor=text_onLightBG
+			textcolor=color__text
 			font-family=basefont
 			font-size=18
 			font-size=19 [$OSX]
@@ -434,8 +434,8 @@ steam.styles {
 		}
 
 		ListPanelColumnheader {
-			bgcolor=customgreyaccent
-			textcolor=secondaryText_OnDarkBG
+			bgcolor=red500
+			textcolor=color__secondaryText__alternate
 			font-family=mediumfont
 			font-size=16
 			font-size=17 [$OSX]
@@ -446,12 +446,12 @@ steam.styles {
 			inset-top=1
 
 			render_bg {
-				0="fill(x0, y0, x1, y1+1, customgreysecondary)"
+				0="fill(x0, y0, x1, y1+1, color__submenuBackground)"
 			}
 		}
 
 			ListPanelColumnheader:hover {
-				textcolor=text_onDarkBG
+				textcolor=color__text__alternate
 			}
 
 		"CSteamRootDialog ListPanelColumnheader" {
@@ -466,7 +466,7 @@ steam.styles {
 			inset="0 0 0 0"
 			
 			render_bg {
-				0="fill(x0 , y0, x1, y1 - 1, dividers_onDarkBG)"
+				0="fill(x0 , y0, x1, y1 - 1, color__divider__alternate)"
 			}	
 		}
 		
@@ -478,7 +478,7 @@ steam.styles {
 			}
 
 			render_bg {
-				0="fill( x0, y0, x1, y1+1, customgreysecondary )"
+				0="fill( x0, y0, x1, y1+1, color__submenuBackground )"
 			}
 		}
 		
@@ -502,7 +502,7 @@ steam.styles {
 		
 		ListPanelInterior { 
 			bgcolor=none
-			textcolor=text_onLightBG
+			textcolor=color__text
 			font-size=16
 			font-size=17 [$OSX]
 			inset="0 0 0 0"
@@ -513,7 +513,7 @@ steam.styles {
 		
 			ListPanelInterior:scrollbar {	 
 				bgcolor=none
-				textcolor=text_onLightBG
+				textcolor=color__text
 				inset="0 0 -1 0"
 				
 				render {}
@@ -521,25 +521,25 @@ steam.styles {
 			} 
 
 		ListPanelSectionHeader {	 
-			textcolor=text_onLightBG
+			textcolor=color__text
 			font-family=mediumfont
 			font-style=regular
 			inset="0 0 0 0"
 
 			render_bg {
 				0="fill(x0,y0,x1,y1, white)"
-				1="fill(x0,y0,x1,y0+1, dividers_onLightBG)"
-				2="fill(x0,y1-1,x1,y1, dividers_onLightBG)"
+				1="fill(x0,y0,x1,y0+1, color__divider)"
+				2="fill(x0,y1-1,x1,y1, color__divider)"
 			}	
 		}
 		
 			ListPanelSectionHeader:hover {	 
-				textcolor=secondarytext_onLightBG
+				textcolor=color__secondaryText
 			}
 		
 		"ListPanel RichText" {
 			bgcolor=none
-			textcolor=text_onLightBG
+			textcolor=color__text
 			font-family=basefont
 			font-size=15
 			font-size=16 [$OSX]			
@@ -568,32 +568,32 @@ steam.styles {
 
 			render {}
 			render_bg {
-				0="fill(x0,y0-1,x1+2,y0, dividers_onLightBG)"
-				1="fill(x0,y1-1,x1+2,y1, dividers_onLightBG)"
+				0="fill(x0,y0-1,x1+2,y0, color__divider)"
+				1="fill(x0,y1-1,x1+2,y1, color__divider)"
 				2="image(x0+14,y0+6,x1,y1, graphics/icons/dropdown/standard/down_dark)"
 			}
 		}
 
 			ListPanelSectionCollapser:hover {
 				render_bg {
-					0="fill(x0,y0-1,x1+2,y0, dividers_onLightBG)"
-					1="fill(x0,y1-1,x1+2,y1, dividers_onLightBG)"
+					0="fill(x0,y0-1,x1+2,y0, color__divider)"
+					1="fill(x0,y1-1,x1+2,y1, color__divider)"
 					2="image(x0+14,y0+6,x1,y1, graphics/icons/dropdown/hover/down_dark)"
 				}
 			}
 
 			ListPanelSectionCollapser:selected {
 				render_bg {
-					0="fill(x0,y0-1,x1+2,y0, dividers_onLightBG)"
-					1="fill(x0,y1-1,x1+2,y1, dividers_onLightBG)"
+					0="fill(x0,y0-1,x1+2,y0, color__divider)"
+					1="fill(x0,y1-1,x1+2,y1, color__divider)"
 					2="image(x0+14,y0+6,x1,y1, graphics/icons/dropdown/standard/up_dark)"
 				}
 			}
 
 				ListPanelSectionCollapser:selected:hover {
 					render_bg {
-						0="fill(x0,y0-1,x1+2,y0, dividers_onLightBG)"
-						1="fill(x0,y1-1,x1+2,y1, dividers_onLightBG)"
+						0="fill(x0,y0-1,x1+2,y0, color__divider)"
+						1="fill(x0,y1-1,x1+2,y1, color__divider)"
 						2="image(x0+14,y0+6,x1,y1, graphics/icons/dropdown/hover/up_dark)"
 					}
 				}
@@ -605,7 +605,7 @@ steam.styles {
 		}
 
 		PageTab {
-			textcolor=secondarytext_onDarkBG
+			textcolor=color__secondaryText__alternate
 			font-size=16
 			font-size=17 [$OSX]
 			font-style=regular
@@ -614,7 +614,7 @@ steam.styles {
 		}
 
 			PageTab:Hover {
-				textcolor=text_onDarkBG
+				textcolor=color__text__alternate
 
 				render_bg {
 					0="image(x0,y0,x0+2,y0+2, graphics/material/tab/white/topleft)"
@@ -655,10 +655,10 @@ steam.styles {
 			
 			render {}
 			render_bg {
-				0="fill(x0,y0,x0+1,y1, dividers_OnLightBG)"
-				1="fill(x0+1,y0,x1-1,y0+1, dividers_OnLightBG)"
-				2="fill(x1-1,y0,x1,y1, dividers_OnLightBG)"
-				3="fill(x0+1,y1-1,x1-1,y1, dividers_OnLightBG)"
+				0="fill(x0,y0,x0+1,y1, color__divider)"
+				1="fill(x0+1,y0,x1-1,y0+1, color__divider)"
+				2="fill(x1-1,y0,x1,y1, color__divider)"
+				3="fill(x0+1,y1-1,x1-1,y1, color__divider)"
 			}
 		}
 
@@ -667,8 +667,8 @@ steam.styles {
 		}
 
 		RichText {
-			textcolor=text_OnLightBG
-			selectedtextcolor=text_OnLightBG		
+			textcolor=color__text
+			selectedtextcolor=color__text		
 			font-family=basefont
 			font-size=15
 			font-size=16 [$OSX]
@@ -715,9 +715,9 @@ steam.styles {
 		}	
 
 		SectionedListPanel {			
-			bgcolor=custombackgroundprimary
+			bgcolor=color__background
 			selectedbgcolor=blue500
-			textcolor=text_onLightBG
+			textcolor=color__text
 			selectedtextcolor=white
 			font-family=basefont
 			font-size=15
@@ -738,38 +738,38 @@ steam.styles {
 
 			render {}
 			render_bg {
-				0="fill(x0,y0-1,x1+2,y0, dividers_onLightBG)"
-				1="fill(x0,y1-1,x1+2,y1, dividers_onLightBG)"
+				0="fill(x0,y0-1,x1+2,y0, color__divider)"
+				1="fill(x0,y1-1,x1+2,y1, color__divider)"
 				2="image(x0+14,y0+6,x1,y1, graphics/icons/dropdown/standard/down_dark)"
 			}
 		}
 
 			SectionedListPanelCollapser:hover {
 				render_bg {
-					0="fill(x0,y0-1,x1+2,y0, dividers_onLightBG)"
-					1="fill(x0,y1-1,x1+2,y1, dividers_onLightBG)"
+					0="fill(x0,y0-1,x1+2,y0, color__divider)"
+					1="fill(x0,y1-1,x1+2,y1, color__divider)"
 					2="image(x0+14,y0+6,x1,y1, graphics/icons/dropdown/hover/down_dark)"
 				}
 			}
 
 			SectionedListPanelCollapser:selected {
 				render_bg {
-					0="fill(x0,y0-1,x1+2,y0, dividers_onLightBG)"
-					1="fill(x0,y1-1,x1+2,y1, dividers_onLightBG)"
+					0="fill(x0,y0-1,x1+2,y0, color__divider)"
+					1="fill(x0,y1-1,x1+2,y1, color__divider)"
 					2="image(x0+14,y0+6,x1,y1, graphics/icons/dropdown/standard/up_dark)"
 				}
 			}
 
 				SectionedListPanelCollapser:selected:hover {
 					render_bg {
-						0="fill(x0,y0-1,x1+2,y0, dividers_onLightBG)"
-						1="fill(x0,y1-1,x1+2,y1, dividers_onLightBG)"
+						0="fill(x0,y0-1,x1+2,y0, color__divider)"
+						1="fill(x0,y1-1,x1+2,y1, color__divider)"
 						2="image(x0+14,y0+6,x1,y1, graphics/icons/dropdown/hover/up_dark)"
 					}
 				}
 
 		StatusLabel {
-			textcolor=secondaryText_OnLightBG
+			textcolor=color__secondaryText
 			font-family=basefont
 			font-size=15
 			font-size=16 [$OSX]
@@ -786,7 +786,7 @@ steam.styles {
 			}
 		
 		StatusLabelDim {
-			textcolor=disabled_OnLightBG
+			textcolor=color__disabled
 			font-family=basefont
 			font-size=15
 			font-size=16 [$OSX]
@@ -799,16 +799,16 @@ steam.styles {
 		}
 		
 		"MenuBar MenuButton" {
-			textcolor=secondarytext_onDarkBG
+			textcolor=color__secondaryText__alternate
 		}
 		
 			"MenuBar MenuButton:frameFocus" {
-				textcolor=text_onDarkBG
+				textcolor=color__text__alternate
 			}
 		
 				"MenuBar MenuButton:frameFocus:hover" {
-					bgcolor=disabled_onDarkBG
-					textcolor=text_onDarkBG
+					bgcolor=color__disabled__alternate
+					textcolor=color__text__alternate
 					
 					render_bg {}
 				}
@@ -854,7 +854,7 @@ steam.styles {
 		TreeNodeText {
 			bgcolor=none
 			selectedbgcolor=blue500
-			textcolor=text_OnLightBG
+			textcolor=color__text
 			selectedtextcolor=white
 			font-family=basefont
 			font-size=15
@@ -872,12 +872,12 @@ steam.styles {
 			minimum-width=543
 
 			render {
-				0="fill(x0,y1-58,x1,y1-57, dividers_onLightBG)"
+				0="fill(x0,y1-58,x1,y1-57, color__divider)"
 			}
 			
 			render_bg {
-				0="fill(x0,y0,x1, y0+55, customgreyprimary)"
-				1="fill(x0,y0,x1,y0+1, customgreyaccent)"
+				0="fill(x0,y0,x1, y0+55, color__titleBarBackground)"
+				1="fill(x0,y0,x1,y0+1, color__titleBarBackground__accent)"
 			}
 		}
 
@@ -886,42 +886,42 @@ steam.styles {
 			minimum-height=143
 
 			render {
-				0="fill(x0,y1-58,x1,y1-57, dividers_onLightBG)"
+				0="fill(x0,y1-58,x1,y1-57, color__divider)"
 			}
 		}
 
 		CChangePasswordWizard {
 			render {
-				0="fill(x0,y1-58,x1,y1-57, dividers_onLightBG)"
+				0="fill(x0,y1-58,x1,y1-57, color__divider)"
 			}
 		}
 
 		CChangeContactEmailWizard {
 			render {
-				0="fill(x0,y1-58,x1,y1-57, dividers_onLightBG)"
+				0="fill(x0,y1-58,x1,y1-57, color__divider)"
 			}
 		}
 
 		CValidateContactEmailWizard {
 			render {
-				0="fill(x0,y1-58,x1,y1-57, dividers_onLightBG)"
+				0="fill(x0,y1-58,x1,y1-57, color__divider)"
 			}
 		}
 
 		CWelcomeToSteamDialog {
 			render {
-				0="fill(x0,y0,x1-55,y0+1, customgreyprimary)"
-				1="fill(x0,y1-58,x1,y1-57, dividers_onLightBG)"
+				0="fill(x0,y0,x1-55,y0+1, color__titleBarBackground)"
+				1="fill(x0,y1-58,x1,y1-57, color__divider)"
 			}
 			render_bg {
-				0="fill(x0,y0,x1,y0+113,customgreyprimary)"
+				0="fill(x0,y0,x1,y0+113, color__titleBarBackground)"
 				0="image(x0+146,y0+35,x1,y1, graphics/steamlogo)"
 			}
 		}
 
 		CEmailAddressAlreadyUsedDialog {
 			render {
-				0="fill(x0,y1-58,x1,y1-57, dividers_onLightBG)"
+				0="fill(x0,y1-58,x1,y1-57, color__divider)"
 			}
 		}
 
@@ -929,7 +929,7 @@ steam.styles {
 			minimum-height=210
 
 			render {
-				0="fill(x0,y1-58,x1,y1-57, dividers_onLightBG)"
+				0="fill(x0,y1-58,x1,y1-57, color__divider)"
 			}
 		}
 
@@ -937,11 +937,11 @@ steam.styles {
 			minimum-height=332
 
 			render {
-				0="fill(x0,y0,x1-55,y0+1, customgreyprimary)"
-				1="fill(x0,y1-58,x1,y1-57, dividers_onLightBG)"
+				0="fill(x0,y0,x1-55,y0+1, color__titleBarBackground)"
+				1="fill(x0,y1-58,x1,y1-57, color__divider)"
 			}
 			render_bg {
-				0="fill(x0,y0,x1,y0+113,customgreyprimary)"
+				0="fill(x0,y0,x1,y0+113, color__titleBarBackground)"
 				0="image(x0+106,y0+35,x1,y1, graphics/steamlogo)"
 			}
 		}
@@ -951,7 +951,7 @@ steam.styles {
 			minimum-height=374			
 
 			render {
-				0="fill(x0,y1-58,x1,y1-57, dividers_onLightBG)"
+				0="fill(x0,y1-58,x1,y1-57, color__divider)"
 			}
 		}
 
@@ -960,21 +960,21 @@ steam.styles {
 			minimum-height=432			
 
 			render {
-				0="fill(x0,y1-58,x1,y1-57, dividers_onLightBG)"
+				0="fill(x0,y1-58,x1,y1-57, color__divider)"
 			}
 		}
 
 		CCDKeyDisplayDialog {
 			render {
 				0="image(x0+24, y0+58, x1, y1, graphics/icons/key/key)"
-				1="fill(x0,y1-58,x1,y1-57, dividers_onLightBG)"
+				1="fill(x0,y1-58,x1,y1-57, color__divider)"
 			}
 		}
 
 		COverlayCDKeyDialog {
 			render {
 				0="image(x0+24, y0+58, x1, y1, graphics/icons/key/key)"
-				1="fill(x0,y1-58,x1,y1-57, dividers_onLightBG)"
+				1="fill(x0,y1-58,x1,y1-57, color__divider)"
 			}
 		}
 
@@ -984,18 +984,18 @@ steam.styles {
 			}
 
 			render_bg {
-				0="fill(x0,y0,x1,y0+100, customgreysecondary)"
+				0="fill(x0,y0,x1,y0+100, color__submenuBackground)"
 			}
 		}
 
 		CGamePropertiesDialog {
 			render {
-				0="fill(x0,y1-58,x1,y1-57, dividers_onLightBG)"
+				0="fill(x0,y1-58,x1,y1-57, color__divider)"
 			}
 			
 			render_bg {
-				0="fill(x0,y0,x1, y0+55, customgreyprimary)"
-				1="fill(x0,y0,x1,y0+1, customgreyaccent)"
+				0="fill(x0,y0,x1, y0+55, color__titleBarBackground)"
+				1="fill(x0,y0,x1,y0+1, color__titleBarBackground__accent)"
 			}
 		}
 
@@ -1005,7 +1005,7 @@ steam.styles {
 
 		CSteamCacheWorkDialog {
 			render {
-				0="fill(x0,y1-58,x1,y1-57, dividers_onLightBG)"
+				0="fill(x0,y1-58,x1,y1-57, color__divider)"
 			}
 		}
 
@@ -1013,13 +1013,13 @@ steam.styles {
 			minimum-height=198
 
 			render {
-				0="fill(x0,y1-58,x1,y1-57, dividers_onLightBG)"
+				0="fill(x0,y1-58,x1,y1-57, color__divider)"
 			}
 		}
 
 		CEditTagsDialog {
 			render {
-				0="fill(x0,y1-58,x1,y1-57, dividers_onLightBG)"
+				0="fill(x0,y1-58,x1,y1-57, color__divider)"
 			}
 
 			render_bg {
@@ -1029,7 +1029,7 @@ steam.styles {
 
 		CEditFriendsGroupsDialog {
 			render {
-				0="fill(x0,y1-58,x1,y1-57, dividers_onLightBG)"
+				0="fill(x0,y1-58,x1,y1-57, color__divider)"
 			}
 
 			render_bg {
@@ -1039,25 +1039,25 @@ steam.styles {
 
 		CBackupWizard {
 			render {
-				0="fill(x0,y1-58,x1,y1-57, dividers_onLightBG)"
+				0="fill(x0,y1-58,x1,y1-57, color__divider)"
 			}
 		}
 
 		CInstallAppWizard {
 			render {
-				0="fill(x0,y1-58,x1,y1-57, dividers_onLightBG)"
+				0="fill(x0,y1-58,x1,y1-57, color__divider)"
 			}
 		}
 
 		CDialogGameInfo {
 			render {
-				0="fill(x0,y1-58,x1,y1-57, dividers_onLightBG)"
+				0="fill(x0,y1-58,x1,y1-57, color__divider)"
 			}
 		}
 
 		CSSADialog {
 			render {
-				0="fill(x0,y1-58,x1,y1-57, dividers_onLightBG)"
+				0="fill(x0,y1-58,x1,y1-57, color__divider)"
 			}
 		}
 
@@ -1081,7 +1081,7 @@ steam.styles {
 
 		CRegisterCDKeyWizard {
 			render {
-				0="fill(x0,y1-58,x1,y1-57, dividers_onLightBG)"
+				0="fill(x0,y1-58,x1,y1-57, color__divider)"
 			}
 		}
 
@@ -1090,7 +1090,7 @@ steam.styles {
 			minimum-height=180
 
 			render {
-				0="fill(x0,y1-58,x1,y1-57, dividers_onLightBG)"
+				0="fill(x0,y1-58,x1,y1-57, color__divider)"
 			}
 		}
 
@@ -1099,7 +1099,7 @@ steam.styles {
 			minimum-height=378
 			
 			render {
-				0="fill(x0,y1-58,x1,y1-57, dividers_onLightBG)"
+				0="fill(x0,y1-58,x1,y1-57, color__divider)"
 			}
 
 			render_bg {}
@@ -1107,7 +1107,7 @@ steam.styles {
 
 		CLaunchOptionsDialog {
 			render {
-				0="fill(x0,y1-58,x1,y1-57, dividers_onLightBG)"
+				0="fill(x0,y1-58,x1,y1-57, color__divider)"
 			}
 
 			render_bg {}
@@ -1115,18 +1115,18 @@ steam.styles {
 
 		TooltipWindow {
 			bgcolor=white
-			textcolor=secondaryText_onLightBG
+			textcolor=color__secondaryText
 
 			render_bg {
-				0="fill(x0,y0,x0+1,y1, dividers_OnLightBG)"
-				1="fill(x0+1,y0,x1-1,y0+1, dividers_OnLightBG)"
-				2="fill(x1-1,y0,x1,y1, dividers_OnLightBG)"
-				3="fill(x0+1,y1-1,x1-1,y1, dividers_OnLightBG)"
+				0="fill(x0,y0,x0+1,y1, color__divider)"
+				1="fill(x0+1,y0,x1-1,y0+1, color__divider)"
+				2="fill(x1-1,y0,x1,y1, color__divider)"
+				3="fill(x0+1,y1-1,x1-1,y1, color__divider)"
 			}
 		}
 
 		"TooltipWindow Label" {
-			textcolor=secondaryText_OnLightBG
+			textcolor=color__secondaryText
 			padding-left=8
 			padding-top=8
 			padding-right=8
@@ -1134,7 +1134,7 @@ steam.styles {
 		}
 		
 		tooltip_headline {
-			textcolor=text_OnLightBG
+			textcolor=color__text
 			font-size=18
 			font-size=19 [$OSX]	 
 			font-weight=600
@@ -1156,7 +1156,7 @@ steam.styles {
 
 		friends_chat_text {
 			selectedbgcolor=blue500
-			textcolor=text_OnLightBG
+			textcolor=color__text
 			selectedtextcolor=white 			
 			font-size=17
 			font-size=18 [$OSX]
@@ -1164,7 +1164,7 @@ steam.styles {
 		
 		friends_chat_text_self {
 			selectedbgcolor=blue500
-			textcolor=secondaryText_OnLightBG
+			textcolor=color__secondaryText
 			selectedtextcolor=white			
 			font-size=17
 			font-size=18 [$OSX]
@@ -1249,7 +1249,7 @@ steam.styles {
 
 		friends_chat_history {
 			selectedbgcolor=blue500
-			textcolor=disabled_OnLightBG
+			textcolor=color__disabled
 			selectedtextcolor=white
 			font-size=17
 			font-size=18 [$OSX]
@@ -1296,7 +1296,7 @@ steam.styles {
 			//width is 384
 
 			render {
-				0="fill( x0, y0, x1, y1, custombackgroundprimary)"
+				0="fill( x0, y0, x1, y1, color__background)"
 				1="image(x0+91, y0+42, x1, y1, graphics/logo)"
 			}
 		}
@@ -1338,7 +1338,7 @@ steam.styles {
 			}
 
 		"ProgressBox Label" {
-			textcolor=secondaryText_onLightBG
+			textcolor=color__secondaryText
 		}
 	}
 }

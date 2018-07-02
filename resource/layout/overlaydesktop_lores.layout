@@ -3,7 +3,7 @@
 		sidemenu {}
 		
 		topbar {
-			textcolor=text_onDarkBG
+			textcolor=color__text__alternate
 			font-family=mediumfont
 			font-weight=800
 			font-size=30
@@ -12,7 +12,7 @@
 		}
 		
 		clocksuffix {
-			textcolor=text_onDarkBG
+			textcolor=color__text__alternate
 			font-family=mediumfont
 			font-weight=800
 			font-size=30
@@ -22,7 +22,7 @@
 		}
 		
 		timeStrings {
-			textcolor=disabled_OnDarkBG
+			textcolor=color__disabled__alternate
 			font-family=basefontfont
 			font-size=18
 			font-size=19 [$OSX]

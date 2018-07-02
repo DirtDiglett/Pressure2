@@ -1,7 +1,7 @@
 "resource/layout/steamrootdialog_musicpage_details.layout" {
 	styles {
 		CMusicPage_Details {
-			bgcolor=custombackgroundprimary
+			bgcolor=color__background
 			
 			render {}
 			render_bg {}

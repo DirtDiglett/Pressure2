@@ -1,7 +1,7 @@
 "resource/layout/gamespage_mini.layout" {
 	styles {
 		CGamesPage_Mini {
-			bgcolor=custombackgroundnofocus
+			bgcolor=color__background__secondary
 			
 			render {
 				0="image_tiled(x0,y0+55,x1,y0+59, graphics/material/shadows/top)"
@@ -9,18 +9,18 @@
 			}
 			
 			render_bg {
-				0="fill(x0,y0+55,x1,y0+100, customgreysecondary)"
-				1="fill(x0,y0+100,x1,y0+120, customgreysecondary)"
+				0="fill(x0,y0+55,x1,y0+100, color__submenuBackground)"
+				1="fill(x0,y0+100,x1,y0+120, color__submenuBackground)"
 			}
 		}
 
 			CGamesPage_Mini:FrameFocus {
-				bgcolor=custombackgroundprimary
+				bgcolor=color__background
 			}
 
 		FrameTitle {
-			bgcolor=customgreyprimary
-			textcolor=disabled_OnDarkBG
+			bgcolor=color__titleBarBackground
+			textcolor=color__disabled__alternate
 			font-family=basefont
 			font-size=24
 			font-size=25 [$OSX]
@@ -29,7 +29,7 @@
 			inset="0 0 0 0"
 			
 			render_bg {
-				0="fill(x0,y0,x1,y0+1, customgreyaccent)"
+				0="fill(x0,y0,x1,y0+1, color__titleBarBackground__accent)"
 			}
 		}
 		
@@ -100,14 +100,14 @@
 			
 			CMiniGameFilterMenuButton:selected {
 				render {
-					0="fill(x0,y0,x1,y1, disabled_onDarkBG)"
+					0="fill(x0,y0,x1,y1, color__disabled__alternate)"
 					1="image(x0+14, y0+14, x1, y1, graphics/icons/category/hover/category)"
 				}
 			}
 		
 		LibrarySearch {
-			bgcolor=custombackgroundprimary
-			textcolor=text_onLightBG
+			bgcolor=color_textInputBackground
+			textcolor=color__text
 			font-family=basefont
 			font-size=18
 			font-size=19 [$OSX]
@@ -117,7 +117,7 @@
 			padding-left=0
 			
 			render {
-				0="fill(x0-40,y1-1,x1,y1, dividers_onLightBG)"
+				0="fill(x0-40,y1-1,x1,y1, color__divider)"
 			}
 		}
 		
@@ -125,30 +125,30 @@
 			
 			LibrarySearch:empty {
 				font-style=italic
-				textcolor=disabled_onLightBG
+				textcolor=color__disabled
 			}
 			
 			LibrarySearch:hover {
-				textcolor=text_onLightBG
+				textcolor=color__text
 			}
 			
 			LibrarySearch:empty:hover {
-				textcolor=secondaryText_onLightBG
+				textcolor=color__secondaryText
 			}
 			
 			LibrarySearch:disabled {
 				font-style=italic
-				textcolor=disabled_onLightBG
+				textcolor=color__disabled
 			}
 		
 		LibrarySearchIcon {
-			bgcolor=custombackgroundprimary
+			bgcolor=color__textInputBackground
 			textcolor=none
 			
 			render_bg {
-				-1="fill(x1,y0,x1+10,y1, custombackgroundprimary)"
+				-1="fill(x1,y0,x1+10,y1, color__textInputBackground)"
 				0="image(x0+14,y0+13,x1,y1, graphics/icons/search/standard)"
-				1="fill(x0,y1-1,x1+25,y1, dividers_onLightBG)"
+				1="fill(x0,y1-1,x1+25,y1, color__divider)"
 			}
 		}
 		
@@ -180,7 +180,7 @@
 		
 		ListPanelSectionHeader {
 			bgcolor=white
-			textcolor=customgreysecondary
+			textcolor=color__listPanelSectionHeaderText
 			font-weight=600
 			font-style=uppercase
 			minimum-height=47
@@ -190,8 +190,8 @@
 			
 			render {}
 			render_bg {
-				0="fill(x0,y0-1,x1,y0, dividers_onLightBG)"
-				1="fill(x0,y1-1,x1,y1, dividers_onLightBG)"
+				0="fill(x0,y0-1,x1,y0, color__divider)"
+				1="fill(x0,y1-1,x1,y1, color__divider)"
 			}
 		}
 		
@@ -203,32 +203,32 @@
 
 			render {}
 			render_bg {
-				0="fill(x0,y0-1,x1,y0, dividers_onLightBG)"
-				1="fill(x0,y1-1,x1,y1, dividers_onLightBG)"
+				0="fill(x0,y0-1,x1,y0, color__divider)"
+				1="fill(x0,y1-1,x1,y1, color__divider)"
 				2="image(x0+14,y0+18,x1,y1, graphics/icons/dropdown/standard/down_dark)"
 			}
 		}
 		
 			ListPanelSectionCollapser:hover {
 				render_bg {
-					0="fill(x0,y0-1,x1,y0, dividers_onLightBG)"
-					1="fill(x0,y1-1,x1,y1, dividers_onLightBG)"
+					0="fill(x0,y0-1,x1,y0, color__divider)"
+					1="fill(x0,y1-1,x1,y1, color__divider)"
 					2="image(x0+14,y0+18,x1,y1, graphics/icons/dropdown/hover/down_dark)"
 				}
 			}
 			
 			ListPanelSectionCollapser:selected {
 				render_bg {
-					0="fill(x0,y0-1,x1,y0, dividers_onLightBG)"
-					1="fill(x0,y1-1,x1,y1, dividers_onLightBG)"
+					0="fill(x0,y0-1,x1,y0, color__divider)"
+					1="fill(x0,y1-1,x1,y1, color__divider)"
 					2="image(x0+14,y0+18,x1,y1, graphics/icons/dropdown/standard/up_dark)"
 				}
 			}
 			
 				ListPanelSectionCollapser:selected:hover {
 					render_bg {
-						0="fill(x0,y0-1,x1,y0, dividers_onLightBG)"
-						1="fill(x0,y1-1,x1,y1, dividers_onLightBG)"
+						0="fill(x0,y0-1,x1,y0, color__divider)"
+						1="fill(x0,y1-1,x1,y1, color__divider)"
 						2="image(x0+14,y0+18,x1,y1, graphics/icons/dropdown/hover/up_dark)"
 					}
 				}

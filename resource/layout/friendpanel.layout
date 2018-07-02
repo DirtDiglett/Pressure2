@@ -38,18 +38,18 @@
 		}
 
 			controlPanelLinkStyle:hover {
-				bgcolor=dividers_onLightBG
+				bgcolor=color__divider
 			}
 
 		statusStyle {
-			textcolor=secondarytext_onLightBG
+			textcolor=color__secondaryText
 			font-family=basefont
 			font-size=16
 			font-size=17 [$OSX]
 		}
 		
 			statusStyle:hover {
-				textcolor=text_onLightBG
+				textcolor=color__text
 			}
 		
 		inviteLinkStyle {
@@ -64,7 +64,7 @@
 		}
 	
 			inviteLinkStyle:hover {
-				bgcolor=dividers_onLightBG
+				bgcolor=color__divider
 			}
 
 		WebStatusStyle {

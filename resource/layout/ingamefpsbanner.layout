@@ -16,7 +16,7 @@
 		}
 		
 		HighContrast {
-			bgcolor=secondaryText_OnLightBG
+			bgcolor=color__secondaryText
 			textcolor=lightgreenA400
 			padding-left=4
 			padding-top=4
@@ -27,7 +27,7 @@
 		}
 	  
 		LowContrast {
-			textcolor=text_onDarkBG
+			textcolor=color__text__alternate
 			padding-left=4
 			padding-top=4
 			padding-right=4			

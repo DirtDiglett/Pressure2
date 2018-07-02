@@ -18,7 +18,7 @@
 		}
 
 		mostrecent_label {
-			textcolor=text_onLightBG
+			textcolor=color__text
 			font-family=mediumfont
 			font-size=20
 			font-size=21 [$OSX]
@@ -26,13 +26,13 @@
 		}
 		
 		mostrecent_name {
-			textcolor=secondarytext_onLightBG
+			textcolor=color__secondaryText
 			font-size=18
 			font-size=19 [$OSX]
 		}
 
 		mostrecent_unlockedsofar {
-			textcolor=secondarytext_onLightBG
+			textcolor=color__secondaryText
 			font-family=basefont
 			font-size=18
 			font-size=19 [$OSX]

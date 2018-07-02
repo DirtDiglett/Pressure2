@@ -8,7 +8,7 @@
 		rightcolumntag {}
 
 		CGamesListPanel {
-			bgcolor=custombackgroundprimary
+			bgcolor=color__background
 			font-size=16
 			font-size=17 [$OSX]
 			
@@ -16,7 +16,7 @@
 		}
 		
 		emptylisttext {
-			textcolor=disabled_onLightBG
+			textcolor=color__disabled
 			font-size=18
 			font-size=19 [$OSX]
 
@@ -24,7 +24,7 @@
 		}
 		
 		CGamesPage_Details {
-			bgcolor=custombackgroundprimary
+			bgcolor=color__background
 			inset="0 0 0 0"
 
 			render {
@@ -60,7 +60,7 @@
 		
 		ListPanelSectionHeader {
 			bgcolor=white
-			textcolor=customgreysecondary
+			textcolor=color__listPanelSectionHeaderText
 			font-weight=600
 			font-style=uppercase
 			minimum-height=47
@@ -70,8 +70,8 @@
 			
 			render {}
 			render_bg {
-				0="fill(x0,y0-1,x1,y0, dividers_onLightBG_solid)"
-				1="fill(x0,y1-1,x1,y1, dividers_onLightBG_solid)"
+				0="fill(x0,y0-1,x1,y0, color__divider__solid)"
+				1="fill(x0,y1-1,x1,y1, color__divider__solid)"
 			}
 		}
 		
@@ -83,32 +83,32 @@
 
 			render {}
 			render_bg {
-				0="fill(x0,y0-1,x1,y0, dividers_onLightBG_solid)"
-				1="fill(x0,y1-1,x1,y1, dividers_onLightBG_solid)"
+				0="fill(x0,y0-1,x1,y0, color__divider__solid)"
+				1="fill(x0,y1-1,x1,y1, color__divider__solid)"
 				2="image(x0+14,y0+18,x1,y1, graphics/icons/dropdown/standard/down_dark)"
 			}
 		}
 		
 			"GamesPage_Details ListPanelSectionCollapser:hover" {
 				render_bg {
-					0="fill(x0,y0-1,x1,y0, dividers_onLightBG_solid)"
-					1="fill(x0,y1-1,x1,y1, dividers_onLightBG_solid)"
+					0="fill(x0,y0-1,x1,y0, color__divider__solid)"
+					1="fill(x0,y1-1,x1,y1, color__divider__solid)"
 					2="image(x0+14,y0+18,x1,y1, graphics/icons/dropdown/hover/down_dark)"
 				}
 			}
 			
 			"GamesPage_Details ListPanelSectionCollapser:selected" {
 				render_bg {
-					0="fill(x0,y0-1,x1,y0, dividers_onLightBG_solid)"
-					1="fill(x0,y1-1,x1,y1, dividers_onLightBG_solid)"
+					0="fill(x0,y0-1,x1,y0, color__divider__solid)"
+					1="fill(x0,y1-1,x1,y1, color__divider__solid)"
 					2="image(x0+14,y0+18,x1,y1, graphics/icons/dropdown/standard/up_dark)"
 				}
 			}
 			
 				"GamesPage_Details ListPanelSectionCollapser:selected:hover" {
 					render_bg {
-						0="fill(x0,y0-1,x1,y0, dividers_onLightBG_solid)"
-						1="fill(x0,y1-1,x1,y1, dividers_onLightBG_solid)"
+						0="fill(x0,y0-1,x1,y0, color__divider__solid)"
+						1="fill(x0,y1-1,x1,y1, color__divider__solid)"
 						2="image(x0+14,y0+18,x1,y1, graphics/icons/dropdown/hover/up_dark)"
 					}
 				}
@@ -260,7 +260,7 @@
 			}
 			
 			rightcolumnlink:disabled {
-				textcolor=disabled_onLightBG
+				textcolor=color__disabled
 			}
 		
 		DetailsBorderPanel {

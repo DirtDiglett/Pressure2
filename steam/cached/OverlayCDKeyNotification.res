@@ -8,7 +8,7 @@
 		}
 
 		Label {
-			textcolor=text_onDarkBG
+			textcolor=color__text__alternate
 		}
 	}
 

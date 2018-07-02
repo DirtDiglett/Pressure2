@@ -12,15 +12,15 @@
 		}
 
 		overlaymain {
-			bgcolor=disabled_onLightBG
+			bgcolor=color__disabled
 
 			render_bg {
-				0="gradient_horizontal(x0,y0,x0+1080,y1, secondaryText_OnLightBG)"
+				0="gradient_horizontal(x0,y0,x0+1080,y1, color__secondaryText)"
 			}
 		}	
 				
 		topbar {
-			textcolor=text_onDarkBG
+			textcolor=color__text__alternate
 			font-family=mediumfont
 			font-weight=800
 			font-size=30

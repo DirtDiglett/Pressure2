@@ -2,11 +2,11 @@
 	styles {
 		CSubGamePropertiesBetasPage {
 			render {
-				0="fill(x0+70,y0+30,x1,y0+55, custombackgroundnofocustransparent)"
-				1="fill(x0+70,y0+121,x1,y0+146, custombackgroundnofocustransparent)"
+				0="fill(x0+70,y0+30,x1,y0+55, color__backgroundOverlay__secondary)"
+				1="fill(x0+70,y0+121,x1,y0+146, color__backgroundOverlay__secondary)"
 			}
 			render_bg {
-				0="fill(x0+71,y0+110,x1,y0+111, dividers_onLightBG)"
+				0="fill(x0+71,y0+110,x1,y0+111, color__divider)"
 				1="image(x0+26,y0+37,x1,y1, graphics/icons/beta/beta)"
 				2="image(x0+26,y0+127,x1,y1, graphics/icons/key/key)"
 			}
@@ -14,8 +14,8 @@
 
 			CSubGamePropertiesBetasPage:framefocus {
 				render {
-					0="fill(x0+70,y0+30,x1,y0+55, custombackgroundprimarytransparent)"
-					1="fill(x0+70,y0+121,x1,y0+146, custombackgroundprimarytransparent)"
+					0="fill(x0+70,y0+30,x1,y0+55, color__backgroundOverlay)"
+					1="fill(x0+70,y0+121,x1,y0+146, color__backgroundOverlay)"
 				}
 			}
 	}

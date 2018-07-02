@@ -1,7 +1,7 @@
 "friends/AchievementNotification.res" {
 	styles {
 		Label {
-			textcolor=secondaryText_onDarkBG
+			textcolor=color__secondaryText__alternate
 		}
 
 		Notification {
@@ -14,7 +14,7 @@
 	colors {
 		Black = "0 0 0 0"
 		AchievementPopup.TitleColor = "amber500"
-		AchievementPopup.DescriptionColor = "secondaryText_onDarkBG"
+		AchievementPopup.DescriptionColor = "color__secondaryText__alternate"
 	}
 
 	layout {

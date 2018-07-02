@@ -1,7 +1,7 @@
 "Public/SubPanelWelcomeCreateNewAccountMultiple.res" {
 	styles {
 		Important {			
-			textcolor=text_onLightBG
+			textcolor=color__text
 			font-family=mediumfont
 			font-size=15
 			font-size=16 [$OSX]

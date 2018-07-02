@@ -1,7 +1,7 @@
 "steam/cached/consolepage.res" {
 	styles {
 		ConsolePage {
-			bgcolor=customgreysecondary
+			bgcolor=color__consoleBackground
 		}
 	}
 

@@ -3,12 +3,12 @@
 		container {}
 
 		CDownloadSummaryPanel {
-			bgcolor=customgreysecondary
+			bgcolor=color__submenuBackground
 			inset="0 0 0 0"
 	  	}
 	   		
 		bigtext {
-			textcolor=text_onDarkBG
+			textcolor=color__text__alternate
 			font-family=basefont
 			font-size=18
 			font-size=19 [$OSX]
@@ -17,7 +17,7 @@
 		}
 
 		bigtextNonUpper {
-			textcolor=text_onDarkBG
+			textcolor=color__text__alternate
 			font-family=basefont
 			font-size=18
 			font-size=19 [$OSX]
@@ -26,7 +26,7 @@
 		}
 		
 		bigtextlabel {
-			textcolor=secondarytext_onDarkBG
+			textcolor=color__secondaryText__alternate
 			font-family=basefont
 			font-size=17
 			font-size=18 [$OSX]
@@ -34,7 +34,7 @@
 		}
 		
 		throttleLabel {
-			textcolor=text_onDarkBG
+			textcolor=color__text__alternate
 			font-family=basefont
 			font-size=18
 			font-size=19 [$OSX]
@@ -43,7 +43,7 @@
 		} 
 		
 		throttleValue {
-			textcolor=secondarytext_onDarkBG
+			textcolor=color__secondaryText__alternate
 			font-family=basefont
 			font-size=17
 			font-size=18 [$OSX]
@@ -52,7 +52,7 @@
 
 		NetGraphPanel {
 			bgcolor=none	
-			textcolor=dividers_OnDarkBG
+			textcolor=color__divider__alternate
 
 			render_bg {}
 			render {}
@@ -74,7 +74,7 @@
 		
 		NetLegendPanel {
 			render_bg {
-				0="fill(x0, y0, x1,y1, dividers_OnDarkBG)"
+				0="fill(x0, y0, x1,y1, color__divider__alternate)"
 			}
 		}
 

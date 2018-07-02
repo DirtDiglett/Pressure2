@@ -39,7 +39,7 @@
 		}
 
 		highlight {
-			textcolor=text_onDarkBG
+			textcolor=color__text__alternate
 			font-size=17
 			font-size=18 [$OSX]
 		}

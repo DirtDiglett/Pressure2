@@ -5,12 +5,12 @@
 
 		detailsbox {
 			render_bg {
-				0="fill(x0,y0,x1,y1, secondaryText_OnLightBG)"
+				0="fill(x0,y0,x1,y1, color__secondaryText)"
 			}
 		}
 
 		highlight {
-			textcolor=secondaryText_onDarkBG
+			textcolor=color__secondaryText__alternate
 			font-size=17
 			font-size=18 [$OSX]
 		}

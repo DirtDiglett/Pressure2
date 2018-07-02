@@ -63,13 +63,13 @@
 				textcolor=blue300
 				
 				render_bg {
-					0="fill(x0,y0,x1,y1, dividers_onLightBG)"
+					0="fill(x0,y0,x1,y1, color__divider)"
 				}
 			}
 
 			URLLabel:disabled {
 				bgcolor=none
-				textcolor=disabled_onLightBG
+				textcolor=color__disabled
 				
 				render_bg {}
 			}

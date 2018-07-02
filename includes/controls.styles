@@ -37,7 +37,7 @@
 
 
 		CheckButton {
-			textcolor=text_OnLightBG
+			textcolor=color__text
 			font-family=basefont
 			font-size=16
 			font-size=16 [$OSX]
@@ -57,7 +57,7 @@
 			}
 
 				CheckButton:selected:disabled {
-					textcolor=disabled_OnLightBG
+					textcolor=color__disabled
 
 					render_bg {
 						0="image(x0,y0,x1,y1, graphics/controls/checkbox/checked_disabled)"
@@ -85,7 +85,7 @@
 				}
 			
 			CheckButton:disabled {
-				textcolor=disabled_OnLightBG
+				textcolor=color__disabled
 
 				render_bg {
 					0="image(x0,y0,x1,y1, graphics/controls/checkbox/unchecked_disabled)"
@@ -93,7 +93,7 @@
 			}
 
 		IndeterminateCheckButton {
-			textcolor=text_OnLightBG
+			textcolor=color__text
 			font-family=basefont
 			font-size=15
 			font-size=16 [$OSX]
@@ -105,7 +105,7 @@
 
 
 		ListPanelCheckBox {
-			textcolor=text_OnLightBG
+			textcolor=color__text
 			font-family=basefont
 			font-size=14
 			font-size=15 [$OSX]
@@ -130,17 +130,17 @@
 			}
 
 			ListPanelCheckBox:disabled {
-				textcolor=disabled_OnLightBG
+				textcolor=color__disabled
 				image="graphics/controls/checkbox/unchecked_disabled_small"
 			}
 	
 				ListPanelCheckBox:disabled:selected {
-					textcolor=disabled_OnLightBG
+					textcolor=color__disabled
 					image="graphics/controls/checkbox/checked_disabled_small"
 				}
 		
 		"ListPanelColumnheader ListPanelCheckBox" {
-			textcolor=text_OnLightBG
+			textcolor=color__text
 			font-family=basefont
 			font-size=14
 			font-size=15 [$OSX]
@@ -164,17 +164,17 @@
 			}
 	
 			"ListPanelColumnheader ListPanelCheckBox:disabled" {
-				textcolor=disabled_OnLightBG
+				textcolor=color__disabled
 				image="graphics/controls/checkbox/unchecked_disabled_small"
 			}
 	
 				"ListPanelColumnheader ListPanelCheckBox:disabled:selected" {
-					textcolor=disabled_OnLightBG
+					textcolor=color__disabled
 					image="graphics/controls/checkbox/checked_disabled_small"
 				}
 
 		RadioButton {
-			textcolor=text_OnLightBG
+			textcolor=color__text
 			font-family=basefont
 			font-size=15
 			font-size=16 [$OSX]
@@ -193,7 +193,7 @@
 			}
 
 				RadioButton:selected:disabled {
-					textcolor=disabled_OnLightBG
+					textcolor=color__disabled
 					
 					render_bg {
 						0="image(x0-1,y0-1,x1,y1, graphics/controls/radio/checked_disabled)"
@@ -221,7 +221,7 @@
 				}
 
 			RadioButton:disabled {
-				textcolor=disabled_OnLightBG
+				textcolor=color__disabled
 
 				render_bg {
 					0="image(x0-1,y0-1,x1,y1, graphics/controls/radio/unchecked_disabled)"
@@ -230,7 +230,7 @@
 			
 		CheckButtonList {
 			bgcolor=white
-			textcolor=text_onLightBG
+			textcolor=color__text
 			
 			render {
 				0="fill(x0, y0, x0+1, y1, grey200)"
@@ -244,9 +244,9 @@
 		TextEntry {
 			bgcolor=white
 			selectedbgcolor=blue500
-			textcolor=text_OnLightBG
+			textcolor=color__text
 			selectedtextcolor=white
-			shadowtextcolor=disabled_OnLightBG
+			shadowtextcolor=color__disabled
 			font-family=basefont
 			font-size=18
 			font-size=19 [$OSX]
@@ -271,13 +271,13 @@
 			}
 
 			TextEntry:disabled {
-				textcolor=disabled_OnLightBG
+				textcolor=color__disabled
 
 				render {
-					0="fill(x0, y0, x0+1, y1, disabled_onLightBG)"
-					1="fill(x0+1, y0, x1-1, y0+1, disabled_onLightBG)"
-					2="fill(x1-1, y0, x1, y1, disabled_onLightBG)"
-					3="fill(x0+1, y1-1, x1-1, y1, disabled_onLightBG)"
+					0="fill(x0, y0, x0+1, y1, color__disabled)"
+					1="fill(x0+1, y0, x1-1, y0+1, color__disabled)"
+					2="fill(x1-1, y0, x1, y1, color__disabled)"
+					3="fill(x0+1, y1-1, x1-1, y1, color__disabled)"
 				}
 			}
 
@@ -285,9 +285,9 @@
 			TextEntry:empty {
 				bgcolor=white
 				selectedbgcolor=blue500
-				textcolor=text_OnLightBG
+				textcolor=color__text
 				selectedtextcolor=white
-				shadowtextcolor=disabled_OnLightBG
+				shadowtextcolor=color__disabled
 				font-family=basefont
 				font-size=18
 				font-size=19 [$OSX]
@@ -298,9 +298,9 @@
 		TextEntryLarge {
 			bgcolor=white
 			selectedbgcolor=blue500
-			textcolor=text_OnLightBG
+			textcolor=color__text
 			selectedtextcolor=white
-			shadowtextcolor=disabled_OnLightBG
+			shadowtextcolor=color__disabled
 			font-family=basefont
 			font-size=22
 			font-size=23 [$OSX]	
@@ -310,7 +310,7 @@
 
 		TextEntryURL {
 			textcolor=blue500
-			shadowtextcolor=disabled_OnLightBG	
+			shadowtextcolor=color__disabled	
 			font-family=basefont
 			font-size=15
 			font-size=16 [$OSX]
@@ -322,11 +322,11 @@
 			}
 
 		Slider {
-			textcolor=secondarytext_onLightBG
+			textcolor=color__secondaryText
 		}
 		  
 			Slider:focus {
-				textcolor=text_onLightBG  
+				textcolor=color__text  
 			}
 
 		Button {		 
@@ -347,13 +347,13 @@
 				
 				// Render_bg instead of bgcolor avoids breaking every other strange button-types (Such as New Tab) that don't have a bgcolor specifically defined.
 				render_bg {
-					0="fill(x0,y0,x1,y1, dividers_onLightBG)"
+					0="fill(x0,y0,x1,y1, color__divider)"
 				}
 			}
 
 				Button:disabled {
 					bgcolor=none
-					textcolor=disabled_onLightBG
+					textcolor=color__disabled
 					
 					render_bg {}
 				}
@@ -372,7 +372,7 @@
 
 							// Render_bg instead of bgcolor avoids breaking every other strange button-types (Such as New Tab) that don't have a bgcolor specifically defined.
 							render_bg {
-								0="fill(x0,y0,x1,y1, dividers_onLightBG)"
+								0="fill(x0,y0,x1,y1, color__divider)"
 							}
 						}
 
@@ -408,7 +408,7 @@
 				textcolor=blue300
 				
 				render_bg {
-					0="fill(x0,y0,x1,y1, dividers_onLightBG)"
+					0="fill(x0,y0,x1,y1, color__divider)"
 				}
 			}
 
@@ -420,7 +420,7 @@
 		}
 
 		ToggleButton {
-			textcolor=text_OnLightBG
+			textcolor=color__text
 			font-family=basefont
 			font-size=15
 			font-size=16 [$OSX]
@@ -442,7 +442,7 @@
 			}
 
 				ToggleButton:selected:disabled {
-					textcolor=disabled_OnLightBG
+					textcolor=color__disabled
 
 					render_bg {
 						0="image(x0,y0,x1,y1, graphics/controls/checkbox/checked_disabled)"
@@ -470,7 +470,7 @@
 				}
 			
 			ToggleButton:disabled {
-				textcolor=disabled_OnLightBG
+				textcolor=color__disabled
 
 				render_bg {
 					0="image(x0,y0,x1,y1, graphics/controls/checkbox/unchecked_disabled)"
@@ -497,7 +497,7 @@
 
 			HotkeyEntryClearButton:selected {
 				render {
-					-1="fill(x0-10,y0-10,x1+10,y1+10, disabled_onLightBG)"
+					-1="fill(x0-10,y0-10,x1+10,y1+10, color__disabled)"
 					0="image(x0+3,y0+3,x1,y1, graphics\icons\closedownload\active\closedownload)"
 				}
 			}
@@ -520,7 +520,7 @@
 
 			TextEntryClearButton:selected {
 				render {
-					-1="fill(x0-10,y0-10,x1+10,y1+10, disabled_onLightBG)"
+					-1="fill(x0-10,y0-10,x1+10,y1+10, color__disabled)"
 					0="image(x0+3,y0+3,x1,y1, graphics\icons\closedownload\active\closedownload)"
 				}
 			}

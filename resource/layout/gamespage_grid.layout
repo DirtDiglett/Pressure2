@@ -7,7 +7,7 @@
 
 	styles {
 		WrapPanel {
-			bgcolor="custombackgroundprimary"
+			bgcolor="color__background"
 			inset="0 0 0 0"
 
 			render {
@@ -17,7 +17,7 @@
 		}	
 
 		emptylisttext {
-			textcolor=disabled_OnLightBG
+			textcolor=color__disabled
 			font-size=15
 			font-size=16 [$OSX]
 

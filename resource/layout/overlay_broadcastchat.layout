@@ -1,7 +1,7 @@
 "resource/layout/overlay_broadcastpanel.layout" {
 	styles {
 		Label {
-			textcolor=disabled_onLightBG
+			textcolor=color__disabled
 			font-size=14
 			font-size=15 [$OSX]
 		}
@@ -52,7 +52,7 @@
 
 		EmoticonMenuItemStyle {
 			bgcolor=none
-			textcolor=text_onLightBG
+			textcolor=color__text
 			font-size=24
 			font-size=25 [$OSX]
 			inset="-3 -1 0 0"
@@ -62,7 +62,7 @@
 		
 			EmoticonMenuItemStyle:hover {
 				bgcolor=none
-				textcolor=secondarytext_onLightBG
+				textcolor=color__secondaryText
 
 				render_bg {
 					0="fill(x0,y0,x1,y1, blue500)"
@@ -71,7 +71,7 @@
 		
 			EmoticonMenuItemStyle:selected {
 				bgcolor=none
-				textcolor=secondaryText_onLightBG
+				textcolor=color__secondaryText
 			}
 	}
 	

@@ -12,21 +12,21 @@
 
 	styles {
 		title_label {
-			textcolor=text_onLightBG
+			textcolor=color__text
 			font-family=mediumfont
 			font-size=18
 			font-size=19 [$OSX]
 		}
 
 		date_and_author {
-			textcolor=secondaryText_OnLightBG
+			textcolor=color__secondaryText
 			font-size=16
 			font-size=17 [$OSX]
 		}
 
 		newsitem_body {
 			selectedbgcolor=blue500	
-			textcolor=text_onLightBG
+			textcolor=color__text
 			selectedtextcolor=white
 			font-family=basefont
 			font-size=16
@@ -50,7 +50,7 @@
 		
 		"newsitem_body bold" {
 			selectedbgcolor=blue500
-			textcolor=text_onLightBG
+			textcolor=color__text
 			selectedtextcolor=white
 			font-weight=600
 		}
@@ -76,13 +76,13 @@
 				textcolor=blue300
 				
 				render_bg {
-					0="fill(x0,y0,x1,y1, dividers_onLightBG)"
+					0="fill(x0,y0,x1,y1, color__divider)"
 				}
 			}
 
 			more_link:disabled {
 				bgcolor=none
-				textcolor=disabled_onLightBG
+				textcolor=color__disabled
 				
 				render_bg {}
 			}
@@ -100,7 +100,7 @@
 					textcolor=blue500
 
 					render_bg {
-						0="fill(x0,y0,x1,y1, dividers_onLightBG)"
+						0="fill(x0,y0,x1,y1, color__divider)"
 					}
 				}
 

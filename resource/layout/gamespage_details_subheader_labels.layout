@@ -1,7 +1,7 @@
 "resource/layout/gamespage_details_subheader_labels.layout" {
 	styles {
 		headertext {
-			textcolor=text_onDarkBG
+			textcolor=color__text__alternate
 			font-family=mediumfont
 			font-size=18
 			font-size=19 [$OSX]
@@ -10,7 +10,7 @@
 		}
 
 		headertext-red {
-			textcolor=text_onDarkBG
+			textcolor=color__text__alternate
 			font-family=mediumfont
 			font-size=18
 			font-size=19 [$OSX]
@@ -19,7 +19,7 @@
 		}
 
 		headertext-green {
-			textcolor=text_onDarkBG
+			textcolor=color__text__alternate
 			font-family=mediumfont
 			font-size=18
 			font-size=19 [$OSX]
@@ -28,7 +28,7 @@
 		}
 
 		headertext-blue {
-			textcolor=text_onDarkBG
+			textcolor=color__text__alternate
 			font-family=mediumfont
 			font-size=18
 			font-size=19 [$OSX]
@@ -37,7 +37,7 @@
 		}
 
 		valuetext {
-			textcolor=text_onDarkBG
+			textcolor=color__text__alternate
 			font-family=basefont
 			font-size=18
 			font-size=19 [$OSX]

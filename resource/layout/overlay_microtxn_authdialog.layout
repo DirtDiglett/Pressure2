@@ -7,12 +7,12 @@
 
 		Frame {
 			render {
-				0="fill(x0,y1-58,x1,y1-57, dividers_onLightBG)"
+				0="fill(x0,y1-58,x1,y1-57, color__divider)"
 			}
 		}
 
 		BalanceStyle {
-			textcolor=text_onLightBG
+			textcolor=color__text
 			padding-left=8
 			padding-right=8
 
@@ -31,7 +31,7 @@
 
 		RefundTextStyle {
 			selectedbgcolor=blue500
-			textcolor=secondaryText_onLightBG
+			textcolor=color__secondaryText
 			selectedtextcolor=white
 			font-size=15
 			font-size=16 [$OSX]
@@ -54,7 +54,7 @@
 		
 		SeparatorStyle {
 			render_bg {
-				0="fill( x0, y0, x1, y1, dividers_OnLightBG )"
+				0="fill( x0, y0, x1, y1, color__divider )"
 			}
 		}	
 	}

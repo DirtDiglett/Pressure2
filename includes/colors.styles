@@ -2,129 +2,120 @@
 	include "includes/material.styles"
 
 	colors {
-		none										=		"0 0 0 0"
+		none									=		"0 0 0 0"
 		
 		mineshaft								=		"56 56 56 255"
 		tundora									=		"67 67 67 255"
-		nero										=		"41 41 41 255"
+		nero									=		"41 41 41 255"
 		alabaster								=		"252 252 252 255"
-		alabaster--33opacity		=		"252 252 252 85"
+		alabaster__33opacity					=		"252 252 252 85"
 		mercury									=		"232 232 232 255"
-		mercury--33opacity			=		"232 232 232 85"
+		mercury__33opacity						=		"232 232 232 85"
 		gallery									=		"235 235 235 255"
-		key-lime-pie 						= 	"182 224 32 255"
-		green-yellow 						= 	"203 250 35 255"
-		picton-blue 						= 	"46 197 235 255"
-		cyan-aqua 							= 	"51 214 255 255"
-		gray 										= 	"141 141 141 255"
-		silver-chalice 					= 	"166 166 166 255"
+		keyLimePie 								= 		"182 224 32 255"
+		greenYellow 							= 		"203 250 35 255"
+		pictonBlue 								= 		"46 197 235 255"
+		cyanAqua 								= 		"51 214 255 255"
+		gray 									= 		"141 141 141 255"
+		silverChalice 							= 		"166 166 166 255"
 
 		black 									=		"0 0 0 255"
-		black--87opacity				=		"0 0 0 222"
-		black--54opacity				=		"0 0 0 138"
-		black--26opacity				=		"0 0 0 66"
-		black--12opacity				=		"0 0 0 31"
+		black__87opacity						=		"0 0 0 222"
+		black__54opacity						=		"0 0 0 138"
+		black__26opacity						=		"0 0 0 66"
+		black__12opacity						=		"0 0 0 31"
 
 		white 									=		"255 255 255 255"
-		white--70opacity				=		"255 255 255 179"
-		white--30opacity				=		"255 255 255 77"
-		white--12opacity				=		"255 255 255 31"
+		white__70opacity						=		"255 255 255 179"
+		white__30opacity						=		"255 255 255 77"
+		white__12opacity						=		"255 255 255 31"
 
-		steam-workshop					=		"27 40 56 255"
+		steam-workshop							=		"27 40 56 255"
 
-//	------------------------------------------------
+//	________________________________________________
 
-		color__pressure-grey						=		mineshaft
-		color__pressure-grey--accent		=		tundora
-		color__pressure-grey--secondary	=		nero
+		color__pressureGrey						=		mineshaft
+		color__pressureGrey__accent				=		tundora
+		color__pressureGrey__secondary			=		nero
 
-// THEME SPECIFIC
+		color__background						=		alabaster
+		color__background__secondary			=		mercury
 
-		color__background										=		alabaster
-		color__background--secondary				=		mercury
+		color__background__alternate 			=		mineshaft
+		color__background__secondary__alternate =		nero
 		
 		// These are used as a cheating overlay to fake 54% opacity text where it's not possible to change the text itself.
-		color__background-overlay								=		alabaster--33opacity
-		color__background-overlay--secondary		=		mercury--33opacity
+		color__backgroundOverlay				=		alabaster__33opacity
+		color__backgroundOverlay__secondary		=		mercury__33opacity
 
-		color__text													=		black--87opacity
-		color__secondary-text								=		black--54opacity
-		color__disabled											=		black--26opacity
-		color__divider											=		black--12opacity
-		color__divider--solid								=		gallery								// Due to the way certain elements have to overlap, there is need for a solid equivelant of `color__divider` on a `color__background`
+		color__text								=		black__87opacity
+		color__secondaryText					=		black__54opacity
+		color__headingText						=		mineshaft
+		color__disabled							=		black__26opacity
+		color__divider							=		black__12opacity
+		color__divider__solid					=		gallery	 // Due to the way certain elements have to overlap, there is need for a solid equivelant of `color__divider` on a `color__background`
 
-		color__text--alternate							=		white
-		color__secondary-text--alternate		=		white--70opacity
-		color__disabled--alternate					=		white--30opacity
-		color__divider--alternate						=		white--12opacity
+		color__text__alternate					=		white
+		color__secondaryText__alternate			=		white__70opacity
+		color__headingText__alternate			=		white
+		color__disabled__alternate				=		white__30opacity
+		color__divider__alternate				=		white__12opacity
 
-		color__workshop											=		steam-workshop
+		color__workshop							=		steam-workshop
 
-		color__notification-background			=		color__background
+		color__notificationBackground			=		mineshaft
 
-	// This section is reserved for colors used in `render {}` and `render_bg {}` because for some silly reason they do not allow variables with hyphens in them.
-		color__play_button_background								=		limeA400--26opacity
-		color__play_button_background__hover				=		limeA400--50opacity
+		color__consoleBackground				=		mineshaft
 
 
-		Friends.InGameColor 								= key-lime-pie
-		Friends.InGameHoverColor 						= green-yellow
-		Friends.OnlineColor 								= picton-blue
-		Friends.OnlineHoverColor 						= cyan-aqua
-		Friends.OfflineColor 								= gray
-		Friends.OfflineHoverColor 					= silver-chalice
-		Friends.IgnoredColor 								= orange500
+		color__playButtonBackground				=		limeA400__26opacity
+		color__playButtonBackground__hover		=		limeA400__50opacity
 
-		Friends.PanelDefault 								= color__text
-		Friends.PanelOver 									= color__text
-		Friends.PanelSelected 							= white
-		Friends.SectionHeader 							= color__text
-		Friends.NoAvatarOver 								= color__text
-		Friends.ListHeaderFadeOut 					= none
+		color__titleBarBackground				=		color__pressureGrey
+		color__titleBarBackground__accent		=		color__pressureGrey__accent
+		color__submenuBackground				=		color__pressureGrey__secondary
 
-		ListPanel.TextColor 								= color__text
-		ListPanel.BgColor 									= none
-		ListPanel.SelectedTextColor 				= white
-		ListPanel.SelectedBgColor 					= blue500
-		ListPanel.SelectedOutOfFocusBgColor = blue800
-		ListPanel.DisabledTextColor 				= color__text--alternate
-		ListPanel.DisabledSelectedTextColor = color__disabled
-		ListPanel.EmptyListInfoTextColor 		= color__text
+		color__TooltipBackground__alternate		=		color__background__alternate
 
-		PropertySheet.FlashTabColor 				= orange500
-		DragDrop.DragFrame 									= none
-		DragDrop.DropFrame 									= none
-		WizardPanel.HeaderBGColor 					= green500
-		ChatDialog.URLColor 								= blue500
-		ChatOwnTextColor 										= color__text
-		ChatDialog.HistoryColor 						= color__disabled
-		ChatGradientTop 										= none
-		ChatGradientBottom 									= none
-		GiftOnlyInfo.ImagePanelColor 				= none
-		NotificationBodyText 								= color__secondary-text--alternate
-		GiftOnlyInfo.ImagePanelColor 				= none
-		TextEntry.IMEBGColor 								= none
-		TextEntry.IMEFGColor 								= color__disabled
+		color__listPanelSectionHeaderText		=		color__headingText
+		color__textInputBackground				=		white
 
-// TO REMOVE EVERYWHERE -----------------------------------------------
-		
-		customgreyprimary 									=		color__pressure-grey
-		customgreyaccent										=		color__pressure-grey--accent
-		customgreysecondary									=		color__pressure-grey--secondary
-		custombackgroundprimary 						= color__background
-		custombackgroundnofocus 						= color__background--secondary
-		text_OnLightBG 											= color__text
-		secondaryText_OnLightBG 						= color__secondary-text
-		disabled_OnLightBG 									= color__disabled
-		dividers_OnLightBG 									= color__divider
-		dividers_onLightBG_solid 						= color__divider--solid
-		text_OnDarkBG 											= color__text--alternate
-		secondaryText_OnDarkBG 							= color__secondary-text--alternate
-		disabled_OnDarkBG 									= color__disabled--alternate
-		dividers_OnDarkBG 									= color__divider--alternate
-		custombackgroundprimarytransparent 	= color__background-overlay
-		custombackgroundnofocustransparent 	= color__background-overlay--secondary
-		workshopblue 												= color_workshop
-		notificationbg 											= color__notification-background
+		Friends.InGameColor 					= 		keyLimePie
+		Friends.InGameHoverColor 				= 		greenYellow
+		Friends.OnlineColor 					= 		pictonBlue
+		Friends.OnlineHoverColor 				= 		cyanAqua
+		Friends.OfflineColor 					= 		gray
+		Friends.OfflineHoverColor 				= 		silverChalice
+		Friends.IgnoredColor 					= 		orange500
+		Friends.PanelDefault 					= 		color__text
+		Friends.PanelOver 						= 		color__text
+		Friends.PanelSelected 					= 		white
+		Friends.SectionHeader 					= 		color__text
+		Friends.NoAvatarOver 					= 		color__text
+		Friends.ListHeaderFadeOut 				= 		none
+
+		ListPanel.TextColor 					= 		color__text
+		ListPanel.BgColor 						= 		none
+		ListPanel.SelectedTextColor 			= 		white
+		ListPanel.SelectedBgColor 				= 		blue500
+		ListPanel.SelectedOutOfFocusBgColor 	=		blue800
+		ListPanel.DisabledTextColor 			= 		color__text__alternate
+		ListPanel.DisabledSelectedTextColor 	= 		color__disabled
+		ListPanel.EmptyListInfoTextColor 		= 		color__text
+
+		PropertySheet.FlashTabColor 			= 		orange500
+		DragDrop.DragFrame 						= 		none
+		DragDrop.DropFrame 						= 		none
+		WizardPanel.HeaderBGColor 				= 		green500
+		ChatDialog.URLColor 					= 		blue500
+		ChatOwnTextColor 						= 		color__text
+		ChatDialog.HistoryColor 				=		color__disabled
+		ChatGradientTop 						= 		none
+		ChatGradientBottom 						= 		none
+		GiftOnlyInfo.ImagePanelColor 			= 		none
+		NotificationBodyText 					= 		color__secondaryText__alternate
+		GiftOnlyInfo.ImagePanelColor 			= 		none
+		TextEntry.IMEBGColor 					= 		none
+		TextEntry.IMEFGColor 					= 		color__disabled
 	}
 }

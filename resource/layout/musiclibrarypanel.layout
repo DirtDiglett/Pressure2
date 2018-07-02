@@ -10,13 +10,13 @@
 			}
 
 			render_bg {
-				0="fill(x0,y0+34,x1,y0+79, customgreysecondary)"
+				0="fill(x0,y0+34,x1,y0+79, color__submenuBackground)"
 			}
 		}
 			
 		LibrarySearch {
-			bgcolor=custombackgroundprimary
-			textcolor=text_onLightBG
+			bgcolor=color__textInputBackground
+			textcolor=color__text
 			font-family=basefont
 			font-size=18
 			font-size=19 [$OSX]
@@ -32,28 +32,28 @@
 			
 			LibrarySearch:empty {
 				font-style=italic
-				textcolor=disabled_onLightBG
+				textcolor=color__disabled
 			}
 
 				LibrarySearch:empty:hover {
-					textcolor=secondaryText_onLightBG
+					textcolor=color__secondaryText
 				}
 			
 			LibrarySearch:hover {
-				textcolor=text_onLightBG
+				textcolor=color__text
 			}
 			
 			LibrarySearch:disabled {
 				font-style=italic
-				textcolor=disabled_onLightBG
+				textcolor=color__disabled
 			}
 		
 		LibrarySearchIcon {
-			bgcolor=custombackgroundprimary
+			bgcolor=color__textInputBackground
 			textcolor=none
 			
 			render_bg {
-				-1="fill(x1,y0,x1+10,y1, custombackgroundprimary)"
+				-1="fill(x1,y0,x1+10,y1, color__textInputBackground)"
 				0="image(x0+14,y0+13,x1,y1, graphics/icons/search/standard)"
 			}
 		}
@@ -116,7 +116,7 @@
 		
 		NavLabel2 {
 			bgcolor=none
-			textcolor=secondaryText_onDarkBG
+			textcolor=color__secondaryText__alternate
 			font-family=basefont
 			font-size=20
 			font-size=21 [$OSX]
@@ -131,7 +131,7 @@
 		}
 		
 			NavLabel2:hover {
-				textcolor=text_onDarkBG
+				textcolor=color__text__alternate
 				
 				render_bg {
 					0="image(x1-35, y0+21, x1, y1, graphics/icons/dropdown/hover/down)"
@@ -139,10 +139,10 @@
 			}
 			
 			NavLabel2:selected {
-				textcolor=text_onDarkBG
+				textcolor=color__text__alternate
 
 				render_bg {
-					0="fill(x0,y0,x1,y1, disabled_onDarkBG)"
+					0="fill(x0,y0,x1,y1, color__disabled__alternate)"
 					1="image(x1-35, y0+21, x1, y1, graphics/icons/dropdown/hover/down)"
 				}
 			}

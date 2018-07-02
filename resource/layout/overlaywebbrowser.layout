@@ -1,11 +1,11 @@
 "steam/cached/overlaywebbrowser.layout" {	
 	styles {
 		TextEntryURL {
-			bgcolor=custombackgroundprimary
+			bgcolor=color__textInputBackground
 			selectedbgcolor=blue500
-			textcolor=text_onLightBG
+			textcolor=color__text
 			selectedtextcolor=white
-			shadowtextcolor=disabled_onLightBG
+			shadowtextcolor=color__disabled
 			font-family=basefont
 			font-size=18
 			font-size=19 [$OSX]
@@ -15,14 +15,14 @@
 
 			render {}
 			render_bg {
-				0="fill(x1,y0,x1+25,y1, custombackgroundprimary)"
+				0="fill(x1,y0,x1+25,y1, color__textInputBackground)"
 			}
 		}
 		
 			TextEntryURL:hover {}
 
 			TextEntryURL:Disabled {
-				textcolor=disabled_onLightBG
+				textcolor=color__disabled
 			}
 	}
 	

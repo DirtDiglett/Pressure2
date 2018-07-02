@@ -1,13 +1,13 @@
 "resource/layout/overlay_achievement_item.layout" {
 	styles {
 		label {
-			textcolor=secondarytext_onDarkBG
+			textcolor=color__secondaryText__alternate
 			font-family=mediumfont
 			font-size=18
 			font-size=19 [$OSX]
 		}
 		name {
-			textcolor=text_onDarkBG
+			textcolor=color__text__alternate
 			font-family=basefont
 			font-size=18
 			font-size=19 [$OSX]

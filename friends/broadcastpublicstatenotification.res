@@ -1,7 +1,7 @@
 "resource/BroadcastPublicState.res" {
 	styles {
 		NotifyRemoteClientInfo {
-			textcolor=text_onDarkBG
+			textcolor=color__text__alternate
 		}
 
 		Notification {
@@ -12,7 +12,7 @@
 		}
 
 		Label {
-			textcolor=secondaryText_onDarkBG
+			textcolor=color__secondaryText__alternate
 		}
 	}
 

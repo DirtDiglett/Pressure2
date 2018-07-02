@@ -2,15 +2,15 @@
 	styles {
 		CSettingsSubInGame {
 			render {
-				0="fill(x0+70,y0+28,x0+396,y0+47, custombackgroundnofocustransparent)"
-				1="fill(x0+70,y0+179,x0+285,y0+197, custombackgroundnofocustransparent)"
-				2="fill(x0+70,y0+321,x0+396,y0+339, custombackgroundnofocustransparent)"
-				3="fill(x0+70,y0+436,x0+396,y0+454, custombackgroundnofocustransparent)"
+				0="fill(x0+70,y0+28,x0+396,y0+47, color__backgroundOverlay__secondary)"
+				1="fill(x0+70,y0+179,x0+285,y0+197, color__backgroundOverlay__secondary)"
+				2="fill(x0+70,y0+321,x0+396,y0+339, color__backgroundOverlay__secondary)"
+				3="fill(x0+70,y0+436,x0+396,y0+454, color__backgroundOverlay__secondary)"
 			}
 			render_bg {
-				0="fill(x0+71,y0+168,x1,y0+169, dividers_onLightBG)"
-				1="fill(x0+71,y0+302,x1,y0+303, dividers_onLightBG)"
-				2="fill(x0+71,y0+418,x1,y0+419, dividers_onLightBG)"
+				0="fill(x0+71,y0+168,x1,y0+169, color__divider)"
+				1="fill(x0+71,y0+302,x1,y0+303, color__divider)"
+				2="fill(x0+71,y0+418,x1,y0+419, color__divider)"
 				3="image(x0+26,y0+27,x1,y1, graphics/icons/settings/overlay)"
 				4="image(x0+26,y0+179,x1,y1, graphics/icons/settings/screenshots)"
 				5="image(x0+26,y0+320,x1,y1, graphics/icons/settings/fps)"
@@ -18,15 +18,15 @@
 			}
 
 			render [$OSX&&$LINUX] {
-				0="fill(x0+70,y0+28,x0+396,y0+47, custombackgroundnofocustransparent)"
-				1="fill(x0+70,y0+140,x0+285,y0+158, custombackgroundnofocustransparent)"
-				2="fill(x0+70,y0+295,x0+396,y0+313, custombackgroundnofocustransparent)"
-				3="fill(x0+70,y0+410,x0+396,y0+428, custombackgroundnofocustransparent)"
+				0="fill(x0+70,y0+28,x0+396,y0+47, color__backgroundOverlay__secondary)"
+				1="fill(x0+70,y0+140,x0+285,y0+158, color__backgroundOverlay__secondary)"
+				2="fill(x0+70,y0+295,x0+396,y0+313, color__backgroundOverlay__secondary)"
+				3="fill(x0+70,y0+410,x0+396,y0+428, color__backgroundOverlay__secondary)"
 			}
 			render_bg [$OSX&&$LINUX] {
-				0="fill(x0+71,y0+125,x1,y0+126, dividers_onLightBG)"
-				1="fill(x0+71,y0+276,x1,y0+277, dividers_onLightBG)"
-				2="fill(x0+71,y0+392,x1,y0+393, dividers_onLightBG)"
+				0="fill(x0+71,y0+125,x1,y0+126, color__divider)"
+				1="fill(x0+71,y0+276,x1,y0+277, color__divider)"
+				2="fill(x0+71,y0+392,x1,y0+393, color__divider)"
 				3="image(x0+26,y0+27,x1,y1, graphics/icons/settings/overlay)"
 				4="image(x0+26,y0+140,x1,y1, graphics/icons/settings/screenshots)"
 				5="image(x0+26,y0+294,x1,y1, graphics/icons/settings/fps)"
@@ -36,17 +36,17 @@
 
 			CSettingsSubInGame:framefocus {
 				render {
-					0="fill(x0+70,y0+28,x0+396,y0+47, custombackgroundprimarytransparent)"
-					1="fill(x0+70,y0+166,x0+285,y0+184, custombackgroundprimarytransparent)"
-					2="fill(x0+70,y0+321,x0+396,y0+339, custombackgroundprimarytransparent)"
-					3="fill(x0+70,y0+436,x0+396,y0+454, custombackgroundprimarytransparent)"
+					0="fill(x0+70,y0+28,x0+396,y0+47, color__backgroundOverlay)"
+					1="fill(x0+70,y0+166,x0+285,y0+184, color__backgroundOverlay)"
+					2="fill(x0+70,y0+321,x0+396,y0+339, color__backgroundOverlay)"
+					3="fill(x0+70,y0+436,x0+396,y0+454, color__backgroundOverlay)"
 				}
 
 				render [$OSX&&$LINUX] {
-					0="fill(x0+70,y0+28,x0+396,y0+47, custombackgroundprimarytransparent)"
-					1="fill(x0+70,y0+140,x0+285,y0+158, custombackgroundprimarytransparent)"
-					2="fill(x0+70,y0+295,x0+396,y0+313, custombackgroundprimarytransparent)"
-					3="fill(x0+70,y0+410,x0+396,y0+428, custombackgroundprimarytransparent)"
+					0="fill(x0+70,y0+28,x0+396,y0+47, color__backgroundOverlay)"
+					1="fill(x0+70,y0+140,x0+285,y0+158, color__backgroundOverlay)"
+					2="fill(x0+70,y0+295,x0+396,y0+313, color__backgroundOverlay)"
+					3="fill(x0+70,y0+410,x0+396,y0+428, color__backgroundOverlay)"
 				}
 			}
 	}

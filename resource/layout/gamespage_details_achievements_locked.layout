@@ -14,7 +14,7 @@
 		}
 
 		infolabel {
-			textcolor=text_onLightBG
+			textcolor=color__text
 			font-size=18
 			font-size=19 [$OSX]
 		}

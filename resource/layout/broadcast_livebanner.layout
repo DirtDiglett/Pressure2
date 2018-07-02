@@ -1,24 +1,24 @@
 "resource/layout/broadcast_livebanner.layout" {
 	styles {
 		Label {
-			textcolor=secondaryText_onDarkBG
+			textcolor=color__secondaryText__alternate
 		}
 
 		ViewersTextStyle {
-			textcolor=text_onDarkBG
+			textcolor=color__text__alternate
 			font-size=20
 			font-size=21 [$OSX]
 		}		
 		
 		LiveBannerStyleIngame {   
 			render_bg { 
-				0="fill(x0, y0, x1, y1, secondaryText_onLightBG)"
+				0="fill(x0, y0, x1, y1, color__secondaryText)"
 			}
 		}
 		
 		LiveBannerStyleDesktop {   
 			render_bg {
-				0="fill(x0, y0, x1, y1, secondaryText_onLightBG)"
+				0="fill(x0, y0, x1, y1, color__secondaryText)"
 			}
 		}
 	}
