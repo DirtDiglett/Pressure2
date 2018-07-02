@@ -1,7 +1,7 @@
 "resource/layout/subpaneloptionscloud.layout" {
 	styles {
 		highlight {
-			textcolor=red500
+			textcolor=color__headingText
 			font-family=mediumfont
 			font-size=30
 			font-size=31 [$OSX]
