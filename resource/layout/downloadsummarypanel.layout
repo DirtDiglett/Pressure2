@@ -5,7 +5,7 @@
 		CDownloadSummaryPanel {
 			bgcolor=color__submenuBackground
 			inset="0 0 0 0"
-	  	}
+	  }
 	   		
 		bigtext {
 			textcolor=color__text__alternate
@@ -60,10 +60,13 @@
 		
 		DiscGraphPanel {
 			bgcolor=none	
-			textcolor=lime500
+			textcolor=color__graphLine
 
 			render_bg {}
-			render {}
+			render {
+				0 = "fill(x0, y0, x0+140, y1, color__submenuBackground)"
+				1 = "gradient_horizontal(x0+140,y0,x0+600,y1, color__submenuBackground, color__submenuBackground__transparent)"
+			}
 		}
 
 		DiskLegendPanel {

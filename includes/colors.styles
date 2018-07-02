@@ -29,7 +29,9 @@
 
 		white 									=		"255 255 255 255"
 		white__70opacity						=		"255 255 255 179"
+		white__50opacity						=		"255 255 255 128"
 		white__30opacity						=		"255 255 255 77"
+		white__26opacity						=		"255 255 255 66"
 		white__12opacity						=		"255 255 255 31"
 
 		steam-workshop							=		"27 40 56 255"
@@ -70,8 +72,8 @@
 		color__errorText						=		red500
 		color__warningText						=		orange500
 
-		color__gameItemInstalled				=		white
-		color__gameItemShortcut					=		white
+		color__gameItemInstalled				=		color__text
+		color__gameItemShortcut					=		color__text
 		color__gameItemMod						=		bluegrey900
 		color__gameItemUpdating					=		orange500
 		color__gameItemDecrypting				=		green500
@@ -99,20 +101,53 @@
 
 		color__consoleBackground				=		mineshaft
 
+		color__activateButtonText						= white
+		color__activateButtonBackground				=		white__26opacity
+		color__activateButtonBackground__hover		=		white__50opacity
+		color__activateButtonBackground__selected				=		white__70opacity
+		color__activateButtonBorder				=		white
+		color__activateButtonBorder__hover		=		white
+		color__activateButtonBorder__selected				=		white
 
+		color__playButtonText						= limeA400
 		color__playButtonBackground				=		limeA400__26opacity
 		color__playButtonBackground__hover		=		limeA400__50opacity
+		color__playButtonBackground__selected				=		limeA400__70opacity
+		color__playButtonBorder				=		limeA400
+		color__playButtonBorder__hover		=		limeA400
+		color__playButtonBorder__selected				=		limeA700
+
+		color__launchButtonText						= lightblueA200
+		color__launchButtonBackground				=		lightblueA200__26opacity
+		color__launchButtonBackground__hover		=		lightblueA200__50opacity
+		color__launchButtonBackground__selected				=		lightblueA200__70opacity
+		color__launchButtonBorder				=		lightblueA200
+		color__launchButtonBorder__hover		=		lightblueA200
+		color__launchButtonBorder__selected				=		lightblueA400
+
+		color__buyButtonText						= amberA400
+		color__buyButtonBackground				=		amberA400__26opacity
+		color__buyButtonBackground__hover		=		amberA400__50opacity
+		color__buyButtonBackground__selected				=		amberA400__70opacity
+		color__buyButtonBorder				=		amberA400
+		color__buyButtonBorder__hover		=		amberA400
+		color__buyButtonBorder__selected				=		amberA700
+
 
 		color__titleBarBackground				=		color__pressureGrey
 		color__titleBarBackground__accent		=		color__pressureGrey__accent
 		color__titleBarText						=		white
 		color__submenuBackground				=		color__pressureGrey__secondary
+		color__submenuBackground__transparent	=		"41 41 41 0" // This is used as a workaround solution for fading out download graphs into the background. We can't use "none" as it creates a gradient fading to black.
 
 		color__TooltipBackground				=		white
 		color__TooltipBackground__alternate		=		color__background__alternate
 
 		color__listPanelSectionHeaderText		=		color__headingText
 		color__textInputBackground				=		white
+
+		color__graphLine								=		lime500
+
 
 		Friends.InGameColor 					= 		keyLimePie
 		Friends.InGameHoverColor 				= 		greenYellow

@@ -381,7 +381,7 @@ steam.styles {
 
 		GraphPanel {
 			bgcolor = none
-			textcolor = lime500 // TO DO
+			textcolor = color__graphLine
 			
 			render_bg {}
 		}	
