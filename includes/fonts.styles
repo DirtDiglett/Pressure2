@@ -4,5 +4,7 @@
 		basefont = "Roboto Regular" [$OSX]
 		mediumfont = "Roboto Medium"
 		heavyfont = "Roboto Bold"
+		font__console = "Lucida Console"
+		font__console = "Menlo" [$OSX]
 	}
 }
