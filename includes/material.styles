@@ -1,6 +1,6 @@
 "material.styles" {
 	colors {
-    	red500 = "244 67 54 255"
+    red500 = "244 67 54 255"
 		red50 = "255 235 238 255"
 		red100 = "255 205 210 255"
 		red200 = "239 154 154 255"
@@ -66,6 +66,7 @@
 		limeA400 = "198 255 0 255"
 		limeA400__26opacity		=		"198 255 0 66"
 		limeA400__50opacity		=		"198 255 0 129"
+		limeA400__70opacity		=		"198 255 0 179"
 		limeA700 = "174 234 0 255"
 
 		lightblue500 = "3 169 244 255"
@@ -83,6 +84,7 @@
 		lightblueA200 = "64 196 255 255"
 		lightblueA200__26opacity = "64 196 255 66"
 		lightblueA200__50opacity = "64 196 255 128"
+		lightblueA200__70opacity = "64 196 255 179"
 		lightblueA400 = "0 176 255 255"
 		lightblueA700 = "0 145 234 255"
 
@@ -144,6 +146,7 @@
 		amberA400 = "255 196 0 255"
 		amberA400__26opacity = "255 196 0 66"
 		amberA400__50opacity = "255 196 0 128"
+		amberA400__70opacity = "255 196 0 179"
 		amberA700 = "255 171 0 255"
   }
 }
