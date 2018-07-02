@@ -13,852 +13,858 @@ steam.styles {
 		"Csteamrootdialog ListPanelColumnHeader:hover" {}
 
 		FrameTitle {
-			bgcolor=color__titleBarBackground
-			textcolor=color__disabled__alternate
-			font-family=basefont
-			font-size=24
-			font-size=25 [$OSX]
-			font-weight=400
-			padding-right=64			
-			inset="4 1 0 0"
-			inset="0 8 0 0" [$OSX]
+			bgcolor = color__titleBarBackground
+			font-family = basefont
+			font-size = 24
+			font-size = 25 [$OSX]
+			font-weight = 400
+			inset = "0 8 0 0" [$OSX]
+			inset = "4 1 0 0"
+			padding-right = 64			
+			textcolor = color__disabled__alternate
 
 			render_bg {
-				0="fill(x0,y0,x1,y0+1, color__titleBarBackground__accent)"
+				0 = "fill(x0,y0,x1,y0+1, color__titleBarBackground__accent)"
 			}
 		}
 		
 			FrameTitle:framefocus {
-				textcolor=white
+				textcolor = color__titleBarText
 			}
 
 		Frame {
-			bgcolor=color__background__secondary
+			bgcolor = color__background__secondary
 		} 
 			
 			Frame:FrameFocus {
-				bgcolor=color__background
+				bgcolor = color__background
 			}
 
 		Divider {
-			bgcolor=none
+			bgcolor = none
 
 			render {
-				0="fill(x0, y1 - 1, x1, y1, color__divider)"
+				0 = "fill(x0, y1 - 1, x1, y1, color__divider)"
 			}
 		}
 
 		Page {
-			bgcolor=none
+			bgcolor = none
 
 			render_bg {}
 		}
 
 		Panel { 
-			textcolor=color__text
-			font-family=basefont
-			font-size=15
-			font-size=16 [$OSX]
-			font-weight=400
+			font-family = basefont
+			font-size = 15
+			font-size = 16 [$OSX]
+			font-weight = 400
+			textcolor = color__text
 		}
 
 		PropertyPage {
-			bgcolor=none
+			bgcolor = none
 		}
 
 		Label {
-			bgcolor=none
-			selectedbgcolor=blue500
-			textcolor=color__text
-			selectedtextcolor=color__text
-			font-family=basefont
-			font-size=16
-			font-size=17 [$OSX]
-			font-weight=400
+			bgcolor = none
+			font-family = basefont
+			font-size = 16
+			font-size = 17 [$OSX]
+			font-weight = 400
+			selectedbgcolor = color__selectedTextBackground
+			selectedtextcolor = color__selectedText
+			textcolor = color__text
 		}
 
 		URLLabel {
-			textcolor=blue500
-			font-family=basefont
-			font-size=16
-			font-size=17 [$OSX]
-			font-weight=400
-			font-style=underline
+			font-family = basefont
+			font-size = 16
+			font-size = 17 [$OSX]
+			font-style = underline
+			font-weight = 400
+			textcolor = color__URL
 		}
 		
 			URLLabel:Hover {
-				textcolor=blue300
+				textcolor = color__URL__hover
 			}
 
 		URLLabelSimple {
-			textcolor=blue500
-			font-family=basefont
-			font-size=16
-			font-size=17 [$OSX]
-			font-weight=400
-			font-style=underline
+			font-family = basefont
+			font-size = 16
+			font-size = 17 [$OSX]
+			font-style = underline
+			font-weight = 400
+			textcolor = color__URL
 		}
 		
 			URLLabelSimple:Hover {
-				textcolor=blue300
+				textcolor = color__URL__hover
 			}
 	 
 		URLLabelSimple2 {
-			textcolor=blue500
-			font-family=basefont
-			font-size=16
-			font-size=17 [$OSX]
-			font-weight=400
-			font-style=underline
+			font-family = basefont
+			font-size = 16
+			font-size = 17 [$OSX]
+			font-style = underline
+			font-weight = 400
+			textcolor = color__URL
 		}
 		
 			URLLabelSimple2:Hover {
-				textcolor=blue300
+				textcolor = color__URL__hover
 			} 
 
 		Menu {
-			bgcolor=white
-			inset="0 0 0 0"
+			bgcolor = color__menuBackground
+			inset = "0 0 0 0"
 			
 			render {}
 			render_bg {
-				0="fill(x0,y0,x0+1,y1, color__divider)"
-				1="fill(x0+1,y0,x1-1,y0+1, color__divider)"
-				2="fill(x1-1,y0,x1,y1, color__divider)"
-				3="fill(x0+1,y1-1,x1-1,y1, color__divider)"
+				0 = "fill(x0,y0,x0+1,y1, color__menuBorder)"
+				1 = "fill(x0+1,y0,x1-1,y0+1, color__menuBorder)"
+				2 = "fill(x1-1,y0,x1,y1, color__menuBorder)"
+				3 = "fill(x0+1,y1-1,x1-1,y1, color__menuBorder)"
 			}
 		}
 		
 		MenuItem {
-			bgcolor=none
-			textcolor=color__text
-			font-family=basefont			
-			font-size=17
-			font-size=18 [$OSX]
-			font-weight=400
-			inset="0 0 0 0"
-			padding-left=6
-			padding-right=6			
+			bgcolor = none
+			font-family = basefont			
+			font-size = 17
+			font-size = 18 [$OSX]
+			font-weight = 400
+			inset = "0 0 0 0"
+			padding-left = 6
+			padding-right = 6			
+			textcolor = color__menuText
 			
 			render_bg {}
 		}
 
 			MenuItem:hover {
-				textcolor=white
-				bgcolor=blue500
+				textcolor = color__menuText__hover
+				bgcolor = color__menuTextBackground__hover
 			}
 		
 			MenuItem:disabled {
-				textcolor=color__disabled
-				shadowtextcolor=none
+				textcolor = color__disabled
+				shadowtextcolor = none
 			}
 		
 				MenuItem:disabled:hover {
-					textcolor=color__disabled
-					shadowtextcolor=none
+					textcolor = color__disabled
+					shadowtextcolor = none
 				}
 
 			MenuItem:selected {
-				textcolor=white
-				bgcolor=blue500
+				textcolor = color__menuText__hover
+				bgcolor = color__menuTextBackground__hover
 			}
 
 		MenuSeparator {
-			bgcolor=none
-			textcolor=none
-			inset="0 0 0 0"			
+			bgcolor = none
+			inset = "0 0 0 0"			
+			textcolor = none
 
 			render {
-				0="fill(x0+1, y0+1, x1-1, y0+2, color__divider)"
+				0 = "fill(x0+1, y0+1, x1-1, y0+2, color__menuBorder)"
 			}
 		}
 
 		SuperNavMenu {
-			bgcolor=white
-			padding-left=8
-			padding-right=8
+			bgcolor = color__menuBackground
+			padding-left = 8
+			padding-right = 8
 
 			render {}
 			render_bg {
-				0="fill(x0,y0,x0+1,y1, color__divider)"
-				1="fill(x0+1,y0,x1-1,y0+1, color__divider)"
-				2="fill(x1-1,y0,x1,y1, color__divider)"
-				3="fill(x0+1,y1-1,x1-1,y1, color__divider)"
+				0 = "fill(x0,y0,x0+1,y1, color__menuBorder)"
+				1 = "fill(x0+1,y0,x1-1,y0+1, color__menuBorder)"
+				2 = "fill(x1-1,y0,x1,y1, color__menuBorder)"
+				3 = "fill(x0+1,y1-1,x1-1,y1, color__menuBorder)"
 			}
 		}
 
 		SuperNavMenuItem {
-			bgcolor=none
-			textcolor=color__text
-			font-size=17
-			font-size=18 [$OSX]
-			font-style=normal
+			bgcolor = none
+			textcolor = color__menuText
+			font-size = 17
+			font-size = 18 [$OSX]
+			font-style = normal
 		}
 
 			SuperNavMenuItem:hover {
-				bgcolor=blue500
-				textcolor=white				
+				bgcolor = color__menuTextBackground__hover
+				textcolor = color__menuText__hover				
 			}
 
 			SuperNavMenuItem:selected {
-				bgcolor=blue500
-				textcolor=white				
+				bgcolor = color__menuTextBackground__hover
+				textcolor = color__menuText__hover				
 			}
 
 		SuperNavMenuDivider {
-			textcolor=none
+			textcolor = none
 
 			render {
-				1="fill(x0+1, y0+1, x1-1, y0+2, color__divider)"
+				1 = "fill(x0+1, y0+1, x1-1, y0+2, color__menuBorder)"
 			}
 		}
 
 		Notification {
-			bgcolor=color__notificationBackground
-			textcolor=color__text__alternate
-			font-family=basefont
-			font-size=16
-			font-size=17 [$OSX]
-			font-weight=400
-			minimum-width=289
-			minimum-height=98		
+			bgcolor = color__notificationBackground
+			textcolor = color__text__alternate
+			font-family = basefont
+			font-size = 16
+			font-size = 17 [$OSX]
+			font-weight = 400
+			minimum-width = 289
+			minimum-height = 98		
 
 			render {
-				0="fill(x0,y0,x0+1,y1, color__divider__alternate)"
-				1="fill(x0+1,y0,x1,y0+1, color__divider__alternate)"
-				2="fill(x1-1,y0+1,x1,y1, color__divider__alternate)"
+				0 = "fill(x0,y0,x0+1,y1, color__divider__alternate)"
+				1 = "fill(x0+1,y0,x1,y0+1, color__divider__alternate)"
+				2 = "fill(x1-1,y0+1,x1,y1, color__divider__alternate)"
 			}
 		}
 
 		gamedetails-headerlabel {
-			textcolor=color__headingText
-			font-family=mediumfont
-			font-size=30
-			font-size=31 [$OSX]
-			font-style=normal
+			font-family = mediumfont
+			font-size = 30
+			font-size = 31 [$OSX]
+			font-style = normal
+			textcolor = color__headingText
 		}
 
 		gamedetails-headerlabel-red {
-			textcolor=color__headingText
-			font-family=mediumfont
-			font-size=30
-			font-size=31 [$OSX]
-			font-style=normal
+			font-family = mediumfont
+			font-size = 30
+			font-size = 31 [$OSX]
+			font-style = normal
+			textcolor = color__headingText
 		}
 
 		gamedetails-headerlabel-green {
-			textcolor=color__headingText
-			font-family=mediumfont
-			font-size=30
-			font-size=31 [$OSX]
-			font-style=normal
+			font-family = mediumfont
+			font-size = 30
+			font-size = 31 [$OSX]
+			font-style = normal
+			textcolor = color__headingText
 		}
 
 		gamedetails-headerlabel-blue {
-			textcolor=color__headingText
-			font-family=mediumfont
-			font-size=30
-			font-size=31 [$OSX]
-			font-style=normal
+			font-family = mediumfont
+			font-size = 30
+			font-size = 31 [$OSX]
+			font-style = normal
+			textcolor = color__headingText
 		}
 
 		GameItem_Uninstalled {
-			selectedbgcolor=blue500
-			textcolor=color__disabled
-			selectedtextcolor=white		
-			font-family=mediumfont
-			font-size=16
-			font-size=17 [$OSX]
+			font-family = mediumfont
+			font-size = 16
+			font-size = 17 [$OSX]
+			selectedbgcolor = color__selectedItemBackground
+			selectedtextcolor = color__selectedText		
+			textcolor = color__disabled
 		}
 	 
 		GameItem_Installed {
-			selectedbgcolor=blue500
-			textcolor=color__text
-			selectedtextcolor=white		
-			font-family=mediumfont
-			font-size=16
-			font-size=17 [$OSX]				
+			font-family = mediumfont
+			font-size = 16
+			font-size = 17 [$OSX]				
+			selectedbgcolor = color__selectedItemBackground
+			selectedtextcolor = color__selectedText		
+			textcolor = color__gameItemInstalled
 		}
 		
 		GameItem_Shortcut {
-			selectedbgcolor=blue500
-			textcolor=color__text
-			selectedtextcolor=white
-			font-family=mediumfont
-			font-size=16
-			font-size=17 [$OSX]
+			font-family = mediumfont
+			font-size = 16
+			font-size = 17 [$OSX]
+			selectedbgcolor = color__selectedItemBackground
+			selectedtextcolor = color__selectedText
+			textcolor = color__gameItemShortcut
 		}
 	
 		GameItem_Mod {
-			selectedbgcolor=blue500
-			textcolor=bluegrey900
-			selectedtextcolor=white
-			font-family=mediumfont
-			font-size=16
-			font-size=17 [$OSX]
+			font-family = mediumfont
+			font-size = 16
+			font-size = 17 [$OSX]
+			selectedbgcolor = color__selectedItemBackground
+			selectedtextcolor = color__selectedText
+			textcolor = color__gameItemMod
 		}
 
 		GameItem_Updating {
-			selectedbgcolor=blue500
-			textcolor=orange500
-			selectedtextcolor=white
-			font-family=mediumfont
-			font-size=16
-			font-size=17 [$OSX]
-			font-style=italic			
+			font-family = mediumfont
+			font-size = 16
+			font-size = 17 [$OSX]
+			font-style = italic			
+			selectedbgcolor = color__selectedItemBackground
+			selectedtextcolor = color__selectedText
+			textcolor = color__gameItemUpdating
 		}
 		
 		GameItem_Decrypting {
-			selectedbgcolor=blue500
-			textcolor=green500
-			selectedtextcolor=white
-			font-family=mediumfont
-			font-size=16
-			font-size=17 [$OSX]
-			font-style=italic			
+			font-family = mediumfont
+			font-size = 16
+			font-size = 17 [$OSX]
+			font-style = italic			
+			selectedbgcolor = color__selectedItemBackground
+			selectedtextcolor = color__selectedText
+			textcolor = color__gameItemDecrypting
 		}
 		
 		GameItem_Syncing {
-			selectedbgcolor=blue500
-			textcolor=orange500
-			selectedtextcolor=white
-			font-family=mediumfont
-			font-size=16
-			font-size=17 [$OSX]
-			font-style=italic
+			font-family = mediumfont
+			font-size = 16
+			font-size = 17 [$OSX]
+			font-style = italic
+			selectedbgcolor = color__selectedItemBackground
+			selectedtextcolor = color__selectedText
+			textcolor = color__gameItemSyncing
 		}
 
 		GameColumnHeaderFavorites {
-			image="steam/cached/fav_remove"
+			image = "steam/cached/fav_remove"
 		}
 		
 		CGamesListFavoritesToggle {
-			image="steam/cached/fav_addTo"
+			image = "steam/cached/fav_addTo"
 		}
 		
 			CGamesListFavoritesToggle:hover {
-				image="steam/cached/fav_addTo_ovr"
+				image = "steam/cached/fav_addTo_ovr"
 			}
 		
 			CGamesListFavoritesToggle:selected {
-				image="steam/cached/fav_remove"
+				image = "steam/cached/fav_remove"
 			}
 
 				CGamesListFavoritesToggle:selected:hover {
-					image="steam/cached/fav_remove_ovr"
+					image = "steam/cached/fav_remove_ovr"
 				}
 
 		CConsoleHistory {
-			bgcolor=color__consoleBackground
-			selectedbgcolor=blue500
-			textcolor=color__text__alternate
-			selectedtextcolor=white
-			font-family="Lucida Console"
-			font-family="Menlo" [$OSX]
-			font-size=11
-			font-size=14 [$OSX]
+			bgcolor = color__consoleBackground
+			font-family = font__console
+			font-size = 11
+			font-size = 14 [$OSX]
+			selectedbgcolor = color__selectedTextBackground
+			selectedtextcolor = color__selectedText
+			textcolor = color__text__alternate
 
 			render {}
 			render_bg {}
 		}
 
 		console_text_error {
-			selectedbgcolor=blue500
-			textcolor=amber500
-			selectedtextcolor=white
-			font-family="Lucida Console"
-			font-family="Menlo" [$OSX]
-			font-size=11
-			font-size=14 [$OSX]
+			font-family = font__console
+			font-size = 11
+			font-size = 14 [$OSX]
+			selectedbgcolor = color__errorText
+			selectedtextcolor = color__selectedText
+			textcolor = color__errorText
 		}
 		
 		console_text {
-			selectedbgcolor=blue500
-			textcolor=color__text__alternate
-			selectedtextcolor=white
-			font-family="Lucida Console"
-			font-family="Menlo" [$OSX]
-			font-size=11
-			font-size=14 [$OSX]
+			font-family = font__console
+			font-size = 11
+			font-size = 14 [$OSX]
+			selectedbgcolor = color__selectedTextBackground
+			selectedtextcolor = color__selectedText
+			textcolor = color__text__alternate
 		}
 
 		GraphPanel {
-			bgcolor=none
-			textcolor=lime500
+			bgcolor = none
+			textcolor = lime500 // TO DO
 			
 			render_bg {}
 		}	
 
 		ListPanel {
-			bgcolor=white
-			selectedbgcolor=blue500
-			textcolor=color__text
-			selectedtextcolor=white
-			shadowtextcolor=color__disabled
-			font-family=basefont
-			font-size=15
-			font-size=16 [$OSX]
-			font-weight=400
-			inset="0 0 0 0"
-			padding-left=8
+			bgcolor = white // TO DO
+			font-family = basefont
+			font-size = 15
+			font-size = 16 [$OSX]
+			font-weight = 400
+			inset = "0 0 0 0"
+			padding-left = 8
+			selectedbgcolor = color__selectedItemBackground
+			selectedtextcolor = color__selectedText
+			shadowtextcolor = color__disabled
+			textcolor = color__text
 
 			render {
-				0="fill(x0,y0,x0+1,y1-1, color__divider)"
-				1="fill(x1-1,y0,x1,y1-1, color__divider)"
-				2="fill(x0, y1-1, x1, y1, color__divider)"
+				0 = "fill(x0,y0,x0+1,y1-1, color__divider)"
+				1 = "fill(x1-1,y0,x1,y1-1, color__divider)"
+				2 = "fill(x0, y1-1, x1, y1, color__divider)"
 			}
 		}
 		
 		CGamesListPanel {
-			bgcolor=white
-			selectedbgcolor=blue500
-			textcolor=color__text
-			selectedtextcolor=white
-			shadowtextcolor=color__disabled
-			font-family=basefont
-			font-size=16
-			font-size=17 [$OSX]
-			font-weight=400
-			inset="0 0 0 0"
+			bgcolor = white // TO DO
+			font-family = basefont
+			font-size = 16
+			font-size = 17 [$OSX]
+			font-weight = 400
+			inset = "0 0 0 0"
+			selectedbgcolor = color__selectedItemBackground
+			selectedtextcolor = color__selectedText
+			shadowtextcolor = color__disabled
+			textcolor = color__text
 
 			render {}	
 			render_bg {}
 		}
 
 		GameColumn_BigText {
-			textcolor=color__text
-			font-family=basefont
-			font-size=18
-			font-size=19 [$OSX]
-			font-weight=700			
+			font-family = basefont
+			font-size = 18
+			font-size = 19 [$OSX]
+			font-weight = 700			
+			textcolor = color__text
 		}
 
 		ListPanelColumnheader {
-			bgcolor=red500
-			textcolor=color__secondaryText__alternate
-			font-family=mediumfont
-			font-size=16
-			font-size=17 [$OSX]
-			font-weight=600
-			font-style=uppercase
-			minimum-height=0
-			inset="0 0 0 0"
-			inset-top=1
+			bgcolor = red500 // TO DO?
+			font-family = mediumfont
+			font-size = 16
+			font-size = 17 [$OSX]
+			font-style = uppercase
+			font-weight = 600
+			inset = "0 0 0 0"
+			inset-top = 1
+			minimum-height = 0
+			textcolor = color__secondaryText__alternate
 
 			render_bg {
-				0="fill(x0, y0, x1, y1+1, color__submenuBackground)"
+				0 = "fill(x0, y0, x1, y1+1, color__submenuBackground)"
 			}
 		}
 
 			ListPanelColumnheader:hover {
-				textcolor=color__text__alternate
+				textcolor = color__text__alternate
 			}
 
 		"CSteamRootDialog ListPanelColumnheader" {
-			inset-top=-8
-			padding-left=2
+			inset-top = -8
+			padding-left = 2
 
 			render_bg {}
 		}
 		
 		"Csteamrootdialog ListPanelSectionCollapser" {
-			bgcolor=none
-			inset="0 0 0 0"
+			bgcolor = none
+			inset = "0 0 0 0"
 			
 			render_bg {
-				0="fill(x0 , y0, x1, y1 - 1, color__divider__alternate)"
+				0 = "fill(x0 , y0, x1, y1 - 1, color__divider__alternate)"
 			}	
 		}
 		
 		ListPanelColumnSelectButton {
-			inset="0 0 0 0"
+			inset = "0 0 0 0"
 
 			render {
-				0="image( x0, y0, x1, y1, graphics/icons/columnselectbutton/standard/columnselectbutton_light)"
+				0 = "image( x0, y0, x1, y1, graphics/icons/columnselectbutton/standard/columnselectbutton_light)"
 			}
 
 			render_bg {
-				0="fill( x0, y0, x1, y1+1, color__submenuBackground )"
+				0 = "fill( x0, y0, x1, y1+1, color__submenuBackground )"
 			}
 		}
 		
 			ListPanelColumnSelectButton:hover {
 				render {
-					0="image( x0, y0, x1, y1, graphics/icons/columnselectbutton/hover/columnselectbutton_light)"
+					0 = "image( x0, y0, x1, y1, graphics/icons/columnselectbutton/hover/columnselectbutton_light)"
 				}
 			}
 
 			ListPanelColumnSelectButton:selected {
 				render {
-					0="image( x0, y0, x1, y1, graphics/icons/columnselectbutton/hover/columnselectbutton_light)"
+					0 = "image( x0, y0, x1, y1, graphics/icons/columnselectbutton/hover/columnselectbutton_light)"
 				} 
 			}
 
 		ListPanelDragger {
-			bgcolor=none
+			bgcolor = none
 			
 			render {}
 		}
 		
 		ListPanelInterior { 
-			bgcolor=none
-			textcolor=color__text
-			font-size=16
-			font-size=17 [$OSX]
-			inset="0 0 0 0"
+			bgcolor = none
+			font-size = 16
+			font-size = 17 [$OSX]
+			inset = "0 0 0 0"
+			textcolor = color__text
 			
 			render {}
 			render_bg {}
 		} 
 		
 			ListPanelInterior:scrollbar {	 
-				bgcolor=none
-				textcolor=color__text
-				inset="0 0 -1 0"
+				bgcolor = none
+				inset = "0 0 -1 0"
+				textcolor = color__text
 				
 				render {}
 				render_bg {}
 			} 
 
 		ListPanelSectionHeader {	 
-			textcolor=color__text
-			font-family=mediumfont
-			font-style=regular
-			inset="0 0 0 0"
+			font-family = mediumfont
+			font-style = regular
+			inset = "0 0 0 0"
+			textcolor = color__text
 
 			render_bg {
-				0="fill(x0,y0,x1,y1, white)"
-				1="fill(x0,y0,x1,y0+1, color__divider)"
-				2="fill(x0,y1-1,x1,y1, color__divider)"
+				0 = "fill(x0,y0,x1,y1, white)"
+				1 = "fill(x0,y0,x1,y0+1, color__divider)"
+				2 = "fill(x0,y1-1,x1,y1, color__divider)"
 			}	
 		}
 		
 			ListPanelSectionHeader:hover {	 
-				textcolor=color__secondaryText
+				textcolor = color__secondaryText
 			}
 		
 		"ListPanel RichText" {
-			bgcolor=none
-			textcolor=color__text
-			font-family=basefont
-			font-size=15
-			font-size=16 [$OSX]			
+			bgcolor = none
+			font-family = basefont
+			font-size = 15
+			font-size = 16 [$OSX]			
+			textcolor = color__text
 
 			render_bg {}
 		}
 
 		"ListPanel RichText url" {
-			textcolor=blue500
-			font-size=15
-			font-size=16 [$OSX]		
-			font-style=underline
+			font-size = 15
+			font-size = 16 [$OSX]		
+			font-style = underline
+			textcolor = color__URL
 		}
 
+			"ListPanel RichText url:hover" {
+				textcolor = color__URL__hover
+			}
+
 		"ListPanel RichTextInterior" {
-			bgcolor=none
+			bgcolor = none
 
 			render_bg {}
 		}
 		
 		ListPanelSectionCollapser {
-			inset="0 0 0 0"
-			padding-left=8
-			padding-right=8
-			image=graphics/icons/dropdown/padder			
+			image = graphics/icons/dropdown/padder			
+			inset = "0 0 0 0"
+			padding-left = 8
+			padding-right = 8
 
 			render {}
 			render_bg {
-				0="fill(x0,y0-1,x1+2,y0, color__divider)"
-				1="fill(x0,y1-1,x1+2,y1, color__divider)"
-				2="image(x0+14,y0+6,x1,y1, graphics/icons/dropdown/standard/down_dark)"
+				0 = "fill(x0,y0-1,x1+2,y0, color__divider)"
+				1 = "fill(x0,y1-1,x1+2,y1, color__divider)"
+				2 = "image(x0+14,y0+6,x1,y1, graphics/icons/dropdown/standard/down_dark)"
 			}
 		}
 
 			ListPanelSectionCollapser:hover {
 				render_bg {
-					0="fill(x0,y0-1,x1+2,y0, color__divider)"
-					1="fill(x0,y1-1,x1+2,y1, color__divider)"
-					2="image(x0+14,y0+6,x1,y1, graphics/icons/dropdown/hover/down_dark)"
+					0 = "fill(x0,y0-1,x1+2,y0, color__divider)"
+					1 = "fill(x0,y1-1,x1+2,y1, color__divider)"
+					2 = "image(x0+14,y0+6,x1,y1, graphics/icons/dropdown/hover/down_dark)"
 				}
 			}
 
 			ListPanelSectionCollapser:selected {
 				render_bg {
-					0="fill(x0,y0-1,x1+2,y0, color__divider)"
-					1="fill(x0,y1-1,x1+2,y1, color__divider)"
-					2="image(x0+14,y0+6,x1,y1, graphics/icons/dropdown/standard/up_dark)"
+					0 = "fill(x0,y0-1,x1+2,y0, color__divider)"
+					1 = "fill(x0,y1-1,x1+2,y1, color__divider)"
+					2 = "image(x0+14,y0+6,x1,y1, graphics/icons/dropdown/standard/up_dark)"
 				}
 			}
 
 				ListPanelSectionCollapser:selected:hover {
 					render_bg {
-						0="fill(x0,y0-1,x1+2,y0, color__divider)"
-						1="fill(x0,y1-1,x1+2,y1, color__divider)"
-						2="image(x0+14,y0+6,x1,y1, graphics/icons/dropdown/hover/up_dark)"
+						0 = "fill(x0,y0-1,x1+2,y0, color__divider)"
+						1 = "fill(x0,y1-1,x1+2,y1, color__divider)"
+						2 = "image(x0+14,y0+6,x1,y1, graphics/icons/dropdown/hover/up_dark)"
 					}
 				}
 
 		"CSteamRootDialog Page" {
-			bgcolor=none
+			bgcolor = none
 
 			render_bg {}
 		}
 
 		PageTab {
-			textcolor=color__secondaryText__alternate
-			font-size=16
-			font-size=17 [$OSX]
-			font-style=regular
+			font-size = 16
+			font-size = 17 [$OSX]
+			font-style = regular
+			textcolor = color__secondaryText__alternate
 
 			render_bg {}
 		}
 
 			PageTab:Hover {
-				textcolor=color__text__alternate
+				textcolor = color__text__alternate
 
 				render_bg {
-					0="image(x0,y0,x0+2,y0+2, graphics/material/tab/white/topleft)"
-					1="image_tiled(x0+2,y0,x1-2, y0+2, graphics/material/tab/white/middle)"
-					2="image_tiled(x0,y0+2,x1, y1, graphics/material/tab/white/middle)"
-					3="image(x1-2,y0,x1,y0+2, graphics/material/tab/white/topright)"
+					0 = "image(x0,y0,x0+2,y0+2, graphics/material/tab/white/topleft)"
+					1 = "image_tiled(x0+2,y0,x1-2, y0+2, graphics/material/tab/white/middle)"
+					2 = "image_tiled(x0,y0+2,x1, y1, graphics/material/tab/white/middle)"
+					3 = "image(x1-2,y0,x1,y0+2, graphics/material/tab/white/topright)"
 				}
 			}
 
 			PageTab:Selected {
-				textcolor=blue500
+				textcolor = color__pageTab__selected
 
 				render_bg {
-					0="fill(x0,y1-3,x1,y1, blue500)"
-					1="image(x0,y0,x0+2,y0+2, graphics/material/tab/blue/topleft)"
-					2="image_tiled(x0+2,y0,x1-2, y0+2, graphics/material/tab/blue/middle)"
-					3="image_tiled(x0,y0+2,x1, y1, graphics/material/tab/blue/middle)"
-					4="image(x1-2,y0,x1,y0+2, graphics/material/tab/blue/topright)"
+					0 = "fill(x0,y1-3,x1,y1, color__pageTab__selected)"
+					1 = "image(x0,y0,x0+2,y0+2, graphics/material/tab/blue/topleft)"
+					2 = "image_tiled(x0+2,y0,x1-2, y0+2, graphics/material/tab/blue/middle)"
+					3 = "image_tiled(x0,y0+2,x1, y1, graphics/material/tab/blue/middle)"
+					4 = "image(x1-2,y0,x1,y0+2, graphics/material/tab/blue/topright)"
 				}
 			}
 
 				PageTab:Selected:hover {
-					textcolor=blue300
+					textcolor = color__pageTab__selected__hover
 
 					render_bg {
-						0="fill(x0,y1-3,x1,y1, blue300)"
-						1="image(x0,y0,x0+2,y0+2, graphics/material/tab/blue/topleft)"
-						2="image_tiled(x0+2,y0,x1-2, y0+2, graphics/material/tab/blue/middle)"
-						3="image_tiled(x0,y0+2,x1, y1, graphics/material/tab/blue/middle)"
-						4="image(x1-2,y0,x1,y0+2, graphics/material/tab/blue/topright)"
+						0 = "fill(x0,y1-3,x1,y1, color__pageTab__selected__hover)"
+						1 = "image(x0,y0,x0+2,y0+2, graphics/material/tab/blue/topleft)"
+						2 = "image_tiled(x0+2,y0,x1-2, y0+2, graphics/material/tab/blue/middle)"
+						3 = "image_tiled(x0,y0+2,x1, y1, graphics/material/tab/blue/middle)"
+						4 = "image(x1-2,y0,x1,y0+2, graphics/material/tab/blue/topright)"
 					}
 				}
 
 		ProgressBar {
-			bgcolor=white
-			textcolor=lightgreen500			
-			inset="0 0 0 0"
+			bgcolor = color__textInputBackground
+			inset = "0 0 0 0"
+			textcolor = color__progressBar			
 			
 			render {}
 			render_bg {
-				0="fill(x0,y0,x0+1,y1, color__divider)"
-				1="fill(x0+1,y0,x1-1,y0+1, color__divider)"
-				2="fill(x1-1,y0,x1,y1, color__divider)"
-				3="fill(x0+1,y1-1,x1-1,y1, color__divider)"
+				0 = "fill(x0,y0,x0+1,y1, color__divider)"
+				1 = "fill(x0+1,y0,x1-1,y0+1, color__divider)"
+				2 = "fill(x1-1,y0,x1,y1, color__divider)"
+				3 = "fill(x0+1,y1-1,x1-1,y1, color__divider)"
 			}
 		}
 
 		RadioButtonList {
-			bgcolor=none
+			bgcolor = none
 		}
 
 		RichText {
-			textcolor=color__text
-			selectedtextcolor=color__text		
-			font-family=basefont
-			font-size=15
-			font-size=16 [$OSX]
-			font-weight=400
-			inset="0 0 0 0"
+			font-family = basefont
+			font-size = 15
+			font-size = 16 [$OSX]
+			font-weight = 400
+			inset = "0 0 0 0"
+			selectedbgcolor = color__selectedTextBackground	
+			selectedtextcolor = color__text	
+			textcolor = color__text
 		
 			render_bg {}	 
 		}
 			 
 		RichTextInterior {
-			bgcolor=none
+			bgcolor = none
 		}
 		
 		"RichText url" {
-			selectedbgcolor=blue500
-			textcolor=blue500
-			selectedtextcolor=white
-			font-size=15
-			font-size=16 [$OSX]
-			font-style=underline
+			font-size = 15
+			font-size = 16 [$OSX]
+			font-style = underline
+			selectedbgcolor = color__selectedTextBackground
+			selectedtextcolor = color__selectedText
+			textcolor = color__URL
 		}
 
+			"RichText url:hover" {
+				textcolor = color__URL__hover
+			}
+
 		"RichText bold" {
-			font-size=15
-			font-size=16 [$OSX]
-			font-weight=1000
+			font-size = 15
+			font-size = 16 [$OSX]
+			font-weight = 1000
 		}
 		
 		"RichText emphasis" {
-			font-size=15
-			font-size=16 [$OSX]
-			font-style=italic
+			font-size = 15
+			font-size = 16 [$OSX]
+			font-style = italic
 		}
 		
-			"RichText url:hover" {
-				textcolor=blue300
-			}
-		
 		"CFriendPanel RichText URL" {
-			textcolor=blue500
-			font-style=underline
-			font-size=14
-			font-size=15 [$OSX]
+			font-size = 14
+			font-size = 15 [$OSX]
+			font-style = underline
+			textcolor = color__URL
 		}	
 
+			"CFriendPanel RichText URL:hover" {
+				textcolor = color__URL__hover
+			}
+
 		SectionedListPanel {			
-			bgcolor=color__background
-			selectedbgcolor=blue500
-			textcolor=color__text
-			selectedtextcolor=white
-			font-family=basefont
-			font-size=15
-			font-size=16 [$OSX]
-			font-weight=400			
-			inset="0 0 0 0"			
+			bgcolor = color__background
+			font-family = basefont
+			font-size = 15
+			font-size = 16 [$OSX]
+			font-weight = 400			
+			inset = "0 0 0 0"			
+			selectedbgcolor = color__selectedTextBackground
+			selectedtextcolor = color__selectedText
+			textcolor = color__text
 
 			render {}
 			render_bg {}	
 		}
 		
 		SectionedListPanelCollapser {
-			bgcolor=none
-			padding-left=8
-			padding-right=8
-			inset="0 0 0 0"
-			image=graphics/icons/dropdown/padder
+			bgcolor = none
+			image = graphics/icons/dropdown/padder
+			inset = "0 0 0 0"
+			padding-left = 8
+			padding-right = 8
 
 			render {}
 			render_bg {
-				0="fill(x0,y0-1,x1+2,y0, color__divider)"
-				1="fill(x0,y1-1,x1+2,y1, color__divider)"
-				2="image(x0+14,y0+6,x1,y1, graphics/icons/dropdown/standard/down_dark)"
+				0 = "fill(x0,y0-1,x1+2,y0, color__divider)"
+				1 = "fill(x0,y1-1,x1+2,y1, color__divider)"
+				2 = "image(x0+14,y0+6,x1,y1, graphics/icons/dropdown/standard/down_dark)"
 			}
 		}
 
 			SectionedListPanelCollapser:hover {
 				render_bg {
-					0="fill(x0,y0-1,x1+2,y0, color__divider)"
-					1="fill(x0,y1-1,x1+2,y1, color__divider)"
-					2="image(x0+14,y0+6,x1,y1, graphics/icons/dropdown/hover/down_dark)"
+					0 = "fill(x0,y0-1,x1+2,y0, color__divider)"
+					1 = "fill(x0,y1-1,x1+2,y1, color__divider)"
+					2 = "image(x0+14,y0+6,x1,y1, graphics/icons/dropdown/hover/down_dark)"
 				}
 			}
 
 			SectionedListPanelCollapser:selected {
 				render_bg {
-					0="fill(x0,y0-1,x1+2,y0, color__divider)"
-					1="fill(x0,y1-1,x1+2,y1, color__divider)"
-					2="image(x0+14,y0+6,x1,y1, graphics/icons/dropdown/standard/up_dark)"
+					0 = "fill(x0,y0-1,x1+2,y0, color__divider)"
+					1 = "fill(x0,y1-1,x1+2,y1, color__divider)"
+					2 = "image(x0+14,y0+6,x1,y1, graphics/icons/dropdown/standard/up_dark)"
 				}
 			}
 
 				SectionedListPanelCollapser:selected:hover {
 					render_bg {
-						0="fill(x0,y0-1,x1+2,y0, color__divider)"
-						1="fill(x0,y1-1,x1+2,y1, color__divider)"
-						2="image(x0+14,y0+6,x1,y1, graphics/icons/dropdown/hover/up_dark)"
+						0 = "fill(x0,y0-1,x1+2,y0, color__divider)"
+						1 = "fill(x0,y1-1,x1+2,y1, color__divider)"
+						2 = "image(x0+14,y0+6,x1,y1, graphics/icons/dropdown/hover/up_dark)"
 					}
 				}
 
 		StatusLabel {
-			textcolor=color__secondaryText
-			font-family=basefont
-			font-size=15
-			font-size=16 [$OSX]
-			font-weight=400			
-			font-style=uppercase
+			font-family = basefont
+			font-size = 15
+			font-size = 16 [$OSX]
+			font-style = uppercase
+			font-weight = 400			
+			textcolor = color__secondaryText
 		}
 
 			StatusLabel:hover {
-				textcolor=white
-				font-family=basefont
-				font-size=14
-				font-weight=400			
-				font-style=uppercase
+				font-family = basefont
+				font-size = 14
+				font-style = uppercase
+				font-weight = 400			
+				textcolor = color__text
 			}
 		
 		StatusLabelDim {
-			textcolor=color__disabled
-			font-family=basefont
-			font-size=15
-			font-size=16 [$OSX]
-			font-weight=400
-			font-style=normal
+			font-family = basefont
+			font-size = 15
+			font-size = 16 [$OSX]
+			font-style = normal
+			font-weight = 400
+			textcolor = color__disabled
 		}
 
 		MenuBar {
-			bgcolor=none
+			bgcolor = none
 		}
 		
 		"MenuBar MenuButton" {
-			textcolor=color__secondaryText__alternate
+			textcolor = color__secondaryText__alternate
 		}
 		
 			"MenuBar MenuButton:frameFocus" {
-				textcolor=color__text__alternate
+				textcolor = color__text__alternate
 			}
 		
 				"MenuBar MenuButton:frameFocus:hover" {
-					bgcolor=color__disabled__alternate
-					textcolor=color__text__alternate
+					bgcolor = color__disabled__alternate
+					textcolor = color__text__alternate
 					
 					render_bg {}
 				}
 		
 				"MenuBar MenuButton:frameFocus:selected" {
-					bgcolor=blue500transparent
-					textcolor=blue500					
+					bgcolor = blue500__26opacity
+					textcolor = blue500 // TO DO					
 				}
 		
 		MenuButton {
-			bgcolor=none
-			textcolor=white
-			font-family=basefont
-			font-size=14
-			font-size=15 [$OSX]
-			font-weight=400			
+			bgcolor = none
+			font-family = basefont
+			font-size = 14
+			font-size = 15 [$OSX]
+			font-weight = 400			
+			textcolor = color__text
 			
 			render_bg {}
 		}
 
 			MenuButton:hover {
-				textcolor=white
+				textcolor = color__text
 			}
 		
 			MenuButton:selected {
-				textcolor=white
+				textcolor = color__text
 			}
 
 		TreeNode {
-			bgcolor=none
+			bgcolor = none
 
 			render_bg {}
 		}
 		
 		TreeNodeImage {
-			bgcolor=none
+			bgcolor = none
 		}
 		
 		TreeViewSubPanel {
-			bgcolor=none
+			bgcolor = none
 		}
 	
 		TreeNodeText {
-			bgcolor=none
-			selectedbgcolor=blue500
-			textcolor=color__text
-			selectedtextcolor=white
-			font-family=basefont
-			font-size=15
-			font-size=16 [$OSX]
+			bgcolor = none
+			font-family = basefont
+			font-size = 15
+			font-size = 16 [$OSX]
+			selectedbgcolor = color__selectedTextBackground
+			selectedtextcolor = color__selectedText
+			textcolor = color__text
 
 			render {}
 			render_bg {}
@@ -869,237 +875,237 @@ steam.styles {
 		}
 
 		COverlaySettingsDialog {
-			minimum-width=543
+			minimum-width = 543
 
 			render {
-				0="fill(x0,y1-58,x1,y1-57, color__divider)"
+				0 = "fill(x0,y1-58,x1,y1-57, color__divider)"
 			}
 			
 			render_bg {
-				0="fill(x0,y0,x1, y0+55, color__titleBarBackground)"
-				1="fill(x0,y0,x1,y0+1, color__titleBarBackground__accent)"
+				0 = "fill(x0,y0,x1, y0+55, color__titleBarBackground)"
+				1 = "fill(x0,y0,x1,y0+1, color__titleBarBackground__accent)"
 			}
 		}
 
 		CProductMarketingDialog {
-			minimum-width=143
-			minimum-height=143
+			minimum-width = 143
+			minimum-height = 143
 
 			render {
-				0="fill(x0,y1-58,x1,y1-57, color__divider)"
+				0 = "fill(x0,y1-58,x1,y1-57, color__divider)"
 			}
 		}
 
 		CChangePasswordWizard {
 			render {
-				0="fill(x0,y1-58,x1,y1-57, color__divider)"
+				0 = "fill(x0,y1-58,x1,y1-57, color__divider)"
 			}
 		}
 
 		CChangeContactEmailWizard {
 			render {
-				0="fill(x0,y1-58,x1,y1-57, color__divider)"
+				0 = "fill(x0,y1-58,x1,y1-57, color__divider)"
 			}
 		}
 
 		CValidateContactEmailWizard {
 			render {
-				0="fill(x0,y1-58,x1,y1-57, color__divider)"
+				0 = "fill(x0,y1-58,x1,y1-57, color__divider)"
 			}
 		}
 
 		CWelcomeToSteamDialog {
 			render {
-				0="fill(x0,y0,x1-55,y0+1, color__titleBarBackground)"
-				1="fill(x0,y1-58,x1,y1-57, color__divider)"
+				0 = "fill(x0,y0,x1-55,y0+1, color__titleBarBackground)"
+				1 = "fill(x0,y1-58,x1,y1-57, color__divider)"
 			}
 			render_bg {
-				0="fill(x0,y0,x1,y0+113, color__titleBarBackground)"
-				0="image(x0+146,y0+35,x1,y1, graphics/steamlogo)"
+				0 = "fill(x0,y0,x1,y0+113, color__titleBarBackground)"
+				0 = "image(x0+146,y0+35,x1,y1, graphics/steamlogo)"
 			}
 		}
 
 		CEmailAddressAlreadyUsedDialog {
 			render {
-				0="fill(x0,y1-58,x1,y1-57, color__divider)"
+				0 = "fill(x0,y1-58,x1,y1-57, color__divider)"
 			}
 		}
 
 		CSetNicknameDialog {
-			minimum-height=210
+			minimum-height = 210
 
 			render {
-				0="fill(x0,y1-58,x1,y1-57, color__divider)"
+				0 = "fill(x0,y1-58,x1,y1-57, color__divider)"
 			}
 		}
 
 		CAboutDialog {
-			minimum-height=332
+			minimum-height = 332
 
 			render {
-				0="fill(x0,y0,x1-55,y0+1, color__titleBarBackground)"
-				1="fill(x0,y1-58,x1,y1-57, color__divider)"
+				0 = "fill(x0,y0,x1-55,y0+1, color__titleBarBackground)"
+				1 = "fill(x0,y1-58,x1,y1-57, color__divider)"
 			}
 			render_bg {
-				0="fill(x0,y0,x1,y0+113, color__titleBarBackground)"
-				0="image(x0+106,y0+35,x1,y1, graphics/steamlogo)"
+				0 = "fill(x0,y0,x1,y0+113, color__titleBarBackground)"
+				0 = "image(x0+106,y0+35,x1,y1, graphics/steamlogo)"
 			}
 		}
 
 		CFriendAliasesDialog {
-			minimum-width=350
-			minimum-height=374			
+			minimum-width = 350
+			minimum-height = 374			
 
 			render {
-				0="fill(x0,y1-58,x1,y1-57, color__divider)"
+				0 = "fill(x0,y1-58,x1,y1-57, color__divider)"
 			}
 		}
 
 		CFriendNotificationOptionsDialog {
-			minimum-width=350
-			minimum-height=432			
+			minimum-width = 350
+			minimum-height = 432			
 
 			render {
-				0="fill(x0,y1-58,x1,y1-57, color__divider)"
+				0 = "fill(x0,y1-58,x1,y1-57, color__divider)"
 			}
 		}
 
 		CCDKeyDisplayDialog {
 			render {
-				0="image(x0+24, y0+58, x1, y1, graphics/icons/key/key)"
-				1="fill(x0,y1-58,x1,y1-57, color__divider)"
+				0 = "image(x0+24, y0+58, x1, y1, graphics/icons/key/key)"
+				1 = "fill(x0,y1-58,x1,y1-57, color__divider)"
 			}
 		}
 
 		COverlayCDKeyDialog {
 			render {
-				0="image(x0+24, y0+58, x1, y1, graphics/icons/key/key)"
-				1="fill(x0,y1-58,x1,y1-57, color__divider)"
+				0 = "image(x0+24, y0+58, x1, y1, graphics/icons/key/key)"
+				1 = "fill(x0,y1-58,x1,y1-57, color__divider)"
 			}
 		}
 
 		CPlayersDialog {
 			render {
-				0="image_tiled(x0,y0+34,x1,y0+38, graphics/material/shadows/top)"
+				0 = "image_tiled(x0,y0+34,x1,y0+38, graphics/material/shadows/top)"
 			}
 
 			render_bg {
-				0="fill(x0,y0,x1,y0+100, color__submenuBackground)"
+				0 = "fill(x0,y0,x1,y0+100, color__submenuBackground)"
 			}
 		}
 
 		CGamePropertiesDialog {
 			render {
-				0="fill(x0,y1-58,x1,y1-57, color__divider)"
+				0 = "fill(x0,y1-58,x1,y1-57, color__divider)"
 			}
 			
 			render_bg {
-				0="fill(x0,y0,x1, y0+55, color__titleBarBackground)"
-				1="fill(x0,y0,x1,y0+1, color__titleBarBackground__accent)"
+				0 = "fill(x0,y0,x1, y0+55, color__titleBarBackground)"
+				1 = "fill(x0,y0,x1,y0+1, color__titleBarBackground__accent)"
 			}
 		}
 
 			"CGamePropertiesDialog PageTab" {
-				minimum-height=34
+				minimum-height = 34
 			}
 
 		CSteamCacheWorkDialog {
 			render {
-				0="fill(x0,y1-58,x1,y1-57, color__divider)"
+				0 = "fill(x0,y1-58,x1,y1-57, color__divider)"
 			}
 		}
 
 		CGameLaunchParametersDialog {
-			minimum-height=198
+			minimum-height = 198
 
 			render {
-				0="fill(x0,y1-58,x1,y1-57, color__divider)"
+				0 = "fill(x0,y1-58,x1,y1-57, color__divider)"
 			}
 		}
 
 		CEditTagsDialog {
 			render {
-				0="fill(x0,y1-58,x1,y1-57, color__divider)"
+				0 = "fill(x0,y1-58,x1,y1-57, color__divider)"
 			}
 
 			render_bg {
-				1="image(x0+24,y0+58,x1,y1, graphics/icons/category/category)"
+				1 = "image(x0+24,y0+58,x1,y1, graphics/icons/category/category)"
 			}
 		}
 
 		CEditFriendsGroupsDialog {
 			render {
-				0="fill(x0,y1-58,x1,y1-57, color__divider)"
+				0 = "fill(x0,y1-58,x1,y1-57, color__divider)"
 			}
 
 			render_bg {
-				1="image(x0+24,y0+58,x1,y1, graphics/icons/category/category)"
+				1 = "image(x0+24,y0+58,x1,y1, graphics/icons/category/category)"
 			}
 		}
 
 		CBackupWizard {
 			render {
-				0="fill(x0,y1-58,x1,y1-57, color__divider)"
+				0 = "fill(x0,y1-58,x1,y1-57, color__divider)"
 			}
 		}
 
 		CInstallAppWizard {
 			render {
-				0="fill(x0,y1-58,x1,y1-57, color__divider)"
+				0 = "fill(x0,y1-58,x1,y1-57, color__divider)"
 			}
 		}
 
 		CDialogGameInfo {
 			render {
-				0="fill(x0,y1-58,x1,y1-57, color__divider)"
+				0 = "fill(x0,y1-58,x1,y1-57, color__divider)"
 			}
 		}
 
 		CSSADialog {
 			render {
-				0="fill(x0,y1-58,x1,y1-57, color__divider)"
+				0 = "fill(x0,y1-58,x1,y1-57, color__divider)"
 			}
 		}
 
 		CRegisterSubIntro {
 			render {
-				0="image(x0+14, y0+18, x1, y1, graphics/icons/beta/beta)"
+				0 = "image(x0+14, y0+18, x1, y1, graphics/icons/beta/beta)"
 			}
 		}
 
 		CRegisterSubEnterCDKey {
 			render {
-				0="image(x0+14, y0+18, x1, y1, graphics/icons/key/key)"
+				0 = "image(x0+14, y0+18, x1, y1, graphics/icons/key/key)"
 			}
 		}
 
 		CRegisterSubReceipt {
 			render {
-				0="image(x0+14, y0+18, x1, y1, resource/icon_info)"
+				0 = "image(x0+14, y0+18, x1, y1, resource/icon_info)"
 			}
 		}
 
 		CRegisterCDKeyWizard {
 			render {
-				0="fill(x0,y1-58,x1,y1-57, color__divider)"
+				0 = "fill(x0,y1-58,x1,y1-57, color__divider)"
 			}
 		}
 
 		CSteamShutdownDialog {
-			minimum-width=320
-			minimum-height=180
+			minimum-width = 320
+			minimum-height = 180
 
 			render {
-				0="fill(x0,y1-58,x1,y1-57, color__divider)"
+				0 = "fill(x0,y1-58,x1,y1-57, color__divider)"
 			}
 		}
 
 		CStreamingIntroDialog {
-			minimum-width=405
-			minimum-height=378
+			minimum-width = 405
+			minimum-height = 378
 			
 			render {
-				0="fill(x0,y1-58,x1,y1-57, color__divider)"
+				0 = "fill(x0,y1-58,x1,y1-57, color__divider)"
 			}
 
 			render_bg {}
@@ -1107,238 +1113,247 @@ steam.styles {
 
 		CLaunchOptionsDialog {
 			render {
-				0="fill(x0,y1-58,x1,y1-57, color__divider)"
+				0 = "fill(x0,y1-58,x1,y1-57, color__divider)"
 			}
 
 			render_bg {}
 		}
 
 		TooltipWindow {
-			bgcolor=white
-			textcolor=color__secondaryText
+			bgcolor = color__TooltipBackground
+			textcolor = color__secondaryText
 
 			render_bg {
-				0="fill(x0,y0,x0+1,y1, color__divider)"
-				1="fill(x0+1,y0,x1-1,y0+1, color__divider)"
-				2="fill(x1-1,y0,x1,y1, color__divider)"
-				3="fill(x0+1,y1-1,x1-1,y1, color__divider)"
+				0 = "fill(x0,y0,x0+1,y1, color__divider)"
+				1 = "fill(x0+1,y0,x1-1,y0+1, color__divider)"
+				2 = "fill(x1-1,y0,x1,y1, color__divider)"
+				3 = "fill(x0+1,y1-1,x1-1,y1, color__divider)"
 			}
 		}
 
 		"TooltipWindow Label" {
-			textcolor=color__secondaryText
-			padding-left=8
-			padding-top=8
-			padding-right=8
-			padding-bottom=8			
+			padding-bottom = 8			
+			padding-left = 8
+			padding-right = 8
+			padding-top = 8
+			textcolor = color__secondaryText
 		}
 		
 		tooltip_headline {
-			textcolor=color__text
-			font-size=18
-			font-size=19 [$OSX]	 
-			font-weight=600
-			padding-left=8
-			padding-top=8
-			padding-right=8			
-			padding-bottom=0			
+			font-size = 18
+			font-size = 19 [$OSX]	 
+			font-weight = 600
+			padding-bottom = 0			
+			padding-left = 8
+			padding-right = 8			
+			padding-top = 8
+			textcolor = color__text
 		}
 
 		ChatListPanel {
-			bgcolor=none
-			padding-left=14
-			padding-top=14			
-			padding-right=14
+			bgcolor = none
+			padding-left = 14
+			padding-right = 14
+			padding-top = 14			
 
 			render {}
 			render_bg {}
 		}
 
 		friends_chat_text {
-			selectedbgcolor=blue500
-			textcolor=color__text
-			selectedtextcolor=white 			
-			font-size=17
-			font-size=18 [$OSX]
+			font-size = 17
+			font-size = 18 [$OSX]
+			selectedbgcolor = color__selectedTextBackground
+			selectedtextcolor = color__selectedText 			
+			textcolor = color__friendsChatText
 		}
 		
 		friends_chat_text_self {
-			selectedbgcolor=blue500
-			textcolor=color__secondaryText
-			selectedtextcolor=white			
-			font-size=17
-			font-size=18 [$OSX]
+			font-size = 17
+			font-size = 18 [$OSX]
+			selectedbgcolor = color__selectedTextBackground
+			selectedtextcolor = color__selectedText			
+			textcolor = color__friendsChatTextSelf
 		}
 		
 		friends_chat_event {
-			selectedbgcolor=blue500
-			textcolor=orange500
-			selectedtextcolor=white
-			font-size=17
-			font-size=18 [$OSX]		
+			font-size = 17
+			font-size = 18 [$OSX]		
+			selectedbgcolor = color__selectedTextBackground
+			selectedtextcolor = color__selectedText
+			textcolor = color__friendsChatEvent
 		}
 
 		friends_chat_bright_event {
-			textcolor=orange500
-			selectedtextcolor=white
-			font-size=17
-			font-size=18 [$OSX]
-			font-weight=1000
+			font-size = 17
+			font-size = 18 [$OSX]
+			font-weight = 1000
+			selectedbgcolor = color__selectedTextBackground
+			selectedtextcolor = color__selectedText
+			textcolor = color__friendsChatEvent
 		}
 
 		friends_chat_url {
-			selectedbgcolor=blue500
-			textcolor=blue500
-			selectedtextcolor=white
-			font-style=underline
-			font-size=17
-			font-size=18 [$OSX]
+			font-size = 17
+			font-size = 18 [$OSX]
+			font-style = underline
+			selectedbgcolor = color__selectedTextBackground
+			selectedtextcolor = color__selectedText
+			textcolor = color__URL
 		}
+
+			friends_chat_url:hover {
+				textcolor = color__URL__hover
+			}
 		
 		friends_chat_name_ingame {
-			selectedbgcolor=blue500
-			textcolor=lightgreen500
-			selectedtextcolor=white			
-			font-size=17
-			font-size=18 [$OSX]
+			font-size = 17
+			font-size = 18 [$OSX]
+			selectedbgcolor = color__selectedTextBackground
+			selectedtextcolor = color__selectedText		
+			textcolor = color__inGame
 		}
 
 		friends_chat_name_golden {
-			selectedbgcolor=blue500
-			textcolor="255 215 0 255"
-			selectedtextcolor=white
-			font-size=17
-			font-size=18 [$OSX]
+			font-size = 17
+			font-size = 18 [$OSX]
+			selectedbgcolor = color__selectedTextBackground
+			selectedtextcolor = color__selectedText	
+			textcolor = color__golden
 		}
 
 		friends_chat_self {
-			selectedbgcolor=blue500
-			textcolor=blue500
-			selectedtextcolor=white
-			font-size=17
-			font-size=18 [$OSX]
+			font-size = 17
+			font-size = 18 [$OSX]
+			selectedbgcolor = color__selectedTextBackground
+			selectedtextcolor = color__selectedText	
+			textcolor = color__online
 		}
 		
 		friends_chat_name {
-			selectedbgcolor=blue500
-			textcolor=blue500
-			selectedtextcolor=white			
-			font-size=17
-			font-size=18 [$OSX]
+			font-size = 17
+			font-size = 18 [$OSX]
+			selectedbgcolor = color__selectedTextBackground
+			selectedtextcolor = color__selectedText	
+			textcolor = color__online
 		}
 		
 		friends_chat_accountid {
-			selectedbgcolor=blue500
-			textcolor=white
-			selectedtextcolor=red500
-			font-size=17
-			font-size=18 [$OSX]
+			font-size = 17
+			font-size = 18 [$OSX]
+			selectedbgcolor = color__selectedTextBackground
+			selectedtextcolor = color__selectedText	
+			textcolor = color__text__alternate
 		}
 		
 		friends_chat_securitylink {
-			bgcolor=none
-			selectedbgcolor=blue500
-			textcolor=orange500
-			selectedtextcolor=white
-			font-family=basefont
-			font-size=17
-			font-size=18 [$OSX]
-			font-weight=600
-			font-style=none
+			bgcolor = none
+			font-family = basefont
+			font-size = 17
+			font-size = 18 [$OSX]
+			font-style = none
+			font-weight = 600
+			selectedbgcolor = color__selectedTextBackground
+			selectedtextcolor = color__selectedText	
+			textcolor = color__warningText
 		}
 
 		friends_chat_history {
-			selectedbgcolor=blue500
-			textcolor=color__disabled
-			selectedtextcolor=white
-			font-size=17
-			font-size=18 [$OSX]
+			font-size = 17
+			font-size = 18 [$OSX]
+			selectedbgcolor = color__selectedTextBackground
+			selectedtextcolor = color__selectedText	
+			textcolor = color__disabled
 		}
 
 		friends_offline {
-			textcolor=grey500
+			textcolor = color__offline
 		}
 		
 			friends_offline:hover {
-				textcolor=grey400
+				textcolor = color__offline__hover
 			}
 		
 		friends_online {
-			textcolor=lightblue500
+			textcolor = color__online
 		}
 		
 			friends_online:hover {
-				textcolor=lightblue300
+				textcolor = color__online__hover
 			}
 		
 		friends_ingame {
-			textcolor=lightgreen500
+			textcolor = color__inGame
 		}
 			
 			friends_ingame:hover {
-				textcolor=lightgreen300
+				textcolor = color__inGame__hover
 			}
 
 		friends_golden {
-			textcolor="255 215 0 255"
+			textcolor = color__golden
 		}
 			
 			friends_golden:hover {
-				textcolor="255 225 65 255"
+				textcolor = color__golden__hover
 			}
 		
 		friends_ignored {
-			textcolor=red500
+			textcolor = color__ignored
 		}
 
+			friends_ignored:hover {
+				textcolor = color__ignored__hover
+			}
+
 		ProgressBox {
-			minimum-height=128
+			minimum-height = 128
 			//width is 384
 
 			render {
-				0="fill( x0, y0, x1, y1, color__background)"
-				1="image(x0+91, y0+42, x1, y1, graphics/logo)"
+				0 = "fill( x0, y0, x1, y1, color__background)"
+				1 = "image(x0+91, y0+42, x1, y1, graphics/logo)"
 			}
 		}
 
 		"ProgressBox FrameTitle" {
-			bgcolor=none
-			textcolor=none
+			bgcolor = none
+			textcolor = none
 
 			render {}
 			render_bg {}
 		}
 
 		"ProgressBox Button" {
-			textcolor=none
+			textcolor = none
 
 			render_bg {}
 		}
 
 		"ProgressBox FrameCloseButton" {
 			render_bg {
-				0="image(x0+7,y0+7,x1,y1, graphics/icons/window_controls/standard/close_onLightBG)"
+				0 = "image(x0+7,y0+7,x1,y1, graphics/icons/window_controls/standard/close_onLightBG)" // TO DO
 			}
 		}
 
 			"ProgressBox FrameCloseButton:hover" {
 				render_bg {
-					1="image(x0+7,y0+7,x1,y1, graphics/icons/window_controls/hover/close)"
+					1 = "image(x0+7,y0+7,x1,y1, graphics/icons/window_controls/hover/close)"
 				}
 			}
 
 			"ProgressBox FrameCloseButton:active" {
 				render_bg {
-					-3="image(x0-7,y0-7,x0+12,y0+12, graphics/material/selectionbubbles/hover/red/topleft)"
-					-2="image(x0-7,y0+12,x0+12,y0+24, graphics/material/selectionbubbles/hover/red/bottomleft)"
-					-1="image(x0+12,y0-7,x0+31,y0+12, graphics/material/selectionbubbles/hover/red/topright)"
-					0="image(x0+12,y0+12,x0+31,y0+31, graphics/material/selectionbubbles/hover/red/bottomright)"
-					1="image(x0+7,y0+7,x1,y1, graphics/icons/window_controls/hover/close)"
+					-3 = "image(x0-7,y0-7,x0+12,y0+12, graphics/material/selectionbubbles/hover/red/topleft)"
+					-2 = "image(x0-7,y0+12,x0+12,y0+24, graphics/material/selectionbubbles/hover/red/bottomleft)"
+					-1 = "image(x0+12,y0-7,x0+31,y0+12, graphics/material/selectionbubbles/hover/red/topright)"
+					0 = "image(x0+12,y0+12,x0+31,y0+31, graphics/material/selectionbubbles/hover/red/bottomright)"
+					1 = "image(x0+7,y0+7,x1,y1, graphics/icons/window_controls/hover/close)"
 				}
 			}
 
 		"ProgressBox Label" {
-			textcolor=color__secondaryText
+			textcolor = color__secondaryText
 		}
 	}
 }
