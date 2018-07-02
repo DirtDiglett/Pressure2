@@ -30,7 +30,9 @@
 			render {
 				0="image_tiled(x0+308,y0,x1,y0+4, graphics/material/shadows/top)"
 			}
-			render_bg {}
+			render_bg {
+				0="fill(x0+308,y0,x1,y0+280, headerimagebg)"
+			}
 		}
 		
 		"GamesPage_Details ListPanel" {
