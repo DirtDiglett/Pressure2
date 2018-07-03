@@ -40,15 +40,17 @@
 		place {
 			control=ReadyToPlayInfoLabel
 			region=page
-			x=50
+			start=InfoLabel
+			dir=down
+			margin-top=3
 		}
 
 		place {
 			control=ReadyToPlayTimeLabel
 			region=page
 			start=ReadyToPlayInfoLabel
-			dir=down
-			y=4
+			dir=right
+			margin-left=3
 		}
 
 		place {
