@@ -3,525 +3,525 @@
 		CheckButtonList:scrollbar {} 
 
 		downarrow {
-			image="graphics/icon_down_default"
+			image = "graphics/icon_down_default"
 
 			render {}
 			render_bg {}
 		}
 
 			downarrow:hover {
-				image="graphics/icon_down_hover"
+				image = "graphics/icon_down_hover"
 			}
 
 		uparrow {
-			image="graphics/icon_up_default"
+			image = "graphics/icon_up_default"
 
 			render {}
 			render_bg {}		
 		}
 
 			uparrow:hover {
-				image="graphics/icon_up_hover"	
+				image = "graphics/icon_up_hover"	
 			}
 		
 		rightarrow {
-			image="graphics/icon_right_default"
+			image = "graphics/icon_right_default"
 
 			render {}
 			render_bg {}
 		}
 		
 			rightarrow:hover {
-				image="graphics/icon_right_hover"		
+				image = "graphics/icon_right_hover"		
 			}
 
 
 		CheckButton {
-			textcolor=color__text
-			font-family=basefont
-			font-size=16
-			font-size=16 [$OSX]
-			font-size=14 [$LINUX]
-			font-weight=400
-			inset-left=23
+			font-family = font__basefont
+			font-size = 14 [$LINUX]
+			font-size = 16
+			font-size = 16 [$OSX]
+			font-weight = 400
+			inset-left = 23
+			textcolor = color__text
 
 			render_bg {
-				0="image(x0,y0,x1,y1, graphics/controls/checkbox/unchecked)"
+				0 = "image(x0,y0,x1,y1, graphics/controls/checkbox/unchecked)"
 			}
 		}
 	
 			CheckButton:selected {	
 				render_bg {
-					0="image(x0,y0,x1,y1, graphics/controls/checkbox/checked)"
+					0 = "image(x0,y0,x1,y1, graphics/controls/checkbox/checked)"
 				}	
 			}
 
 				CheckButton:selected:disabled {
-					textcolor=color__disabled
+					textcolor = color__disabled
 
 					render_bg {
-						0="image(x0,y0,x1,y1, graphics/controls/checkbox/checked_disabled)"
+						0 = "image(x0,y0,x1,y1, graphics/controls/checkbox/checked_disabled)"
 					}
 				}
 
 			CheckButton:focus {
 				render_bg {
-					-3="image(x0-10,y0-10,x0+9,y0+9, graphics/material/selectionbubbles/hover/blue/topleft)"
-					-2="image(x0-10,y0+9,x0+9,y0+21, graphics/material/selectionbubbles/hover/blue/bottomleft)"
-					-1="image(x0+9,y0-10,x0+28,y0+9, graphics/material/selectionbubbles/hover/blue/topright)"
-					0="image(x0+9,y0+9,x0+28,y0+28, graphics/material/selectionbubbles/hover/blue/bottomright)"
-					1="image(x0,y0,x1,y1, graphics/controls/checkbox/unchecked)"
+					-3 = "image(x0-10,y0-10,x0+9,y0+9, graphics/material/selectionbubbles/hover/blue/topleft)"
+					-2 = "image(x0-10,y0+9,x0+9,y0+21, graphics/material/selectionbubbles/hover/blue/bottomleft)"
+					-1 = "image(x0+9,y0-10,x0+28,y0+9, graphics/material/selectionbubbles/hover/blue/topright)"
+					0 = "image(x0+9,y0+9,x0+28,y0+28, graphics/material/selectionbubbles/hover/blue/bottomright)"
+					1 = "image(x0,y0,x1,y1, graphics/controls/checkbox/unchecked)"
 				}
 			}
 
 				CheckButton:focus:selected {
 					render_bg {
-						-3="image(x0-10,y0-10,x0+9,y0+9, graphics/material/selectionbubbles/hover/blue/topleft)"
-						-2="image(x0-10,y0+9,x0+9,y0+21, graphics/material/selectionbubbles/hover/blue/bottomleft)"
-						-1="image(x0+9,y0-10,x0+28,y0+9, graphics/material/selectionbubbles/hover/blue/topright)"
-						0="image(x0+9,y0+9,x0+28,y0+28, graphics/material/selectionbubbles/hover/blue/bottomright)"
-						1="image(x0,y0,x1,y1, graphics/controls/checkbox/checked)"
+						-3 = "image(x0-10,y0-10,x0+9,y0+9, graphics/material/selectionbubbles/hover/blue/topleft)"
+						-2 = "image(x0-10,y0+9,x0+9,y0+21, graphics/material/selectionbubbles/hover/blue/bottomleft)"
+						-1 = "image(x0+9,y0-10,x0+28,y0+9, graphics/material/selectionbubbles/hover/blue/topright)"
+						0 = "image(x0+9,y0+9,x0+28,y0+28, graphics/material/selectionbubbles/hover/blue/bottomright)"
+						1 = "image(x0,y0,x1,y1, graphics/controls/checkbox/checked)"
 					}
 				}
 			
 			CheckButton:disabled {
-				textcolor=color__disabled
+				textcolor = color__disabled
 
 				render_bg {
-					0="image(x0,y0,x1,y1, graphics/controls/checkbox/unchecked_disabled)"
+					0 = "image(x0,y0,x1,y1, graphics/controls/checkbox/unchecked_disabled)"
 				}
 			}
 
 		IndeterminateCheckButton {
-			textcolor=color__text
-			font-family=basefont
-			font-size=15
-			font-size=16 [$OSX]
-			font-weight=400
-			image="graphics/controls/checkbox/indeterminate"
+			font-family = font__basefont
+			font-size = 15
+			font-size = 16 [$OSX]
+			font-weight = 400
+			image = "graphics/controls/checkbox/indeterminate"
+			textcolor = color__text
 		}
 
 
 
 
 		ListPanelCheckBox {
-			textcolor=color__text
-			font-family=basefont
-			font-size=14
-			font-size=15 [$OSX]
-			font-weight=400
-			inset="0 5 0 0"
-			inset-left=0 // This is used as a global override for scenarious that inset alone does not override.
-			image="graphics/controls/checkbox/unchecked_small"
+			font-family = font__basefont
+			font-size = 14
+			font-size = 15 [$OSX]
+			font-weight = 400
+			image = "graphics/controls/checkbox/unchecked_small"
+			inset-left = 0 // This is used as a global override for scenarious that inset alone does not override.
+			inset = "0 5 0 0"
+			textcolor = color__text
 
 			render_bg {}
 		}	 
 
 			ListPanelCheckBox:selected {
-				image="graphics/controls/checkbox/checked_small"	
+				image = "graphics/controls/checkbox/checked_small"	
 			}
 
 				ListPanelCheckBox:selected:focus {
-					image="graphics/controls/checkbox/checked_small"
+					image = "graphics/controls/checkbox/checked_small"
 				}
 
 			ListPanelCheckBox:focus {
-				image="graphics/controls/checkbox/unchecked_small"	
+				image = "graphics/controls/checkbox/unchecked_small"	
 			}
 
 			ListPanelCheckBox:disabled {
-				textcolor=color__disabled
-				image="graphics/controls/checkbox/unchecked_disabled_small"
+				image = "graphics/controls/checkbox/unchecked_disabled_small"
+				textcolor = color__disabled
 			}
 	
 				ListPanelCheckBox:disabled:selected {
-					textcolor=color__disabled
-					image="graphics/controls/checkbox/checked_disabled_small"
+					image = "graphics/controls/checkbox/checked_disabled_small"
+					textcolor = color__disabled
 				}
 		
 		"ListPanelColumnheader ListPanelCheckBox" {
-			textcolor=color__text
-			font-family=basefont
-			font-size=14
-			font-size=15 [$OSX]
-			font-weight=400
-			inset="4 0 0 0" 
-			image="graphics/controls/checkbox/unchecked_small"
+			font-family = font__basefont
+			font-size = 14
+			font-size = 15 [$OSX]
+			font-weight = 400
+			image = "graphics/controls/checkbox/unchecked_small"
+			inset = "4 0 0 0" 
+			textcolor = color__text
 
 			render_bg {}
 		}
 
 			"ListPanelColumnheader ListPanelCheckBox:selected" {
-				image="graphics/controls/checkbox/unchecked_small"	
+				image = "graphics/controls/checkbox/unchecked_small"	
 			}
 
 				"ListPanelColumnheader ListPanelCheckBox:selected:focus" {
-					image="graphics/controls/checkbox/checked_small"
+					image = "graphics/controls/checkbox/checked_small"
 				}
 
 			"ListPanelColumnheader ListPanelCheckBox:focus" {
-				image="graphics/controls/checkbox/unchecked_small"	
+				image = "graphics/controls/checkbox/unchecked_small"	
 			}
 	
 			"ListPanelColumnheader ListPanelCheckBox:disabled" {
-				textcolor=color__disabled
-				image="graphics/controls/checkbox/unchecked_disabled_small"
+				image = "graphics/controls/checkbox/unchecked_disabled_small"
+				textcolor = color__disabled
 			}
 	
 				"ListPanelColumnheader ListPanelCheckBox:disabled:selected" {
-					textcolor=color__disabled
-					image="graphics/controls/checkbox/checked_disabled_small"
+					image = "graphics/controls/checkbox/checked_disabled_small"
+					textcolor = color__disabled
 				}
 
 		RadioButton {
-			textcolor=color__text
-			font-family=basefont
-			font-size=15
-			font-size=16 [$OSX]
-			font-weight=400
-			inset-left=23
+			font-family = font__basefont
+			font-size = 15
+			font-size = 16 [$OSX]
+			font-weight = 400
+			inset-left = 23
+			textcolor = color__text
 
 			render_bg {
-				0="image(x0-1,y0-1,x1,y1, graphics/controls/radio/unchecked)"
+				0 = "image(x0-1,y0-1,x1,y1, graphics/controls/radio/unchecked)"
 			}
 		}		 
 			
 			RadioButton:selected {
 				render_bg {
-					0="image(x0-1,y0-1,x1,y1, graphics/controls/radio/checked)"
+					0 = "image(x0-1,y0-1,x1,y1, graphics/controls/radio/checked)"
 				}
 			}
 
 				RadioButton:selected:disabled {
-					textcolor=color__disabled
+					textcolor = color__disabled
 					
 					render_bg {
-						0="image(x0-1,y0-1,x1,y1, graphics/controls/radio/checked_disabled)"
+						0 = "image(x0-1,y0-1,x1,y1, graphics/controls/radio/checked_disabled)"
 					}
 				}
 
 			RadioButton:focus {
 				render_bg {
-					-3="image(x0-10,y0-10,x0+9,y0+9, graphics/material/selectionbubbles/hover/blue/topleft)"
-					-2="image(x0-10,y0+9,x0+9,y0+21, graphics/material/selectionbubbles/hover/blue/bottomleft)"
-					-1="image(x0+9,y0-10,x0+28,y0+9, graphics/material/selectionbubbles/hover/blue/topright)"
-					0="image(x0+9,y0+9,x0+28,y0+28, graphics/material/selectionbubbles/hover/blue/bottomright)"
-					1="image(x0-1,y0-1,x1,y1, graphics/controls/radio/unchecked)"
+					-3 = "image(x0-10,y0-10,x0+9,y0+9, graphics/material/selectionbubbles/hover/blue/topleft)"
+					-2 = "image(x0-10,y0+9,x0+9,y0+21, graphics/material/selectionbubbles/hover/blue/bottomleft)"
+					-1 = "image(x0+9,y0-10,x0+28,y0+9, graphics/material/selectionbubbles/hover/blue/topright)"
+					0 = "image(x0+9,y0+9,x0+28,y0+28, graphics/material/selectionbubbles/hover/blue/bottomright)"
+					1 = "image(x0-1,y0-1,x1,y1, graphics/controls/radio/unchecked)"
 				}
 			}
 
 				RadioButton:focus:selected {
 					render_bg {
-						-3="image(x0-10,y0-10,x0+9,y0+9, graphics/material/selectionbubbles/hover/blue/topleft)"
-						-2="image(x0-10,y0+9,x0+9,y0+21, graphics/material/selectionbubbles/hover/blue/bottomleft)"
-						-1="image(x0+9,y0-10,x0+28,y0+9, graphics/material/selectionbubbles/hover/blue/topright)"
-						0="image(x0+9,y0+9,x0+28,y0+28, graphics/material/selectionbubbles/hover/blue/bottomright)"
-						1="image(x0-1,y0-1,x1,y1, graphics/controls/radio/checked)"
+						-3 = "image(x0-10,y0-10,x0+9,y0+9, graphics/material/selectionbubbles/hover/blue/topleft)"
+						-2 = "image(x0-10,y0+9,x0+9,y0+21, graphics/material/selectionbubbles/hover/blue/bottomleft)"
+						-1 = "image(x0+9,y0-10,x0+28,y0+9, graphics/material/selectionbubbles/hover/blue/topright)"
+						0 = "image(x0+9,y0+9,x0+28,y0+28, graphics/material/selectionbubbles/hover/blue/bottomright)"
+						1 = "image(x0-1,y0-1,x1,y1, graphics/controls/radio/checked)"
 					}
 				}
 
 			RadioButton:disabled {
-				textcolor=color__disabled
+				textcolor = color__disabled
 
 				render_bg {
-					0="image(x0-1,y0-1,x1,y1, graphics/controls/radio/unchecked_disabled)"
+					0 = "image(x0-1,y0-1,x1,y1, graphics/controls/radio/unchecked_disabled)"
 				}
 			}
 			
 		CheckButtonList {
-			bgcolor=white
-			textcolor=color__text
+			bgcolor = color__controlBackground
+			textcolor = color__text
 			
 			render {
-				0="fill(x0, y0, x0+1, y1, grey200)"
-				1="fill(x0, y0, x1, y0+1, grey200)"
-				2="fill(x1-1, y0, x1, y1, grey200)"
-				3="fill(x0, y1-1, x1, y1, grey200)"
+				0 = "fill(x0, y0, x0+1, y1, color__controlBorder)"
+				1 = "fill(x0, y0, x1, y0+1, color__controlBorder)"
+				2 = "fill(x1-1, y0, x1, y1, color__controlBorder)"
+				3 = "fill(x0, y1-1, x1, y1, color__controlBorder)"
 			} 
 			render_bg {}
 		}
 
 		TextEntry {
-			bgcolor=white
-			selectedbgcolor=blue500
-			textcolor=color__text
-			selectedtextcolor=white
-			shadowtextcolor=color__disabled
-			font-family=basefont
-			font-size=18
-			font-size=19 [$OSX]
-			font-weight=400
-			inset-left=3
+			bgcolor = color__controlBackground
+			font-family = font__basefont
+			font-size = 18
+			font-size = 19 [$OSX]
+			font-weight = 400
+			inset-left = 3
+			selectedbgcolor = color__selectedTextBackground
+			selectedtextcolor = color__selectedText
+			shadowtextcolor = color__disabled
+			textcolor = color__text
 
 			render {
-				0="fill(x0, y0, x0+1, y1, grey200)"
-				1="fill(x0, y0, x1, y0+1, grey200)"
-				2="fill(x1-1, y0, x1, y1, grey200)"
-				3="fill(x0, y1-1, x1, y1, grey200)"
+				0 = "fill(x0, y0, x0+1, y1, color__controlBorder)"
+				1 = "fill(x0, y0, x1, y0+1, color__controlBorder)"
+				2 = "fill(x1-1, y0, x1, y1, color__controlBorder)"
+				3 = "fill(x0, y1-1, x1, y1, color__controlBorder)"
 			}
 		}
 				
 			TextEntry:focus {
 				render {
-					0="fill(x0, y0, x0+1, y1, grey400)"
-					1="fill(x0, y0, x1, y0+1, grey400)"
-					2="fill(x1-1, y0, x1, y1, grey400)"
-					3="fill(x0, y1-1, x1, y1, grey400)"
+					0 = "fill(x0, y0, x0+1, y1, color__controlBorder__focus)"
+					1 = "fill(x0, y0, x1, y0+1, color__controlBorder__focus)"
+					2 = "fill(x1-1, y0, x1, y1, color__controlBorder__focus)"
+					3 = "fill(x0, y1-1, x1, y1, color__controlBorder__focus)"
 				}
 			}
 
 			TextEntry:disabled {
-				textcolor=color__disabled
+				textcolor = color__disabled
 
 				render {
-					0="fill(x0, y0, x0+1, y1, color__disabled)"
-					1="fill(x0+1, y0, x1-1, y0+1, color__disabled)"
-					2="fill(x1-1, y0, x1, y1, color__disabled)"
-					3="fill(x0+1, y1-1, x1-1, y1, color__disabled)"
+					0 = "fill(x0, y0, x0+1, y1, color__controlBorder__disabled)"
+					1 = "fill(x0+1, y0, x1-1, y0+1, color__controlBorder__disabled)"
+					2 = "fill(x1-1, y0, x1, y1, color__controlBorder__disabled)"
+					3 = "fill(x0+1, y1-1, x1-1, y1, color__controlBorder__disabled)"
 				}
 			}
 
 			// This style applies to things like "Search" AKA Hint Text
 			TextEntry:empty {
-				bgcolor=white
-				selectedbgcolor=blue500
-				textcolor=color__text
-				selectedtextcolor=white
-				shadowtextcolor=color__disabled
-				font-family=basefont
-				font-size=18
-				font-size=19 [$OSX]
-				font-weight=400
-				inset-left=3	
+				bgcolor = color__controlBackground
+				font-family = font__basefont
+				font-size = 18
+				font-size = 19 [$OSX]
+				font-weight = 400
+				inset-left = 3	
+				selectedbgcolor = color__selectedTextBackground
+				selectedtextcolor = color__selectedText
+				shadowtextcolor = color__disabled
+				textcolor = color__text
 			}
 
 		TextEntryLarge {
-			bgcolor=white
-			selectedbgcolor=blue500
-			textcolor=color__text
-			selectedtextcolor=white
-			shadowtextcolor=color__disabled
-			font-family=basefont
-			font-size=22
-			font-size=23 [$OSX]	
-			font-weight=400
-			inset-left=3
+			bgcolor = color__controlBackground
+			font-family = font__basefont
+			font-size = 22
+			font-size = 23 [$OSX]	
+			font-weight = 400
+			inset-left = 3
+			selectedbgcolor = color__selectedTextBackground
+			selectedtextcolor = color__selectedText
+			shadowtextcolor = color__disabled
+			textcolor = color__text
 		}
 
 		TextEntryURL {
-			textcolor=blue500
-			shadowtextcolor=color__disabled	
-			font-family=basefont
-			font-size=15
-			font-size=16 [$OSX]
-			font-weight=400			 
+			font-family = font__basefont
+			font-size = 15
+			font-size = 16 [$OSX]
+			font-weight = 400			 
+			shadowtextcolor = color__disabled	
+			textcolor = color__URL
 		}
 
 			TextEntryURL:Hover {
-				textcolor=blue300				
+				textcolor = color__URL__hover				
 			}
 
 		Slider {
-			textcolor=color__secondaryText
+			textcolor = color__secondaryText
 		}
 		  
 			Slider:focus {
-				textcolor=color__text  
+				textcolor = color__text  
 			}
 
 		Button {		 
-			bgcolor=none
-			textcolor=blue500
-			font-family=mediumfont
-			font-size=16
-			font-size=17 [$OSX]
-			font-style=uppercase
-			font-weight=400
-			inset-top=3
+			bgcolor = color__buttonBackground
+			font-family = font__mediumfont
+			font-size = 16
+			font-size = 17 [$OSX]
+			font-style = uppercase
+			font-weight = 400
+			inset-top = 3
+			textcolor = color__buttonText
 			
 			render_bg {}
 		}
 
 			Button:Hover {
-				textcolor=blue300
+				textcolor = blue300
 				
 				// Render_bg instead of bgcolor avoids breaking every other strange button-types (Such as New Tab) that don't have a bgcolor specifically defined.
 				render_bg {
-					0="fill(x0,y0,x1,y1, color__divider)"
+					0 = "fill(x0,y0,x1,y1, color__buttonBackground__hover)"
 				}
 			}
 
 				Button:disabled {
-					bgcolor=none
-					textcolor=color__disabled
+					bgcolor = none
+					textcolor = color__disabled
 					
 					render_bg {}
 				}
 
 
 					Button:focus {
-						bgcolor=none
-						textcolor=blue500
+						bgcolor = color__buttonBackground
+						textcolor = color__buttonText
 
 						render_bg {}
 					}
 
 						Button:focus:hover {
-							bgcolor=none
-							textcolor=blue500
+							bgcolor = none
+							textcolor = color__buttonText__hover
 
 							// Render_bg instead of bgcolor avoids breaking every other strange button-types (Such as New Tab) that don't have a bgcolor specifically defined.
 							render_bg {
-								0="fill(x0,y0,x1,y1, color__divider)"
+								0 = "fill(x0,y0,x1,y1, color__buttonBackground__hover)"
 							}
 						}
 
 						Button:active {
-							bgcolor=blue500transparent
-							textcolor=blue500
+							bgcolor = color__buttonBackground__active
+							textcolor = color__buttonText
 
 							render_bg {}
 						}
 
 		ComboBox {
-			textcolor=blue500
-			selectedtextcolor=blue500
-			font-family=mediumfont
-			font-size=16
-			font-size=17 [$OSX]
-			font-style=uppercase
-			font-weight=400
-			minimum-height=29
-			inset-left=7
-			inset-top=1
-			padding-left=4
-			padding-right=4
+			font-family = font__mediumfont
+			font-size = 16
+			font-size = 17 [$OSX]
+			font-style = uppercase
+			font-weight = 400
+			inset-left = 7
+			inset-top = 1
+			minimum-height = 29
+			padding-left = 4
+			padding-right = 4
+			selectedtextcolor = color__buttonText
+			textcolor = color__buttonText
 
 			render {
 				// We base this assumption on a 34 pixel high combobox.
-				0="image( x1 - 24, y0 + 15, x1, y1, graphics/icons/dropdown/standard/down_onLightBG )"
+				0 = "image( x1 - 24, y0 + 15, x1, y1, graphics/icons/dropdown/standard/down_onLightBG )"
 			}
 			render_bg {}
 		}
 
 			ComboBox:hover {
-				textcolor=blue300
+				textcolor = color__buttonText__hover
 				
 				render_bg {
-					0="fill(x0,y0,x1,y1, color__divider)"
+					0 = "fill(x0,y0,x1,y1, color__buttonBackground__hover)"
 				}
 			}
 
 		ComboBoxButton {
-			bgcolor=none
-			textcolor=none
+			bgcolor = none
+			textcolor = none
 			
 			render_bg {}
 		}
 
 		ToggleButton {
-			textcolor=color__text
-			font-family=basefont
-			font-size=15
-			font-size=16 [$OSX]
-			font-weight=400
-			font-style=none
-			minimum-height=18
-			inset-left=23
-			inset-top=0
+			font-family = font__basefont
+			font-size = 15
+			font-size = 16 [$OSX]
+			font-style = none
+			font-weight = 400
+			inset-left = 23
+			inset-top = 0
+			minimum-height = 18
+			textcolor = color__text
 			
 			render_bg {
-				0="image(x0,y0,x1,y1, graphics/controls/checkbox/unchecked)"
+				0 = "image(x0,y0,x1,y1, graphics/controls/checkbox/unchecked)"
 			}
 		}
 	
 			ToggleButton:selected {	
 				render_bg {
-					0="image(x0,y0,x1,y1, graphics/controls/checkbox/checked)"
+					0 = "image(x0,y0,x1,y1, graphics/controls/checkbox/checked)"
 				}	
 			}
 
 				ToggleButton:selected:disabled {
-					textcolor=color__disabled
+					textcolor = color__disabled
 
 					render_bg {
-						0="image(x0,y0,x1,y1, graphics/controls/checkbox/checked_disabled)"
+						0 = "image(x0,y0,x1,y1, graphics/controls/checkbox/checked_disabled)"
 					}
 				}
 
 			ToggleButton:focus{
 				render_bg {
-					-3="image(x0-10,y0-10,x0+9,y0+9, graphics/material/selectionbubbles/hover/blue/topleft)"
-					-2="image(x0-10,y0+9,x0+9,y0+21, graphics/material/selectionbubbles/hover/blue/bottomleft)"
-					-1="image(x0+9,y0-10,x0+28,y0+9, graphics/material/selectionbubbles/hover/blue/topright)"
-					0="image(x0+9,y0+9,x0+28,y0+28, graphics/material/selectionbubbles/hover/blue/bottomright)"
-					1="image(x0,y0,x1,y1, graphics/controls/checkbox/unchecked)"
+					-3 = "image(x0-10,y0-10,x0+9,y0+9, graphics/material/selectionbubbles/hover/blue/topleft)"
+					-2 = "image(x0-10,y0+9,x0+9,y0+21, graphics/material/selectionbubbles/hover/blue/bottomleft)"
+					-1 = "image(x0+9,y0-10,x0+28,y0+9, graphics/material/selectionbubbles/hover/blue/topright)"
+					0 = "image(x0+9,y0+9,x0+28,y0+28, graphics/material/selectionbubbles/hover/blue/bottomright)"
+					1 = "image(x0,y0,x1,y1, graphics/controls/checkbox/unchecked)"
 				}
 			}
 
 				ToggleButton:focus:selected {
 					render_bg {
-						-3="image(x0-10,y0-10,x0+9,y0+9, graphics/material/selectionbubbles/hover/blue/topleft)"
-						-2="image(x0-10,y0+9,x0+9,y0+21, graphics/material/selectionbubbles/hover/blue/bottomleft)"
-						-1="image(x0+9,y0-10,x0+28,y0+9, graphics/material/selectionbubbles/hover/blue/topright)"
-						0="image(x0+9,y0+9,x0+28,y0+28, graphics/material/selectionbubbles/hover/blue/bottomright)"
-						1="image(x0,y0,x1,y1, graphics/controls/checkbox/checked)"
+						-3 = "image(x0-10,y0-10,x0+9,y0+9, graphics/material/selectionbubbles/hover/blue/topleft)"
+						-2 = "image(x0-10,y0+9,x0+9,y0+21, graphics/material/selectionbubbles/hover/blue/bottomleft)"
+						-1 = "image(x0+9,y0-10,x0+28,y0+9, graphics/material/selectionbubbles/hover/blue/topright)"
+						0 = "image(x0+9,y0+9,x0+28,y0+28, graphics/material/selectionbubbles/hover/blue/bottomright)"
+						1 = "image(x0,y0,x1,y1, graphics/controls/checkbox/checked)"
 					}
 				}
 			
 			ToggleButton:disabled {
-				textcolor=color__disabled
+				textcolor = color__disabled
 
 				render_bg {
-					0="image(x0,y0,x1,y1, graphics/controls/checkbox/unchecked_disabled)"
+					0 = "image(x0,y0,x1,y1, graphics/controls/checkbox/unchecked_disabled)"
 				}
 			}
 
 		
 
 		HotkeyEntryClearButton {
-			inset-left=-50
-			minimum-width=24
-			minimum-height=24
+			inset-left = -50
+			minimum-height = 24
+			minimum-width = 24
 
 			render {
-				0="image(x0+3,y0+3,x1,y1, graphics\icons\closedownload\standard\closedownload)"
+				0 = "image(x0+3,y0+3,x1,y1, graphics\icons\closedownload\standard\closedownload)"
 			}
 		}
 
 			HotkeyEntryClearButton:hover {
 				render {
-					0="image(x0+3,y0+3,x1,y1, graphics\icons\closedownload\hover\closedownload)"
+					0 = "image(x0+3,y0+3,x1,y1, graphics\icons\closedownload\hover\closedownload)"
 				}
 			}
 
 			HotkeyEntryClearButton:selected {
 				render {
-					-1="fill(x0-10,y0-10,x1+10,y1+10, color__disabled)"
-					0="image(x0+3,y0+3,x1,y1, graphics\icons\closedownload\active\closedownload)"
+					-1 = "fill(x0-10,y0-10,x1+10,y1+10, color__disabled)"
+					0 = "image(x0+3,y0+3,x1,y1, graphics\icons\closedownload\active\closedownload)"
 				}
 			}
 
 		TextEntryClearButton {
-			inset-left=-50
-			minimum-width=24
-			minimum-height=24
+			inset-left = -50
+			minimum-height = 24
+			minimum-width = 24
 
 			render {
-				0="image(x0+3,y0+3,x1,y1, graphics\icons\closedownload\standard\closedownload)"
+				0 = "image(x0+3,y0+3,x1,y1, graphics\icons\closedownload\standard\closedownload)"
 			}
 		}
 
 			TextEntryClearButton:hover {
 				render {
-					0="image(x0+3,y0+3,x1,y1, graphics\icons\closedownload\hover\closedownload)"
+					0 = "image(x0+3,y0+3,x1,y1, graphics\icons\closedownload\hover\closedownload)"
 				}
 			}
 
 			TextEntryClearButton:selected {
 				render {
-					-1="fill(x0-10,y0-10,x1+10,y1+10, color__disabled)"
-					0="image(x0+3,y0+3,x1,y1, graphics\icons\closedownload\active\closedownload)"
+					-1 = "fill(x0-10,y0-10,x1+10,y1+10, color__disabled)"
+					0 = "image(x0+3,y0+3,x1,y1, graphics\icons\closedownload\active\closedownload)"
 				}
 			}
 	}
