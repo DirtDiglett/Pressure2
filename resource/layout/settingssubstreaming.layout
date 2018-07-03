@@ -7,16 +7,16 @@
 			}
 			render_bg {
 				0="fill(x0+71,y0+233,x1,y0+234, color__divider)"
-				1="fill(x0+71,y0+329,x1,y0+330, color__divider)"
+				1="fill(x0+71,y0+367,x1,y0+368, color__divider)"
 				2="image(x0+26,y0+251,x1,y1, graphics/icons/settings/host)"
-				3="image(x0+26,y0+347,x1,y1, graphics/icons/settings/group)"
+				3="image(x0+26,y0+385,x1,y1, graphics/icons/settings/group)"
 			}
 		}
 
 		CSettingsSubStreaming:framefocus {
 			render {
 				0="fill(x0+70,y0+252,x0+396,y0+271, color__backgroundOverlay)"
-				1="fill(x0+70,y0+348,x0+285,y0+367, color__backgroundOverlay)"
+				1="fill(x0+70,y0+386,x0+285,y0+405, color__backgroundOverlay)"
 			}
 		}
 	}
@@ -81,18 +81,19 @@
 		}
 
 		place {
-			control=AdvancedHostOptions,UnsupportedPlatform
+			control=AdvancedHostOptions,UnsupportedPlatform,SetPIN
 			start=HostLabel
 			dir=down
 			y=4
 			width=185
-			height=34			
+			height=34
+			spacing=4		
 		}
 
 		region {
 			name=client
 			x=82
-			y=320
+			y=358
 			width=max
 			height=150
 			margin-right=29
