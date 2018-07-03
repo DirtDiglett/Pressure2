@@ -41,7 +41,7 @@
 		}
 
 		place {
-			controls=ShowStore,ShowCommunity,ShowFriendActivity,ShowMyGames,ShowServers,ShowMusicPlayer,ShowNews,ShowSettings,ShowScreenshots,ShowBigPicture,ShowFriends,ShowExit
+			controls=ShowStore,ShowCommunity,ShowFriendActivity,ShowMyGames,ShowServers,ShowMusicPlayer,ShowNews,ShowSettings,ShowScreenshots,ShowBigPicture,ShowVR,ShowFriends,ShowExit
 			start=Label2
 			dir=down
 			y=9
