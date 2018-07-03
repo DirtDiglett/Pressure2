@@ -203,6 +203,10 @@
 		color__ignored							=		Friends.IgnoredColor
 		color__ignored__hover					=		Friends.IgnoredHoverColor
 
+		color__chatBarLabel						=		white
+		color__CBroadcastApproveBarBackground	=		orange500
+
+
 		ListPanel.TextColor 					= 		color__text
 		ListPanel.BgColor 						= 		none
 		ListPanel.SelectedTextColor 			= 		white
