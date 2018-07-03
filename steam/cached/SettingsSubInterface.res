@@ -4,13 +4,13 @@
 			render {
 				0="fill(x0+70,y0+191,x1,y0+239, color__backgroundOverlay__secondary)"
 				1="fill(x0+70,y0+286,x1,y0+312, color__backgroundOverlay__secondary)"
-				2="fill(x0+70,y0+358,x1,y0+384, color__backgroundOverlay__secondary)"
+				2="fill(x0+70,y0+380,x1,y0+406, color__backgroundOverlay__secondary)"
 			}
 
 			render [$OSX] {
 				0="fill(x0+70,y0+97,x1,y0+136, color__backgroundOverlay__secondary)"
 				1="fill(x0+70,y0+192,x1,y0+214, color__backgroundOverlay__secondary)"
-				2="fill(x0+70,y0+264,x1,y0+284, color__backgroundOverlay__secondary)"
+				2="fill(x0+70,y0+286,x1,y0+306, color__backgroundOverlay__secondary)"
 			}
 
 			render_bg {
@@ -30,20 +30,20 @@
 				render {
 					0="fill(x0+70,y0+191,x1,y0+239, color__backgroundOverlay)"
 					1="fill(x0+70,y0+286,x1,y0+312, color__backgroundOverlay)"
-					2="fill(x0+70,y0+358,x1,y0+384, color__backgroundOverlay)"
+					2="fill(x0+70,y0+380,x1,y0+406, color__backgroundOverlay)"
 				}
 
 				render [$OSX] {
 					0="fill(x0+70,y0+97,x1,y0+136, color__backgroundOverlay)"
 					1="fill(x0+70,y0+192,x1,y0+214, color__backgroundOverlay)"
-					2="fill(x0+70,y0+264,x1,y0+284, color__backgroundOverlay)"
+					2="fill(x0+70,y0+286,x1,y0+306, color__backgroundOverlay)"
 				}
 			}
 	}
 	
 	layout {
 		place {
-			control=TranslationLabel,Label2,Divider1,Divider2
+			control=TranslationLabel,Label2,Divider1,Divider2,Divider3
 			height=0
 		}
 
@@ -121,8 +121,16 @@
 		}
 
 		place {
-			control=Label4
+			control=DPIScalingCheck
 			start=SkinCombo
+			dir=down
+			y=4
+			height=18
+		}
+
+		place {
+			control=Label4
+			start=DPIScalingCheck
 			dir=down
 			y=18
 			spacing=2
