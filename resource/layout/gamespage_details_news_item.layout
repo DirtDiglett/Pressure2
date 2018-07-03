@@ -13,7 +13,7 @@
 	styles {
 		title_label {
 			textcolor=color__text
-			font-family=mediumfont
+			font-family=font__mediumfont
 			font-size=18
 			font-size=19 [$OSX]
 		}
@@ -28,7 +28,7 @@
 			selectedbgcolor=blue500	
 			textcolor=color__text
 			selectedtextcolor=white
-			font-family=basefont
+			font-family=font__basefont
 			font-size=16
 			font-size=17 [$OSX]
 
@@ -58,7 +58,7 @@
 		more_link {		 
 			bgcolor=none
 			textcolor=blue500
-			font-family=mediumfont
+			font-family=font__mediumfont
 			font-size=16
 			font-size=17 [$OSX]
 			font-weight=400

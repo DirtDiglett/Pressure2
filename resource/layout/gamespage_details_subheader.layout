@@ -51,7 +51,7 @@
 		DetailsButton {
 			bgcolor=none
 			textcolor=color__activateButtonText
-			font-family=mediumfont
+			font-family=font__mediumfont
 			font-size=28
 			font-size=29 [$OSX]
 			font-weight=600
@@ -105,7 +105,7 @@
 		DetailsLaunchButton {
 			bgcolor=none
 			textcolor=color__playButtonText
-			font-family=mediumfont
+			font-family=font__mediumfont
 			font-size=28
 			font-size=29 [$OSX]
 			font-weight=600
@@ -159,7 +159,7 @@
 		DetailsInstallButton {
 			bgcolor=none
 			textcolor=color__launchButtonText
-			font-family=mediumfont
+			font-family=font__mediumfont
 			font-size=28
 			font-size=29 [$OSX]
 			font-weight=600
@@ -213,7 +213,7 @@
 		DetailsBuyButton {
 			bgcolor=none
 			textcolor=color__buyButtonText
-			font-family=mediumfont
+			font-family=font__mediumfont
 			font-size=28
 			font-size=29 [$OSX]
 			font-weight=600

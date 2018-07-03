@@ -4,7 +4,7 @@
 		
 		topbar {
 			textcolor=color__text__alternate
-			font-family=mediumfont
+			font-family=font__mediumfont
 			font-weight=800
 			font-size=30
 			font-size=31 [$OSX]
@@ -13,7 +13,7 @@
 		
 		clocksuffix {
 			textcolor=color__text__alternate
-			font-family=mediumfont
+			font-family=font__mediumfont
 			font-weight=800
 			font-size=30
 			font-size=31 [$OSX]
@@ -23,7 +23,7 @@
 		
 		timeStrings {
 			textcolor=color__disabled__alternate
-			font-family=basefontfont
+			font-family=font__basefontfont
 			font-size=18
 			font-size=19 [$OSX]
 			font-weight=400

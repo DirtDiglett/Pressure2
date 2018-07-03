@@ -14,7 +14,7 @@
 
 		Label {
 			textcolor=color__text
-			font-family=mediumfont
+			font-family=font__mediumfont
 			font-size=24
 			font-size=25 [$OSX]
 			font-style=normal
@@ -22,7 +22,7 @@
 		
 		soft {			
 			textcolor=color__secondaryText
-			font-family=mediumfont
+			font-family=font__mediumfont
 			font-size=20
 			font-size=21 [$OSX]
 			font-style=normal
@@ -31,7 +31,7 @@
 		URLLabel {		 
 			bgcolor=none
 			textcolor=blue500
-			font-family=mediumfont
+			font-family=font__mediumfont
 			font-size=16
 			font-size=17 [$OSX]
 			font-weight=400

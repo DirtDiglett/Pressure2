@@ -38,7 +38,7 @@
 		
 		FrameTitle {
 			bgcolor=color__titleBarBackground
-			font-family=basefont
+			font-family=font__basefont
 			font-size=24
 			font-size=25 [$OSX]
 			font-weight=400
@@ -191,14 +191,14 @@
 
         "SectionedListPanel Label" {
         	textcolor=color__listPanelSectionHeaderText
-        	font-family=mediumfont
+        	font-family=font__mediumfont
 
         	render_bg {}
         }
 
 	Page {
 		bgcolor=none
-		font-family=basefont
+		font-family=font__basefont
 		font-style="none"
 		inset="0 0 0 0"
 
@@ -227,7 +227,7 @@
 
 		FriendsSearch {
 			padding-left=0
-			font-family=basefont
+			font-family=font__basefont
 			font-size=18
 			font-size=19 [$OSX]
 			font-weight=400

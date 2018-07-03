@@ -10,7 +10,7 @@
 		
 		highlight {
 			textcolor=white
-			font-family=mediumfont
+			font-family=font__mediumfont
 			font-size=28
 			font-size=29 [$OSX]
 		}

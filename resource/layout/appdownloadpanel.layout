@@ -34,7 +34,7 @@
 		DetailsLaunchButton {
 			bgcolor=none
 			textcolor="lightgreen900"
-			font-family=mediumfont
+			font-family=font__mediumfont
 			font-size=20
 			font-size=21 [$OSX]
 			font-weight=600
@@ -78,7 +78,7 @@
 
 		label2 {
 			textcolor=color__secondaryText
-			font-family=mediumfont
+			font-family=font__mediumfont
 			font-size=17
 			font-size=18 [$OSX]
 		}

@@ -16,7 +16,7 @@
 
 		intro {
 			textcolor=color__text
-			font-family=basefont
+			font-family=font__basefont
 			font-size=16
 			font-size=17 [$OSX]
 			font-weight=700
@@ -24,7 +24,7 @@
 
 		bold {
 			textcolor=color__text
-			font-family=mediumfont
+			font-family=font__mediumfont
 			font-size=16
 			font-size=17 [$OSX]
 		}

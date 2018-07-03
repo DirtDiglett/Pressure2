@@ -21,7 +21,7 @@
 		FrameTitle {
 			bgcolor=color__titleBarBackground
 			textcolor=color__disabled__alternate
-			font-family=basefont
+			font-family=font__basefont
 			font-size=24
 			font-size=25 [$OSX]
 			font-weight=400
@@ -108,7 +108,7 @@
 		LibrarySearch {
 			bgcolor=color_textInputBackground
 			textcolor=color__text
-			font-family=basefont
+			font-family=font__basefont
 			font-size=18
 			font-size=19 [$OSX]
 			font-weight=400

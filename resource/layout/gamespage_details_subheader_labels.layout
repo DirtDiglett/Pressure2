@@ -2,7 +2,7 @@
 	styles {
 		headertext {
 			textcolor=color__text__alternate
-			font-family=mediumfont
+			font-family=font__mediumfont
 			font-size=18
 			font-size=19 [$OSX]
 			font-weight=400
@@ -11,7 +11,7 @@
 
 		headertext-red {
 			textcolor=color__text__alternate
-			font-family=mediumfont
+			font-family=font__mediumfont
 			font-size=18
 			font-size=19 [$OSX]
 			font-weight=400
@@ -20,7 +20,7 @@
 
 		headertext-green {
 			textcolor=color__text__alternate
-			font-family=mediumfont
+			font-family=font__mediumfont
 			font-size=18
 			font-size=19 [$OSX]
 			font-weight=400
@@ -29,7 +29,7 @@
 
 		headertext-blue {
 			textcolor=color__text__alternate
-			font-family=mediumfont
+			font-family=font__mediumfont
 			font-size=18
 			font-size=19 [$OSX]
 			font-weight=400
@@ -38,7 +38,7 @@
 
 		valuetext {
 			textcolor=color__text__alternate
-			font-family=basefont
+			font-family=font__basefont
 			font-size=18
 			font-size=19 [$OSX]
 			font-weight=400

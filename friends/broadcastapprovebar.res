@@ -40,7 +40,7 @@
 
 		Label {
 			textcolor=white
-			font-family=mediumfont
+			font-family=font__mediumfont
 			font-size=16
 			font-size=17 [$OSX]
 		}
@@ -48,7 +48,7 @@
 		URLLabel {		 
 			bgcolor=none
 			textcolor=blue500
-			font-family=mediumfont
+			font-family=font__mediumfont
 			font-size=16
 			font-size=17 [$OSX]
 			font-weight=400

@@ -3,7 +3,7 @@
 		CUINavButton {
 			bgcolor=none
 			textcolor=color__text__alternate			
-			font-family=mediumfont
+			font-family=font__mediumfont
 			font-size=21
 			font-size=22 [$OSX]
 			font-weight=400
@@ -44,7 +44,7 @@
 		NavLabel2 {
 			bgcolor=none
 			textcolor=color__secondaryText__alternate
-			font-family=basefont
+			font-family=font__basefont
 			font-size=20
 			font-size=21 [$OSX]
 			font-weight=400
@@ -77,7 +77,7 @@
 		LibrarySearch {
 			bgcolor=color__textInputBackground
 			textcolor=color__text
-			font-family=basefont
+			font-family=font__basefont
 			font-size=18
 			font-size=19 [$OSX]
 			font-weight=400
@@ -345,7 +345,7 @@
 			textcolor=color__text
 			selectedtextcolor=white
 			shadowtextcolor=color__disabled
-			font-family=basefont
+			font-family=font__basefont
 			font-size=18
 			font-size=19 [$OSX]
 			font-weight=400
@@ -368,7 +368,7 @@
 		LabelEVCert {
 			bgcolor=lime500
 			textcolor=grey900
-			font-family=basefont
+			font-family=font__basefont
 			font-size=15
 			font-size=16 [$OSX]
 			font-weight=400

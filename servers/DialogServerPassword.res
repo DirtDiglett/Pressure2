@@ -14,7 +14,7 @@
 		}
 
 		LabelDull {
-			font-family=mediumfont
+			font-family=font__mediumfont
 		}
 	}
 

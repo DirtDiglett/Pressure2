@@ -163,7 +163,7 @@
 		// Using the heading for the right column as a substitute background for the links region.
 		rightcolumnheadertext {
 			textcolor=none
-			font-family=basefont
+			font-family=font__basefont
 			font-size=14
 			font-size=15 [$OSX]
 			font-weight=400
@@ -185,7 +185,7 @@
 		
 		rightcolumnheadertext-red {
 			textcolor=none
-			font-family=basefont
+			font-family=font__basefont
 			font-size=14
 			font-size=15 [$OSX]
 			font-weight=400
@@ -207,7 +207,7 @@
 		
 		rightcolumnheadertext-green {
 			textcolor=none
-			font-family=basefont
+			font-family=font__basefont
 			font-size=14
 			font-size=15 [$OSX]
 			font-weight=400
@@ -229,7 +229,7 @@
 		
 		rightcolumnheadertext-blue {
 			textcolor=none
-			font-family=basefont
+			font-family=font__basefont
 			font-size=14
 			font-size=15 [$OSX]
 			font-weight=400
@@ -251,7 +251,7 @@
 		
 		rightcolumnlink {
 			textcolor=blue500
-			font-family=basefont
+			font-family=font__basefont
 			font-size=17
 			font-size=18 [$OSX]
 			font-style=normal

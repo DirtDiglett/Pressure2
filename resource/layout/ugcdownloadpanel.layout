@@ -62,7 +62,7 @@
 
 		label2 {
 			textcolor=color__secondaryText__alternate
-			font-family=mediumfont
+			font-family=font__mediumfont
 			font-size=17
 			font-size=18 [$OSX]
 		}

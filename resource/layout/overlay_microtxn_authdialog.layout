@@ -41,7 +41,7 @@
 		
 		RefundTextLinkStyle {
 			textcolor=blue500
-			font-family=basefont
+			font-family=font__basefont
 			font-size=16
 			font-size=17 [$OSX]
 			font-weight=400

@@ -5,7 +5,7 @@
 		headertextlarge {
 			bgcolor=none
 			textcolor=white
-			font-family=basefont
+			font-family=font__basefont
 			font-size=60
 			font-size=61 [$OSX]
 			font-weight=400

@@ -14,7 +14,7 @@ steam.styles {
 
 		FrameTitle {
 			bgcolor = color__titleBarBackground
-			font-family = basefont
+			font-family = font__basefont
 			font-size = 24
 			font-size = 25 [$OSX]
 			font-weight = 400
@@ -55,7 +55,7 @@ steam.styles {
 		}
 
 		Panel { 
-			font-family = basefont
+			font-family = font__basefont
 			font-size = 15
 			font-size = 16 [$OSX]
 			font-weight = 400
@@ -68,7 +68,7 @@ steam.styles {
 
 		Label {
 			bgcolor = none
-			font-family = basefont
+			font-family = font__basefont
 			font-size = 16
 			font-size = 17 [$OSX]
 			font-weight = 400
@@ -78,7 +78,7 @@ steam.styles {
 		}
 
 		URLLabel {
-			font-family = basefont
+			font-family = font__basefont
 			font-size = 16
 			font-size = 17 [$OSX]
 			font-style = underline
@@ -91,7 +91,7 @@ steam.styles {
 			}
 
 		URLLabelSimple {
-			font-family = basefont
+			font-family = font__basefont
 			font-size = 16
 			font-size = 17 [$OSX]
 			font-style = underline
@@ -104,7 +104,7 @@ steam.styles {
 			}
 	 
 		URLLabelSimple2 {
-			font-family = basefont
+			font-family = font__basefont
 			font-size = 16
 			font-size = 17 [$OSX]
 			font-style = underline
@@ -131,7 +131,7 @@ steam.styles {
 		
 		MenuItem {
 			bgcolor = none
-			font-family = basefont			
+			font-family = font__basefont			
 			font-size = 17
 			font-size = 18 [$OSX]
 			font-weight = 400
@@ -216,7 +216,7 @@ steam.styles {
 		Notification {
 			bgcolor = color__notificationBackground
 			textcolor = color__text__alternate
-			font-family = basefont
+			font-family = font__basefont
 			font-size = 16
 			font-size = 17 [$OSX]
 			font-weight = 400
@@ -231,7 +231,7 @@ steam.styles {
 		}
 
 		gamedetails-headerlabel {
-			font-family = mediumfont
+			font-family = font__mediumfont
 			font-size = 30
 			font-size = 31 [$OSX]
 			font-style = normal
@@ -239,7 +239,7 @@ steam.styles {
 		}
 
 		gamedetails-headerlabel-red {
-			font-family = mediumfont
+			font-family = font__mediumfont
 			font-size = 30
 			font-size = 31 [$OSX]
 			font-style = normal
@@ -247,7 +247,7 @@ steam.styles {
 		}
 
 		gamedetails-headerlabel-green {
-			font-family = mediumfont
+			font-family = font__mediumfont
 			font-size = 30
 			font-size = 31 [$OSX]
 			font-style = normal
@@ -255,7 +255,7 @@ steam.styles {
 		}
 
 		gamedetails-headerlabel-blue {
-			font-family = mediumfont
+			font-family = font__mediumfont
 			font-size = 30
 			font-size = 31 [$OSX]
 			font-style = normal
@@ -263,7 +263,7 @@ steam.styles {
 		}
 
 		GameItem_Uninstalled {
-			font-family = mediumfont
+			font-family = font__mediumfont
 			font-size = 16
 			font-size = 17 [$OSX]
 			selectedbgcolor = color__selectedItemBackground
@@ -272,7 +272,7 @@ steam.styles {
 		}
 	 
 		GameItem_Installed {
-			font-family = mediumfont
+			font-family = font__mediumfont
 			font-size = 16
 			font-size = 17 [$OSX]				
 			selectedbgcolor = color__selectedItemBackground
@@ -281,7 +281,7 @@ steam.styles {
 		}
 		
 		GameItem_Shortcut {
-			font-family = mediumfont
+			font-family = font__mediumfont
 			font-size = 16
 			font-size = 17 [$OSX]
 			selectedbgcolor = color__selectedItemBackground
@@ -290,7 +290,7 @@ steam.styles {
 		}
 	
 		GameItem_Mod {
-			font-family = mediumfont
+			font-family = font__mediumfont
 			font-size = 16
 			font-size = 17 [$OSX]
 			selectedbgcolor = color__selectedItemBackground
@@ -299,7 +299,7 @@ steam.styles {
 		}
 
 		GameItem_Updating {
-			font-family = mediumfont
+			font-family = font__mediumfont
 			font-size = 16
 			font-size = 17 [$OSX]
 			font-style = italic			
@@ -309,7 +309,7 @@ steam.styles {
 		}
 		
 		GameItem_Decrypting {
-			font-family = mediumfont
+			font-family = font__mediumfont
 			font-size = 16
 			font-size = 17 [$OSX]
 			font-style = italic			
@@ -319,7 +319,7 @@ steam.styles {
 		}
 		
 		GameItem_Syncing {
-			font-family = mediumfont
+			font-family = font__mediumfont
 			font-size = 16
 			font-size = 17 [$OSX]
 			font-style = italic
@@ -388,7 +388,7 @@ steam.styles {
 
 		ListPanel {
 			bgcolor = white // TO DO
-			font-family = basefont
+			font-family = font__basefont
 			font-size = 15
 			font-size = 16 [$OSX]
 			font-weight = 400
@@ -408,7 +408,7 @@ steam.styles {
 		
 		CGamesListPanel {
 			bgcolor = white // TO DO
-			font-family = basefont
+			font-family = font__basefont
 			font-size = 16
 			font-size = 17 [$OSX]
 			font-weight = 400
@@ -423,7 +423,7 @@ steam.styles {
 		}
 
 		GameColumn_BigText {
-			font-family = basefont
+			font-family = font__basefont
 			font-size = 18
 			font-size = 19 [$OSX]
 			font-weight = 700			
@@ -432,7 +432,7 @@ steam.styles {
 
 		ListPanelColumnheader {
 			bgcolor = red500 // TO DO?
-			font-family = mediumfont
+			font-family = font__mediumfont
 			font-size = 16
 			font-size = 17 [$OSX]
 			font-style = uppercase
@@ -518,7 +518,7 @@ steam.styles {
 			} 
 
 		ListPanelSectionHeader {	 
-			font-family = mediumfont
+			font-family = font__mediumfont
 			font-style = regular
 			inset = "0 0 0 0"
 			textcolor = color__text
@@ -536,7 +536,7 @@ steam.styles {
 		
 		"ListPanel RichText" {
 			bgcolor = none
-			font-family = basefont
+			font-family = font__basefont
 			font-size = 15
 			font-size = 16 [$OSX]			
 			textcolor = color__text
@@ -668,7 +668,7 @@ steam.styles {
 		}
 
 		RichText {
-			font-family = basefont
+			font-family = font__basefont
 			font-size = 15
 			font-size = 16 [$OSX]
 			font-weight = 400
@@ -722,7 +722,7 @@ steam.styles {
 
 		SectionedListPanel {			
 			bgcolor = color__background
-			font-family = basefont
+			font-family = font__basefont
 			font-size = 15
 			font-size = 16 [$OSX]
 			font-weight = 400			
@@ -775,7 +775,7 @@ steam.styles {
 				}
 
 		StatusLabel {
-			font-family = basefont
+			font-family = font__basefont
 			font-size = 15
 			font-size = 16 [$OSX]
 			font-style = uppercase
@@ -784,7 +784,7 @@ steam.styles {
 		}
 
 			StatusLabel:hover {
-				font-family = basefont
+				font-family = font__basefont
 				font-size = 14
 				font-style = uppercase
 				font-weight = 400			
@@ -792,7 +792,7 @@ steam.styles {
 			}
 		
 		StatusLabelDim {
-			font-family = basefont
+			font-family = font__basefont
 			font-size = 15
 			font-size = 16 [$OSX]
 			font-style = normal
@@ -826,7 +826,7 @@ steam.styles {
 		
 		MenuButton {
 			bgcolor = none
-			font-family = basefont
+			font-family = font__basefont
 			font-size = 14
 			font-size = 15 [$OSX]
 			font-weight = 400			
@@ -859,7 +859,7 @@ steam.styles {
 	
 		TreeNodeText {
 			bgcolor = none
-			font-family = basefont
+			font-family = font__basefont
 			font-size = 15
 			font-size = 16 [$OSX]
 			selectedbgcolor = color__selectedTextBackground
@@ -1248,7 +1248,7 @@ steam.styles {
 		
 		friends_chat_securitylink {
 			bgcolor = none
-			font-family = basefont
+			font-family = font__basefont
 			font-size = 17
 			font-size = 18 [$OSX]
 			font-style = none

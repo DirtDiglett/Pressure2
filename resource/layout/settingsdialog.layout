@@ -20,7 +20,7 @@
 
 		SettingsList {
 			bgcolor=white
-			font-family=mediumfont
+			font-family=font__mediumfont
 			font-size=18
 			font-size=19 [$OSX]
 			minimum-width=195

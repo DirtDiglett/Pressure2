@@ -136,7 +136,7 @@
 	    	inset="0 0 0 0"
 	        textcolor=color__text
 			font-style=regular
-			font-family=mediumfont
+			font-family=font__mediumfont
 
 	        render_bg {
 	            0="fill(x0,y0,x1,y1, white)"
@@ -188,7 +188,7 @@
 			selectedbgcolor=blue500
 			textcolor=color__disabled
 			selectedtextcolor=white
-			font-family=basefont
+			font-family=font__basefont
 			font-size=17
 			font-size=18 [$OSX]
 			font-weight=400

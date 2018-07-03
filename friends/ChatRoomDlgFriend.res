@@ -144,7 +144,7 @@
 			selectedbgcolor=blue500
 			textcolor=color__disabled
 			selectedtextcolor=white
-			font-family=basefont
+			font-family=font__basefont
 			font-size=17
 			font-size=18 [$OSX]
 			font-weight=400

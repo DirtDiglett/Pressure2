@@ -6,7 +6,7 @@
 			textcolor=color__text
 			selectedtextcolor=white
 			shadowtextcolor=color__disabled
-			font-family=basefont
+			font-family=font__basefont
 			font-size=18
 			font-size=19 [$OSX]
 			font-weight=400

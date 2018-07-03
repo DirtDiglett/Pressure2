@@ -17,7 +17,7 @@
 		LibrarySearch {
 			bgcolor=color__textInputBackground
 			textcolor=color__text
-			font-family=basefont
+			font-family=font__basefont
 			font-size=18
 			font-size=19 [$OSX]
 			font-weight=400
@@ -117,7 +117,7 @@
 		NavLabel2 {
 			bgcolor=none
 			textcolor=color__secondaryText__alternate
-			font-family=basefont
+			font-family=font__basefont
 			font-size=20
 			font-size=21 [$OSX]
 			font-weight=400
