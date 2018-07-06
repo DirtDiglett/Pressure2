@@ -5,8 +5,7 @@
 		TrackLabelStyle { 
 			textcolor=color__secondaryText
 			font-family=font__mediumfont	
-			font-size=19
-			font-size=20 [$OSX]
+			font-size=18
 			padding-top=15
 			padding-right=24
 			padding-bottom=15
