@@ -10,7 +10,7 @@
 		CGamesListPanel {
 			bgcolor=color__background
 			font-size=16
-			font-size=17 [$OSX]
+			
 			
 			render_bg {}
 		}
@@ -18,7 +18,7 @@
 		emptylisttext {
 			textcolor=color__disabled
 			font-size=18
-			font-size=19 [$OSX]
+			
 
 			render_bg {}
 		}
@@ -126,7 +126,7 @@
 		"GamesPage_Details ListPanelColumnHeader" {
 			bgcolor=none
 			font-size=14
-			font-size=15 [$OSX]
+			
 			inset="0 0 0 0"
 
 			render {}
@@ -165,7 +165,7 @@
 			textcolor=none
 			font-family=font__basefont
 			font-size=14
-			font-size=15 [$OSX]
+			
 			font-weight=400
 			font-style=normal
 			inset="0 0 0 0"
@@ -187,7 +187,7 @@
 			textcolor=none
 			font-family=font__basefont
 			font-size=14
-			font-size=15 [$OSX]
+			
 			font-weight=400
 			font-style=normal
 			inset="0 0 0 0"
@@ -209,7 +209,7 @@
 			textcolor=none
 			font-family=font__basefont
 			font-size=14
-			font-size=15 [$OSX]
+			
 			font-weight=400
 			font-style=normal
 			inset="0 0 0 0"
@@ -231,7 +231,7 @@
 			textcolor=none
 			font-family=font__basefont
 			font-size=14
-			font-size=15 [$OSX]
+			
 			font-weight=400
 			font-style=normal
 			inset="0 0 0 0"
@@ -253,7 +253,7 @@
 			textcolor=blue500
 			font-family=font__basefont
 			font-size=17
-			font-size=18 [$OSX]
+			
 			font-style=normal
 			inset="0 0 0 0"
 		}

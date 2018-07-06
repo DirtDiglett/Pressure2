@@ -12,7 +12,7 @@
 			textcolor=white
 			font-family=font__mediumfont
 			font-size=28
-			font-size=29 [$OSX]
+			
 		}
 
 		progressbackground {

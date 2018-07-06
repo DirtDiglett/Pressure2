@@ -4,13 +4,13 @@
 			textcolor=color__secondaryText__alternate
 			font-family=font__mediumfont
 			font-size=18
-			font-size=19 [$OSX]
+			
 		}
 		name {
 			textcolor=color__text__alternate
 			font-family=font__basefont
 			font-size=18
-			font-size=19 [$OSX]
+			
 		}
 	
 	}

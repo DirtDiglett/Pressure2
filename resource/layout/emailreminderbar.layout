@@ -16,7 +16,7 @@
 			textcolor=color__text
 			font-family=font__mediumfont
 			font-size=24
-			font-size=25 [$OSX]
+			
 			font-style=normal
 		}
 		
@@ -24,7 +24,7 @@
 			textcolor=color__secondaryText
 			font-family=font__mediumfont
 			font-size=20
-			font-size=21 [$OSX]
+			
 			font-style=normal
 		}
 
@@ -33,7 +33,7 @@
 			textcolor=blue500
 			font-family=font__mediumfont
 			font-size=16
-			font-size=17 [$OSX]
+			
 			font-weight=400
 			font-style=uppercase
 			inset-left=4

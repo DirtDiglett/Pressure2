@@ -4,7 +4,7 @@
 			textcolor=color__headingText
 			font-family=font__mediumfont
 			font-size=30
-			font-size=31 [$OSX]
+			
 			font-style=normal
 		}
 	}

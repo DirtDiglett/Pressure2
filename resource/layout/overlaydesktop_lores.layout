@@ -7,7 +7,7 @@
 			font-family=font__mediumfont
 			font-weight=800
 			font-size=30
-			font-size=31 [$OSX]
+			
 			font-weight=400
 		}
 		
@@ -16,7 +16,7 @@
 			font-family=font__mediumfont
 			font-weight=800
 			font-size=30
-			font-size=31 [$OSX]
+			
 			font-weight=400
 			font-style=uppercase
 		}
@@ -25,7 +25,7 @@
 			textcolor=color__disabled__alternate
 			font-family=font__basefontfont
 			font-size=18
-			font-size=19 [$OSX]
+			
 			font-weight=400
 		}
 	}

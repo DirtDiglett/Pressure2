@@ -15,13 +15,13 @@
 			textcolor=color__text
 			font-family=font__mediumfont
 			font-size=18
-			font-size=19 [$OSX]
+			
 		}
 
 		date_and_author {
 			textcolor=color__secondaryText
 			font-size=16
-			font-size=17 [$OSX]
+			
 		}
 
 		newsitem_body {
@@ -30,7 +30,7 @@
 			selectedtextcolor=white
 			font-family=font__basefont
 			font-size=16
-			font-size=17 [$OSX]
+			
 
 			render_bg {}
 		}
@@ -40,7 +40,7 @@
 			textcolor=blue500
 			selectedtextcolor=white
 			font-size=16
-			font-size=17 [$OSX]
+			
 			font-style=underline
 		}
 		
@@ -60,7 +60,7 @@
 			textcolor=blue500
 			font-family=font__mediumfont
 			font-size=16
-			font-size=17 [$OSX]
+			
 			font-weight=400
 			font-style=uppercase
 			inset-top=3

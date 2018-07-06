@@ -40,7 +40,7 @@
 			bgcolor=color__titleBarBackground
 			font-family=font__basefont
 			font-size=24
-			font-size=25 [$OSX]
+			
 			font-weight=400
 			inset="0 0 0 0"
 			minimum-height=55
@@ -81,7 +81,7 @@
 
 		PageTab {
 			font-size=16
-			font-size=17 [$OSX]
+			
 			font-style=regular
 			textcolor=color__secondaryText__alternate
 			minimum-height=24
@@ -229,7 +229,7 @@
 			padding-left=0
 			font-family=font__basefont
 			font-size=18
-			font-size=19 [$OSX]
+			
 			font-weight=400
 			textcolor="color__text"
 			inset-top=0

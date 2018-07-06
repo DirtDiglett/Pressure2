@@ -12,7 +12,7 @@
 		highlight {
 			textcolor=color__secondaryText__alternate
 			font-size=17
-			font-size=18 [$OSX]
+			
 		}
 	}
 	

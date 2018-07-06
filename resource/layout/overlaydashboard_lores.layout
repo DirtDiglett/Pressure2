@@ -24,7 +24,7 @@
 			font-family=font__mediumfont
 			font-weight=800
 			font-size=30
-			font-size=31 [$OSX]
+			
 			font-weight=600
 		}
 				

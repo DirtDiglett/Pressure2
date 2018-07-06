@@ -3,7 +3,7 @@
 		Label {
 			textcolor=color__disabled
 			font-size=14
-			font-size=15 [$OSX]
+			
 		}
 
 		CChatRoomDlg {
@@ -76,7 +76,7 @@
 
 		GridMenu {
 			font-size=16
-			font-size=17 [$OSX]
+			
 			inset="0 0 0 0"
 		}
 
@@ -84,7 +84,7 @@
 			bgcolor=none
 			textcolor=color__text
 			font-size=24
-			font-size=25 [$OSX]
+			
 			inset="-3 -1 0 0"
 			padding-left=0
 			padding-right=0			
@@ -146,7 +146,7 @@
 			selectedtextcolor=white
 			font-family=font__basefont
 			font-size=17
-			font-size=18 [$OSX]
+			
 			font-weight=400
 		}
 	}

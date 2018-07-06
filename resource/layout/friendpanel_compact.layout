@@ -3,7 +3,7 @@
 		inviteLinkStyle {
 			font-family=font__mediumfont
 			font-size=16
-			font-size=17 [$OSX]
+			
 			font-style=uppercase
 			padding-left=6
 			padding-top=3
@@ -28,7 +28,7 @@
 			textcolor=grey600
 			font-family=font__basefont
 			font-size=16
-			font-size=17 [$OSX]
+			
 		}
 	}
 	

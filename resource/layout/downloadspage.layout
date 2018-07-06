@@ -18,7 +18,7 @@
 			shadowtextcolor=color__disabled	
 			font-family=font__basefont
 			font-size=14
-			font-size=15 [$OSX]
+			
 			font-weight=400
 			
 			render {

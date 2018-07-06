@@ -22,7 +22,7 @@
 			bgcolor=white
 			font-family=font__mediumfont
 			font-size=18
-			font-size=19 [$OSX]
+			
 			minimum-width=195
 			minimum-height=517
 			inset="0 -3 0 0"

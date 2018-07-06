@@ -13,14 +13,14 @@
 		PlaylistTitleStyle {
 			textcolor=color__text
 			font-size=30
-			font-size=31 [$OSX]
+			
 			font-style=normal
 		}
 
 		TracksInfoLabelStyle {
 			textcolor=color__secondaryText
 			font-size=17
-			font-size=18 [$OSX]
+			
 		}
 		
 		CoverStyle {

@@ -53,7 +53,7 @@
 			textcolor=color__activateButtonText
 			font-family=font__mediumfont
 			font-size=28
-			font-size=29 [$OSX]
+			
 			font-weight=600
 			font-style=uppercase
 			padding-left=60
@@ -107,7 +107,7 @@
 			textcolor=color__playButtonText
 			font-family=font__mediumfont
 			font-size=28
-			font-size=29 [$OSX]
+			
 			font-weight=600
 			font-style=uppercase
 			padding-left=60
@@ -161,7 +161,7 @@
 			textcolor=color__launchButtonText
 			font-family=font__mediumfont
 			font-size=28
-			font-size=29 [$OSX]
+			
 			font-weight=600
 			font-style=uppercase
 			padding-left=60
@@ -215,7 +215,7 @@
 			textcolor=color__buyButtonText
 			font-family=font__mediumfont
 			font-size=28
-			font-size=29 [$OSX]
+			
 			font-weight=600
 			font-style=uppercase
 			padding-left=60

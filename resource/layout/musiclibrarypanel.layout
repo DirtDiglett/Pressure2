@@ -19,7 +19,7 @@
 			textcolor=color__text
 			font-family=font__basefont
 			font-size=18
-			font-size=19 [$OSX]
+			
 			font-weight=400
 			inset-left=1
 			inset-top=0
@@ -119,7 +119,7 @@
 			textcolor=color__secondaryText__alternate
 			font-family=font__basefont
 			font-size=20
-			font-size=21 [$OSX]
+			
 			font-weight=400
 			font-style=normal
 			padding-left=10

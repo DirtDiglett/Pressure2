@@ -15,7 +15,7 @@ gameoverlay.styles {
 		
 		detailsboxtitle {
 			font-size=28
-			font-size=29 [$OSX]
+			
 			font-style=normal
 			textcolor=color__text__alternate
 		}

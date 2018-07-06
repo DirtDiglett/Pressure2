@@ -41,7 +41,7 @@
 		Label {
 			font-family=font__mediumfont
 			font-size=16
-			font-size=17 [$OSX]
+			
 			textcolor=color__chatBarLabel
 		}
 		
@@ -49,7 +49,7 @@
 			bgcolor=none
 			font-family=font__mediumfont
 			font-size=16
-			font-size=17 [$OSX]
+			
 			font-style=uppercase
 			font-weight=400
 			inset-left=4

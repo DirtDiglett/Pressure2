@@ -23,7 +23,7 @@
 			textcolor=color__disabled__alternate
 			font-family=font__basefont
 			font-size=24
-			font-size=25 [$OSX]
+			
 			font-weight=400
 			minimum-height=55
 			inset="0 0 0 0"
@@ -110,7 +110,7 @@
 			textcolor=color__text
 			font-family=font__basefont
 			font-size=18
-			font-size=19 [$OSX]
+			
 			font-weight=400
 			inset-top=0
 			inset-left=1

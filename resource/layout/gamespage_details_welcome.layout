@@ -12,7 +12,7 @@
 		bodycontent {
 			textcolor=color__text
 			font-size=16
-			font-size=17 [$OSX]
+			
 
 			render_bg {}
 		}
@@ -20,7 +20,7 @@
 		"RichText url" {
 			textcolor=blue500
 			font-size=16
-			font-size=17 [$OSX]
+			
 		}
 	}
 

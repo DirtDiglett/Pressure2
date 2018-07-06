@@ -11,7 +11,7 @@
 			textcolor=orange500
 			font-family=font__basefont
 			font-size=14
-			font-size=15 [$OSX]
+			
 			font-weight=400
 			font-style=normal
 		}
@@ -45,7 +45,7 @@
 			textcolor=color__disabled__alternate
 			font-family=font__basefont
 			font-size=24
-			font-size=25 [$OSX]
+			
 			font-weight=400
 			minimum-height=55
 			inset="0 0 0 0"
@@ -106,7 +106,7 @@
 			textcolor=white
 			font-family=font__basefont
 			font-size=16
-			font-size=17 [$OSX]
+			
 			font-weight=600
 			font-style=regular
 			inset-top=2
@@ -137,7 +137,7 @@
 			textcolor=none
 			font-family=font__basefont
 			font-size=17
-			font-size=18 [$OSX]
+			
 			font-weight=600
 			font-style=none
 			inset="0 4 0 0"
@@ -177,7 +177,7 @@
 			textcolor=lightgreen900
 			font-family=font__basefont
 			font-size=17
-			font-size=18 [$OSX]
+			
 			font-weight=600
 			font-style=none
 			inset="0 4 0 0"
@@ -235,7 +235,7 @@
 			textcolor=color__disabled
 			font-family=font__basefont
 			font-size=16
-			font-size=17 [$OSX]
+			
 			font-weight=400
 			inset="-4 0 0 0"
 			padding-right=6
@@ -253,7 +253,7 @@
 			textcolor=color__text
 			font-family=font__basefont
 			font-size=16
-			font-size=17 [$OSX]
+			
 			font-weight=400
 			inset="-4 0 0 0"
 			padding-right=6
@@ -302,7 +302,7 @@
 			textcolor=white
 			font-family=font__basefont
 			font-size=20
-			font-size=21 [$OSX]
+			
 			font-weight=400
 			font-style=none
 			inset="40 0 0 0"

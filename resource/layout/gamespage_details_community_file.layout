@@ -10,7 +10,7 @@
 		communityfile_name {
 			textcolor=color__text__alternate
 			font-size=18
-			font-size=19 [$OSX]
+			
 		}
 		
 		communityfile_image_border {
