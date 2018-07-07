@@ -10,9 +10,8 @@
 		CGamesListPanel {
 			bgcolor=color__background
 			font-size = 16
-font-size = 14 [$LINUX]
-font-size = 17 [$OSX]
-			
+			font-size = 14 [$LINUX]
+			font-size = 17 [$OSX]		
 			
 			render_bg {}
 		}
@@ -20,10 +19,9 @@ font-size = 17 [$OSX]
 		emptylisttext {
 			textcolor=color__disabled
 			font-size = 18
-font-size = 16 [$LINUX]
-font-size = 19 [$OSX]
+			font-size = 16 [$LINUX]
+			font-size = 19 [$OSX]
 			
-
 			render_bg {}
 		}
 		
@@ -66,7 +64,7 @@ font-size = 19 [$OSX]
 		}
 		
 		ListPanelSectionHeader {
-			bgcolor=white
+			bgcolor=color__sectionHeadingBackground
 			textcolor=color__listPanelSectionHeaderText
 			font-weight=600
 			font-style=uppercase
@@ -130,9 +128,8 @@ font-size = 19 [$OSX]
 		"GamesPage_Details ListPanelColumnHeader" {
 			bgcolor=none
 			font-size = 14
-font-size = 12 [$LINUX]
-font-size = 15 [$OSX]
-			
+			font-size = 12 [$LINUX]
+			font-size = 15 [$OSX]
 			inset="0 0 0 0"
 
 			render {}
@@ -171,8 +168,8 @@ font-size = 15 [$OSX]
 			textcolor=none
 			font-family=font__basefont
 			font-size = 14
-font-size = 12 [$LINUX]
-font-size = 15 [$OSX]
+			font-size = 12 [$LINUX]
+			font-size = 15 [$OSX]
 			
 			font-weight=400
 			font-style=normal
@@ -195,9 +192,8 @@ font-size = 15 [$OSX]
 			textcolor=none
 			font-family=font__basefont
 			font-size = 14
-font-size = 12 [$LINUX]
-font-size = 15 [$OSX]
-			
+			font-size = 12 [$LINUX]
+			font-size = 15 [$OSX]
 			font-weight=400
 			font-style=normal
 			inset="0 0 0 0"
@@ -219,9 +215,8 @@ font-size = 15 [$OSX]
 			textcolor=none
 			font-family=font__basefont
 			font-size = 14
-font-size = 12 [$LINUX]
-font-size = 15 [$OSX]
-			
+			font-size = 12 [$LINUX]
+			font-size = 15 [$OSX]
 			font-weight=400
 			font-style=normal
 			inset="0 0 0 0"
@@ -243,9 +238,8 @@ font-size = 15 [$OSX]
 			textcolor=none
 			font-family=font__basefont
 			font-size = 14
-font-size = 12 [$LINUX]
-font-size = 15 [$OSX]
-			
+			font-size = 12 [$LINUX]
+			font-size = 15 [$OSX]
 			font-weight=400
 			font-style=normal
 			inset="0 0 0 0"
@@ -267,9 +261,8 @@ font-size = 15 [$OSX]
 			textcolor=blue500
 			font-family=font__basefont
 			font-size = 17
-font-size = 15 [$LINUX]
-font-size = 18 [$OSX]
-			
+			font-size = 15 [$LINUX]
+			font-size = 18 [$OSX]	
 			font-style=normal
 			inset="0 0 0 0"
 		}

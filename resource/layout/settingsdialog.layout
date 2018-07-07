@@ -19,11 +19,11 @@
 		}
 
 		SettingsList {
-			bgcolor=white
+			bgcolor=color__settingSidebarBackground
 			font-family=font__mediumfont
 			font-size = 18
-font-size = 16 [$LINUX]
-font-size = 19 [$OSX]
+			font-size = 16 [$LINUX]
+			font-size = 19 [$OSX]
 			
 			minimum-width=195
 			minimum-height=517
@@ -41,7 +41,7 @@ font-size = 19 [$OSX]
 			inset="0 0 0 0"
 
 			render_bg {
-				0="fill(x0,y0,x1,y1, white)"
+				0="fill(x0,y0,x1,y1, color__settingSidebarBackground)"
 			}
 		}
 	}

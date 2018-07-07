@@ -2,7 +2,7 @@
 	styles {
 		"GamesPage_Details headerimage" {
 			render {
-				-1="gradient(x0,y1-140,x1+3840,y1, none, color__text)"
+				-1="gradient(x0,y1-140,x1+3840,y1, none, color__gamespageHeaderGradientEnd)"
 				0="image(x0, y0, x1, y1, graphics/gamedetailsbg)"
 			}
 			

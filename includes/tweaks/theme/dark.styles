@@ -1,4 +1,116 @@
 "dark.styles" {
+	include "includes/material.styles"
+  include "includes/colors.styles"
+
 	colors {
-  }
+//	________________________________________________
+
+		color__scrollbarBackground				=		seashell
+		color__scrollbarHandle					=		silver
+		color__scrollbarHandle__hover			=		silverChalice
+		color__scrollbarHandle__active			=		boulder
+
+		color__background						=		deepMineshaft
+		color__background__secondary			=		cavern
+
+		color__background__alternate 			=		mineshaft
+		color__background__secondary__alternate =		nero
+		
+		// These are used as a cheating overlay to fake 54% opacity text where it's not possible to change the text itself.
+		color__backgroundOverlay				=		deepMineshaft__33opacity
+		color__backgroundOverlay__secondary		=		cavern__33opacity
+
+		color__text								=		white
+		color__secondaryText					=		white__70opacity
+		color__headingText						=		white
+		color__disabled							=		white__30opacity
+		color__divider							=		white__12opacity
+		color__divider__solid					=		tundorai	 // Due to the way certain elements have to overlap, there is need for a solid equivelant of `color__divider` on a `color__background`
+
+		color__text__alternate					=		white
+		color__secondaryText__alternate			=		white__70opacity
+		color__headingText__alternate			=		white
+		color__disabled__alternate				=		white__30opacity
+		color__divider__alternate				=		white__12opacity
+
+		color__selectedText 					=		white
+		color__selectedTextBackground			=		blue500
+		color__selectedItemBackground			=		blue500
+
+		color__gameItemInstalled				=		color__text
+		color__gameItemShortcut					=		color__text
+		color__gameItemMod						=		bluegrey900
+		color__gameItemUpdating					=		orange500
+		color__gameItemDecrypting				=		green500
+		color__gameItemSyncing					=		orange400
+
+		color__menuBackground					=		grey900
+		color__menuBorder						=		white__12opacity
+
+		color__menuText							=		color__text
+		color__menuText__hover					=		white
+		color__menuTextBackground__hover		=		blue500
+
+		color__controlBackground				=		grey900
+		color__controlBorder					=		grey800
+		color__controlBorder__focus				=		blue500
+		color__controlBorder__disabled			=		color__disabled
+    color__textInputBackground				=		color__controlBackground
+
+		color__buttonBackground					=		none
+		color__buttonText 						=		blue500
+		color__buttonText__hover 				=		blue300
+		color__buttonBackground__hover			=		color__divider
+		color__buttonBackground__active			=		blue500__26opacity
+
+		color__notificationBackground			=		mineshaft
+
+		color__consoleBackground				=		mineshaft
+
+		color__TooltipBackground				=		grey900
+		color__TooltipBackground__alternate		=		color__background__alternate
+
+		color__listPanelSectionHeaderText		=		color__headingText
+
+		Friends.PanelDefault 					= 		color__text
+		Friends.PanelOver 						= 		color__text
+		Friends.PanelSelected 					= 		white
+		Friends.SectionHeader 					= 		color__text
+		Friends.NoAvatarOver 					= 		color__text
+		Friends.ListHeaderFadeOut 				= 		none
+
+		ChatDialog.URLColor 					= 		color__URL
+		ChatOwnTextColor 						= 		color__text
+		ChatDialog.HistoryColor 				=		color__disabled
+
+		color__friendsChatTextSelf				=		color__secondaryText
+		color__friendsChatText					=		color__text
+		color__friendsChatEvent					=		orange500
+
+		ListPanel.TextColor 					= 		color__text
+		ListPanel.BgColor 						= 		none
+		ListPanel.SelectedTextColor 			= 		white
+		ListPanel.SelectedBgColor 				= 		blue500
+		ListPanel.SelectedOutOfFocusBgColor 	=		blue800
+		ListPanel.DisabledTextColor 			= 		color__text__alternate
+		ListPanel.DisabledSelectedTextColor 	= 		color__disabled
+		ListPanel.EmptyListInfoTextColor 		= 		color__text
+
+		PropertySheet.FlashTabColor 			= 		orange500
+		DragDrop.DragFrame 						= 		none
+		DragDrop.DropFrame 						= 		none
+		WizardPanel.HeaderBGColor 				= 		green500
+		ChatGradientTop 						= 		none
+		ChatGradientBottom 						= 		none
+		GiftOnlyInfo.ImagePanelColor 			= 		none
+		NotificationBodyText 					= 		color__secondaryText__alternate
+		GiftOnlyInfo.ImagePanelColor 			= 		none
+		TextEntry.IMEBGColor 					= 		none
+		TextEntry.IMEFGColor 					= 		color__disabled
+
+		HTML.secureurl 							= 		green500
+		HTML.insecureurl 						= 		red500
+		color__htmlEVCertBackground				=		lime500
+		color__htmlEVCert						=		grey900
+	}
 }

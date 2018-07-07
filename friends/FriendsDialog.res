@@ -136,36 +136,38 @@ font-size = 17 [$OSX]
     	CFriendsListSectionHeader {
 	    	inset="0 0 0 0"
 	        textcolor=color__text
-			// This control is bullshit. It ignores any font declaration so it's impossible to adjust.
+					// This control is bullshit. It ignores any font declaration so it's impossible to adjust.
 
 	        render_bg {
-	            0="fill(x0,y0,x1,y1, white)"
+	            0="fill(x0,y0,x1,y1, color__sectionHeadingBackground)"
 	            1="fill(x0-2,y0-1,x1,y0, color__divider__solid)"
 	            2="fill(x0-2,y1,x1,y1+1, color__divider__solid)"
 	        }    
 	    }
 
 	    SectionedListPanelCollapser {
-		  inset="0 0 0 0"
-		  image=graphics/icons/dropdown/padder
-		  padding-left=8
-		  padding-right=8
-		  bgcolor=none
+				inset="0 0 0 0"
+				image=graphics/icons/dropdown/padder
+				padding-left=8
+				padding-right=8
+				bgcolor=color__sectionHeadingBackground
 
-		  render {}
-		  render_bg {
-			0="fill(x0,y0-1,x1+2,y0, color__divider__solid)"
-			1="fill(x0,y1,x1+2,y1+1, color__divider__solid)"
-			2="image(x0+14,y0+6,x1,y1, graphics/icons/dropdown/standard/down_dark)"
-		  }
-		}
+				render {
+					0="fill(x1,y0,x1+2,y1, color__sectionHeadingBackground)"
+				}
+				render_bg {
+					0="fill(x0,y0-1,x1+2,y0, color__divider__solid)"
+					1="fill(x0,y1,x1+2,y1+1, color__divider__solid)"
+					2="image(x0+14,y0+6,x1,y1, graphics/icons/dropdown/standard/down_dark)"
+				}
+			}
 
 		  SectionedListPanelCollapser:hover {
-			render_bg {
-			  0="fill(x0,y0-1,x1+2,y0, color__divider__solid)"
-			  1="fill(x0,y1,x1+2,y1+1, color__divider__solid)"
-			  2="image(x0+14,y0+6,x1,y1, graphics/icons/dropdown/hover/down_dark)"
-			}
+				render_bg {
+					0="fill(x0,y0-1,x1+2,y0, color__divider__solid)"
+					1="fill(x0,y1,x1+2,y1+1, color__divider__solid)"
+					2="image(x0+14,y0+6,x1,y1, graphics/icons/dropdown/hover/down_dark)"
+				}
 		  }
 
 		  SectionedListPanelCollapser:selected {

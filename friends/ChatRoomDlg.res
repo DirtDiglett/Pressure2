@@ -15,7 +15,7 @@ font-size = 15 [$OSX]
 			}
 			render_bg {
 				0="fill(x0,y0+55,x1,y0+57, color__submenuBackground)"
-				1="fill(x0,y1-75,x1,y1, white)"
+				1="fill(x0,y1-75,x1,y1, color__textInputBackground)"
 			}
 		}
 
@@ -124,13 +124,13 @@ font-size = 15 [$OSX]
 
 		GridMenu {
 			font-size = 16
-font-size = 14 [$LINUX]
-font-size = 17 [$OSX]
-			
+			font-size = 14 [$LINUX]
+			font-size = 17 [$OSX]
+						
 		}
 
 		SectionedListPanelInterior {
-			bgcolor=white
+			bgcolor=color__sectionListPanelBackground
 
 			render {}
 			render_bg {}
@@ -138,12 +138,12 @@ font-size = 17 [$OSX]
 
 		CFriendsListSectionHeader {
 	    	inset="0 0 0 0"
-	        textcolor=color__text
-			font-style=regular
-			font-family=font__mediumfont
+	      textcolor=color__text
+				font-style=regular
+				font-family=font__mediumfont
 
 	        render_bg {
-	            0="fill(x0,y0,x1,y1, white)"
+	            0="fill(x0,y0,x1,y1, color__sectionHeadingBackground)"
 	            1="fill(x0-2,y0-1,x1,y0, color__divider__solid)"
 	            2="fill(x0-2,y1,x1,y1+1, color__divider__solid)"
 	        }    

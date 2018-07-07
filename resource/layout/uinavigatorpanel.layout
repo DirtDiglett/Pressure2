@@ -5,12 +5,11 @@
 			textcolor=color__text__alternate			
 			font-family=font__mediumfont
 			font-size = 21
-font-size = 19 [$LINUX]
-font-size = 22 [$OSX]
-			
+			font-size = 19 [$LINUX]
+			font-size = 22 [$OSX]
 			font-weight=400
 			font-style=outerglow
-			font-outerglow-color=color__disabled
+			font-outerglow-color=color__mainNavOuterglow
 			font-outerglow-offset=1
 			font-outerglow-filtersize=5
 			inset-top=4
@@ -21,7 +20,7 @@ font-size = 22 [$OSX]
 			CUINavButton:hover {
 				textcolor=white
 				font-style=outerglow
-				font-outerglow-color="88 88 88 255"
+				font-outerglow-color=color__mainNavOuterglow__hover
 				font-outerglow-offset=1
 				font-outerglow-filtersize=5
 			}
@@ -48,9 +47,8 @@ font-size = 22 [$OSX]
 			textcolor=color__secondaryText__alternate
 			font-family=font__basefont
 			font-size = 20
-font-size = 16 [$LINUX]
-font-size = 21 [$OSX]
-			
+			font-size = 16 [$LINUX]
+			font-size = 21 [$OSX]
 			font-weight=400
 			font-style=normal
 			padding-left=10
@@ -323,7 +321,7 @@ font-size = 19 [$OSX]
 		
 		// Acts as the background for the pageloadthrobber
 		Panel_transparent {
-			bgcolor=white
+			bgcolor=color__textInputBackground
 		}
 		
 		WebPanelStyle {

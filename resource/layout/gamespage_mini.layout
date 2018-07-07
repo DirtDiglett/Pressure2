@@ -181,7 +181,7 @@ font-size = 19 [$OSX]
 		}
 		
 		ListPanelSectionHeader {
-			bgcolor=white
+			bgcolor=color__sectionHeadingBackground
 			textcolor=color__listPanelSectionHeaderText
 			font-weight=600
 			font-style=uppercase
