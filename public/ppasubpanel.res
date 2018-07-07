@@ -3,7 +3,9 @@
 		Important {			
 			textcolor=color__text
 			font-family=font__mediumfont
-			font-size=15
+			font-size = 15
+font-size = 12 [$LINUX]
+font-size = 16 [$OSX]
 			
 		}
 	}	

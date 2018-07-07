@@ -40,6 +40,8 @@
 			font-family = font__basefont
 			
 			font-size = 16
+font-size = 14 [$LINUX]
+font-size = 17 [$OSX]
 			
 			font-weight = 400
 			inset-left = 23
@@ -95,6 +97,8 @@
 		IndeterminateCheckButton {
 			font-family = font__basefont
 			font-size = 15
+font-size = 12 [$LINUX]
+font-size = 16 [$OSX]
 			
 			font-weight = 400
 			image = "graphics/controls/checkbox/indeterminate"
@@ -107,6 +111,8 @@
 		ListPanelCheckBox {
 			font-family = font__basefont
 			font-size = 14
+font-size = 12 [$LINUX]
+font-size = 15 [$OSX]
 			
 			font-weight = 400
 			image = "graphics/controls/checkbox/unchecked_small"
@@ -142,6 +148,8 @@
 		"ListPanelColumnheader ListPanelCheckBox" {
 			font-family = font__basefont
 			font-size = 14
+font-size = 12 [$LINUX]
+font-size = 15 [$OSX]
 			
 			font-weight = 400
 			image = "graphics/controls/checkbox/unchecked_small"
@@ -176,6 +184,8 @@
 		RadioButton {
 			font-family = font__basefont
 			font-size = 15
+font-size = 12 [$LINUX]
+font-size = 16 [$OSX]
 			
 			font-weight = 400
 			inset-left = 23
@@ -245,6 +255,8 @@
 			bgcolor = color__controlBackground
 			font-family = font__basefont
 			font-size = 18
+font-size = 16 [$LINUX]
+font-size = 19 [$OSX]
 			
 			font-weight = 400
 			inset-left = 3
@@ -286,6 +298,8 @@
 				bgcolor = color__controlBackground
 				font-family = font__basefont
 				font-size = 18
+font-size = 16 [$LINUX]
+font-size = 19 [$OSX]
 				
 				font-weight = 400
 				inset-left = 3	
@@ -311,6 +325,8 @@
 		TextEntryURL {
 			font-family = font__basefont
 			font-size = 15
+font-size = 12 [$LINUX]
+font-size = 16 [$OSX]
 			
 			font-weight = 400			 
 			shadowtextcolor = color__disabled	
@@ -333,6 +349,8 @@
 			bgcolor = color__buttonBackground
 			font-family = font__mediumfont
 			font-size = 16
+font-size = 14 [$LINUX]
+font-size = 17 [$OSX]
 			
 			font-style = uppercase
 			font-weight = 400
@@ -386,6 +404,8 @@
 		ComboBox {
 			font-family = font__mediumfont
 			font-size = 16
+font-size = 14 [$LINUX]
+font-size = 17 [$OSX]
 			
 			font-style = uppercase
 			font-weight = 400
@@ -422,6 +442,8 @@
 		ToggleButton {
 			font-family = font__basefont
 			font-size = 15
+font-size = 12 [$LINUX]
+font-size = 16 [$OSX]
 			
 			font-style = none
 			font-weight = 400

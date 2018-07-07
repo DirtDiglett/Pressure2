@@ -80,7 +80,9 @@
 			}
 
 		PageTab {
-			font-size=16
+			font-size = 16
+font-size = 14 [$LINUX]
+font-size = 17 [$OSX]
 			
 			font-style=regular
 			textcolor=color__secondaryText__alternate
@@ -228,7 +230,9 @@
 		FriendsSearch {
 			padding-left=0
 			font-family=font__basefont
-			font-size=18
+			font-size = 18
+font-size = 16 [$LINUX]
+font-size = 19 [$OSX]
 			
 			font-weight=400
 			textcolor="color__text"

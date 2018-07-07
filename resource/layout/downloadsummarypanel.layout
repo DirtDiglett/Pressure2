@@ -10,7 +10,9 @@
 		bigtext {
 			textcolor=color__text__alternate
 			font-family=font__basefont
-			font-size=18
+			font-size = 18
+font-size = 16 [$LINUX]
+font-size = 19 [$OSX]
 			
 			font-weight=600
 			font-style=normal
@@ -19,7 +21,9 @@
 		bigtextNonUpper {
 			textcolor=color__text__alternate
 			font-family=font__basefont
-			font-size=18
+			font-size = 18
+font-size = 16 [$LINUX]
+font-size = 19 [$OSX]
 			
 			font-weight=600
 			font-style=normal
@@ -28,7 +32,9 @@
 		bigtextlabel {
 			textcolor=color__secondaryText__alternate
 			font-family=font__basefont
-			font-size=17
+			font-size = 17
+font-size = 15 [$LINUX]
+font-size = 18 [$OSX]
 			
 			font-style=normal
 		}
@@ -36,7 +42,9 @@
 		throttleLabel {
 			textcolor=color__text__alternate
 			font-family=font__basefont
-			font-size=18
+			font-size = 18
+font-size = 16 [$LINUX]
+font-size = 19 [$OSX]
 			
 			font-weight=600
 			font-style=normal
@@ -45,7 +53,9 @@
 		throttleValue {
 			textcolor=color__secondaryText__alternate
 			font-family=font__basefont
-			font-size=17
+			font-size = 17
+font-size = 15 [$LINUX]
+font-size = 18 [$OSX]
 			
 			font-style=normal
 		}
@@ -84,7 +94,9 @@
 		PauseButton {   
 			textcolor=white
 			font-family=font__mediumfont
-			font-size=18
+			font-size = 18
+font-size = 16 [$LINUX]
+font-size = 19 [$OSX]
 			
 			font-weight=600
 			font-style=regular
@@ -124,7 +136,9 @@
 		ResumeButton {
 			textcolor=white
 			font-family=font__mediumfont
-			font-size=18
+			font-size = 18
+font-size = 16 [$LINUX]
+font-size = 19 [$OSX]
 			
 			font-weight=600
 			font-style=regular

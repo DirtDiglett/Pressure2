@@ -6,7 +6,9 @@
 
 		ViewersTextStyle {
 			textcolor=color__text__alternate
-			font-size=20
+			font-size = 20
+font-size = 16 [$LINUX]
+font-size = 21 [$OSX]
 			
 		}		
 		

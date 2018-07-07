@@ -5,7 +5,9 @@
 	
 		namestyle {
 			font-family=font__mediumfont
-			font-size=17
+			font-size = 17
+font-size = 15 [$LINUX]
+font-size = 18 [$OSX]
 			
 			font-weight=600
 		}
@@ -13,7 +15,9 @@
 		nameInstanceStyle {
 			textcolor=grey600
 			font-family=font__basefont
-			font-size=16
+			font-size = 16
+font-size = 14 [$LINUX]
+font-size = 17 [$OSX]
 			
 		}
 		
@@ -28,7 +32,9 @@
 
 		controlPanelLinkStyle {
 			font-family=font__mediumfont
-			font-size=16
+			font-size = 16
+font-size = 14 [$LINUX]
+font-size = 17 [$OSX]
 			
 			font-style=uppercase
 			padding-left=6
@@ -44,7 +50,9 @@
 		statusStyle {
 			textcolor=color__secondaryText
 			font-family=font__basefont
-			font-size=16
+			font-size = 16
+font-size = 14 [$LINUX]
+font-size = 17 [$OSX]
 			
 		}
 		
@@ -54,7 +62,9 @@
 		
 		inviteLinkStyle {
 			font-family=font__mediumfont
-			font-size=16
+			font-size = 16
+font-size = 14 [$LINUX]
+font-size = 17 [$OSX]
 			
 			font-style=uppercase
 			padding-left=6

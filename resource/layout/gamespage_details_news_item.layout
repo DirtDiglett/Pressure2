@@ -14,13 +14,17 @@
 		title_label {
 			textcolor=color__text
 			font-family=font__mediumfont
-			font-size=18
+			font-size = 18
+font-size = 16 [$LINUX]
+font-size = 19 [$OSX]
 			
 		}
 
 		date_and_author {
 			textcolor=color__secondaryText
-			font-size=16
+			font-size = 16
+font-size = 14 [$LINUX]
+font-size = 17 [$OSX]
 			
 		}
 
@@ -29,7 +33,9 @@
 			textcolor=color__text
 			selectedtextcolor=white
 			font-family=font__basefont
-			font-size=16
+			font-size = 16
+font-size = 14 [$LINUX]
+font-size = 17 [$OSX]
 			
 
 			render_bg {}
@@ -39,7 +45,9 @@
 			selectedbgcolor=blue500
 			textcolor=blue500
 			selectedtextcolor=white
-			font-size=16
+			font-size = 16
+font-size = 14 [$LINUX]
+font-size = 17 [$OSX]
 			
 			font-style=underline
 		}
@@ -59,7 +67,9 @@
 			bgcolor=none
 			textcolor=blue500
 			font-family=font__mediumfont
-			font-size=16
+			font-size = 16
+font-size = 14 [$LINUX]
+font-size = 17 [$OSX]
 			
 			font-weight=400
 			font-style=uppercase

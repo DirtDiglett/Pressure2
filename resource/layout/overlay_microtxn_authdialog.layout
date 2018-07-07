@@ -33,7 +33,9 @@
 			selectedbgcolor=blue500
 			textcolor=color__secondaryText
 			selectedtextcolor=white
-			font-size=15
+			font-size = 15
+font-size = 12 [$LINUX]
+font-size = 16 [$OSX]
 			
 
 			render_bg {}
@@ -42,7 +44,9 @@
 		RefundTextLinkStyle {
 			textcolor=blue500
 			font-family=font__basefont
-			font-size=16
+			font-size = 16
+font-size = 14 [$LINUX]
+font-size = 17 [$OSX]
 			
 			font-weight=400
 			font-style=underline

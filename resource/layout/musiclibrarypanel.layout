@@ -18,7 +18,9 @@
 			bgcolor=color__textInputBackground
 			textcolor=color__text
 			font-family=font__basefont
-			font-size=18
+			font-size = 18
+font-size = 16 [$LINUX]
+font-size = 19 [$OSX]
 			
 			font-weight=400
 			inset-left=1
@@ -118,7 +120,9 @@
 			bgcolor=none
 			textcolor=color__secondaryText__alternate
 			font-family=font__basefont
-			font-size=20
+			font-size = 20
+font-size = 16 [$LINUX]
+font-size = 21 [$OSX]
 			
 			font-weight=400
 			font-style=normal

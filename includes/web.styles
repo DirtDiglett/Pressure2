@@ -26,6 +26,8 @@
 			bgcolor = color__disabled
 			font-family = font__basefont
 			font-size = 15
+font-size = 12 [$LINUX]
+font-size = 16 [$OSX]
 			
 			font-weight = 400
 			shadowtextcolor = color__disabled
@@ -38,6 +40,8 @@
 			bgcolor = color__textInputBackground
 			font-family = font__basefont
 			font-size = 18
+font-size = 16 [$LINUX]
+font-size = 19 [$OSX]
 			
 			font-weight = 400
 			inset-left = 8
@@ -63,6 +67,8 @@
 			bgcolor = color__htmlEVCertBackground
 			font-family = font__basefont
 			font-size = 15
+font-size = 12 [$LINUX]
+font-size = 16 [$OSX]
 			
 			font-weight = 400
 			inset-left = 4
@@ -282,6 +288,8 @@
 			bgcolor = color__textInputBackground
 			font-family = font__basefont
 			font-size = 18
+font-size = 16 [$LINUX]
+font-size = 19 [$OSX]
 			
 			font-weight = 400
 			minimum-height = 45

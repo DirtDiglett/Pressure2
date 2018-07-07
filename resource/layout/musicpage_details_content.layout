@@ -9,7 +9,9 @@
 		
 		AlbumOrArtistListStyle {
 			bgcolor=color__background
-			font-size=16
+			font-size = 16
+font-size = 14 [$LINUX]
+font-size = 17 [$OSX]
 			
 			padding-left=4
 			padding-right=25
@@ -18,13 +20,17 @@
 		
 		EmptyDatabaseText {
 			textcolor=color__disabled
-			font-size=15
+			font-size = 15
+font-size = 12 [$LINUX]
+font-size = 16 [$OSX]
 			
 		}
 		
 		CrawlingText {
 			textcolor=color__disabled
-			font-size=15
+			font-size = 15
+font-size = 12 [$LINUX]
+font-size = 16 [$OSX]
 			
 		}
 		
@@ -34,7 +40,9 @@
 		}
 		
 		"MusicPage_Details_Content ListPanel" {
-			font-size=15
+			font-size = 15
+font-size = 12 [$LINUX]
+font-size = 16 [$OSX]
 					
 			padding-left=4
 			padding-right=2
@@ -71,7 +79,9 @@
 
 		"MusicPage_Details_Content ListPanelColumnHeader" {
 			bgcolor=none
-			font-size=14
+			font-size = 14
+font-size = 12 [$LINUX]
+font-size = 15 [$OSX]
 			
 			inset="0 0 0 0"
 
@@ -92,7 +102,9 @@
 		
 		"ListPanel RichText" {
 			textcolor=color__disabled
-			font-size=15
+			font-size = 15
+font-size = 12 [$LINUX]
+font-size = 16 [$OSX]
 			
 		}
 	}

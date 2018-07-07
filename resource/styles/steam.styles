@@ -57,6 +57,8 @@ steam.styles {
 		Panel { 
 			font-family = font__basefont
 			font-size = 15
+font-size = 12 [$LINUX]
+font-size = 16 [$OSX]
 			
 			font-weight = 400
 			textcolor = color__text
@@ -70,6 +72,8 @@ steam.styles {
 			bgcolor = none
 			font-family = font__basefont
 			font-size = 16
+font-size = 14 [$LINUX]
+font-size = 17 [$OSX]
 			
 			font-weight = 400
 			selectedbgcolor = color__selectedTextBackground
@@ -80,6 +84,8 @@ steam.styles {
 		URLLabel {
 			font-family = font__basefont
 			font-size = 16
+font-size = 14 [$LINUX]
+font-size = 17 [$OSX]
 			
 			font-style = underline
 			font-weight = 400
@@ -93,6 +99,8 @@ steam.styles {
 		URLLabelSimple {
 			font-family = font__basefont
 			font-size = 16
+font-size = 14 [$LINUX]
+font-size = 17 [$OSX]
 			
 			font-style = underline
 			font-weight = 400
@@ -106,6 +114,8 @@ steam.styles {
 		URLLabelSimple2 {
 			font-family = font__basefont
 			font-size = 16
+font-size = 14 [$LINUX]
+font-size = 17 [$OSX]
 			
 			font-style = underline
 			font-weight = 400
@@ -133,6 +143,8 @@ steam.styles {
 			bgcolor = none
 			font-family = font__basefont			
 			font-size = 17
+font-size = 15 [$LINUX]
+font-size = 18 [$OSX]
 			
 			font-weight = 400
 			inset = "0 0 0 0"
@@ -191,6 +203,8 @@ steam.styles {
 			bgcolor = none
 			textcolor = color__menuText
 			font-size = 17
+font-size = 15 [$LINUX]
+font-size = 18 [$OSX]
 			
 			font-style = normal
 		}
@@ -218,6 +232,8 @@ steam.styles {
 			textcolor = color__text__alternate
 			font-family = font__basefont
 			font-size = 16
+font-size = 14 [$LINUX]
+font-size = 17 [$OSX]
 			
 			font-weight = 400
 			minimum-width = 289
@@ -233,6 +249,8 @@ steam.styles {
 		gamedetails-headerlabel {
 			font-family = font__mediumfont
 			font-size = 30
+font-size = 25 [$LINUX]
+font-size = 31 [$OSX]
 			
 			font-style = normal
 			textcolor = color__headingText
@@ -241,6 +259,8 @@ steam.styles {
 		gamedetails-headerlabel-red {
 			font-family = font__mediumfont
 			font-size = 30
+font-size = 25 [$LINUX]
+font-size = 31 [$OSX]
 			
 			font-style = normal
 			textcolor = color__headingText
@@ -249,6 +269,8 @@ steam.styles {
 		gamedetails-headerlabel-green {
 			font-family = font__mediumfont
 			font-size = 30
+font-size = 25 [$LINUX]
+font-size = 31 [$OSX]
 			
 			font-style = normal
 			textcolor = color__headingText
@@ -257,6 +279,8 @@ steam.styles {
 		gamedetails-headerlabel-blue {
 			font-family = font__mediumfont
 			font-size = 30
+font-size = 25 [$LINUX]
+font-size = 31 [$OSX]
 			
 			font-style = normal
 			textcolor = color__headingText
@@ -265,6 +289,8 @@ steam.styles {
 		GameItem_Uninstalled {
 			font-family = font__mediumfont
 			font-size = 16
+font-size = 14 [$LINUX]
+font-size = 17 [$OSX]
 			
 			selectedbgcolor = color__selectedItemBackground
 			selectedtextcolor = color__selectedText		
@@ -274,6 +300,8 @@ steam.styles {
 		GameItem_Installed {
 			font-family = font__mediumfont
 			font-size = 16
+font-size = 14 [$LINUX]
+font-size = 17 [$OSX]
 							
 			selectedbgcolor = color__selectedItemBackground
 			selectedtextcolor = color__selectedText		
@@ -283,6 +311,8 @@ steam.styles {
 		GameItem_Shortcut {
 			font-family = font__mediumfont
 			font-size = 16
+font-size = 14 [$LINUX]
+font-size = 17 [$OSX]
 			
 			selectedbgcolor = color__selectedItemBackground
 			selectedtextcolor = color__selectedText
@@ -292,6 +322,8 @@ steam.styles {
 		GameItem_Mod {
 			font-family = font__mediumfont
 			font-size = 16
+font-size = 14 [$LINUX]
+font-size = 17 [$OSX]
 			
 			selectedbgcolor = color__selectedItemBackground
 			selectedtextcolor = color__selectedText
@@ -301,6 +333,8 @@ steam.styles {
 		GameItem_Updating {
 			font-family = font__mediumfont
 			font-size = 16
+font-size = 14 [$LINUX]
+font-size = 17 [$OSX]
 			
 			font-style = italic			
 			selectedbgcolor = color__selectedItemBackground
@@ -311,6 +345,8 @@ steam.styles {
 		GameItem_Decrypting {
 			font-family = font__mediumfont
 			font-size = 16
+font-size = 14 [$LINUX]
+font-size = 17 [$OSX]
 			
 			font-style = italic			
 			selectedbgcolor = color__selectedItemBackground
@@ -321,6 +357,8 @@ steam.styles {
 		GameItem_Syncing {
 			font-family = font__mediumfont
 			font-size = 16
+font-size = 14 [$LINUX]
+font-size = 17 [$OSX]
 			
 			font-style = italic
 			selectedbgcolor = color__selectedItemBackground
@@ -390,6 +428,8 @@ steam.styles {
 			bgcolor = white // TO DO
 			font-family = font__basefont
 			font-size = 15
+font-size = 12 [$LINUX]
+font-size = 16 [$OSX]
 			
 			font-weight = 400
 			inset = "0 0 0 0"
@@ -410,6 +450,8 @@ steam.styles {
 			bgcolor = white // TO DO
 			font-family = font__basefont
 			font-size = 16
+font-size = 14 [$LINUX]
+font-size = 17 [$OSX]
 			
 			font-weight = 400
 			inset = "0 0 0 0"
@@ -425,6 +467,8 @@ steam.styles {
 		GameColumn_BigText {
 			font-family = font__basefont
 			font-size = 18
+font-size = 16 [$LINUX]
+font-size = 19 [$OSX]
 			
 			font-weight = 700			
 			textcolor = color__text
@@ -434,6 +478,8 @@ steam.styles {
 			bgcolor = red500 // TO DO?
 			font-family = font__mediumfont
 			font-size = 16
+font-size = 14 [$LINUX]
+font-size = 17 [$OSX]
 			
 			font-style = uppercase
 			font-weight = 600
@@ -500,6 +546,8 @@ steam.styles {
 		ListPanelInterior { 
 			bgcolor = none
 			font-size = 16
+font-size = 14 [$LINUX]
+font-size = 17 [$OSX]
 			
 			inset = "0 0 0 0"
 			textcolor = color__text
@@ -538,6 +586,8 @@ steam.styles {
 			bgcolor = none
 			font-family = font__basefont
 			font-size = 15
+font-size = 12 [$LINUX]
+font-size = 16 [$OSX]
 						
 			textcolor = color__text
 
@@ -546,6 +596,8 @@ steam.styles {
 
 		"ListPanel RichText url" {
 			font-size = 15
+font-size = 12 [$LINUX]
+font-size = 16 [$OSX]
 					
 			font-style = underline
 			textcolor = color__URL
@@ -607,6 +659,8 @@ steam.styles {
 
 		PageTab {
 			font-size = 16
+font-size = 14 [$LINUX]
+font-size = 17 [$OSX]
 			
 			font-style = regular
 			textcolor = color__secondaryText__alternate
@@ -670,6 +724,8 @@ steam.styles {
 		RichText {
 			font-family = font__basefont
 			font-size = 15
+font-size = 12 [$LINUX]
+font-size = 16 [$OSX]
 			
 			font-weight = 400
 			inset = "0 0 0 0"
@@ -686,6 +742,8 @@ steam.styles {
 		
 		"RichText url" {
 			font-size = 15
+font-size = 12 [$LINUX]
+font-size = 16 [$OSX]
 			
 			font-style = underline
 			selectedbgcolor = color__selectedTextBackground
@@ -699,18 +757,24 @@ steam.styles {
 
 		"RichText bold" {
 			font-size = 15
+font-size = 12 [$LINUX]
+font-size = 16 [$OSX]
 			
 			font-weight = 1000
 		}
 		
 		"RichText emphasis" {
 			font-size = 15
+font-size = 12 [$LINUX]
+font-size = 16 [$OSX]
 			
 			font-style = italic
 		}
 		
 		"CFriendPanel RichText URL" {
 			font-size = 14
+font-size = 12 [$LINUX]
+font-size = 15 [$OSX]
 			
 			font-style = underline
 			textcolor = color__URL
@@ -724,6 +788,8 @@ steam.styles {
 			bgcolor = color__background
 			font-family = font__basefont
 			font-size = 15
+font-size = 12 [$LINUX]
+font-size = 16 [$OSX]
 			
 			font-weight = 400			
 			inset = "0 0 0 0"			
@@ -777,6 +843,8 @@ steam.styles {
 		StatusLabel {
 			font-family = font__basefont
 			font-size = 15
+font-size = 12 [$LINUX]
+font-size = 16 [$OSX]
 			
 			font-style = uppercase
 			font-weight = 400			
@@ -786,6 +854,8 @@ steam.styles {
 			StatusLabel:hover {
 				font-family = font__basefont
 				font-size = 14
+font-size = 12 [$LINUX]
+font-size = 15 [$OSX]
 				font-style = uppercase
 				font-weight = 400			
 				textcolor = color__text
@@ -794,6 +864,8 @@ steam.styles {
 		StatusLabelDim {
 			font-family = font__basefont
 			font-size = 15
+font-size = 12 [$LINUX]
+font-size = 16 [$OSX]
 			
 			font-style = normal
 			font-weight = 400
@@ -828,6 +900,8 @@ steam.styles {
 			bgcolor = none
 			font-family = font__basefont
 			font-size = 14
+font-size = 12 [$LINUX]
+font-size = 15 [$OSX]
 			
 			font-weight = 400			
 			textcolor = color__text
@@ -861,6 +935,8 @@ steam.styles {
 			bgcolor = none
 			font-family = font__basefont
 			font-size = 15
+font-size = 12 [$LINUX]
+font-size = 16 [$OSX]
 			
 			selectedbgcolor = color__selectedTextBackground
 			selectedtextcolor = color__selectedText
@@ -1141,6 +1217,8 @@ steam.styles {
 		
 		tooltip_headline {
 			font-size = 18
+font-size = 16 [$LINUX]
+font-size = 19 [$OSX]
 				 
 			font-weight = 600
 			padding-bottom = 0			
@@ -1162,6 +1240,8 @@ steam.styles {
 
 		friends_chat_text {
 			font-size = 17
+font-size = 15 [$LINUX]
+font-size = 18 [$OSX]
 			
 			selectedbgcolor = color__selectedTextBackground
 			selectedtextcolor = color__selectedText 			
@@ -1170,6 +1250,8 @@ steam.styles {
 		
 		friends_chat_text_self {
 			font-size = 17
+font-size = 15 [$LINUX]
+font-size = 18 [$OSX]
 			
 			selectedbgcolor = color__selectedTextBackground
 			selectedtextcolor = color__selectedText			
@@ -1178,6 +1260,8 @@ steam.styles {
 		
 		friends_chat_event {
 			font-size = 17
+font-size = 15 [$LINUX]
+font-size = 18 [$OSX]
 					
 			selectedbgcolor = color__selectedTextBackground
 			selectedtextcolor = color__selectedText
@@ -1186,6 +1270,8 @@ steam.styles {
 
 		friends_chat_bright_event {
 			font-size = 17
+font-size = 15 [$LINUX]
+font-size = 18 [$OSX]
 			
 			font-weight = 1000
 			selectedbgcolor = color__selectedTextBackground
@@ -1195,6 +1281,8 @@ steam.styles {
 
 		friends_chat_url {
 			font-size = 17
+font-size = 15 [$LINUX]
+font-size = 18 [$OSX]
 			
 			font-style = underline
 			selectedbgcolor = color__selectedTextBackground
@@ -1208,6 +1296,8 @@ steam.styles {
 		
 		friends_chat_name_ingame {
 			font-size = 17
+font-size = 15 [$LINUX]
+font-size = 18 [$OSX]
 			
 			selectedbgcolor = color__selectedTextBackground
 			selectedtextcolor = color__selectedText		
@@ -1216,6 +1306,8 @@ steam.styles {
 
 		friends_chat_name_golden {
 			font-size = 17
+font-size = 15 [$LINUX]
+font-size = 18 [$OSX]
 			
 			selectedbgcolor = color__selectedTextBackground
 			selectedtextcolor = color__selectedText	
@@ -1224,6 +1316,8 @@ steam.styles {
 
 		friends_chat_self {
 			font-size = 17
+font-size = 15 [$LINUX]
+font-size = 18 [$OSX]
 			
 			selectedbgcolor = color__selectedTextBackground
 			selectedtextcolor = color__selectedText	
@@ -1232,6 +1326,8 @@ steam.styles {
 		
 		friends_chat_name {
 			font-size = 17
+font-size = 15 [$LINUX]
+font-size = 18 [$OSX]
 			
 			selectedbgcolor = color__selectedTextBackground
 			selectedtextcolor = color__selectedText	
@@ -1240,6 +1336,8 @@ steam.styles {
 		
 		friends_chat_accountid {
 			font-size = 17
+font-size = 15 [$LINUX]
+font-size = 18 [$OSX]
 			
 			selectedbgcolor = color__selectedTextBackground
 			selectedtextcolor = color__selectedText	
@@ -1250,6 +1348,8 @@ steam.styles {
 			bgcolor = none
 			font-family = font__basefont
 			font-size = 17
+font-size = 15 [$LINUX]
+font-size = 18 [$OSX]
 			
 			font-style = none
 			font-weight = 600
@@ -1260,6 +1360,8 @@ steam.styles {
 
 		friends_chat_history {
 			font-size = 17
+font-size = 15 [$LINUX]
+font-size = 18 [$OSX]
 			
 			selectedbgcolor = color__selectedTextBackground
 			selectedtextcolor = color__selectedText	

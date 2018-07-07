@@ -2,7 +2,9 @@
 	styles {
 		Label {
 			textcolor=color__disabled
-			font-size=14
+			font-size = 14
+font-size = 12 [$LINUX]
+font-size = 15 [$OSX]
 			
 		}
 
@@ -75,7 +77,9 @@
 			}
 
 		GridMenu {
-			font-size=16
+			font-size = 16
+font-size = 14 [$LINUX]
+font-size = 17 [$OSX]
 			
 			inset="0 0 0 0"
 		}
@@ -145,7 +149,9 @@
 			textcolor=color__disabled
 			selectedtextcolor=white
 			font-family=font__basefont
-			font-size=17
+			font-size = 17
+font-size = 15 [$LINUX]
+font-size = 18 [$OSX]
 			
 			font-weight=400
 		}

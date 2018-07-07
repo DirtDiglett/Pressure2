@@ -4,7 +4,9 @@
 			bgcolor=none
 			textcolor=color__text__alternate			
 			font-family=font__mediumfont
-			font-size=21
+			font-size = 21
+font-size = 19 [$LINUX]
+font-size = 22 [$OSX]
 			
 			font-weight=400
 			font-style=outerglow
@@ -45,7 +47,9 @@
 			bgcolor=none
 			textcolor=color__secondaryText__alternate
 			font-family=font__basefont
-			font-size=20
+			font-size = 20
+font-size = 16 [$LINUX]
+font-size = 21 [$OSX]
 			
 			font-weight=400
 			font-style=normal
@@ -78,7 +82,9 @@
 			bgcolor=color__textInputBackground
 			textcolor=color__text
 			font-family=font__basefont
-			font-size=18
+			font-size = 18
+font-size = 16 [$LINUX]
+font-size = 19 [$OSX]
 			
 			font-weight=400
 			inset-left=1
@@ -346,7 +352,9 @@
 			selectedtextcolor=white
 			shadowtextcolor=color__disabled
 			font-family=font__basefont
-			font-size=18
+			font-size = 18
+font-size = 16 [$LINUX]
+font-size = 19 [$OSX]
 			
 			font-weight=400
 			inset-left=8
@@ -369,7 +377,9 @@
 			bgcolor=lime500
 			textcolor=grey900
 			font-family=font__basefont
-			font-size=15
+			font-size = 15
+font-size = 12 [$LINUX]
+font-size = 16 [$OSX]
 			
 			font-weight=400
 			inset-left=4

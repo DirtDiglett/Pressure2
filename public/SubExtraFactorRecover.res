@@ -4,7 +4,9 @@
 			bgcolor=none
 			textcolor=blue500
 			font-family=font__mediumfont
-			font-size=16
+			font-size = 16
+font-size = 14 [$LINUX]
+font-size = 17 [$OSX]
 			
 			font-weight=400
 			font-style=uppercase

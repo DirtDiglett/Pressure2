@@ -8,7 +8,9 @@
 			bgcolor=none
 			textcolor=limeA400
 			font-family=font__mediumfont
-			font-size=20
+			font-size = 20
+font-size = 16 [$LINUX]
+font-size = 21 [$OSX]
 			
 			font-weight=600
 			font-style=uppercase
@@ -54,7 +56,9 @@
 			bgcolor=none
 			textcolor=lightblueA200
 			font-family=font__mediumfont
-			font-size=20
+			font-size = 20
+font-size = 16 [$LINUX]
+font-size = 21 [$OSX]
 			
 			font-weight=600
 			font-style=uppercase
@@ -100,7 +104,9 @@
 			bgcolor=none
 			textcolor=grey100
 			font-family=font__mediumfont
-			font-size=20
+			font-size = 20
+font-size = 16 [$LINUX]
+font-size = 21 [$OSX]
 			
 			font-weight=600
 			font-style=uppercase

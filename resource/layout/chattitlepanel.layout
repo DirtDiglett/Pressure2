@@ -5,7 +5,9 @@
 		Label {
 			textcolor=color__text__alternate
 			font-family=font__mediumfont
-			font-size=17
+			font-size = 17
+font-size = 15 [$LINUX]
+font-size = 18 [$OSX]
 			
 			font-weight=600
 		}

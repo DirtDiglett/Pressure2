@@ -17,7 +17,9 @@
 			selectedtextcolor=white
 			shadowtextcolor=color__disabled	
 			font-family=font__basefont
-			font-size=14
+			font-size = 14
+font-size = 12 [$LINUX]
+font-size = 15 [$OSX]
 			
 			font-weight=400
 			

@@ -17,7 +17,9 @@
 		bodycontent {
 			textcolor=color__text
 			selectedtextcolor=white	
-			font-size=18
+			font-size = 18
+font-size = 16 [$LINUX]
+font-size = 19 [$OSX]
 			
 
 			render_bg {}

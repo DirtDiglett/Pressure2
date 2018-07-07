@@ -9,7 +9,9 @@
 	styles {
 		communityfile_name {
 			textcolor=color__text__alternate
-			font-size=18
+			font-size = 18
+font-size = 16 [$LINUX]
+font-size = 19 [$OSX]
 			
 		}
 		

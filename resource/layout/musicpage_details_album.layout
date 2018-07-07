@@ -12,7 +12,9 @@
 		
 		AlbumTitleStyle {
 			textcolor=color__text
-			font-size=30
+			font-size = 30
+font-size = 25 [$LINUX]
+font-size = 31 [$OSX]
 			
 			font-style=normal
 		}
@@ -25,7 +27,9 @@
 		
 		TracksInfoStyle {
 			textcolor=color__secondaryText
-			font-size=17
+			font-size = 17
+font-size = 15 [$LINUX]
+font-size = 18 [$OSX]
 			
 		}
 		

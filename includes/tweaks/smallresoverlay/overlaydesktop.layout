@@ -6,7 +6,9 @@
 			textcolor=color__text__alternate
 			font-family=font__mediumfont
 			font-weight=800
-			font-size=30
+			font-size = 30
+font-size = 25 [$LINUX]
+font-size = 31 [$OSX]
 			
 			font-weight=400
 		}
@@ -15,7 +17,9 @@
 			textcolor=color__text__alternate
 			font-family=font__mediumfont
 			font-weight=800
-			font-size=30
+			font-size = 30
+font-size = 25 [$LINUX]
+font-size = 31 [$OSX]
 			
 			font-weight=400
 			font-style=uppercase
@@ -24,7 +28,9 @@
 		timeStrings {
 			textcolor=color__disabled__alternate
 			font-family=font__basefont
-			font-size=18
+			font-size = 18
+font-size = 16 [$LINUX]
+font-size = 19 [$OSX]
 			
 			font-weight=400
 		}
