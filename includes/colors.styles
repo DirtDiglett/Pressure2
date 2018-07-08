@@ -132,15 +132,7 @@
 
 		color__gamespageHeaderGradientEnd		=		black__87opacity
 
-		// to theme-specific
-		color__sectionHeadingBackground	=	grey800
-		color__settingSidebarBackground = grey900
-
-		color__sectionListPanelBackground = amber500
-
 		color__mainNavOuterglow					=		black__26opacity
 		color__mainNavOuterglow__hover  =  "88 88 88 255"
-
-		color__listPanelBackground			=		grey900
 	}
 }

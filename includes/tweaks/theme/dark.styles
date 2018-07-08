@@ -5,10 +5,10 @@
 	colors {
 //	________________________________________________
 
-		color__scrollbarBackground				=		seashell
-		color__scrollbarHandle					=		silver
-		color__scrollbarHandle__hover			=		silverChalice
-		color__scrollbarHandle__active			=		boulder
+		color__scrollbarBackground				=		grey900
+		color__scrollbarHandle					=		tundora
+		color__scrollbarHandle__hover			=		tundorai
+		color__scrollbarHandle__active			=		mineshaft
 
 		color__background						=		deepMineshaft
 		color__background__secondary			=		cavern
@@ -112,5 +112,11 @@
 		HTML.insecureurl 						= 		red500
 		color__htmlEVCertBackground				=		lime500
 		color__htmlEVCert						=		grey900
+
+		color__sectionHeadingBackground	=	grey800
+		color__settingSidebarBackground = grey900
+
+		color__sectionListPanelBackground = amber500
+		color__listPanelBackground			=		grey900
 	}
 }

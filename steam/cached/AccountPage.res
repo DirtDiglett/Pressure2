@@ -1,13 +1,6 @@
 "Steam/cached/AccountPage.res" {
 	styles {
 		CAccountPage {
-			render {
-				0="fill(x0+70,y0+20,x0+396,y0+45, color__backgroundOverlay__secondary)"
-				1="fill(x0+70,y0+120,x0+396,y0+147, color__backgroundOverlay__secondary)"
-				2="fill(x0+70,y0+216,x0+396,y0+247, color__backgroundOverlay__secondary)"
-				3="fill(x0+70,y0+280,x0+396,y0+311, color__backgroundOverlay__secondary)"
-				4="fill(x0+70,y0+426,x0+396,y0+451, color__backgroundOverlay__secondary)"
-			}
 			render_bg {
 				0="fill(x0+71,y0+113,x1,y0+114, color__divider)"
 				1="fill(x0+71,y0+213,x1,y0+214, color__divider)"
@@ -17,16 +10,6 @@
 				5="image(x0+26,y0+227,x1,y1, graphics/icons/settings/vac)"
 				6="image(x0+26,y0+290,x1,y1, graphics/icons/settings/security)"
 				7="image(x0+26,y0+431,x1,y1, graphics/icons/settings/beta)"
-			}
-		}
-
-		CAccountPage:framefocus {
-			render {
-				0="fill(x0+70,y0+20,x0+396,y0+45, color__backgroundOverlay)"
-				1="fill(x0+70,y0+120,x0+396,y0+147, color__backgroundOverlay)"
-				2="fill(x0+70,y0+216,x0+396,y0+247, color__backgroundOverlay)"
-				3="fill(x0+70,y0+280,x0+396,y0+311, color__backgroundOverlay)"
-				4="fill(x0+70,y0+426,x0+396,y0+451, color__backgroundOverlay)"
 			}
 		}
 	}

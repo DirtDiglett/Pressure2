@@ -10,7 +10,7 @@ font-size = 15 [$OSX]
 
 		CChatRoomDlg {
 			render {
-				0="fill(x0,y1-76,x1,y1-75, grey200)"
+				0="fill(x0,y1-76,x1,y1-75, color__textInputBackground)"
 				1="image_tiled(x0,y0+57,x1,y0+61, graphics/material/shadows/top)"
 			}
 			render_bg {

@@ -112,5 +112,11 @@
 		HTML.insecureurl 						= 		red500
 		color__htmlEVCertBackground				=		lime500
 		color__htmlEVCert						=		grey900
+
+		color__sectionHeadingBackground	=	white
+		color__settingSidebarBackground = white
+
+		color__sectionListPanelBackground = white
+		color__listPanelBackground			=		white
 	}
 }

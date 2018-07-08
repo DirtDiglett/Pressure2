@@ -471,7 +471,7 @@ font-size = 17 [$OSX]
 		}
 
 		ListPanelColumnheader {
-			bgcolor = red500 // TO DO?
+			bgcolor = color__sectionHeadingBackground
 			font-family = font__mediumfont
 			font-size = 16
 			font-size = 14 [$LINUX]
