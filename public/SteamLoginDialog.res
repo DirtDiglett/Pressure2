@@ -9,7 +9,7 @@
 		}
 
 		CSteamLoginDialog {
-			minimum-height=417
+			minimum-height=450
 
 			render {}
 			render_bg {
@@ -60,15 +60,15 @@
 			start=LoginErrorText
 			dir=down
 			y=4
-			width=95
-			height=34
+			align=left
+			height=18
 		}
 
 		place {
 			control=UserNameEdit
 			start=UserNameLabel
-			dir=right
-			x=8
+			dir=down
+			y=4
 			width=max
 			height=34
 			margin-right=24
@@ -76,18 +76,18 @@
 
 		place {
 			control=PasswordLabel
-			start=UserNameLabel
+			start=UserNameEdit
 			dir=down
-			y=24
-			width=95
-			height=34
+			align=left
+			y=16
+			height=18
 		}
 
 		place {
 			control=PasswordEdit
 			start=PasswordLabel
-			dir=right
-			x=8
+			dir=down
+			y=4
 			width=max
 			height=34
 			margin-right=24
@@ -115,7 +115,6 @@
 			control=LoginButton
 			region=buttons
 			align=right
-			width=92
 			height=34
 			margin-top=12
 			margin-right=11
