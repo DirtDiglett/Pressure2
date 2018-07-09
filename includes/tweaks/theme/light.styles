@@ -118,5 +118,7 @@
 
 		color__sectionListPanelBackground = white
 		color__listPanelBackground			=		white
+
+		color__materialButtonWhiteBackground	=	white
 	}
 }
