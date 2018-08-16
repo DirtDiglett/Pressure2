@@ -134,5 +134,8 @@
 
 		color__mainNavOuterglow					=		black__26opacity
 		color__mainNavOuterglow__hover  =  "88 88 88 255"
+
+		color__overlayBackground							=		black__26opacity
+		color__overlayBackgroundGradient			=		black__54opacity
 	}
 }

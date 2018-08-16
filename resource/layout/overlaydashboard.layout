@@ -12,10 +12,10 @@
 		}
 
 		overlaymain {
-			bgcolor=color__disabled
+			bgcolor=color__overlayBackground
 
 			render_bg {
-				0="gradient_horizontal(x0,y0,x0+1080,y1, color__secondaryText)"
+				0="gradient_horizontal(x0,y0,x0+1080,y1, color__overlayBackgroundGradient)"
 			}
 		}	
 				
@@ -24,8 +24,8 @@
 			font-family=font__mediumfont
 			font-weight=800
 			font-size = 30
-font-size = 25 [$LINUX]
-font-size = 31 [$OSX]
+			font-size = 25 [$LINUX]
+			font-size = 31 [$OSX]
 			
 			font-weight=600
 		}
