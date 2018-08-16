@@ -3,56 +3,66 @@
 		container {}
 
 		CDownloadSummaryPanel {
-			bgcolor=customgreysecondary
+			bgcolor=color__submenuBackground
 			inset="0 0 0 0"
-	  	}
+	  }
 	   		
 		bigtext {
-			textcolor=text_onDarkBG
-			font-family=basefont
-			font-size=18
-			font-size=19 [$OSX]
+			textcolor=color__text__alternate
+			font-family=font__basefont
+			font-size = 18
+font-size = 16 [$LINUX]
+font-size = 19 [$OSX]
+			
 			font-weight=600
 			font-style=normal
 		}
 
 		bigtextNonUpper {
-			textcolor=text_onDarkBG
-			font-family=basefont
-			font-size=18
-			font-size=19 [$OSX]
+			textcolor=color__text__alternate
+			font-family=font__basefont
+			font-size = 18
+font-size = 16 [$LINUX]
+font-size = 19 [$OSX]
+			
 			font-weight=600
 			font-style=normal
 		}
 		
 		bigtextlabel {
-			textcolor=secondarytext_onDarkBG
-			font-family=basefont
-			font-size=17
-			font-size=18 [$OSX]
+			textcolor=color__secondaryText__alternate
+			font-family=font__basefont
+			font-size = 17
+font-size = 15 [$LINUX]
+font-size = 18 [$OSX]
+			
 			font-style=normal
 		}
 		
 		throttleLabel {
-			textcolor=text_onDarkBG
-			font-family=basefont
-			font-size=18
-			font-size=19 [$OSX]
+			textcolor=color__text__alternate
+			font-family=font__basefont
+			font-size = 18
+font-size = 16 [$LINUX]
+font-size = 19 [$OSX]
+			
 			font-weight=600
 			font-style=normal
 		} 
 		
 		throttleValue {
-			textcolor=secondarytext_onDarkBG
-			font-family=basefont
-			font-size=17
-			font-size=18 [$OSX]
+			textcolor=color__secondaryText__alternate
+			font-family=font__basefont
+			font-size = 17
+font-size = 15 [$LINUX]
+font-size = 18 [$OSX]
+			
 			font-style=normal
 		}
 
 		NetGraphPanel {
 			bgcolor=none	
-			textcolor=dividers_OnDarkBG
+			textcolor=color__divider__alternate
 
 			render_bg {}
 			render {}
@@ -60,10 +70,13 @@
 		
 		DiscGraphPanel {
 			bgcolor=none	
-			textcolor=lime500
+			textcolor=color__graphLine
 
 			render_bg {}
-			render {}
+			render {
+				0 = "fill(x0, y0, x0+140, y1, color__submenuBackground)"
+				1 = "gradient_horizontal(x0+140,y0,x0+600,y1, color__submenuBackground, color__submenuBackground__transparent)"
+			}
 		}
 
 		DiskLegendPanel {
@@ -74,15 +87,17 @@
 		
 		NetLegendPanel {
 			render_bg {
-				0="fill(x0, y0, x1,y1, dividers_OnDarkBG)"
+				0="fill(x0, y0, x1,y1, color__divider__alternate)"
 			}
 		}
 
 		PauseButton {   
 			textcolor=white
-			font-family=mediumfont
-			font-size=18
-			font-size=19 [$OSX]
+			font-family=font__mediumfont
+			font-size = 18
+font-size = 16 [$LINUX]
+font-size = 19 [$OSX]
+			
 			font-weight=600
 			font-style=regular
 			inset-top=2
@@ -120,9 +135,11 @@
 			
 		ResumeButton {
 			textcolor=white
-			font-family=mediumfont
-			font-size=18
-			font-size=19 [$OSX]
+			font-family=font__mediumfont
+			font-size = 18
+font-size = 16 [$LINUX]
+font-size = 19 [$OSX]
+			
 			font-weight=600
 			font-style=regular
 			inset-top=2

@@ -3,8 +3,8 @@
 		FrameBRGripPanel {}
 
 		FrameMinimizeButton {
-			minimum-width=24
 			minimum-height=24
+			minimum-width=24
 
 			render_bg {
 				1="image(x0+7,y0+7,x1,y1, graphics/icons/window_controls/standard/minimize)"
@@ -28,8 +28,8 @@
 			}
 
 		FrameMaximizeButton {
-			minimum-width=24
 			minimum-height=24
+			minimum-width=24
 
 			render_bg {
 				1="image(x0+7,y0+7,x1,y1, graphics/icons/window_controls/standard/maximize)"
@@ -54,8 +54,8 @@
 
 
 		FrameRestoreButton {
-			minimum-width=24
 			minimum-height=24
+			minimum-width=24
 
 			render_bg {
 				1="image(x0+7,y0+7,x1,y1, graphics/icons/window_controls/standard/restore)"
@@ -79,8 +79,8 @@
 			}
 	
 		FrameCloseButton {
-			minimum-width=24
 			minimum-height=24
+			minimum-width=24
 
 			render_bg {
 				1="image(x0+7,y0+7,x1,y1, graphics/icons/window_controls/standard/close)"

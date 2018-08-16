@@ -3,9 +3,11 @@
 		URLLabel {		 
 			bgcolor=none
 			textcolor=blue500
-			font-family=mediumfont
-			font-size=16
-			font-size=17 [$OSX]
+			font-family=font__mediumfont
+			font-size = 16
+font-size = 14 [$LINUX]
+font-size = 17 [$OSX]
+			
 			font-weight=400
 			font-style=uppercase
 			inset-top=3
@@ -18,7 +20,7 @@
 				textcolor=blue300
 				
 				render_bg {
-					0="fill(x0,y0,x1,y1, dividers_onLightBG)"
+					0="fill(x0,y0,x1,y1, color__divider)"
 				}
 			}
 
@@ -34,7 +36,7 @@
 					textcolor=blue500
 
 					render_bg {
-						0="fill(x0,y0,x1,y1, dividers_onLightBG)"
+						0="fill(x0,y0,x1,y1, color__divider)"
 					}
 				}
 

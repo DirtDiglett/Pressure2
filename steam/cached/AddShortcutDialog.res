@@ -5,7 +5,7 @@
 				0="image_tiled(x0,y0+34,x1,y0+38, graphics/material/shadows/top)"
 			}
 			render_bg {
-				0="fill(x0,y0+34,x1,y0+44, customgreysecondary)"
+				0="fill(x0,y0+34,x1,y0+44, color__submenuBackground)"
 			}
 		}
 
@@ -14,7 +14,7 @@
 			padding-left=2
 
 			render_bg {
-				0="fill(x0,y0,x1,y1+1, customgreysecondary)"
+				0="fill(x0,y0,x1,y1+1, color__submenuBackground)"
 			}
 		}
 

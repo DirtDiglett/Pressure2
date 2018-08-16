@@ -2,13 +2,13 @@
 	styles {
 		Notification {
 			render_bg {
-				0="image(x0+11,y0+14,x1,y1, graphics/icon_toast_streaming)"
-				1="image(x1-83,y0+17,x1,y1, graphics/notifications/streaming)"
+				0 = "image(x0+11,y0+14,x1,y1, graphics/icon_toast_streaming)"
+				1 = "image(x1-83,y0+17,x1,y1, graphics/notifications/streaming)"
 			}
 		}
 
 		Label {
-			textcolor=secondaryText_onDarkBG
+			textcolor = color__secondaryText__alternate
 		}
 	}
 

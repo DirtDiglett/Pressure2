@@ -14,10 +14,12 @@ gameoverlay.styles {
 		}	
 		
 		detailsboxtitle {
-			textcolor=text_onDarkBG
-			font-size=28
-			font-size=29 [$OSX]
+			font-size = 28
+			font-size = 23 [$LINUX]
+			font-size = 29 [$OSX]
+			
 			font-style=normal
+			textcolor=color__text__alternate
 		}
 			    
 		"COverlaySettingsDialog PageTab" {
@@ -26,23 +28,23 @@ gameoverlay.styles {
 		}
 
 		 TooltipWindow {
-			bgcolor=customgreyprimary
-			textcolor=secondaryText_onDarkBG
+			bgcolor=color__TooltipBackground__alternate
+			textcolor=color__secondaryText__alternate
 			
 			render_bg {
-				0="fill(x0,y0,x0+1,y1, dividers_OnDarkBG)"
-				1="fill(x0+1,y0,x1-1,y0+1, dividers_OnDarkBG)"
-				2="fill(x1-1,y0,x1,y1, dividers_OnDarkBG)"
-				3="fill(x0+1,y1-1,x1-1,y1, dividers_OnDarkBG)"
+				0="fill(x0,y0,x0+1,y1, color__divider__alternate)"
+				1="fill(x0+1,y0,x1-1,y0+1, color__divider__alternate)"
+				2="fill(x1-1,y0,x1,y1, color__divider__alternate)"
+				3="fill(x0+1,y1-1,x1-1,y1, color__divider__alternate)"
 			}
 		}
 
 		"TooltipWindow Label" {
-			textcolor=secondaryText_OnDarkBG
+			textcolor=color__secondaryText__alternate
 		}
 		
 		tooltip_headline {
-			textcolor=text_OnDarkBG
+			textcolor=color__text__alternate
 		}
 	}
 }

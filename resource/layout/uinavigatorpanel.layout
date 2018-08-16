@@ -2,13 +2,14 @@
 	styles {
 		CUINavButton {
 			bgcolor=none
-			textcolor=text_onDarkBG			
-			font-family=mediumfont
-			font-size=21
-			font-size=22 [$OSX]
+			textcolor=color__text__alternate			
+			font-family=font__mediumfont
+			font-size = 21
+			font-size = 19 [$LINUX]
+			font-size = 22 [$OSX]
 			font-weight=400
 			font-style=outerglow
-			font-outerglow-color=disabled_OnLightBG
+			font-outerglow-color=color__mainNavOuterglow
 			font-outerglow-offset=1
 			font-outerglow-filtersize=5
 			inset-top=4
@@ -19,7 +20,7 @@
 			CUINavButton:hover {
 				textcolor=white
 				font-style=outerglow
-				font-outerglow-color="88 88 88 255"
+				font-outerglow-color=color__mainNavOuterglow__hover
 				font-outerglow-offset=1
 				font-outerglow-filtersize=5
 			}
@@ -33,20 +34,21 @@
 			}
 
 			CUINavButton:disabled {
-				textcolor=disabled_onDarkBG
+				textcolor=color__disabled__alternate
 			}
 			
 				CUINavButton:disabled:hover {
-					textcolor=disabled_onDarkBG
+					textcolor=color__disabled__alternate
 					font-style=normal
 				}
 		
 		NavLabel2 {
 			bgcolor=none
-			textcolor=secondaryText_onDarkBG
-			font-family=basefont
-			font-size=20
-			font-size=21 [$OSX]
+			textcolor=color__secondaryText__alternate
+			font-family=font__basefont
+			font-size = 20
+			font-size = 16 [$LINUX]
+			font-size = 21 [$OSX]
 			font-weight=400
 			font-style=normal
 			padding-left=10
@@ -58,7 +60,7 @@
 		}
 		
 			NavLabel2:hover {
-				textcolor=text_onDarkBG
+				textcolor=color__text__alternate
 				
 				render_bg {
 					0="image(x1-35, y0+21, x1, y1, graphics/icons/dropdown/hover/down)"
@@ -66,27 +68,29 @@
 			}
 			
 			NavLabel2:selected {
-				textcolor=text_onDarkBG
+				textcolor=color__text__alternate
 
 				render_bg {
-					0="fill(x0,y0,x1,y1, disabled_onDarkBG)"
+					0="fill(x0,y0,x1,y1, color__disabled__alternate)"
 					1="image(x1-35, y0+21, x1, y1, graphics/icons/dropdown/hover/down)"
 				}
 			}
 		
 		LibrarySearch {
-			bgcolor=custombackgroundprimary
-			textcolor=text_onLightBG
-			font-family=basefont
-			font-size=18
-			font-size=19 [$OSX]
+			bgcolor=color__textInputBackground
+			textcolor=color__text
+			font-family=font__basefont
+			font-size = 18
+font-size = 16 [$LINUX]
+font-size = 19 [$OSX]
+			
 			font-weight=400
 			inset-left=1
 			inset-top=0
 			padding-left=0
 			
 			render {
-				0="fill(x0-40,y1-1,x1,y1, dividers_onLightBG_solid)"
+				0="fill(x0-40,y1-1,x1,y1, color__divider__solid)"
 			}
 		}
 		
@@ -94,30 +98,30 @@
 			
 			LibrarySearch:empty {
 				font-style=italic
-				textcolor=disabled_onLightBG
+				textcolor=color__disabled
 			}
 
 				LibrarySearch:empty:hover {
-					textcolor=secondaryText_onLightBG
+					textcolor=color__secondaryText
 				}
 			
 			LibrarySearch:hover {
-				textcolor=text_onLightBG
+				textcolor=color__text
 			}
 			
 			LibrarySearch:disabled {
 				font-style=italic
-				textcolor=disabled_onLightBG
+				textcolor=color__disabled
 			}
 		
 		LibrarySearchIcon {
-			bgcolor=custombackgroundprimary
+			bgcolor=color__textInputBackground
 			textcolor=none
 			
 			render_bg {
-				-1="fill(x1,y0,x1+10,y1, custombackgroundprimary)"
+				-1="fill(x1,y0,x1+10,y1, color__textInputBackground)"
 				0="image(x0+14,y0+13,x1,y1, graphics/icons/search/standard)"
-				1="fill(x0,y1-1,x1+25,y1, dividers_onLightBG_solid)"
+				1="fill(x0,y1-1,x1+25,y1, color__divider__solid)"
 			}
 		}
 		
@@ -245,12 +249,12 @@
 			}
 		
 		zoomslider {
-			textcolor=secondaryText_OnDarkBG
+			textcolor=color__secondaryText__alternate
 			inset="0 -1 0 0"
 		}
 		
 			zoomslider:hover {
-				textcolor=text_OnDarkBG
+				textcolor=color__text__alternate
 			}
 		
 		MusicAddButton {
@@ -317,12 +321,12 @@
 		
 		// Acts as the background for the pageloadthrobber
 		Panel_transparent {
-			bgcolor=white
+			bgcolor=color__textInputBackground
 		}
 		
 		WebPanelStyle {
 			bgcolor=none
-			textcolor=text_onDarkBG
+			textcolor=color__text__alternate
 			inset="0 0 0 0"
 			
 			render {
@@ -333,21 +337,23 @@
 		}
 		
 		BroadcastPanelMinimized {
-			bgcolor=text_OnLightBG
-			textcolor=text_onDarkBG
+			bgcolor=color__text
+			textcolor=color__text__alternate
 			
 			render_bg {}
 		}
 		
 		TextEntryURL {
-			bgcolor=custombackgroundprimary
+			bgcolor=color__textInputBackground
 			selectedbgcolor=blue500
-			textcolor=text_onLightBG
+			textcolor=color__text
 			selectedtextcolor=white
-			shadowtextcolor=disabled_onLightBG
-			font-family=basefont
-			font-size=18
-			font-size=19 [$OSX]
+			shadowtextcolor=color__disabled
+			font-family=font__basefont
+			font-size = 18
+font-size = 16 [$LINUX]
+font-size = 19 [$OSX]
+			
 			font-weight=400
 			inset-left=8
 			inset-top=0
@@ -368,9 +374,11 @@
 		LabelEVCert {
 			bgcolor=lime500
 			textcolor=grey900
-			font-family=basefont
-			font-size=15
-			font-size=16 [$OSX]
+			font-family=font__basefont
+			font-size = 15
+font-size = 12 [$LINUX]
+font-size = 16 [$OSX]
+			
 			font-weight=400
 			inset-left=4
 			inset-top=0

@@ -1,0 +1,63 @@
+"resource/layout/accountmenu.layout" {	
+	styles {
+		AccountMenuStyle {
+			bgcolor=color__menuBackground
+
+			render_bg {
+				1="fill( x0 + 1, y0, x1 - 1, y0 + 1, color__menuBorder )"  // top
+				2="fill( x0 + 1, y1 - 1, x1 - 1, y1, color__menuBorder )"  // bottom
+				3="fill( x0, y0 + 1, x0 + 1, y1 - 1, color__menuBorder )"  // left
+				4="fill( x1 - 1, y0 + 1, x1, y1 - 1, color__menuBorder )"  // right
+			}
+		}
+	
+		account_menu_button {
+			bgcolor = none
+			font-family = font__basefont			
+			font-size = 17
+			font-size = 15 [$LINUX]
+			font-size = 18 [$OSX]
+			font-style = ""
+			
+			font-weight = 400
+			inset = "0 0 0 0"
+			padding-left = 6
+					
+			textcolor = color__menuText
+			
+			render_bg {}
+		}
+
+			account_menu_button:hover {
+				textcolor = color__menuText__hover
+				bgcolor = color__menuTextBackground__hover
+			}
+
+			account_menu_button:selected {
+				textcolor = color__menuText__hover
+				bgcolor = color__menuTextBackground__hover
+			}
+		
+		account_menu_label {
+			font-family = font__basefont			
+			font-size = 17
+			font-size = 15 [$LINUX]
+			font-size = 18 [$OSX]
+			padding-right = 6
+			textcolor = color__secondaryText
+
+			render_bg {}
+		}			
+	}
+	
+	layout {
+		place {
+			control="view_profile_button,view_account_button,change_user_button,view_preferences_button,view_wallet_button"
+			align=left
+			dir=down
+			width=max
+			height=24
+			spacing=2
+		}
+	}
+}

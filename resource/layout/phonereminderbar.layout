@@ -7,33 +7,37 @@
 			bgcolor=amber500
 
 			render {
-				0="fill(x0,y1-1,x1,y1, dividers_onLightBG)"
+				0="fill(x0,y1-1,x1,y1, color__divider)"
 			}
 			render_bg {}
 		}
 
 		Label {
-			textcolor=text_onLightBG
-			font-family=mediumfont
+			textcolor=color__text
+			font-family=font__mediumfont
 			font-size=24
-			font-size=25 [$OSX]
+			
 			font-style=normal
 		}
 		
 		soft {			
-			textcolor=secondaryText_onLightBG
-			font-family=mediumfont
-			font-size=20
-			font-size=21 [$OSX]
+			textcolor=color__secondaryText
+			font-family=font__mediumfont
+			font-size = 20
+font-size = 16 [$LINUX]
+font-size = 21 [$OSX]
+			
 			font-style=normal
 		}
 
 		URLLabel {		 
 			bgcolor=none
 			textcolor=blue500
-			font-family=mediumfont
-			font-size=16
-			font-size=17 [$OSX]
+			font-family=font__mediumfont
+			font-size = 16
+font-size = 14 [$LINUX]
+font-size = 17 [$OSX]
+			
 			font-weight=400
 			font-style=uppercase
 			inset-left=4
@@ -46,12 +50,12 @@
 				textcolor=blue300
 				
 				render_bg {
-					0="fill(x0,y0,x1,y1, dividers_onLightBG)"
+					0="fill(x0,y0,x1,y1, color__divider)"
 				}
 			}
 
 			URLLabel:disabled {
-				textcolor=disabled_onLightBG
+				textcolor=color__disabled
 				bgcolor=none
 				
 				render_bg {}

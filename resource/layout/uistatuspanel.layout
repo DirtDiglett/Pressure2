@@ -1,19 +1,23 @@
 "resource/layout/uistatuspanel.layout" {	
 	styles {
 		StatusLabel {
-			textcolor=text_onDarkBG
-			font-family=basefont
-			font-size=18
-			font-size=19 [$OSX]
+			textcolor=color__text__alternate
+			font-family=font__basefont
+			font-size = 18
+font-size = 16 [$LINUX]
+font-size = 19 [$OSX]
+			
 			font-style=normal
 			inset-top=-2
 		}
 		
 		StatusLabelDim {
-			textcolor=secondarytext_onDarkBG
-			font-family=basefont
-			font-size=16
-			font-size=17 [$OSX]
+			textcolor=color__secondaryText__alternate
+			font-family=font__basefont
+			font-size = 16
+font-size = 14 [$LINUX]
+font-size = 17 [$OSX]
+			
 			font-style=normal
 		}
 		

@@ -8,24 +8,30 @@
 		}
 		
 		AlbumOrArtistListStyle {
-			bgcolor=custombackgroundprimary
-			font-size=16
-			font-size=17 [$OSX]
+			bgcolor=color__background
+			font-size = 16
+font-size = 14 [$LINUX]
+font-size = 17 [$OSX]
+			
 			padding-left=4
 			padding-right=25
 			inset="0 0 0 0"
 		}
 		
 		EmptyDatabaseText {
-			textcolor=disabled_onLightBG
-			font-size=15
-			font-size=16 [$OSX]
+			textcolor=color__disabled
+			font-size = 15
+font-size = 12 [$LINUX]
+font-size = 16 [$OSX]
+			
 		}
 		
 		CrawlingText {
-			textcolor=disabled_onLightBG
-			font-size=15
-			font-size=16 [$OSX]
+			textcolor=color__disabled
+			font-size = 15
+font-size = 12 [$LINUX]
+font-size = 16 [$OSX]
+			
 		}
 		
 		CMusicPage_Details_Content {
@@ -34,8 +40,10 @@
 		}
 		
 		"MusicPage_Details_Content ListPanel" {
-			font-size=15
-			font-size=16 [$OSX]		
+			font-size = 15
+font-size = 12 [$LINUX]
+font-size = 16 [$OSX]
+					
 			padding-left=4
 			padding-right=2
 			inset="0 0 -1 0"
@@ -50,7 +58,7 @@
 
 			render {}
 			render_bg {
-				0="fill(x1-1,y0,x1,y1, dividers_onLightBG)"
+				0="fill(x1-1,y0,x1,y1, color__divider)"
 			} 
 		}
 		
@@ -71,8 +79,10 @@
 
 		"MusicPage_Details_Content ListPanelColumnHeader" {
 			bgcolor=none
-			font-size=14
-			font-size=15 [$OSX]
+			font-size = 14
+font-size = 12 [$LINUX]
+font-size = 15 [$OSX]
+			
 			inset="0 0 0 0"
 
 			render {}
@@ -91,9 +101,11 @@
 		}
 		
 		"ListPanel RichText" {
-			textcolor=disabled_onLightBG
-			font-size=15
-			font-size=16 [$OSX]
+			textcolor=color__disabled
+			font-size = 15
+font-size = 12 [$LINUX]
+font-size = 16 [$OSX]
+			
 		}
 	}
 

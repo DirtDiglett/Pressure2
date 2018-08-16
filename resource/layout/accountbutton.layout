@@ -1,0 +1,142 @@
+"resource/layout/accountbutton.layout" {
+	styles {
+		AccountPersonaStyleOffline {
+			textcolor=Friends.OfflineColor
+			font-size = 0
+
+			render_bg {
+				0="fill(x0+2,y0+2,x1-2,y1-2, Friends.OfflineColor)"
+				1="image(x0-3,y1-2,x0+2,y1+4, graphics/material/buttons/gray/bottomleft)"
+				2="image_tiled(x0+2,y1-2,x1-2,y1+4, graphics/material/buttons/gray/bottommiddle)"
+				3="image(x1-2,y1-2,x1+3,y1+2, graphics/material/buttons/gray/bottomright)"
+				4="image_tiled(x0-3,y0+2,x0+2,y1-2, graphics/material/buttons/gray/leftmiddle)"
+				5="image_tiled(x1-2,y0+2,x1+3,y1-2, graphics/material/buttons/gray/rightmiddle)"
+				6="image(x0-3,y0-2,x0+2,y0+2, graphics/material/buttons/gray/topleft)"
+				7="image_tiled(x0+2,y0-2,x1-2,y0+2, graphics/material/buttons/gray/topmiddle)"
+				8="image(x1-2,y0-2,x1+3,y0+2, graphics/material/buttons/gray/topright)"
+				9="image(x1-23, y0+18, x1, y1, graphics/icons/dropdown/standard/down)"
+			}
+		}
+
+		AccountPersonaStyleOnline {
+			textcolor=Friends.OnlineColor
+			font-size = 0
+
+			render_bg {
+				0="fill(x0+2,y0+2,x1-2,y1-2, blue500)"
+				1="image(x0-3,y1-2,x0+2,y1+4, graphics/material/buttons/blue/bottomleft)"
+				2="image_tiled(x0+2,y1-2,x1-2,y1+4, graphics/material/buttons/blue/bottommiddle)"
+				3="image(x1-2,y1-2,x1+3,y1+2, graphics/material/buttons/blue/bottomright)"
+				4="image_tiled(x0-3,y0+2,x0+2,y1-2, graphics/material/buttons/blue/leftmiddle)"
+				5="image_tiled(x1-2,y0+2,x1+3,y1-2, graphics/material/buttons/blue/rightmiddle)"
+				6="image(x0-3,y0-2,x0+2,y0+2, graphics/material/buttons/blue/topleft)"
+				7="image_tiled(x0+2,y0-2,x1-2,y0+2, graphics/material/buttons/blue/topmiddle)"
+				8="image(x1-2,y0-2,x1+3,y0+2, graphics/material/buttons/blue/topright)"
+				9="image(x1-23, y0+18, x1, y1, graphics/icons/dropdown/standard/down)"
+			}
+		}
+
+		AccountPersonaStyleInGame {
+			textcolor=Friends.InGameColor
+			font-size = 0
+
+			render_bg {
+				0="fill(x0+2,y0+2,x1-2,y1-2, limeA400)"
+				1="image(x0-3,y1-2,x0+2,y1+4, graphics/material/buttons/lime/bottomleft)"
+				2="image_tiled(x0+2,y1-2,x1-2,y1+4, graphics/material/buttons/lime/bottommiddle)"
+				3="image(x1-2,y1-2,x1+3,y1+2, graphics/material/buttons/lime/bottomright)"
+				4="image_tiled(x0-3,y0+2,x0+2,y1-2, graphics/material/buttons/lime/leftmiddle)"
+				5="image_tiled(x1-2,y0+2,x1+3,y1-2, graphics/material/buttons/lime/rightmiddle)"
+				6="image(x0-3,y0-2,x0+2,y0+2, graphics/material/buttons/lime/topleft)"
+				7="image_tiled(x0+2,y0-2,x1-2,y0+2, graphics/material/buttons/lime/topmiddle)"
+				8="image(x1-2,y0-2,x1+3,y0+2, graphics/material/buttons/lime/topright)"
+				9="image(x1-23, y0+18, x1, y1, graphics/icons/dropdown/standard/down)"
+			}
+		}
+		
+		AccountDropDownStyleOffline {
+			render_bg	{}
+		}
+		
+		AccountDropDownStyleOnline {
+			render_bg {}
+		}
+		
+		AccountDropDownStyleInGame {
+			render_bg	{}
+		}
+
+		AccountButtonStyle {
+			render_bg {}
+		}
+
+			AccountButtonStyle:hover {
+				render_bg {}
+			}
+
+			AccountButtonStyle:focus {
+				render_bg {}
+			}
+
+			AccountButtonStyle:focus:hover {
+				render_bg {}
+			}
+
+			AccountButtonStyle:active {
+				render_bg {}
+			}
+
+		AccountBalanceStyle {
+			textcolor=orange500
+			font-family=font__basefont
+			font-size = 14
+			font-size = 12 [$LINUX]
+			font-size = 15 [$OSX]
+			
+			font-weight=400
+			font-style=normal
+		}
+		
+			AccountBalanceStyle:hover {
+				textcolor=orange300
+			}
+		
+
+		// Leave this empty, this is the overlay that makes the whole thing a 'button'.
+		AccountMenuButtonStyle {
+			render_bg {}
+		}
+	}
+
+	layout {
+		place {
+			control=account_balance,account_drop_down
+			width=0
+			height=0
+		}
+
+		place {
+			control=account_menu_button
+			align=left
+			height=max
+			width=68
+		} // span over everything
+
+		place {
+			control=account_avatar
+			align=left
+			height=24
+			width=24
+			y=8
+			x=8
+		}
+
+		place {
+			control=account_persona
+			width=68
+			height=max
+			x=0
+			y=0
+		}
+	}
+}

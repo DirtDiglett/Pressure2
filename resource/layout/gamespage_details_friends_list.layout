@@ -13,9 +13,11 @@
 	styles {
 		friendlabelmore {
 			textcolor=white
-			font-family=mediumfont
-			font-size=16
-			font-size=17 [$OSX]
+			font-family=font__mediumfont
+			font-size = 16
+font-size = 14 [$LINUX]
+font-size = 17 [$OSX]
+			
 			font-weight=600
 			font-style=regular
 			inset-top=2
@@ -52,9 +54,11 @@
 			}	  
 		 
 		infolabel {
-			textcolor=secondaryText_OnLightBG
-			font-size=18
-			font-size=19 [$OSX]
+			textcolor=color__secondaryText
+			font-size = 18
+font-size = 16 [$LINUX]
+font-size = 19 [$OSX]
+			
 		}	
 	}
 

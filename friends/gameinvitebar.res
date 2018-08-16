@@ -40,9 +40,11 @@
 
 		Label {
 			textcolor=white
-			font-family=mediumfont
-			font-size=16
-			font-size=17 [$OSX]
+			font-family=font__mediumfont
+			font-size = 16
+font-size = 14 [$LINUX]
+font-size = 17 [$OSX]
+			
 		}
 	}
 

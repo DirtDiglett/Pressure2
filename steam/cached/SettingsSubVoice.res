@@ -2,17 +2,17 @@
 	styles {
 		CSettingsSubVoice {
 			render {
-				0="fill(x0+70,y0+10,x1,y0+47, custombackgroundnofocustransparent)"
-				1="fill(x0+70,y0+179,x0+300,y0+218, custombackgroundnofocustransparent)"
-				2="fill(x0+70,y0+280,x1,y0+300, custombackgroundnofocustransparent)"
-				3="fill(x0+70,y0+330,x1,y0+366, custombackgroundnofocustransparent)"
+				0="fill(x0+70,y0+10,x1,y0+47, color__backgroundOverlay__secondary)"
+				1="fill(x0+70,y0+179,x0+300,y0+218, color__backgroundOverlay__secondary)"
+				2="fill(x0+70,y0+280,x1,y0+300, color__backgroundOverlay__secondary)"
+				3="fill(x0+70,y0+330,x1,y0+366, color__backgroundOverlay__secondary)"
 			}
 
 			render [$OSX] {
-				0="fill(x0+70,y0+10,x1,y0+47, custombackgroundnofocustransparent)"
-				1="fill(x0+70,y0+145,x0+300,y0+184, custombackgroundnofocustransparent)"
-				2="fill(x0+70,y0+246,x1,y0+266, custombackgroundnofocustransparent)"
-				3="fill(x0+70,y0+296,x1,y0+332, custombackgroundnofocustransparent)"
+				0="fill(x0+70,y0+10,x1,y0+47, color__backgroundOverlay__secondary)"
+				1="fill(x0+70,y0+145,x0+300,y0+184, color__backgroundOverlay__secondary)"
+				2="fill(x0+70,y0+246,x1,y0+266, color__backgroundOverlay__secondary)"
+				3="fill(x0+70,y0+296,x1,y0+332, color__backgroundOverlay__secondary)"
 			}
 
 			render_bg {
@@ -28,17 +28,17 @@
 
 			CSettingsSubVoice:framefocus {
 				render {
-					0="fill(x0+70,y0+10,x1,y0+47, custombackgroundprimarytransparent)"
-					1="fill(x0+70,y0+179,x0+300,y0+218, custombackgroundprimarytransparent)"
-					2="fill(x0+70,y0+280,x1,y0+300, custombackgroundprimarytransparent)"
-					3="fill(x0+70,y0+330,x1,y0+366, custombackgroundprimarytransparent)"
+					0="fill(x0+70,y0+10,x1,y0+47, color__backgroundOverlay)"
+					1="fill(x0+70,y0+179,x0+300,y0+218, color__backgroundOverlay)"
+					2="fill(x0+70,y0+280,x1,y0+300, color__backgroundOverlay)"
+					3="fill(x0+70,y0+330,x1,y0+366, color__backgroundOverlay)"
 				}
 
 				render [$OSX] {
-					0="fill(x0+70,y0+10,x1,y0+47, custombackgroundprimarytransparent)"
-					1="fill(x0+70,y0+145,x0+300,y0+184, custombackgroundprimarytransparent)"
-					2="fill(x0+70,y0+246,x1,y0+266, custombackgroundprimarytransparent)"
-					3="fill(x0+70,y0+296,x1,y0+332, custombackgroundprimarytransparent)"
+					0="fill(x0+70,y0+10,x1,y0+47, color__backgroundOverlay)"
+					1="fill(x0+70,y0+145,x0+300,y0+184, color__backgroundOverlay)"
+					2="fill(x0+70,y0+246,x1,y0+266, color__backgroundOverlay)"
+					3="fill(x0+70,y0+296,x1,y0+332, color__backgroundOverlay)"
 				}
 			}
 	}

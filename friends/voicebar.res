@@ -4,23 +4,25 @@
 		voice_image {}
 
 		CVoiceBar {
-			bgcolor=customgreysecondary
+			bgcolor=color__submenuBackground
 
 			render {
-				0="fill(x0,y1-1,x1,y1, dividers_onLightBG)"
+				0="fill(x0,y1-1,x1,y1, color__divider)"
 			}
 
 			render_bg {
-				-1="fill(x1,y0,x1+50,y1, customgreysecondary)"
+				-1="fill(x1,y0,x1+50,y1, color__submenuBackground)"
 				0="image(x0+11,y0+12,x1,y1, graphics/invitebars/voice)"
 			}
 		}
 
 		status_label {
-			textcolor=text_onDarkBG
-			font-family=mediumfont
-			font-size=15
-			font-size=16 [$OSX]
+			textcolor=color__text__alternate
+			font-family=font__mediumfont
+			font-size = 15
+font-size = 12 [$LINUX]
+font-size = 16 [$OSX]
+			
 		}
 	}
 	

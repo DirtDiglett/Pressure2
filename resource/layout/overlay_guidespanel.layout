@@ -5,10 +5,12 @@
 
 		Button {
 			textcolor=lightblue300
-			font-family=mediumfont
+			font-family=font__mediumfont
 			font-weight=800
-			font-size=20
-			font-size=21 [$OSX]
+			font-size = 20
+font-size = 16 [$LINUX]
+font-size = 21 [$OSX]
+			
 			font-weight=400
 			font-style=normal
 			padding-left=57
@@ -38,9 +40,11 @@
 		}
 
 		highlight {
-			textcolor=text_onDarkBG
-			font-size=17
-			font-size=18 [$OSX]
+			textcolor=color__text__alternate
+			font-size = 17
+font-size = 15 [$LINUX]
+font-size = 18 [$OSX]
+			
 		}
 	}
 	

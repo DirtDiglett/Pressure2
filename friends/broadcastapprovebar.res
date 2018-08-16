@@ -1,7 +1,7 @@
 "friends/broadcastapprovebar.res" {
 	styles {
 		CBroadcastApproveBar {
-			bgcolor=orange500
+			bgcolor=color__CBroadcastApproveBarBackground
 
 			render {
 				1="image_tiled(x0,y1,x1,y1+4, graphics/material/shadows/top)"
@@ -39,37 +39,41 @@
 			}
 
 		Label {
-			textcolor=white
-			font-family=mediumfont
-			font-size=16
-			font-size=17 [$OSX]
+			font-family=font__mediumfont
+			font-size = 16
+font-size = 14 [$LINUX]
+font-size = 17 [$OSX]
+			
+			textcolor=color__chatBarLabel
 		}
 		
 		URLLabel {		 
 			bgcolor=none
-			textcolor=blue500
-			font-family=mediumfont
-			font-size=16
-			font-size=17 [$OSX]
-			font-weight=400
+			font-family=font__mediumfont
+			font-size = 16
+font-size = 14 [$LINUX]
+font-size = 17 [$OSX]
+			
 			font-style=uppercase
+			font-weight=400
 			inset-left=4
 			inset-top=3
+			textcolor=color__buttonText
 			
 			render_bg {}
 		}
 
 			URLLabel:Hover {
-				textcolor=blue300
+				textcolor=color__buttonText__hover
 				
 				render_bg {
-					0="fill(x0,y0,x1,y1, dividers_onLightBG)"
+					0="fill(x0,y0,x1,y1, color__buttonBackground__hover)"
 				}
 			}
 
 			URLLabel:disabled {
 				bgcolor=none
-				textcolor=disabled_onLightBG
+				textcolor=color__disabled
 				
 				render_bg {}
 			}
@@ -77,14 +81,14 @@
 
 			URLLabel:focus {
 				bgcolor=none
-				textcolor=blue500
+				textcolor=color__buttonText
 
 				render_bg {}
 			}
 
 			URLLabel:active {
-				bgcolor=blue500transparent
-				textcolor=blue500
+				bgcolor=color__buttonBackground__active
+				textcolor=color__buttonText__hover
 
 				render_bg {}
 			}

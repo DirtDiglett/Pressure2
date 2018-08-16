@@ -1,10 +1,12 @@
 "resource/layout/gamespage_grid_loadfailed.layout" {
 	styles {
 		GamesGridPlaceholder {
-			textcolor=text_onLightBG
-			font-family=basefont
-			font-size=18
-			font-size=19 [$OSX]
+			textcolor=color__text
+			font-family=font__basefont
+			font-size = 18
+font-size = 16 [$LINUX]
+font-size = 19 [$OSX]
+			
 			font-weight=600
 		}
 
@@ -20,7 +22,7 @@
 		}
 
 		"GameItem_installed GamesGridPlaceholder" {
-			textcolor=text_onLightBG
+			textcolor=color__text
 		}
 	}
 

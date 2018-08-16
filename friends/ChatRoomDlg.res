@@ -1,19 +1,21 @@
 "friends/ChatRoomDlgFriend.res" {
 	styles {
 		Label {
-			textcolor=disabled_onLightBG
-			font-size=14
-			font-size=15 [$OSX]
+			textcolor=color__disabled
+			font-size = 14
+font-size = 12 [$LINUX]
+font-size = 15 [$OSX]
+			
 		}
 
 		CChatRoomDlg {
 			render {
-				0="fill(x0,y1-76,x1,y1-75, grey200)"
+				0="fill(x0,y1-76,x1,y1-75, color__textInputBackground)"
 				1="image_tiled(x0,y0+57,x1,y0+61, graphics/material/shadows/top)"
 			}
 			render_bg {
-				0="fill(x0,y0+55,x1,y0+57, customgreysecondary)"
-				1="fill(x0,y1-75,x1,y1, white)"
+				0="fill(x0,y0+55,x1,y0+57, color__submenuBackground)"
+				1="fill(x0,y1-75,x1,y1, color__textInputBackground)"
 			}
 		}
 
@@ -32,7 +34,7 @@
 			}
 
 			render_bg {
-				0="fill(x0,y0-19,x1+14,y1+19, customgreysecondary)"
+				0="fill(x0,y0-19,x1+14,y1+19, color__submenuBackground)"
 			}
 		}
 
@@ -76,9 +78,9 @@
 
 		EmoticonMenuItemStyle {
 			bgcolor=none
-			textcolor=text_onLightBG
+			textcolor=color__text
 			font-size=24
-			font-size=25 [$OSX]
+			
 			inset="-3 -1 0 0"
 			padding-left=0
 			padding-right=0
@@ -86,7 +88,7 @@
 		
 			EmoticonMenuItemStyle:hover {
 				bgcolor=none
-				textcolor=secondarytext_onLightBG				
+				textcolor=color__secondaryText				
 
 				render_bg {
 					0="fill(x0,y0,x1,y1, blue500)"
@@ -95,7 +97,7 @@
 		
 			EmoticonMenuItemStyle:selected {
 				bgcolor=none
-				textcolor=secondaryText_onLightBG
+				textcolor=color__secondaryText
 			}  
 
 		CChatActionsButton {
@@ -121,12 +123,14 @@
 			}
 
 		GridMenu {
-			font-size=16
-			font-size=17 [$OSX]
+			font-size = 16
+			font-size = 14 [$LINUX]
+			font-size = 17 [$OSX]
+						
 		}
 
 		SectionedListPanelInterior {
-			bgcolor=white
+			bgcolor=color__sectionListPanelBackground
 
 			render {}
 			render_bg {}
@@ -134,14 +138,14 @@
 
 		CFriendsListSectionHeader {
 	    	inset="0 0 0 0"
-	        textcolor=text_onLightBG
-			font-style=regular
-			font-family=mediumfont
+	      textcolor=color__text
+				font-style=regular
+				font-family=font__mediumfont
 
 	        render_bg {
-	            0="fill(x0,y0,x1,y1, white)"
-	            1="fill(x0-2,y0-1,x1,y0, dividers_onLightBG_solid)"
-	            2="fill(x0-2,y1,x1,y1+1, dividers_onLightBG_solid)"
+	            0="fill(x0,y0,x1,y1, color__sectionHeadingBackground)"
+	            1="fill(x0-2,y0-1,x1,y0, color__divider__solid)"
+	            2="fill(x0-2,y1,x1,y1+1, color__divider__solid)"
 	        }    
 	    }
 
@@ -154,43 +158,45 @@
 
 		  render {}
 		  render_bg {
-			0="fill(x0,y0-1,x1+2,y0, dividers_onLightBG_solid)"
-			1="fill(x0,y1,x1+2,y1+1, dividers_onLightBG_solid)"
+			0="fill(x0,y0-1,x1+2,y0, color__divider__solid)"
+			1="fill(x0,y1,x1+2,y1+1, color__divider__solid)"
 			2="image(x0+14,y0+6,x1,y1, graphics/icons/dropdown/standard/down_dark)"
 		  }
 		}
 
 		  SectionedListPanelCollapser:hover {
 			render_bg {
-			  0="fill(x0,y0-1,x1+2,y0, dividers_onLightBG_solid)"
-			  1="fill(x0,y1,x1+2,y1+1, dividers_onLightBG_solid)"
+			  0="fill(x0,y0-1,x1+2,y0, color__divider__solid)"
+			  1="fill(x0,y1,x1+2,y1+1, color__divider__solid)"
 			  2="image(x0+14,y0+6,x1,y1, graphics/icons/dropdown/hover/down_dark)"
 			}
 		  }
 
 		  SectionedListPanelCollapser:selected {
 			render_bg {
-			  0="fill(x0,y0-1,x1+2,y0, dividers_onLightBG_solid)"
-			  1="fill(x0,y1,x1+2,y1+1, dividers_onLightBG_solid)"
+			  0="fill(x0,y0-1,x1+2,y0, color__divider__solid)"
+			  1="fill(x0,y1,x1+2,y1+1, color__divider__solid)"
 			  2="image(x0+14,y0+6,x1,y1, graphics/icons/dropdown/standard/up_dark)"
 			}
 		  }
 
 			SectionedListPanelCollapser:selected:hover {
 			  render_bg {
-				0="fill(x0,y0-1,x1+2,y0, dividers_onLightBG_solid)"
-				1="fill(x0,y1,x1+2,y1+1, dividers_onLightBG_solid)"
+				0="fill(x0,y0-1,x1+2,y0, color__divider__solid)"
+				1="fill(x0,y1,x1+2,y1+1, color__divider__solid)"
 				2="image(x0+14,y0+6,x1,y1, graphics/icons/dropdown/hover/up_dark)"
 			  }
 			}
 
 		RichText {
 			selectedbgcolor=blue500
-			textcolor=disabled_OnLightBG
+			textcolor=color__disabled
 			selectedtextcolor=white
-			font-family=basefont
-			font-size=17
-			font-size=18 [$OSX]
+			font-family=font__basefont
+			font-size = 17
+font-size = 15 [$LINUX]
+font-size = 18 [$OSX]
+			
 			font-weight=400
 		}
 	}

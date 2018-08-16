@@ -15,7 +15,7 @@
 				1="image_tiled(x0-12, y1+2, x1, y1+6, graphics/material/shadows/bottom)"
 			}
 			render_bg {
-				-1="fill(x0-12,y0-15,x1,y1+6, workshopblue)"
+				-1="fill(x0-12,y0-15,x1,y1+6, color__workshop)"
 				0="image(x0-12,y0-15,x1,y1, graphics/workshopbg)"
 			}
 		}

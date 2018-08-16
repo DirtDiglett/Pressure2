@@ -1,0 +1,75 @@
+"resource/layout/settingssubstreaming_pin.layout" {
+	styles {
+		CSettingsSubStreamingPIN {	
+			minimum-width=476
+			minimum-height=280
+
+			render {
+				0="fill(x0,y1-58,x1,y1-57, color__divider)"
+			}
+			render_bg {
+				1="image(x0+26,y0+61,x1,y1, graphics/icons/key/key)"
+			}
+		}
+
+		Password {}
+		
+		Description {}
+
+		Key {}
+	}
+	
+	layout {
+		place {
+			control="KeyImage"
+			width=0
+			height=0
+		}
+
+		region {
+			name=buttons
+			align=bottom
+			width=max
+			height=58
+		}
+
+		region {
+			name=keyzone
+			x=82
+			y=34
+			width=max
+			height=114
+			margin-right=29
+		}
+
+		place {
+			control=Description
+			region=keyzone
+			dir=down
+			y=28
+			width=max
+			spacing=2
+		}
+
+		place {
+			control=PIN1,PIN2
+			start=Description
+			dir=down
+			y=16
+			width=340
+			height=34
+			spacing=16
+		}		
+
+		place {
+			control=OK,Cancel
+			region=buttons
+			align=right
+			width=92
+			height=34
+			margin-top=12
+			margin-right=11
+			spacing=12
+		}
+	}
+}

@@ -10,10 +10,12 @@
 		}		
 		
 		MusicListPanelInterior {
-			bgcolor=custombackgroundprimary
-			textcolor=text_onLightBG
-			font-size=15
-			font-size=16 [$OSX]
+			bgcolor=color__sectionListPanelBackground
+			textcolor=color__text
+			font-size = 15
+font-size = 12 [$LINUX]
+font-size = 16 [$OSX]
+			
 			inset-top=-1
 			
 			render {}
@@ -32,10 +34,12 @@
 		}
 
 		StatusStyle	{
-			textcolor=text_onLightBG
-			font-family=mediumfont
-			font-size=15
-			font-size=16 [$OSX]
+			textcolor=color__text
+			font-family=font__mediumfont
+			font-size = 15
+font-size = 12 [$LINUX]
+font-size = 16 [$OSX]
+			
 		}
 
 		PlayButtonStyle {
@@ -219,17 +223,21 @@
 			}
 
 		StatusStyleDim {
-			textcolor=disabled_onLightBG
-			font-family=basefont
-			font-size=15
-			font-size=16 [$OSX]
+			textcolor=color__disabled
+			font-family=font__basefont
+			font-size = 15
+font-size = 12 [$LINUX]
+font-size = 16 [$OSX]
+			
 		}
 
 		InfoLabelStyle {
-			textcolor=disabled_onLightBG
-			font-family=basefont
-			font-size=15
-			font-size=16 [$OSX]
+			textcolor=color__disabled
+			font-family=font__basefont
+			font-size = 15
+font-size = 12 [$LINUX]
+font-size = 16 [$OSX]
+			
 		}
 
 		NoTracksLabelStyle	{
@@ -239,9 +247,11 @@
 		
 		SeekBarStyle {
 			bgcolor=none
-			font-family=basefont
-			font-size=16
-			font-size=17 [$OSX]
+			font-family=font__basefont
+			font-size = 16
+font-size = 14 [$LINUX]
+font-size = 17 [$OSX]
+			
 		}
 	}
 	

@@ -1,32 +1,15 @@
 "Steam/cached/AccountPage.res" {
 	styles {
 		CAccountPage {
-			render {
-				0="fill(x0+70,y0+20,x0+396,y0+45, custombackgroundnofocustransparent)"
-				1="fill(x0+70,y0+120,x0+396,y0+147, custombackgroundnofocustransparent)"
-				2="fill(x0+70,y0+216,x0+396,y0+247, custombackgroundnofocustransparent)"
-				3="fill(x0+70,y0+280,x0+396,y0+311, custombackgroundnofocustransparent)"
-				4="fill(x0+70,y0+426,x0+396,y0+451, custombackgroundnofocustransparent)"
-			}
 			render_bg {
-				0="fill(x0+71,y0+113,x1,y0+114, dividers_onLightBG)"
-				1="fill(x0+71,y0+213,x1,y0+214, dividers_onLightBG)"
-				2="fill(x0+71,y0+278,x1,y0+279, dividers_onLightBG)"
+				0="fill(x0+71,y0+113,x1,y0+114, color__divider)"
+				1="fill(x0+71,y0+213,x1,y0+214, color__divider)"
+				2="fill(x0+71,y0+278,x1,y0+279, color__divider)"
 				3="image(x0+26,y0+27,x1,y1, graphics/icons/settings/account)"
 				4="image(x0+26,y0+127,x1,y1, graphics/icons/settings/email)"
 				5="image(x0+26,y0+227,x1,y1, graphics/icons/settings/vac)"
 				6="image(x0+26,y0+290,x1,y1, graphics/icons/settings/security)"
 				7="image(x0+26,y0+431,x1,y1, graphics/icons/settings/beta)"
-			}
-		}
-
-		CAccountPage:framefocus {
-			render {
-				0="fill(x0+70,y0+20,x0+396,y0+45, custombackgroundprimarytransparent)"
-				1="fill(x0+70,y0+120,x0+396,y0+147, custombackgroundprimarytransparent)"
-				2="fill(x0+70,y0+216,x0+396,y0+247, custombackgroundprimarytransparent)"
-				3="fill(x0+70,y0+280,x0+396,y0+311, custombackgroundprimarytransparent)"
-				4="fill(x0+70,y0+426,x0+396,y0+451, custombackgroundprimarytransparent)"
 			}
 		}
 	}
@@ -144,7 +127,7 @@
 			start=NoPersonalInfoCheck
 			dir=down
 			y=3
-			width=350
+			width=400
 			height=34
 		}
 

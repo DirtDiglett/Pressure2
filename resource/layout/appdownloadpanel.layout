@@ -7,7 +7,7 @@
 			minimum-height=139
 			
 			render_bg {
-				0="fill(x0,y0-1, x1, y0, dividers_onLightBG)"
+				0="fill(x0,y0-1, x1, y0, color__divider)"
 			}
 		}
 		
@@ -34,9 +34,11 @@
 		DetailsLaunchButton {
 			bgcolor=none
 			textcolor="lightgreen900"
-			font-family=mediumfont
-			font-size=20
-			font-size=21 [$OSX]
+			font-family=font__mediumfont
+			font-size = 20
+font-size = 16 [$LINUX]
+font-size = 21 [$OSX]
+			
 			font-weight=600
 			font-style=uppercase
 			inset="65 0 0 0"
@@ -45,7 +47,7 @@
 			
 			render {}
 			render_bg {
-				0="fill(x0,y0,x1,y1, limeA400transparent)"
+				0="fill(x0,y0,x1,y1, limeA400__26opacity)"
 				1="fill(x0,y0,x0+3,y1, limeA400)"
 				2="fill(x0,y0,x1,y0+3, limeA400)"
 				3="fill(x1-3,y0,x1,y1, limeA400)"
@@ -55,7 +57,7 @@
 	
 			DetailsLaunchButton:Hover {   
 				render_bg {
-					0="fill(x0,y0,x1,y1, limeA400lesstransparent)"
+					0="fill(x0,y0,x1,y1, limeA400__50opacity)"
 					1="fill(x0,y0,x0+3,y1, limeA400)"
 					2="fill(x0,y0,x1,y0+3, limeA400)"
 					3="fill(x1-3,y0,x1,y1, limeA400)"
@@ -64,29 +66,35 @@
 			}
 
 		ModuleHeading {
-			textcolor=text_onLightBG
+			textcolor=color__text
 			font-size=24
-			font-size=25 [$OSX]
+			
 			font-weight=600
 		}	
 
 		label {
-			textcolor=secondaryText_onLightBG
-			font-size=18
-			font-size=19 [$OSX]
+			textcolor=color__secondaryText
+			font-size = 18
+font-size = 16 [$LINUX]
+font-size = 19 [$OSX]
+			
 		}
 
 		label2 {
-			textcolor=secondaryText_onLightBG
-			font-family=mediumfont
-			font-size=17
-			font-size=18 [$OSX]
+			textcolor=color__secondaryText
+			font-family=font__mediumfont
+			font-size = 17
+font-size = 15 [$LINUX]
+font-size = 18 [$OSX]
+			
 		}
 
 		label3 {
-			textcolor=secondaryText_onLightBG
-			font-size=18
-			font-size=19 [$OSX]
+			textcolor=color__secondaryText
+			font-size = 18
+font-size = 16 [$LINUX]
+font-size = 19 [$OSX]
+			
 			font-style=normal
 		}
 

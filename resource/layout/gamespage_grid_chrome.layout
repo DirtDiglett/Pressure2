@@ -7,9 +7,11 @@
 		CUILaunchButton {
 			bgcolor=none
 			textcolor=limeA400
-			font-family=mediumfont
-			font-size=20
-			font-size=21 [$OSX]
+			font-family=font__mediumfont
+			font-size = 20
+font-size = 16 [$LINUX]
+font-size = 21 [$OSX]
+			
 			font-weight=600
 			font-style=uppercase
 			padding-left=30
@@ -19,8 +21,8 @@
 			
 			render {}
 			render_bg {
-				-1="fill(x0,y0,x1,y1, secondaryText_onLightBG)"
-				0="fill(x0,y0,x1,y1, limeA400transparent)"
+				-1="fill(x0,y0,x1,y1, color__secondaryText)"
+				0="fill(x0,y0,x1,y1, limeA400__26opacity)"
 				1="fill(x0,y0,x0+3,y1, limeA400)"
 				2="fill(x0,y0,x1,y0+3, limeA400)"
 				3="fill(x1-3,y0,x1,y1, limeA400)"
@@ -30,8 +32,8 @@
 		
 			CUILaunchButton:Hover {   
 				render_bg {
-					-1="fill(x0,y0,x1,y1, secondaryText_onLightBG)"
-					0="fill(x0,y0,x1,y1, limeA400lesstransparent)"
+					-1="fill(x0,y0,x1,y1, color__secondaryText)"
+					0="fill(x0,y0,x1,y1, limeA400__50opacity)"
 					1="fill(x0,y0,x0+3,y1, limeA400)"
 					2="fill(x0,y0,x1,y0+3, limeA400)"
 					3="fill(x1-3,y0,x1,y1, limeA400)"
@@ -41,8 +43,8 @@
 
 			CUILaunchButton:Selected {
 				render_bg {
-					-1="fill(x0,y0,x1,y1, secondaryText_onLightBG)"
-					0="fill(x0,y0,x1,y1, limeA400lesstransparent)"
+					-1="fill(x0,y0,x1,y1, color__secondaryText)"
+					0="fill(x0,y0,x1,y1, limeA400__50opacity)"
 					1="fill(x0,y0,x0+3,y1, limeA700)"
 					2="fill(x0,y0,x1,y0+3, limeA700)"
 					3="fill(x1-3,y0,x1,y1, limeA700)"
@@ -53,9 +55,11 @@
 		"GameItem_Uninstalled CUILaunchButton" {
 			bgcolor=none
 			textcolor=lightblueA200
-			font-family=mediumfont
-			font-size=20
-			font-size=21 [$OSX]
+			font-family=font__mediumfont
+			font-size = 20
+font-size = 16 [$LINUX]
+font-size = 21 [$OSX]
+			
 			font-weight=600
 			font-style=uppercase
 			padding-left=30
@@ -65,8 +69,8 @@
 			
 			render {}
 			render_bg {
-				-1="fill(x0,y0,x1,y1, secondaryText_onLightBG)"
-				0="fill(x0,y0,x1,y1, lightblueA200transparent)"
+				-1="fill(x0,y0,x1,y1, color__secondaryText)"
+				0="fill(x0,y0,x1,y1, lightblueA200__26opacity)"
 				1="fill(x0,y0,x0+3,y1, lightblueA200)"
 				2="fill(x0,y0,x1,y0+3, lightblueA200)"
 				3="fill(x1-3,y0,x1,y1, lightblueA200)"
@@ -76,8 +80,8 @@
 
 			"GameItem_Uninstalled CUILaunchButton:hover" {
 				render_bg {
-					-1="fill(x0,y0,x1,y1, secondaryText_onLightBG)"
-					0="fill(x0,y0,x1,y1, lightblueA200lesstransparent)"
+					-1="fill(x0,y0,x1,y1, color__secondaryText)"
+					0="fill(x0,y0,x1,y1, lightblueA200__50opacity)"
 					1="fill(x0,y0,x0+3,y1, lightblueA200)"
 					2="fill(x0,y0,x1,y0+3, lightblueA200)"
 					3="fill(x1-3,y0,x1,y1, lightblueA200)"
@@ -87,8 +91,8 @@
 
 			"GameItem_Uninstalled CUILaunchButton:selected" {
 				render_bg {
-					-1="fill(x0,y0,x1,y1, secondaryText_onLightBG)"
-					0="fill(x0,y0,x1,y1, lightblueA200lesstransparent)"
+					-1="fill(x0,y0,x1,y1, color__secondaryText)"
+					0="fill(x0,y0,x1,y1, lightblueA200__50opacity)"
 					1="fill(x0,y0,x0+3,y1, lightblueA400)"
 					2="fill(x0,y0,x1,y0+3, lightblueA400)"
 					3="fill(x1-3,y0,x1,y1, lightblueA400)"
@@ -99,9 +103,11 @@
 		CUIDetailsButton {
 			bgcolor=none
 			textcolor=grey100
-			font-family=mediumfont
-			font-size=20
-			font-size=21 [$OSX]
+			font-family=font__mediumfont
+			font-size = 20
+font-size = 16 [$LINUX]
+font-size = 21 [$OSX]
+			
 			font-weight=600
 			font-style=uppercase
 			padding-left=30
@@ -111,8 +117,8 @@
 			
 			render {}
 			render_bg {
-				-1="fill(x0,y0,x1,y1, secondaryText_onLightBG)"
-				0="fill(x0,y0,x1,y1, grey100transparent)"
+				-1="fill(x0,y0,x1,y1, color__secondaryText)"
+				0="fill(x0,y0,x1,y1, grey100__21opacity)"
 				1="fill(x0,y0,x0+3,y1, grey100)"
 				2="fill(x0,y0,x1,y0+3, grey100)"
 				3="fill(x1-3,y0,x1,y1, grey100)"
@@ -122,8 +128,8 @@
 		
 			CUIDetailsButton:hover {
 				render_bg {
-					-1="fill(x0,y0,x1,y1, secondaryText_onLightBG)"
-					0="fill(x0,y0,x1,y1, grey100lesstransparent)"
+					-1="fill(x0,y0,x1,y1, color__secondaryText)"
+					0="fill(x0,y0,x1,y1, grey100__50opacity)"
 					1="fill(x0,y0,x0+3,y1, grey100)"
 					2="fill(x0,y0,x1,y0+3, grey100)"
 					3="fill(x1-3,y0,x1,y1, grey100)"
@@ -133,8 +139,8 @@
 			
 			CUIDetailsButton:selected {
 				render_bg {
-					-1="fill(x0,y0,x1,y1, secondaryText_onLightBG)"
-					0="fill(x0,y0,x1,y1, grey100lesstransparent)"
+					-1="fill(x0,y0,x1,y1, color__secondaryText)"
+					0="fill(x0,y0,x1,y1, grey100__50opacity)"
 					1="fill(x0,y0,x0+3,y1, grey100)"
 					2="fill(x0,y0,x1,y0+3, grey100)"
 					3="fill(x1-3,y0,x1,y1, grey100)"

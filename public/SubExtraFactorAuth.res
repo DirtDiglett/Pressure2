@@ -1,16 +1,18 @@
 "Public/SubExtraFactorAuth.res" {
 	styles {
 		label {
-			textcolor=text_onLightBG
-			font-family=mediumfont
-			font-size=15
-			font-size=16 [$OSX]
+			textcolor=color__text
+			font-family=font__mediumfont
+			font-size = 15
+font-size = 12 [$LINUX]
+font-size = 16 [$OSX]
+			
 		}
 		
 		codeentry {
 			minimum-height=50
 			font-size=40
-			font-size=41 [$OSX]
+			
 		}
 
 		friendlyname {}

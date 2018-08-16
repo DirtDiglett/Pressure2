@@ -1,19 +1,21 @@
 "friends/ChatRoomDlgFriend.res" {
 	styles {
 		Label {
-			textcolor=disabled_onLightBG
-			font-size=14
-			font-size=15 [$OSX]
+			textcolor=color__disabled
+			font-size = 14
+font-size = 12 [$LINUX]
+font-size = 15 [$OSX]
+			
 		}
 
 		CChatRoomDlg {
 			render {
-				0="fill(x0,y1-76,x1,y1-75, grey200)"
+				0="fill(x0,y1-76,x1,y1-75, color__textInputBackground)"
 				1="image_tiled(x0,y0+57,x1,y0+61, graphics/material/shadows/top)"
 			}
 			render_bg {
-				0="fill(x0,y0+55,x1,y0+57, customgreysecondary)"
-				1="fill(x0,y1-75,x1,y1, white)"
+				0="fill(x0,y0+55,x1,y0+57, color__submenuBackground)"
+				1="fill(x0,y1-75,x1,y1, color__textInputBackground)"
 			}
 		}
 
@@ -32,7 +34,7 @@
 			}
 
 			render_bg {
-				0="fill(x0,y0-19,x1+14,y1+19, customgreysecondary)"
+				0="fill(x0,y0-19,x1+14,y1+19, color__submenuBackground)"
 			}
 		}
 
@@ -75,16 +77,18 @@
 			}
 
 		GridMenu {
-			font-size=16
-			font-size=17 [$OSX]
+			font-size = 16
+font-size = 14 [$LINUX]
+font-size = 17 [$OSX]
+			
 			inset="0 0 0 0"
 		}
 
 		EmoticonMenuItemStyle {
 			bgcolor=none
-			textcolor=text_onLightBG
+			textcolor=color__text
 			font-size=24
-			font-size=25 [$OSX]
+			
 			inset="-3 -1 0 0"
 			padding-left=0
 			padding-right=0			
@@ -92,7 +96,7 @@
 		
 			EmoticonMenuItemStyle:hover {
 				bgcolor=none
-				textcolor=secondarytext_onLightBG
+				textcolor=color__secondaryText
 
 				render_bg {
 					0="fill(x0,y0,x1,y1, blue500)"
@@ -101,7 +105,7 @@
 		
 			EmoticonMenuItemStyle:selected {
 				bgcolor=none
-				textcolor=secondaryText_onLightBG
+				textcolor=color__secondaryText
 			}
 
 		Button:selected {
@@ -114,7 +118,7 @@
 			"Page Button:selected" {}
 		  
 		Button:disabled {
-			textcolor=disabled_onLightBG
+			textcolor=color__disabled
 			render_bg {}
 		}   
 
@@ -142,11 +146,13 @@
 
 		RichText {
 			selectedbgcolor=blue500
-			textcolor=disabled_OnLightBG
+			textcolor=color__disabled
 			selectedtextcolor=white
-			font-family=basefont
-			font-size=17
-			font-size=18 [$OSX]
+			font-family=font__basefont
+			font-size = 17
+font-size = 15 [$LINUX]
+font-size = 18 [$OSX]
+			
 			font-weight=400
 		}
 	}

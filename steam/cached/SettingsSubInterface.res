@@ -1,49 +1,23 @@
 "steam/cached/SettingsSubInterface.res" {
 	styles {
 		CSubPanelOptionsInterface {
-			render {
-				0="fill(x0+70,y0+191,x1,y0+239, custombackgroundnofocustransparent)"
-				1="fill(x0+70,y0+286,x1,y0+312, custombackgroundnofocustransparent)"
-				2="fill(x0+70,y0+358,x1,y0+384, custombackgroundnofocustransparent)"
-			}
-
-			render [$OSX] {
-				0="fill(x0+70,y0+97,x1,y0+136, custombackgroundnofocustransparent)"
-				1="fill(x0+70,y0+192,x1,y0+214, custombackgroundnofocustransparent)"
-				2="fill(x0+70,y0+264,x1,y0+284, custombackgroundnofocustransparent)"
-			}
-
 			render_bg {
-				0="fill(x0+71,y0+184,x1,y0+185, dividers_onLightBG)"
+				0="fill(x0+71,y0+184,x1,y0+165, color__divider)"
 				1="image(x0+26,y0+27,x1,y1, graphics/icons/settings/pc)"
 				2="image(x0+26,y0+203,x1,y1, graphics/icons/settings/appearance)"
 			}
 
 			render_bg [$OSX] {
-				0="fill(x0+71,y0+90,x1,y0+91, dividers_onLightBG)"
+				0="fill(x0+71,y0+90,x1,y0+91, color__divider)"
 				1="image(x0+26,y0+27,x1,y1, graphics/icons/settings/pc)"
 				2="image(x0+26,y0+109,x1,y1, graphics/icons/settings/appearance)"
 			}
 		}
-
-			CSubPanelOptionsInterface:framefocus {
-				render {
-					0="fill(x0+70,y0+191,x1,y0+239, custombackgroundprimarytransparent)"
-					1="fill(x0+70,y0+286,x1,y0+312, custombackgroundprimarytransparent)"
-					2="fill(x0+70,y0+358,x1,y0+384, custombackgroundprimarytransparent)"
-				}
-
-				render [$OSX] {
-					0="fill(x0+70,y0+97,x1,y0+136, custombackgroundprimarytransparent)"
-					1="fill(x0+70,y0+192,x1,y0+214, custombackgroundprimarytransparent)"
-					2="fill(x0+70,y0+264,x1,y0+284, custombackgroundprimarytransparent)"
-				}
-			}
 	}
 	
 	layout {
 		place {
-			control=TranslationLabel,Label2,Divider1,Divider2
+			control=TranslationLabel,Label2,Divider1,Divider2,Divider3
 			height=0
 		}
 
@@ -79,7 +53,7 @@
 		region {
 			name=steam
 			x=82
-			y=176
+			y=156
 			y=82 [$OSX]
 			width=max
 			height=114
@@ -121,8 +95,17 @@
 		}
 
 		place {
-			control=Label4
+			control=GPUWebViewCheck,DPIScalingCheck
 			start=SkinCombo
+			dir=down
+			y=4
+			height=18
+			spacing=4
+		}
+
+		place {
+			control=Label4
+			start=DPIScalingCheck
 			dir=down
 			y=18
 			spacing=2

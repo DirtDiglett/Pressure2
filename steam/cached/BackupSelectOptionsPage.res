@@ -60,9 +60,20 @@
 			start=Label1
 			dir=down
 			y=4
-			width=max
+			width=200
 			height=34
 			margin-right=24
+			spacing=4
+		}
+
+		place {
+			control=CustomFileSizeEntry,CustomFileSizeLabel
+			start=SizeCombo
+			dir=right
+			align=right
+			x=6
+			width=45
+			height=34
 			spacing=4
 		}
 

@@ -1,0 +1,76 @@
+"resource/layout/subpaneloptionscontroller.layout" {
+	styles {
+		highlight {
+			textcolor=color__headingText
+			font-family=font__mediumfont
+			font-size = 30
+			font-size = 25 [$LINUX]
+			font-size = 31 [$OSX]
+			font-style=normal
+		}
+
+		label {
+			textcolor=color__secondaryText
+		}
+	}
+	
+	layout {
+		region {
+			name=page
+			x=24
+			y=24
+			width=max
+			height=max
+			margin-right=24
+		}
+
+		place {
+      controls=TitleLabel
+      region=page
+      dir=down
+    }
+		
+		place {
+      controls=DescriptionLabel
+      start=TitleLabel
+      y=8
+      width=490
+      dir=down
+    }
+
+		place {
+			control=GeneralSettingsButton
+			start=DescriptionLabel
+			dir=down
+			y=4
+			width=350
+			height=34
+		}
+
+		place {
+      controls=Divider1
+      start=GeneralSettingsButton
+      dir=down
+      y=16
+      width=max
+    }
+
+		place {
+      controls=DescriptionBindingLabel
+      start=Divider1
+      y=8
+      width=490
+      dir=down
+    }
+
+		place {
+			control=BigPictureConfigButton,DesktopConfigButton,GuideConfigButton
+			start=DescriptionBindingLabel
+			dir=down
+			y=4
+			width=350
+			height=34
+			spacing=4
+		}						
+	}
+}

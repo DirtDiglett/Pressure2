@@ -1,7 +1,7 @@
 "friends/BroadcastApproveNotification.res" {
 	styles {
 		Label {
-			textcolor=secondaryText_onDarkBG
+			textcolor=color__secondaryText__alternate
 		}
 		
 		Notification {

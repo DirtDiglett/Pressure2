@@ -2,7 +2,7 @@
 	styles {
 		CSubGamePropertiesLocalFilesPage {
 			render {
-				0="fill(x0+70,y0+30,x1,y0+55, custombackgroundnofocustransparent)"
+				0="fill(x0+70,y0+30,x1,y0+55, color__backgroundOverlay__secondary)"
 			}
 			render_bg {
 				0="image(x0+26,y0+37,x1,y1, graphics/icons/settings/libraries)"
@@ -11,7 +11,7 @@
 
 		CSubGamePropertiesLocalFilesPage:framefocus {
 			render {
-				0="fill(x0+70,y0+30,x1,y0+55, custombackgroundprimarytransparent)"
+				0="fill(x0+70,y0+30,x1,y0+55, color__backgroundOverlay)"
 			}
 		}
 	}

@@ -1,16 +1,20 @@
 "resource/layout/overlay_achievement_item.layout" {
 	styles {
 		label {
-			textcolor=secondarytext_onDarkBG
-			font-family=mediumfont
-			font-size=18
-			font-size=19 [$OSX]
+			textcolor=color__secondaryText__alternate
+			font-family=font__mediumfont
+			font-size = 18
+font-size = 16 [$LINUX]
+font-size = 19 [$OSX]
+			
 		}
 		name {
-			textcolor=text_onDarkBG
-			font-family=basefont
-			font-size=18
-			font-size=19 [$OSX]
+			textcolor=color__text__alternate
+			font-family=font__basefont
+			font-size = 18
+font-size = 16 [$LINUX]
+font-size = 19 [$OSX]
+			
 		}
 	
 	}

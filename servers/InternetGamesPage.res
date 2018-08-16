@@ -7,7 +7,7 @@
 			  0="image( x0+4, y0+3, x1, y1, graphics/icons/columnselectbutton/standard/columnselectbutton_light )"
 			}
 			render_bg {
-			  1="fill( x0, y0, x1, y1+1, customgreysecondary )"
+			  1="fill( x0, y0, x1, y1+1, color__submenuBackground)"
 			}
 		}
 		

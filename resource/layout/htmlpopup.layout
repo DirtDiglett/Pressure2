@@ -1,7 +1,7 @@
 "resource/layout/htmlpopup.layout" {
 	styles {
 		Frame {			
-			bgcolor=custombackgroundnofocus
+			bgcolor=color__background__secondary
 			inset="0 0 0 0"
 
 			render {
@@ -9,39 +9,41 @@
 			}
 				
 			render_bg {
-				0="fill(x0,y0,x1,y0+34, customgreyprimary)"
-				1="fill(x0,y0,x1,y0+1, customgreyaccent)"
-				2="fill(x0,y0+34,x1,y0+79, customgreysecondary)"
+				0="fill(x0,y0,x1,y0+34, color__titleBarBackground)"
+				1="fill(x0,y0,x1,y0+1, color__titleBarBackground__accent)"
+				2="fill(x0,y0+34,x1,y0+79, color__submenuBackground)"
 			}
 		}
 		
 			Frame:framefocus {			
-				bgcolor=custombackgroundprimary
+				bgcolor=color__background
 			}
 
 		TextEntryURL {
-			bgcolor=custombackgroundprimary
+			bgcolor=color__textInputBackground
 			selectedbgcolor=blue500
-			textcolor=text_onLightBG
+			textcolor=color__text
 			selectedtextcolor=white
-			shadowtextcolor=disabled_onLightBG
-			font-family=basefont
-			font-size=18
-			font-size=19 [$OSX]
+			shadowtextcolor=color__disabled
+			font-family=font__basefont
+			font-size = 18
+font-size = 16 [$LINUX]
+font-size = 19 [$OSX]
+			
 			font-weight=400
 			inset-left=8
 			inset-top=0
 			
 			render {}
 			render_bg {
-				0="fill(x1,y0,x1+25,y1, custombackgroundprimary)"
+				0="fill(x1,y0,x1+25,y1, color__textInputBackground)"
 			}
 		}
 		
 			TextEntryURL:hover {}
 
 			TextEntryURL:disabled {
-				textcolor=disabled_onLightBG
+				textcolor=color__disabled
 			}
 	}
 	

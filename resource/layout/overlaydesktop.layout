@@ -3,29 +3,35 @@
 		sidemenu {}
 		
 		topbar {
-			textcolor=text_onDarkBG
-			font-family=mediumfont
+			textcolor=color__text__alternate
+			font-family=font__mediumfont
 			font-weight=800
-			font-size=30
-			font-size=31 [$OSX]
+			font-size = 30
+font-size = 25 [$LINUX]
+font-size = 31 [$OSX]
+			
 			font-weight=400
 		}
 		
 		clocksuffix {
-			textcolor=text_onDarkBG
-			font-family=mediumfont
+			textcolor=color__text__alternate
+			font-family=font__mediumfont
 			font-weight=800
-			font-size=30
-			font-size=31 [$OSX]
+			font-size = 30
+font-size = 25 [$LINUX]
+font-size = 31 [$OSX]
+			
 			font-weight=400
 			font-style=uppercase
 		}
 		
 		timeStrings {
-			textcolor=disabled_OnDarkBG
-			font-family=basefont
-			font-size=18
-			font-size=19 [$OSX]
+			textcolor=color__disabled__alternate
+			font-family=font__basefont
+			font-size = 18
+font-size = 16 [$LINUX]
+font-size = 19 [$OSX]
+			
 			font-weight=400
 		}
 	}

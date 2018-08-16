@@ -16,38 +16,38 @@
 		}
 
 		FriendsPanel {			
-			bgcolor=custombackgroundnofocus
+			bgcolor=color__background__secondary
 			render {
 				2="image_tiled(x0,y1-50,x1,y1-46, graphics/material/shadows/bottom)"
 			}
 			
 			render_bg {
 				// fill in the bottom area
-				0="fill( x0, y1 - 46, x1, y1, customgreyprimary )"
-				1="fill(x0, y1-46, x1, y1-45, customgreyaccent)"
+				0="fill( x0, y1 - 46, x1, y1, color__titleBarBackground )"
+				1="fill(x0, y1-46, x1, y1-45, color__titleBarBackground__accent)"
 				
 				//Apply the subnav
 				//2="image_tiled(x0,y0+55,x1,y0+59, graphics/material/shadows/top)"
-				3="fill(x0,y0+55,x1,y0+134, customgreysecondary)"				
+				3="fill(x0,y0+55,x1,y0+134, color__submenuBackground)"				
 			}
 		}
 
 			FriendsPanel:FrameFocus {
-				bgcolor=custombackgroundprimary
+				bgcolor=color__background
 			}	
 		
 		FrameTitle {
-			bgcolor=customgreyprimary
-			font-family=basefont
+			bgcolor=color__titleBarBackground
+			font-family=font__basefont
 			font-size=24
-			font-size=25 [$OSX]
+			
 			font-weight=400
 			inset="0 0 0 0"
 			minimum-height=55
 			textcolor=none			
 			render_bg {
 				// Adds the 1 pixel highlight on the top of the title bar.
-				0="fill(x0,y0,x1,y0+1, customgreyaccent)"
+				0="fill(x0,y0,x1,y0+1, color__titleBarBackground__accent)"
 			}
 		}
 		
@@ -80,10 +80,12 @@
 			}
 
 		PageTab {
-			font-size=16
-			font-size=17 [$OSX]
+			font-size = 16
+font-size = 14 [$LINUX]
+font-size = 17 [$OSX]
+			
 			font-style=regular
-			textcolor=secondarytext_onDarkBG
+			textcolor=color__secondaryText__alternate
 			minimum-height=24
 			minimum-width=100
 			inset-top=-4
@@ -95,7 +97,7 @@
 	    }
 	    
 			PageTab:hover {
-		  		textcolor=text_onDarkBG
+		  		textcolor=color__text__alternate
 
 				render_bg {
 					1="image(x0,y0-4,x0+2,y0-2, graphics/material/tab/white/topleft)"
@@ -133,72 +135,74 @@
 
     	CFriendsListSectionHeader {
 	    	inset="0 0 0 0"
-	        textcolor=text_onLightBG
-			// This control is bullshit. It ignores any font declaration so it's impossible to adjust.
+	        textcolor=color__text
+					// This control is bullshit. It ignores any font declaration so it's impossible to adjust.
 
 	        render_bg {
-	            0="fill(x0,y0,x1,y1, white)"
-	            1="fill(x0-2,y0-1,x1,y0, dividers_onLightBG_solid)"
-	            2="fill(x0-2,y1,x1,y1+1, dividers_onLightBG_solid)"
+	            0="fill(x0,y0,x1,y1, color__sectionHeadingBackground)"
+	            1="fill(x0-2,y0-1,x1,y0, color__divider__solid)"
+	            2="fill(x0-2,y1,x1,y1+1, color__divider__solid)"
 	        }    
 	    }
 
 	    SectionedListPanelCollapser {
-		  inset="0 0 0 0"
-		  image=graphics/icons/dropdown/padder
-		  padding-left=8
-		  padding-right=8
-		  bgcolor=none
+				inset="0 0 0 0"
+				image=graphics/icons/dropdown/padder
+				padding-left=8
+				padding-right=8
+				bgcolor=color__sectionHeadingBackground
 
-		  render {}
-		  render_bg {
-			0="fill(x0,y0-1,x1+2,y0, dividers_onLightBG_solid)"
-			1="fill(x0,y1,x1+2,y1+1, dividers_onLightBG_solid)"
-			2="image(x0+14,y0+6,x1,y1, graphics/icons/dropdown/standard/down_dark)"
-		  }
-		}
+				render {
+					0="fill(x1,y0,x1+2,y1, color__sectionHeadingBackground)"
+				}
+				render_bg {
+					0="fill(x0,y0-1,x1+2,y0, color__divider__solid)"
+					1="fill(x0,y1,x1+2,y1+1, color__divider__solid)"
+					2="image(x0+14,y0+6,x1,y1, graphics/icons/dropdown/standard/down_dark)"
+				}
+			}
 
 		  SectionedListPanelCollapser:hover {
-			render_bg {
-			  0="fill(x0,y0-1,x1+2,y0, dividers_onLightBG_solid)"
-			  1="fill(x0,y1,x1+2,y1+1, dividers_onLightBG_solid)"
-			  2="image(x0+14,y0+6,x1,y1, graphics/icons/dropdown/hover/down_dark)"
-			}
+				render_bg {
+					0="fill(x0,y0-1,x1+2,y0, color__divider__solid)"
+					1="fill(x0,y1,x1+2,y1+1, color__divider__solid)"
+					2="image(x0+14,y0+6,x1,y1, graphics/icons/dropdown/hover/down_dark)"
+				}
 		  }
 
 		  SectionedListPanelCollapser:selected {
 			render_bg {
-			  0="fill(x0,y0-1,x1+2,y0, dividers_onLightBG_solid)"
-			  1="fill(x0,y1,x1+2,y1+1, dividers_onLightBG_solid)"
+			  0="fill(x0,y0-1,x1+2,y0, color__divider__solid)"
+			  1="fill(x0,y1,x1+2,y1+1, color__divider__solid)"
 			  2="image(x0+14,y0+6,x1,y1, graphics/icons/dropdown/standard/up_dark)"
 			}
 		  }
 
 			SectionedListPanelCollapser:selected:hover {
 			  render_bg {
-				0="fill(x0,y0-1,x1+2,y0, dividers_onLightBG_solid)"
-				1="fill(x0,y1,x1+2,y1+1, dividers_onLightBG_solid)"
+				0="fill(x0,y0-1,x1+2,y0, color__divider__solid)"
+				1="fill(x0,y1,x1+2,y1+1, color__divider__solid)"
 				2="image(x0+14,y0+6,x1,y1, graphics/icons/dropdown/hover/up_dark)"
 			  }
 			}
          
 		label {
 			render_bg {
-				0="fill(x0-24,y0-24,x1+24,y1+100, custombackgroundprimary)"
+				0="fill(x0-24,y0-24,x1+24,y1+100, color__background)"
 				1="image_tiled(x0-24,y0-24,x1+24,y0-20, graphics/material/shadows/top)"
 			}
 		}
 
         "SectionedListPanel Label" {
-        	textcolor=customgreysecondary
-        	font-family=mediumfont
+        	textcolor=color__listPanelSectionHeaderText
+        	font-family=font__mediumfont
 
         	render_bg {}
         }
 
 	Page {
 		bgcolor=none
-		font-family=basefont
+		font-family=font__basefont
 		font-style="none"
 		inset="0 0 0 0"
 
@@ -227,38 +231,40 @@
 
 		FriendsSearch {
 			padding-left=0
-			font-family=basefont
-			font-size=18
-			font-size=19 [$OSX]
+			font-family=font__basefont
+			font-size = 18
+font-size = 16 [$LINUX]
+font-size = 19 [$OSX]
+			
 			font-weight=400
-			textcolor="text_onLightBG"
+			textcolor="color__text"
 			inset-top=0
 			inset-left=1
-			bgcolor=custombackgroundprimary
+			bgcolor=color__textInputBackground
 			
 			render {}
 		}
 					
 			FriendsSearch:empty {
 				font-style=italic
-				textcolor="disabled_onLightBG"
+				textcolor="color__disabled"
 			}
 			
 			FriendsSearch:hover {
-				textcolor="text_onLightBG"
+				textcolor="color__text"
 			}
 			
 			FriendsSearch:empty:hover {
-				textcolor="secondaryText_onLightBG"
+				textcolor=color__secondaryText
 			}
 			
 			FriendsSearch:disabled {
 				font-style=italic
-				textcolor="disabled_onLightBG"
+				textcolor="color__disabled"
 			}
 		
 		FriendsSearchIcon {
-			bgcolor=custombackgroundprimary
+			bgcolor=color__textInputBackground
 			textcolor=none
 
 			render {

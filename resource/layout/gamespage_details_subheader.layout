@@ -1,7 +1,7 @@
 "resource/layout/gamespage_details_subheader.layout" {
 	colors {
-		GameDetailsSubHeader.HorizontalSpacing = "10"
-		GameDetailsSubHeader.VerticalMargin = "10"
+		GameDetailsSubHeader.HorizontalSpacing 	= "10"
+		GameDetailsSubHeader.VerticalMargin 		= "10"
 	}
 	
 	styles {
@@ -50,10 +50,12 @@
 		// This button is for "Activate" when received games as gifts.
 		DetailsButton {
 			bgcolor=none
-			textcolor=grey100
-			font-family=mediumfont
-			font-size=28
-			font-size=29 [$OSX]
+			textcolor=color__activateButtonText
+			font-family=font__mediumfont
+			font-size = 28
+font-size = 23 [$LINUX]
+font-size = 29 [$OSX]
+			
 			font-weight=600
 			font-style=uppercase
 			padding-left=60
@@ -64,40 +66,52 @@
 			
 			render {}
 			render_bg {
-				0="fill(x0,y0,x1,y1, grey100transparent)"
-				1="fill(x0,y0,x0+3,y1, grey100)"
-				2="fill(x0,y0,x1,y0+3, grey100)"
-				3="fill(x1-3,y0,x1,y1, grey100)"
-				4="fill(x0,y1-3,x1,y1, grey100)"
+				0="fill(x0,y0,x1,y1, color__activateButtonBackground)"
+				1="fill(x0,y0,x0+3,y1, color__activateButtonBorder)"
+				2="fill(x0,y0,x1,y0+3, color__activateButtonBorder)"
+				3="fill(x1-3,y0,x1,y1, color__activateButtonBorder)"
+				4="fill(x0,y1-3,x1,y1, color__activateButtonBorder)"
 			}
 		}
 		
 			DetailsButton:hover {
 				render_bg {
-					0="fill(x0,y0,x1,y1, grey100lesstransparent)"
-					1="fill(x0,y0,x0+3,y1, grey100)"
-					2="fill(x0,y0,x1,y0+3, grey100)"
-					3="fill(x1-3,y0,x1,y1, grey100)"
-					4="fill(x0,y1-3,x1,y1, grey100)"
+					0="fill(x0,y0,x1,y1, color__activateButtonBackground__hover)"
+					1="fill(x0,y0,x0+3,y1, color__activateButtonBorder__hover)"
+					2="fill(x0,y0,x1,y0+3, color__activateButtonBorder__hover)"
+					3="fill(x1-3,y0,x1,y1, color__activateButtonBorder__hover)"
+					4="fill(x0,y1-3,x1,y1, color__activateButtonBorder__hover)"
 				}
 			}
 			
 			DetailsButton:active {
 				render_bg {
-					0="fill(x0,y0,x1,y1, grey100lesstransparent)"
-					1="fill(x0,y0,x0+3,y1, grey100)"
-					2="fill(x0,y0,x1,y0+3, grey100)"
-					3="fill(x1-3,y0,x1,y1, grey100)"
-					4="fill(x0,y1-3,x1,y1, grey100)"
+					0="fill(x0,y0,x1,y1, color__activateButtonBackground__selected)"
+					1="fill(x0,y0,x0+3,y1, color__activateButtonBorder__selected)"
+					2="fill(x0,y0,x1,y0+3, color__activateButtonBorder__selected)"
+					3="fill(x1-3,y0,x1,y1, color__activateButtonBorder__selected)"
+					4="fill(x0,y1-3,x1,y1, color__activateButtonBorder__selected)"
+				}
+			}
+
+			DetailsButton:selected {
+				render_bg {
+					0="fill(x0,y0,x1,y1, color__activateButtonBackground__selected)"
+					1="fill(x0,y0,x0+3,y1, color__activateButtonBorder__selected)"
+					2="fill(x0,y0,x1,y0+3, color__activateButtonBorder__selected)"
+					3="fill(x1-3,y0,x1,y1, color__activateButtonBorder__selected)"
+					4="fill(x0,y1-3,x1,y1, color__activateButtonBorder__selected)"
 				}
 			}
 		
 		DetailsLaunchButton {
 			bgcolor=none
-			textcolor=limeA400
-			font-family=mediumfont
-			font-size=28
-			font-size=29 [$OSX]
+			textcolor=color__playButtonText
+			font-family=font__mediumfont
+			font-size = 28
+font-size = 23 [$LINUX]
+font-size = 29 [$OSX]
+			
 			font-weight=600
 			font-style=uppercase
 			padding-left=60
@@ -108,50 +122,52 @@
 			
 			render {}
 			render_bg {
-				0="fill(x0,y0,x1,y1, limeA400transparent)"
-				1="fill(x0,y0,x0+3,y1, limeA400)"
-				2="fill(x0,y0,x1,y0+3, limeA400)"
-				3="fill(x1-3,y0,x1,y1, limeA400)"
-				4="fill(x0,y1-3,x1,y1, limeA400)"
+				0="fill(x0,y0,x1,y1, color__playButtonBackground)"
+				1="fill(x0,y0,x0+3,y1, color__playButtonBorder)"
+				2="fill(x0,y0,x1,y0+3, color__playButtonBorder)"
+				3="fill(x1-3,y0,x1,y1, color__playButtonBorder)"
+				4="fill(x0,y1-3,x1,y1, color__playButtonBorder)"
 			}
 		}
 		
 			DetailsLaunchButton:Hover {
 				render_bg {
-					0="fill(x0,y0,x1,y1, limeA400lesstransparent)"
-					1="fill(x0,y0,x0+3,y1, limeA400)"
-					2="fill(x0,y0,x1,y0+3, limeA400)"
-					3="fill(x1-3,y0,x1,y1, limeA400)"
-					4="fill(x0,y1-3,x1,y1, limeA400)"
+					0="fill(x0,y0,x1,y1, color__playButtonBackground__hover)"
+					1="fill(x0,y0,x0+3,y1, color__playButtonBorder__hover)"
+					2="fill(x0,y0,x1,y0+3, color__playButtonBorder__hover)"
+					3="fill(x1-3,y0,x1,y1, color__playButtonBorder__hover)"
+					4="fill(x0,y1-3,x1,y1, color__playButtonBorder__hover)"
 				}
 			}
 			
 			DetailsLaunchButton:Selected {
 				render_bg {
-					0="fill(x0,y0,x1,y1, limeA400lesstransparent)"
-					1="fill(x0,y0,x0+3,y1, limeA700)"
-					2="fill(x0,y0,x1,y0+3, limeA700)"
-					3="fill(x1-3,y0,x1,y1, limeA700)"
-					4="fill(x0,y1-3,x1,y1, limeA700)"
+					0="fill(x0,y0,x1,y1, color__playButtonBackground__selected)"
+					1="fill(x0,y0,x0+3,y1, color__playButtonBorder__selected)"
+					2="fill(x0,y0,x1,y0+3, color__playButtonBorder__selected)"
+					3="fill(x1-3,y0,x1,y1, color__playButtonBorder__selected)"
+					4="fill(x0,y1-3,x1,y1, color__playButtonBorder__selected)"
 				}
 			}
 		
 			DetailsLaunchButton:Active {
 				render_bg {
-					0="fill(x0,y0,x1,y1, limeA400lesstransparent)"
-					1="fill(x0,y0,x0+3,y1, limeA700)"
-					2="fill(x0,y0,x1,y0+3, limeA700)"
-					3="fill(x1-3,y0,x1,y1, limeA700)"
-					4="fill(x0,y1-3,x1,y1, limeA700)"
+					0="fill(x0,y0,x1,y1, color__playButtonBackground__selected)"
+					1="fill(x0,y0,x0+3,y1, color__playButtonBorder__selected)"
+					2="fill(x0,y0,x1,y0+3, color__playButtonBorder__selected)"
+					3="fill(x1-3,y0,x1,y1, color__playButtonBorder__selected)"
+					4="fill(x0,y1-3,x1,y1, color__playButtonBorder__selected)"
 				}
 			}
 		
 		DetailsInstallButton {
 			bgcolor=none
-			textcolor=lightblueA200
-			font-family=mediumfont
-			font-size=28
-			font-size=29 [$OSX]
+			textcolor=color__launchButtonText
+			font-family=font__mediumfont
+			font-size = 28
+font-size = 23 [$LINUX]
+font-size = 29 [$OSX]
+			
 			font-weight=600
 			font-style=uppercase
 			padding-left=60
@@ -162,50 +178,52 @@
 			
 			render {}
 			render_bg {
-				0="fill(x0,y0,x1,y1, lightblueA200transparent)"
-				1="fill(x0,y0,x0+3,y1, lightblueA200)"
-				2="fill(x0,y0,x1,y0+3, lightblueA200)"
-				3="fill(x1-3,y0,x1,y1, lightblueA200)"
-				4="fill(x0,y1-3,x1,y1, lightblueA200)"
+				0="fill(x0,y0,x1,y1, color__launchButtonBackground)"
+				1="fill(x0,y0,x0+3,y1, color__launchButtonBorder)"
+				2="fill(x0,y0,x1,y0+3, color__launchButtonBorder)"
+				3="fill(x1-3,y0,x1,y1, color__launchButtonBorder)"
+				4="fill(x0,y1-3,x1,y1, color__launchButtonBorder)"
 			}
 		}
 		
 			DetailsInstallButton:Hover {
 				render_bg {
-					0="fill(x0,y0,x1,y1, lightblueA200lesstransparent)"
-					1="fill(x0,y0,x0+3,y1, lightblueA200)"
-					2="fill(x0,y0,x1,y0+3, lightblueA200)"
-					3="fill(x1-3,y0,x1,y1, lightblueA200)"
-					4="fill(x0,y1-3,x1,y1, lightblueA200)"
+					0="fill(x0,y0,x1,y1, color__launchButtonBackground__hover)"
+					1="fill(x0,y0,x0+3,y1, color__launchButtonBorder__hover)"
+					2="fill(x0,y0,x1,y0+3, color__launchButtonBorder__hover)"
+					3="fill(x1-3,y0,x1,y1, color__launchButtonBorder__hover)"
+					4="fill(x0,y1-3,x1,y1, color__launchButtonBorder__hover)"
 				}
 			}
 			
 			DetailsInstallButton:Selected {
 				render_bg {
-					0="fill(x0,y0,x1,y1, lightblueA200lesstransparent)"
-					1="fill(x0,y0,x0+3,y1, lightblueA400)"
-					2="fill(x0,y0,x1,y0+3, lightblueA400)"
-					3="fill(x1-3,y0,x1,y1, lightblueA400)"
-					4="fill(x0,y1-3,x1,y1, lightblueA400)"
+					0="fill(x0,y0,x1,y1, color__launchButtonBackground__selected)"
+					1="fill(x0,y0,x0+3,y1, color__launchButtonBorder__selected)"
+					2="fill(x0,y0,x1,y0+3, color__launchButtonBorder__selected)"
+					3="fill(x1-3,y0,x1,y1, color__launchButtonBorder__selected)"
+					4="fill(x0,y1-3,x1,y1, color__launchButtonBorder__selected)"
 				}
 			}
 		
 			DetailsInstallButton:Active {
 				render_bg {
-					0="fill(x0,y0,x1,y1, lightblueA200lesstransparent)"
-					1="fill(x0,y0,x0+3,y1, lightblueA400)"
-					2="fill(x0,y0,x1,y0+3, lightblueA400)"
-					3="fill(x1-3,y0,x1,y1, lightblueA400)"
-					4="fill(x0,y1-3,x1,y1, lightblueA400)"
+					0="fill(x0,y0,x1,y1, color__launchButtonBackground__selected)"
+					1="fill(x0,y0,x0+3,y1, color__launchButtonBorder__selected)"
+					2="fill(x0,y0,x1,y0+3, color__launchButtonBorder__selected)"
+					3="fill(x1-3,y0,x1,y1, color__launchButtonBorder__selected)"
+					4="fill(x0,y1-3,x1,y1, color__launchButtonBorder__selected)"
 				}
 			}
 		
 		DetailsBuyButton {
 			bgcolor=none
-			textcolor=amberA400
-			font-family=mediumfont
-			font-size=28
-			font-size=29 [$OSX]
+			textcolor=color__buyButtonText
+			font-family=font__mediumfont
+			font-size = 28
+font-size = 23 [$LINUX]
+font-size = 29 [$OSX]
+			
 			font-weight=600
 			font-style=uppercase
 			padding-left=60
@@ -216,51 +234,41 @@
 			
 			render {}
 			render_bg {
-				0="fill(x0,y0,x1,y1, amberA400transparent)"
-				1="fill(x0,y0,x0+3,y1, amberA400)"
-				2="fill(x0,y0,x1,y0+3, amberA400)"
-				3="fill(x1-3,y0,x1,y1, amberA400)"
-				4="fill(x0,y1-3,x1,y1, amberA400)"
+				0="fill(x0,y0,x1,y1, color__buyButtonBackground)"
+				1="fill(x0,y0,x0+3,y1, color__buyButtonBorder)"
+				2="fill(x0,y0,x1,y0+3, color__buyButtonBorder)"
+				3="fill(x1-3,y0,x1,y1, color__buyButtonBorder)"
+				4="fill(x0,y1-3,x1,y1, color__buyButtonBorder)"
 			}
 		}
 		
 			DetailsBuyButton:hover {
 				render_bg {
-					0="fill(x0,y0,x1,y1, amberA400lesstransparent)"
-					1="fill(x0,y0,x0+3,y1, amberA400)"
-					2="fill(x0,y0,x1,y0+3, amberA400)"
-					3="fill(x1-3,y0,x1,y1, amberA400)"
-					4="fill(x0,y1-3,x1,y1, amberA400)"
+					0="fill(x0,y0,x1,y1, color__buyButtonBackground__hover)"
+					1="fill(x0,y0,x0+3,y1, color__buyButtonBorder__hover)"
+					2="fill(x0,y0,x1,y0+3, color__buyButtonBorder__hover)"
+					3="fill(x1-3,y0,x1,y1, color__buyButtonBorder__hover)"
+					4="fill(x0,y1-3,x1,y1, color__buyButtonBorder__hover)"
 				}
 			}
 			
 			DetailsBuyButton:active {
 				render_bg {
-					0="fill(x0,y0,x1,y1, amberA400lesstransparent)"
-					1="fill(x0,y0,x0+3,y1, amberA700)"
-					2="fill(x0,y0,x1,y0+3, amberA700)"
-					3="fill(x1-3,y0,x1,y1, amberA700)"
-					4="fill(x0,y1-3,x1,y1, amberA700)"
+					0="fill(x0,y0,x1,y1, color__buyButtonBackground__selected)"
+					1="fill(x0,y0,x0+3,y1, color__buyButtonBorder__selected)"
+					2="fill(x0,y0,x1,y0+3, color__buyButtonBorder__selected)"
+					3="fill(x1-3,y0,x1,y1, color__buyButtonBorder__selected)"
+					4="fill(x0,y1-3,x1,y1, color__buyButtonBorder__selected)"
 				}
 			}
 		
 			DetailsBuyButton:selected {
 				render_bg {
-					0="fill(x0,y0,x1,y1, amberA400lesstransparent)"
-					1="fill(x0,y0,x0+3,y1, amberA700)"
-					2="fill(x0,y0,x1,y0+3, amberA700)"
-					3="fill(x1-3,y0,x1,y1, amberA700)"
-					4="fill(x0,y1-3,x1,y1, amberA700)"
-				}
-			}
-
-			DetailsBuyButton:active {
-				render_bg {
-					0="fill(x0,y0,x1,y1, amberA400lesstransparent)"
-					1="fill(x0,y0,x0+3,y1, amberA700)"
-					2="fill(x0,y0,x1,y0+3, amberA700)"
-					3="fill(x1-3,y0,x1,y1, amberA700)"
-					4="fill(x0,y1-3,x1,y1, amberA700)"
+					0="fill(x0,y0,x1,y1, color__buyButtonBackground__selected)"
+					1="fill(x0,y0,x0+3,y1, color__buyButtonBorder__selected)"
+					2="fill(x0,y0,x1,y0+3, color__buyButtonBorder__selected)"
+					3="fill(x1-3,y0,x1,y1, color__buyButtonBorder__selected)"
+					4="fill(x0,y1-3,x1,y1, color__buyButtonBorder__selected)"
 				}
 			}
 	}

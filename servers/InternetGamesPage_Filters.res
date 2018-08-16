@@ -8,7 +8,7 @@
 			}   
 
 			render_bg {
-			  1="fill( x0, y0, x1, y1+1, customgreysecondary )"
+			  1="fill( x0, y0, x1, y1+1, color__submenuBackground )"
 			}
 		}
 		

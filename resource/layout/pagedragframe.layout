@@ -1,15 +1,15 @@
 "resource/layout/pagedragframe.layout" {
 	styles {
 		PageDragFrame {			
-			bgcolor=customgreyprimary
+			bgcolor=color__titleBarBackground
 
 			render {
-				0="fill(x0,y0,x1,y0+1, customgreyaccent)"
+				0="fill(x0,y0,x1,y0+1, color__titleBarBackground__accent)"
 			}
 		}
 		
 		PageDragPanel {
-			bgcolor=customgreysecondary
+			bgcolor=color__submenuBackground
 		}
 	}
 		

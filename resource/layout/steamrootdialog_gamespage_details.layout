@@ -8,29 +8,34 @@
 		rightcolumntag {}
 
 		CGamesListPanel {
-			bgcolor=custombackgroundprimary
-			font-size=16
-			font-size=17 [$OSX]
+			bgcolor=color__background
+			font-size = 16
+			font-size = 14 [$LINUX]
+			font-size = 17 [$OSX]		
 			
 			render_bg {}
 		}
 		
 		emptylisttext {
-			textcolor=disabled_onLightBG
-			font-size=18
-			font-size=19 [$OSX]
-
+			textcolor=color__disabled
+			font-size = 18
+			font-size = 16 [$LINUX]
+			font-size = 19 [$OSX]
+			
 			render_bg {}
 		}
 		
 		CGamesPage_Details {
-			bgcolor=custombackgroundprimary
+			bgcolor=color__background
 			inset="0 0 0 0"
 
 			render {
 				0="image_tiled(x0+308,y0,x1,y0+4, graphics/material/shadows/top)"
 			}
-			render_bg {}
+		}
+
+		"GamesPage_Details headerimage" {
+			bgcolor=red500
 		}
 		
 		"GamesPage_Details ListPanel" {
@@ -59,8 +64,8 @@
 		}
 		
 		ListPanelSectionHeader {
-			bgcolor=white
-			textcolor=customgreysecondary
+			bgcolor=color__sectionHeadingBackground
+			textcolor=color__listPanelSectionHeaderText
 			font-weight=600
 			font-style=uppercase
 			minimum-height=47
@@ -70,8 +75,8 @@
 			
 			render {}
 			render_bg {
-				0="fill(x0,y0-1,x1,y0, dividers_onLightBG_solid)"
-				1="fill(x0,y1-1,x1,y1, dividers_onLightBG_solid)"
+				0="fill(x0,y0-1,x1,y0, color__divider__solid)"
+				1="fill(x0,y1-1,x1,y1, color__divider__solid)"
 			}
 		}
 		
@@ -83,32 +88,32 @@
 
 			render {}
 			render_bg {
-				0="fill(x0,y0-1,x1,y0, dividers_onLightBG_solid)"
-				1="fill(x0,y1-1,x1,y1, dividers_onLightBG_solid)"
+				0="fill(x0,y0-1,x1,y0, color__divider__solid)"
+				1="fill(x0,y1-1,x1,y1, color__divider__solid)"
 				2="image(x0+14,y0+18,x1,y1, graphics/icons/dropdown/standard/down_dark)"
 			}
 		}
 		
 			"GamesPage_Details ListPanelSectionCollapser:hover" {
 				render_bg {
-					0="fill(x0,y0-1,x1,y0, dividers_onLightBG_solid)"
-					1="fill(x0,y1-1,x1,y1, dividers_onLightBG_solid)"
+					0="fill(x0,y0-1,x1,y0, color__divider__solid)"
+					1="fill(x0,y1-1,x1,y1, color__divider__solid)"
 					2="image(x0+14,y0+18,x1,y1, graphics/icons/dropdown/hover/down_dark)"
 				}
 			}
 			
 			"GamesPage_Details ListPanelSectionCollapser:selected" {
 				render_bg {
-					0="fill(x0,y0-1,x1,y0, dividers_onLightBG_solid)"
-					1="fill(x0,y1-1,x1,y1, dividers_onLightBG_solid)"
+					0="fill(x0,y0-1,x1,y0, color__divider__solid)"
+					1="fill(x0,y1-1,x1,y1, color__divider__solid)"
 					2="image(x0+14,y0+18,x1,y1, graphics/icons/dropdown/standard/up_dark)"
 				}
 			}
 			
 				"GamesPage_Details ListPanelSectionCollapser:selected:hover" {
 					render_bg {
-						0="fill(x0,y0-1,x1,y0, dividers_onLightBG_solid)"
-						1="fill(x0,y1-1,x1,y1, dividers_onLightBG_solid)"
+						0="fill(x0,y0-1,x1,y0, color__divider__solid)"
+						1="fill(x0,y1-1,x1,y1, color__divider__solid)"
 						2="image(x0+14,y0+18,x1,y1, graphics/icons/dropdown/hover/up_dark)"
 					}
 				}
@@ -122,8 +127,9 @@
 		
 		"GamesPage_Details ListPanelColumnHeader" {
 			bgcolor=none
-			font-size=14
-			font-size=15 [$OSX]
+			font-size = 14
+			font-size = 12 [$LINUX]
+			font-size = 15 [$OSX]
 			inset="0 0 0 0"
 
 			render {}
@@ -134,8 +140,8 @@
 			inset="0 0 0 0"
 
 			render {
-				0="fill(x0+5,y0+2,x1,y1, grey200)"
-				1="fill(x0+5,y1-1,x1,y1+1, grey200)"
+				0="fill(x0+5,y0+2,x1,y1, color__scrollbarBackground)"
+				1="fill(x0+5,y1-1,x1,y1+1, color__scrollbarBackground)"
 				2="image( x0 + 7, y0 + 7, x1, y1, graphics/icons/columnselectbutton/standard/columnselectbutton)"
 			}
 			render_bg {}
@@ -143,16 +149,16 @@
 		
 			"CGamesListPanel ListPanelColumnSelectButton:hover" {
 				render {
-					0="fill(x0+5,y0+2,x1,y1, grey200)"
-					1="fill(x0+5,y1-1,x1,y1+1, grey200)"
+					0="fill(x0+5,y0+2,x1,y1, color__scrollbarBackground)"
+					1="fill(x0+5,y1-1,x1,y1+1, color__scrollbarBackground)"
 					2="image( x0 + 7, y0 + 7, x1, y1, graphics/icons/columnselectbutton/hover/columnselectbutton)"
 				}
 			}
 
 			"CGamesListPanel ListPanelColumnSelectButton:selected" {
 				render {
-					0="fill(x0+5,y0+2,x1,y1, grey200)"
-					1="fill(x0+5,y1-1,x1,y1+3, grey200)"
+					0="fill(x0+5,y0+2,x1,y1, color__scrollbarBackground)"
+					1="fill(x0+5,y1-1,x1,y1+3, color__scrollbarBackground)"
 					2="image( x0 + 7, y0 + 7, x1, y1, graphics/icons/columnselectbutton/hover/columnselectbutton)"
 				}
 			}
@@ -160,15 +166,17 @@
 		// Using the heading for the right column as a substitute background for the links region.
 		rightcolumnheadertext {
 			textcolor=none
-			font-family=basefont
-			font-size=14
-			font-size=15 [$OSX]
+			font-family=font__basefont
+			font-size = 14
+			font-size = 12 [$LINUX]
+			font-size = 15 [$OSX]
+			
 			font-weight=400
 			font-style=normal
 			inset="0 0 0 0"
 			
 			render_bg {
-				0="fill(x0+2,y0+2,x1-2,y1-2, white)"
+				0="fill(x0+2,y0+2,x1-2,y1-2, color__materialButtonWhiteBackground)"
 				1="image(x0-3,y1-2,x0+2,y1+4, graphics/material/buttons/white/bottomleft)"
 				2="image_tiled(x0+2,y1-2,x1-2,y1+4, graphics/material/buttons/white/bottommiddle)"
 				3="image(x1-2,y1-2,x1+3,y1+2, graphics/material/buttons/white/bottomright)"
@@ -182,15 +190,16 @@
 		
 		rightcolumnheadertext-red {
 			textcolor=none
-			font-family=basefont
-			font-size=14
-			font-size=15 [$OSX]
+			font-family=font__basefont
+			font-size = 14
+			font-size = 12 [$LINUX]
+			font-size = 15 [$OSX]
 			font-weight=400
 			font-style=normal
 			inset="0 0 0 0"
 			
 			render_bg {
-				0="fill(x0+2,y0+2,x1-2,y1-2, white)"
+				0="fill(x0+2,y0+2,x1-2,y1-2, color__materialButtonWhiteBackground)"
 				1="image(x0-3,y1-2,x0+2,y1+4, graphics/material/buttons/white/bottomleft)"
 				2="image_tiled(x0+2,y1-2,x1-2,y1+4, graphics/material/buttons/white/bottommiddle)"
 				3="image(x1-2,y1-2,x1+3,y1+2, graphics/material/buttons/white/bottomright)"
@@ -204,15 +213,16 @@
 		
 		rightcolumnheadertext-green {
 			textcolor=none
-			font-family=basefont
-			font-size=14
-			font-size=15 [$OSX]
+			font-family=font__basefont
+			font-size = 14
+			font-size = 12 [$LINUX]
+			font-size = 15 [$OSX]
 			font-weight=400
 			font-style=normal
 			inset="0 0 0 0"
 			
 			render_bg {
-				0="fill(x0+2,y0+2,x1-2,y1-2, white)"
+				0="fill(x0+2,y0+2,x1-2,y1-2, color__materialButtonWhiteBackground)"
 				1="image(x0-3,y1-2,x0+2,y1+4, graphics/material/buttons/white/bottomleft)"
 				2="image_tiled(x0+2,y1-2,x1-2,y1+4, graphics/material/buttons/white/bottommiddle)"
 				3="image(x1-2,y1-2,x1+3,y1+2, graphics/material/buttons/white/bottomright)"
@@ -226,15 +236,16 @@
 		
 		rightcolumnheadertext-blue {
 			textcolor=none
-			font-family=basefont
-			font-size=14
-			font-size=15 [$OSX]
+			font-family=font__basefont
+			font-size = 14
+			font-size = 12 [$LINUX]
+			font-size = 15 [$OSX]
 			font-weight=400
 			font-style=normal
 			inset="0 0 0 0"
 			
 			render_bg {
-				0="fill(x0+2,y0+2,x1-2,y1-2, white)"
+				0="fill(x0+2,y0+2,x1-2,y1-2, color__materialButtonWhiteBackground)"
 				1="image(x0-3,y1-2,x0+2,y1+4, graphics/material/buttons/white/bottomleft)"
 				2="image_tiled(x0+2,y1-2,x1-2,y1+4, graphics/material/buttons/white/bottommiddle)"
 				3="image(x1-2,y1-2,x1+3,y1+2, graphics/material/buttons/white/bottomright)"
@@ -248,9 +259,10 @@
 		
 		rightcolumnlink {
 			textcolor=blue500
-			font-family=basefont
-			font-size=17
-			font-size=18 [$OSX]
+			font-family=font__basefont
+			font-size = 17
+			font-size = 15 [$LINUX]
+			font-size = 18 [$OSX]	
 			font-style=normal
 			inset="0 0 0 0"
 		}
@@ -260,7 +272,7 @@
 			}
 			
 			rightcolumnlink:disabled {
-				textcolor=disabled_onLightBG
+				textcolor=color__disabled
 			}
 		
 		DetailsBorderPanel {

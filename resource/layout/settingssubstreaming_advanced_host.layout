@@ -5,12 +5,10 @@
 			minimum-height=200
 
 			render {
-				0="fill(x0,y1-58,x1,y1-57, dividers_onLightBG)"
+				0="fill(x0,y1-58,x1,y1-57, color__divider)"
 			}
 			render_bg {
-				0="fill(x0+71,y0+136,x1,y0+137, dividers_onLightBG)"
 				1="image(x0+26,y0+61,x1,y1, graphics/icons/settings/hardware)"
-				2="image(x0+26,y0+155,x1,y1, graphics/icons/settings/router)"
 			}
 		}
 	}
@@ -47,28 +45,50 @@
 		}
 
 		place {
-			control=EnableHardwareEncoding
+			control=ChangeDesktopResolution,DynamicallyAdjustResolution,EnableCaptureNVFBC,EnableHardwareEncoding
 			start=DescriptionLabel
 			dir=down
 			y=4
 			width=max
 			height=18
+			spacing=6
 		}
 
-		region {
-			name=traffic
-			x=82
-			y=124
+		place {
+			control=EnableHardwareEncodingNVIDIA,EnableHardwareEncodingAMD,EnableHardwareEncodingIntel
+			start=EnableHardwareEncoding
+			dir=down
+			y=8
+			x=18
 			width=max
-			height=114
-			margin-right=29
+			height=18
+			spacing=6
+		}
+
+		place {
+			control=SoftwareEncodingThreadsLabel
+			start=EnableHardwareEncodingIntel
+			dir=down
+			y=18
+			x=-18
+			width=max
+			spacing=2
+		}
+
+		place {
+			control=SoftwareEncodingThreads
+			start=SoftwareEncodingThreadsLabel
+			dir=down
+			width=350
+			height=34
+			y=4
 		}
 
 		place {
 			control=EnableTrafficPriorityLabel
-			region=traffic
+			start=SoftwareEncodingThreads
 			dir=down
-			y=28
+			y=18
 			width=max
 			spacing=2
 		}
@@ -80,6 +100,15 @@
 			y=4
 			width=max
 			height=18
+		}
+
+		place {
+			control=SupportInformationLabel
+			region=buttons
+			align=left
+			height=34
+			margin-top=12
+			margin-left=11
 		}
 		
 		place {

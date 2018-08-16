@@ -3,7 +3,7 @@
 		FindEntry {}
 
 		Label {
-			textcolor=disabled_onLightBG
+			textcolor=color__disabled
 		}
 
 		CloseButtonSm {
