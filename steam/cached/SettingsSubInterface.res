@@ -1,20 +1,8 @@
 "steam/cached/SettingsSubInterface.res" {
 	styles {
 		CSubPanelOptionsInterface {
-			render {
-				0="fill(x0+70,y0+191,x1,y0+239, color__backgroundOverlay__secondary)"
-				1="fill(x0+70,y0+286,x1,y0+312, color__backgroundOverlay__secondary)"
-				2="fill(x0+70,y0+380,x1,y0+406, color__backgroundOverlay__secondary)"
-			}
-
-			render [$OSX] {
-				0="fill(x0+70,y0+97,x1,y0+136, color__backgroundOverlay__secondary)"
-				1="fill(x0+70,y0+192,x1,y0+214, color__backgroundOverlay__secondary)"
-				2="fill(x0+70,y0+286,x1,y0+306, color__backgroundOverlay__secondary)"
-			}
-
 			render_bg {
-				0="fill(x0+71,y0+184,x1,y0+185, color__divider)"
+				0="fill(x0+71,y0+184,x1,y0+165, color__divider)"
 				1="image(x0+26,y0+27,x1,y1, graphics/icons/settings/pc)"
 				2="image(x0+26,y0+203,x1,y1, graphics/icons/settings/appearance)"
 			}
@@ -25,20 +13,6 @@
 				2="image(x0+26,y0+109,x1,y1, graphics/icons/settings/appearance)"
 			}
 		}
-
-			CSubPanelOptionsInterface:framefocus {
-				render {
-					0="fill(x0+70,y0+191,x1,y0+239, color__backgroundOverlay)"
-					1="fill(x0+70,y0+286,x1,y0+312, color__backgroundOverlay)"
-					2="fill(x0+70,y0+380,x1,y0+406, color__backgroundOverlay)"
-				}
-
-				render [$OSX] {
-					0="fill(x0+70,y0+97,x1,y0+136, color__backgroundOverlay)"
-					1="fill(x0+70,y0+192,x1,y0+214, color__backgroundOverlay)"
-					2="fill(x0+70,y0+286,x1,y0+306, color__backgroundOverlay)"
-				}
-			}
 	}
 	
 	layout {
@@ -79,7 +53,7 @@
 		region {
 			name=steam
 			x=82
-			y=176
+			y=156
 			y=82 [$OSX]
 			width=max
 			height=114
@@ -121,11 +95,12 @@
 		}
 
 		place {
-			control=DPIScalingCheck
+			control=GPUWebViewCheck,DPIScalingCheck
 			start=SkinCombo
 			dir=down
 			y=4
 			height=18
+			spacing=4
 		}
 
 		place {
