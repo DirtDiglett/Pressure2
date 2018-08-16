@@ -62,7 +62,7 @@
 
 		ListPanelColumnSelectButton {
 			render {
-				0="fill(x0+5,y0,x1+4,y1-1, grey200)"
+				0="fill(x0+5,y0,x1+8,y1, color__scrollbarBackground)"
 				1="image( x0 + 7, y0 + 4, x1, y1, graphics/icons/columnselectbutton/standard/columnselectbutton)"
 			}
 			render_bg {}
@@ -70,15 +70,17 @@
 		
 			ListPanelColumnSelectButton:hover {
 				render {
-					0="fill(x0+5,y0,x1+4,y1-1, grey200)"
-					1="image( x0 + 7, y0 + 4, x1, y1, graphics/icons/columnselectbutton/hover/columnselectbutton)"
+					0="fill(x0+5,y0+2,x1,y1, color__scrollbarBackground)"
+					1="fill(x0+5,y1-1,x1,y1+1, color__scrollbarBackground)"
+					2="image( x0 + 7, y0 + 4, x1, y1, graphics/icons/columnselectbutton/hover/columnselectbutton)"
 				}
 			}
 
 			ListPanelColumnSelectButton:selected {
 				render {
-					0="fill(x0+5,y0,x1+4,y1-1, grey200)"
-					1="image( x0 + 7, y0 + 4, x1, y1, graphics/icons/columnselectbutton/hover/columnselectbutton)"
+					0="fill(x0+5,y0+2,x1,y1, color__scrollbarBackground)"
+					1="fill(x0+5,y1-1,x1,y1+1, color__scrollbarBackground)"
+					2="image( x0 + 7, y0 + 4, x1, y1, graphics/icons/columnselectbutton/hover/columnselectbutton)"
 				}
 			}
 
@@ -89,12 +91,14 @@
 			
 			render {
 				0="image(x0+14, y0+14, x1, y1, graphics/icons/category/standard/category)"
+				1="fill(x0,y1-1,x1,y1, color__divider)"
 			}
 		}
 		
 			CMiniGameFilterMenuButton:hover {				
 				render {
 					0="image(x0+14, y0+14, x1, y1, graphics/icons/category/hover/category)"
+					1="fill(x0,y1-1,x1,y1, color__divider)"
 				}
 			}
 			
@@ -102,16 +106,17 @@
 				render {
 					0="fill(x0,y0,x1,y1, color__disabled__alternate)"
 					1="image(x0+14, y0+14, x1, y1, graphics/icons/category/hover/category)"
+					2="fill(x0,y1-1,x1,y1, color__divider)"
 				}
 			}
 		
 		LibrarySearch {
-			bgcolor=color_textInputBackground
+			bgcolor=color__textInputBackground
 			textcolor=color__text
 			font-family=font__basefont
 			font-size = 18
-font-size = 16 [$LINUX]
-font-size = 19 [$OSX]
+			font-size = 16 [$LINUX]
+			font-size = 19 [$OSX]
 			
 			font-weight=400
 			inset-top=0
@@ -119,7 +124,7 @@ font-size = 19 [$OSX]
 			padding-left=0
 			
 			render {
-				0="fill(x0-40,y1-1,x1,y1, color__divider)"
+				0="fill(x0,y1-1,x1,y1, color__divider)"
 			}
 		}
 		
@@ -150,7 +155,7 @@ font-size = 19 [$OSX]
 			render_bg {
 				-1="fill(x1,y0,x1+10,y1, color__textInputBackground)"
 				0="image(x0+14,y0+13,x1,y1, graphics/icons/search/standard)"
-				1="fill(x0,y1-1,x1+25,y1, color__divider)"
+				1="fill(x0,y1-1,x1+8,y1, color__divider)"
 			}
 		}
 		
@@ -202,35 +207,36 @@ font-size = 19 [$OSX]
 			padding-left=8
 			padding-right=8
 			image=graphics/icons/dropdown/padder
+			bgcolor=color__sectionHeadingBackground
 
 			render {}
 			render_bg {
-				0="fill(x0,y0-1,x1,y0, color__divider)"
-				1="fill(x0,y1-1,x1,y1, color__divider)"
+				0="fill(x0,y0-1,x1,y0, color__divider__solid)"
+				1="fill(x0,y1-1,x1,y1, color__divider__solid)"
 				2="image(x0+14,y0+18,x1,y1, graphics/icons/dropdown/standard/down_dark)"
 			}
 		}
 		
 			ListPanelSectionCollapser:hover {
 				render_bg {
-					0="fill(x0,y0-1,x1,y0, color__divider)"
-					1="fill(x0,y1-1,x1,y1, color__divider)"
+					0="fill(x0,y0-1,x1,y0, color__divider__solid)"
+					1="fill(x0,y1-1,x1,y1, color__divider__solid)"
 					2="image(x0+14,y0+18,x1,y1, graphics/icons/dropdown/hover/down_dark)"
 				}
 			}
 			
 			ListPanelSectionCollapser:selected {
 				render_bg {
-					0="fill(x0,y0-1,x1,y0, color__divider)"
-					1="fill(x0,y1-1,x1,y1, color__divider)"
+					0="fill(x0,y0-1,x1,y0, color__divider__solid)"
+					1="fill(x0,y1-1,x1,y1, color__divider__solid)"
 					2="image(x0+14,y0+18,x1,y1, graphics/icons/dropdown/standard/up_dark)"
 				}
 			}
 			
 				ListPanelSectionCollapser:selected:hover {
 					render_bg {
-						0="fill(x0,y0-1,x1,y0, color__divider)"
-						1="fill(x0,y1-1,x1,y1, color__divider)"
+						0="fill(x0,y0-1,x1,y0, color__divider__solid)"
+						1="fill(x0,y1-1,x1,y1, color__divider__solid)"
 						2="image(x0+14,y0+18,x1,y1, graphics/icons/dropdown/hover/up_dark)"
 					}
 				}
