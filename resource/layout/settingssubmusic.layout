@@ -115,6 +115,7 @@
 			dir=down
 			y=18
 			height=18
+			width=max
 			spacing=18
 		}
 

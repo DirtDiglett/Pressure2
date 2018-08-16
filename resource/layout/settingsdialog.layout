@@ -25,7 +25,7 @@
 			font-size = 16 [$LINUX]
 			font-size = 19 [$OSX]
 			
-			minimum-width=195
+			minimum-width=239
 			minimum-height=517
 			inset="0 -3 0 0"
 			padding-left=18
@@ -64,7 +64,7 @@
 
 		place {
 			control=settingslist
-			width=196
+			width=239
 			height=max
 			region=body
 		}
@@ -74,7 +74,7 @@
 			region=body
 			width=max
 			height=max
-			margin-left=196
+			margin-left=240
 		}
 
 		place {

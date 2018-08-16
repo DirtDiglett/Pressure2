@@ -85,7 +85,7 @@
 			start=HostLabel
 			dir=down
 			y=4
-			width=185
+			width=350
 			height=34
 			spacing=4		
 		}
@@ -113,7 +113,7 @@
 			start=ClientLabel
 			dir=down
 			y=4
-			width=185
+			width=250
 			height=34			
 		}
 
@@ -121,7 +121,7 @@
 			control=QualityFast,QualityBalanced,QualityBeautiful
 			region=client
 			dir=down
-			x=226
+			x=290
 			y=31
 			height=18
 			spacing=18
