@@ -1,10 +1,7 @@
-[![Pressure² Logo](logo.png "Pressure²")](http://www.pressureforsteam.com)
+![Pressure² Logo](logo.png "Pressure²")
 
 # Pressure² for Steam
-Pressure² is a blend of beauty and function. Every part of Steam has been carefully considered and reworked to create the most fluid and wonderful experience possible. By blending Google's Material Design concepts with added flair, Steam can finally sit at the adult table and stop sticking crayons up its nose.
-
-To view a preview of the skin visit www.pressureforsteam.com
-
+Pressure² is a blend of beauty and function. Every part of Steam has been carefully considered and reworked to create the most fluid and wonderful experience possible. By blending Google's Material Design concepts with added flair, Steam can look absolutely gorgeous.
 
 ## Downloading and Installing
 1. Download the [latest release.](https://github.com/DirtDiglett/Pressure2/releases/latest)
@@ -22,10 +19,6 @@ To view a preview of the skin visit www.pressureforsteam.com
 4. Open your Steam Settings Window. Navigate to Interface on the left, and locate the option *"Select the skin you wish Steam to use"* and choose *Pressure²*.
 5. After choosing Pressure² as your Steam skin, hit OK in Settings, you will be prompted to restart Steam. *Restart Steam.*
 6. You're good to go, captain. Welcome to your new Steam experience. Enjoy.
-
-
-## Staying updated
-The easiest way to keep up-to-date with Pressure² is to join the [Steam Community Group.](http://steamcommunity.com/groups/pressureskin) Any new releases will be announced there.
 
 ## [Frequently Asked Questions](https://github.com/DirtDiglett/Pressure2/wiki)
 View the list of frequently asked questions... Occasionally some even have answers.
