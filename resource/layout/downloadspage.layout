@@ -18,9 +18,8 @@
 			shadowtextcolor=color__disabled	
 			font-family=font__basefont
 			font-size = 14
-font-size = 12 [$LINUX]
-font-size = 15 [$OSX]
-			
+			font-size = 12 [$LINUX]
+			font-size = 15 [$OSX]
 			font-weight=400
 			
 			render {
@@ -76,7 +75,7 @@ font-size = 15 [$OSX]
 		}
 
 		SectionHeaderStyleLabel {
-			bgcolor=white
+			bgcolor=none
 			textcolor=color__listPanelSectionHeaderText
 			font-weight=600
 			font-style=uppercase

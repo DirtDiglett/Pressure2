@@ -109,9 +109,8 @@ font-size = 29 [$OSX]
 			textcolor=color__playButtonText
 			font-family=font__mediumfont
 			font-size = 28
-font-size = 23 [$LINUX]
-font-size = 29 [$OSX]
-			
+			font-size = 23 [$LINUX]
+			font-size = 29 [$OSX]
 			font-weight=600
 			font-style=uppercase
 			padding-left=60

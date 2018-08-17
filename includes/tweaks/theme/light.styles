@@ -120,5 +120,8 @@
 		color__listPanelBackground			=		white
 
 		color__materialButtonWhiteBackground	=	white
+		color__screenshotBackground = white
+		color__appDownloadPanelActive = white
+		color__playButtonTextDownloadPage = lightgreen900
 	}
 }

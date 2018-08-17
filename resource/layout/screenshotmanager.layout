@@ -18,7 +18,7 @@
 		} 
 
 		WrapPanel {			
-			bgcolor=white
+			bgcolor=color__screenshotBackground
 			padding-left=4
 			padding-top=4
 			padding-right=4
